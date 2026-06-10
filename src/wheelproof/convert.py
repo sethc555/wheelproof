@@ -230,6 +230,13 @@ def _repair_toml(toml_text: str) -> str:
         print(f"note: dropped invalid [project] key {key!r}", file=sys.stderr)
         project.pop(key)
 
+    tool_st = doc.get("tool", {}).get("setuptools")
+    if isinstance(tool_st, dict):
+        # deprecated test keys that modern setuptools' validator rejects outright
+        for key in ("tests-require", "test-suite", "test-loader"):
+            if tool_st.pop(key, None) is not None:
+                print(f"note: dropped dead [tool.setuptools] key {key!r}", file=sys.stderr)
+
     return toml_w.dumps(doc)
 
 
