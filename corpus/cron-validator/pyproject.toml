@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cron-validator"
+version = "1.0.8"
+description = "Unix cron implementation by Python"
+keywords = [ "cron", "python", "cron expression validator", "cron expression iterator", "cron scheduler",]
+dependencies = [ "python_dateutil", "pytz",]
+[[project.authors]]
+name = "vcoder"
+email = "doanngocbao@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/vcoder4c/cron-validator"
+Download = "https://github.com/vcoder4c/cron-validator/archive/v1.0.8.tar.gz"
+
+[tool.setuptools]
+packages = [ "cron_validator",]
+include-package-data = false

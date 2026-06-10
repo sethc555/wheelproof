@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "json-e"
+version = "4.8.2"
+description = "A data-structure parameterization system written for embedding context in JSON objects"
+[[project.authors]]
+name = "Dustin J. Mitchell"
+email = "dustin@mozilla.com"
+
+[project.license]
+text = "MPL2"
+
+[project.readme]
+text = "A data-structure parameterization system written for embedding context in JSON objects.\n\nSee https://json-e.js.org for usage information."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://json-e.js.org"
+
+[project.optional-dependencies]
+release = [ "towncrier",]
+
+[tool.setuptools]
+packages = [ "jsone",]
+include-package-data = false

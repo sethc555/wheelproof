@@ -2,6 +2,65 @@
   "package": "mleap",
   "version": "0.24.0",
   "sdist_url": "https://files.pythonhosted.org/packages/05/24/3474124045148fa734fe924d79652912d40fd9705af3e0f4c3e1a48c1853/mleap-0.24.0.tar.gz",
-  "status": "build-error",
-  "detail": "ges/setuptools/build_meta.py\", line 317, in run_setup\n    exec(code, locals())\n  File \"<string>\", line 1, in <module>\n  File \"/tmp/build-env-bbyav3hk/lib/python3.12/site-packages/setuptools/__init__.py\", line 117, in setup\n    return distutils.core.setup(**attrs)  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-bbyav3hk/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-bbyav3hk/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-bbyav3hk/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-bbyav3hk/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-bbyav3hk/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `project`.\nconfiguration error: `project` must not contain {'description-file'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "MLeap Developers"
+      ],
+      [
+        "author-email",
+        "combust@combust.ml"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/combust/mleap/tree/master/python"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "MLeap Developers <combust@combust.ml>"
+      ],
+      [
+        "description-content-type",
+        "text/markdown"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/combust/mleap/tree/master/python"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
 }

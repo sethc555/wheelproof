@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python3-openid"
+version = "3.2.0"
+description = "OpenID support for modern servers and consumers."
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Web Environment", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Operating System :: POSIX", "Programming Language :: Python", "Programming Language :: Python :: 3", "Topic :: Internet :: WWW/HTTP", "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: System :: Systems Administration :: Authentication/Directory",]
+dependencies = [ "defusedxml",]
+[[project.authors]]
+name = "Rami Chowdhury"
+email = "rami.chowdhury@gmail.com"
+
+[[project.maintainers]]
+name = "Rami Chowdhury"
+email = "rami.chowdhury@gmail.com"
+
+[project.readme]
+text = "This is a set of Python packages to support use of\nthe OpenID decentralized identity system in your application, update to Python\n3.  Want to enable single sign-on for your web site?  Use the openid.consumer\npackage.  Want to run your own OpenID server? Check out openid.server.\nIncludes example code and support for a variety of storage back-ends."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "http://github.com/necaris/python3-openid"
+Download = "http://github.com/necaris/python3-openid/tarball/v3.2.0"
+
+[project.optional-dependencies]
+mysql = [ "mysql-connector-python",]
+postgresql = [ "psycopg2",]
+
+[tool.setuptools]
+packages = [ "openid", "openid.consumer", "openid.server", "openid.store", "openid.yadis", "openid.extensions", "openid.extensions.draft",]
+include-package-data = false

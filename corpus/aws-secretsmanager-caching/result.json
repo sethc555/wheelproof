@@ -2,6 +2,109 @@
   "package": "aws-secretsmanager-caching",
   "version": "1.1.3",
   "sdist_url": "https://files.pythonhosted.org/packages/9f/d3/e6bb9f29da0081b9d00490a43612a47dbc4996e195d7e57e013124166b73/aws_secretsmanager_caching-1.1.3.tar.gz",
-  "status": "build-error",
-  "detail": "ges/setuptools/build_meta.py\", line 317, in run_setup\n    exec(code, locals())\n  File \"<string>\", line 1, in <module>\n  File \"/tmp/build-env-d0543vzh/lib/python3.12/site-packages/setuptools/__init__.py\", line 117, in setup\n    return distutils.core.setup(**attrs)  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-d0543vzh/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-d0543vzh/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-d0543vzh/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-d0543vzh/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-d0543vzh/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `project`.\nconfiguration error: `project` must not contain {'description-file'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Amazon Web Services"
+      ],
+      [
+        "author-email",
+        "aws-secretsmanager-dev@amazon.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/aws/aws-secretsmanager-caching-python"
+      ],
+      [
+        "keywords",
+        "secretsmanager secrets manager development cache caching client"
+      ],
+      [
+        "version",
+        "1.1.3"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Amazon Web Services <aws-secretsmanager-dev@amazon.com>"
+      ],
+      [
+        "keywords",
+        "secretsmanager,secrets,manager,development,cache,caching,client"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/aws/aws-secretsmanager-caching-python"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "codecov; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-cov; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-sugar; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest; extra == \"testing\""
+      ],
+      [
+        "version",
+        "0.0.0"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

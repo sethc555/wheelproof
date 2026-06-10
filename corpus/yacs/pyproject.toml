@@ -1,0 +1,24 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yacs"
+version = "0.1.8"
+description = "Yet Another Configuration System"
+classifiers = [ "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent", "Intended Audience :: Science/Research", "Topic :: Scientific/Engineering :: Artificial Intelligence",]
+dependencies = [ "PyYAML",]
+[[project.authors]]
+name = "Ross Girshick"
+email = "ross.girshick@gmail.com"
+
+[project.readme]
+text = "A simple experiment configuration system for research"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/rbgirshick/yacs"
+
+[tool.setuptools]
+packages = [ "yacs",]
+include-package-data = false

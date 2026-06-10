@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mohawk"
+version = "1.1.0"
+description = "Library for Hawk HTTP authorization"
+classifiers = [ "Intended Audience :: Developers", "Natural Language :: English", "Operating System :: OS Independent", "Programming Language :: Python :: 2", "Programming Language :: Python :: 3", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Topic :: Internet :: WWW/HTTP",]
+dependencies = [ "six",]
+[[project.authors]]
+name = "Kumar McMillan"
+email = "kumar.mcmillan@gmail.com"
+
+[[project.authors]]
+name = "Austin King"
+
+[project.license]
+text = "MPL 2.0 (Mozilla Public License)"
+
+[project.readme]
+text = "Hawk lets two parties securely communicate with each other using\nmessages signed by a shared key.\nIt is based on HTTP MAC access authentication (which\nwas based on parts of OAuth 1.0).\n\nThe Mohawk API is a little different from that of the Node library\n(i.e. https://github.com/hueniverse/hawk).\nIt was redesigned to be more intuitive to developers, less prone to security problems, and more Pythonic.\n\nRead more: https://github.com/kumar303/mohawk/"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/kumar303/mohawk"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

@@ -2,6 +2,69 @@
   "package": "durationpy",
   "version": "0.10",
   "sdist_url": "https://files.pythonhosted.org/packages/9d/a4/e44218c2b394e31a6dd0d6b095c4e1f32d0be54c2a4b250032d717647bab/durationpy-0.10.tar.gz",
-  "status": "build-error",
-  "detail": "ges/setuptools/build_meta.py\", line 317, in run_setup\n    exec(code, locals())\n  File \"<string>\", line 1, in <module>\n  File \"/tmp/build-env-8eql9i0j/lib/python3.12/site-packages/setuptools/__init__.py\", line 117, in setup\n    return distutils.core.setup(**attrs)  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-8eql9i0j/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-8eql9i0j/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-8eql9i0j/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-8eql9i0j/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-8eql9i0j/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `project`.\nconfiguration error: `project` must not contain {'description-file'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Ilia Choly"
+      ],
+      [
+        "author-email",
+        "ilia.choly@gmail.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/icholy/durationpy/tarball/0.10"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/icholy/durationpy"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Ilia Choly <ilia.choly@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/markdown"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/icholy/durationpy/tarball/0.10"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/icholy/durationpy"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
 }

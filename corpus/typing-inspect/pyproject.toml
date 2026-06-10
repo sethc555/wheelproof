@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "typing_inspect"
+version = "0.9.0"
+description = "Runtime inspection utilities for typing module."
+keywords = [ "typing", "function", "annotations", "type", "hints", "hinting", "checking", "checker", "typehints", "typehinting", "typechecking", "inspect", "reflection", "introspection",]
+classifiers = [ "Development Status :: 3 - Alpha", "Environment :: Console", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Topic :: Software Development",]
+dependencies = [ "mypy_extensions >= 0.3.0", "typing >= 3.7.4;python_version<\"3.5\"", "typing_extensions >= 3.7.4",]
+[[project.authors]]
+name = "Ivan Levkivskyi"
+email = "levkivskyi@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "Typing Inspect\n==============\n\nThe \"typing_inspect\" module defines experimental API for runtime\ninspection of types defined in the standard \"typing\" module."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/ilevkivskyi/typing_inspect"
+
+[tool.setuptools]
+py-modules = [ "typing_inspect",]
+include-package-data = false

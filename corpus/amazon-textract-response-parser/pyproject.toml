@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amazon-textract-response-parser"
+version = "1.0.3"
+description = "Easily parse JSON returned by Amazon Textract."
+readme = "README.md"
+license = {text = "Apache License Version 2.0"}
+authors = [
+    {name = "Amazon Rekognition Textract Demoes", email = "rekognition-textract-demos@amazon.com"},
+]
+keywords = ["amazon-textract-response-parser trp aws amazon textract ocr response parser"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Topic :: Utilities",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "boto3",
+    "marshmallow>=3.14,<4",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "tabulate"]
+
+[project.urls]
+Homepage = "https://github.com/aws-samples/amazon-textract-response-parser"
+
+[tool.setuptools]
+packages = ["trp", "a2i"]
+script-files = ["bin/amazon-textract-pipeline"]
+include-package-data = false
+
+[tool.distutils.bdist_wheel]
+universal = true

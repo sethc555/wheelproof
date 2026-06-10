@@ -1,0 +1,18 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docker-image-py"
+version = "0.1.13"
+description = "Parse docker image as distribution does."
+readme = "README.md"
+dependencies = [ "regex>=2019.4.14",]
+
+[project.urls]
+Homepage = "https://github.com/realityone/docker-image-py"
+
+[tool.setuptools]
+packages = [ "docker_image",]
+zip-safe = false
+include-package-data = false

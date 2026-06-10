@@ -2,6 +2,6 @@
   "package": "pyarmor",
   "version": "9.2.5",
   "sdist_url": "https://files.pythonhosted.org/packages/f3/16/42a6ddc287cd228fae6c2cf6590f579406efed7c85ac508bb6c5f940f073/pyarmor-9.2.5.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-36a4agvu/pyarmor-9.2.5-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-36a4agvu/pyarmor-9.2.5-converted/pyproject.toml: Unescaped '\\' in a string (at line 21, column 1257) \n"
+  "status": "convert-error",
+  "detail": "unexpected:  pos, multiline=False)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/tomllib/_parser.py\", line 575, in parse_basic_str\n    pos, parsed_escape = parse_escapes(src, pos)\n                         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/tomllib/_parser.py\", line 494, in parse_basic_str_escape\n    raise suffixed_err(src, pos, \"Unescaped '\\\\' in a string\") from None\ntomllib.TOMLDecodeError: Unescaped '\\' in a string (at line 21, column 1257)\n"
 }

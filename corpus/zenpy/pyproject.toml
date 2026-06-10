@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zenpy"
+version = "2.0.57"
+description = "Python wrapper for the Zendesk API"
+keywords = [ "zendesk", "api", "wrapper",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Intended Audience :: Information Technology", "Intended Audience :: System Administrators", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "License :: OSI Approved :: GNU General Public License v3 (GPLv3)", "Natural Language :: English",]
+dependencies = [ "requests>=2.14.2", "python-dateutil>=2.7.5", "cachetools>=3.1.0", "pytz>=2018.9", "six>=1.14.0",]
+[[project.authors]]
+name = "Face Toe"
+email = "facetoe@facetoe.com.au"
+
+[project.license]
+text = "GPLv3"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/facetoe/zenpy"
+Download = "https://github.com/facetoe/zenpy/releases/tag/2.0.57"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

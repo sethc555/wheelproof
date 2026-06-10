@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyspark-client"
+version = "4.1.2"
+description = "Python Spark Connect client for Apache Spark"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Typing :: Typed",]
+requires-python = ">=3.10"
+dependencies = [ "pandas>=2.2.0", "pyarrow>=15.0.0", "grpcio>=1.76.0", "grpcio-status>=1.76.0", "googleapis-common-protos>=1.71.0", "zstandard>=0.25.0", "numpy>=1.21", "pyyaml>=3.11",]
+[[project.authors]]
+name = "Spark Developers"
+email = "dev@spark.apache.org"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/apache/spark/tree/master/python"
+
+[tool.setuptools]
+packages = [ "pyspark", "pyspark.cloudpickle", "pyspark.mllib", "pyspark.mllib.linalg", "pyspark.mllib.stat", "pyspark.ml", "pyspark.ml.connect", "pyspark.ml.linalg", "pyspark.ml.param", "pyspark.ml.torch", "pyspark.ml.deepspeed", "pyspark.sql", "pyspark.sql.avro", "pyspark.sql.connect", "pyspark.sql.connect.avro", "pyspark.sql.connect.client", "pyspark.sql.connect.functions", "pyspark.sql.connect.proto", "pyspark.sql.connect.protobuf", "pyspark.sql.connect.resource", "pyspark.sql.connect.shell", "pyspark.sql.connect.streaming", "pyspark.sql.connect.streaming.worker", "pyspark.sql.functions", "pyspark.sql.pandas", "pyspark.sql.plot", "pyspark.sql.protobuf", "pyspark.sql.streaming", "pyspark.sql.streaming.proto", "pyspark.sql.worker", "pyspark.streaming", "pyspark.pandas", "pyspark.pandas.data_type_ops", "pyspark.pandas.indexes", "pyspark.pandas.missing", "pyspark.pandas.plot", "pyspark.pandas.spark", "pyspark.pandas.typedef", "pyspark.pandas.usage_logging", "pyspark.pipelines", "pyspark.testing", "pyspark.resource", "pyspark.errors", "pyspark.errors.exceptions", "pyspark.logger",]
+include-package-data = true

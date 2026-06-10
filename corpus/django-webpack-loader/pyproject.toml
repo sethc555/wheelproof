@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-webpack-loader"
+version = "3.2.4"
+description = "Transparently use webpack with django"
+keywords = [ "django", "webpack", "assets",]
+classifiers = [ "Programming Language :: Python", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Framework :: Django", "Framework :: Django :: 4.2", "Framework :: Django :: 5.0", "Framework :: Django :: 5.1", "Framework :: Django :: 5.2", "Environment :: Web Environment", "License :: OSI Approved :: MIT License",]
+[[project.authors]]
+name = "Vinta Software"
+email = "contact@vinta.com.br"
+
+[project.license]
+text = "MIT License"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/django-webpack/django-webpack-loader"
+Download = "https://github.com/django-webpack/django-webpack-loader/tarball/3.2.4"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

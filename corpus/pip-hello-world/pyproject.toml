@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pip-hello-world"
+version = "0.1"
+description = "Hello World testing setuptools"
+[[project.authors]]
+name = "benlindsay"
+email = "benjlindsay@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+text = "README.txt"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "http://www.hello.com"
+
+[tool.setuptools]
+packages = [ "helloworld", "helloworld.images",]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"helloworld.images" = [ "hello.gif",]

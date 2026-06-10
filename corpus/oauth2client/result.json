@@ -2,6 +2,83 @@
   "package": "oauth2client",
   "version": "4.1.3",
   "sdist_url": "https://files.pythonhosted.org/packages/a6/7b/17244b1083e8e604bf154cf9b716aecd6388acd656dd01893d0d244c94d9/oauth2client-4.1.3.tar.gz",
-  "status": "build-error",
-  "detail": "ils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-oxd63gew/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-oxd63gew/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-oxd63gew/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-oxd63gew/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `project.readme`.\nconfiguration error: `project.readme` must be valid exactly by one definition (0 matches found):\n\n    - {type: string}\n    - type: table\n      all of the following:\n        - at least one of the following:\n            - keys:\n                'file': {type: string}\n              required: ['file']\n            - keys:\n                'text': {type: string}\n              required: ['text']\n        - keys:\n            'content-type': {type: string}\n          required: ['content-type']\n\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Google Inc."
+      ],
+      [
+        "author-email",
+        "jonwayne+oauth2client@google.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://github.com/google/oauth2client/"
+      ],
+      [
+        "keywords",
+        "google oauth 2.0 http client"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "\"Google Inc.\" <jonwayne+oauth2client@google.com>"
+      ],
+      [
+        "description-content-type",
+        "text/plain"
+      ],
+      [
+        "keywords",
+        "google,oauth,2.0,http,client"
+      ],
+      [
+        "project-url",
+        "Homepage, http://github.com/google/oauth2client/"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
 }

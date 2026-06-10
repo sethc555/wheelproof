@@ -2,6 +2,57 @@
   "package": "bce-python-sdk",
   "version": "0.9.72",
   "sdist_url": "https://files.pythonhosted.org/packages/32/bb/1ccb8b28bfa0802356f8588e479adb61cfd2268b37fabc6c8a805d645cd5/bce_python_sdk-0.9.72.tar.gz",
-  "status": "build-error",
-  "detail": "tuptools/build_meta.py\", line 317, in run_setup\n    exec(code, locals())\n  File \"<string>\", line 1, in <module>\n  File \"/tmp/build-env-7kf4bzsi/lib/python3.12/site-packages/setuptools/__init__.py\", line 117, in setup\n    return distutils.core.setup(**attrs)  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-7kf4bzsi/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-7kf4bzsi/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-7kf4bzsi/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-7kf4bzsi/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-7kf4bzsi/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `project`.\nconfiguration error: `project` must not contain {'author-email', 'author'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        ""
+      ],
+      [
+        "author-email",
+        ""
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://bce.baidu.com"
+      ],
+      [
+        "requires-python",
+        ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, <4"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "project-url",
+        "Homepage, http://bce.baidu.com"
+      ],
+      [
+        "requires-python",
+        "!=3.0.*,!=3.1.*,!=3.2.*,<4,>=2.7"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

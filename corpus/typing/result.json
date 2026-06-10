@@ -2,6 +2,97 @@
   "package": "typing",
   "version": "3.10.0.0",
   "sdist_url": "https://files.pythonhosted.org/packages/b0/1b/835d4431805939d2996f8772aca1d2313a57e8860fec0e48e8e7dfe3a477/typing-3.10.0.0.tar.gz",
-  "status": "build-error",
-  "detail": "ils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-a_0ue56d/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-a_0ue56d/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-a_0ue56d/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-a_0ue56d/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `project.readme`.\nconfiguration error: `project.readme` must be valid exactly by one definition (0 matches found):\n\n    - {type: string}\n    - type: table\n      all of the following:\n        - at least one of the following:\n            - keys:\n                'file': {type: string}\n              required: ['file']\n            - keys:\n                'text': {type: string}\n              required: ['text']\n        - keys:\n            'content-type': {type: string}\n          required: ['content-type']\n\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Guido van Rossum, Jukka Lehtosalo, \u0141ukasz Langa, Ivan Levkivskyi"
+      ],
+      [
+        "author-email",
+        "jukka.lehtosalo@iki.fi"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://docs.python.org/3/library/typing.html"
+      ],
+      [
+        "keywords",
+        "typing function annotations type hints hinting checking checker typehints typehinting typechecking backport"
+      ],
+      [
+        "requires-python",
+        ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <3.5"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author",
+        "Jukka Lehtosalo, \u0141ukasz Langa, Ivan Levkivskyi"
+      ],
+      [
+        "author-email",
+        "Guido van Rossum <jukka.lehtosalo@iki.fi>"
+      ],
+      [
+        "description-content-type",
+        "text/plain"
+      ],
+      [
+        "keywords",
+        "typing,function,annotations,type,hints,hinting,checking,checker,typehints,typehinting,typechecking,backport"
+      ],
+      [
+        "project-url",
+        "Homepage, https://docs.python.org/3/library/typing.html"
+      ],
+      [
+        "requires-python",
+        "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,<3.5,>=2.7"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

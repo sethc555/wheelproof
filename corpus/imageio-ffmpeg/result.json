@@ -2,6 +2,101 @@
   "package": "imageio-ffmpeg",
   "version": "0.6.0",
   "sdist_url": "https://files.pythonhosted.org/packages/44/bd/c3343c721f2a1b0c9fc71c1aebf1966a3b7f08c2eea8ed5437a2865611d6/imageio_ffmpeg-0.6.0.tar.gz",
-  "status": "build-error",
-  "detail": "ils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-h9xwbm0z/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-h9xwbm0z/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-h9xwbm0z/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-h9xwbm0z/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `project.readme`.\nconfiguration error: `project.readme` must be valid exactly by one definition (0 matches found):\n\n    - {type: string}\n    - type: table\n      all of the following:\n        - at least one of the following:\n            - keys:\n                'file': {type: string}\n              required: ['file']\n            - keys:\n                'text': {type: string}\n              required: ['text']\n        - keys:\n            'content-type': {type: string}\n          required: ['content-type']\n\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "imageio contributors"
+      ],
+      [
+        "author-email",
+        "almar.klein@gmail.com"
+      ],
+      [
+        "download-url",
+        "http://pypi.python.org/pypi/imageio-ffmpeg"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "provides"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/imageio/imageio-ffmpeg"
+      ],
+      [
+        "keywords",
+        "video ffmpeg"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "imageio contributors <almar.klein@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/plain"
+      ],
+      [
+        "keywords",
+        "video,ffmpeg"
+      ],
+      [
+        "project-url",
+        "Download, http://pypi.python.org/pypi/imageio-ffmpeg"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/imageio/imageio-ffmpeg"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

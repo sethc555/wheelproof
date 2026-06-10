@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mleap"
+version = "0.24.0"
+description = "MLeap Python API"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Communications :: Chat", "Topic :: Internet", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13",]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [ "numpy>=1.8.2", "six>=1.10.0", "scipy>=0.13.0b1", "pandas>=0.18.1", "scikit-learn~=1.0",]
+[[project.authors]]
+name = "MLeap Developers"
+email = "combust@combust.ml"
+
+[project.urls]
+Homepage = "https://github.com/combust/mleap/tree/master/python"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

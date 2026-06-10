@@ -1,0 +1,75 @@
+[build-system]
+requires = [ "setuptools", "setuptools_scm",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycarlo"
+description = "Monte Carlo's Python SDK"
+classifiers = [ "Development Status :: 3 - Alpha", "Intended Audience :: Developers", "Natural Language :: English", "Topic :: Software Development :: Build Tools", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12",]
+requires-python = ">=3.8"
+dependencies = [ "dataclasses_json>=0.5.7,<6.0.0", "python-box>=5.0.0", "requests>=2.0.0,<3.0.0", "responses>=0.20.0", "sgqlc>=14.1,<17.0",]
+dynamic = [ "version",]
+[[project.authors]]
+name = "Monte Carlo Data"
+email = "info@montecarlodata.com"
+
+[[project.authors]]
+name = "Inc"
+
+[project.license]
+text = "Apache Software License (Apache 2.0)"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://www.montecarlodata.com/"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = [ "tests*", "utils*", "examples*",]
+namespaces = false
+
+[tool.pyright]
+disableBytesTypePromotions = true
+enableTypeIgnoreComments = true
+exclude = [
+  "**/__pycache__",
+  "**/.*",
+  "examples/",
+  "pycarlo/lib/schema.py",
+  "tests/data/schema_original.py",
+  "venv/",
+]
+reportMissingParameterType = true
+reportMissingTypeArgument = false
+typeCheckingMode = "basic"
+venv = "venv"
+venvPath = "."
+
+[tool.ruff]
+exclude = [
+  "__pycache__",
+  "/.eggs",
+  "/.git",
+  "/.idea",
+  "/.pytest_cache",
+  "/.ruff_cache",
+  "/build",
+  "/pycarlo.egg-info",
+  "/venv",
+  "pycarlo/lib/schema.py",
+  "tests/data/schema_original.py",
+]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+extend-select = ["E", "F", "W", "Q", "I"]
+
+[tool.ruff.lint.pycodestyle]
+max-doc-length = 100
+max-line-length = 100

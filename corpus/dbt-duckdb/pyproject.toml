@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pbr",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dbt-duckdb"
+description = "The duckdb adapter plugin for dbt (data build tool)"
+classifiers = [ "Development Status :: 5 - Production/Stable", "License :: OSI Approved :: Apache Software License", "Operating System :: Microsoft :: Windows", "Operating System :: MacOS :: MacOS X", "Operating System :: POSIX :: Linux", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13",]
+keywords = [ "setup", "distutils",]
+requires-python = ">=3.10"
+dependencies = [ "dbt-common>=1,<2", "dbt-adapters>=1,<2", "duckdb>=1.0.0", "dbt-core>=1.8.0",]
+dynamic = [ "version",]
+[[project.authors]]
+name = "Josh Wills"
+email = "joshwills+dbt@gmail.com"
+
+[project.license]
+text = "Apache-2"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/jwills/dbt-duckdb"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = [ "dbt", "dbt.*",]
+namespaces = true

@@ -1,0 +1,37 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orderedmultidict"
+version = "1.0.2"
+description = "Ordered Multivalue Dictionary"
+classifiers = [ "Topic :: Software Development :: Libraries", "Natural Language :: English", "License :: Freely Distributable", "Intended Audience :: Developers", "Development Status :: 5 - Production/Stable", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: Implementation :: PyPy",]
+dependencies = [ "six>=1.8.0",]
+[[project.authors]]
+name = "Ansgar Grunseid"
+email = "grunseid@gmail.com"
+
+[project.license]
+text = "Unlicense"
+
+[project.readme]
+text = "A multivalue dictionary is a dictionary that can store multiple values for the\nsame key. An ordered multivalue dictionary is a multivalue dictionary that\nretains the order of insertions and deletions.\n\nomdict retains method parity with dict.\n\nInformation and documentation at https://github.com/gruns/orderedmultidict."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/gruns/orderedmultidict"
+
+[project.optional-dependencies]
+testing = [ "flake8",]
+
+[tool.setuptools]
+include-package-data = true
+platforms = [ "any",]
+license-files = [ "LICENSE.md",]
+
+[tool.setuptools.package-data]
+orderedmultidict = [ "py.typed",]
+
+[tool.setuptools.packages.find]
+namespaces = false

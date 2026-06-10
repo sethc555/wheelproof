@@ -1,0 +1,37 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ibm-cos-sdk-core"
+version = "2.16.2"
+description = "Low-level, data-driven core of IBM SDK for Python"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Intended Audience :: System Administrators", "Natural Language :: English", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14",]
+requires-python = ">= 3.6"
+dependencies = [ "jmespath>=0.10.0,<=1.0.1", "python-dateutil>=2.9.0,<3.0.0", "requests>=2.33.0,<3.0.0", "urllib3>=2.6.2,<3",]
+[[project.authors]]
+name = "IBM"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/ibm/ibm-cos-sdk-python-core"
+
+[project.optional-dependencies]
+crt = [ "awscrt==0.30.0",]
+
+[tool.setuptools]
+include-package-data = true
+script-files = []
+
+[tool.setuptools.package-data]
+ibm_botocore = [ "cacert.pem", "data/*.json", "data/*/*.json",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests*",]
+namespaces = false

@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aiogoogle"
+version = "5.17.0"
+description = "Async Google API client"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Omar Ryhan", email = "omarryhan@gmail.com"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3.7",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "aiohttp",
+    "aiofiles",
+    "google-auth",
+    "tonyg-rfc3339",
+    "async-timeout",
+    "contextvars;python_version<\"3.7\"",
+]
+
+[project.optional-dependencies]
+curio_asks = ["asks", "curio"]
+trio_asks = ["asks", "trio"]
+
+[project.urls]
+Homepage = "https://github.com/omarryhan/aiogoogle"
+
+[tool.setuptools]
+packages = ["aiogoogle", "aiogoogle.auth", "aiogoogle.sessions"]
+include-package-data = false
+
+[tool.setuptools.package-data]
+aiogoogle = ["py.typed"]

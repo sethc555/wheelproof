@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "pbr>=3.0", "setuptools>=61",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "munch"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Topic :: Software Development", "Topic :: Software Development :: Libraries", "Topic :: Utilities", "License :: OSI Approved :: MIT License",]
+description = "A dot-accessible dictionary (a la JavaScript objects)"
+keywords = [ "munch", "dict", "mapping", "container", "collection",]
+requires-python = ">=3.6"
+dynamic = [ "version",]
+[[project.authors]]
+name = "Rotem Yaari"
+email = "vmalloc@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown; charset=UTF-8"
+
+[project.urls]
+Homepage = "https://github.com/Infinidat/munch"
+
+[tool.setuptools]
+include-package-data = false

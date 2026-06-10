@@ -1,7 +1,6 @@
 {
   "package": "azure-mgmt-datalake-analytics",
   "version": "0.6.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/6f/e9/91da6cea4cccb268237e7f16bddefb2dbb1507f75b78c13a79eae16eb1cc/azure-mgmt-datalake-analytics-0.6.0.zip",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-4bqu155d/azure-mgmt-datalake-analytics-0.6.0-converted/setup.py (dynamic setup.py? flag as manual)\n/tmp/v/lib/python3.12/site-packages/setuptools/_vendor/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.\n  warn(\nTraceback (most recent call "
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

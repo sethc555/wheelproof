@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gitdb"
+version = "4.0.12"
+description = "Git Object Database"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Operating System :: POSIX", "Operating System :: Microsoft :: Windows", "Operating System :: MacOS :: MacOS X", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3 :: Only",]
+requires-python = ">=3.7"
+dependencies = [ "smmap>=3.0.1,<6",]
+[[project.authors]]
+name = "Sebastian Thiel"
+email = "byronimo@gmail.com"
+
+[project.license]
+text = "BSD License"
+
+[project.readme]
+text = "GitDB is a pure-Python git object database"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/gitpython-developers/gitdb"
+
+[tool.setuptools]
+packages = [ "gitdb", "gitdb.db", "gitdb.utils", "gitdb.test",]
+zip-safe = false
+include-package-data = false

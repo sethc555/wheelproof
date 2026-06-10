@@ -2,6 +2,119 @@
   "package": "munch",
   "version": "4.0.0",
   "sdist_url": "https://files.pythonhosted.org/packages/e7/2b/45098135b5f9f13221820d90f9e0516e11a2a0f55012c13b081d202b782a/munch-4.0.0.tar.gz",
-  "status": "build-error",
-  "detail": "\", line 317, in run_setup\n    exec(code, locals())\n  File \"<string>\", line 1, in <module>\n  File \"/tmp/build-env-utp5646x/lib/python3.12/site-packages/setuptools/__init__.py\", line 117, in setup\n    return distutils.core.setup(**attrs)  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-utp5646x/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-utp5646x/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-utp5646x/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-utp5646x/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-utp5646x/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `project`.\nconfiguration error: `project` must not contain {'description-content-type', 'description-file'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Rotem Yaari"
+      ],
+      [
+        "author-email",
+        "vmalloc@gmail.com"
+      ],
+      [
+        "description-content-type",
+        "text/markdown"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/Infinidat/munch"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "provides-extra",
+        "yaml"
+      ],
+      [
+        "requires-dist",
+        "PyYAML>=5.1.0; extra == \"yaml\""
+      ],
+      [
+        "requires-dist",
+        "astroid>=2.0; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "coverage; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "importlib_metadata>=1.7.0; python_version < \"3.8\""
+      ],
+      [
+        "requires-dist",
+        "pylint~=2.3.1; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest; extra == \"testing\""
+      ],
+      [
+        "version",
+        "4.0.0"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Rotem Yaari <vmalloc@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/markdown; charset=UTF-8"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Infinidat/munch"
+      ],
+      [
+        "version",
+        "0.0.0"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
 }

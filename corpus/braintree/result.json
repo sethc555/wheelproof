@@ -2,6 +2,71 @@
   "package": "braintree",
   "version": "4.44.0",
   "sdist_url": "https://files.pythonhosted.org/packages/63/54/5222620399d31894def1bd21c468d2033386940793659e19366c805d5090/braintree-4.44.0.tar.gz",
-  "status": "build-error",
-  "detail": "ils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-8_arbiro/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-8_arbiro/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-8_arbiro/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-8_arbiro/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `project.readme`.\nconfiguration error: `project.readme` must be valid exactly by one definition (0 matches found):\n\n    - {type: string}\n    - type: table\n      all of the following:\n        - at least one of the following:\n            - keys:\n                'file': {type: string}\n              required: ['file']\n            - keys:\n                'text': {type: string}\n              required: ['text']\n        - keys:\n            'content-type': {type: string}\n          required: ['content-type']\n\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Braintree"
+      ],
+      [
+        "author-email",
+        "support@braintreepayments.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://developer.paypal.com/braintree/docs/reference/overview"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Braintree <support@braintreepayments.com>"
+      ],
+      [
+        "description-content-type",
+        "text/plain"
+      ],
+      [
+        "project-url",
+        "Homepage, https://developer.paypal.com/braintree/docs/reference/overview"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
 }

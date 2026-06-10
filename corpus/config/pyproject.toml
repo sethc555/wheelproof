@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "config"
+version = "0.5.1"
+description = "A hierarchical, easy-to-use, powerful configuration module for Python"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 3", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Topic :: Software Development",]
+[[project.authors]]
+name = "Vinay Sajip"
+email = "vinay_sajip@red-dove.com"
+
+[[project.maintainers]]
+name = "Vinay Sajip"
+email = "vinay_sajip@red-dove.com"
+
+[project.license]
+text = "Copyright (C) 2004-2020 by Vinay Sajip. All Rights Reserved. See LICENSE for license."
+
+[project.readme]
+text = "This module allows a hierarchical configuration scheme with support for mappings and sequences, cross-references between one part of the configuration and another, the ability to flexibly access real Python objects without full-blown eval(), an include facility, simple expression evaluation and the ability to change, save, cascade and merge configurations. Interfaces easily with environment variables and command-line options."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "http://docs.red-dove.com/cfg/python.html"
+
+[tool.setuptools]
+packages = [ "config",]
+platforms = [ "any",]
+license-files = [ "LICENSE",]
+include-package-data = false

@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools>=20.5",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thrift_sasl"
+version = "0.4.3"
+description = "Thrift SASL Python module that implements SASL transports for Thrift (`TSaslClientTransport`)."
+keywords = [ "thrift", "sasl", "transport",]
+classifiers = [ "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9",]
+dependencies = [ "thrift>=0.10.0;python_version>='3.0'", "thrift>=0.9.3;python_version<'3.0'", "pure-sasl>=0.6.2", "six>=1.13.0",]
+
+[project.license]
+text = "Apache License, Version 2.0"
+
+[project.readme]
+text = "Thrift SASL Python module that implements SASL transports for Thrift (`TSaslClientTransport`)."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/cloudera/thrift_sasl"
+
+[tool.setuptools]
+packages = [ "thrift_sasl",]
+include-package-data = false

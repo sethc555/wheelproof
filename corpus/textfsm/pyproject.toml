@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textfsm"
+version = "2.1.0"
+description = "Python module for parsing semi-structured text into python tables."
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent", "Programming Language :: Python :: 3", "Topic :: Software Development :: Libraries",]
+[[project.maintainers]]
+name = "Google"
+email = "textfsm-dev@googlegroups.com"
+
+[project.license]
+text = "Apache License, Version 2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/google/textfsm"
+
+[project.scripts]
+textfsm = "textfsm.parser:main"
+
+[tool.setuptools]
+packages = [ "textfsm",]
+include-package-data = true
+
+[tool.setuptools.package-data]
+textfsm = [ "../testdata/*",]

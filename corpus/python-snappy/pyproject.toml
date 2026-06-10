@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2", "cramjam>=2.6.0",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-snappy"
+version = "0.7.3"
+description = "Python library for the snappy compression library from Google"
+keywords = [ "snappy", "compression", "google",]
+classifiers = [ "Development Status :: 4 - Beta", "Topic :: Internet", "Topic :: Software Development", "Topic :: Software Development :: Libraries", "Topic :: System :: Archiving :: Compression", "License :: OSI Approved :: BSD License", "Intended Audience :: Developers", "Intended Audience :: System Administrators", "Operating System :: MacOS :: MacOS X", "Operating System :: POSIX", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12",]
+dependencies = [ "cramjam",]
+[[project.authors]]
+name = "Andres Moreira"
+email = "andres@andresmoreira.com"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+text = "Python bindings for the snappy compression library from Google.\n\nMore details about Snappy library: http://google.github.io/snappy"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "http://github.com/intake/python-snappy"
+
+[tool.setuptools]
+packages = [ "snappy",]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+"" = "src"

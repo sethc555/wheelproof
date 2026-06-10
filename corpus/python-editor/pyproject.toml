@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-editor"
+version = "1.0.4"
+description = "Programmatically open an editor, capture the result."
+keywords = [ "editor", "library", "vim", "emacs",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Topic :: Software Development :: Libraries",]
+[[project.authors]]
+name = "Peter Ruibal"
+email = "ruibalp@gmail.com"
+
+[project.license]
+text = "Apache"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/fmoo/python-editor"
+
+[tool.setuptools]
+py-modules = [ "editor",]
+include-package-data = false

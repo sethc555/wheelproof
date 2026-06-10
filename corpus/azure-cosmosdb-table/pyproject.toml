@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-cosmosdb-table"
+version = "1.0.6"
+description = "Microsoft Azure CosmosDB Table Client Library for Python"
+readme = "README.rst"
+license = {text = "Apache License 2.0"}
+authors = [
+    {name = "Microsoft Corporation", email = "ascl@microsoft.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "License :: OSI Approved :: Apache Software License",
+]
+dependencies = [
+    "azure-common>=1.1.5",
+    "cryptography",
+    "python-dateutil",
+    "requests",
+    "futures; python_version<=\"2.7\"",
+    "azure-cosmosdb-nspkg>=2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Azure/azure-cosmosdb-python"
+
+[tool.distutils.bdist_wheel]
+universal = 1
+
+[tool.setuptools]
+include-package-data = false
+packages = [
+    "azure",
+    "azure.cosmosdb",
+    "azure.cosmosdb.table",
+    "azure.cosmosdb.table.common",
+    "azure.cosmosdb.table.common._http",
+    "doc",
+    "samples",
+    "samples.advanced",
+    "samples.table",
+    "tests",
+    "tests.table",
+]

@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydub"
+version = "0.25.1"
+description = "Manipulate audio with an simple and easy high level interface"
+keywords = [ "audio", "sound", "high-level",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Intended Audience :: Developers", "Operating System :: OS Independent", "Topic :: Multimedia :: Sound/Audio", "Topic :: Multimedia :: Sound/Audio :: Analysis", "Topic :: Multimedia :: Sound/Audio :: Conversion", "Topic :: Multimedia :: Sound/Audio :: Editors", "Topic :: Multimedia :: Sound/Audio :: Mixers", "Topic :: Software Development :: Libraries", "Topic :: Utilities",]
+[[project.authors]]
+name = "James Robert"
+email = "jiaaro@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "Manipulate audio with an simple and easy high level interface.\n\nSee the README file for details, usage info, and a list of gotchas."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "http://pydub.com"
+
+[tool.setuptools]
+packages = [ "pydub",]
+include-package-data = false

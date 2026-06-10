@@ -1,0 +1,26 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ntplib"
+version = "0.4.0"
+description = "Python NTP library"
+classifiers = [ "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Operating System :: OS Independent", "Topic :: System :: Networking :: Time Synchronization", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9",]
+[[project.authors]]
+name = "Charles-Francois Natali"
+email = "cf.natali@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "ntplib - Python NTP library\n===========================\n\nDescription\n-----------\n\nThis module offers a simple interface to query NTP servers from Python.\n\nIt also provides utility functions to translate NTP fields values to text (mode,\nleap indicator...). Since it's pure Python, and only depends on core modules, it\nshould work on any platform with a Python implementation.\n\nExample\n-------\n\n>>> import ntplib\n>>> from time import ctime\n>>> c = ntplib.NTPClient()\n>>> response = c.request('europe.pool.ntp.org', version=3)\n>>> response.offset\n-0.143156766891\n>>> response.version\n3\n>>> ctime(response.tx_time)\n'Sun May 17 09:32:48 2009'\n>>> ntplib.leap_to_text(response.leap)\n'no warning'\n>>> response.root_delay\n0.0046844482421875\n>>> ntplib.ref_id_to_text(response.ref_id)\n193.190.230.66\n\n\nInstallation\n------------\n\nAs root::\n\n\nor just copy ntplib.py inside a directory in your sys.path, e.g.\n`/usr/lib/python2.5/`."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/cf-natali/ntplib"
+
+[tool.setuptools]
+py-modules = [ "ntplib",]
+include-package-data = false

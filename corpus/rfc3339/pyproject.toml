@@ -1,0 +1,26 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfc3339"
+version = "6.2"
+description = "Format dates according to the RFC 3339."
+classifiers = [ "Development Status :: 5 - Production/Stable", "Topic :: Internet", "Intended Audience :: Developers", "Programming Language :: Python", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3",]
+[[project.authors]]
+name = "Henry Precheur <henry@precheur.org>"
+email = "henry@precheur.org"
+
+[project.license]
+text = "ISCL"
+
+[project.readme]
+text = "Formats dates according to the :RFC:`3339`.\n\nReport bugs and feature requests on Sourcehut_\n\nSource availabe on this Mercurial repository: https://hg.sr.ht/~henryprecheur/rfc3339\n\n.. _Sourcehut: https://todo.sr.ht/~henryprecheur/rfc3339"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "http://pypi.python.org/pypi/rfc3339/"
+
+[tool.setuptools]
+py-modules = [ "rfc3339",]
+include-package-data = false

@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-assume"
+version = "2.4.3"
+description = "A pytest plugin that allows multiple failures per test"
+keywords = [ "testing", "pytest", "assert",]
+classifiers = [ "Intended Audience :: Developers", "Topic :: Software Development :: Testing", "Operating System :: OS Independent", "Programming Language :: Python",]
+readme = "README.md"
+dependencies = [ "pytest>=2.7", "six",]
+[[project.authors]]
+name = "Brian Okken/Ashley Straw"
+email = "as.fireflash38@gmail.com"
+
+[[project.maintainers]]
+name = "Ashley Straw"
+email = "as.fireflash38@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/astraw38/pytest-assume"
+Download = "https://github.com/astraw38/pytest-assume/tarball/2.4.3"
+
+[tool.setuptools]
+packages = [ "pytest_assume",]
+include-package-data = false
+
+[project.entry-points.pytest11]
+assume = "pytest_assume.plugin"

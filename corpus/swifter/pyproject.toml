@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "swifter"
+version = "1.4.0"
+description = "A package which efficiently applies any function to a pandas dataframe or series in the fastest available manner"
+keywords = [ "pandas", "dask", "apply", "function", "parallelize", "vectorize",]
+classifiers = []
+readme = "README.md"
+dependencies = [ "pandas>=1.0.0", "psutil>=5.6.6", "dask[dataframe]>=2.10.0", "tqdm>=4.33.0",]
+[[project.authors]]
+name = "Jason Carpenter"
+email = "jcarpenter@manifold.ai"
+
+[project.urls]
+Homepage = "https://github.com/jmcarpenter2/swifter"
+Download = "https://github.com/jmcarpenter2/swifter/archive/1.4.0.tar.gz"
+
+[project.optional-dependencies]
+groupby = [ "ray>=1.0.0",]
+notebook = [ "ipywidgets>=7.0.0",]
+
+[tool.setuptools]
+packages = [ "swifter",]
+include-package-data = false

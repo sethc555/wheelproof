@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "easydict"
+version = "1.13"
+description = "Access dict values as attributes (works recursively)."
+keywords = [ "Tools",]
+classifiers = [ "Topic :: Utilities", "Natural Language :: English", "Operating System :: OS Independent", "Intended Audience :: Developers", "Development Status :: 5 - Production/Stable", "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)", "Programming Language :: Python :: 2.5", "Programming Language :: Python :: 3.6",]
+dependencies = []
+[[project.authors]]
+name = "Mathieu Leplatre"
+email = "mathieu.leplatre@makina-corpus.com"
+
+[project.license]
+text = "LGPL-3.0"
+
+[project.readme]
+text = ".. image:: https://img.shields.io/pypi/v/easydict.svg\n:target: https://pypi.python.org/pypi/easydict\n\n.. image:: https://img.shields.io/pypi/dm/easydict.svg\n:target: https://pypi.python.org/pypi/easydict\n\n========\nEasydict\n========\n\n*EasyDict* allows to access dict values as attributes (works recursively).\nA Javascript-like properties dot notation for python dicts.\n\nINSTALL\n=======\n\n::\n\npip install easydict\n\n\nUSAGE\n=====\n\n::\n\n>>> from easydict import EasyDict as edict\n>>> d = edict({'foo':3, 'bar':{'x':1, 'y':2}})\n>>> d.foo\n3\n>>> d.bar.x\n1\n\n>>> d = edict(foo=3)\n>>> d.foo\n3\n\n\nVery useful when exploiting parsed JSON content !\n\n::\n\n>>> from easydict import EasyDict as edict\n>>> from simplejson import loads\n>>> j = \"\"\"{\n\"Buffer\": 12,\n\"List1\": [\n{\"type\" : \"point\", \"coordinates\" : [100.1,54.9] },\n{\"type\" : \"point\", \"coordinates\" : [109.4,65.1] },\n{\"type\" : \"point\", \"coordinates\" : [115.2,80.2] },\n{\"type\" : \"point\", \"coordinates\" : [150.9,97.8] }\n]\n}\"\"\"\n>>> d = edict(loads(j))\n>>> d.Buffer\n12\n>>> d.List1[0].coordinates[1]\n54.9\n\nCan set attributes as easily as getting them :\n\n::\n\n>>> d = EasyDict()\n>>> d.foo = 3\n>>> d.foo\n3\n\nIt is still a ``dict`` !\n\n::\n\n>>> d = EasyDict(log=False)\n>>> d.debug = True\n>>> d.items()\n[('debug', True), ('log', False)]\n\nInstance and class attributes are accessed like usual objects...\n\n::\n\n>>> class Flower(EasyDict):\n...     power = 1\n...\n>>> f = Flower({'height': 12})\n>>> f.power\n1\n>>> f['power']\n1\n\nLICENSE\n=======\n\n* Lesser GNU Public License\n\nAUTHORS\n=======\n\n* Mathieu Leplatre <mathieu.leplatre@makina-corpus.com>\n\n|makinacom|_\n\n.. |makinacom| image:: http://depot.makina-corpus.org/public/logo.gif\n.. _makinacom:  http://www.makina-corpus.com\n\nSimilar tools\n=============\n\n* `TreeDict <http://pypi.python.org/pypi/treedict>`_, a fast and full-featured dict-like tree container.\n* `addict <https://github.com/mewwts/addict>`_\n\n\n=========\nCHANGELOG\n=========\n\n1.12 (2024-03-04)\n=================\n\n- Fix #46: Fix handling of optional default value for .pop() (#47)\n\n1.12 (2024-02-13)\n=================\n\n- Fix #22: Do not convert tuple attributes to list (#44)\n\n1.11 (2023-10-24)\n=================\n\n- Fix #39: RecursionError when dict in class member (#41)\n- Minor changes in README\n\n1.10 (2022-09-28)\n=================\n\n* Make tests compatible with python2 and python3 (thanks @JackLangerman)\n* Dictify input\n* Fix license metadata\n\n1.9 (2018-10-18)\n================\n\n* Fix issue #3 that update and pop now work correctly on EasyDicts.\n\n\n1.8 (2018-08-17)\n================\n\n* Update package classifiers.\n\n\n1.7 (2017-04-27)\n================\n\n* Prevent copying sub-EasyDicts on assignment to fix unpickling (#7, thanks @Chronos-Sk)\n\n1.6 (2015-01-27)\n================\n\n* Allow setting attributes via setting items (thanks phivos)\n\n1.5 (2014-08-07)\n================\n\n* Allow subclassing using self instead of class name (thanks Steve Engledow)\n\n1.4 (2011-03-13)\n================\n\n* Access class attributes like instance attributes\n\n1.3 (2012-02-08)\n================\n\n* Better documentation and tests\n\n1.2 (2011-06-08)\n================\n\n* Fix inclusion of README\n\n1.1 (2012-04-21)\n================\n\n* Switch to distutils2\n\n1.0 (2011-04-18)\n================\n\n* Initial working version"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/makinacorpus/easydict"
+Download = "http://pypi.python.org/pypi/easydict/"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = false

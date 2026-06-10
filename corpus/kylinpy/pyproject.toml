@@ -1,0 +1,40 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kylinpy"
+version = "2.8.4"
+description = "Apache Kylin Python Client Library"
+keywords = [ "apache kylin", "kylin", "kap", "kyligence", "kyligence enterprise", "cli", "sqlalchemy dialect",]
+classifiers = [ "Environment :: Console", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3",]
+dependencies = []
+[[project.authors]]
+name = "Yongjie Zhao"
+email = "yongjie.zhao@kyligence.io"
+
+[[project.maintainers]]
+name = "Yongjie Zhao"
+email = "yongjie.zhao@kyligence.io"
+
+[project.license]
+text = "MIT License"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/Kyligence/kylinpy"
+
+[project.optional-dependencies]
+sqlalchemy = [ "sqlalchemy>=1.1.0",]
+
+[tool.setuptools]
+include-package-data = false
+
+[project.entry-points."sqlalchemy.dialects"]
+kylin = "kylinpy.sqla_dialect:KylinDialect"
+
+[tool.setuptools.packages.find]
+namespaces = false

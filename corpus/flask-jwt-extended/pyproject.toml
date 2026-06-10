@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Flask-JWT-Extended"
+version = "4.7.4"
+description = "Extended JWT integration with Flask"
+keywords = [ "flask", "jwt", "json web token",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Web Environment", "Framework :: Flask", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Software Development :: Libraries :: Python Modules",]
+requires-python = ">=3.10,<4"
+dependencies = [ "Werkzeug>=0.14", "Flask>=2.0,<4.0", "PyJWT>=2.11.0,<3.0",]
+[[project.authors]]
+name = "Lily Acadia Gilbert"
+email = "lily.gilbert@hey.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/vimalloc/flask-jwt-extended"
+
+[project.optional-dependencies]
+asymmetric_crypto = [ "cryptography>=3.3.1",]
+
+[tool.setuptools]
+packages = [ "flask_jwt_extended",]
+zip-safe = false
+platforms = [ "any",]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+flask_jwt_extended = [ "py.typed",]

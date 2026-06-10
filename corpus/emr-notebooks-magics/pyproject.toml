@@ -1,0 +1,21 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emr-notebooks-magics"
+version = "0.2.4"
+description = "Jupyter Magics for EMR Notebooks."
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Natural Language :: English", "License :: OSI Approved :: Apache Software License",]
+dependencies = [ "boto3",]
+[[project.authors]]
+email = "emrnotebooks@amazon.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[tool.setuptools]
+packages = [ "emr_notebooks_magics", "emr_notebooks_magics.utils",]
+script-files = [ "startup_script/001-setup-emr-notebook-magics.py",]
+include-package-data = false

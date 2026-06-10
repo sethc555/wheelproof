@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "importlab"
+version = "0.8.1"
+description = "A library to calculate python dependency graphs."
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: Implementation :: CPython", "Topic :: Software Development",]
+requires-python = ">=3.6.0"
+dependencies = [ "networkx>=2",]
+[[project.maintainers]]
+name = "Google Inc."
+email = "pytype-dev@google.com"
+
+[project.license]
+text = "Apache 2.0"
+
+[project.readme]
+text = "importlab\n---------\n\nImportlab is a library for Python that automatically infers dependencies\nand calculates a dependency graph. It can perform dependency ordering of\na set of files, including cycle detection.\n\nImportlab's main use case is to work with static analysis tools that\nprocess one file at a time, ensuring that a file's dependencies are\nanalysed before it is.\n\n(This is not an official Google product.)\n\nLicense\n-------\n\nApache 2.0\n\nInstallation\n------------\n\nImportlab can be installed from pip\n\n::\n\npip install importlab\n\nTo check out and install the latest source code\n\n::\n\ngit clone https://github.com/google/importlab.git\ncd importlab\npython setup.py install\n\nUsage\n-----\n\nImportlab is primarily intended to be used as a library. It takes one or\nmore python files as arguments, and generates an import graph, typically\nused to process files in dependency order.\n\nIt is currently integrated into\n`pytype <https://github.com/google/pytype>`__\n\nCommand-line tool\n-----------------\n\nImportlab ships with a small command-line tool, also called\n``importlab``, which can display some information about a project's\nimport graph.\n\n::\n\nusage: importlab [-h] [--tree] [--unresolved] [filename [filename ...]]\n\npositional arguments:\nfilename              input file(s)\n\noptional arguments:\n-h, --help            show this help message and exit\n--tree                Display import tree.\n--unresolved          Display unresolved dependencies.\n\nRoadmap\n-------\n\n-  ``Makefile`` generation, to take advantage of ``make``'s incremental\nupdate and parallel execution features\n\n-  Integration with other static analysis tools"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/google/importlab"
+
+[tool.setuptools]
+include-package-data = true
+script-files = [ "bin/importlab",]
+license-files = [ "LICENSE",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

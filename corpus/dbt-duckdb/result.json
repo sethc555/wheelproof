@@ -2,6 +2,93 @@
   "package": "dbt-duckdb",
   "version": "1.10.1",
   "sdist_url": "https://files.pythonhosted.org/packages/c5/d3/0f9f6a4de94e0f95dcfabbba5e8ef7670de695483345edd9e5b36e93d024/dbt_duckdb-1.10.1.tar.gz",
-  "status": "build-error",
-  "detail": "ges/setuptools/build_meta.py\", line 317, in run_setup\n    exec(code, locals())\n  File \"<string>\", line 1, in <module>\n  File \"/tmp/build-env-xzx3kdw9/lib/python3.12/site-packages/setuptools/__init__.py\", line 117, in setup\n    return distutils.core.setup(**attrs)  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-xzx3kdw9/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-xzx3kdw9/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-xzx3kdw9/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-xzx3kdw9/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-xzx3kdw9/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `project`.\nconfiguration error: `project` must not contain {'description-file'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Josh Wills"
+      ],
+      [
+        "author-email",
+        "joshwills+dbt@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/jwills/dbt-duckdb"
+      ],
+      [
+        "provides-extra",
+        "glue"
+      ],
+      [
+        "provides-extra",
+        "md"
+      ],
+      [
+        "requires-dist",
+        "boto3; extra == \"glue\""
+      ],
+      [
+        "requires-dist",
+        "duckdb==1.4.4; extra == \"md\""
+      ],
+      [
+        "requires-dist",
+        "mypy-boto3-glue; extra == \"glue\""
+      ],
+      [
+        "version",
+        "1.10.1"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Josh Wills <joshwills+dbt@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/jwills/dbt-duckdb"
+      ],
+      [
+        "version",
+        "0.0.0"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

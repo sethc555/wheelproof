@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mock"
+description = "Rolling backport of unittest.mock for all Pythons"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Software Development :: Libraries", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Software Development :: Testing",]
+version = "5.2.0"
+readme = "README.rst"
+requires-python = ">=3.6"
+[[project.authors]]
+name = "Testing Cabal"
+email = "testing-in-python@lists.idyll.org"
+
+[project.urls]
+Homepage = "http://mock.readthedocs.org/en/latest/"
+Source = "https://github.com/testing-cabal/mock"
+
+[project.optional-dependencies]
+docs = [ "sphinx",]
+test = [ "pytest", "pytest-cov",]
+build = [ "twine", "wheel", "blurb",]
+
+[tool.setuptools]
+packages = [ "mock",]
+include-package-data = false

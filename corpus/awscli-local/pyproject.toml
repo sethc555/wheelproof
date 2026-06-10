@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awscli-local"
+version = "0.22.2"
+description = "Thin wrapper around the \"aws\" command line interface for use with LocalStack"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "Apache License 2.0"}
+authors = [
+    {name = "LocalStack Team", email = "info@localstack.cloud"},
+]
+classifiers = [
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.6",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Software Development :: Testing",
+]
+dependencies = ["localstack-client"]
+
+[project.urls]
+Homepage = "https://github.com/localstack/awscli-local"
+
+[project.optional-dependencies]
+ver1 = ["awscli"]
+
+[tool.setuptools]
+packages = []
+script-files = ["bin/awslocal", "bin/awslocal.bat"]
+include-package-data = false

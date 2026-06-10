@@ -1,0 +1,19 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pbr",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linecache2"
+version = "1.0.0"
+description = "Backports of the linecache module"
+classifiers = [ "Development Status :: 6 - Mature", "Intended Audience :: Developers", "License :: OSI Approved :: Python Software Foundation License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.2", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Topic :: Software Development",]
+readme = "README.rst"
+[[project.authors]]
+name = "Testing-cabal"
+email = "testing-cabal@lists.launchpad.net"
+
+[project.urls]
+Homepage = "https://github.com/testing-cabal/linecache2"
+
+[tool.setuptools]
+include-package-data = false

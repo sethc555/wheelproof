@@ -1,7 +1,6 @@
 {
   "package": "azure-mgmt-consumption",
   "version": "10.0.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/4c/a9/f8c817e67a9005752b0c11cc289fd2334c4f1c9287b0cc8b4abd220e4101/azure-mgmt-consumption-10.0.0.zip",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-icc4513x/azure-mgmt-consumption-10.0.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 119, in _main\n  "
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

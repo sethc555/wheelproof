@@ -1,0 +1,23 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ddt"
+version = "1.7.2"
+description = "Data-Driven/Decorated Tests"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Topic :: Software Development :: Testing",]
+[[project.authors]]
+name = "Carles Barrobés"
+email = "carles@barrobes.com"
+
+[project.readme]
+text = "A library to multiply test cases"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/datadriventests/ddt"
+
+[tool.setuptools]
+py-modules = [ "ddt",]
+include-package-data = false

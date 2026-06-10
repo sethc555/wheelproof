@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aenum"
+version = "3.1.17"
+description = "Advanced Enumerations (compatible with Python's stdlib Enum), NamedTuples, and NamedConstants"
+readme = {text = "Advanced Enumerations (compatible with Python's stdlib Enum), NamedTuples, and NamedConstants\n\nWARNING: Version 3.1 has breaking changes in custom Enum settings\nWARNING:\nWARNING: AutoNumber has been removed\nWARNING: AutoValue has been removed\n\naenum includes a Python stdlib Enum-compatible data type, as well as a metaclass-based NamedTuple implementation and a NamedConstant class.\n\nAn Enum is a set of symbolic names (members) bound to unique, constant values. Within an enumeration, the members can be compared by identity, and the enumeration itself can be iterated over.  Support exists for unique values, multiple values, auto-numbering, and suspension of aliasing (members with the same value are not identical), plus the ability to have values automatically bound to attributes.\n\nA NamedTuple is a class-based, fixed-length tuple with a name for each possible position accessible using attribute-access notation as well as the standard index notation.\n\nA NamedConstant is a class whose members cannot be rebound; it lacks all other Enum capabilities, however.\n\nEnum classes:\n\n- Enum: Base class for creating enumerated constants.\n\n- IntEnum: Base class for creating enumerated constants that are also\n           subclasses of int.\n\n- Flag: Base class for creating enumerated constants that can be combined\n        using the bitwise operations without losing their Flag membership.\n\n- IntFlag: Base class for creating enumerated constants that can be combined\n           using the bitwise operators without losing their IntFlag membership.\n           IntFlag members are also subclasses of int.\n\n- AutoNumberEnum: Derived class that automatically assigns an int value to each\n                  member.\n\n- OrderedEnum: Derived class that adds <, <=, >=, and > methods to an Enum.\n\n- UniqueEnum: Derived class that ensures only one name is bound to any one\n              value.\n\nUtility functions include:\n\n- convert: helper to convert target global variables into an Enum\n\n- constant: helper class for creating constant members\n\n- enum: helper class for creating members with keywords\n\n- enum_property: property to enable enum members to have same named attributes\n                 (e.g. `name` and `value`)\n\n- export: helper to insert Enum members into a namespace (usually globals())\n\n- extend_enum: add new members to enumerations after creation\n\n- module: inserts NamedConstant and Enum classes into sys.modules\n          where it will appear to be a module whose top-level names\n          cannot be rebound\n\n- skip: class that prevents attributes from being converted to a\n        constant or enum member\n\n- unique: decorator that ensures no duplicate members\n", content-type = "text/x-rst"}
+license = {text = "BSD License"}
+authors = [
+    {name = "Ethan Furman", email = "ethan@stoneleaf.us"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Topic :: Software Development",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+Homepage = "https://github.com/ethanfurman/aenum"
+
+[tool.setuptools]
+packages = ["aenum"]
+include-package-data = false
+
+[tool.setuptools.package-data]
+aenum = [
+    "LICENSE",
+    "README.md",
+    "doc/aenum.rst",
+    "doc/aenum.pdf",
+]

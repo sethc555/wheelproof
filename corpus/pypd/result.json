@@ -2,6 +2,101 @@
   "package": "pypd",
   "version": "1.1.0",
   "sdist_url": "https://files.pythonhosted.org/packages/39/7c/dc2e5678d4d85f08b5343a21eb4aaa0ec1826ca631c8a92344f1a0463e47/pypd-1.1.0.tar.gz",
-  "status": "build-error",
-  "detail": "ges/setuptools/build_meta.py\", line 317, in run_setup\n    exec(code, locals())\n  File \"<string>\", line 1, in <module>\n  File \"/tmp/build-env-ngcpmi46/lib/python3.12/site-packages/setuptools/__init__.py\", line 117, in setup\n    return distutils.core.setup(**attrs)  # type: ignore[return-value]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-ngcpmi46/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-ngcpmi46/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-ngcpmi46/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-ngcpmi46/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-ngcpmi46/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `project`.\nconfiguration error: `project` must not contain {'description-file'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "JD Cumpson"
+      ],
+      [
+        "author-email",
+        "jdc@pagerduty.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/PagerDuty/pagerduty-api-python-client/archive/master.tar.gz"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/PagerDuty/pagerduty-api-python-client"
+      ],
+      [
+        "maintainer",
+        "JD Cumpson"
+      ],
+      [
+        "maintainer-email",
+        "abrooks@pagerduty.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "JD Cumpson <jdc@pagerduty.com>"
+      ],
+      [
+        "description-content-type",
+        "text/markdown"
+      ],
+      [
+        "maintainer-email",
+        "JD Cumpson <abrooks@pagerduty.com>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/PagerDuty/pagerduty-api-python-client/archive/master.tar.gz"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/PagerDuty/pagerduty-api-python-client"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

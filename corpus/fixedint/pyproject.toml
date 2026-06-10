@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fixedint"
+version = "0.2.0"
+description = "simple fixed-width integers"
+classifiers = [ "License :: OSI Approved :: Python Software Foundation License", "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Operating System :: OS Independent", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Topic :: Utilities",]
+[[project.authors]]
+name = "Robert Xiao"
+email = "robert.bo.xiao@gmail.com"
+
+[project.license]
+text = "PSF"
+
+[project.readme]
+text = "=====================================\nfixedint: simple fixed-width integers\n=====================================\n\nThis module provides fixed-size integer classes which retain their fixed nature across\narithmetic operations. It is geared towards users who need to emulate machine integers.\n\nIt provides flexible classes for defining integers with a fixed number of bits, as well\nas predefined classes for common machine integer sizes. These classes can be used as\ndrop-in replacements for int/long, and can be sliced to extract bitfields.\n\nMutable versions of these integers are provided, enabling usages such as emulation of\nmachine registers.\n\n\n\nBasic Usage\n===========\n\nA collection of predefined fixed-width integers for widths 8, 16, 32 and 64 are available\nin signed and unsigned varieties. Mutable and immutable versions of each type are provided.\n\nThese are named as ``[Mutable][U]Int<N>``, e.g. ``UInt64`` or ``MutableInt8``. Use these\nclasses as you would ``int``; arithmetic operations involving these classes will preserve\nfixed width. For example::\n\nx = UInt32(0)\nprint(hex(~x)) # prints 0xffffffff\n\nMutable instances can be modified in-place, preserving their type::\n\nx = MutableUInt32(0)\ny = x\nx += 100\nprint(y) # prints 100\n\nTo set a mutable integer without losing its type, use slicing::\n\nx = MutableUInt32(0)\nx[:] = -1\nprint(hex(x)) # prints 0xffffffff\n\n\nArithmetic Operations\n=====================\n\n``FixedInt`` instances support all arithmetic operators. For binary operators, both\noperands are converted to plain Python ``int`` and then operated on. With a few\nexceptions, the result will be cast back to a ``FixedInt`` large enough to hold either\noperand, provided one of the operands was a ``FixedInt``. Note that the resulting\n``FixedInt`` may not be large enough to hold the complete result, in which case the\nresult will be truncated.\n\nThe exceptions are as follows:\n\n* ``divmod`` returns a tuple of plain ``int`` s\n* true division returns a float\n* ``**``, ``<<`` and ``>>`` will return a ``FixedInt`` if the left operand was a\n``FixedInt``, and plain ``int`` otherwise.\n\nMutable instances additionally support in-place operations, which will modify the\nvalue without altering its type.\n\n\nArithmetic operations between two integers of different sizes follow C integer promotion\nrules when determining the type of the final result. These rules boil down to the\nfollowing:\n\n* If the operands are both signed, or both unsigned, the wider of the two operand types is chosen.\n* Otherwise, if the unsigned operand is wider, the unsigned operand is chosen.\n* Otherwise, the signed operand is chosen.\n\n\n\n\nSlicing\n=======\n\n``FixedInt`` instances support slicing. Slicing with a single integer produces a single\nBoolean value representing the bit at that position. Slicing with a range produces a\n``FixedInt`` containing the range of bits. Mutable instances additionally support slice\nassignment. This makes e.g. manipulating a flag register straightforward, without needing\nto use bitwise operations.\n\nAll indexing operations treat the least-significant bit (LSB) as bit 0. Currently, only\ncontiguous bit sections can be obtained; for more flexibility consider using a module\nsuch as `bitarray`.\n\nGetting a slice results in a ``FixedInt`` instance with exactly as many bits as the range.\nThis can be used to perform wraparound arithmetic on a bit field.\n\nSlices support two main syntaxes::\n\nvalue[<start>:<end>]\nvalue[<start>:<length>j]\n\nThe latter syntax is more convenient when dealing with fixed-width fields. Either of the\nslice arguments may be omitted, in which case they will default to the LSB and MSB of\nthe ``FixedInt`` respectively.\n\n\n\nByte Conversion\n===============\n\n``FixedInt`` instances can be converted to and from raw byte representations by using the\n``.to_bytes`` instance method and the ``.from_bytes`` classmethod. The usage of these\nmethods matches that of Python 3.4's ``int.to_bytes`` and ``int.from_bytes`` methods, but\nthe length is automatically inferred from the integer width."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/nneonneo/fixedint"
+
+[tool.setuptools]
+packages = [ "fixedint",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+fixedint = [ "py.typed", "*.pyi",]

@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pbr",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-jenkins"
+description = "Python bindings for the remote Jenkins API"
+classifiers = [ "Topic :: Utilities", "Intended Audience :: Developers", "Intended Audience :: Information Technology", "Intended Audience :: System Administrators", "Environment :: Console", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12",]
+readme = "README.rst"
+dynamic = [ "version",]
+[[project.authors]]
+name = "Ken Conley"
+email = "kwc@willowgarage.com"
+
+[[project.maintainers]]
+name = "Python-Jenkins Developers"
+email = "python-jenkins-developers@lists.launchpad.net"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "https://opendev.org/jjb/python-jenkins"
+Documentation = "https://python-jenkins.readthedocs.io/"
+
+[tool.setuptools]
+include-package-data = false

@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-watch"
+version = "4.2.0"
+description = "Local continuous test runner with pytest and watchdog."
+readme = "README.rst"
+dependencies = [ "docopt>=0.4.0", "colorama>=0.3.3", "watchdog>=0.6.0", "pytest>=2.6.4",]
+[[project.authors]]
+name = "Joe Esposito"
+email = "joe@joeyespo.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "http://github.com/joeyespo/pytest-watch"
+
+[project.scripts]
+pytest-watch = "pytest_watch:main"
+ptw = "pytest_watch:main"
+
+[tool.setuptools]
+platforms = [ "any",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

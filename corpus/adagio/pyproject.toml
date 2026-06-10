@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adagio"
+version = "0.2.6"
+description = "The Dag IO Framework for Fugue projects"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Han Wang", email = "goodwanghan@gmail.com"},
+]
+keywords = ["adagio dag directed acyclic graph workflow"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "triad>=0.6.1",
+]
+
+[project.urls]
+Homepage = "http://github.com/fugue-project/adagio"
+
+[tool.setuptools]
+packages = ["adagio", "adagio.shells", "adagio_version"]
+include-package-data = false

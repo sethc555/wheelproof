@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pysmb"
+version = "1.2.14"
+description = "pysmb is an experimental SMB/CIFS library written in Python to support file sharing between Windows and Linux machines"
+keywords = [ "windows", "samba", "cifs", "sharing", "ftp", "smb", "linux",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Win32 (MS Windows)", "Environment :: Console", "License :: OSI Approved :: zlib/libpng License", "Operating System :: Microsoft :: Windows", "Operating System :: POSIX", "Programming Language :: Python", "Programming Language :: Python :: 2.4", "Programming Language :: Python :: 2.5", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Topic :: Communications :: File Sharing", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: System :: Networking",]
+dependencies = [ "pyasn1", "tqdm",]
+[[project.authors]]
+name = "Michael Teo"
+email = "miketeo@miketeo.net"
+
+[project.license]
+text = "zlib/libpng"
+
+[project.readme]
+text = "pysmb is an experimental SMB/CIFS library written in Python. It implements the client-side SMB/CIFS protocol which allows your Python application to access and transfer files to/from SMB/CIFS shared folders like your Windows file sharing and Samba folders."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://miketeo.net/projects/pysmb"
+
+[tool.setuptools]
+packages = [ "smb", "smb.utils", "nmb",]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+"" = "python3"

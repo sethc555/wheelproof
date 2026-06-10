@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autovizwidget"
+version = "0.23.0"
+description = "AutoVizWidget: An Auto-Visualization library for pandas dataframes"
+license = {text = "BSD 3-clause"}
+authors = [
+    {name = "Jupyter Development Team", email = "jupyter@googlegroups.org"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.7",
+]
+dependencies = ["plotly>=3", "ipywidgets>5.0.0", "hdijupyterutils>=0.6", "notebook>=4.2", "pandas<3.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/jupyter-incubator/sparkmagic"
+Download = "https://github.com/jupyter-incubator/sparkmagic"
+
+[tool.setuptools]
+packages = ["autovizwidget", "autovizwidget.plotlygraphs", "autovizwidget.widget", "autovizwidget.utils"]
+include-package-data = false

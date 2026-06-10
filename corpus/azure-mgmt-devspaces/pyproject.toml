@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-mgmt-devspaces"
+version = "0.2.0"
+description = "Microsoft Azure Dev Spaces Client Library for Python"
+readme = {text = "Microsoft Azure SDK for Python\n==============================\n\nThis is the Microsoft Azure Dev Spaces Client Library.\n\nAzure Resource Manager (ARM) is the next generation of management APIs that\nreplace the old Azure Service Management (ASM).\n\nThis package has been tested with Python 2.7, 3.4, 3.5, 3.6 and 3.7.\n\nFor the older Azure Service Management (ASM) libraries, see\n`azure-servicemanagement-legacy <https://pypi.python.org/pypi/azure-servicemanagement-legacy>`__ library.\n\nFor a more complete set of Azure libraries, see the `azure <https://pypi.python.org/pypi/azure>`__ bundle package.\n\n\nUsage\n=====\n\nFor code examples, see `Dev Spaces\n<https://docs.microsoft.com/python/api/overview/azure/>`__\non docs.microsoft.com.\n\n\nProvide Feedback\n================\n\nIf you encounter any bugs or have suggestions, please file an issue in the\n`Issues <https://github.com/Azure/azure-sdk-for-python/issues>`__\nsection of the project.\n\n\n.. image::  https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-devspaces%2FREADME.png\n\n\n.. :changelog:\n\nRelease History\n===============\n\n0.2.0 (2019-05-23)\n++++++++++++++++++\n\n**Features**\n\n- Model ControllerUpdateParameters has a new parameter target_container_host_credentials_base64\n- Added operation group ContainerHostMappingsOperations\n\n**Breaking changes**\n\n- Operation ControllersOperations.list_connection_details has a new signature\n- Operation ControllersOperations.update has a new signature\n- Model ControllerConnectionDetails has a new signature\n\n0.1.0 (2018-07-12)\n++++++++++++++++++\n\n* Initial Release\n", content-type = "text/x-rst"}
+license = {text = "MIT License"}
+authors = [
+    {name = "Microsoft Corporation"},
+    {email = "azpysdkhelp@microsoft.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "msrest>=0.5.0",
+    "msrestazure>=0.4.32,<2.0.0",
+    "azure-common~=1.1",
+    "azure-mgmt-nspkg; python_version<'3.0'",
+]
+
+[project.urls]
+Homepage = "https://github.com/Azure/azure-sdk-for-python"
+
+[tool.setuptools]
+packages = [
+    "azure.mgmt.devspaces",
+    "azure.mgmt.devspaces.models",
+    "azure.mgmt.devspaces.operations",
+]
+include-package-data = false

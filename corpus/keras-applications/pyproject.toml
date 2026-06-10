@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Keras_Applications"
+version = "1.0.8"
+description = "Reference implementations of popular deep learning models"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Intended Audience :: Education", "Intended Audience :: Science/Research", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Topic :: Software Development :: Libraries", "Topic :: Software Development :: Libraries :: Python Modules",]
+dependencies = [ "numpy>=1.9.1", "h5py",]
+[[project.authors]]
+name = "Keras Team"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "Keras Applications is the `applications` module of\nthe Keras deep learning library.\nIt provides model definitions and pre-trained weights for a number\nof popular archictures, such as VGG16, ResNet50, Xception, MobileNet, and more.\n\nRead the documentation at: https://keras.io/applications/\n\nKeras Applications may be imported directly\nfrom an up-to-date installation of Keras:\n\n```\nfrom keras import applications\n```\n\nKeras Applications is compatible with Python 2.7-3.6\nand is distributed under the MIT license."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/keras-team/keras-applications"
+Download = "https://github.com/keras-team/keras-applications/tarball/1.0.8"
+
+[project.optional-dependencies]
+tests = [ "pytest", "pytest-pep8", "pytest-xdist", "pytest-cov",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

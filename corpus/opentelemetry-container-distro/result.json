@@ -3,5 +3,5 @@
   "version": "0.2.0",
   "sdist_url": "https://files.pythonhosted.org/packages/1e/e5/deb4d762d20d8622fc008ebd1aa5d23ef2cf77abae4653b90555f13f8a1c/opentelemetry-container-distro-0.2.0.tar.gz",
   "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-s4x66kcq/opentelemetry-container-distro-0.2.0-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-s4x66kcq/opentelemetry-container-distro-0.2.0-converted/pyproject.toml: Cannot declare ('build-system',) twice (at line 50, column 14) \n"
+  "detail": "wheel build failed for /tmp/wheelproof-bc-_5m7qypz/opentelemetry-container-distro-0.2.0-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated e ||| wheel build failed for /tmp/wheelproof-bc-_5m7qypz/opentelemetry-container-distro-0.2.0-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-_5m7qypz/opentelemetry-container-distro-0.2.0-converted/pyproject.toml: Cannot declare ('build-system',) twice (at line 49, column 14) \n"
 }

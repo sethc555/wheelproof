@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "microsoft-security-utilities-secret-masker"
+version = "1.0.0b4"
+description = "A tool for detecting and masking secrets"
+dependencies = []
+[[project.authors]]
+name = "Microsoft Corporation"
+email = "azpycli@microsoft.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "Microsoft Security Utilities - Secret Masker\n=============================================\n\nmicrosoft-security-utilities-secret-masker is part of the Microsoft Security Utilities used internally. You can find the related .NET SDK package `here <https://www.nuget.org/packages/Microsoft.Security.Utilities>`_. This Secret Masker Python library focuses on:\n\n- providing some built-in detection rules in json format\n- detecting sensitive data for given input\n- masking sensitive data with simple symbols or sha256 hash for given input\n\nInstallation\n++++++++++++\n\nYou can install the package via pip:\n\n::\n\npip install microsoft-security-utilities-secret-masker\n\n\nUsage\n+++++\n\nYou can use the SecretMasker class to detect and mask sensitive data in your input. Here is an example:\n\n.. code-block:: python\n\nfrom microsoft_security_utilities_secret_masker import SecretMasker, load_regex_patterns_from_json_file\n\nprecisely_classified_regex_patterns = load_regex_patterns_from_json_file('PreciselyClassifiedSecurityKeys.json')\nunclassified_regex_patterns = load_regex_patterns_from_json_file('UnclassifiedPotentialSecurityKeys.json')\nregex_patterns = precisely_classified_regex_patterns.union(unclassified_regex_patterns)\nsecret_masker = SecretMasker(regex_patterns)\n\ninput = \"This is a sample input with no secrets\"\ndetected_secrets = secret_masker.detect_secrets(input)\nprocessed_input = secret_masker.mask_secrets(input)\n\nLicense\n+++++++\n\n::\n\nMicrosoft Security Utilities - Secret Masker (secret-masker)\n\nCopyright (c) Microsoft Corporation\nAll rights reserved.\n\nMIT License\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"\"Software\"\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED *AS IS*, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.::\n\n.. :changelog:\n\nRelease History\n===============\n1.0.0b4\n+++++++\n* Update regex patterns\n\n1.0.0b3\n+++++++\n* Minor fix\n\n1.0.0b2\n+++++++\n* Adopt confidence level patterns\n\n1.0.0b1\n+++++++\n* Initial release"
+content-type = "text/plain"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"microsoft_security_utilities_secret_masker.generatedregexpatterns" = [ "*.json",]
+
+[tool.setuptools.packages.find]
+exclude = [ "*.test*",]
+namespaces = false

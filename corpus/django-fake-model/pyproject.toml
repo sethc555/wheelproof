@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-fake-model"
+version = "0.1.4"
+description = "Simple library for creating fake models in the unit tests."
+keywords = [ "django-fake-model",]
+classifiers = [ "Development Status :: 3 - Alpha", "Framework :: Django", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Natural Language :: English", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4",]
+dependencies = []
+[[project.authors]]
+name = "Kirill Ermolov"
+email = "erm0l0v@ya.ru"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+text = "=============================\ndjango-fake-model\n=============================\n\n.. image:: https://badge.fury.io/py/django-fake-model.png\n:target: https://badge.fury.io/py/django-fake-model\n\n.. image:: https://travis-ci.org/erm0l0v/django-fake-model.png?branch=master\n:target: https://travis-ci.org/erm0l0v/django-fake-model\n\n.. image:: https://landscape.io/github/erm0l0v/django-fake-model/master/landscape.svg?style=flat\n:target: https://landscape.io/github/erm0l0v/django-fake-model/master\n:alt: Code Health\n\n.. image:: https://api.codacy.com/project/badge/235f71efbf3144178975bb3eb86964c8\n:target: https://www.codacy.com/app/erm0l0v/django-fake-model\n\n.. image:: https://requires.io/github/erm0l0v/django-fake-model/requirements.svg?branch=master\n:target: https://requires.io/github/erm0l0v/django-fake-model/requirements/?branch=master\n:alt: Requirements Status\n\n.. image:: https://codecov.io/github/erm0l0v/django-fake-model/coverage.svg?branch=master\n:target: https://codecov.io/github/erm0l0v/django-fake-model?branch=master\n\nSimple library for creating fake models in the unit tests.\n\nThis simple library allows to create fake models in your test without migrations, test apps and test tables in your base. All tables that you need will created/removed during the test.\n\nInstall\n-------\n\nInstall django-fake-model::\n\npip install django-fake-model\n\nQuickstart\n----------\n\nJust create a model in any file (Ex: in your test) and add decorator **@YourModel.fake_me** to test method or test class.\n\n.. code:: python\n\nfrom django_fake_model import models as f\nfrom django.db import models\nfrom django.test import TestCase, TransactionTestCase\n\n\nclass MyFakeModel(f.FakeModel):\n\nname = models.CharField(max_length=100)\n\n\n@MyFakeModel.fake_me\nclass MyFakeModelTests(TestCase):\n\ndef test_create_model(self):\nMyFakeModel.objects.create(name='123')\nmodel = MyFakeModel.objects.get(name='123')\nself.assertEqual(model.name, '123')\n\n\nclass MyFakeModelFunctionTest(TestCase):\n\n@MyFakeModel.fake_me\ndef test_create_model(self):\nMyFakeModel.objects.create(name='123')\nmodel = MyFakeModel.objects.get(name='123')\nself.assertEqual(model.name, '123')\n\n\nclass RelatedModel(f.FakeModel):\ntext = models.CharField(max_length=400)\n\n\nclass NyModel(f.FakeModel):\ntext = models.CharField(max_length=400)\nrelated_model = models.ForeignKey(RelatedModel)\n\n\n@NyModel.fake_me\n@RelatedModel.fake_me\nclass TestRelatedModelsClassDecorator(TransactionTestCase):\n\ndef test_create_models(self):\nrelated_model = RelatedModel()\nrelated_model.text = 'qwerty'\nrelated_model.save()\nmy_model = NyModel()\nmy_model.test = 'qwerty'\nmy_model.related_model = related_model\nmy_model.save()\nself.assertIsNotNone(my_model)\nself.assertIsNotNone(related_model)\n\n\nDevelopment:\n------------\n\nTo develop on this locally with `Docker`_, install the Docker Engine and\n`Docker Compose`_. Then you can build the Docker image and run the tests\non all tox activities(this also uses a shared pip cache to reduce download\ntimes)::\n\ndocker-compose up -d pg mysql\ndocker-compose run --rm test\n\nIf you wanna run just one Tox activity you can specify that as well::\n\ndocker-compose run --rm test tox -e py35-dj19-mysql-unittest\n\nIf you add any dependencies or change the tox configuration, you have\nto rebuild the image::\n\ndocker-compose build\n\nIt will share this folder with the Docker containers, so that\n\n\n.. _Docker: https://www.docker.com/\n.. _Docker Compose: https://docs.docker.com/compose/\n\n\nCookiecutter Tools Used in Making This Package\n----------------------------------------------\n\n*  cookiecutter\n*  cookiecutter-djangopackage\n\n\n\n\nHistory\n-------\n\n0.1.4 (2016-02-08)\n++++++++++++++++++\n\n* Fix class decorator `fake_me` for nose tests\n\n\n0.1.3 (2015-12-23)\n++++++++++++++++++\n\n* Fix issue #1 Multiple Fake Models. Thanks to Saul Shanabrook (@saulshanabrook)\n* Add support for developing with Docker. Thanks to Saul Shanabrook again\n\n0.1.2 (2015-11-13)\n++++++++++++++++++\n\n* Added Django 1.9 support\n* Added travis config generator\n* Added nose tests\n* Remove tests for Django master\n\n0.1.1 (2015-09-28)\n++++++++++++++++++\n\n* Added tests with different databases.\n\n0.1.0 (2015-09-16)\n++++++++++++++++++\n\n* First release on PyPI."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/erm0l0v/django-fake-model"
+
+[tool.setuptools]
+packages = [ "django_fake_model",]
+zip-safe = false
+include-package-data = true

@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imageio-ffmpeg"
+version = "0.6.0"
+description = "FFMPEG wrapper for Python"
+keywords = [ "video", "ffmpeg",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Science/Research", "Intended Audience :: Education", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Operating System :: MacOS :: MacOS X", "Operating System :: Microsoft :: Windows", "Operating System :: POSIX", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13",]
+requires-python = ">=3.9"
+dependencies = []
+[[project.authors]]
+name = "imageio contributors"
+email = "almar.klein@gmail.com"
+
+[project.license]
+text = "BSD-2-Clause"
+
+[project.readme]
+text = "FFMPEG wrapper for Python.\n\nNote that the platform-specific wheels contain the binary executable\nof ffmpeg, which makes this package around 60 MiB in size.\nI guess that's the cost for being able to read/write video files.\n\nFor Linux users: the above is not the case when installing via your\nLinux package manager (if that is possible), because this package would\nsimply depend on ffmpeg in that case."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/imageio/imageio-ffmpeg"
+Download = "http://pypi.python.org/pypi/imageio-ffmpeg"
+
+[tool.setuptools]
+packages = [ "imageio_ffmpeg", "imageio_ffmpeg.binaries",]
+zip-safe = false
+include-package-data = true
+platforms = [ "any",]
+provides = [ "imageio_ffmpeg",]
+
+[tool.setuptools.package-data]
+"imageio_ffmpeg.binaries" = [ "*.*",]

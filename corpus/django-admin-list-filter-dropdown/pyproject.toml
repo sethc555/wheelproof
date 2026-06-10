@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-admin-list-filter-dropdown"
+version = "1.0.3"
+description = "Use dropdowns in Django admin list filter"
+keywords = [ "django", "admin", "filter", "dropdown",]
+classifiers = [ "Environment :: Web Environment", "Framework :: Django", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Topic :: Internet :: WWW/HTTP", "Topic :: Internet :: WWW/HTTP :: Dynamic Content",]
+[[project.authors]]
+name = "Mart Sõmermaa"
+email = "mrts.pydev@gmail.com"
+
+[project.license]
+text = "MIT License"
+
+[project.readme]
+text = "Use dropdowns in Django admin list filter"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/mrts/django-admin-list-filter-dropdown"
+Download = "https://github.com/mrts/django-admin-list-filter-dropdown/archive/1.0.3.zip"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = false

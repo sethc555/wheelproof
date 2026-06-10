@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-loganalytics"
+version = "0.1.1"
+description = "Microsoft Azure Log Analytics Client Library for Python"
+license = {text = "MIT License"}
+authors = [
+    {name = "Microsoft Corporation", email = "azpysdkhelp@microsoft.com"},
+]
+classifiers = [
+    "Development Status :: 7 - Inactive",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "msrest>=0.5.0",
+    "azure-common~=1.1",
+    "azure-nspkg; python_version<'3.0'",
+]
+
+[project.readme]
+text = "## Microsoft Azure SDK for Python\n\nThis package is no longer being maintained. Please use our latest package [azure-monitor-query](https://pypi.org/project/azure-monitor-query/).\n\nA [migration guide](https://github.com/Azure/azure-sdk-for-python/blob/main/sdk/monitor/azure-monitor-query/migration_guide.md) has been provided for the same.\n\n![image](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-loganalytics%2FREADME.png)\n\n\n# Release History\n\n## 0.1.1 (2021-11-11)\n\n* This package is no longer maintained. Please use https://pypi.org/project/azure-monitor-query/\n\n## 0.1.0 (2018-07-11)\n\n* Initial Release\n"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/Azure/azure-sdk-for-python"
+
+[tool.distutils.bdist_wheel]
+universal = 1
+
+[tool.setuptools]
+include-package-data = false
+packages = [
+    "azure.loganalytics",
+    "azure.loganalytics.models",
+]

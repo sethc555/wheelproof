@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-common"
+version = "1.1.28"
+description = "Microsoft Azure Client Library for Python (Common)"
+readme = {text = "# Microsoft Azure SDK for Python\n\nThis is the Microsoft Azure common code.\n\nThis package provides shared code by the Azure packages.\n\nIf you are looking to install the Azure client libraries, refer to the main Github repository:\nhttps://github.com/Azure/azure-sdk-for-python\n\n\n![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-common%2FREADME.png)\n\n\n# Release History\n\n## 1.1.28 (2022-02-03)\n\n- Raise a NotImplementedError if trying to use CLI credentials were CLI version is higher than 2.21.0  #20657 #21313\n- Deprecate all methods that needs access to CLI code using azure-cli-core, since this package is no longer importable as public API\n\n## 1.1.27 (2021-03-23)\n\n- Deprecate JSON and auth file client factory  #15075\n- Add 2020-09-01-hybrid profile definition  #14642\n\n## 1.1.26 (2020-11-10)\n\n- get_client_from_cli_profile now supports azure-applicationinsights 0.1.0 package\n\n## 1.1.25 (2020-03-09)\n\n- get_client_from_cli_profile no longer requires \"azure-core\" if not necessary\n\n## 1.1.24 (2019-12-18)\n\n- get_client_from_cli_profile now supports KV 4.x, Storage 12.x, AppConfig and all packages based on azure-core\n\n## 1.1.23 (2019-06-24)\n\n- Add Monitor into Profile v2019_03_01_hybrid (requires azure-mgmt-monitor >= 0.7.0)\n\n## 1.1.22 (2019-06-06)\n\n- Fix KeyVaultClient support for get_client_from_auth_file\n\n## 1.1.21 (2019-05-21)\n\n- Fix compute support in profile v2019_03_01_hybrid\n\n## 1.1.20 (2019-04-30)\n\n- Add support for profile v2019_03_01_hybrid\n- Fix profile v2018_03_01_hybrid for DNS definition\n\n## 1.1.19 (2019-04-18)\n\n- Azure Stack support for get_client_from_auth_file and get_client_from_json_dict\n\n## 1.1.18 (2019-01-29)\n\n- Remove deprecated extra dependencies\n\n## 1.1.17 (2019-01-15)\n\n- Fix KeyVaultClient creation with get_client_from_cli_profile\n\nThanks to patrikn for the contribution\n\n## 1.1.16 (2018-09-26)\n\n- azure-nspkg is not installed anymore on Python 3 (PEP420-based namespace package)\n\n## 1.1.15 (2018-09-13)\n\n**Features**\n\n- Adding profile v2018-03-01-hybrid definition\n\n## 1.1.14 (2018-07-23)\n\n**Features**\n\n- Adding KeyVault to profile v2017_03_09_profile\n\n## 1.1.13 (2018-07-03)\n\n**Features**\n\n- get_azure_cli_credentials has a new parameter \"with_tenant\" to get default CLI tenant ID\n\n**Bugfixes**\n\n- get_client_from_cli_profile now supports the \"azure-graphrbac\" package #2867\n- get_client_from_auth_file now supports the \"azure-graphrbac\" package #2867\n\n## 1.1.12 (2018-05-29)\n\n**Features**\n\n- Add Authorization profile definition\n\n## 1.1.11 (2018-05-08)\n\n**Features**\n\n- Add support for \"resource\" in \"get_azure_cli_credentials\"\n\n## 1.1.10 (2018-04-30)\n\n**Bugfixes**\n\n- Fix MultiApiClientMixin.__init__ to be a real mixin\n\n## 1.1.9 (2018-04-03)\n\n**Features**\n\n- Add \"azure.profiles\" namespace #2247\n\n**Bugfixes**\n\n- get_client_from_cli_profile now supports Datalake #2318\n\n## 1.1.8 (2017-07-28)\n\n**Bugfix**\n\n- Fix get_client_from_auth_file and get_client_from_json_dict on Python 2.7\n\nThank you to @jayden-at-arista for the contribution.\n\n## 1.1.7 (2017-07-19)\n\n- Adds azure.common.client_factory.get_client_from_auth_file\n- Adds azure.common.client_factory.get_client_from_json_dict\n\n## 1.1.6 (2017-05-16)\n\n- Adds azure.common.client_factory.get_client_from_cli_profile\n\n## 1.1.5 (2017-04-11)\n\n- \"extra_requires\" autorest is deprecated and should not be used anymore\n- This wheel package is now built with the azure wheel extension\n\n## 1.1.4 (2016-05-25)\n\n- Support for msrest/msrestazure 0.4.x series\n- Drop support for msrest/msrestazure 0.3.x series\n\n## 1.1.3 (2016-04-26)\n\n- Support for msrest/msrestazure 0.3.x series\n- Drop support for msrest/msrestazure 0.2.x series\n\n## 1.1.2 (2016-03-28)\n\n- Support for msrest/msrestazure 0.2.x series\n- Drop support for msrest/msrestazure 0.1.x series\n\n## 1.1.1 (2016-03-07)\n\n- Move msrestazure depency as \"extra_requires\"\n\n## 1.1.0 (2016-03-04)\n\n- Support for msrest/msrestazure 0.1.x series\n- Adds alias from msrestazure.azure_active_directory.* to azure.common.credentials\n\n## 1.0.0 (2015-08-31)\n\nInitial release, extracted from azure==0.11.1\n", content-type = "text/markdown"}
+license = {text = "MIT License"}
+authors = [
+    {name = "Microsoft Corporation", email = "azpysdkhelp@microsoft.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = ["azure-nspkg; python_version<'3.0'"]
+
+[project.urls]
+Homepage = "https://github.com/Azure/azure-sdk-for-python"
+
+[tool.setuptools]
+packages = ["azure.common", "azure.profiles"]
+include-package-data = false
+
+[tool.distutils.bdist_wheel]
+universal = 1

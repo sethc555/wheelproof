@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ply"
+version = "3.11"
+description = "Python Lex & Yacc"
+classifiers = [ "Programming Language :: Python :: 3", "Programming Language :: Python :: 2",]
+[[project.authors]]
+name = "David Beazley"
+email = "dave@dabeaz.com"
+
+[[project.maintainers]]
+name = "David Beazley"
+email = "dave@dabeaz.com"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+text = "PLY is yet another implementation of lex and yacc for Python. Some notable\nfeatures include the fact that its implemented entirely in Python and it\nuses LALR(1) parsing which is efficient and well suited for larger grammars.\n\nPLY provides most of the standard lex/yacc features including support for empty\nproductions, precedence rules, error recovery, and support for ambiguous grammars.\n\nPLY is extremely easy to use and provides very extensive error checking.\nIt is compatible with both Python 2 and Python 3."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "http://www.dabeaz.com/ply/"
+
+[tool.setuptools]
+packages = [ "ply",]
+include-package-data = false

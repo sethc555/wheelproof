@@ -1,0 +1,37 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pytest-runner", "setuptools-scm",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aws_secretsmanager_caching"
+description = "Client-side AWS Secrets Manager caching library"
+keywords = [ "secretsmanager", "secrets", "manager", "development", "cache", "caching", "client",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7",]
+requires-python = ">3.5"
+dependencies = [ "botocore",]
+dynamic = [ "version",]
+[[project.authors]]
+name = "Amazon Web Services"
+email = "aws-secretsmanager-dev@amazon.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/aws/aws-secretsmanager-caching-python"
+
+[project.optional-dependencies]
+testing = [ "pytest", "pytest-cov", "pytest-sugar", "codecov",]
+
+[tool.setuptools]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = [ "src",]
+exclude = [ "test",]
+namespaces = false

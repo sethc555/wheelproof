@@ -1,0 +1,24 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pbr",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sarif_om"
+description = "Classes implementing the SARIF 2.1.0 object model."
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Intended Audience :: Developers", "Intended Audience :: Information Technology", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Topic :: Software Development :: Libraries :: Python Modules",]
+readme = "README.rst"
+requires-python = ">= 2.7"
+dependencies = [ "attrs", "pbr",]
+dynamic = [ "version",]
+[[project.authors]]
+name = "Microsoft Corporation"
+email = "v-lgold@microsoft.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/microsoft/sarif-python-om"
+
+[tool.setuptools]
+include-package-data = false

@@ -1,0 +1,22 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pbr",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aioresponses"
+description = "Mock out requests made by ClientSession from aiohttp package"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Operating System :: OS Independent", "Topic :: Internet :: WWW/HTTP", "Topic :: Software Development :: Testing", "Topic :: Software Development :: Testing :: Mocking", "License :: OSI Approved :: MIT License", "Natural Language :: English", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11",]
+readme = "README.rst"
+dynamic = [ "version",]
+[[project.authors]]
+name = "Pawel Nuckowski"
+email = "p.nuckowski@gmail.com"
+
+[project.urls]
+Homepage = "https://github.com/pnuckowski/aioresponses"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+aioresponses = [ "py.typed",]

@@ -1,0 +1,26 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lunardate"
+version = "0.2.2"
+description = "A Chinese Calendar Library in Pure Python"
+classifiers = [ "Development Status :: 4 - Beta", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "License :: OSI Approved :: GNU General Public License (GPL)", "Operating System :: OS Independent", "Topic :: Software Development :: Libraries :: Python Modules",]
+[[project.authors]]
+name = "LI Daobing"
+email = "lidaobing@gmail.com"
+
+[project.license]
+text = "GPLv3"
+
+[project.readme]
+text = "A Chinese Calendar Library in Pure Python\n=========================================\n\nChinese Calendar: http://en.wikipedia.org/wiki/Chinese_calendar\n\nUsage\n-----\n>>> LunarDate.fromSolarDate(1976, 10, 1)\nLunarDate(1976, 8, 8, 1)\n>>> LunarDate(1976, 8, 8, 1).toSolarDate()\ndatetime.date(1976, 10, 1)\n>>> LunarDate(1976, 8, 8, 1).year\n1976\n>>> LunarDate(1976, 8, 8, 1).month\n8\n>>> LunarDate(1976, 8, 8, 1).day\n8\n>>> LunarDate(1976, 8, 8, 1).isLeapMonth\nTrue\n\n>>> today = LunarDate.today()\n>>> type(today).__name__\n'LunarDate'\n\n>>> # support '+' and '-' between datetime.date and datetime.timedelta\n>>> ld = LunarDate(1976,8,8)\n>>> sd = datetime.date(2008,1,1)\n>>> td = datetime.timedelta(days=10)\n>>> ld-ld\ndatetime.timedelta(0)\n>>> (ld-sd).days\n-11444\n>>> ld-td\nLunarDate(1976, 7, 27, 0)\n>>> (sd-ld).days\n11444\n>>> ld+td\nLunarDate(1976, 8, 18, 0)\n>>> td+ld\nLunarDate(1976, 8, 18, 0)\n>>> ld2 = LunarDate.today()\n>>> ld < ld2\nTrue\n>>> ld <= ld2\nTrue\n>>> ld > ld2\nFalse\n>>> ld >= ld2\nFalse\n>>> ld == ld2\nFalse\n>>> ld != ld2\nTrue\n>>> ld == ld\nTrue\n>>> LunarDate.today() == LunarDate.today()\nTrue\n>>> before_leap_month = LunarDate.fromSolarDate(2088, 5, 17)\n>>> before_leap_month.year\n2088\n>>> before_leap_month.month\n4\n>>> before_leap_month.day\n27\n>>> before_leap_month.isLeapMonth\nFalse\n>>> leap_month = LunarDate.fromSolarDate(2088, 6, 17)\n>>> leap_month.year\n2088\n>>> leap_month.month\n4\n>>> leap_month.day\n28\n>>> leap_month.isLeapMonth\nTrue\n>>> after_leap_month = LunarDate.fromSolarDate(2088, 7, 17)\n>>> after_leap_month.year\n2088\n>>> after_leap_month.month\n5\n>>> after_leap_month.day\n29\n>>> after_leap_month.isLeapMonth\nFalse\n\n>>> LunarDate.leapMonthForYear(2023)\n2\n>>> LunarDate.leapMonthForYear(2022)\nNone\n\nLimits\n------\n\nthis library can only deal with year from 1900 to 2099 (in chinese calendar).\n\nSee also\n--------\n\n* lunar: http://packages.qa.debian.org/l/lunar.html,\nA converter written in C, this program is derived from it.\n* python-lunar: http://code.google.com/p/liblunar/\nAnother library written in C, including a python binding."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/lidaobing/python-lunardate"
+
+[tool.setuptools]
+py-modules = [ "lunardate",]
+include-package-data = false

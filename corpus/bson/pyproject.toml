@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bson"
+version = "0.5.10"
+description = "BSON codec for Python"
+keywords = [ "BSON", "codec",]
+classifiers = [ "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6",]
+dependencies = [ "python-dateutil>=2.4.0", "six>=1.9.0",]
+[[project.authors]]
+name = "Ayun Park"
+email = "iamparkayun@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+text = "Independent BSON codec for Python that doesn't depend on MongoDB."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "http://github.com/py-bson/bson"
+
+[tool.setuptools]
+packages = [ "bson",]
+platforms = [ "Any",]
+include-package-data = false

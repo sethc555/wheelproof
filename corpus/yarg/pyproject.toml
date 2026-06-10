@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yarg"
+version = "0.1.10"
+description = "A semi hard Cornish cheese, also queries PyPI (PyPI client)"
+keywords = [ "pypi", "client", "packages",]
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Natural Language :: English", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: System :: Archiving :: Packaging",]
+dependencies = [ "requests",]
+[[project.authors]]
+name = "Kura"
+email = "kura@kura.io"
+
+[[project.maintainers]]
+name = "Kura"
+email = "kura@kura.io"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "yarg(1) -- A semi hard Cornish cheese, also queries PyPI\n========================================================\n\n.. image:: https://img.shields.io/travis/kura/yarg.svg?style=flat\n\n.. image:: https://img.shields.io/coveralls/kura/yarg.svg?style=flat\n\nYarg is a PyPI client.\n\n.. code-block:: python\n\n>>> import yarg\n>>> package = yarg.get(\"yarg\")\n>>> package.name\nu'yarg'\n>>> package.author\nAuthor(name=u'Kura', email=u'kura@kura.io')\n\nFull documentation is at <https://yarg.readthedocs.org>.\n\nYarg is released under the `MIT license\n<https://github.com/kura/yarg/blob/master/LICENSE>`_. The `source code is on\nGitHub <https://github.com/kura/yarg>`_ and `issues are also tracked on\nGitHub <https://github.com/kura/yarg/issues>`_.\n\n\nRelease History\n===============\n\n0.1.10 (2024-08-09)\n- Python 3.12 support\n\n0.1.9 (2014-08-11)\n------------------\n\nSplatting bugs\n~~~~~~~~~~~~~~\n\n- Added `decode` call on the response object for Python 3 in\n`yarg.newest_packages` and `yarg.latest_updated_packages`.\n\n0.1.8 (2014-08-10)\n------------------\n\nSplatting bugs\n~~~~~~~~~~~~~~\n\n- Integration issue with Python 3, requests, yarg and JSON. Attempt to decode\nrequests response if decode attribute exists.\n\n0.1.6 & 0.1.7 (2014-08-10)\n--------------------------\n\nSplatting bugs\n~~~~~~~~~~~~~~\n\n- Bug in setup.py causing installs to fail for sdist (source) releases.\n\n0.1.5 (2014-08-10)\n------------------\n\nAPI changes\n~~~~~~~~~~~\n\n- Changed sort order of `yarg.package.Package.release_ids` to sort\nbased on the upload time of the release ID.\n\nSplatting bugs\n~~~~~~~~~~~~~~\n\n- `yarg.package.Package.latest_release_id` will now return the latest\nrelease ID from the PyPI info source, rather than the final list item in\n`yarg.package.Package.release_ids`.\n\nAddtionally `yarg.package.Package.latest_release` will do the same as\nit gets the latest release information from\n`yarg.package.Package.latest_release_id`.\n\n0.1.4 (2014-08-09)\n------------------\n\nAPI changes\n~~~~~~~~~~~\n\n- New method `yarg.newest_packages` for querying new packages\nfrom the PyPI RSS feed.\n- New method `yarg.latest_updated_packages` for querying\nthe latest updated packages from the PyPI RSS feed.\n\nOther\n~~~~~\n\n- Additional test coverage\n- Additional documentation coverage\n\n0.1.2 (2014-08-08)\n------------------\n\nBug fixes\n~~~~~~~~~\n\n- `yarg.get` will now raise an Exception for errors **including**\n300 and above. Previously only raised for above 300.\n- Fix an issue on Python 3.X and PyPy3 where\n`yarg.exceptions.HTTPError` was using a method that was\nremoved in Python 3.\n- Added dictionary key lookups for `home_page`, `bugtrack_url`\nand `docs_url`. Caused `KeyError` exceptions if they were not\nreturned by PyPI.\n\nOther\n~~~~~\n\n- More test coverage.\n\n0.1.1 (2014-08-08)\n------------------\n\nAPI changes\n~~~~~~~~~~~\n\n- New `yarg.package.Package` property `has_wheel`.\n- New `yarg.package.Package` property `has_egg`.\n- New `yarg.package.Package` property `has_source`.\n- New `yarg.package.Package` property `python_versions`.\n- New `yarg.package.Package` property `python_implementations`.\n- Added `yarg.exceptions.HTTPError` to `yarg.__init__`\nfor easier access.\n- Added `yarg.json2package` to `yarg.__init__` to expose it for\nuse.\n\n0.1.0 (2014-08-08)\n------------------\n\n- Initial release"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://yarg.readthedocs.org/"
+
+[tool.setuptools]
+zip-safe = true
+platforms = [ "linux",]
+provides = [ "yarg",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

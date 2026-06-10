@@ -1,0 +1,39 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ibm-cos-sdk"
+version = "2.16.2"
+description = "IBM SDK for Python"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Natural Language :: English", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14",]
+requires-python = ">= 3.8"
+dependencies = [ "ibm-cos-sdk-core==2.16.2", "ibm-cos-sdk-s3transfer==2.16.2", "jmespath>=0.10.0,<=1.0.1",]
+[[project.authors]]
+name = "IBM"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/ibm/ibm-cos-sdk-python"
+Documentation = "https://cloud.ibm.com/docs/cloud-object-storage?topic=cloud-object-storage-python"
+Source = "https://github.com/IBM/ibm-cos-sdk-python"
+
+[project.optional-dependencies]
+crt = [ "ibm_botocore[crt]>=1.21.0,<2.0a0",]
+
+[tool.setuptools]
+include-package-data = true
+script-files = []
+
+[tool.setuptools.package-data]
+ibm_boto3 = [ "data/aws/resources/*.json", "examples/*.rst",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests*",]
+namespaces = false

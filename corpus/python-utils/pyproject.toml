@@ -1,0 +1,57 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-utils"
+version = "3.9.1"
+description = "Python Utils is a module with some convenient utilities not included with the standard Python install"
+readme = "README.rst"
+classifiers = [ "License :: OSI Approved :: BSD License",]
+requires-python = ">=3.9.0"
+dependencies = [ "typing_extensions>3.10.0.2",]
+[[project.authors]]
+name = "Rick van Hattem"
+email = "Wolph@wol.ph"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "https://github.com/WoLpH/python-utils"
+
+[project.optional-dependencies]
+loguru = [ "loguru",]
+docs = [ "mock", "sphinx", "python-utils",]
+tests = [ "ruff", "pyright", "pytest", "pytest-cov", "pytest-mypy", "pytest-asyncio", "sphinx", "types-setuptools", "loguru", "loguru-mypy", "mypy-ipython", "blessings",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+python_utils = [ "py.typed",]
+
+[tool.setuptools.packages.find]
+exclude = [ "_python_utils_tests", "*.__pycache__",]
+namespaces = false
+
+[tool.black]
+line-length = 79
+target-version = ['py37', 'py38', 'py39', 'py310', 'py311']
+skip-string-normalization = true
+
+[tool.pyright]
+# include = ['python_utils']
+include = ['python_utils', '_python_utils_tests', 'setup.py']
+strict = ['python_utils', '_python_utils_tests', 'setup.py']
+# The terminal file is very OS specific and dependent on imports so we're skipping it from type checking
+ignore = ['python_utils/terminal.py']
+pythonVersion = '3.9'
+
+[tool.mypy]
+strict = true
+check_untyped_defs = true
+files = ['python_utils', '_python_utils_tests', 'setup.py']
+
+[[tool.mypy.overrides]]
+module = '_python_utils_tests.*'

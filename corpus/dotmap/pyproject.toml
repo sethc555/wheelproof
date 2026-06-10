@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dotmap"
+version = "1.3.30"
+description = "ordered, dynamically-expandable dot-access dictionary"
+keywords = [ "dict", "dot", "map", "order", "ordered", "ordereddict", "access", "dynamic",]
+classifiers = []
+[[project.authors]]
+name = "Chris Redford"
+email = "credford@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/drgrib/dotmap"
+Download = "https://github.com/drgrib/dotmap/tarball/1.0"
+
+[tool.setuptools]
+packages = [ "dotmap",]
+include-package-data = false

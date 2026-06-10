@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphframes"
+version = "0.6"
+description = "GraphFrames: DataFrame-based Graphs"
+keywords = [ "spark", "graphx", "for", "dataframe",]
+classifiers = [ "Development Status :: 3 - Alpha", "Intended Audience :: Developers", "Intended Audience :: Science/Research", "Topic :: Scientific/Engineering", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.5",]
+dependencies = [ "numpy", "nose",]
+[[project.authors]]
+name = "graphframes"
+email = "modeldb@csail.mit.edu"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "This is a package for DataFrame-based graphs on top of Apache Spark. Users can write highly expressive queries by leveraging the DataFrame API, combined with a new API for motif finding. The user also benefits from DataFrame performance optimizations within the Spark SQL engine."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/graphframes/graphframes"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "*.tests.*", "*.tests",]
+namespaces = false

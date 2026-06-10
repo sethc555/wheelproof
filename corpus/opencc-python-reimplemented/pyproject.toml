@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opencc-python-reimplemented"
+version = "0.1.7"
+description = "OpenCC made with Python"
+keywords = [ "chinese", "conversion",]
+classifiers = [ "Development Status :: 3 - Alpha", "Intended Audience :: Developers", "Topic :: Software Development :: Libraries", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.2", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5",]
+dependencies = []
+[[project.authors]]
+name = "Yichen Huang (Eugene)"
+email = "yichen0831@gmail.com"
+
+[project.license]
+text = "Apache License"
+
+[project.readme]
+text = "\ufeff# 開放中文轉換（Pure Python）\n\nOpen Chinese convert (OpenCC) in pure Python.\n\n\n[opencc-python](https://github.com/yichen0831/opencc-python) 是用純 Python 所寫，使用由 BYVoid(<byvoid.kcp@gmail.com>) 所開發的 [OpenCC](https://github.com/BYVoid/OpenCC) 中的字典檔案。\nopencc-python 可以支援 Python2.7 及 Python3.x。\n\n[opencc-python](https://github.com/yichen0831/opencc-python) is made by pure Python with the dictionary files of [OpenCC](https://github.com/BYVoid/OpenCC) which is developed by BYVoid(<byvoid.kcp@gmail.com>).\n\nopencc-python can run with Python2.7 and Python3.x.\n\n\n將 `opencc` 這個目錄複製到你正在開發的專案中即可，或是執行（需要管理者權限）：\n\n```sh\npython setup.py install\n```\n\n套件也可從 [PyPI](https://pypi.org/project/opencc-python-reimplemented/) 安裝，使用指令：\n\n```sh\npip install opencc-python-reimplemented\n```\n\nCopy the `opencc` folder to your project, or run (admin required)\n\n```sh\npython setup.py install\n```\n\nThe package can also be installed from [PyPI](https://pypi.org/project/opencc-python-reimplemented/) by issuing:\n\n```sh\npip install opencc-python-reimplemented\n```\n\n\n``` python\nfrom opencc import OpenCC\ncc = OpenCC('s2t')  # convert from Simplified Chinese to Traditional Chinese\nto_convert = '开放中文转换'\nconverted = cc.convert(to_convert)\n```\n\n```sh\nusage: python -m opencc [-h] [-i <file>] [-o <file>] [-c <conversion>]\n[--in-enc <encoding>] [--out-enc <encoding>]\n\noptional arguments:\n-h, --help            show this help message and exit\n-i <file>, --input <file>\nRead original text from <file>. (default: None = STDIN)\n-o <file>, --output <file>\nWrite converted text to <file>. (default: None = STDOUT)\n-c <conversion>, --config <conversion>\nConversion (default: None)\n--in-enc <encoding>   Encoding for input (default: UTF-8)\n--out-enc <encoding>  Encoding for output (default: UTF-8)\n\nexample with UTF-8 encoded file:\n\npython -m opencc -c s2t -i my_simplified_input_file.txt -o my_traditional_output_file.txt\n\nSee https://docs.python.org/3/library/codecs.html#standard-encodings for list of encodings.\n```\n\n\n* `hk2s`: Traditional Chinese (Hong Kong standard) to Simplified Chinese\n\n* `s2hk`: Simplified Chinese to Traditional Chinese (Hong Kong standard)\n\n* `s2t`: Simplified Chinese to Traditional Chinese\n\n* `s2tw`: Simplified Chinese to Traditional Chinese (Taiwan standard)\n\n* `s2twp`: Simplified Chinese to Traditional Chinese (Taiwan standard, with phrases)\n\n* `t2hk`: Traditional Chinese to Traditional Chinese (Hong Kong standard)\n\n* `t2s`: Traditional Chinese to Simplified Chinese\n\n* `t2tw`: Traditional Chinese to Traditional Chinese (Taiwan standard)\n\n* `tw2s`: Traditional Chinese (Taiwan standard) to Simplified Chinese\n\n* `tw2sp`: Traditional Chinese (Taiwan standard) to Simplified Chinese (with phrases)\n\n\n當轉換有兩個以上的字詞可能時，程式只會使用第一個。\n\nWhen there is more than one conversion available, only the first one is taken."
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/yichen0831/opencc-python"
+
+[tool.setuptools]
+packages = [ "opencc",]
+license-files = [ "LICENSE.txt",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+opencc = [ "README.md", "LICENSE.txt", "NOTICE.txt", "config/hk2s.json", "config/s2hk.json", "config/s2t.json", "config/s2tw.json", "config/s2twp.json", "config/t2hk.json", "config/t2s.json", "config/t2tw.json", "config/tw2s.json", "config/tw2sp.json", "dictionary/HKVariants.txt", "dictionary/HKVariantsPhrases.txt", "dictionary/HKVariantsRev.txt", "dictionary/HKVariantsRevPhrases.txt", "dictionary/JPVariants.txt", "dictionary/STCharacters.txt", "dictionary/STPhrases.txt", "dictionary/TSCharacters.txt", "dictionary/TSPhrases.txt", "dictionary/TWPhrases.txt", "dictionary/TWPhrasesRev.txt", "dictionary/TWVariants.txt", "dictionary/TWVariantsRev.txt", "dictionary/TWVariantsRevPhrases.txt",]

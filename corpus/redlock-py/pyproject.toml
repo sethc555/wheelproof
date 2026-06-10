@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "redlock-py"
+version = "1.0.8"
+description = "Redis locking mechanism"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.2", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4",]
+dependencies = [ "redis",]
+[[project.authors]]
+name = "pjdecoursey@spscommerce.com"
+email = "webapps@spscommerce.com"
+
+[project.readme]
+text = "redlock-py - Redis distributed locks in Python\n\nThis python lib implements the Redis-based distributed lock manager algorithm\n[described in this blog post](http://antirez.com/news/77).\n\nTo create a lock manager:\n\ndlm = Redlock([{\"host\": \"localhost\", \"port\": 6379, \"db\": 0}, ])\n\nTo acquire a lock:\n\nmy_lock = dlm.lock(\"my_resource_name\",1000)\n\nWhere the resource name is an unique identifier of what you are trying to lock\nand 1000 is the number of milliseconds for the validity time.\n\nThe returned value is `False` if the lock was not acquired (you may try again),\notherwise an namedtuple representing the lock is returned, having three fields:\n\n* validity, an integer representing the number of milliseconds the lock will be valid.\n* resource, the name of the locked resource as specified by the user.\n* key, a random value which is used to safe reclaim the lock.\n\nTo release a lock:\n\ndlm.unlock(my_lock)\n\nIt is possible to setup the number of retries (by default 3) and the retry\ndelay (by default 200 milliseconds) used to acquire the lock.\n\n\n**Disclaimer**: This code implements an algorithm which is currently a proposal,\nit was not formally analyzed. Make sure to understand how it works before using it\nin your production environments.\n\nThe MIT License (MIT)\n\nCopyright (c) 2014 SPS Commerce, Inc.\n\nPermission is hereby granted, free of charge, to any person obtaining a copy\nof this software and associated documentation files (the \"Software\"), to deal\nin the Software without restriction, including without limitation the rights\nto use, copy, modify, merge, publish, distribute, sublicense, and/or sell\ncopies of the Software, and to permit persons to whom the Software is\nfurnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in\nall copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\nIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\nFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\nAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\nLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\nOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\nTHE SOFTWARE."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/SPSCommerce/identity-service"
+
+[project.scripts]
+redlock = "redlock.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = false

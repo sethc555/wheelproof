@@ -1,0 +1,34 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyhocon"
+version = "0.3.63"
+description = "HOCON parser for Python"
+keywords = [ "hocon", "parser",]
+classifiers = [ "License :: OSI Approved :: Apache Software License", "Topic :: Software Development :: Libraries :: Python Modules", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12",]
+dependencies = [ "pyparsing>=3.0.0",]
+[[project.authors]]
+name = "Francois Dang Ngoc"
+email = "francois.dangngoc@gmail.com"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.readme]
+text = "pyhocon is a HOCON parser for Python. Additionally we provide a tool (pyhocon) to convert any HOCON content into json, yaml and properties format."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "http://github.com/chimpler/pyhocon/"
+
+[project.optional-dependencies]
+duration = [ "python-dateutil>=2.8.0",]
+
+[project.scripts]
+pyhocon = "pyhocon.tool:main"
+
+[tool.setuptools]
+packages = [ "pyhocon",]
+include-package-data = false

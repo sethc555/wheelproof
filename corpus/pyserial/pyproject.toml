@@ -1,0 +1,34 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyserial"
+version = "3.5"
+description = "Python Serial Port Extension"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Intended Audience :: End Users/Desktop", "License :: OSI Approved :: BSD License", "Natural Language :: English", "Operating System :: POSIX", "Operating System :: Microsoft :: Windows", "Operating System :: MacOS :: MacOS X", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Topic :: Communications", "Topic :: Software Development :: Libraries", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Terminals :: Serial",]
+[[project.authors]]
+name = "Chris Liechti"
+email = "cliechti@gmx.net"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+text = "Python Serial Port Extension for Win32, OSX, Linux, BSD, Jython, IronPython\n\nStable:\n\n- Documentation: http://pythonhosted.org/pyserial/\n- Download Page: https://pypi.python.org/pypi/pyserial\n\nLatest:\n\n- Documentation: http://pyserial.readthedocs.io/en/latest/\n- Project Homepage: https://github.com/pyserial/pyserial"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/pyserial/pyserial"
+
+[project.optional-dependencies]
+cp2110 = [ "hidapi",]
+
+[project.scripts]
+pyserial-miniterm = "serial.tools.miniterm:main"
+pyserial-ports = "serial.tools.list_ports:main"
+
+[tool.setuptools]
+packages = [ "serial", "serial.tools", "serial.urlhandler", "serial.threaded",]
+platforms = [ "any",]
+include-package-data = false

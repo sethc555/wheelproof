@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyandoc"
+version = "0.2.0"
+description = "Python wrapper for Pandoc - the universal document converter"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Natural Language :: English", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.0", "Programming Language :: Python :: 3.1", "Programming Language :: Python :: 3.2", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5",]
+dependencies = []
+[[project.authors]]
+name = "Kenneth Reitz"
+email = "me@kennethreitz.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "Pyandoc: a simple Pandoc wrapper for Python\n\n\nRequirements\n++++++++++++\n\n* Pandoc\n\n\nUsage\n+++++\n\nGet setup.\n\n.. code-block:: python\n\nimport pandoc\n\n\n\nLet's start with a Markdown document:\n\n.. code-block:: python\n\ndoc = pandoc.Document()\ndoc.markdown = '''\n\n* bullet point\n* more points\n* point with [link](http://kennethreitz.com)!\n'''\n\nNow let's convert that into a ReST document: ::\n\n>>> print doc.rst\n\nI am an H1 Tag\n==============\n\n\n-  bullet point\n-  more points\n-  point with `link <http://kennethreitz.com>`_!\n\nFormats available:\n- asciidoc\n- beamer\n- commonmark\n- context\n- docbook\n- doc- x\n- dokuwiki\n- dzslides\n- epub\n- epub3\n- fb2\n- haddock\n- html\n- html5\n- icml\n- json (pandoc's AST)\n- latex\n- man\n- markdown\n- markdown_github\n- markdown_mmd\n- markdown_phpextra\n- markdown_strict\n- mediawiki\n- native\n- odt\n- opendocument\n- opml\n- org\n- pdf\n- plain\n- revealjs\n- rst\n- rtf\n- s5,\n- slideous\n- slidy\n- texinfo\n- textile\n\nEnjoy.\n\n\nv 0.0.1 (01-02-2010)\n++++++++++++++++++++\n\n* Initial release"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "http://github.com/kennethreitz/pyandoc"
+
+[tool.setuptools]
+packages = [ "pandoc",]
+include-package-data = false

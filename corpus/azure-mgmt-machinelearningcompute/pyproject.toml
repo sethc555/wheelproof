@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-mgmt-machinelearningcompute"
+version = "0.4.1"
+description = "Microsoft Azure Machine Learning Compute Management Client Library for Python"
+readme = {text = "Microsoft Azure SDK for Python\n==============================\n\nThis is the Microsoft Azure Machine Learning Compute Management Client Library.\n\nAzure Resource Manager (ARM) is the next generation of management APIs that\nreplace the old Azure Service Management (ASM).\n\nThis package has been tested with Python 2.7, 3.4, 3.5 and 3.6.\n\nFor the older Azure Service Management (ASM) libraries, see\n`azure-servicemanagement-legacy <https://pypi.python.org/pypi/azure-servicemanagement-legacy>`__ library.\n\nFor a more complete set of Azure libraries, see the `azure <https://pypi.python.org/pypi/azure>`__ bundle package.\n\n\nCompatibility\n=============\n\n**IMPORTANT**: If you have an earlier version of the azure package\n(version < 1.0), you should uninstall it before installing this package.\n\nYou can check the version using pip:\n\n.. code:: shell\n\n    pip freeze\n\nIf you see azure==0.11.0 (or any version below 1.0), uninstall it first:\n\n.. code:: shell\n\n    pip uninstall azure\n\n\nUsage\n=====\n\nFor code examples, see `Machine Learning Compute Management\n<https://docs.microsoft.com/python/api/overview/azure/machinelearning>`__\non docs.microsoft.com.\n\n\nProvide Feedback\n================\n\nIf you encounter any bugs or have suggestions, please file an issue in the\n`Issues <https://github.com/Azure/azure-sdk-for-python/issues>`__\nsection of the project.\n\n\n.. :changelog:\n\nRelease History\n===============\n\n0.4.1 (2018-05-29)\n++++++++++++++++++\n\n**Bugfixes**\n\n- Compatibility of the sdist with wheel 0.31.0\n- msrestazure dependency version range\n\n0.4.0 (2018-01-02)\n++++++++++++++++++\n\n**Features**\n\n- Delete all resources associated with cluster with the optional deleteAll paramater.\n\n0.3.0 (2017-10-25)\n++++++++++++++++++\n\n**Features**\n\n- ACS orchestrator properties property is now optional.\n\n0.2.0 (2017-10-17)\n++++++++++++++++++\n\n**Features**\n\n- Kubernetes orchestrator service principal property is now optional.\n\n0.1.0 (2017-09-22)\n++++++++++++++++++\n\n**Features**\n\n- Initial private preview release.\n", content-type = "text/x-rst"}
+license = {text = "MIT License"}
+authors = [
+    {name = "Microsoft Corporation"},
+    {email = "azpysdkhelp@microsoft.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "msrestazure>=0.4.27,<2.0.0",
+    "azure-common~=1.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/Azure/azure-sdk-for-python"
+
+[tool.setuptools]
+packages = [
+    "azure",
+    "azure.mgmt",
+    "azure.mgmt.machinelearningcompute",
+    "azure.mgmt.machinelearningcompute.models",
+    "azure.mgmt.machinelearningcompute.operations",
+]
+include-package-data = false

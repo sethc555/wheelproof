@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ipaddress"
+version = "1.0.23"
+description = "IPv4/IPv6 manipulation library"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Natural Language :: English", "License :: OSI Approved :: Python Software Foundation License", "Programming Language :: Python", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.2", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6",]
+[[project.authors]]
+name = "Philipp Hagemeister"
+email = "phihag@phihag.de"
+
+[project.license]
+text = "Python Software Foundation License"
+
+[project.readme]
+text = "Port of the 3.3+ ipaddress module to 2.6, 2.7, 3.2"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/phihag/ipaddress"
+
+[tool.setuptools]
+py-modules = [ "ipaddress",]
+license-files = [ "LICENSE",]
+include-package-data = false

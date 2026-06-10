@@ -1,0 +1,42 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "typing"
+version = "3.10.0.0"
+description = "Type Hints for Python"
+keywords = [ "typing", "function", "annotations", "type", "hints", "hinting", "checking", "checker", "typehints", "typehinting", "typechecking", "backport",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Intended Audience :: Developers", "License :: OSI Approved :: Python Software Foundation License", "Operating System :: OS Independent", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.4", "Topic :: Software Development",]
+requires-python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <3.5"
+[[project.authors]]
+name = "Guido van Rossum"
+email = "jukka.lehtosalo@iki.fi"
+
+[[project.authors]]
+name = "Jukka Lehtosalo"
+
+[[project.authors]]
+name = "Łukasz Langa"
+
+[[project.authors]]
+name = "Ivan Levkivskyi"
+
+[project.license]
+text = "PSF"
+
+[project.readme]
+text = "Typing -- Type Hints for Python\n\nThis is a backport of the standard library typing module to Python\nversions older than 3.5.  (See note below for newer versions.)\n\nTyping defines a standard notation for Python function and variable\ntype annotations. The notation can be used for documenting code in a\nconcise, standard format, and it has been designed to also be used by\nstatic and runtime type checkers, static analyzers, IDEs and other\ntools.\n\nNOTE: in Python 3.5 and later, the typing module lives in the stdlib,\nand installing this package has NO EFFECT, because stdlib takes higher\nprecedence than the installation directory. To get a newer version of\nthe typing module in Python 3.5 or later, you have to upgrade to a\nnewer Python (bugfix) version.  For example, typing in Python 3.6.0 is\nmissing the definition of 'Type' -- upgrading to 3.6.2 will fix this.\n\nAlso note that most improvements to the typing module in Python 3.7\nwill not be included in this package, since Python 3.7 has some\nbuilt-in support that is not present in older versions (See PEP 560.)\n\nFor package maintainers, it is preferred to use\n``typing;python_version<\"3.5\"`` if your package requires it to support\nearlier Python versions. This will avoid shadowing the stdlib typing\nmodule when your package is installed via ``pip install -t .`` on\nPython 3.5 or later."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://docs.python.org/3/library/typing.html"
+Source = "https://github.com/python/typing"
+
+[tool.setuptools]
+py-modules = [ "typing",]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+"" = "src"

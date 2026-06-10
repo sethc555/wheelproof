@@ -1,0 +1,23 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "watchdog_gevent"
+version = "0.2.1"
+description = "A gevent-based observer for watchdog."
+dependencies = [ "gevent>=1.1", "watchdog>=4.0",]
+[[project.authors]]
+name = "Bogdan Popa"
+email = "bogdan@defn.io"
+
+[project.readme]
+text = "Visit https://github.com/Bogdanp/watchdog_gevent for more information."
+content-type = "text/plain"
+
+[project.optional-dependencies]
+dev = [ "bumpversion", "flake8", "flake8-quotes", "pytest", "pytest-cov", "twine",]
+
+[tool.setuptools]
+packages = [ "watchdog_gevent",]
+include-package-data = true

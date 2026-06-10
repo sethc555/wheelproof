@@ -3,5 +3,5 @@
   "version": "0.3.0",
   "sdist_url": "https://files.pythonhosted.org/packages/cb/a2/57f4ac79838cfae6912f997b4d1a64a858fb0c86d7fcaae6f7b58d267fca/click-repl-0.3.0.tar.gz",
   "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-9oshctdh/click-repl-0.3.0-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-9oshctdh/click-repl-0.3.0-converted/pyproject.toml: Cannot declare ('build-system',) twice (at line 39, column 14) \n"
+  "detail": "wheel build failed for /tmp/wheelproof-bc-d_jyp5lf/click-repl-0.3.0-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip ||| wheel build failed for /tmp/wheelproof-bc-d_jyp5lf/click-repl-0.3.0-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-d_jyp5lf/click-repl-0.3.0-converted/pyproject.toml: Cannot declare ('build-system',) twice (at line 37, column 14) \n"
 }

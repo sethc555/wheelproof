@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google"
+version = "3.0.0"
+description = "Python bindings to the Google search engine."
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Environment :: Console", "Programming Language :: Python", "Topic :: Software Development :: Libraries :: Python Modules",]
+dependencies = [ "beautifulsoup4",]
+[[project.authors]]
+name = "Mario Vilas"
+email = "mvilas@gmail.com"
+
+[project.urls]
+Homepage = "http://breakingcode.wordpress.com/"
+
+[tool.setuptools]
+packages = [ "googlesearch",]
+include-package-data = true
+script-files = [ "scripts/google",]
+provides = [ "googlesearch",]
+
+[tool.setuptools.package-data]
+googlesearch = [ "user_agents.txt.gz",]

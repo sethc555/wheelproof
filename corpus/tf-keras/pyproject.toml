@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tf_keras"
+version = "2.21.0"
+description = "Deep learning for humans."
+keywords = [ "keras", "tensorflow", "machine learning", "deep learning",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Intended Audience :: Education", "Intended Audience :: Science/Research", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3 :: Only", "Topic :: Scientific/Engineering", "Topic :: Scientific/Engineering :: Mathematics", "Topic :: Scientific/Engineering :: Artificial Intelligence", "Topic :: Software Development", "Topic :: Software Development :: Libraries", "Topic :: Software Development :: Libraries :: Python Modules",]
+requires-python = ">=3.10"
+dependencies = [ "tensorflow>=2.21, <2.22",]
+[[project.authors]]
+name = "Keras team"
+email = "keras-users@googlegroups.com"
+
+[project.license]
+text = "Apache 2.0"
+
+[project.readme]
+text = "TF-Keras is a deep learning API written in Python,\nrunning on top of the machine learning platform TensorFlow.\n\nIt was developed with a focus on enabling fast experimentation and\nproviding a delightful developer experience.\nThe purpose of TF-Keras is to give an *unfair advantage* to any developer\nlooking to ship ML-powered apps."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://keras.io/"
+Download = "https://github.com/keras-team/tf-keras/tags"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

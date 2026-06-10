@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "imagesize"
+version = "2.0.0"
+description = "Get image size from headers (BMP/PNG/JPEG/JPEG2000/GIF/TIFF/SVG/Netpbm/WebP/AVIF/HEIC/HEIF)"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Operating System :: OS Independent", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Multimedia :: Graphics",]
+requires-python = ">=3.10,<3.15"
+[[project.authors]]
+name = "Yoshiki Shibukawa"
+email = "yoshiki@shibu.jp"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "It parses image files' header and return image size.\n\n* BMP\n* PNG\n* JPEG\n* JPEG2000\n* GIF\n* TIFF\n* SVG\n* Netpbm\n* WebP\n* AVIF\n* HEIC/HEIF\n\nThis is a pure Python library."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/shibukawa/imagesize_py"
+
+[tool.setuptools]
+packages = [ "imagesize",]
+include-package-data = false

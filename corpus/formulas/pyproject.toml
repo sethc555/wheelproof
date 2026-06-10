@@ -1,0 +1,46 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "formulas"
+version = "1.3.4"
+description = "Parse and compile Excel formulas and workbooks in python code."
+keywords = [ "python", "utility", "library", "excel", "formulas", "processing", "calculation", "dependencies", "resolution", "scientific", "engineering", "dispatch", "compiling",]
+classifiers = [ "Programming Language :: Python", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: Implementation :: CPython", "Development Status :: 5 - Production/Stable", "Natural Language :: English", "Intended Audience :: Developers", "Intended Audience :: Science/Research", "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)", "Operating System :: MacOS :: MacOS X", "Operating System :: Microsoft :: Windows", "Operating System :: POSIX", "Operating System :: Unix", "Operating System :: OS Independent", "Topic :: Scientific/Engineering", "Topic :: Scientific/Engineering :: Information Analysis", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Utilities",]
+dependencies = [ "click", "regex", "schedula>=1.4.1", "numpy>=1.15", "python-dateutil", "numpy-financial", "scipy", "tqdm",]
+[[project.authors]]
+name = "Vincenzo Arcidiacono"
+email = "vinci1it2000@gmail.com"
+
+[project.license]
+text = "EUPL 1.1+"
+
+[project.urls]
+Homepage = "https://github.com/vinci1it2000/formulas"
+Download = "https://github.com/vinci1it2000/formulas/tarball/v1.3.4"
+Documentation = "http://formulas.readthedocs.io"
+"Issue tracker" = "https://github.com/vinci1it2000/formulas/issues"
+Donate = "https://donorbox.org/formulas"
+
+[project.optional-dependencies]
+excel = [ "openpyxl", "dictdiffer", "ezodf", "lxml",]
+plot = [ "graphviz", "regex", "flask", "Pygments", "jinja2", "docutils",]
+cli = [ "openpyxl", "dictdiffer", "ezodf", "lxml", "click", "click_log", "flask",]
+all = [ "Pygments", "click", "click_log", "dictdiffer", "docutils", "ezodf", "flask", "graphviz", "jinja2", "lxml", "openpyxl", "regex",]
+dev = [ "Pygments", "click", "click_log", "dictdiffer", "docutils", "ezodf", "flask", "graphviz", "jinja2", "lxml", "openpyxl", "regex", "wheel", "sphinx>=7.2", "gitchangelog", "mako", "sphinx_rtd_theme", "setuptools>=36.0.1", "sphinxcontrib-restbuilder", "coveralls", "ddt", "twine", "sphinx_click",]
+testing = [ "ddt", "dill", "openpyxl", "click",]
+
+[project.scripts]
+formulas = "formulas.cli:cli"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"formulas.functions" = [ "*.json",]
+"formulas.gui" = [ "*",]
+
+[tool.setuptools.packages.find]
+exclude = [ "test", "test.*", "doc", "doc.*", "binder", "requirements",]
+namespaces = false

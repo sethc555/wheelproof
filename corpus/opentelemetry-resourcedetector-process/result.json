@@ -3,5 +3,5 @@
   "version": "0.3.0",
   "sdist_url": "https://files.pythonhosted.org/packages/46/c1/ad691893544068a008f94e0dcc39e641adf6c9ccaf13414f23c1ffbe5bbf/opentelemetry-resourcedetector-process-0.3.0.tar.gz",
   "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-l53t4l9r/opentelemetry-resourcedetector-process-0.3.0-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-l53t4l9r/opentelemetry-resourcedetector-process-0.3.0-converted/pyproject.toml: Cannot declare ('build-system',) twice (at line 44, column 14) \n"
+  "detail": "wheel build failed for /tmp/wheelproof-bc-6lz8usxf/opentelemetry-resourcedetector-process-0.3.0-converted\n--- stdout ---\n\n--- stderr ---\n* Creating is ||| wheel build failed for /tmp/wheelproof-bc-6lz8usxf/opentelemetry-resourcedetector-process-0.3.0-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-6lz8usxf/opentelemetry-resourcedetector-process-0.3.0-converted/pyproject.toml: Cannot declare ('build-system',) twice (at line 43, column 14) \n"
 }

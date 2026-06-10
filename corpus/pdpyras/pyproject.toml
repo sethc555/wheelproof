@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdpyras"
+version = "5.4.1"
+description = "PagerDuty Python REST API Sessions.\n\nDEPRECATED; please use \"pagerduty\" instead: https://pypi.org/project/pagerduty/"
+requires-python = ">=3.6"
+dependencies = [ "requests", "urllib3",]
+[[project.authors]]
+name = "PagerDuty"
+email = "support@pagerduty.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "A basic REST API client for PagerDuty based on Requests' Session class"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://pagerduty.github.io/pdpyras"
+Download = "https://pypi.org/project/pdpyras/"
+
+[tool.setuptools]
+py-modules = [ "pdpyras",]
+include-package-data = false

@@ -1,0 +1,48 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "schedula"
+version = "1.6.15"
+description = "Produce a plan that dispatches calls based on a graph of functions, satisfying data dependencies."
+keywords = [ "flow-based programming", "dataflow", "parallel", "asynchronous", "async", "scheduling", "dispatch", "functional programming", "dataflow programming",]
+classifiers = [ "Programming Language :: Python", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: Implementation :: CPython", "Development Status :: 5 - Production/Stable", "Natural Language :: English", "Intended Audience :: Developers", "Intended Audience :: Science/Research", "License :: OSI Approved :: European Union Public Licence 1.1 (EUPL 1.1)", "Operating System :: MacOS :: MacOS X", "Operating System :: Microsoft :: Windows", "Operating System :: POSIX", "Operating System :: Unix", "Operating System :: OS Independent", "Topic :: Scientific/Engineering", "Topic :: Scientific/Engineering :: Information Analysis", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Utilities",]
+dependencies = []
+[[project.authors]]
+name = "Vincenzo Arcidiacono"
+email = "vinci1it2000@gmail.com"
+
+[project.license]
+text = "EUPL 1.1+"
+
+[project.urls]
+Homepage = "https://github.com/vinci1it2000/schedula"
+Download = "https://github.com/vinci1it2000/schedula/tarball/v1.6.15"
+Documentation = "https://schedula.readthedocs.io"
+"Issue tracker" = "https://github.com/vinci1it2000/schedula/issues"
+
+[project.optional-dependencies]
+io = [ "dill!=0.2.7",]
+web = [ "requests", "regex", "flask",]
+parallel = [ "multiprocess",]
+plot = [ "requests", "graphviz>=0.17", "regex", "flask", "Pygments", "jinja2", "docutils",]
+form = [ "requests", "regex", "flask", "itsdangerous", "flask-sqlalchemy", "sqlalchemy", "docutils", "flask-babel", "flask-wtf", "flask-admin", "flask-principal", "asteval", "click", "gunicorn", "click_log", "sherlock", "flask-mail", "flask-security[common]>=5.6.0", "boto3", "casbin", "celery", "sqlalchemy_adapter", "pydash", "apprise", "flask-socketio", "mongo_schema", "flask_caching", "filelock", "jsonschema", "flask-pymongo", "fasteners", "python-dateutil", "stripe", "sqlalchemy-file",]
+sphinx = [ "sphinx>=9.0.4", "sphinx-click", "requests", "graphviz>=0.17", "regex", "flask", "Pygments", "jinja2", "docutils",]
+all = [ "Pygments", "apprise", "asteval", "boto3", "casbin", "celery", "click", "click_log", "dill!=0.2.7", "docutils", "fasteners", "filelock", "flask", "flask-admin", "flask-babel", "flask-mail", "flask-principal", "flask-pymongo", "flask-security[common]>=5.6.0", "flask-socketio", "flask-sqlalchemy", "flask-wtf", "flask_caching", "graphviz>=0.17", "gunicorn", "itsdangerous", "jinja2", "jsonschema", "mongo_schema", "multiprocess", "pydash", "python-dateutil", "regex", "requests", "sherlock", "sphinx-click", "sphinx>=9.0.4", "sqlalchemy", "sqlalchemy-file", "sqlalchemy_adapter", "stripe",]
+dev = [ "Pygments", "apprise", "asteval", "boto3", "casbin", "celery", "click", "click_log", "dill!=0.2.7", "docutils", "fasteners", "filelock", "flask", "flask-admin", "flask-babel", "flask-mail", "flask-principal", "flask-pymongo", "flask-security[common]>=5.6.0", "flask-socketio", "flask-sqlalchemy", "flask-wtf", "flask_caching", "graphviz>=0.17", "gunicorn", "itsdangerous", "jinja2", "jsonschema", "mongo_schema", "multiprocess", "pydash", "python-dateutil", "regex", "requests", "sherlock", "sphinx-click", "sphinx>=9.0.4", "sqlalchemy", "sqlalchemy-file", "sqlalchemy_adapter", "stripe", "wheel", "sphinx>=9.0.4", "gitchangelog", "mako", "sphinx_rtd_theme", "setuptools>=36.0.1", "sphinxcontrib-restbuilder", "coveralls", "polib", "requests", "readthedocs-sphinx-ext", "twine", "ddt", "pytest", "httpx", "pymongo", "numpy", "pymoo", "testcontainers[mongodb]", "testcontainers[mysql]", "PyMySQL", "translators", "livereload>=2.6.3",]
+testing = [ "requests", "cryptography", "ddt", "pytest", "httpx", "pymongo", "numpy", "pymoo", "testcontainers[mongodb]", "testcontainers[mysql]", "PyMySQL",]
+
+[project.scripts]
+schedula = "schedula.cli:cli"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"schedula.utils.drw" = [ "templates/*", "index/js/*", "index/css/*", "viz/*",]
+"schedula.utils.form" = [ "server/locale/translations/**/antd.po", "server/locale/translations/**/*.mo", "server/security/casbin/model.conf", "server/openapi/**/*", "static/schedula/forms/*", "static/schedula/**/*.gz", "static/schedula/**/*.LICENSE.txt", "templates/**/*", "sample/.babelrc", "sample/*.*", "sample/src/**/*",]
+
+[tool.setuptools.packages.find]
+exclude = [ "doc", "doc.*", "tests", "tests.*", "examples", "examples.*", "micropython", "micropython.*", "requirements", "binder", "bin", "schedula.utils.form.react", "schedula.utils.form.react.*", "schedula.utils.form.server.bin", "schedula.utils.form.server.bin.*",]
+namespaces = false
