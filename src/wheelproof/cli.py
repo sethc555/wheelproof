@@ -37,6 +37,18 @@ def main(argv: list[str] | None = None) -> int:
     p_summary = sub.add_parser("summary", help="markdown summary of a batch JSONL file")
     p_summary.add_argument("results", type=Path)
 
+    p_bc = sub.add_parser(
+        "batch-convert",
+        help="convert+verify every high-severity package from a scan JSONL into a corpus dir",
+    )
+    p_bc.add_argument("results", type=Path)
+    p_bc.add_argument("--corpus", type=Path, default=Path("corpus"))
+    p_bc.add_argument("--workers", type=int, default=2)
+    p_bc.add_argument("--limit", type=int)
+
+    p_cs = sub.add_parser("corpus-summary", help="markdown summary of a corpus dir")
+    p_cs.add_argument("corpus", type=Path)
+
     args = parser.parse_args(argv)
 
     if args.command == "scan":
@@ -114,6 +126,21 @@ def main(argv: list[str] | None = None) -> int:
             print(f"error: {args.results} not found", file=sys.stderr)
             return 1
         print(batch.summarize(args.results))
+        return 0
+
+    if args.command == "batch-convert":
+        from . import batchconvert
+
+        if not args.results.exists():
+            print(f"error: {args.results} not found", file=sys.stderr)
+            return 1
+        batchconvert.run(args.results, args.corpus, workers=args.workers, limit=args.limit)
+        return 0
+
+    if args.command == "corpus-summary":
+        from . import batchconvert
+
+        print(batchconvert.summarize(args.corpus))
         return 0
 
     return 1

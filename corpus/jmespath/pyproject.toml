@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jmespath"
+version = "1.1.0"
+description = "JSON Matching Expressions"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Natural Language :: English", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy",]
+requires-python = ">=3.9"
+
+[[project.authors]]
+name = "James Saryerwinnie"
+email = "js@jamesls.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/jmespath/jmespath.py"
+
+[tool.setuptools]
+script-files = [ "bin/jp.py",]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

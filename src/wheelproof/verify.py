@@ -69,9 +69,15 @@ class Report:
         )
 
 
+BUILD_TIMEOUT = 600  # seconds per wheel build; unsupervised runs must not hang
+
+
 def build_wheel(srcdir: Path, outdir: Path) -> Path:
     cmd = [sys.executable, "-m", "build", "--wheel", "--outdir", str(outdir), str(srcdir)]
-    proc = subprocess.run(cmd, capture_output=True, text=True)
+    try:
+        proc = subprocess.run(cmd, capture_output=True, text=True, timeout=BUILD_TIMEOUT)
+    except subprocess.TimeoutExpired:
+        raise BuildError(f"wheel build timed out after {BUILD_TIMEOUT}s for {srcdir}")
     if proc.returncode != 0:
         raise BuildError(
             f"wheel build failed for {srcdir}\n--- stdout ---\n{proc.stdout}\n--- stderr ---\n{proc.stderr}"

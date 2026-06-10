@@ -1,0 +1,70 @@
+{
+  "package": "jmespath",
+  "version": "1.1.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/d3/59/322338183ecda247fb5d1763a6cbe46eff7222eaeebafd9fa65d4bf5cb11/jmespath-1.1.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "James Saryerwinnie"
+      ],
+      [
+        "author-email",
+        "js@jamesls.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/jmespath/jmespath.py"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "James Saryerwinnie <js@jamesls.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/jmespath/jmespath.py"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

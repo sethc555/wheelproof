@@ -41,9 +41,13 @@ def _py2cfg(setup_py: Path) -> str:
     env = dict(os.environ)
     # setup.py often imports its own package for __version__
     env["PYTHONPATH"] = str(setup_py.parent.resolve()) + os.pathsep + env.get("PYTHONPATH", "")
-    proc = subprocess.run(
-        cmd + [setup_py.name], capture_output=True, text=True, cwd=setup_py.parent, env=env
-    )
+    try:
+        proc = subprocess.run(
+            cmd + [setup_py.name],
+            capture_output=True, text=True, cwd=setup_py.parent, env=env, timeout=120,
+        )
+    except subprocess.TimeoutExpired:
+        raise ConvertError(f"setuptools-py2cfg timed out on {setup_py}")
     if proc.returncode != 0 or not proc.stdout.strip():
         raise ConvertError(
             f"setuptools-py2cfg failed on {setup_py} (dynamic setup.py? flag as manual)\n{proc.stderr}"
