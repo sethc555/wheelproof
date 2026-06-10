@@ -1,5 +1,12 @@
 # wheelproof roadmap
 
+> **PAUSED 2026-06-09 — resume here:** Phase 3 batch mode. Run convert across the
+> 1,153 high-severity packages from results/top.jsonl (filter `at_risk` + any
+> high finding), count the verify pass rate. That number — "N of 1,153 doomed
+> packages convert mechanically with proof" — is the headline for any writeup
+> and the seed of the Phase 4 corpus. Everything below Phase 3's first checkbox
+> is built and tested; .venv has build/ini2toml/setuptools-py2cfg/toml.
+
 Context: setuptools retries its deprecated-config removal in 2026
 (https://www.clientserver.dev/p/setuptools-follows-through-on-a-deprecation,
 https://setuptools.pypa.io/en/latest/history.html). pkg_resources removal slated from
