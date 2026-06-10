@@ -1,0 +1,44 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django_celery_results"
+version = "2.6.0"
+description = "Celery result backends for Django."
+keywords = [ "celery", "django", "database", "result", "backend",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "License :: OSI Approved :: BSD License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Framework :: Django", "Framework :: Django :: 3.2", "Framework :: Django :: 4.1", "Framework :: Django :: 4.2", "Framework :: Django :: 5.0", "Framework :: Django :: 5.1", "Framework :: Django :: 5.2", "Operating System :: OS Independent", "Topic :: Communications", "Topic :: System :: Distributed Computing", "Topic :: Software Development :: Libraries :: Python Modules",]
+dependencies = [ "celery>=5.2.7,<6.0", "Django>=3.2.25",]
+
+[[project.authors]]
+name = "Asif Saif Uddin"
+email = "auvipy@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/celery/django-celery-results"
+Documentation = "https://django-celery-results.readthedocs.io/en/latest/"
+Changelog = "https://django-celery-results.readthedocs.io/en/latest/changelog.html"
+Repository = "https://github.com/celery/django-celery-results"
+
+[project.optional-dependencies]
+testing = [ "pytest>=6.2.5,<8", "pytest-django>=4.5.2", "pytest-benchmark", "pytz", "psycopg2cffi", "psycopg", "Django>=3.2,<6.0", "psycopg>=3.1.8",]
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+platforms = [ "any",]
+
+[project.entry-points."celery.result_backends"]
+django-db = "django_celery_results.backends:DatabaseBackend"
+django-cache = "django_celery_results.backends:CacheBackend"
+
+[tool.setuptools.packages.find]
+exclude = [ "ez_setup", "t", "t.*",]
+namespaces = false

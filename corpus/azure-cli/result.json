@@ -5,10 +5,7 @@
   "status": "verify-fail",
   "detail": {
     "payload_only_original": [
-      "azure/cli/__main__.py",
-      "azure/cli/command_modules/botservice/typescript.web.config",
-      "azure/cli/command_modules/botservice/web.config",
-      "azure/cli/command_modules/mysql/random/nouns.txt"
+      "azure/cli/__main__.py"
     ],
     "payload_only_converted": [],
     "payload_changed": [],

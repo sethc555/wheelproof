@@ -1,0 +1,41 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oauthlib"
+version = "3.3.1"
+description = "A generic, spec-compliant, thorough implementation of the OAuth request-signing logic"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Web Environment", "Intended Audience :: Developers", "Operating System :: MacOS", "Operating System :: POSIX", "Operating System :: POSIX :: Linux", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: Implementation", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Software Development :: Libraries :: Python Modules",]
+requires-python = ">=3.8"
+
+[[project.authors]]
+name = "The OAuthlib Community"
+
+[[project.maintainers]]
+name = "Jonathan Huot"
+email = "jonathan.huot@gmail.com"
+
+[project.license]
+text = "BSD-3-Clause"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/oauthlib/oauthlib"
+
+[project.optional-dependencies]
+rsa = [ "cryptography>=3.0.0",]
+signedtoken = [ "cryptography>=3.0.0", "pyjwt>=2.0.0,<3",]
+signals = [ "blinker>=1.4.0",]
+
+[tool.setuptools]
+platforms = [ "any",]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "docs", "examples", "tests", "tests.*",]
+namespaces = false

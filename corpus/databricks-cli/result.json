@@ -2,11 +2,87 @@
   "package": "databricks-cli",
   "version": "0.18.0",
   "sdist_url": "https://files.pythonhosted.org/packages/c7/6c/ee7a98f22ba6e4d39cdf7f3a7cd9461fcc562625ccbca58d94bf35fe598b/databricks-cli-0.18.0.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [],
-    "payload_only_converted": [],
-    "payload_changed": [],
-    "entry_points_changed": true
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Andrew Chen"
+      ],
+      [
+        "author-email",
+        "andrewchen@databricks.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/databricks/databricks-cli"
+      ],
+      [
+        "keywords",
+        "databricks cli"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Andrew Chen <andrewchen@databricks.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "databricks,cli"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/databricks/databricks-cli"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
   }
 }

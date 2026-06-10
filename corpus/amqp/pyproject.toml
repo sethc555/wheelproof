@@ -1,0 +1,45 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "amqp"
+version = "5.3.1"
+description = "Low-level AMQP client for Python (fork of amqplib)."
+keywords = [ "amqp", "rabbitmq", "cloudamqp", "messaging",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Programming Language :: Python", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "License :: OSI Approved :: BSD License", "Intended Audience :: Developers", "Operating System :: OS Independent",]
+requires-python = ">=3.6"
+dependencies = [ "vine>=5.0.0,<6.0.0",]
+
+[[project.authors]]
+name = "Barry Pederson"
+email = "auvipy@gmail.com"
+
+[[project.maintainers]]
+name = "Asif Saif Uddin"
+
+[[project.maintainers]]
+name = "Matus Valo"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "http://github.com/celery/py-amqp"
+
+[project.optional-dependencies]
+testing = [ "pytest>=6.2.5,<=8.0.0", "pytest-sugar>=0.9.1", "pytest-rerunfailures>=6.0",]
+
+[tool.setuptools]
+zip-safe = false
+platforms = [ "any",]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "ez_setup", "t", "t.*",]
+namespaces = false

@@ -2,27 +2,101 @@
   "package": "billiard",
   "version": "4.2.4",
   "sdist_url": "https://files.pythonhosted.org/packages/58/23/b12ac0bcdfb7360d664f40a00b1bda139cbbbced012c34e375506dbd0143/billiard-4.2.4.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [],
-    "payload_only_converted": [
-      "t/__init__.py",
-      "t/integration/__init__.py",
-      "t/integration/setup.py",
-      "t/integration/tests/__init__.py",
-      "t/integration/tests/test_multiprocessing.py",
-      "t/skip.py",
-      "t/unit/__init__.py",
-      "t/unit/test_common.py",
-      "t/unit/test_dummy.py",
-      "t/unit/test_einfo.py",
-      "t/unit/test_package.py",
-      "t/unit/test_pool.py",
-      "t/unit/test_spawn.py",
-      "t/unit/test_values.py",
-      "t/unit/test_win32.py"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "R Oudkerk / Python Software Foundation"
+      ],
+      [
+        "author-email",
+        "python-dev@python.org"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/celery/billiard"
+      ],
+      [
+        "keywords",
+        "multiprocessing pool process"
+      ],
+      [
+        "maintainer",
+        "Asif Saif Uddin"
+      ],
+      [
+        "maintainer-email",
+        "auvipy@gmail.com"
+      ]
     ],
-    "payload_changed": [],
-    "entry_points_changed": false
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "R Oudkerk / Python Software Foundation <python-dev@python.org>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "multiprocessing,pool,process"
+      ],
+      [
+        "maintainer-email",
+        "Asif Saif Uddin <auvipy@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/celery/billiard"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
   }
 }

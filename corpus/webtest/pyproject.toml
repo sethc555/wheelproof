@@ -1,0 +1,42 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "WebTest"
+version = "3.0.7"
+description = "Helper to test WSGI applications"
+keywords = [ "wsgi", "test", "unit", "tests", "web",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Framework :: Paste", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Topic :: Internet :: WWW/HTTP :: WSGI", "Topic :: Internet :: WWW/HTTP :: WSGI :: Server", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12",]
+requires-python = ">=3.9"
+dependencies = [ "WebOb>=1.2", "waitress>=3.0.2", "beautifulsoup4",]
+
+[[project.authors]]
+name = "Ian Bicking"
+
+[[project.maintainers]]
+name = "Gael Pasgrimaud"
+email = "gael@gawel.org"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://docs.pylonsproject.org/projects/webtest/en/latest/"
+
+[project.optional-dependencies]
+tests = [ "coverage", "PasteDeploy", "pyquery", "pytest", "pytest-cov", "WSGIProxy2",]
+docs = [ "docutils", "pylons-sphinx-themes >= 1.0.8", "Sphinx >= 3.0.0",]
+testing = [ "coverage", "PasteDeploy", "pyquery", "pytest", "pytest-cov", "WSGIProxy2",]
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[project.entry-points."paste.app_factory"]
+debug = "webtest.debugapp:make_debug_app"
+
+[tool.setuptools.packages.find]
+exclude = [ "ez_setup", "examples", "tests", "bootstrap", "bootstrap-py3k",]
+namespaces = false

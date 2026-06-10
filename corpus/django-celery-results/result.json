@@ -2,28 +2,125 @@
   "package": "django-celery-results",
   "version": "2.6.0",
   "sdist_url": "https://files.pythonhosted.org/packages/a6/b5/9966c28e31014c228305e09d48b19b35522a8f941fe5af5f81f40dc8fa80/django_celery_results-2.6.0.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [],
-    "payload_only_converted": [
-      "t/__init__.py",
-      "t/conftest.py",
-      "t/integration/__init__.py",
-      "t/integration/benchmark_models.py",
-      "t/proj/__init__.py",
-      "t/proj/celery.py",
-      "t/proj/settings.py",
-      "t/proj/urls.py",
-      "t/proj/wsgi.py",
-      "t/unit/__init__.py",
-      "t/unit/backends/__init__.py",
-      "t/unit/backends/test_cache.py",
-      "t/unit/backends/test_database.py",
-      "t/unit/test_migrations.py",
-      "t/unit/test_models.py",
-      "t/unit/test_views.py"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Asif Saif Uddin"
+      ],
+      [
+        "author-email",
+        "auvipy@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/celery/django-celery-results"
+      ],
+      [
+        "keywords",
+        "celery django database result backend"
+      ]
     ],
-    "payload_changed": [],
-    "entry_points_changed": false
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Asif Saif Uddin <auvipy@gmail.com>"
+      ],
+      [
+        "keywords",
+        "celery,django,database,result,backend"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/celery/django-celery-results"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "Django<6.0,>=3.2; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "psycopg2cffi; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "psycopg; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "psycopg>=3.1.8; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-benchmark; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-django>=4.5.2; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest<8,>=6.2.5; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytz; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
   }
 }

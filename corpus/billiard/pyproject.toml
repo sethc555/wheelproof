@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "billiard"
+version = "4.2.4"
+description = "Python multiprocessing fork with improvements and bugfixes"
+keywords = [ "multiprocessing", "pool", "process",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Programming Language :: Python", "Programming Language :: C", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Operating System :: Microsoft :: Windows", "Operating System :: POSIX", "License :: OSI Approved :: BSD License", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: System :: Distributed Computing",]
+requires-python = ">=3.7"
+
+[[project.authors]]
+name = "R Oudkerk / Python Software Foundation"
+email = "python-dev@python.org"
+
+[[project.maintainers]]
+name = "Asif Saif Uddin"
+email = "auvipy@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "https://github.com/celery/billiard"
+
+[tool.setuptools]
+zip-safe = false
+license-files = [ "LICENSE.txt",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "ez_setup", "t", "t.*",]
+namespaces = false

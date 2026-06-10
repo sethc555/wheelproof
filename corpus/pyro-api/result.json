@@ -2,14 +2,93 @@
   "package": "pyro-api",
   "version": "0.1.2",
   "sdist_url": "https://files.pythonhosted.org/packages/25/d7/a0812f5c16b0d4464f80a64a44626c5fe200098070be0f32436dbb662775/pyro-api-0.1.2.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [
-      "pyroapi/tests/__init__.py",
-      "pyroapi/tests/test_svi.py"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Uber AI Labs"
+      ],
+      [
+        "author-email",
+        "npradhan@uber.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/pyro-ppl/pyro-api"
+      ],
+      [
+        "keywords",
+        "probabilistic machine learning bayesian statistics"
+      ]
     ],
-    "payload_only_converted": [],
-    "payload_changed": [],
-    "entry_points_changed": false
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Uber AI Labs <npradhan@uber.com>"
+      ],
+      [
+        "keywords",
+        "probabilistic,machine,learning,bayesian,statistics"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/pyro-ppl/pyro-api"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "flake8; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest>=4.1; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
   }
 }

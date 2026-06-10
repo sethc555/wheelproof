@@ -2,13 +2,6 @@
   "package": "pycld2",
   "version": "0.42",
   "sdist_url": "https://files.pythonhosted.org/packages/89/81/d4d348e224ac0994234992c6d5fb3a78cc9b660337d5bd17c67fac1baf6a/pycld2-0.42.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [
-      "pycld2/_pycld2.cpython-312-x86_64-linux-gnu.so"
-    ],
-    "payload_only_converted": [],
-    "payload_changed": [],
-    "entry_points_changed": false
-  }
+  "status": "convert-error",
+  "detail": "setup.py defines C extensions \u2014 pyproject.toml cannot express ext_modules, so deleting setup.py would silently drop the compiled modules; flag as manual (metadata-only conversion, keep setup.py)"
 }

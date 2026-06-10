@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vine"
+version = "5.1.0"
+description = "Python promises."
+keywords = [ "promise", "promises", "lazy", "future", "futures",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "License :: OSI Approved :: BSD License", "Intended Audience :: Developers", "Operating System :: OS Independent",]
+requires-python = ">=3.6"
+dependencies = []
+
+[[project.authors]]
+name = "Ask Solem"
+email = "auvipy@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "https://github.com/celery/vine"
+
+[project.optional-dependencies]
+testing = [ "pytest>=7.2",]
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = false
+platforms = [ "any",]
+license-files = [ "LICENSE",]
+
+[tool.setuptools.packages.find]
+exclude = [ "t", "t.*",]
+namespaces = false

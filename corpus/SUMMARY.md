@@ -1,68 +1,31 @@
 # corpus summary
 
 - packages attempted: 1153
-- convert-error: 406 (35%)
-- pass: 395 (34%)
+- pass: 420 (36%)
+- convert-error: 418 (36%)
 - build-error: 295 (26%)
-- verify-fail: 57 (5%)
+- verify-fail: 20 (2%)
 
 ## verify-fail packages (need eyes)
 
 - alive-progress
-- amqp
-- azure-ai-contentsafety
 - azure-cli
-- azure-keyvault-securitydomain
-- azure-monitor-ingestion
-- azure-monitor-query
 - backports-tempfile
 - backports-weakref
 - better-profanity
-- billiard
 - braceexpand
-- ckzg
-- crossplane
-- csv-diff
 - ct3
 - dash
-- databricks-cli
-- django-celery-results
 - evaluate
-- fabric
 - facexlib
-- faker
-- filetype
-- google-cloud-profiler
-- guppy3
-- liblinear-multicore
-- mercantile
-- mutf8
-- netifaces
-- oauthlib
-- platformio
-- py-ubjson
-- pyahocorasick
-- pycld2
-- pynetbox
-- pyro-api
-- pyroaring
 - pysher
 - pytest-regressions
-- pytest-sftpserver
-- python-rapidjson
 - shellcheck-py
 - shellescape
-- sqlean-py
 - tableau-api-lib
 - testrail-api
-- types-aioboto3
-- types-certifi
-- types-freezegun
 - types-pillow
 - types-pyopenssl
-- vine
-- watchgod
-- webtest
 - whoosh
 - x-wr-timezone
 

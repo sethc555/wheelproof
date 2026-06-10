@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "databricks-cli"
+version = "0.18.0"
+description = "A command line interface for Databricks"
+keywords = [ "databricks", "cli",]
+readme = "README.rst"
+classifiers = [ "Intended Audience :: Developers", "Intended Audience :: System Administrators", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12",]
+requires-python = ">=3.7"
+dependencies = [ "click>=7.0", "pyjwt>=1.7.0", "oauthlib>=3.1.0", "requests>=2.17.3", "tabulate>=0.7.7", "six>=1.10.0", "urllib3>=1.26.7,<3",]
+
+[[project.authors]]
+name = "Andrew Chen"
+email = "andrewchen@databricks.com"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.urls]
+Homepage = "https://github.com/databricks/databricks-cli"
+
+[project.scripts]
+databricks = "databricks_cli.cli:main"
+dbfs = "databricks_cli.dbfs.cli:dbfs_group"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = [ "databricks_cli*",]
+namespaces = false

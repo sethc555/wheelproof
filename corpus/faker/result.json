@@ -2,70 +2,97 @@
   "package": "faker",
   "version": "40.22.0",
   "sdist_url": "https://files.pythonhosted.org/packages/84/11/81debfd0c4f8542c746c95d0267d9dd31b8e18ec21ed7ab89569de1bbfea/faker-40.22.0.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [],
-    "payload_only_converted": [
-      "tests/__init__.py",
-      "tests/conftest.py",
-      "tests/mymodule/__init__.py",
-      "tests/mymodule/en_US/__init__.py",
-      "tests/providers/__init__.py",
-      "tests/providers/conftest.py",
-      "tests/providers/test_address.py",
-      "tests/providers/test_automotive.py",
-      "tests/providers/test_bank.py",
-      "tests/providers/test_barcode.py",
-      "tests/providers/test_color.py",
-      "tests/providers/test_company.py",
-      "tests/providers/test_credit_card.py",
-      "tests/providers/test_currency.py",
-      "tests/providers/test_date_time.py",
-      "tests/providers/test_doi.py",
-      "tests/providers/test_dynamic.py",
-      "tests/providers/test_emoji.py",
-      "tests/providers/test_enum.py",
-      "tests/providers/test_file.py",
-      "tests/providers/test_geo.py",
-      "tests/providers/test_internet.py",
-      "tests/providers/test_isbn.py",
-      "tests/providers/test_job.py",
-      "tests/providers/test_lorem.py",
-      "tests/providers/test_misc.py",
-      "tests/providers/test_passport.py",
-      "tests/providers/test_person.py",
-      "tests/providers/test_phone_number.py",
-      "tests/providers/test_profile.py",
-      "tests/providers/test_python.py",
-      "tests/providers/test_sbn.py",
-      "tests/providers/test_ssn.py",
-      "tests/providers/test_user_agent.py",
-      "tests/pytest/__init__.py",
-      "tests/pytest/session_overrides/__init__.py",
-      "tests/pytest/session_overrides/conftest.py",
-      "tests/pytest/session_overrides/session_locale/__init__.py",
-      "tests/pytest/session_overrides/session_locale/conftest.py",
-      "tests/pytest/session_overrides/session_locale/test_autouse_faker_locale.py",
-      "tests/pytest/session_overrides/session_locale/test_autouse_faker_seed.py",
-      "tests/pytest/session_overrides/session_locale/test_manual_injection.py",
-      "tests/pytest/test_autouse_faker_locale.py",
-      "tests/pytest/test_autouse_faker_seed.py",
-      "tests/pytest/test_manual_injection.py",
-      "tests/pytest/test_unique_clear.py",
-      "tests/test_cli_arg_parsing.py",
-      "tests/test_decode.py",
-      "tests/test_factory.py",
-      "tests/test_generator.py",
-      "tests/test_optional.py",
-      "tests/test_providers_formats.py",
-      "tests/test_proxy.py",
-      "tests/test_unique.py",
-      "tests/test_unique_exclude.py",
-      "tests/utils/__init__.py",
-      "tests/utils/test_text_utils_slugify.py",
-      "tests/utils/test_utils.py"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "joke2k"
+      ],
+      [
+        "author-email",
+        "joke2k@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/joke2k/faker"
+      ],
+      [
+        "keywords",
+        "faker fixtures data test mock generator"
+      ]
     ],
-    "payload_changed": [],
-    "entry_points_changed": false
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "joke2k <joke2k@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "faker,fixtures,data,test,mock,generator"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/joke2k/faker"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
   }
 }

@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "watchgod"
+version = "0.8.2"
+description = "Simple, modern file watching and code reload in python."
+classifiers = [ "Development Status :: 7 - Inactive", "Environment :: Console", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Intended Audience :: Developers", "Intended Audience :: Information Technology", "Intended Audience :: System Administrators", "License :: OSI Approved :: MIT License", "Operating System :: POSIX :: Linux", "Operating System :: Microsoft :: Windows", "Operating System :: MacOS", "Environment :: MacOS X", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: System :: Filesystems", "Framework :: AnyIO",]
+requires-python = ">=3.7"
+dependencies = [ "anyio>=3.0.0,<4",]
+
+[[project.authors]]
+name = "Samuel Colvin"
+email = "s@muelcolvin.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/samuelcolvin/watchfiles"
+
+[project.scripts]
+watchgod = "watchgod.cli:cli"
+
+[tool.setuptools]
+packages = [ "watchgod",]
+zip-safe = true
+include-package-data = false
+
+[tool.setuptools.package-data]
+watchgod = [ "py.typed",]

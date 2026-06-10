@@ -1,0 +1,37 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyro-api"
+version = "0.1.2"
+description = "Generic API for dispatch to Pyro backends."
+keywords = [ "probabilistic", "machine", "learning", "bayesian", "statistics",]
+classifiers = [ "Intended Audience :: Developers", "Intended Audience :: Education", "Intended Audience :: Science/Research", "License :: OSI Approved :: Apache Software License", "Operating System :: POSIX :: Linux", "Operating System :: MacOS :: MacOS X", "Programming Language :: Python :: 3.6",]
+dependencies = []
+
+[[project.authors]]
+name = "Uber AI Labs"
+email = "npradhan@uber.com"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/pyro-ppl/pyro-api"
+
+[project.optional-dependencies]
+test = [ "flake8", "pytest>=5.0",]
+dev = [ "sphinx>=2.0", "sphinx_rtd_theme", "ipython",]
+testing = [ "flake8", "pytest>=4.1",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = [ "pyroapi", "pyroapi.*",]
+namespaces = false

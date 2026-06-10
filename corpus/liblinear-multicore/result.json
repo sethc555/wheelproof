@@ -2,13 +2,6 @@
   "package": "liblinear-multicore",
   "version": "2.50.0",
   "sdist_url": "https://files.pythonhosted.org/packages/d2/d2/cf936e68ddea66d31dd1d0ff6891663ddf345662655f374f99021f26821c/liblinear_multicore-2.50.0.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [
-      "liblinear/clib.cpython-312-x86_64-linux-gnu.so"
-    ],
-    "payload_only_converted": [],
-    "payload_changed": [],
-    "entry_points_changed": false
-  }
+  "status": "convert-error",
+  "detail": "setup.py defines C extensions \u2014 pyproject.toml cannot express ext_modules, so deleting setup.py would silently drop the compiled modules; flag as manual (metadata-only conversion, keep setup.py)"
 }

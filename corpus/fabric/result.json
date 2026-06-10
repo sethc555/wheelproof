@@ -2,15 +2,77 @@
   "package": "fabric",
   "version": "3.2.3",
   "sdist_url": "https://files.pythonhosted.org/packages/e3/7e/29cd6237c3b7ce79c3ca945eb99ab5affd101db54b2f7a78dde0cfa19fd4/fabric-3.2.3.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [
-      "fabric/testing/__init__.py",
-      "fabric/testing/base.py",
-      "fabric/testing/fixtures.py"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Jeff Forcier"
+      ],
+      [
+        "author-email",
+        "jeff@bitprophet.org"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://fabfile.org"
+      ]
     ],
-    "payload_only_converted": [],
-    "payload_changed": [],
-    "entry_points_changed": false
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Jeff Forcier <jeff@bitprophet.org>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://fabfile.org"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
   }
 }

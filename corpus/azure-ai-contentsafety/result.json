@@ -2,14 +2,85 @@
   "package": "azure-ai-contentsafety",
   "version": "1.0.0",
   "sdist_url": "https://files.pythonhosted.org/packages/08/e9/c069efade0e4976d96208306f1cf0803838cdb0b60e00a2a96bd20806bff/azure-ai-contentsafety-1.0.0.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [],
-    "payload_only_converted": [
-      "azure/__init__.py",
-      "azure/ai/__init__.py"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Microsoft Corporation"
+      ],
+      [
+        "author-email",
+        "azpysdkhelp@microsoft.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/Azure/azure-sdk-for-python/tree/main/sdk"
+      ],
+      [
+        "keywords",
+        "azure,azure sdk"
+      ]
     ],
-    "payload_changed": [],
-    "entry_points_changed": false
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Microsoft Corporation <azpysdkhelp@microsoft.com>"
+      ],
+      [
+        "keywords",
+        "azure,azure,sdk"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Azure/azure-sdk-for-python/tree/main/sdk"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
   }
 }

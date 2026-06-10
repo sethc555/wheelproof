@@ -15,6 +15,7 @@ source you'd pip-install anyway.
 from __future__ import annotations
 
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -196,6 +197,15 @@ def convert(srcdir: Path, outdir: Path) -> Path:
 
     setup_cfg = outdir / "setup.cfg"
     setup_py = outdir / "setup.py"
+    if setup_py.exists() and re.search(
+        r"\bext_modules\b|\bExtension\s*\(|\bcythonize\s*\(",
+        setup_py.read_text(errors="replace"),
+    ):
+        raise ConvertError(
+            "setup.py defines C extensions — pyproject.toml cannot express "
+            "ext_modules, so deleting setup.py would silently drop the compiled "
+            "modules; flag as manual (metadata-only conversion, keep setup.py)"
+        )
     if setup_py.exists():
         # metadata may live in setup.py even when a setup.cfg stub exists
         # (six: setup.cfg holds only flake8/bdist_wheel) — py2cfg wins per section

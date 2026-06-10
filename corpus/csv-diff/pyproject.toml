@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pytest-runner",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csv-diff"
+version = "1.2"
+description = "Python CLI tool and library for diffing CSV and JSON files"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Intended Audience :: Science/Research", "Intended Audience :: End Users/Desktop", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7",]
+dependencies = [ "click", "dictdiffer",]
+
+[[project.authors]]
+name = "Simon Willison"
+
+[project.license]
+text = "Apache License, Version 2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/simonw/csv-diff"
+
+[project.optional-dependencies]
+test = [ "pytest",]
+testing = [ "csv-diff[test]",]
+
+[project.scripts]
+csv-diff = "csv_diff.cli:cli"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

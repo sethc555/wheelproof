@@ -1,0 +1,37 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "filetype"
+version = "1.2.0"
+description = "Infer file type and MIME type of any file/buffer. No external dependencies."
+keywords = [ "file", "libmagic", "magic", "infer", "numbers", "magicnumbers", "discovery", "mime", "type", "kind",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Environment :: Web Environment", "Intended Audience :: Developers", "Intended Audience :: System Administrators", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Topic :: System", "Topic :: System :: Filesystems", "Topic :: Utilities",]
+
+[[project.authors]]
+name = "Tomas Aparicio"
+email = "tomas@aparicio.me"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/h2non/filetype.py"
+Download = "https://github.com/h2non/filetype.py/tarball/master"
+
+[project.scripts]
+filetype = "filetype.__main__:main"
+
+[tool.setuptools]
+zip-safe = true
+platforms = [ "any",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+filetype = [ "LICENSE", "*.md",]
+
+[tool.setuptools.packages.find]
+exclude = [ "dist", "build", "docs", "tests", "examples",]
+namespaces = false

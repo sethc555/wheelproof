@@ -2,13 +2,6 @@
   "package": "sqlean-py",
   "version": "3.50.4.5",
   "sdist_url": "https://files.pythonhosted.org/packages/ec/61/5332f923ec20c0b3ae9b3cf05731049bd4d17714dce1dbbc69129264664e/sqlean_py-3.50.4.5.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [
-      "sqlean/_sqlite3.cpython-312-x86_64-linux-gnu.so"
-    ],
-    "payload_only_converted": [],
-    "payload_changed": [],
-    "entry_points_changed": false
-  }
+  "status": "convert-error",
+  "detail": "setup.py defines C extensions \u2014 pyproject.toml cannot express ext_modules, so deleting setup.py would silently drop the compiled modules; flag as manual (metadata-only conversion, keep setup.py)"
 }

@@ -2,14 +2,85 @@
   "package": "azure-keyvault-securitydomain",
   "version": "1.0.0b1",
   "sdist_url": "https://files.pythonhosted.org/packages/a6/18/3a67754d999a0244f3551c8c28031cdfb5d2b6f072df6b55fc2bf2e69ec5/azure_keyvault_securitydomain-1.0.0b1.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [],
-    "payload_only_converted": [
-      "azure/__init__.py",
-      "azure/keyvault/__init__.py"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Microsoft Corporation"
+      ],
+      [
+        "author-email",
+        "azpysdkhelp@microsoft.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/Azure/azure-sdk-for-python/tree/main/sdk"
+      ],
+      [
+        "keywords",
+        "azure,azure sdk"
+      ]
     ],
-    "payload_changed": [],
-    "entry_points_changed": false
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Microsoft Corporation <azpysdkhelp@microsoft.com>"
+      ],
+      [
+        "keywords",
+        "azure,azure,sdk"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Azure/azure-sdk-for-python/tree/main/sdk"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
   }
 }

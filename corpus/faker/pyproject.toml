@@ -1,0 +1,48 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Faker"
+version = "40.22.0"
+description = "Faker is a Python package that generates fake data for you."
+keywords = [ "faker", "fixtures", "data", "test", "mock", "generator",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Intended Audience :: Developers", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Software Development :: Testing", "Topic :: Utilities", "License :: OSI Approved :: MIT License",]
+requires-python = ">=3.10"
+dependencies = [ "tzdata; platform_system==\"Windows\"",]
+
+[[project.authors]]
+name = "joke2k"
+email = "joke2k@gmail.com"
+
+[project.license]
+text = "MIT License"
+
+[project.urls]
+Homepage = "https://github.com/joke2k/faker"
+"Bug Tracker" = "https://github.com/joke2k/faker/issues"
+Changes = "https://github.com/joke2k/faker/blob/master/CHANGELOG.md"
+Documentation = "http://faker.rtfd.org/"
+"Source Code" = "https://github.com/joke2k/faker"
+
+[project.optional-dependencies]
+tzdata = [ "tzdata",]
+
+[project.scripts]
+faker = "faker.cli:execute_from_command_line"
+
+[tool.setuptools]
+zip-safe = true
+platforms = [ "any",]
+include-package-data = false
+
+[project.entry-points.pytest11]
+faker = "faker.contrib.pytest.plugin"
+
+[tool.setuptools.package-data]
+faker = [ "py.typed", "proxy.pyi",]
+
+[tool.setuptools.packages.find]
+exclude = [ "docs", "tests", "tests.*",]
+namespaces = false

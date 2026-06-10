@@ -2,11 +2,121 @@
   "package": "webtest",
   "version": "3.0.7",
   "sdist_url": "https://files.pythonhosted.org/packages/20/85/73877efb10ba4ef02364d5671724b1326d482dc928eace5fe114215443b7/webtest-3.0.7.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [],
-    "payload_only_converted": [],
-    "payload_changed": [],
-    "entry_points_changed": true
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://docs.pylonsproject.org/projects/webtest/en/latest/"
+      ],
+      [
+        "keywords",
+        "wsgi test unit tests web"
+      ],
+      [
+        "maintainer",
+        "Gael Pasgrimaud"
+      ],
+      [
+        "maintainer-email",
+        "gael@gawel.org"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "wsgi,test,unit,tests,web"
+      ],
+      [
+        "maintainer-email",
+        "Gael Pasgrimaud <gael@gawel.org>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://docs.pylonsproject.org/projects/webtest/en/latest/"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "PasteDeploy; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "WSGIProxy2; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "coverage; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pyquery; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-cov; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
   }
 }

@@ -2,31 +2,109 @@
   "package": "amqp",
   "version": "5.3.1",
   "sdist_url": "https://files.pythonhosted.org/packages/79/fc/ec94a357dfc6683d8c86f8b4cfa5416a4c36b28052ec8260c77aca96a443/amqp-5.3.1.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [],
-    "payload_only_converted": [
-      "t/__init__.py",
-      "t/integration/__init__.py",
-      "t/integration/conftest.py",
-      "t/integration/test_integration.py",
-      "t/integration/test_rmq.py",
-      "t/mocks.py",
-      "t/unit/__init__.py",
-      "t/unit/conftest.py",
-      "t/unit/test_abstract_channel.py",
-      "t/unit/test_basic_message.py",
-      "t/unit/test_channel.py",
-      "t/unit/test_connection.py",
-      "t/unit/test_exceptions.py",
-      "t/unit/test_method_framing.py",
-      "t/unit/test_platform.py",
-      "t/unit/test_sasl.py",
-      "t/unit/test_serialization.py",
-      "t/unit/test_transport.py",
-      "t/unit/test_utils.py"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Barry Pederson"
+      ],
+      [
+        "author-email",
+        "auvipy@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://github.com/celery/py-amqp"
+      ],
+      [
+        "keywords",
+        "amqp rabbitmq cloudamqp messaging"
+      ]
     ],
-    "payload_changed": [],
-    "entry_points_changed": false
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Barry Pederson <auvipy@gmail.com>"
+      ],
+      [
+        "keywords",
+        "amqp,rabbitmq,cloudamqp,messaging"
+      ],
+      [
+        "project-url",
+        "Homepage, http://github.com/celery/py-amqp"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "pytest-rerunfailures>=6.0; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-sugar>=0.9.1; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest<=8.0.0,>=6.2.5; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
   }
 }

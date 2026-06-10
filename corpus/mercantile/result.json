@@ -2,15 +2,85 @@
   "package": "mercantile",
   "version": "1.2.1",
   "sdist_url": "https://files.pythonhosted.org/packages/d2/c6/87409bcb26fb68c393fa8cf58ba09363aa7298cfb438a0109b5cb14bc98b/mercantile-1.2.1.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [],
-    "payload_only_converted": [
-      "tests/__init__.py",
-      "tests/test_cli.py",
-      "tests/test_funcs.py"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Sean Gillies"
+      ],
+      [
+        "author-email",
+        "sean@mapbox.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/mapbox/mercantile"
+      ],
+      [
+        "keywords",
+        "mapping,web mercator,tiles"
+      ]
     ],
-    "payload_changed": [],
-    "entry_points_changed": true
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Sean Gillies <sean@mapbox.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "mapping,web,mercator,tiles"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/mapbox/mercantile"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
   }
 }

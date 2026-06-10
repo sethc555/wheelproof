@@ -2,13 +2,49 @@
   "package": "types-freezegun",
   "version": "1.1.10",
   "sdist_url": "https://files.pythonhosted.org/packages/31/0d/2a0485b7f693437570da1b005cbc06748252d24a5a24e521a0bcf4f8912e/types-freezegun-1.1.10.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [
-      "freezegun-stubs/METADATA.toml"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/python/typeshed"
+      ]
     ],
-    "payload_only_converted": [],
-    "payload_changed": [],
-    "entry_points_changed": false
+    "metadata_only_converted": [
+      [
+        "project-url",
+        "Homepage, https://github.com/python/typeshed"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
   }
 }

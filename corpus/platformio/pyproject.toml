@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "platformio"
+version = "6.1.19"
+description = "Your Gateway to Embedded Software Development Excellence. Unlock the true potential of embedded software development with PlatformIO's collaborative ecosystem, embracing declarative principles, test-driven methodologies, and modern toolchains for unrivaled success."
+keywords = [ "iot", "embedded", "arduino", "mbed", "esp8266", "esp32", "fpga", "firmware", "continuous-integration", "cloud-ide", "avr", "arm", "ide", "unit-testing", "hardware", "verilog", "microcontroller", "debug",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent", "Programming Language :: C", "Programming Language :: Python", "Programming Language :: Python :: 3", "Topic :: Software Development", "Topic :: Software Development :: Build Tools", "Topic :: Software Development :: Compilers",]
+requires-python = ">=3.6"
+dependencies = [ "bottle == 0.13.*", "click >=8.0.4, <8.4", "colorama", "marshmallow == 3.*", "pyelftools >=0.27, <1", "pyserial == 3.5.*", "requests == 2.*", "semantic_version == 2.10.*", "tabulate == 0.*", "ajsonrpc == 1.2.*", "starlette >=0.19, <0.53", "uvicorn >=0.16, <0.41", "wsproto == 1.*", "chardet >= 3.0.2,<6; platform_system == \"Darwin\" and \"arm\" in platform_machine",]
+
+[[project.authors]]
+name = "PlatformIO Labs"
+email = "contact@piolabs.com"
+
+[project.license]
+text = "Apache Software License"
+
+[project.urls]
+Homepage = "https://platformio.org"
+
+[project.scripts]
+platformio = "platformio.__main__:main"
+pio = "platformio.__main__:main"
+piodebuggdb = "platformio.__main__:debug_gdb_main"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+platformio = [ "assets/system/99-platformio-udev.rules", "project/integration/tpls/*/*.tpl", "project/integration/tpls/*/.*.tpl", "project/integration/tpls/*/.*/*.tpl", "project/integration/tpls/*/*/*.tpl", "project/integration/tpls/*/*/*/*.tpl",]
+
+[tool.setuptools.packages.find]
+include = [ "platformio", "platformio.*",]
+namespaces = false

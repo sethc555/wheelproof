@@ -2,23 +2,95 @@
   "package": "filetype",
   "version": "1.2.0",
   "sdist_url": "https://files.pythonhosted.org/packages/bb/29/745f7d30d47fe0f251d3ad3dc2978a23141917661998763bebb6da007eb1/filetype-1.2.0.tar.gz",
-  "status": "verify-fail",
-  "detail": {
-    "payload_only_original": [],
-    "payload_only_converted": [
-      "examples/__init__.py",
-      "examples/buffer.py",
-      "examples/bytes.py",
-      "examples/file.py",
-      "tests/__init__.py",
-      "tests/test_benchmark.py",
-      "tests/test_filetype.py",
-      "tests/test_helpers.py",
-      "tests/test_match.py",
-      "tests/test_types.py",
-      "tests/test_utils.py"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Tomas Aparicio"
+      ],
+      [
+        "author-email",
+        "tomas@aparicio.me"
+      ],
+      [
+        "download-url",
+        "https://github.com/h2non/filetype.py/tarball/master"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/h2non/filetype.py"
+      ],
+      [
+        "keywords",
+        "file libmagic magic infer numbers magicnumbers discovery mime type kind"
+      ]
     ],
-    "payload_changed": [],
-    "entry_points_changed": false
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Tomas Aparicio <tomas@aparicio.me>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "file,libmagic,magic,infer,numbers,magicnumbers,discovery,mime,type,kind"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/h2non/filetype.py/tarball/master"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/h2non/filetype.py"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
   }
 }
