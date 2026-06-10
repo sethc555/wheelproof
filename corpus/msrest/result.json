@@ -2,6 +2,6 @@
   "package": "msrest",
   "version": "0.7.1",
   "sdist_url": "https://files.pythonhosted.org/packages/68/77/8397c8fb8fc257d8ea0fa66f8068e073278c65f05acb17dcb22a02bfdc42/msrest-0.7.1.zip",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-z8xrm9cq/msrest-0.7.1-converted\n--- stdout ---\nconfiguration error: `project.optional-dependencies.async[0]` must be pep508\nDESCRIPTION:\n    Project dependency specification according to PEP 508\n\nGIVEN VALUE:\n    \"python_version>='3.5' = aiohttp>=3.0\"\n\nOFFENDING RULE: 'format'\n\nDEFINITION:\n    {\n        \"$id\": \"#/definitions/dependency\",\n        \"title\": \"Dependency\",\n        \"type\": \"string\",\n        \"format\": \"pep508\"\n    }\n\nFor more details about `for"
+  "status": "convert-error",
+  "detail": "unexpected: ges/wheelproof/convert.py\", line 126, in _postfix_cfg\n    tree = ast.parse(setup_py.read_text(errors=\"replace\"))\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/ast.py\", line 52, in parse\n    return compile(source, filename, mode, flags,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<unknown>\", line 1\n    \ufeff# --------------------------------------------------------------------------\n    ^\nSyntaxError: invalid non-printable character U+FEFF\n"
 }

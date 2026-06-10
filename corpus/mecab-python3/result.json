@@ -2,6 +2,6 @@
   "package": "mecab-python3",
   "version": "1.0.12",
   "sdist_url": "https://files.pythonhosted.org/packages/fe/54/d52aebc1a1836778a9a97600304821f3c57d384ef1e5c8787a0c6f2a292d/mecab_python3-1.0.12.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-oydixrhs/mecab_python3-1.0.12\n--- stdout ---\nrunning bdist_wheel\nrunning build\nrunning build_py\ncreating build/lib.linux-x86_64-cpython-312/MeCab\ncopying src/MeCab/__init__.py -> build/lib.linux-x86_64-cpython-312/MeCab\ncopying src/MeCab/cli.py -> build/lib.linux-x86_64-cpython-312/MeCab\nrunning build_ext\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - setuptools >= 40.8.0\n* Getting build d"
+  "status": "convert-error",
+  "detail": "setup.py defines C extensions \u2014 pyproject.toml cannot express ext_modules, so deleting setup.py would silently drop the compiled modules; flag as manual (metadata-only conversion, keep setup.py)"
 }

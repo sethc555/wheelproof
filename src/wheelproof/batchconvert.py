@@ -76,7 +76,8 @@ def convert_one(name: str, corpus: Path) -> dict:
             try:
                 report = verify_mod.verify(root, outdir)
             except verify_mod.BuildError as exc:
-                entry.update(status="build-error", detail=str(exc)[:500])
+                # head says WHICH tree failed (original vs converted); tail has the error
+                entry.update(status="build-error", detail=str(exc)[:150] + " ||| " + str(exc)[-1200:])
                 return entry
             if report.passed:
                 entry.update(status="pass", drift=_drift(report))

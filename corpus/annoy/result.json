@@ -2,6 +2,6 @@
   "package": "annoy",
   "version": "1.17.3",
   "sdist_url": "https://files.pythonhosted.org/packages/07/38/e321b0e05d8cc068a594279fb7c097efb1df66231c295d482d7ad51b6473/annoy-1.17.3.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-h5irkf7j/annoy-1.17.3-converted\n--- stdout ---\nconfiguration error: `project.readme` must be valid exactly by one definition (0 matches found):\n\n    - {type: string}\n    - type: table\n      all of the following:\n        - at least one of the following:\n            - keys:\n                'file': {type: string}\n              required: ['file']\n            - keys:\n                'text': {type: string}\n              required: ['text']\n        - keys:\n     "
+  "status": "convert-error",
+  "detail": "setup.py defines C extensions \u2014 pyproject.toml cannot express ext_modules, so deleting setup.py would silently drop the compiled modules; flag as manual (metadata-only conversion, keep setup.py)"
 }

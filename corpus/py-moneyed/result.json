@@ -3,5 +3,5 @@
   "version": "3.0",
   "sdist_url": "https://files.pythonhosted.org/packages/2c/d9/cb6f113d2b7cf930bb3963d2b84ee245c20f93f9afc2e41adece58d324ae/py-moneyed-3.0.tar.gz",
   "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-rq3rbvpg/py-moneyed-3.0-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-rq3rbvpg/py-moneyed-3.0-converted/pyproject.toml: Cannot declare ('build-system',) twice (at line 48, column 14) \n"
+  "detail": "wheel build failed for /tmp/wheelproof-bc-7euyfxsu/py-moneyed-3.0-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-7euyfxsu/py-moneyed-3.0-converted/pyproject.toml: Cannot declare ('build-system',) twice (at line 48, column 14) \n"
 }

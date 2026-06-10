@@ -2,6 +2,6 @@
   "package": "dm-tree",
   "version": "0.1.10",
   "sdist_url": "https://files.pythonhosted.org/packages/5a/66/a3ec619d22b6baffa5ab853e8dc6ec9d0c837127948af59bb15b988d7312/dm_tree-0.1.10.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-mgn27o3y/dm_tree-0.1.10\n--- stdout ---\nrunning egg_info\nwriting dm_tree.egg-info/PKG-INFO\nwriting dependency_links to dm_tree.egg-info/dependency_links.txt\nwriting requirements to dm_tree.egg-info/requires.txt\nwriting top-level names to dm_tree.egg-info/top_level.txt\nreading manifest file 'dm_tree.egg-info/SOURCES.txt'\nreading manifest template 'MANIFEST.in'\nadding license file 'LICENSE'\nwriting manifest file 'dm_tree.egg-info/SOURCES.txt'\nrunning bdist_"
+  "status": "convert-error",
+  "detail": "setup.py defines C extensions \u2014 pyproject.toml cannot express ext_modules, so deleting setup.py would silently drop the compiled modules; flag as manual (metadata-only conversion, keep setup.py)"
 }

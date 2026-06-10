@@ -2,6 +2,6 @@
   "package": "fasttext",
   "version": "0.9.3",
   "sdist_url": "https://files.pythonhosted.org/packages/9f/3b/9a10b95eaf565358339162848863197c3f0a29b540ca22b2951df2d66a48/fasttext-0.9.3.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-56rtem32/fasttext-0.9.3-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-56rtem32/fasttext-0.9.3-converted/pyproject.toml: Cannot declare ('build-system',) twice (at line 34, column 14) \n"
+  "status": "convert-error",
+  "detail": "setup.py defines C extensions \u2014 pyproject.toml cannot express ext_modules, so deleting setup.py would silently drop the compiled modules; flag as manual (metadata-only conversion, keep setup.py)"
 }

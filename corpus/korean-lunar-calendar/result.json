@@ -3,5 +3,5 @@
   "version": "0.3.1",
   "sdist_url": "https://files.pythonhosted.org/packages/5a/93/a0bd2bd53ab19330e83ecc5652b7774ae86fd2fee19bc05ad220cf9db08b/korean_lunar_calendar-0.3.1.tar.gz",
   "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-0_4jl6uf/korean_lunar_calendar-0.3.1-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-0_4jl6uf/korean_lunar_calendar-0.3.1-converted/pyproject.toml: Unescaped '\\' in a string (at line 25, column 17) \n"
+  "detail": "wheel build failed for /tmp/wheelproof-bc-qv65zod4/korean_lunar_calendar-0.3.1-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-qv65zod4/korean_lunar_calendar-0.3.1-converted/pyproject.toml: Unescaped '\\' in a string (at line 25, column 17) \n"
 }

@@ -3,5 +3,5 @@
   "version": "0.1.0",
   "sdist_url": "https://files.pythonhosted.org/packages/5c/19/7472bd526591e2192926247109dbf78692e709d3e56775792fec877a7720/uuid7-0.1.0.tar.gz",
   "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-1xousxxn/uuid7-0.1.0-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-1xousxxn/uuid7-0.1.0-converted/pyproject.toml: Unescaped '\\' in a string (at line 22, column 2243) \n"
+  "detail": "wheel build failed for /tmp/wheelproof-bc-bf5k3m7s/uuid7-0.1.0-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-bf5k3m7s/uuid7-0.1.0-converted/pyproject.toml: Unescaped '\\' in a string (at line 22, column 2243) \n"
 }

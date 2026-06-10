@@ -2,6 +2,6 @@
   "package": "fasttext-numpy2",
   "version": "0.10.4",
   "sdist_url": "https://files.pythonhosted.org/packages/38/c8/515a5a2b3ad37f61e04b600d2ce0c540409a86c95cd445e70510678f8991/fasttext-numpy2-0.10.4.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-c57iof08/fasttext-numpy2-0.10.4-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-c57iof08/fasttext-numpy2-0.10.4-converted/pyproject.toml: Cannot declare ('build-system',) twice (at line 34, column 14) \n"
+  "status": "convert-error",
+  "detail": "setup.py defines C extensions \u2014 pyproject.toml cannot express ext_modules, so deleting setup.py would silently drop the compiled modules; flag as manual (metadata-only conversion, keep setup.py)"
 }

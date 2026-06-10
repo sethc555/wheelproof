@@ -114,6 +114,24 @@ def _postfix_cfg(cfg_text: str, setup_py: Path | None) -> str:
     parser.read_string(cfg_text)
 
     # NOT install_requires/extras_require: there ';' is an environment marker
+    # normalize deprecated dash-separated [metadata]/[options] keys (the exact
+    # 2026 removal) so ini2toml doesn't pass them through into [project]
+    for section in ("metadata", "options"):
+        if not parser.has_section(section):
+            continue
+        for option in list(parser.options(section)):
+            value = parser.get(section, option, raw=True)
+            fixed = option.replace("-", "_")
+            if fixed in ("description_file", "description_files"):
+                parser.remove_option(section, option)
+                if not parser.has_option("metadata", "long_description"):
+                    parser.set("metadata", "long_description", f"file: {value}")
+            elif fixed != option:
+                parser.remove_option(section, option)
+                if not parser.has_option(section, fixed):
+                    parser.set(section, fixed, value)
+
+    # NOT install_requires/extras_require: there ';' is an environment marker
     for section in ("options.package_data", "options.exclude_package_data", "options.packages.find"):
         if parser.has_section(section):
             for option in parser.options(section):
@@ -182,6 +200,39 @@ def _cfg_to_toml(cfg_text: str) -> str:
     return LiteTranslator().translate(cfg_text, profile_name="setup.cfg")
 
 
+_PEP621_KEYS = {
+    "name", "version", "description", "readme", "requires-python", "license",
+    "license-files", "authors", "maintainers", "keywords", "classifiers", "urls",
+    "scripts", "gui-scripts", "entry-points", "dependencies",
+    "optional-dependencies", "dynamic",
+}
+_CONTENT_TYPES = {"md": "text/markdown", "rst": "text/x-rst", "txt": "text/plain"}
+
+
+def _repair_toml(toml_text: str) -> str:
+    """Repair known-invalid [project] output from ini2toml before it hits a builder."""
+    import toml as toml_w
+
+    doc = tomllib.loads(toml_text)
+    project = doc.get("project")
+    if not isinstance(project, dict):
+        return toml_text
+
+    readme = project.get("readme")
+    if isinstance(readme, dict):
+        if "file" not in readme and "text" not in readme:
+            project.pop("readme")
+        elif "content-type" not in readme:
+            ext = readme.get("file", "").rsplit(".", 1)[-1].lower()
+            readme["content-type"] = _CONTENT_TYPES.get(ext, "text/plain")
+
+    for key in [k for k in project if k not in _PEP621_KEYS]:
+        print(f"note: dropped invalid [project] key {key!r}", file=sys.stderr)
+        project.pop(key)
+
+    return toml_w.dumps(doc)
+
+
 def convert(srcdir: Path, outdir: Path) -> Path:
     """Convert a copy of srcdir at outdir. Returns outdir. Does not verify."""
     if outdir.exists():
@@ -222,7 +273,7 @@ def convert(srcdir: Path, outdir: Path) -> Path:
     if dropped:
         # lint/tool config doesn't affect the wheel; the verify gate proves it
         print(f"note: dropped non-packaging setup.cfg sections: {', '.join(dropped)}", file=sys.stderr)
-    toml_text = _cfg_to_toml(cfg_text)
+    toml_text = _repair_toml(_cfg_to_toml(cfg_text))
     if "[build-system]" not in toml_text:
         toml_text = BUILD_SYSTEM_SNIPPET + toml_text
 
