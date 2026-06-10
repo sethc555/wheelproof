@@ -1,122 +1,1808 @@
 # wheelproof scan summary — top.jsonl
 
-- packages scanned: 299 (1 errors/skips)
-- **high severity: 45** (15%) — sdist build breaks under the 2026 removals
-- at risk incl. medium: 96 (32%) — medium = uses removed APIs (pkg_resources/distutils) or legacy build path
+- packages scanned: 4746 (254 errors/skips)
+- **high severity: 1153** (24%) — sdist build breaks under the 2026 removals
+- at risk incl. medium: 1529 (32%) — medium = uses removed APIs (pkg_resources/distutils) or legacy build path
 
 ## findings by type
 
 | finding | count |
 |---|---|
-| no-pyproject | 44 |
-| distutils | 38 |
-| no-build-system | 21 |
-| pkg-resources | 12 |
-| tests-require | 9 |
-| setup-requires | 6 |
-| test-command | 1 |
-| setup-cfg-deprecated-keys | 1 |
+| no-pyproject | 1123 |
+| distutils | 367 |
+| tests-require | 220 |
+| no-build-system | 208 |
+| setup-requires | 180 |
+| pkg-resources | 136 |
+| setup-cfg-deprecated-keys | 116 |
+| test-command | 9 |
 
 ## at-risk packages
 
+- **accelerate** 1.13.0: no-build-system
+- **adagio** 0.2.6: no-pyproject, setup-cfg-deprecated-keys
+- **adal** 1.2.7: no-pyproject
+- **addict** 2.4.0: no-pyproject
+- **adjusttext** 1.4.0: no-pyproject
+- **adlfs** 2026.5.0: setup-cfg-deprecated-keys
+- **aenum** 3.1.17: distutils, no-pyproject
+- **aioboto3** 15.5.0: pkg-resources
+- **aiocache** 0.12.3: no-build-system
+- **aioesphomeapi** 45.3.1: distutils
+- **aiogoogle** 5.17.0: distutils, no-pyproject
+- **aiohttp-cors** 0.8.1: no-pyproject
+- **aiohttp-jinja2** 1.6: no-pyproject
+- **aiohttp-retry** 2.9.1: no-build-system
+- **aioredis** 2.0.1: distutils, no-build-system
+- **aioresponses** 0.7.8: no-pyproject
+- **aiormq** 6.9.4: pkg-resources
+- **airbyte-api** 0.53.0: no-pyproject
+- **ajsonrpc** 1.2.0: no-pyproject
+- **akeyless-cloud-id** 0.3.1: no-pyproject
+- **albumentations** 2.0.8: pkg-resources
+- **algoliasearch-django** 4.0.0: no-pyproject
+- **alibabacloud-adb20211201** 3.7.1: no-pyproject
+- **alibabacloud-credentials** 1.0.9: no-pyproject
+- **alibabacloud-credentials-api** 1.0.0: no-pyproject
+- **alibabacloud-dingtalk** 2.2.48: no-pyproject
+- **alibabacloud-endpoint-util** 0.0.4: no-pyproject
+- **alibabacloud-gateway-spi** 0.0.3: no-pyproject
+- **alibabacloud-openapi-util** 0.2.4: no-pyproject
+- **alibabacloud-tea** 0.4.3: no-pyproject
+- **alibabacloud-tea-openapi** 0.4.4: no-pyproject
+- **alibabacloud-tea-util** 0.3.14: no-pyproject
+- **alibabacloud-tea-xml** 0.0.3: no-pyproject
+- **alive-progress** 3.3.0: no-pyproject
+- **aliyun-python-sdk-core** 2.16.0: no-pyproject
+- **aliyun-python-sdk-kms** 2.16.5: no-pyproject
+- **allure-pytest** 2.16.0: no-build-system
+- **allure-python-commons** 2.16.0: no-build-system
+- **alpaca-trade-api** 3.2.0: no-pyproject
+- **alphashape** 1.3.1: no-pyproject
+- **altgraph** 0.17.5: distutils, no-pyproject
+- **amazon-ion** 0.13.0: no-pyproject
+- **amazon-textract-response-parser** 1.0.3: no-pyproject
+- **amplitude-analytics** 1.2.3: no-build-system
+- **amqp** 5.3.1: no-pyproject
+- **analytics-python** 1.4.post1: distutils, no-pyproject
+- **angr** 9.2.221: distutils
+- **aniso8601** 10.0.1: no-pyproject
+- **annoy** 1.17.3: no-pyproject
+- **ansi2html** 1.9.2: pkg-resources
+- **ansible-lint** 26.4.0: pkg-resources
+- **ansicolors** 1.1.8: no-pyproject
+- **ansiwrap** 0.8.4: no-pyproject
+- **anyascii** 0.3.3: distutils
+- **anybadge** 1.16.0: no-pyproject
+- **anyscale** 0.26.102: no-pyproject
+- **apache-beam** 2.74.0: distutils
+- **appdirs** 1.4.4: distutils, no-pyproject
+- **appier** 1.46.0: no-build-system
+- **applicationinsights** 0.11.10: no-pyproject
+- **appnope** 0.1.4: no-pyproject
+- **apsw** 3.53.2.0: distutils
+- **argcomplete** 3.6.3: pkg-resources
+- **argparse** 1.4.0: no-pyproject
+- **argparse-addons** 0.12.0: no-pyproject
+- **argparse-dataclass** 2.0.0: no-pyproject
+- **arpeggio** 2.0.3: no-pyproject
+- **arrow** 1.4.0: distutils
+- **art** 6.5: distutils, no-pyproject
+- **asana** 5.2.5: no-pyproject
+- **asciitree** 0.3.3: no-pyproject
 - **asgiref** 3.11.1: no-pyproject
+- **asn1** 3.3.0: no-pyproject
 - **asn1crypto** 1.5.1: no-pyproject
+- **assemblyai** 0.64.9: no-pyproject
+- **astor** 0.8.1: no-pyproject
+- **astunparse** 1.6.3: no-pyproject
+- **async-generator** 1.10: no-pyproject
+- **async-lru** 2.3.0: no-pyproject
+- **async-property** 0.2.2: no-pyproject
+- **asyncpg** 0.31.0: pkg-resources
+- **asynctest** 0.13.0: no-pyproject
+- **atlasclient** 1.0.0: no-pyproject
+- **atlassian-python-api** 4.0.7: no-build-system
+- **atomicwrites** 1.4.1: no-pyproject
+- **autocommand** 2.2.2: no-build-system
+- **autogluon-common** 1.5.0: no-pyproject
+- **autogluon-core** 1.5.0: no-pyproject
+- **autogluon-features** 1.5.0: no-pyproject
+- **autogluon-tabular** 1.5.0: no-pyproject
+- **autograd-gamma** 0.5.0: no-pyproject
+- **autovizwidget** 0.23.0: distutils, no-pyproject, setup-cfg-deprecated-keys
+- **avalara** 26.6.0: no-pyproject
+- **avro** 1.12.1: distutils
+- **avro-gen3** 0.7.16: no-pyproject
+- **avro-python3** 1.10.2: distutils, no-pyproject
+- **aws-embedded-metrics** 3.5.0: no-pyproject, setup-cfg-deprecated-keys
+- **aws-encryption-sdk** 4.0.6: no-pyproject
+- **aws-kinesis-agg** 1.2.3: no-pyproject, setup-cfg-deprecated-keys
+- **aws-lambda-builders** 1.65.0: distutils, no-build-system, setup-cfg-deprecated-keys
+- **aws-msk-iam-sasl-signer-python** 1.0.2: distutils, no-pyproject
+- **aws-psycopg2** 1.3.8: no-pyproject
+- **aws-requests-auth** 0.4.3: no-pyproject
+- **aws-sam-translator** 1.110.0: no-build-system
+- **aws-secretsmanager-caching** 1.1.3: no-pyproject, setup-cfg-deprecated-keys
+- **aws-xray-sdk** 2.15.0: no-pyproject
 - **awscli** 1.45.26: no-build-system
+- **awscli-local** 0.22.2: no-pyproject
+- **awscrt** 0.34.1: distutils
+- **awsiotsdk** 1.29.0: no-pyproject
+- **awslambdaric** 4.0.0: no-pyproject
+- **azure** 5.0.0: no-pyproject
+- **azure-ai-agents** 1.1.0: no-build-system
+- **azure-ai-contentsafety** 1.0.0: no-pyproject
+- **azure-ai-documentintelligence** 1.0.2: no-build-system
+- **azure-ai-formrecognizer** 3.3.3: no-build-system
+- **azure-ai-inference** 1.0.0b9: no-build-system
+- **azure-appconfiguration** 1.8.1: no-build-system
+- **azure-applicationinsights** 0.1.1: no-pyproject
+- **azure-cli** 2.87.0: no-pyproject
+- **azure-cli-core** 2.87.0: no-pyproject
+- **azure-cli-telemetry** 1.1.0: no-pyproject
+- **azure-common** 1.1.28: no-pyproject
+- **azure-communication-email** 1.1.0: no-build-system
+- **azure-containerregistry** 1.2.0: no-build-system
+- **azure-cosmos** 4.16.1: no-build-system
+- **azure-cosmosdb-nspkg** 2.0.2: no-pyproject
+- **azure-cosmosdb-table** 1.0.6: distutils, no-pyproject
+- **azure-data-tables** 12.7.0: no-build-system
+- **azure-datalake-store** 1.0.1: no-pyproject
+- **azure-devops** 7.1.0b4: no-pyproject
+- **azure-eventgrid** 4.22.0: no-build-system
+- **azure-functions-durable** 1.5.0: distutils, no-pyproject
+- **azure-graphrbac** 0.61.2: no-pyproject
+- **azure-keyvault** 4.2.0: no-pyproject
+- **azure-keyvault-administration** 4.7.0: no-build-system
+- **azure-keyvault-securitydomain** 1.0.0b1: no-pyproject
+- **azure-loganalytics** 0.1.1: no-pyproject
+- **azure-mgmt** 5.0.0: no-pyproject
+- **azure-mgmt-apimanagement** 5.0.0: no-build-system
+- **azure-mgmt-appconfiguration** 5.0.0: no-build-system
+- **azure-mgmt-applicationinsights** 4.1.0: no-build-system
+- **azure-mgmt-authorization** 4.0.0: no-pyproject
+- **azure-mgmt-batchai** 7.0.0: no-build-system
+- **azure-mgmt-billing** 7.0.0: no-build-system
+- **azure-mgmt-botservice** 2.0.0: no-pyproject
+- **azure-mgmt-cdn** 13.1.1: no-pyproject
+- **azure-mgmt-consumption** 10.0.0: no-pyproject
+- **azure-mgmt-containerinstance** 10.1.0: no-pyproject
+- **azure-mgmt-core** 1.6.0: no-build-system
+- **azure-mgmt-databoxedge** 2.0.0: no-build-system
+- **azure-mgmt-datalake-analytics** 0.6.0: distutils, no-pyproject
+- **azure-mgmt-datalake-nspkg** 3.0.1: no-pyproject
+- **azure-mgmt-datalake-store** 0.5.0: distutils, no-pyproject
+- **azure-mgmt-datamigration** 10.1.0: no-build-system
+- **azure-mgmt-devspaces** 0.2.0: no-pyproject
+- **azure-mgmt-dns** 9.0.0: no-build-system
+- **azure-mgmt-eventgrid** 10.4.0: no-build-system
+- **azure-mgmt-eventhub** 11.2.0: no-build-system
+- **azure-mgmt-extendedlocation** 2.0.0: no-build-system
+- **azure-mgmt-iothub** 4.0.0: no-build-system
+- **azure-mgmt-iothubprovisioningservices** 1.1.0: no-pyproject
+- **azure-mgmt-logic** 10.0.0: no-pyproject
+- **azure-mgmt-machinelearningcompute** 0.4.1: distutils, no-pyproject
+- **azure-mgmt-maps** 2.1.0: no-pyproject
+- **azure-mgmt-media** 10.2.1: no-build-system
+- **azure-mgmt-monitor** 7.0.0: no-build-system
+- **azure-mgmt-msi** 7.1.0: no-build-system
+- **azure-mgmt-notificationhubs** 8.0.0: no-pyproject
+- **azure-mgmt-nspkg** 3.0.2: no-pyproject
+- **azure-mgmt-powerbiembedded** 3.0.0: no-pyproject
+- **azure-mgmt-privatedns** 1.2.0: no-build-system
+- **azure-mgmt-redis** 14.5.0: no-build-system
+- **azure-mgmt-reservations** 2.3.0: no-pyproject
+- **azure-mgmt-resource-deploymentscripts** 1.0.0b1: no-build-system
+- **azure-mgmt-resource-templatespecs** 1.0.0b1: no-build-system
+- **azure-mgmt-scheduler** 7.0.0: no-build-system
+- **azure-mgmt-search** 9.2.0: no-build-system
+- **azure-mgmt-security** 7.0.0: no-pyproject
+- **azure-mgmt-servicebus** 9.0.0: no-build-system
+- **azure-mgmt-servicefabric** 2.1.0: no-pyproject
+- **azure-mgmt-servicelinker** 1.1.0: no-pyproject
+- **azure-mgmt-signalr** 1.2.0: no-pyproject
+- **azure-mgmt-sql** 3.0.1: no-pyproject
+- **azure-mgmt-sqlvirtualmachine** 0.5.0: no-pyproject
+- **azure-mgmt-subscription** 3.1.1: no-pyproject
+- **azure-mgmt-synapse** 2.0.0: no-pyproject
+- **azure-mgmt-trafficmanager** 1.1.0: no-pyproject
+- **azure-monitor-ingestion** 1.1.0: no-pyproject
+- **azure-monitor-opentelemetry** 1.8.8: no-build-system
+- **azure-monitor-opentelemetry-exporter** 1.0.0b53: no-build-system
+- **azure-monitor-query** 2.0.0: no-pyproject
+- **azure-multiapi-storage** 1.6.0: no-pyproject
+- **azure-nspkg** 3.0.2: no-pyproject
+- **azure-schemaregistry** 1.3.0: no-build-system
+- **azure-servicefabric** 8.2.0.0: no-pyproject
+- **azure-servicemanagement-legacy** 0.20.8: distutils, no-build-system
 - **azure-storage-blob** 12.30.0: no-build-system
+- **azure-storage-common** 2.1.0: no-pyproject
+- **azure-storage-file** 2.1.0: no-pyproject
+- **azure-storage-file-datalake** 12.25.0: no-build-system
+- **azure-storage-file-share** 12.26.0: no-build-system
+- **azure-storage-queue** 12.17.0: no-build-system
+- **azure-synapse-accesscontrol** 0.7.0: no-pyproject
+- **azure-synapse-artifacts** 0.22.0: no-build-system
+- **azure-synapse-managedprivateendpoints** 0.4.0: no-pyproject
+- **azure-synapse-spark** 0.7.0: no-pyproject
 - **babel** 2.18.0: distutils, no-build-system, pkg-resources
+- **backcall** 0.2.0: distutils
+- **backports-tempfile** 1.0: no-pyproject
+- **backports-weakref** 1.0.post1: no-pyproject
+- **backports-zstd** 1.5.0: distutils
+- **bandit** 1.9.4: no-pyproject
+- **base58** 2.1.1: no-pyproject
+- **bc-detect-secrets** 1.5.47: no-build-system
+- **bc-jsonpath-ng** 1.6.1: no-build-system
+- **bc-python-hcl2** 0.4.3: no-pyproject
+- **bce-python-sdk** 0.9.72: distutils, no-pyproject
+- **better-profanity** 0.7.0: no-pyproject
+- **betterproto** 1.2.5: no-build-system
+- **bibtexparser** 1.4.4: distutils, no-pyproject
+- **billiard** 4.2.4: distutils, no-pyproject
+- **bitarray** 3.8.1: distutils
+- **blake3** 1.0.8: distutils
+- **bleach** 6.4.0: no-pyproject
+- **blessings** 1.7: no-pyproject
+- **bluetooth-data-tools** 1.29.18: distutils
+- **bm25s** 0.3.9: no-pyproject
+- **boa-str** 1.1.0: no-pyproject
+- **boolean-py** 5.0: no-pyproject
+- **boto** 2.49.0: distutils, no-pyproject
 - **boto3** 1.43.26: no-build-system
+- **boto3-type-annotations** 0.3.1: no-pyproject
 - **botocore** 1.43.26: no-build-system
+- **bottle** 0.13.4: no-pyproject
+- **bottleneck** 1.6.0: distutils
+- **box-sdk-gen** 1.17.0: no-pyproject
+- **boxsdk** 10.11.0: no-pyproject
+- **braceexpand** 0.1.7: no-pyproject
+- **braintree** 4.44.0: distutils, no-pyproject
+- **braintrust-core** 0.0.59: no-pyproject
+- **brotli** 1.2.0: distutils
+- **brotlicffi** 1.2.0.1: no-pyproject
+- **brotlipy** 0.7.0: no-pyproject
+- **browser-cookie3** 0.20.1: no-pyproject
+- **bson** 0.5.10: no-pyproject
+- **bullmq** 2.25.2: pkg-resources
+- **bump2version** 1.0.1: no-pyproject
+- **bumpversion** 0.6.0: no-pyproject
+- **businesstimedelta** 1.0.1: no-pyproject, setup-cfg-deprecated-keys
+- **cached-property** 2.0.1: distutils, no-pyproject
+- **cairosvg** 2.9.0: no-pyproject
+- **canmatrix** 1.2: distutils, no-pyproject
+- **casbin** 1.43.0: pkg-resources
+- **catalogue** 2.0.10: no-pyproject
+- **catboost** 1.2.10: distutils
+- **catkin-pkg** 1.1.0: no-pyproject
+- **causallib** 0.10.0: no-pyproject
+- **cbor** 1.0.0: distutils, no-pyproject
+- **cchardet** 2.1.7: distutils, no-pyproject
+- **ccxt** 4.5.56: no-pyproject
+- **celery** 5.6.3: no-build-system
+- **celery-redbeat** 2.3.3: no-build-system
 - **certifi** 2026.5.20: distutils
+- **certvalidator** 0.11.1: no-pyproject
 - **cffi** 2.0.0: distutils
 - **cfgv** 3.5.0: no-pyproject
+- **cfn-flip** 1.3.0: no-pyproject
+- **channels-redis** 4.3.0: no-pyproject
+- **check-manifest** 0.51: distutils, no-pyproject
+- **checkov** 3.2.533: no-build-system
+- **checksumdir** 1.3.0: no-build-system, pkg-resources
+- **chess** 1.11.2: no-pyproject
+- **chevron** 0.14.0: distutils, no-pyproject
+- **cint** 1.0.0: no-pyproject
+- **circuitbreaker** 2.1.3: no-pyproject
+- **ciso8601** 2.3.3: no-build-system
+- **ckzg** 2.1.7: no-pyproject
+- **clandestined** 1.1.0: distutils, no-pyproject
+- **cleanco** 2.3: no-pyproject
+- **click-help-colors** 0.9.4: no-pyproject
+- **click-log** 0.4.0: no-pyproject
+- **click-plugins** 1.1.1.2: no-pyproject, pkg-resources
+- **click-repl** 0.3.0: setup-cfg-deprecated-keys
+- **click-spinner** 0.1.10: distutils, no-pyproject, setup-cfg-deprecated-keys
+- **clickclick** 20.10.2: no-pyproject, pkg-resources
+- **clickhouse-driver** 0.2.10: distutils, no-pyproject
+- **clickhouse-sqlalchemy** 0.3.2: no-pyproject
+- **cligj** 0.7.2: no-pyproject
+- **cloudscraper** 1.2.71: no-pyproject
+- **cloudsplaining** 0.8.2: no-build-system
+- **cloup** 3.1.0: no-pyproject
+- **clu** 0.0.12: no-pyproject
+- **cobble** 0.1.4: no-pyproject
+- **codecov** 2.1.13: no-pyproject
+- **codeguru-profiler-agent** 1.2.6: no-pyproject
+- **collate-sqllineage** 2.1.3: no-pyproject
+- **collectfasta** 3.3.3: no-pyproject
+- **coloredlogs** 15.0.1: distutils, no-pyproject
+- **colorful** 0.5.8: no-pyproject
+- **colorlog** 6.10.1: no-pyproject
+- **colour** 0.1.5: no-pyproject, setup-cfg-deprecated-keys
+- **columnar** 1.4.1: no-pyproject
+- **comfyui-frontend-package** 1.45.15: no-pyproject
+- **commentjson** 0.9.0: no-pyproject
+- **commonmark** 0.9.2: no-pyproject, setup-cfg-deprecated-keys
+- **composio** 0.13.1: no-build-system
+- **conan** 2.29.0: distutils
+- **config** 0.5.1: no-pyproject
+- **configargparse** 1.7.5: distutils, no-pyproject
+- **configcat-client** 10.0.0: no-pyproject
+- **configobj** 5.0.9: distutils
+- **confusable-homoglyphs** 3.3.1: distutils, no-pyproject
+- **construct** 2.10.70: no-pyproject
+- **contextlib2** 21.6.0: distutils, no-pyproject
+- **contextvars** 2.4: no-pyproject
+- **cookiecutter** 2.7.1: no-build-system
+- **coolprop** 7.2.0: distutils
+- **coreapi** 2.3.3: no-pyproject, pkg-resources
+- **coreforecast** 0.0.17: distutils
+- **coremltools** 9.0: no-pyproject
+- **coreschema** 0.0.4: no-pyproject
+- **crayons** 0.4.0: no-pyproject
+- **crcmod** 1.7: distutils, no-pyproject
+- **cron-validator** 1.0.8: no-pyproject, setup-cfg-deprecated-keys
+- **crossplane** 0.5.8: no-pyproject
+- **crypto** 1.4.1: no-pyproject
+- **cssbeautifier** 1.15.4: no-build-system
+- **csscompressor** 0.9.5: no-pyproject
+- **csv-diff** 1.2: no-pyproject
+- **ct3** 3.4.0.post5: distutils, no-pyproject, pkg-resources
+- **cuid** 0.4: no-pyproject
+- **currency-symbols** 2.0.4: no-pyproject
+- **cvxpy** 1.9.1: distutils
+- **cx-oracle** 8.3.0: pkg-resources
 - **cython** 3.2.5: distutils, no-pyproject
+- **dacite** 1.9.2: no-build-system
+- **daff** 1.4.2: distutils, no-pyproject
+- **darabonba-core** 1.0.6: no-pyproject
+- **dash** 4.2.0: no-pyproject
+- **dash-ag-grid** 35.2.0: no-pyproject
+- **dash-core-components** 2.0.0: no-pyproject
+- **dash-extensions** 2.0.5: no-build-system
+- **dash-html-components** 2.0.0: no-pyproject
+- **dash-table** 5.0.0: no-pyproject
+- **databases** 0.9.0: no-pyproject
+- **databricks** 0.2: no-pyproject
+- **databricks-cli** 0.18.0: no-pyproject
+- **databricks-dlt** 0.3.0: no-pyproject
+- **databricks-pypi1** 0.2: no-pyproject
+- **databricks-pypi2** 0.2: no-pyproject
+- **dataclasses** 0.8: no-pyproject
+- **datadog-api-client** 2.55.0: no-pyproject
 - **datasets** 5.0.0: no-build-system
+- **dateparser** 1.4.0: no-build-system
+- **dateutils** 0.6.12: no-pyproject
+- **db-dtypes** 1.7.0: no-pyproject
+- **dbfread** 2.0.7: distutils, no-pyproject
+- **dbt-duckdb** 1.10.1: no-pyproject
+- **dbt-protos** 1.0.514: no-pyproject
+- **dbus-fast** 5.0.22: distutils
+- **ddsketch** 3.0.1: no-build-system, pkg-resources
+- **ddt** 1.7.2: no-pyproject
+- **ddtrace** 4.10.3: distutils
+- **debugpy** 1.8.21: distutils
+- **decopatch** 1.4.10: pkg-resources
+- **deepspeed** 0.19.1: distutils, no-pyproject
+- **defusedcsv** 3.0.0: no-pyproject
 - **defusedxml** 0.7.1: distutils, no-build-system
+- **delta-sharing** 1.4.1: no-pyproject
+- **delta-spark** 4.2.0: no-pyproject
 - **deprecated** 1.3.1: no-build-system
+- **deprecation** 2.1.0: no-pyproject
+- **depyf** 0.20.0: no-build-system
+- **detect-secrets** 1.5.0: no-pyproject
+- **dictdiffer** 0.9.0: no-pyproject
+- **dicttoxml** 1.7.16: distutils
+- **diffusers** 0.38.0: no-build-system
 - **dill** 0.4.1: distutils
+- **dirtyjson** 1.0.8: distutils, no-pyproject
+- **diskcache** 5.6.3: no-pyproject
 - **distlib** 0.4.2: distutils
+- **django-admin-inline-paginator** 0.4.0: no-pyproject, setup-cfg-deprecated-keys
+- **django-admin-list-filter-dropdown** 1.0.3: no-pyproject
+- **django-admin-rangefilter** 0.13.5: no-build-system
+- **django-admin-sortable2** 2.3.1: no-pyproject
+- **django-appconf** 1.2.0: no-pyproject
+- **django-auditlog** 3.4.1: no-build-system
+- **django-celery-beat** 2.9.0: no-build-system
+- **django-celery-results** 2.6.0: no-pyproject
+- **django-choices** 2.0.0: no-pyproject, pkg-resources
+- **django-countries** 9.0.0: pkg-resources
+- **django-deprecate-fields** 0.2.3: no-pyproject
+- **django-dotenv** 1.4.2: no-pyproject
+- **django-environ** 0.13.0: no-pyproject
+- **django-fake-model** 0.1.4: distutils, no-pyproject
+- **django-fernet-fields-v2** 0.9: no-build-system
+- **django-libsass** 0.9: distutils, no-pyproject, setup-cfg-deprecated-keys
+- **django-loginas** 0.3.14: distutils, no-pyproject
+- **django-mathfilters** 1.0.0: no-pyproject
+- **django-model-utils** 5.0.0: no-pyproject
+- **django-permissionedforms** 0.1: distutils, no-pyproject
+- **django-querycount** 0.8.3: no-pyproject
+- **django-rest-polymorphic** 0.1.10: no-pyproject
+- **django-reversion** 6.2.0: no-pyproject
+- **django-safedelete** 1.4.1: no-pyproject, setup-cfg-deprecated-keys
+- **django-silk** 5.5.0: no-build-system
+- **django-taggit** 6.1.0: no-pyproject
+- **django-webpack-loader** 3.2.4: no-pyproject
+- **django-widget-tweaks** 1.5.1: no-pyproject
+- **djangorestframework-csv** 3.0.2: no-pyproject
+- **djangorestframework-role-filters** 1.1.0: no-build-system
+- **djangorestframework-simplejwt** 5.5.1: no-pyproject
+- **dlinfo** 2.0.0: no-pyproject
+- **dm-haiku** 0.0.16: no-pyproject
+- **dm-tree** 0.1.10: no-pyproject
+- **dnslib** 0.9.26: distutils, no-pyproject
+- **docker-compose** 1.29.2: distutils, no-pyproject, pkg-resources
+- **docker-image-py** 0.1.13: no-pyproject, setup-cfg-deprecated-keys
+- **docker-py** 1.10.6: distutils, no-pyproject
+- **docker-pycreds** 0.4.0: distutils, no-pyproject
+- **dockerfile-parse** 2.0.1: no-pyproject
+- **docling-core** 2.80.0: no-build-system
+- **docling-ibm-models** 3.13.3: no-build-system
+- **docopt** 0.6.2: no-pyproject
+- **docstring-to-markdown** 0.17: setup-cfg-deprecated-keys
+- **docx2txt** 0.9: distutils, no-pyproject
+- **dohq-artifactory** 1.0.1: distutils, no-pyproject
+- **dotmap** 1.3.30: no-pyproject, setup-cfg-deprecated-keys
+- **dpath** 2.2.0: no-pyproject
+- **dpkt** 1.9.8: distutils, no-pyproject
+- **drf-extensions** 0.8.0: no-pyproject
+- **drf-nested-routers** 0.95.0: no-pyproject, setup-cfg-deprecated-keys
+- **drf-spectacular-sidecar** 2026.6.1: no-pyproject
+- **dropbox** 12.0.2: distutils, no-pyproject, pkg-resources
 - **durationpy** 0.10: no-pyproject
+- **dynaconf** 3.2.13: no-pyproject
+- **dynamodb-json** 1.4.2: no-pyproject
+- **easydict** 1.13: no-pyproject
+- **easygui** 0.98.3: distutils, no-pyproject
+- **ebooklib** 0.20: no-pyproject
+- **eccodes** 2.47.0: no-pyproject
+- **ecdsa** 0.19.2: distutils, no-pyproject
+- **edgartools** 5.36.0: pkg-resources
+- **edge-tts** 7.2.8: no-pyproject
+- **elastic-apm** 6.26.1: no-build-system, pkg-resources
+- **elastic-transport** 9.4.1: no-pyproject
+- **elasticsearch-dsl** 8.18.0: no-pyproject
+- **email-reply-parser** 0.5.12: distutils, no-pyproject
 - **email-validator** 2.3.0: no-build-system
+- **embedchain** 0.1.128: pkg-resources
+- **emr-notebooks-magics** 0.2.4: no-pyproject, setup-cfg-deprecated-keys
+- **enum-compat** 0.0.3: no-pyproject
+- **enum34** 1.1.10: distutils, no-pyproject
+- **envyaml** 1.10.211231: no-pyproject
+- **ephem** 4.2.1: distutils, no-pyproject
+- **eradicate** 3.0.1: no-pyproject
 - **et-xmlfile** 2.0.0: no-pyproject
+- **eth-abi** 5.2.0: no-build-system
+- **eth-account** 0.13.7: no-build-system
+- **eth-hash** 0.8.0: no-build-system
+- **eth-keyfile** 0.9.1: no-build-system
+- **eth-keys** 0.7.0: no-build-system
+- **eth-rlp** 2.2.0: no-build-system
+- **eth-typing** 6.0.0: no-build-system
+- **eth-utils** 6.0.0: no-build-system
+- **evaluate** 0.4.6: no-pyproject
+- **exchangelib** 5.6.0: no-build-system
+- **expiringdict** 1.2.2: no-pyproject
+- **extract-msg** 0.55.0: no-pyproject
+- **fabric** 3.2.3: no-pyproject
+- **facebook-business** 25.0.2: distutils, no-pyproject
+- **facexlib** 0.3.0: no-pyproject
+- **factory-boy** 3.3.3: no-pyproject
+- **faker** 40.22.0: no-pyproject
+- **fastdiff** 0.3.0: no-pyproject
 - **fastjsonschema** 2.21.2: distutils, no-pyproject
+- **fastrlock** 0.8.3: no-pyproject
+- **fasttext** 0.9.3: setup-cfg-deprecated-keys
+- **fasttext-numpy2** 0.10.4: setup-cfg-deprecated-keys
+- **fasttext-wheel** 0.9.2: setup-cfg-deprecated-keys
+- **fatfs-ng** 0.1.15: no-pyproject
+- **feedparser** 6.0.12: no-pyproject
+- **ffmpeg-python** 0.2.0: no-pyproject
+- **fhir-resources** 8.2.0: no-pyproject, setup-cfg-deprecated-keys
+- **fiddle** 0.3.0: no-pyproject
+- **filetype** 1.2.0: no-pyproject
+- **filterpy** 1.4.5: no-pyproject, setup-cfg-deprecated-keys
+- **findspark** 2.0.1: distutils, no-pyproject
+- **firebase-admin** 7.4.0: no-pyproject
+- **first** 2.0.2: no-pyproject
+- **fixedint** 0.2.0: distutils, no-pyproject
+- **flake8** 7.3.0: no-pyproject
+- **flake8-docstrings** 1.7.0: no-pyproject
+- **flake8-import-order** 0.19.2: no-build-system
+- **flake8-polyfill** 1.0.2: no-pyproject
+- **flake8-quotes** 3.4.0: no-pyproject
+- **flaky** 3.8.1: no-pyproject
+- **flasgger** 0.9.7.1: distutils, no-pyproject, pkg-resources
+- **flashtext** 2.7: no-pyproject
+- **flask-appbuilder** 5.2.1: no-pyproject
+- **flask-bcrypt** 1.0.1: no-pyproject
+- **flask-jwt-extended** 4.7.4: no-pyproject, setup-cfg-deprecated-keys
+- **flask-login** 0.6.3: no-pyproject
+- **flask-openid** 1.3.1: no-pyproject
+- **flask-restful** 0.3.10: no-pyproject
+- **flask-restx** 1.3.2: no-pyproject
+- **flask-talisman** 1.1.0: no-pyproject
+- **flask-testing** 0.8.1: no-pyproject
+- **flit** 3.12.0: distutils
+- **flower** 2.0.1: no-pyproject
+- **fluent-runtime** 0.4.0: no-pyproject
+- **fluent-syntax** 0.19.0: no-pyproject
+- **folium** 0.20.0: setup-cfg-deprecated-keys
 - **fonttools** 4.63.0: distutils, no-build-system
+- **forbiddenfruit** 0.1.4: no-pyproject
+- **formic2** 1.0.3: no-pyproject, pkg-resources
+- **formulas** 1.3.4: no-pyproject
+- **fpdf** 1.7.2: distutils, no-pyproject, setup-cfg-deprecated-keys
+- **fqdn** 1.5.1: no-pyproject, setup-cfg-deprecated-keys
+- **fredapi** 0.5.2: no-pyproject
+- **free-email-domains** 1.0.2: no-pyproject
+- **freetype-py** 2.5.1: distutils
+- **frida** 17.11.0: distutils
+- **frozendict** 2.4.7: no-pyproject
 - **frozenlist** 1.8.0: distutils
+- **fs** 2.4.16: no-pyproject, pkg-resources
+- **fugue-sql-antlr** 0.2.4: no-pyproject, setup-cfg-deprecated-keys
+- **func-timeout** 4.3.5: no-pyproject
+- **funcsigs** 1.0.2: no-pyproject
+- **functions-framework** 3.10.1: pkg-resources
+- **funcy** 2.0: no-pyproject
+- **furl** 2.1.4: no-pyproject
+- **future** 1.0.0: distutils, no-pyproject
+- **futures** 3.4.0: distutils, no-pyproject
+- **fuzzywuzzy** 0.18.0: distutils, no-pyproject
+- **fvcore** 0.1.5.post20221221: no-pyproject
+- **gast** 0.7.0: distutils, no-pyproject
+- **geckodriver-autoinstaller** 0.1.0: no-pyproject, setup-cfg-deprecated-keys
+- **gender-guesser** 0.4.0: no-pyproject
+- **geocoder** 1.38.1: distutils, no-pyproject, setup-cfg-deprecated-keys
+- **geohash2** 1.1: no-pyproject
+- **geojson** 3.3.0: no-pyproject
+- **geonames** 0.1.3: distutils, no-pyproject, setup-cfg-deprecated-keys
+- **geopy** 2.4.1: no-pyproject
+- **gevent** 26.5.0: distutils
+- **geventhttpclient** 2.3.9: distutils
+- **ghp-import** 2.1.0: distutils, no-pyproject
 - **gitdb** 4.0.12: no-pyproject
+- **github-action-utils** 1.1.0: no-pyproject
+- **glfw** 2.10.0: no-pyproject
+- **glob2** 0.7: no-pyproject
+- **glom** 25.12.0: no-pyproject
+- **gluonts** 0.16.2: distutils, no-build-system
+- **gnupg** 2.3.1: distutils, no-pyproject
+- **google** 3.0.0: distutils, no-pyproject
+- **google-ai-generativelanguage** 0.12.0: no-pyproject
 - **google-analytics-admin** 0.30.0: no-pyproject
+- **google-analytics-data** 0.23.0: no-pyproject
+- **google-api** 0.1.12: no-pyproject
 - **google-api-python-client** 2.197.0: no-pyproject
+- **google-api-python-client-stubs** 1.37.0: no-pyproject
+- **google-apitools** 0.5.35: distutils, no-pyproject, pkg-resources
+- **google-apps-meet** 0.5.0: no-pyproject
 - **google-auth** 2.53.0: no-pyproject
 - **google-auth-httplib2** 0.4.0: no-pyproject
 - **google-auth-oauthlib** 1.4.0: no-pyproject
+- **google-cloud** 0.34.0: no-pyproject
+- **google-cloud-access-context-manager** 0.6.0: no-pyproject
 - **google-cloud-aiplatform** 1.157.0: no-pyproject
+- **google-cloud-alloydb** 0.10.0: no-pyproject
+- **google-cloud-appengine-logging** 1.10.0: no-pyproject
+- **google-cloud-artifact-registry** 1.22.0: no-pyproject
+- **google-cloud-asset** 4.4.0: no-pyproject
+- **google-cloud-audit-log** 0.6.0: no-pyproject
+- **google-cloud-automl** 2.20.0: no-pyproject
 - **google-cloud-batch** 0.22.0: no-pyproject
+- **google-cloud-bigquery-biglake** 0.8.0: no-pyproject
+- **google-cloud-bigquery-datatransfer** 3.23.0: no-pyproject
+- **google-cloud-bigquery-storage** 2.39.0: no-pyproject
+- **google-cloud-bigtable** 2.38.0: no-pyproject
+- **google-cloud-build** 3.37.0: no-pyproject
 - **google-cloud-compute** 1.48.0: no-pyproject
+- **google-cloud-container** 2.65.0: no-pyproject
 - **google-cloud-core** 2.6.0: no-pyproject
+- **google-cloud-datacatalog** 3.31.0: no-pyproject
+- **google-cloud-dataflow-client** 0.14.0: no-pyproject
+- **google-cloud-dataform** 0.11.0: no-pyproject
+- **google-cloud-dataplex** 2.20.0: no-pyproject
+- **google-cloud-dataproc** 5.28.0: no-pyproject
+- **google-cloud-dataproc-metastore** 1.23.0: no-pyproject
+- **google-cloud-datastore** 2.25.0: no-pyproject
+- **google-cloud-discoveryengine** 0.20.0: no-pyproject
+- **google-cloud-dlp** 3.37.0: no-pyproject
+- **google-cloud-documentai** 3.15.0: no-pyproject
+- **google-cloud-error-reporting** 1.15.0: no-pyproject
+- **google-cloud-firestore** 2.27.0: no-pyproject
+- **google-cloud-iam** 2.23.0: no-pyproject
 - **google-cloud-kms** 3.13.0: no-pyproject
+- **google-cloud-language** 2.20.0: no-pyproject
+- **google-cloud-logging** 3.16.0: no-pyproject
+- **google-cloud-managedkafka** 0.4.0: no-pyproject
+- **google-cloud-memcache** 1.15.0: no-pyproject
+- **google-cloud-modelarmor** 0.6.0: no-pyproject
+- **google-cloud-monitoring** 2.31.0: no-pyproject
+- **google-cloud-orchestration-airflow** 1.21.0: no-pyproject
+- **google-cloud-org-policy** 1.17.0: no-pyproject
+- **google-cloud-os-config** 1.24.0: no-pyproject
+- **google-cloud-os-login** 2.21.0: no-pyproject
+- **google-cloud-profiler** 4.1.0: no-pyproject
+- **google-cloud-pubsub** 2.39.0: no-pyproject
+- **google-cloud-pubsublite** 1.13.0: no-pyproject
+- **google-cloud-recaptcha-enterprise** 1.31.0: no-pyproject
+- **google-cloud-recommendations-ai** 0.13.0: no-pyproject
+- **google-cloud-redis** 2.21.0: no-pyproject
+- **google-cloud-resource-manager** 1.17.0: no-pyproject
+- **google-cloud-run** 0.16.0: no-pyproject
+- **google-cloud-scheduler** 2.20.0: no-pyproject
 - **google-cloud-secret-manager** 2.29.0: no-pyproject
+- **google-cloud-spanner** 3.67.0: no-pyproject
+- **google-cloud-speech** 2.40.0: no-pyproject
 - **google-cloud-storage** 3.11.0: no-pyproject
+- **google-cloud-storage-control** 1.12.0: no-pyproject
+- **google-cloud-storage-transfer** 1.21.0: no-pyproject
+- **google-cloud-tasks** 2.22.0: no-pyproject
+- **google-cloud-texttospeech** 2.36.0: no-pyproject
+- **google-cloud-trace** 1.19.0: no-pyproject
+- **google-cloud-translate** 3.26.0: no-pyproject
+- **google-cloud-vectorsearch** 0.11.0: no-pyproject
+- **google-cloud-videointelligence** 2.19.0: no-pyproject
+- **google-cloud-vision** 3.14.0: no-pyproject
+- **google-cloud-workflows** 1.22.0: no-pyproject
+- **google-pasta** 0.2.0: no-pyproject
+- **google-re2** 1.1.20251105: no-pyproject
+- **google-reauth** 0.1.1: no-pyproject
 - **google-resumable-media** 2.10.0: no-pyproject
+- **google-search-results** 2.4.2: no-pyproject
+- **googleads** 50.0.0: no-pyproject
+- **googlemaps** 4.10.0: no-pyproject
+- **gprofiler-official** 1.0.0: no-pyproject
+- **grandalf** 0.8: no-pyproject
+- **grapheme** 0.6.0: no-pyproject
+- **graphene** 3.4.3: no-pyproject
+- **graphene-django** 3.2.3: no-pyproject
+- **graphframes** 0.6: no-pyproject
+- **great-expectations** 1.18.0: distutils
+- **greenback** 1.3.0: no-build-system
+- **grep-ast** 0.9.0: no-pyproject
+- **grpc-google-logging-v2** 0.11.1: no-pyproject
+- **grpc-stubs** 1.53.0.6: distutils, no-pyproject
 - **grpcio** 1.81.0: distutils
+- **grpcio-gcp** 0.2.2: no-pyproject
 - **grpcio-tools** 1.81.0: distutils, pkg-resources
+- **gspread-dataframe** 4.0.0: distutils, no-pyproject
+- **gssapi** 1.11.1: distutils
+- **gsutil** 5.37: no-pyproject
+- **guppy3** 3.1.7: distutils, no-pyproject, pkg-resources
+- **gym** 0.26.2: no-build-system
 - **h11** 0.16.0: no-build-system
+- **habluetooth** 6.8.3: distutils
+- **halo** 0.0.31: no-pyproject, setup-cfg-deprecated-keys
+- **hashring** 1.5.1: no-pyproject
+- **haversine** 2.9.0: no-pyproject
+- **hdfs** 2.7.3: no-pyproject
+- **hdijupyterutils** 0.23.0: distutils, no-pyproject, setup-cfg-deprecated-keys
+- **hexbytes** 1.3.1: no-build-system
+- **hiredis** 3.4.0: distutils, no-pyproject
+- **hjson** 3.1.0: distutils, no-pyproject
+- **hmsclient** 0.1.1: no-pyproject
+- **hogql-parser** 1.3.69: no-build-system
+- **hologram** 0.0.16: no-build-system
+- **html5lib** 1.1: no-pyproject, pkg-resources
+- **html5tagger** 1.3.0: no-pyproject
+- **htmlmin** 0.1.12: no-pyproject
+- **httmock** 1.4.0: no-pyproject
+- **http-ece** 1.2.1: no-pyproject
+- **httpie** 3.2.4: no-pyproject
+- **httpretty** 1.1.4: no-pyproject
+- **hubspot-api-client** 12.0.0: no-pyproject
 - **huggingface-hub** 1.18.0: no-build-system
+- **humanfriendly** 10.0: distutils, no-pyproject, pkg-resources
+- **hupper** 1.12.1: distutils
+- **hydra-core** 1.3.2: no-build-system, pkg-resources
+- **hyperopt** 0.2.7: no-pyproject, pkg-resources
+- **hyperpyyaml** 1.2.3: no-pyproject
+- **hypothesis-jsonschema** 0.23.1: no-build-system
+- **ibm-cos-sdk** 2.16.2: no-pyproject
+- **ibm-cos-sdk-core** 2.16.2: no-pyproject
+- **ibm-cos-sdk-s3transfer** 2.16.2: no-pyproject
+- **ibm-db** 3.2.9: distutils
+- **icdiff** 2.0.10: no-pyproject
+- **icecream** 2.2.0: no-build-system
+- **icmplib** 3.0.4: no-pyproject
+- **ics** 0.7.3: no-pyproject, setup-cfg-deprecated-keys
 - **identify** 2.6.19: no-pyproject
+- **ifaddr** 0.2.0: no-build-system
+- **imagehash** 4.3.2: distutils, no-pyproject
+- **imageio-ffmpeg** 0.6.0: no-pyproject
+- **imagesize** 2.0.0: no-pyproject
+- **imapclient** 3.1.0: no-build-system
+- **imgaug** 0.4.0: no-pyproject, pkg-resources, setup-cfg-deprecated-keys
+- **importlab** 0.8.1: no-pyproject
+- **impyla** 0.23.0: distutils, no-pyproject, pkg-resources
+- **incremental** 24.11.0: distutils
+- **inflection** 0.5.1: no-pyproject
+- **inflector** 3.1.1: no-pyproject, setup-cfg-deprecated-keys
+- **influxdb** 5.3.2: distutils, no-pyproject
+- **injector** 0.24.0: no-build-system
+- **insightface** 1.0.1: distutils
+- **intelhex** 2.3.0: distutils, no-pyproject
+- **interegular** 0.3.3: no-pyproject, setup-cfg-deprecated-keys
+- **intuit-oauth** 1.2.6: no-pyproject, pkg-resources
+- **iopath** 0.1.10: no-pyproject
+- **ip3country** 0.4.0: no-pyproject
+- **ipaddress** 1.0.23: distutils, no-pyproject
+- **ipython-genutils** 0.2.0: distutils, no-pyproject
+- **isoduration** 20.11.0: no-build-system
+- **iterators** 0.2.0: no-pyproject, setup-cfg-deprecated-keys
+- **iterproxy** 0.3.1: no-pyproject
+- **itypes** 1.2.0: no-pyproject
+- **j2cli** 0.3.10: no-pyproject, pkg-resources
+- **jaconv** 0.5.0: no-pyproject
+- **jaydebeapi** 1.2.3: no-pyproject
+- **jdcal** 1.4.1: no-pyproject
 - **jedi** 0.20.0: no-build-system
+- **jieba** 0.42.1: distutils, no-pyproject, pkg-resources
+- **jinja2-ansible-filters** 1.3.2: no-pyproject
+- **jinja2-humanize-extension** 0.4.0: no-pyproject
+- **jinja2-simple-tags** 0.6.1: no-pyproject
+- **jinja2-time** 0.2.0: no-pyproject
+- **jinxed** 2.0.4: no-pyproject
 - **jmespath** 1.1.0: no-pyproject
+- **jmp** 0.0.4: no-pyproject
+- **jproperties** 2.1.2: no-pyproject
+- **js2py** 0.74: distutils, no-pyproject
+- **jsbeautifier** 1.15.4: no-build-system
+- **jschema-to-python** 1.2.3: no-pyproject, setup-cfg-deprecated-keys
+- **jsmin** 3.0.1: no-pyproject
+- **json-e** 4.8.2: no-pyproject
+- **json-logging** 1.5.1: no-pyproject
+- **json-logic** 0.6.3: no-pyproject
+- **json-merge-patch** 0.3.0: no-pyproject
+- **json-rpc** 1.15.0: no-pyproject
+- **json2html** 1.3.0: no-pyproject, setup-cfg-deprecated-keys
+- **jsonlines** 4.0.0: no-pyproject
+- **jsonmerge** 1.9.2: no-pyproject
 - **jsonpatch** 1.33: distutils, no-pyproject
+- **jsonpath** 0.82.2: distutils, no-pyproject
+- **jsonpath-ng** 1.8.0: no-build-system
+- **jsonpath-rw** 1.4.0: no-pyproject
+- **jsonpath-rw-ext** 1.2.2: no-pyproject, setup-cfg-deprecated-keys
 - **jsonpointer** 3.1.1: no-pyproject
+- **jsons** 1.6.3: no-pyproject
+- **junit-xml** 1.9: no-build-system
+- **jupyter** 1.1.1: no-pyproject
+- **jupyter-lsp** 2.3.1: no-pyproject
+- **justext** 3.0.2: distutils, no-pyproject
+- **kafka-python-ng** 2.2.3: no-pyproject
+- **kconfiglib** 14.1.0: no-pyproject
+- **keras-applications** 1.0.8: no-pyproject
+- **keras-preprocessing** 1.1.2: no-pyproject
+- **kerberos** 1.3.1: no-pyproject
+- **kestra** 1.3.0: no-pyproject
+- **keyboard** 0.13.5: no-pyproject
+- **keyrings-google-artifactregistry-auth** 1.1.2: no-pyproject
+- **kfp** 2.16.1: no-pyproject
+- **kfp-pipeline-spec** 2.16.1: no-pyproject
+- **kfp-server-api** 2.16.1: no-pyproject
+- **knack** 0.14.0: no-pyproject
+- **koalas** 1.8.2: distutils, no-pyproject
+- **kombu** 5.6.2: no-build-system
+- **korean-lunar-calendar** 0.3.1: no-pyproject, setup-cfg-deprecated-keys
 - **kubernetes** 36.0.2: no-pyproject
+- **kylinpy** 2.8.4: no-pyproject, setup-cfg-deprecated-keys
+- **langdetect** 1.0.9: distutils, no-pyproject
+- **lark-parser** 0.12.0: no-pyproject
+- **latexcodec** 3.0.1: no-pyproject
+- **lazy-imports** 1.2.0: no-build-system
+- **ldap3** 2.9.1: distutils, no-pyproject
+- **ldfparser** 0.26.0: no-pyproject
+- **leather** 0.4.1: no-pyproject
+- **libclang** 18.1.1: no-pyproject
+- **liblinear-multicore** 2.50.0: distutils, no-pyproject
 - **librt** 0.11.0: distutils
+- **libsass** 0.23.0: distutils, no-pyproject, pkg-resources
+- **libvalkey** 4.0.1: distutils, no-pyproject
+- **liccheck** 0.9.2: no-pyproject, pkg-resources
+- **lifelines** 0.30.3: no-pyproject
+- **line-bot-sdk** 3.23.0: no-pyproject
+- **linecache2** 1.0.0: no-pyproject, setup-cfg-deprecated-keys
 - **litellm** 1.88.1: pkg-resources
+- **lkml** 1.3.7: no-build-system, setup-cfg-deprecated-keys
+- **llama-index-legacy** 0.9.48.post4: pkg-resources
+- **llvmlite** 0.47.0: distutils, no-pyproject
+- **lml** 0.2.0: no-pyproject, setup-cfg-deprecated-keys
+- **locate** 1.1.1: no-pyproject
+- **locket** 1.0.0: no-pyproject
+- **lockfile** 0.12.2: no-pyproject, setup-cfg-deprecated-keys
+- **locust-plugins** 5.0.0: no-build-system
+- **log-symbols** 0.0.14: no-pyproject, setup-cfg-deprecated-keys
+- **logfire** 4.36.0: pkg-resources
+- **logging-azure-rest** 1.3.0: no-build-system
+- **logzio-python-handler** 4.1.9: no-pyproject
+- **lomond** 0.3.3: no-pyproject
+- **looker-sdk** 26.10.0: no-pyproject
+- **looseversion** 1.3.0: distutils
+- **lorem** 0.1.1: distutils, no-pyproject
+- **lunarcalendar** 0.0.9: no-pyproject
+- **lunardate** 0.2.2: no-pyproject
+- **lupa** 2.8: distutils
+- **luqum** 1.0.0: no-build-system
 - **lxml** 6.1.1: distutils
+- **lxml-stubs** 0.5.1: no-build-system
+- **m3u8** 6.0.0: no-pyproject
+- **macholib** 1.16.4: distutils, no-pyproject, pkg-resources
+- **maincontentextractor** 0.0.4: no-pyproject
+- **makefun** 1.16.0: pkg-resources
+- **mando** 0.8.2: no-pyproject
+- **markdown-to-mrkdwn** 0.3.3: no-pyproject
+- **markdown2** 2.5.5: no-pyproject
+- **markdowntable** 6.0.0: no-pyproject
+- **marshmallow-dataclass** 8.7.1: no-build-system
+- **marshmallow-enum** 1.5.1: no-pyproject
+- **marshmallow-jsonschema** 0.16.0: no-build-system
+- **marshmallow-union** 0.1.15.post1: no-pyproject
+- **match** 0.3.2: no-pyproject
+- **mautrix** 0.21.0: no-build-system
+- **mccabe** 0.7.0: no-pyproject
+- **mdx-truly-sane-lists** 1.3: no-pyproject
+- **mecab-python3** 1.0.12: no-pyproject
+- **memoization** 0.4.0: no-pyproject
+- **memory-profiler** 0.61.0: distutils
+- **memray** 1.19.3: distutils
+- **mercantile** 1.2.1: no-pyproject
+- **mergedeep** 1.3.4: no-pyproject
+- **method-python** 2.1.1: no-pyproject
+- **methodtools** 0.4.7: no-pyproject
+- **microsoft-security-utilities-secret-masker** 1.0.0b4: no-pyproject
+- **mike** 2.2.0: no-pyproject
+- **minimal-snowplow-tracker** 0.0.2: distutils, no-pyproject
+- **minio** 7.2.20: no-pyproject
+- **miscreant** 0.3.0: no-pyproject
+- **mistletoe** 1.5.1: no-pyproject
+- **mkdocs-macros-plugin** 1.5.0: no-build-system
+- **mkdocs-minify-plugin** 0.8.0: no-pyproject
+- **mkdocs-monorepo-plugin** 1.1.2: no-pyproject
+- **mleap** 0.24.0: no-pyproject, setup-cfg-deprecated-keys
+- **mlx-lm** 0.31.3: no-pyproject
+- **mmcif** 1.1.1: distutils
+- **mock** 5.2.0: no-pyproject, setup-cfg-deprecated-keys
+- **modelscope** 1.37.1: distutils
+- **modin** 0.37.1: no-pyproject
+- **mohawk** 1.1.0: no-pyproject
+- **mongoengine** 0.29.3: no-pyproject
+- **monotonic** 1.6: distutils, no-pyproject, setup-cfg-deprecated-keys
 - **more-itertools** 11.1.0: distutils
+- **mouseinfo** 0.1.3: no-pyproject
+- **mpi4py** 4.1.2: distutils
+- **mpire** 2.10.2: no-pyproject
 - **msal** 1.37.0: no-pyproject
 - **msal-extensions** 1.3.1: no-pyproject
+- **msgpack-numpy** 0.4.8: no-pyproject
+- **msgpack-python** 0.5.6: distutils, no-pyproject
+- **msoffcrypto-tool** 6.0.0: pkg-resources
+- **msrest** 0.7.1: no-pyproject
+- **msrestazure** 0.6.4.post1: no-pyproject
+- **multi-key-dict** 2.0.3: distutils, no-pyproject
+- **multimethod** 2.0.2: no-build-system
+- **multipledispatch** 1.0.0: no-pyproject
 - **multiprocess** 0.70.19: distutils
+- **multitasking** 0.0.13: no-pyproject
+- **munch** 4.0.0: no-pyproject, setup-cfg-deprecated-keys
+- **mutf8** 1.0.6: no-pyproject
+- **mygene** 3.2.2: no-pyproject
 - **mypy** 2.1.0: distutils
+- **mysql-connector** 2.2.9: distutils, no-pyproject, pkg-resources
+- **nacos-sdk-python** 3.2.0: no-pyproject
+- **naked** 0.1.32: distutils, no-pyproject
+- **nameparser** 1.1.3: distutils, no-pyproject
+- **namex** 0.1.0: no-pyproject
+- **nanoid** 2.0.0: no-pyproject
+- **natsort** 8.4.0: no-pyproject
+- **ndg-httpsclient** 0.5.1: no-pyproject
+- **ndindex** 1.10.1: distutils
+- **ndjson** 0.3.1: no-pyproject
+- **nemo-toolkit** 2.7.3: distutils
+- **netifaces** 0.11.0: distutils, no-pyproject
+- **nevergrad** 1.0.12: no-build-system
+- **newrelic** 13.1.1: distutils
+- **newspaper3k** 0.2.8: distutils, no-pyproject
+- **nltk** 3.9.4: no-pyproject
+- **node-semver** 0.9.0: no-pyproject
+- **nose** 1.3.7: distutils, no-pyproject, pkg-resources
+- **notion-client** 3.1.0: no-pyproject
+- **ntlm-auth** 1.5.0: no-pyproject
+- **ntplib** 0.4.0: no-pyproject, setup-cfg-deprecated-keys
+- **nuitka** 4.1.2: distutils, pkg-resources
+- **nulltype** 2.3.1: no-pyproject
+- **num2words** 0.5.14: no-pyproject
+- **numba** 0.65.1: no-pyproject
+- **numcodecs** 0.16.5: distutils
+- **numpy-financial** 1.0.0: no-pyproject
+- **nvidia-ml-py** 13.610.43: distutils, no-pyproject
+- **oauth2client** 4.1.3: no-pyproject
 - **oauthlib** 3.3.1: no-pyproject
+- **objgraph** 3.6.2: no-pyproject
+- **oci-cli** 3.86.0: no-pyproject
+- **ocspbuilder** 0.10.2: no-pyproject
+- **ocspresponder** 0.5.0: no-pyproject
+- **od** 2.0.2: no-pyproject
+- **odfpy** 1.4.1: no-pyproject
+- **office365-rest-python-client** 2.6.2: no-build-system, setup-cfg-deprecated-keys
+- **oldest-supported-numpy** 2023.12.21: no-pyproject
+- **olefile** 0.47: no-pyproject
+- **oletools** 0.60.2: distutils, no-pyproject
+- **omegaconf** 2.3.0: distutils, no-build-system, pkg-resources
+- **openapi-schema-pydantic** 1.2.4: no-build-system
+- **opencc-python-reimplemented** 0.1.7: no-pyproject, setup-cfg-deprecated-keys
+- **opencensus** 0.11.4: no-pyproject
+- **opencensus-context** 0.1.3: no-pyproject
+- **opencensus-ext-azure** 1.1.15: no-pyproject
+- **openevals** 0.2.0: no-build-system
+- **openfoodfacts** 5.1.0: no-build-system
+- **openhands-ai** 1.7.0: pkg-resources
 - **openpyxl** 3.1.5: no-pyproject
+- **openpyxl-stubs** 0.1.25: no-pyproject
+- **opensearch-py** 3.2.0: no-pyproject
+- **opentelemetry-container-distro** 0.2.0: setup-cfg-deprecated-keys
+- **opentelemetry-exporter-gcp-logging** 1.12.0a0: no-pyproject
+- **opentelemetry-exporter-gcp-monitoring** 1.12.0a0: no-pyproject
+- **opentelemetry-exporter-gcp-trace** 1.12.0: no-pyproject
+- **opentelemetry-propagator-gcp** 1.12.0: no-pyproject
+- **opentelemetry-resourcedetector-docker** 0.4.0: setup-cfg-deprecated-keys
+- **opentelemetry-resourcedetector-gcp** 1.12.0a0: no-pyproject
+- **opentelemetry-resourcedetector-kubernetes** 0.3.0: setup-cfg-deprecated-keys
+- **opentelemetry-resourcedetector-process** 0.3.0: setup-cfg-deprecated-keys
+- **opentracing** 2.4.0: no-pyproject, setup-cfg-deprecated-keys
+- **openvino-telemetry** 2025.2.0: no-pyproject
+- **opik** 2.0.59: no-build-system
+- **opsgenie-sdk** 2.1.5: no-pyproject
+- **optimum** 2.2.0: no-build-system
+- **oras** 0.2.42: no-build-system
+- **orderedmultidict** 1.0.2: no-pyproject
+- **oscrypto** 1.3.0: no-pyproject
+- **oss2** 2.19.1: distutils, no-pyproject
+- **outcome** 1.3.0.post0: no-build-system
+- **overrides** 7.7.0: distutils, no-pyproject
+- **oyaml** 1.0: no-pyproject
+- **packageurl-python** 0.17.6: no-pyproject, setup-cfg-deprecated-keys
+- **paginate** 0.5.7: no-pyproject
+- **pandas-gbq** 0.35.0: no-pyproject
+- **pandasql** 0.7.3: distutils, no-pyproject
+- **pandocfilters** 1.5.1: distutils, no-pyproject
+- **parsedatetime** 2.6: no-pyproject
+- **parsley** 1.3: distutils, no-pyproject
 - **parso** 0.8.7: no-build-system
+- **passlib** 1.7.4: distutils, no-pyproject, pkg-resources
+- **paste** 3.10.1: no-pyproject, pkg-resources
+- **pastedeploy** 3.1.0: pkg-resources
+- **pathlib** 1.0.1: distutils, no-pyproject
+- **pathlib-mate** 1.3.2: no-pyproject
+- **pathlib2** 2.3.7.post1: no-pyproject
+- **pathos** 0.3.5: distutils
+- **patsy** 1.0.2: no-pyproject
+- **paypalrestsdk** 1.13.3: distutils, no-pyproject
+- **pbr** 7.0.3: distutils, pkg-resources
+- **pcodedmp** 1.2.6: distutils, no-pyproject
+- **pdf2image** 1.17.0: no-pyproject, setup-cfg-deprecated-keys
+- **pdfkit** 1.0.0: distutils, no-pyproject
+- **pdfplumber** 0.11.9: no-pyproject
+- **pdfrw** 0.4: no-pyproject
+- **pdpyras** 5.4.1: no-pyproject
+- **pebble** 5.2.0: no-pyproject
+- **pefile** 2024.8.26: no-pyproject
+- **peft** 0.19.1: no-build-system
+- **pep8** 1.7.1: no-pyproject
+- **pep8-naming** 0.15.1: no-pyproject
+- **pex** 2.96.0: distutils, pkg-resources
 - **pexpect** 4.9.0: distutils, no-pyproject
+- **pi-heif** 1.3.0: setup-cfg-deprecated-keys
+- **pickleshare** 0.7.5: no-pyproject
+- **piexif** 1.1.3: no-pyproject
+- **pillow-heif** 1.3.0: setup-cfg-deprecated-keys
 - **pip** 26.1.2: distutils
+- **pip-api** 0.0.34: no-build-system
+- **pip-hello-world** 0.1: no-pyproject
+- **pipelinewise-singer-python** 3.0.2: no-build-system
+- **pipenv** 2026.6.2: distutils
+- **pkce** 1.0.3: no-pyproject
+- **pkginfo** 1.12.1.2: distutils, no-pyproject
+- **pkgutil-resolve-name** 1.3.10: distutils
+- **plac** 1.4.5: no-pyproject
+- **plaid-python** 39.2.0: no-pyproject
+- **platformio** 6.1.19: no-pyproject
+- **plotext** 5.3.2: no-pyproject, setup-cfg-deprecated-keys
+- **plotly-express** 0.4.1: no-pyproject
+- **ply** 3.11: distutils, no-pyproject, setup-cfg-deprecated-keys
+- **plyvel** 1.5.1: no-pyproject
+- **pmdarima** 2.1.1: distutils
+- **polib** 1.2.0: distutils, no-pyproject
+- **polling** 0.3.2: no-pyproject, setup-cfg-deprecated-keys
+- **polling2** 0.5.0: no-pyproject, setup-cfg-deprecated-keys
+- **poly-eip712-structs** 0.0.1: no-pyproject
+- **posthog** 7.18.0: distutils
+- **posthoganalytics** 7.18.0: distutils
+- **pox** 0.3.7: distutils
+- **ppft** 1.7.8: distutils
+- **pprintpp** 0.4.0: no-pyproject
 - **pre-commit** 4.6.0: no-pyproject
+- **pre-commit-hooks** 6.0.0: no-pyproject
+- **premailer** 3.10.0: no-pyproject
+- **presto-python-client** 0.8.4: no-pyproject
+- **pretty-html-table** 0.9.16: no-pyproject
+- **primepy** 1.3: no-pyproject
+- **priority** 2.0.0: no-pyproject
+- **prison** 0.2.1: no-pyproject
+- **probableparsing** 0.0.1: no-pyproject
+- **prometheus-api-client** 0.7.2: no-build-system
+- **prometheus-flask-exporter** 0.23.2: no-pyproject
+- **promise** 2.3: no-pyproject
 - **propcache** 0.5.2: distutils
 - **protobuf** 7.35.0: no-pyproject
+- **protobuf3-to-dict** 0.1.5: no-pyproject
+- **ps-mem** 3.14: no-pyproject
 - **psutil** 7.2.2: distutils
+- **psycopg2** 2.9.12: distutils, no-pyproject
 - **psycopg2-binary** 2.9.12: distutils, no-pyproject
 - **ptyprocess** 0.7.0: distutils
+- **publication** 0.0.3: distutils
+- **publicsuffix2** 2.20191221: no-pyproject
+- **publicsuffixlist** 1.0.2.20260529: no-pyproject
+- **pudb** 2025.1.5: distutils
+- **pure-sasl** 0.6.2: no-pyproject
+- **pusher** 3.3.4: no-pyproject, setup-cfg-deprecated-keys
+- **pvlib** 0.15.1: distutils
+- **py** 1.11.0: pkg-resources
+- **py-builder-signing-sdk** 0.0.2: no-pyproject
+- **py-ecc** 8.0.0: no-build-system
+- **py-mini-racer** 0.6.0: distutils, no-pyproject, pkg-resources
+- **py-moneyed** 3.0: setup-cfg-deprecated-keys
+- **py-openapi-schema-to-json-schema** 0.0.3: no-pyproject
+- **py-ubjson** 0.16.1: distutils, no-pyproject, pkg-resources
+- **py4j** 0.10.9.9: distutils, no-pyproject
+- **pyaes** 1.6.1: distutils, no-pyproject
+- **pyahocorasick** 2.3.1: no-pyproject
+- **pyaml** 26.2.1: no-build-system
+- **pyandoc** 0.2.0: distutils, no-pyproject
+- **pyannote-audio** 4.0.4: pkg-resources
+- **pyarmor** 9.2.5: distutils, no-pyproject, pkg-resources
+- **pyautogui** 0.9.54: no-build-system
+- **pybind11** 3.0.4: distutils
+- **pybind11-stubgen** 2.5.5: no-pyproject
+- **pybuildkite** 1.3.0: no-build-system
+- **pybytebuffer** 1.0.5: no-pyproject
+- **pycairo** 1.29.0: pkg-resources
+- **pycarlo** 0.12.480: no-build-system, setup-cfg-deprecated-keys
+- **pycasbin** 2.8.0: pkg-resources
+- **pycld2** 0.42: no-pyproject
+- **pycodestyle** 2.14.0: no-pyproject
+- **pycognito** 2024.5.1: no-pyproject
+- **pycrypto** 2.6.1: distutils, no-pyproject
+- **pycryptodome** 3.23.0: distutils
+- **pycryptodomex** 3.23.0: distutils
+- **pydata-google-auth** 1.9.1: distutils, no-pyproject
+- **pydevd** 3.5.0: distutils, no-build-system
+- **pydevd-pycharm** 262.7132.31: distutils
+- **pydispatcher** 2.0.7: distutils
+- **pydruid** 0.6.9: no-pyproject
+- **pydub** 0.25.1: no-pyproject
+- **pyenchant** 3.3.0: no-build-system
+- **pyexcel** 0.7.4: no-pyproject, setup-cfg-deprecated-keys
+- **pyexcel-io** 0.6.7: no-pyproject, setup-cfg-deprecated-keys
+- **pyexcel-xls** 0.7.1: no-pyproject, setup-cfg-deprecated-keys
+- **pyexcel-xlsx** 0.6.1: no-pyproject, setup-cfg-deprecated-keys
+- **pyflakes** 3.4.0: distutils, no-pyproject
+- **pygame** 2.6.1: distutils, no-pyproject, pkg-resources
+- **pygdbmi** 0.11.0.0: no-pyproject
+- **pygerduty** 0.38.3: no-pyproject
+- **pygetwindow** 0.0.9: no-pyproject
+- **pygit2** 1.19.2: distutils
+- **pygsheets** 2.0.6: distutils, no-pyproject, setup-cfg-deprecated-keys
+- **pygtrie** 2.5.0: distutils, no-pyproject
+- **pyhcl** 0.4.5: distutils
+- **pyhive** 0.7.0: no-pyproject
+- **pyhocon** 0.3.63: no-pyproject
+- **pyhumps** 3.8.0: setup-cfg-deprecated-keys
+- **pyhwpx** 1.7.2: no-pyproject
+- **pyinotify** 0.9.6: distutils, no-pyproject
+- **pyinstaller-hooks-contrib** 2026.6: no-build-system
+- **pykerberos** 1.2.4: no-pyproject
+- **pykwalify** 1.8.0: distutils, no-pyproject
+- **pylatex** 1.4.2: distutils, no-build-system, setup-cfg-deprecated-keys
+- **pylatexenc** 2.10: no-pyproject
+- **pylev** 1.4.0: distutils
+- **pylink-square** 2.0.1: no-pyproject, setup-cfg-deprecated-keys
+- **pylogbeat** 2.1.0: no-pyproject
+- **pymarkdownlnt** 0.9.37: no-pyproject
+- **pymeeus** 0.5.12: distutils, no-pyproject
+- **pymemcache** 4.0.0: no-build-system
+- **pymssql** 2.3.13: distutils
+- **pynamodb** 6.1.0: no-pyproject
+- **pynetbox** 7.7.0: no-pyproject
+- **pyngrok** 8.1.2: no-build-system
+- **pynose** 1.5.5: pkg-resources
+- **pynput** 1.8.2: no-pyproject
+- **pyobjc-core** 12.2: distutils
+- **pyobjc-framework-cocoa** 12.2: distutils
+- **pyobjc-framework-coreml** 12.2: distutils
+- **pyobjc-framework-quartz** 12.2: distutils
+- **pyobjc-framework-vision** 12.2: distutils
+- **pyocse** 0.1.3: distutils, no-pyproject, pkg-resources
+- **pyodps** 0.12.6: distutils, pkg-resources
+- **pyomo** 6.10.1: distutils
 - **pyopenssl** 26.2.0: no-build-system
+- **pyotp** 2.9.0: no-build-system
+- **pypd** 1.1.0: no-pyproject, setup-cfg-deprecated-keys
+- **pypika** 0.51.1: no-build-system
+- **pypinyin** 0.55.0: distutils, no-pyproject
+- **pypiwin32** 223: no-pyproject
+- **pyquaternion** 0.9.9: no-pyproject, setup-cfg-deprecated-keys
+- **pyquery** 2.0.1: no-pyproject
+- **pyramid-mako** 1.1.0: no-pyproject
+- **pyre-extensions** 0.0.32: no-pyproject
+- **pyreadstat** 1.3.5: distutils
+- **pyrect** 0.2.0: no-pyproject
+- **pyright** 1.1.410: no-build-system
+- **pyro-api** 0.1.2: no-pyproject
+- **pyro-ppl** 1.9.1: no-build-system
+- **pyroaring** 1.1.0: distutils, no-pyproject
+- **pyrsistent** 0.20.0: distutils
+- **pysam** 0.24.0: distutils
+- **pyserial** 3.5: distutils, no-pyproject
+- **pysftp** 0.2.9: no-pyproject
+- **pyshark** 0.6: no-pyproject
+- **pysher** 1.0.8: no-pyproject
+- **pysmb** 1.2.14: distutils, no-pyproject
+- **pysocks** 1.7.1: no-pyproject
+- **pyspark-client** 4.1.2: no-pyproject
+- **pystemmer** 3.1.0: no-pyproject
+- **pyte** 0.8.2: no-pyproject
 - **pytest** 9.0.3: pkg-resources
+- **pytest-assume** 2.4.3: no-pyproject, setup-cfg-deprecated-keys
+- **pytest-cases** 3.10.1: pkg-resources
+- **pytest-custom-exit-code** 0.3.0: no-pyproject
+- **pytest-dependency** 0.6.1: distutils, no-pyproject
+- **pytest-docker** 3.2.5: setup-cfg-deprecated-keys
+- **pytest-dotenv** 0.5.2: no-pyproject, setup-cfg-deprecated-keys
+- **pytest-flakefinder** 1.1.0: no-pyproject
+- **pytest-freezegun** 0.4.2: distutils, no-pyproject
+- **pytest-homeassistant-custom-component** 0.13.337: no-pyproject
+- **pytest-icdiff** 0.9: no-pyproject
+- **pytest-instafail** 0.5.0: no-pyproject
+- **pytest-json-report** 1.5.0: no-pyproject
+- **pytest-messenger** 3.3.0: no-pyproject
+- **pytest-ordering** 0.6: no-pyproject
+- **pytest-profiling** 1.8.1: no-pyproject
+- **pytest-regressions** 2.11.0: no-pyproject
+- **pytest-runner** 6.0.1: pkg-resources
+- **pytest-sftpserver** 1.3.0: no-pyproject
+- **pytest-shard** 0.1.2: no-build-system
+- **pytest-testmon** 2.2.0: pkg-resources
+- **pytest-timeouts** 1.2.1: no-pyproject
+- **pytest-unordered** 0.7.0: no-build-system
+- **pytest-vcr** 1.0.2: no-pyproject
+- **pytest-watch** 4.2.0: no-pyproject, setup-cfg-deprecated-keys
+- **python-box** 7.4.1: no-pyproject
+- **python-chess** 1.999: no-pyproject
+- **python-consul** 1.1.0: no-pyproject
+- **python-crfsuite** 0.9.12: distutils
+- **python-crontab** 3.3.0: no-build-system
 - **python-dateutil** 2.9.0.post0: distutils
+- **python-decouple** 3.8: no-pyproject, setup-cfg-deprecated-keys
 - **python-discovery** 1.4.0: distutils
+- **python-editor** 1.0.4: distutils, no-pyproject
+- **python-hostlist** 2.3.0: no-pyproject
+- **python-http-client** 3.3.7: distutils, no-pyproject
+- **python-jenkins** 1.8.3: no-pyproject, setup-cfg-deprecated-keys
+- **python-keystoneclient** 5.8.0: no-pyproject
+- **python-logging-loki** 0.3.1: no-pyproject
+- **python-magic** 0.4.27: no-pyproject
+- **python-memcached** 1.62: no-pyproject
+- **python-nvd3** 0.16.0: distutils, no-pyproject
+- **python-olm** 3.2.16: distutils
+- **python-rapidjson** 1.23: distutils, no-pyproject
+- **python-slugify** 8.0.4: no-pyproject
+- **python-snappy** 0.7.3: distutils, no-pyproject
+- **python-stdnum** 2.2: no-pyproject, pkg-resources
+- **python-tds** 1.17.1: no-pyproject
+- **python-utils** 3.9.1: no-build-system, setup-cfg-deprecated-keys
+- **python-whois** 0.9.6: no-pyproject
+- **python-xlib** 0.33: no-pyproject, pkg-resources
+- **python3-logstash** 0.4.80: distutils, no-pyproject
+- **python3-openid** 3.2.0: no-pyproject
+- **python3-xlib** 0.15: distutils, no-pyproject
+- **pythonnet** 3.1.0: distutils
+- **pytimeparse** 1.1.8: no-pyproject
+- **pytimeparse2** 1.7.1: no-pyproject
+- **pytorch-metric-learning** 2.9.0: no-pyproject
+- **pytube** 15.0.0: no-pyproject
+- **pytweening** 1.2.0: no-pyproject
 - **pytz** 2026.2: distutils, no-pyproject, pkg-resources
+- **pytzdata** 2020.1: distutils, pkg-resources
+- **pyunormalize** 17.0.0: no-pyproject
+- **pyupgrade** 3.21.2: no-pyproject
+- **pyvirtualdisplay** 3.0: no-pyproject
+- **pywin32-ctypes** 0.2.3: no-pyproject
+- **pywinauto** 0.6.9: no-pyproject
+- **pyxdg** 0.28: no-pyproject
+- **pyxlsb** 1.0.10: no-pyproject
+- **pyxtal** 1.1.4: no-build-system, setup-cfg-deprecated-keys
 - **pyyaml** 6.0.3: distutils
+- **pyyaml-ft** 8.0.0: distutils
+- **qtconsole** 5.7.2: no-pyproject
+- **querystring-parser** 1.2.4: distutils, no-pyproject
+- **rank-bm25** 0.2.2: no-pyproject
 - **rapidfuzz** 3.14.5: distutils
+- **rarfile** 4.2: no-pyproject
+- **ratelim** 0.1.6: distutils, no-pyproject
+- **ratelimit** 2.2.1: no-pyproject
+- **raven** 6.10.0: no-pyproject, pkg-resources
+- **rcssmin** 1.2.2: distutils
+- **readabilipy** 0.3.0: no-pyproject
+- **readerwriterlock** 1.0.9: no-pyproject, setup-cfg-deprecated-keys
+- **recommonmark** 0.7.1: no-pyproject
+- **red-black-tree-mod** 1.22: distutils, no-pyproject
+- **redis-py-cluster** 2.1.3: distutils, no-pyproject
+- **redlock-py** 1.0.8: no-pyproject
+- **redo** 3.0.0: distutils, no-build-system
+- **reedsolo** 1.7.0: distutils, no-pyproject
+- **reliability** 0.9.0: no-pyproject
+- **requests-auth-aws-sigv4** 0.7: no-pyproject
+- **requests-aws-sign** 0.1.6: no-pyproject
+- **requests-aws4auth** 1.3.2: no-pyproject
+- **requests-futures** 1.0.2: distutils, no-build-system
+- **requests-kerberos** 0.15.0: no-pyproject
+- **requests-oauth** 0.4.1: no-pyproject
 - **requests-oauthlib** 2.0.0: no-pyproject
+- **requests-pkcs12** 1.27: no-pyproject
+- **requests-sigv4** 0.1.6: no-pyproject, setup-cfg-deprecated-keys
 - **requests-toolbelt** 1.0.0: no-pyproject
+- **resend** 2.30.1: no-pyproject
+- **respx** 0.23.1: no-pyproject
+- **restructuredtext-lint** 2.0.2: no-pyproject
+- **retry** 0.9.2: no-pyproject, setup-cfg-deprecated-keys
+- **rfc3339** 6.2: distutils, no-pyproject
+- **rfc3339-validator** 0.1.4: no-pyproject
+- **rfc3986** 2.0.0: no-pyproject
+- **rfc3986-validator** 0.1.1: no-pyproject
+- **rfc3987** 1.3.8: distutils, no-pyproject
+- **rjsmin** 1.2.5: distutils
+- **rlp** 4.1.0: no-build-system
+- **robotframework** 7.4.2: no-build-system
+- **robotframework-requests** 0.9.7: distutils, no-pyproject
+- **robotframework-seleniumlibrary** 6.9.0: no-build-system
+- **rouge** 1.0.1: no-pyproject
+- **rouge-score** 0.1.2: no-pyproject
+- **roundrobin** 0.1.0: no-pyproject
+- **rtfde** 0.1.2.2: no-pyproject
+- **ruamel-yaml-jinja2** 0.2.7: distutils, no-pyproject, pkg-resources
+- **rush** 2021.4.0: no-build-system
+- **ruyaml** 0.91.0: distutils
+- **rx** 3.2.0: no-pyproject
+- **s3cmd** 2.4.0: no-pyproject
 - **s3fs** 2026.4.0: no-pyproject
+- **s3path** 0.6.5: no-pyproject
 - **s3transfer** 0.18.0: no-build-system
+- **sacremoses** 0.1.1: no-pyproject
+- **sagemaker-mlflow** 0.4.0: no-build-system, setup-cfg-deprecated-keys
+- **salesforce-bulk** 2.2.0: no-pyproject
+- **salesforce-fuelsdk-sans** 1.3.1: no-pyproject
+- **sanic-routing** 23.12.0: no-build-system
+- **sarif-om** 1.0.4: no-pyproject, setup-cfg-deprecated-keys
+- **sasl** 0.3.1: distutils, no-pyproject
+- **scalar-fastapi** 1.8.2: no-pyproject
+- **scandir** 1.10.0: distutils, no-pyproject
+- **schedula** 1.6.15: no-pyproject
+- **schema** 0.7.8: no-build-system
+- **scikit-build** 0.19.0: distutils
+- **scikit-build-core** 0.12.2: distutils
+- **scikit-network** 0.33.5: distutils
 - **scipy** 1.17.1: pkg-resources
+- **scp** 0.15.0: no-pyproject
+- **scrapbook** 0.5.0: no-pyproject
+- **scrapy-playwright** 0.0.46: no-build-system
+- **scrubadub** 2.0.1: no-pyproject
+- **scs** 3.2.11: distutils
+- **segment-analytics-python** 2.3.6: distutils, no-pyproject
+- **segment-anything** 1.0: no-pyproject
+- **selenium-wire** 5.1.0: no-build-system, pkg-resources, setup-cfg-deprecated-keys
+- **semantic-version** 2.10.0: no-pyproject, pkg-resources
+- **semgrep** 1.165.0: distutils
+- **sendgrid** 6.12.5: no-pyproject
 - **sentry-sdk** 2.62.0: no-build-system, pkg-resources
+- **setproctitle** 1.3.7: no-build-system
 - **setuptools** 82.0.1: distutils, pkg-resources
+- **setuptools-download** 1.1.0: no-pyproject
+- **setuptools-git-versioning** 3.1.0: distutils
+- **setuptools-golang** 2.9.0: distutils, no-pyproject
+- **sgmllib3k** 1.0.0: no-pyproject
+- **shareplum** 0.5.1: distutils, no-build-system
+- **shellcheck-py** 0.11.0.1: no-pyproject
+- **shellescape** 3.8.1: no-pyproject
+- **shillelagh** 1.4.4: setup-cfg-deprecated-keys
+- **shrub-py** 3.11.0: no-build-system
+- **shyaml** 0.6.2: no-pyproject, setup-cfg-deprecated-keys
+- **simple-term-menu** 1.6.6: no-pyproject
+- **simplejson** 4.1.1: distutils
 - **six** 1.17.0: distutils, no-pyproject
+- **sklearn** 0.0.post12: no-pyproject
+- **slackclient** 2.9.4: no-pyproject
+- **slicer** 0.0.8: no-pyproject
+- **smdebug-rulesconfig** 1.0.1: no-pyproject
 - **smmap** 5.0.3: no-pyproject
+- **snapshot-restore-py** 1.0.0: no-pyproject
+- **snapshottest** 0.6.0: no-pyproject
 - **snowflake-connector-python** 4.6.0: setup-cfg-deprecated-keys
+- **snowplow-tracker** 1.1.0: distutils, no-pyproject
+- **socksio** 1.0.0: distutils
+- **soda-core-spark** 3.5.6: no-pyproject
+- **soda-core-spark-df** 3.5.6: no-pyproject
 - **sortedcontainers** 2.4.0: no-pyproject
+- **soundfile** 0.14.0: no-pyproject
+- **spacy-language-detection** 0.2.1: no-pyproject, setup-cfg-deprecated-keys
+- **spacy-legacy** 3.0.12: no-pyproject
+- **spark-nlp** 6.4.1: distutils, no-pyproject
+- **sparqlwrapper** 2.0.0: setup-cfg-deprecated-keys
+- **sphinx-basic-ng** 1.0.0b2: no-pyproject
+- **sphinx-copybutton** 0.5.2: no-pyproject
+- **sphinx-rtd-theme** 3.1.0: distutils, no-pyproject
+- **sphinxcontrib-jsmath** 1.0.1: no-pyproject
+- **sphinxcontrib-redoc** 1.6.0: no-pyproject, pkg-resources
+- **spinners** 0.0.24: no-pyproject, setup-cfg-deprecated-keys
+- **splunk-handler** 3.0.0: no-pyproject
+- **spython** 0.3.14: no-build-system
+- **sql-formatter** 0.6.2: no-build-system, pkg-resources
+- **sqlalchemy-adapter** 1.9.0: no-pyproject
+- **sqlalchemy-cockroachdb** 2.0.4: no-build-system
+- **sqlalchemy-drill** 1.1.10: no-pyproject
+- **sqlalchemy-json** 0.7.0: no-pyproject
+- **sqlalchemy-mate** 2.0.0.3: no-pyproject
+- **sqlalchemy-redshift** 1.0.0: no-build-system
+- **sqlalchemy-spanner** 1.19.0: no-pyproject
+- **sqlalchemy-stubs** 0.4: no-pyproject
+- **sqlalchemy-trino** 0.5.0: no-pyproject
+- **sqlean-py** 3.50.4.5: no-pyproject
+- **sqlfluff-templater-dbt** 4.2.2: no-build-system
+- **sqlitedict** 2.1.0: no-pyproject
+- **sshpubkeys** 3.3.1: no-pyproject
+- **stable-baselines3** 2.8.0: no-build-system
+- **stanza** 1.12.2: no-pyproject
+- **starkbank-ecdsa** 2.3.1: no-pyproject
+- **starlette-exporter** 0.23.0: no-pyproject
+- **statsig** 0.71.6: no-pyproject
+- **stix2** 3.0.2: no-pyproject
+- **stix2-patterns** 2.1.2: no-pyproject
+- **stone** 3.3.9: no-pyproject, pkg-resources
+- **stream-python** 5.4.0: no-build-system
+- **strenum** 0.4.15: distutils, no-pyproject
+- **strict-rfc3339** 0.7: distutils, no-pyproject
+- **stringcase** 1.2.0: distutils, no-pyproject, setup-cfg-deprecated-keys
+- **stripe-agent-toolkit** 0.7.0: no-build-system
+- **submitit** 1.5.4: distutils
+- **sudachidict-core** 20260428: no-pyproject
+- **suds-community** 1.2.0: no-pyproject, pkg-resources
+- **suds-py3** 1.4.5.0: no-pyproject
+- **supervisor** 4.3.0: no-pyproject, pkg-resources
+- **svgwrite** 1.4.3: no-pyproject
+- **swifter** 1.4.0: no-pyproject, setup-cfg-deprecated-keys
 - **sympy** 1.14.0: no-build-system
+- **tabcompleter** 1.4.1: pkg-resources
+- **tableau-api-lib** 0.1.50: no-pyproject
+- **tavily-python** 0.7.25: no-pyproject
+- **telepath** 0.3.1: no-pyproject
+- **tensorflow-metadata** 1.21.0: distutils
+- **tensorstore** 0.1.84: distutils
+- **tentaclio-s3** 0.0.3: no-build-system
+- **testcontainers** 4.14.2: distutils
+- **testing-common-database** 2.0.3: no-pyproject
+- **testing-postgresql** 1.3.0: no-pyproject
+- **testrail-api** 1.13.6: no-pyproject
+- **text-unidecode** 1.3: no-pyproject
+- **textdistance** 4.6.3: no-build-system
+- **textfsm** 2.1.0: no-pyproject, setup-cfg-deprecated-keys
+- **textparser** 0.24.0: no-pyproject
+- **textstat** 0.7.13: no-pyproject, pkg-resources, setup-cfg-deprecated-keys
+- **texttable** 1.7.0: no-pyproject
+- **textwrap3** 0.9.2: no-pyproject
+- **tf-keras** 2.21.0: no-pyproject
+- **thefuzz** 0.22.1: no-pyproject
+- **thinc** 9.1.1: setup-cfg-deprecated-keys
+- **thrift-sasl** 0.4.3: no-pyproject
+- **timeout-decorator** 0.5.0: distutils, no-pyproject
+- **tinytuya** 1.18.1: pkg-resources
+- **tls-client** 1.0.1: no-pyproject
+- **token-bucket** 0.3.0: no-pyproject
+- **tokenize-rt** 6.2.0: no-pyproject
 - **toml** 0.10.2: distutils, no-pyproject
+- **tonyg-rfc3339** 0.1: distutils, no-pyproject
+- **tools** 1.0.30: no-pyproject
+- **torch-ema** 0.3: no-pyproject
+- **torch-pitch-shift** 1.2.5: no-pyproject
+- **torchdiffeq** 0.2.5: no-pyproject
+- **torchmetrics** 1.9.0: no-pyproject
+- **torchtnt** 0.2.4: no-build-system, pkg-resources
+- **torchviz** 0.0.3: distutils, no-pyproject
+- **traceback2** 1.4.0: no-pyproject, setup-cfg-deprecated-keys
+- **trafaret** 2.1.1: no-pyproject
+- **traittypes** 0.2.3: distutils, no-pyproject
 - **transformers** 5.10.2: no-build-system
+- **transitions** 0.9.3: no-pyproject
+- **translationstring** 1.4: no-pyproject
+- **trimesh** 4.12.2: pkg-resources
+- **trino** 0.337.0: no-pyproject
+- **trio-typing** 0.10.0: no-pyproject
+- **trio-websocket** 0.12.2: no-build-system
+- **troposphere** 4.10.2: no-build-system
+- **trustcall** 0.0.39: no-build-system
+- **tuspy** 1.1.0: no-pyproject
+- **twilio** 9.10.9: no-pyproject
+- **twirp** 0.0.7: no-pyproject
+- **typed-ast** 1.5.5: distutils, no-pyproject
+- **types-aioboto3** 15.5.0: no-pyproject
+- **types-certifi** 2021.10.8.3: no-pyproject
+- **types-chardet** 5.0.4.6: no-pyproject
+- **types-click** 7.1.8: no-pyproject
+- **types-confluent-kafka** 1.4.1: no-build-system
+- **types-cryptography** 3.3.23.2: no-pyproject
+- **types-flask** 1.1.6: no-pyproject
+- **types-freezegun** 1.1.10: no-pyproject
+- **types-jinja2** 2.11.9: no-pyproject
+- **types-markupsafe** 1.1.10: no-pyproject
+- **types-pillow** 10.2.0.20240822: no-pyproject
+- **types-pyopenssl** 24.1.0.20240722: no-pyproject
+- **types-python-slugify** 8.0.2.20240310: no-pyproject
+- **types-redis** 4.6.0.20241004: no-pyproject
+- **types-sqlalchemy-utils** 1.1.0: no-pyproject, setup-cfg-deprecated-keys
+- **types-tzlocal** 5.1.0.1: no-pyproject
+- **types-urllib3** 1.26.25.14: no-pyproject
+- **types-werkzeug** 1.0.9: no-pyproject
+- **typing** 3.10.0.0: no-pyproject, setup-cfg-deprecated-keys
+- **typing-inspect** 0.9.0: no-pyproject
+- **typing-utils** 0.1.0: no-pyproject
+- **uamqp** 1.6.11: distutils
+- **ulid-py** 1.1.0: distutils, no-pyproject, setup-cfg-deprecated-keys
+- **ultralytics-thop** 2.0.20: distutils
+- **undetected-chromedriver** 3.5.5: distutils, no-pyproject
+- **unicodecsv** 0.14.1: no-pyproject
+- **unicodedata2** 17.0.1: no-pyproject
+- **unicorn** 2.1.4: distutils, pkg-resources
+- **unidecode** 1.4.0: no-pyproject
+- **unidiff** 0.7.5: no-pyproject
+- **unittest2** 1.1.0: no-pyproject
+- **uptime-kuma-api** 1.2.1: no-pyproject
 - **uritemplate** 4.2.0: no-build-system
+- **usaddress** 0.5.16: distutils
+- **user-agents** 2.2.0: no-pyproject
+- **uszipcode** 1.0.1: no-pyproject
+- **utm** 0.8.1: no-pyproject
+- **uuid** 1.30: distutils, no-pyproject
+- **uuid7** 0.1.0: no-pyproject
 - **uv** 0.11.19: distutils
 - **uvloop** 0.22.1: pkg-resources
+- **uwsgi** 2.0.31: distutils, no-pyproject
+- **vadersentiment** 3.3.2: no-pyproject, setup-cfg-deprecated-keys
+- **validate-email** 1.3: no-pyproject
+- **valkey** 6.1.1: no-pyproject
+- **vasprun-xml** 1.0.4: distutils, no-pyproject, setup-cfg-deprecated-keys
+- **vastai** 1.0.13: distutils
+- **verboselogs** 1.7: no-pyproject
+- **verspec** 0.1.0: no-pyproject
+- **vertica-python** 1.4.0: no-pyproject
+- **vine** 5.1.0: no-pyproject
+- **virtualenv-clone** 0.5.7: no-pyproject
+- **vk-api** 11.10.0: no-pyproject
+- **vobject** 0.9.9: no-pyproject
+- **voluptuous** 0.16.0: no-build-system
+- **warcio** 1.8.1: no-pyproject, pkg-resources
+- **wasabi** 1.1.3: no-pyproject
+- **watchdog** 6.0.0: no-build-system
+- **watchdog-gevent** 0.2.1: no-pyproject
+- **watchgod** 0.8.2: no-pyproject
+- **waybackpy** 3.0.6: setup-cfg-deprecated-keys
+- **weave** 0.52.42: pkg-resources
+- **web3** 7.16.0: no-build-system
 - **webencodings** 0.5.1: no-pyproject
+- **webob** 1.8.10: no-pyproject
 - **websocket-client** 1.9.0: no-pyproject
+- **webtest** 3.0.7: no-pyproject
+- **webvtt-py** 0.5.1: no-pyproject
 - **werkzeug** 3.1.8: pkg-resources
+- **wget** 3.2: distutils, no-pyproject
 - **wheel** 0.47.0: distutils
+- **whoosh** 2.7.4: no-pyproject
+- **wikipedia** 1.4.0: no-pyproject
+- **win32-setctime** 1.2.0: distutils, no-pyproject
+- **wirerope** 1.0.0: pkg-resources
+- **wmi** 1.5.1: no-pyproject
+- **word2number** 1.1: distutils, no-pyproject
+- **wordninja** 2.0.0: distutils, no-pyproject
+- **workalendar** 17.0.0: no-pyproject
+- **wurlitzer** 3.1.1: no-build-system
+- **x-wr-timezone** 2.0.1: distutils, no-pyproject
+- **xdoctest** 1.3.2: distutils
+- **xenon** 0.9.3: no-pyproject
+- **xformers** 0.0.35: distutils
+- **xlrd** 2.0.2: no-pyproject
+- **xlsxwriter** 3.2.9: no-pyproject
+- **xlwt** 1.3.0: no-pyproject
+- **xmljson** 0.2.1: distutils, no-pyproject
+- **xmlsec** 1.3.17: distutils
+- **yacs** 0.1.8: no-pyproject
+- **yamale** 6.1.0: no-pyproject
+- **yaml-config** 0.1.5: no-pyproject
+- **yappi** 1.7.6: distutils
+- **yara-python** 4.5.4: distutils, no-pyproject
+- **yarg** 0.1.10: no-pyproject
 - **yarl** 1.24.2: distutils
+- **ydata-profiling** 4.18.4: pkg-resources
 - **ydb** 3.29.3: no-build-system
+- **yfinance** 1.4.1: no-pyproject
+- **yq** 3.4.3: no-build-system
+- **zenpy** 2.0.57: no-pyproject
+- **zeroconf** 0.149.16: distutils
+- **zict** 3.0.0: no-pyproject
+- **zipfile36** 0.1.3: distutils, no-pyproject
+- **zope-interface** 8.5: distutils
 - **zstandard** 0.25.0: distutils
+- **zstd** 1.5.7.3: no-pyproject
+- **zxcvbn** 4.5.0: no-pyproject
 
 ## errors / skips
 
+- aaaaaaaaa: ScanError: could not fetch PyPI metadata for 'aaaaaaaaa': HTTP Error 404: Not Found
+- aistudio-sdk: ScanError: aistudio-sdk 0.3.8 publishes no sdist
+- alibabacloud-oss-v2: ScanError: alibabacloud-oss-v2 1.3.1 publishes no sdist
+- aliyun-semantic-conventions: ScanError: aliyun-semantic-conventions 1.2.0 publishes no sdist
+- anki: ScanError: anki 25.9.4 publishes no sdist
+- anki-audio: ScanError: anki-audio 0.2.2 publishes no sdist
+- anki-release: ScanError: anki-release 25.9.4 publishes no sdist
+- aqt: ScanError: aqt 25.9.4 publishes no sdist
+- array-record: ScanError: array-record 0.8.3 publishes no sdist
+- azure-cognitiveservices-speech: ScanError: azure-cognitiveservices-speech 1.50.0 publishes no sdist
+- azureml-core: ScanError: azureml-core 1.61.0.post3 publishes no sdist
+- azureml-featurestore: ScanError: azureml-featurestore 1.2.2 publishes no sdist
+- azureml-mlflow: ScanError: azureml-mlflow 1.62.0.post2 publishes no sdist
+- bazel-runfiles: ScanError: bazel-runfiles 2.0.2 publishes no sdist
+- bitsandbytes: ScanError: bitsandbytes 0.49.2 publishes no sdist
+- botbuilder-schema: ScanError: botbuilder-schema 4.17.1 publishes no sdist
+- botframework-connector: ScanError: botframework-connector 4.17.1 publishes no sdist
+- c7n: ScanError: c7n 0.9.51 publishes no sdist
+- c7n-org: ScanError: c7n-org 0.6.50 publishes no sdist
+- chdb: ScanError: chdb 4.1.9 publishes no sdist
+- codemagic-cli-tools: ScanError: codemagic-cli-tools 0.67.0 publishes no sdist
+- comfy-aimdo: ScanError: comfy-aimdo 0.4.9 publishes no sdist
+- comfy-kitchen: ScanError: comfy-kitchen 0.2.10 publishes no sdist
+- connectorx: ScanError: connectorx 0.4.5 publishes no sdist
+- cronsim: ScanError: cronsim 2.7 publishes no sdist
+- ctranslate2: ScanError: ctranslate2 4.8.0 publishes no sdist
+- cuda-bindings: ScanError: cuda-bindings 13.3.1 publishes no sdist
+- cuda-pathfinder: ScanError: cuda-pathfinder 1.5.5 publishes no sdist
+- cuda-python: ScanError: cuda-python 13.3.1 publishes no sdist
+- cuda-tile: ScanError: cuda-tile 1.4.0 publishes no sdist
+- cuda-toolkit: ScanError: cuda-toolkit 13.3.0 publishes no sdist
+- cupy-cuda12x: ScanError: cupy-cuda12x 14.1.1 publishes no sdist
+- cw-rpa: ScanError: cw-rpa 1.2.2 publishes no sdist
+- dashscope: ScanError: dashscope 1.25.21 publishes no sdist
+- databento-dbn: ScanError: databento-dbn 0.60.0 publishes no sdist
+- databricks-agents: ScanError: databricks-agents 1.11.0 publishes no sdist
+- databricks-connect: ScanError: databricks-connect 18.2.1 publishes no sdist
+- databricks-feature-engineering: ScanError: databricks-feature-engineering 0.15.0 publishes no sdist
+- databricks-vectorsearch: ScanError: databricks-vectorsearch 0.74 publishes no sdist
+- dbl-tempo: ScanError: dbl-tempo 0.1.30 publishes no sdist
+- ddapm-test-agent: ScanError: ddapm-test-agent 1.61.0 publishes no sdist
+- decord: ScanError: decord 0.6.0 publishes no sdist
+- deltalake: ScanError: deltalake 1.6.0 publishes no sdist
+- dingtalk-stream: ScanError: dingtalk-stream 0.24.3 publishes no sdist
+- docusign-esign: ScanError: docusign-esign 6.1.0 publishes no sdist
+- dotenv: ScanError: dotenv 0.9.9 publishes no sdist
+- dtlpymetrics: ScanError: dtlpymetrics 1.2.32 publishes no sdist
+- easyocr: ScanError: easyocr 1.7.2 publishes no sdist
+- elasticsearch-dbapi: ScanError: elasticsearch-dbapi 0.2.13 publishes no sdist
+- embreex: ScanError: embreex 4.4.0 publishes no sdist
+- events: ScanError: events 0.5 publishes no sdist
+- fabric-analytics-notebook-plugin: ScanError: fabric-analytics-notebook-plugin 0.0.3.post9 publishes no sdist
+- fabric-analytics-sdk: ScanError: fabric-analytics-sdk 0.0.3.post8 publishes no sdist
+- faiss-cpu: ScanError: faiss-cpu 1.14.2 publishes no sdist
+- faster-whisper: ScanError: faster-whisper 1.2.1 publishes no sdist
+- flake8-pyproject: ScanError: flake8-pyproject 1.2.4 publishes no sdist
+- flashinfer-cubin: ScanError: flashinfer-cubin 0.6.12 publishes no sdist
+- flatbuffers: ScanError: flatbuffers 25.12.19 publishes no sdist
+- github-copilot-sdk: ScanError: github-copilot-sdk 1.0.0 publishes no sdist
+- google-cloud-pipeline-components: ScanError: google-cloud-pipeline-components 2.22.0 publishes no sdist
+- google-generativeai: ScanError: google-generativeai 0.8.6 publishes no sdist
+- grain: ScanError: grain 0.2.17 publishes no sdist
+- gspread-formatting: ScanError: gspread-formatting 1.2.1 publishes no sdist
+- gurobipy: ScanError: gurobipy 13.0.2 publishes no sdist
+- hdbcli: ScanError: hdbcli 2.28.21 publishes no sdist
+- htmlmin2: ScanError: htmlmin2 0.1.13 publishes no sdist
+- httpstan: ScanError: httpstan 4.13.0 publishes no sdist
+- inference-cli: ScanError: inference-cli 1.3.0 publishes no sdist
+- inference-gpu: ScanError: inference-gpu 1.3.0 publishes no sdist
+- inputimeout: ScanError: inputimeout 1.0.4 publishes no sdist
+- jaro-winkler: ScanError: jaro-winkler 2.0.3 publishes no sdist
+- jax-cuda12-pjrt: ScanError: jax-cuda12-pjrt 0.10.1 publishes no sdist
+- jax-cuda12-plugin: ScanError: jax-cuda12-plugin 0.10.1 publishes no sdist
+- jaxlib: ScanError: jaxlib 0.10.1 publishes no sdist
+- jsoncompat: ScanError: jsoncompat 0.3.1 publishes no sdist
+- junit2html: ScanError: junit2html 31.1.3 publishes no sdist
+- lancedb: ScanError: lancedb 0.33.0 publishes no sdist
+- lark-oapi: ScanError: lark-oapi 1.6.8 publishes no sdist
+- libtpu: ScanError: libtpu 0.0.41 publishes no sdist
+- libusb-package: ScanError: libusb-package 1.0.26.3 publishes no sdist
+- lingua-language-detector: ScanError: lingua-language-detector 2.2.0 publishes no sdist
+- livekit-blingfire: ScanError: livekit-blingfire 1.1.0 publishes no sdist
+- livekit-plugins-noise-cancellation: ScanError: livekit-plugins-noise-cancellation 0.2.5 publishes no sdist
+- loongsuite-util-genai: ScanError: loongsuite-util-genai 0.5.0 publishes no sdist
+- magicattr: ScanError: magicattr 0.1.6 publishes no sdist
+- mailchimp-marketing: ScanError: mailchimp-marketing 3.0.80 publishes no sdist
+- mailchimp-transactional: ScanError: mailchimp-transactional 1.4.1 publishes no sdist
+- mediapipe: ScanError: mediapipe 0.10.35 publishes no sdist
+- meson: ScanError: meson 1.11.1 publishes no sdist
+- mitmproxy: ScanError: mitmproxy 12.2.3 publishes no sdist
+- mlx: ScanError: mlx 0.31.2 publishes no sdist
+- mxnet: ScanError: mxnet 1.9.1 publishes no sdist
+- nothing: ScanError: nothing 0.0.3 publishes no sdist
+- nvidia-cublas: ScanError: nvidia-cublas 13.5.1.27 publishes no sdist
+- nvidia-cublas-cu11: ScanError: nvidia-cublas-cu11 11.11.3.6 publishes no sdist
+- nvidia-cublas-cu12: ScanError: nvidia-cublas-cu12 12.9.2.10 publishes no sdist
+- nvidia-cuda-cccl-cu12: ScanError: nvidia-cuda-cccl-cu12 12.9.27 publishes no sdist
+- nvidia-cuda-cupti: ScanError: nvidia-cuda-cupti 13.3.35 publishes no sdist
+- nvidia-cuda-cupti-cu11: ScanError: nvidia-cuda-cupti-cu11 11.8.87 publishes no sdist
+- nvidia-cuda-cupti-cu12: ScanError: nvidia-cuda-cupti-cu12 12.9.79 publishes no sdist
+- nvidia-cuda-nvcc-cu12: ScanError: nvidia-cuda-nvcc-cu12 12.9.86 publishes no sdist
+- nvidia-cuda-nvrtc: ScanError: nvidia-cuda-nvrtc 13.3.33 publishes no sdist
+- nvidia-cuda-nvrtc-cu11: ScanError: nvidia-cuda-nvrtc-cu11 11.8.89 publishes no sdist
+- nvidia-cuda-nvrtc-cu12: ScanError: nvidia-cuda-nvrtc-cu12 12.9.86 publishes no sdist
+- nvidia-cuda-runtime: ScanError: nvidia-cuda-runtime 13.3.29 publishes no sdist
+- nvidia-cuda-runtime-cu11: ScanError: nvidia-cuda-runtime-cu11 11.8.89 publishes no sdist
+- nvidia-cuda-runtime-cu12: ScanError: nvidia-cuda-runtime-cu12 12.9.79 publishes no sdist
+- nvidia-cudnn-cu11: ScanError: nvidia-cudnn-cu11 9.10.2.21 publishes no sdist
+- nvidia-cudnn-cu12: ScanError: nvidia-cudnn-cu12 9.23.1.3 publishes no sdist
+- nvidia-cudnn-cu13: ScanError: nvidia-cudnn-cu13 9.23.1.3 publishes no sdist
+- nvidia-cudnn-frontend: ScanError: nvidia-cudnn-frontend 1.24.1 publishes no sdist
+- nvidia-cufft: ScanError: nvidia-cufft 12.3.0.29 publishes no sdist
+- nvidia-cufft-cu11: ScanError: nvidia-cufft-cu11 10.9.0.58 publishes no sdist
+- nvidia-cufft-cu12: ScanError: nvidia-cufft-cu12 11.4.1.4 publishes no sdist
+- nvidia-cufile: ScanError: nvidia-cufile 1.18.0.66 publishes no sdist
+- nvidia-cufile-cu12: ScanError: nvidia-cufile-cu12 1.14.1.1 publishes no sdist
+- nvidia-curand: ScanError: nvidia-curand 10.4.3.29 publishes no sdist
+- nvidia-curand-cu11: ScanError: nvidia-curand-cu11 10.3.0.86 publishes no sdist
+- nvidia-curand-cu12: ScanError: nvidia-curand-cu12 10.3.10.19 publishes no sdist
+- nvidia-cusolver: ScanError: nvidia-cusolver 12.2.2.18 publishes no sdist
+- nvidia-cusolver-cu11: ScanError: nvidia-cusolver-cu11 11.4.1.48 publishes no sdist
+- nvidia-cusolver-cu12: ScanError: nvidia-cusolver-cu12 11.7.5.82 publishes no sdist
+- nvidia-cusparse: ScanError: nvidia-cusparse 12.8.1.7 publishes no sdist
+- nvidia-cusparse-cu11: ScanError: nvidia-cusparse-cu11 11.7.5.86 publishes no sdist
+- nvidia-cusparse-cu12: ScanError: nvidia-cusparse-cu12 12.5.10.65 publishes no sdist
+- nvidia-cusparselt-cu12: ScanError: nvidia-cusparselt-cu12 0.8.1 publishes no sdist
+- nvidia-cusparselt-cu13: ScanError: nvidia-cusparselt-cu13 0.9.1 publishes no sdist
+- nvidia-cutlass-dsl: ScanError: nvidia-cutlass-dsl 4.5.2 publishes no sdist
+- nvidia-cutlass-dsl-libs-base: ScanError: nvidia-cutlass-dsl-libs-base 4.5.2 publishes no sdist
+- nvidia-nccl-cu11: ScanError: nvidia-nccl-cu11 2.21.5 publishes no sdist
+- nvidia-nccl-cu12: ScanError: nvidia-nccl-cu12 2.30.7 publishes no sdist
+- nvidia-nccl-cu13: ScanError: nvidia-nccl-cu13 2.30.7 publishes no sdist
+- nvidia-nvjitlink: ScanError: nvidia-nvjitlink 13.3.33 publishes no sdist
+- nvidia-nvjitlink-cu12: ScanError: nvidia-nvjitlink-cu12 12.9.86 publishes no sdist
+- nvidia-nvshmem-cu12: ScanError: nvidia-nvshmem-cu12 3.6.5 publishes no sdist
+- nvidia-nvshmem-cu13: ScanError: nvidia-nvshmem-cu13 3.6.5 publishes no sdist
+- nvidia-nvtx: ScanError: nvidia-nvtx 13.3.29 publishes no sdist
+- nvidia-nvtx-cu11: ScanError: nvidia-nvtx-cu11 11.8.86 publishes no sdist
+- nvidia-nvtx-cu12: ScanError: nvidia-nvtx-cu12 12.9.79 publishes no sdist
+- onnxconverter-common: ScanError: onnxconverter-common 1.16.0 publishes no sdist
+- onnxruntime: ScanError: onnxruntime 1.26.0 publishes no sdist
+- onnxruntime-gpu: ScanError: onnxruntime-gpu 1.26.0 publishes no sdist
+- open3d: ScanError: open3d 0.19.0 publishes no sdist
+- opencv-contrib-python: ScanError: opencv-contrib-python 4.13.0.92 publishes no sdist
+- opencv-contrib-python-headless: ScanError: opencv-contrib-python-headless 4.13.0.92 publishes no sdist
+- opencv-python: ScanError: opencv-python 4.13.0.92 publishes no sdist
+- opencv-python-headless: ScanError: opencv-python-headless 4.13.0.92 publishes no sdist
+- openlineage-airflow: ScanError: openlineage-airflow 1.41.0 publishes no sdist
+- openlineage-integration-common: ScanError: openlineage-integration-common 1.48.0 publishes no sdist
+- openlineage-python: ScanError: openlineage-python 1.48.0 publishes no sdist
+- opensearch-protobufs: ScanError: opensearch-protobufs 1.5.0 publishes no sdist
+- openvino: ScanError: openvino 2026.2.0 publishes no sdist
+- ortools: ScanError: ortools 9.15.6755 publishes no sdist
+- paddlepaddle: ScanError: paddlepaddle 3.3.1 publishes no sdist
+- pagefind-bin: ScanError: pagefind-bin 1.5.2 publishes no sdist
+- patchright: ScanError: patchright 1.60.1 publishes no sdist
+- playwright: ScanError: playwright 1.60.0 publishes no sdist
+- powerline-shell: ScanError: powerline-shell 0.7.0 publishes no sdist
+- prefixdate: ScanError: prefixdate 0.5.0 publishes no sdist
+- presidio-analyzer: ScanError: presidio-analyzer 2.2.362 publishes no sdist
+- presidio-anonymizer: ScanError: presidio-anonymizer 2.2.362 publishes no sdist
+- psycopg-binary: ScanError: psycopg-binary 3.3.4 publishes no sdist
+- pulsar-client: ScanError: pulsar-client 3.12.0 publishes no sdist
+- pulumi: ScanError: pulumi 3.245.0 publishes no sdist
+- py-asciimath: ScanError: py-asciimath 0.3.0 publishes no sdist
+- pybase62: ScanError: pybase62 1.0.0 publishes no sdist
+- pylance: ScanError: pylance 7.0.0 publishes no sdist
+- pylint-django: ScanError: pylint-django 2.7.0 publishes no sdist
+- pylint-pydantic: ScanError: pylint-pydantic 0.4.1 publishes no sdist
+- pymilvus: ScanError: pymilvus 3.0.0 publishes no sdist
+- pymupdf-layout: ScanError: pymupdf-layout 1.27.2.3 publishes no sdist
+- pypandoc-binary: ScanError: pypandoc-binary 1.17 publishes no sdist
+- pyqt5-qt5: ScanError: pyqt5-qt5 5.15.19 publishes no sdist
+- pyqt6-qt6: ScanError: pyqt6-qt6 6.11.1 publishes no sdist
+- pyqt6-webengine-qt6: ScanError: pyqt6-webengine-qt6 6.11.1 publishes no sdist
+- pyqtgraph: ScanError: pyqtgraph 0.14.0 publishes no sdist
+- pysbd: ScanError: pysbd 0.3.4 publishes no sdist
+- pyside6: ScanError: pyside6 6.11.1 publishes no sdist
+- pyside6-addons: ScanError: pyside6-addons 6.11.1 publishes no sdist
+- pyside6-essentials: ScanError: pyside6-essentials 6.11.1 publishes no sdist
+- pyspark: ScanError: sdist too large (434 MB > cap)
+- pyspark-hnsw: ScanError: pyspark-hnsw 1.1.0 publishes no sdist
+- pyvis: ScanError: pyvis 0.3.2 publishes no sdist
+- pyvmomi: ScanError: pyvmomi 9.1.0.0 publishes no sdist
+- pywin32: ScanError: pywin32 312 publishes no sdist
+- pyzbar: ScanError: pyzbar 0.1.9 publishes no sdist
+- rapidocr: ScanError: rapidocr 3.8.1 publishes no sdist
+- rapidocr-onnxruntime: ScanError: rapidocr-onnxruntime 1.4.4 publishes no sdist
+- ray: ScanError: ray 2.55.1 publishes no sdist
+- rdkit: ScanError: rdkit 2026.3.3 publishes no sdist
+- redshift-connector: ScanError: redshift-connector 2.1.15 publishes no sdist
+- rerun-sdk: ScanError: rerun-sdk 0.33.0 publishes no sdist
+- retry2: ScanError: retry2 0.9.5 publishes no sdist
+- rocksdict: ScanError: rocksdict 0.3.29 publishes no sdist
+- sagemaker-data-insights: ScanError: sagemaker-data-insights 0.4.0 publishes no sdist
+- sagemaker-datawrangler: ScanError: sagemaker-datawrangler 0.4.3 publishes no sdist
+- sagemaker-schema-inference-artifacts: ScanError: sagemaker-schema-inference-artifacts 0.0.5 publishes no sdist
+- saxonche: ScanError: saxonche 13.0.0 publishes no sdist
+- semantic-link-sempy: ScanError: semantic-link-sempy 0.14.1 publishes no sdist
 - sglang: ScanError: sglang 0.5.12.post1 publishes no sdist
+- shiboken6: ScanError: shiboken6 6.11.1 publishes no sdist
+- spacy: ScanError: spacy 3.8.14 publishes no sdist
+- sqlite-vec: ScanError: sqlite-vec 0.1.9 publishes no sdist
+- sseclient-py: ScanError: sseclient-py 1.9.0 publishes no sdist
+- synapseml: ScanError: synapseml 1.1.3 publishes no sdist
+- tableauhyperapi: ScanError: tableauhyperapi 0.0.25080 publishes no sdist
+- tbb: ScanError: tbb 2023.0.0 publishes no sdist
+- tcmlib: ScanError: tcmlib 1.5.0 publishes no sdist
+- tensorboard: ScanError: tensorboard 2.20.0 publishes no sdist
+- tensorboard-data-server: ScanError: tensorboard-data-server 0.7.2 publishes no sdist
+- tensorboard-plugin-profile: ScanError: tensorboard-plugin-profile 2.22.3 publishes no sdist
+- tensorboard-plugin-wit: ScanError: tensorboard-plugin-wit 1.8.1 publishes no sdist
+- tensordict: ScanError: tensordict 0.13.0 publishes no sdist
+- tensorflow: ScanError: tensorflow 2.21.0 publishes no sdist
+- tensorflow-addons: ScanError: tensorflow-addons 0.23.0 publishes no sdist
+- tensorflow-cpu: ScanError: tensorflow-cpu 2.21.0 publishes no sdist
+- tensorflow-estimator: ScanError: tensorflow-estimator 2.15.0 publishes no sdist
+- tensorflow-hub: ScanError: tensorflow-hub 0.16.1 publishes no sdist
+- tensorflow-io-gcs-filesystem: ScanError: tensorflow-io-gcs-filesystem 0.37.1 publishes no sdist
+- tensorflow-probability: ScanError: tensorflow-probability 0.25.0 publishes no sdist
+- tensorflow-serving-api: ScanError: tensorflow-serving-api 2.20.0 publishes no sdist
+- tensorflow-text: ScanError: tensorflow-text 2.20.1 publishes no sdist
+- tensorflowjs: ScanError: tensorflowjs 4.22.0 publishes no sdist
+- teradatasql: ScanError: teradatasql 20.0.0.61 publishes no sdist
+- teradatasqlalchemy: ScanError: teradatasqlalchemy 20.0.0.9 publishes no sdist
+- tf-keras-nightly: ScanError: tf-keras-nightly 2.21.0.dev2026060909 publishes no sdist
+- thop: ScanError: thop 0.1.1.post2209072238 publishes no sdist
+- torch: ScanError: torch 2.12.0 publishes no sdist
+- torch-geometric: ScanError: torch-geometric 2.8.0 publishes no sdist
+- torchao: ScanError: torchao 0.17.0 publishes no sdist
+- torchaudio: ScanError: torchaudio 2.11.0 publishes no sdist
+- torchcodec: ScanError: torchcodec 0.14.0 publishes no sdist
+- torchdata: ScanError: torchdata 0.11.0 publishes no sdist
+- torchrec: ScanError: torchrec 1.6.0 publishes no sdist
+- torchrl: ScanError: torchrl 0.13.1 publishes no sdist
+- torchtext: ScanError: torchtext 0.18.0 publishes no sdist
+- torchvision: ScanError: torchvision 0.27.0 publishes no sdist
+- tox-uv: ScanError: tox-uv 1.35.2 publishes no sdist
+- tpu-info: ScanError: tpu-info 0.14.0 publishes no sdist
+- trackio: ScanError: trackio 0.26.0 publishes no sdist
+- trampoline: ScanError: trampoline 0.1.2 publishes no sdist
+- tree-sitter-languages: ScanError: tree-sitter-languages 1.10.2 publishes no sdist
+- tree-sitter-php: ScanError: tree-sitter-php 0.24.1 publishes no sdist
+- triton: ScanError: triton 3.7.0 publishes no sdist
+- tritonclient: ScanError: tritonclient 2.69.0 publishes no sdist
+- typish: ScanError: typish 1.9.3 publishes no sdist
+- ua-parser-builtins: ScanError: ua-parser-builtins 202606 publishes no sdist
+- usaddress-scourgify: ScanError: usaddress-scourgify 0.6.0 publishes no sdist
+- vtk: ScanError: vtk 9.6.2 publishes no sdist
+- warp-lang: ScanError: warp-lang 1.14.0 publishes no sdist
+- wasmer: ScanError: wasmer 1.1.0 publishes no sdist
+- wasmer-compiler-cranelift: ScanError: wasmer-compiler-cranelift 1.1.0 publishes no sdist
+- wheel-stub: ScanError: wheel-stub 0.5.0 publishes no sdist
+- yggdrasil-engine: ScanError: yggdrasil-engine 1.3.0 publishes no sdist
 
