@@ -28,6 +28,7 @@ from pathlib import Path
 PYPI_JSON = "https://pypi.org/pypi/{name}/json"
 USER_AGENT = "wheelproof/0.1 (+https://github.com/sethc555)"
 MAX_PY_FILES = 500  # cap source-grep work on pathological sdists
+MAX_SDIST_BYTES = 100 * 2**20
 
 IMPORT_RE = {
     "pkg-resources": re.compile(r"^\s*(?:import|from)\s+pkg_resources\b", re.M),
@@ -77,9 +78,17 @@ class ScanError(RuntimeError):
     pass
 
 
-def _fetch(url: str) -> bytes:
+def _fetch(url: str, max_bytes: int | None = None) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(req, timeout=60) as resp:
+        if max_bytes is not None:
+            declared = resp.headers.get("Content-Length")
+            if declared and int(declared) > max_bytes:
+                raise ScanError(f"sdist too large ({int(declared) // 2**20} MB > cap)")
+            data = resp.read(max_bytes + 1)
+            if len(data) > max_bytes:
+                raise ScanError("sdist too large (exceeded cap while reading)")
+            return data
         return resp.read()
 
 
@@ -189,7 +198,7 @@ def _check_sources(root: Path, findings: list[Finding]) -> None:
 def scan(name: str) -> ScanResult:
     version, url = _latest_sdist(name)
     result = ScanResult(package=name, version=version, sdist_url=url)
-    blob = _fetch(url)
+    blob = _fetch(url, max_bytes=MAX_SDIST_BYTES)
     with tempfile.TemporaryDirectory(prefix="wheelproof-scan-") as tmp:
         root = _extract_sdist(blob, Path(tmp))
         _check_pyproject(root, result.findings)
