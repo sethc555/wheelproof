@@ -1,0 +1,7 @@
+{
+  "package": "snapshot-restore-py",
+  "version": "1.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/27/19/2d7584749a7f6d1b4b3a129995b1bc31e70ed9c5ecc323f1ee748b767268/snapshot-restore-py-1.0.0.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-z269x_1v/snapshot-restore-py-1.0.0-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nDESCRIPTION:\n    ``setuptools``-specific configurations that can be set by users that require\n    customization. These configurations are completely optional and probably can\n    be skipped when creating simple packages. They are equivalent to some of the\n    `Keywords <https://setuptools.pypa.io/en/latest/referenc"
+}

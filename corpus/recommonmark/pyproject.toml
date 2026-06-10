@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recommonmark"
+version = "0.7.1"
+description = "A docutils-compatibility bridge to CommonMark, enabling you to write CommonMark inside of Docutils & Sphinx projects."
+classifiers = [ "License :: OSI Approved :: MIT License",]
+dependencies = [ "commonmark>=0.8.1", "docutils>=0.11", "sphinx>=1.3.1",]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/rtfd/recommonmark"
+
+[project.scripts]
+cm2html = "recommonmark.scripts:cm2html"
+cm2latex = "recommonmark.scripts:cm2latex"
+cm2man = "recommonmark.scripts:cm2man"
+cm2pseudoxml = "recommonmark.scripts:cm2pseudoxml"
+cm2xetex = "recommonmark.scripts:cm2xetex"
+cm2xml = "recommonmark.scripts:cm2xml"
+
+[tool.setuptools]
+packages = [ "recommonmark",]
+include-package-data = false

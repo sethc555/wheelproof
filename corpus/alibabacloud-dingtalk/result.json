@@ -1,0 +1,82 @@
+{
+  "package": "alibabacloud-dingtalk",
+  "version": "2.2.48",
+  "sdist_url": "https://files.pythonhosted.org/packages/77/bd/99b3a8ec49de74d845943d8525eb55b7262b749a87025177d4fe1cad0e1f/alibabacloud_dingtalk-2.2.48.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Alibaba Cloud SDK"
+      ],
+      [
+        "author-email",
+        "sdk-team@alibabacloud.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/aliyun/alibabacloud-sdk"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Alibaba Cloud SDK <sdk-team@alibabacloud.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/aliyun/alibabacloud-sdk"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

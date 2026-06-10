@@ -1,0 +1,66 @@
+{
+  "package": "googlemaps",
+  "version": "4.10.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/fe/26/bca4d737a9acea25e94c19940a780bbf0be64a691f7caf3a68467d3a5838/googlemaps-4.10.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/googlemaps/google-maps-services-python"
+      ],
+      [
+        "platform",
+        "Posix; MacOS X; Windows"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "platform",
+        "Posix"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/googlemaps/google-maps-services-python"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-reversion"
+version = "6.2.0"
+description = "An extension to the Django web framework that provides version control for model instances."
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Web Environment", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "Framework :: Django", "Framework :: Django :: 4.2", "Framework :: Django :: 5.2", "Framework :: Django :: 6.0",]
+requires-python = ">=3.9"
+dependencies = [ "django>=4.2",]
+
+[[project.authors]]
+name = "Dave Hall"
+email = "dave@etianen.com"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "https://github.com/etianen/django-reversion"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = false
+
+[tool.setuptools.package-data]
+reversion = [ "locale/*/LC_MESSAGES/django.*", "templates/reversion/*.html",]
+
+[tool.setuptools.packages.find]
+namespaces = false

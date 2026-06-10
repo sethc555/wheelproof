@@ -1,0 +1,94 @@
+{
+  "package": "virtualenv-clone",
+  "version": "0.5.7",
+  "sdist_url": "https://files.pythonhosted.org/packages/85/76/49120db3bb8de4073ac199a08dc7f11255af8968e1e14038aee95043fafa/virtualenv-clone-0.5.7.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Edward George"
+      ],
+      [
+        "author-email",
+        "edwardgeorge@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/edwardgeorge/virtualenv-clone"
+      ],
+      [
+        "requires-python",
+        ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Edward George <edwardgeorge@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/edwardgeorge/virtualenv-clone"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "pytest; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "tox; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "virtualenv; extra == \"testing\""
+      ],
+      [
+        "requires-python",
+        "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

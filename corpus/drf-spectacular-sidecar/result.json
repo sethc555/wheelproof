@@ -1,0 +1,78 @@
+{
+  "package": "drf-spectacular-sidecar",
+  "version": "2026.6.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/7f/d8/735b129e7d55c4f6c682ecedfcc0438816e1d859e5e1837f914ac4544f6d/drf_spectacular_sidecar-2026.6.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "T. Franzel"
+      ],
+      [
+        "author-email",
+        "tfranzel@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/tfranzel/drf-spectacular-sidecar"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "\"T. Franzel\" <tfranzel@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/tfranzel/drf-spectacular-sidecar"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

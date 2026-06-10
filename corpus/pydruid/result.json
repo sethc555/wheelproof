@@ -1,0 +1,88 @@
+{
+  "package": "pydruid",
+  "version": "0.6.9",
+  "sdist_url": "https://files.pythonhosted.org/packages/e9/45/2f64d8c14b487274e825d793dc634f9f1040537aa6cb93d1ea8fc4498d65/pydruid-0.6.9.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Druid Developers"
+      ],
+      [
+        "author-email",
+        "druid-development@googlegroups.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://druid.apache.org"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Druid Developers <druid-development@googlegroups.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://druid.apache.org"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "pytest; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

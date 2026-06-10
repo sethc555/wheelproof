@@ -1,0 +1,82 @@
+{
+  "package": "sqlalchemy-trino",
+  "version": "0.5.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/4c/95/926fef6ea988ea5707ffafd0ccdbe1798668c4e5ba253d4c7b8f9a37a959/sqlalchemy-trino-0.5.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "D\u0169ng \u0110\u1eb7ng Minh"
+      ],
+      [
+        "author-email",
+        "dungdm93@live.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/dungdm93/sqlalchemy-trino"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "D\u0169ng \u0110\u1eb7ng Minh <dungdm93@live.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/dungdm93/sqlalchemy-trino"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

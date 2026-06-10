@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vk_api"
+version = "11.10.0"
+description = "Python модуль для создания скриптов для социальной сети Вконтакте (vk.com API wrapper)"
+classifiers = [ "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10",]
+dependencies = [ "requests>=2.20.0,<3.0.0",]
+
+[[project.authors]]
+name = "python273"
+email = "vk_api@python273.pw"
+
+[project.license]
+text = "Apache License, Version 2.0, see LICENSE file"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/python273/vk_api"
+Download = "https://github.com/python273/vk_api/archive/v11.10.0.zip"
+
+[project.optional-dependencies]
+vkstreaming = [ "websocket-client",]
+vkaudio = [ "beautifulsoup4",]
+
+[tool.setuptools]
+packages = [ "vk_api", "jconfig",]
+include-package-data = false

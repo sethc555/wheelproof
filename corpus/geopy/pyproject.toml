@@ -1,0 +1,43 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Intended Audience :: Science/Research", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Topic :: Scientific/Engineering :: GIS", "Topic :: Software Development :: Libraries :: Python Modules", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy",]
+description = "Python Geocoding Toolbox"
+keywords = [ "geocode", "geocoding", "gis", "geographical", "maps", "earth", "distance",]
+readme = "README.rst"
+name = "geopy"
+requires-python = ">=3.7"
+dependencies = [ "geographiclib<3,>=1.52",]
+dynamic = [ "version",]
+
+[[project.maintainers]]
+name = "Kostya Esmukov"
+email = "kostya@esmukov.net"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/geopy/geopy"
+Download = "https://github.com/geopy/geopy/archive/2.4.1.tar.gz"
+
+[project.optional-dependencies]
+dev = [ "coverage", "flake8>=5.0,<5.1", "isort>=5.10.0,<5.11.0", "pytest-asyncio>=0.17", "pytest>=3.10", "readme_renderer", "sphinx-issues", "sphinx<=4.3.2", "sphinx_rtd_theme>=0.5.0",]
+dev-lint = [ "flake8>=5.0,<5.1", "isort>=5.10.0,<5.11.0",]
+dev-test = [ "coverage", "pytest-asyncio>=0.17", "pytest>=3.10", "sphinx<=4.3.2",]
+dev-docs = [ "readme_renderer", "sphinx<=4.3.2", "sphinx-issues", "sphinx_rtd_theme>=0.5.0",]
+aiohttp = [ "aiohttp",]
+requests = [ "urllib3>=1.24.2", "requests>=2.16.2",]
+timezone = [ "pytz",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "test*",]
+namespaces = false
+
+[tool.setuptools.dynamic.version]
+attr = "geopy.__version__"

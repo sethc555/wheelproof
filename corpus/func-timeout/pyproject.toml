@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "func_timeout"
+version = "4.3.5"
+description = "Python module which allows you to specify timeouts when calling any existing function. Also provides support for stoppable-threads"
+keywords = [ "function", "timeout", "call", "terminate", "runtime", "max", "seconds", "after", "execution",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Programming Language :: Python", "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Topic :: Software Development :: Libraries :: Python Modules",]
+
+[[project.authors]]
+name = "Tim Savannah"
+email = "kata198@gmail.com"
+
+[[project.maintainers]]
+name = "Tim Savannah"
+email = "kata198@gmail.com"
+
+[project.license]
+text = "LGPLv2"
+
+[project.urls]
+Homepage = "https://github.com/kata198/func_timeout"
+
+[tool.setuptools]
+packages = [ "func_timeout",]
+include-package-data = false

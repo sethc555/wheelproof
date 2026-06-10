@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "od"
+version = "2.0.2"
+description = "Shorthand syntax for building OrderedDicts"
+keywords = [ "OrderedDict", "od", "syntactic sugar",]
+classifiers = [ "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy",]
+requires-python = ">=3.5"
+
+[[project.authors]]
+name = "Yann Kaiser"
+email = "kaiser.yann@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/epsy/od"
+
+[project.optional-dependencies]
+test = [ "repeated_test",]
+
+[tool.setuptools]
+py-modules = [ "od", "test_od",]
+include-package-data = false

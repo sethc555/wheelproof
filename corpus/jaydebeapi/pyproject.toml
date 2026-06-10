@@ -1,0 +1,26 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "JayDeBeApi"
+version = "1.2.3"
+description = "Use JDBC database drivers from Python 2/3 or Jython with a DB-API."
+keywords = [ "db", "api", "java", "jdbc", "bridge", "connect", "sql", "jpype", "jython",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)", "Programming Language :: Java", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 3", "Topic :: Database", "Topic :: Software Development :: Libraries :: Java Libraries", "Topic :: Software Development :: Libraries :: Python Modules",]
+dependencies = [ "JPype1 ; python_version > \"2.7\" and platform_python_implementation != \"Jython\"", "JPype1<=0.7.1 ; python_version <= \"2.7\" and platform_python_implementation != \"Jython\"",]
+
+[[project.authors]]
+name = "Bastian Bowe"
+email = "bastian.dev@gmail.com"
+
+[project.license]
+text = "GNU LGPL"
+
+[project.urls]
+Homepage = "https://github.com/baztian/jaydebeapi"
+
+[tool.setuptools]
+packages = [ "jaydebeapi",]
+include-package-data = false

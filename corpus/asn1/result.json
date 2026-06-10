@@ -1,0 +1,7 @@
+{
+  "package": "asn1",
+  "version": "3.3.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/41/cd/771b167a69ca15d19a551c9b941fea40c41b3788f2fa0fe2d472a3f596de/asn1-3.3.0.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-jh9i653l/asn1-3.3.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 119, in _main\n    config = merge_co"
+}

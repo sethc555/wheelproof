@@ -1,0 +1,70 @@
+{
+  "package": "djangorestframework-csv",
+  "version": "3.0.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/3c/5d/d2862d98a1eaca0d05d0e2d0a4278fbcd8ff8353460edfb18c1d9969036b/djangorestframework-csv-3.0.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Mjumbe Wawatu Ukweli"
+      ],
+      [
+        "author-email",
+        "mjumbewu@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/mjumbewu/django-rest-framework-csv"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Mjumbe Wawatu Ukweli <mjumbewu@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/mjumbewu/django-rest-framework-csv"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

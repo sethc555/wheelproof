@@ -1,0 +1,7 @@
+{
+  "package": "azure-mgmt-machinelearningcompute",
+  "version": "0.4.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/13/0c/2cb43ea257535b587faa77efa440b0ebe90e0fe1840b8544906a067b0306/azure-mgmt-machinelearningcompute-0.4.1.zip",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-rbst0k43/azure-mgmt-machinelearningcompute-0.4.1-converted/setup.py (dynamic setup.py? flag as manual)\n/tmp/v/lib/python3.12/site-packages/setuptools/_vendor/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.\n  warn(\nTraceback (most recent c"
+}

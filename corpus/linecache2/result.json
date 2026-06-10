@@ -1,0 +1,7 @@
+{
+  "package": "linecache2",
+  "version": "1.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/44/b0/963c352372c242f9e40db02bbc6a39ae51bde15dddee8523fe4aca94a97e/linecache2-1.0.0.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-ib_k4txx/linecache2-1.0.0-converted\n--- stdout ---\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - pbr\n  - setuptools>=61.2\n* Getting build dependencies for wheel...\nTraceback (most recent call last):\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_in_process/_in_process.py\", line 389, in <module>\n    main()\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_in_proces"
+}

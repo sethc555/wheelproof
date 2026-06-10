@@ -1,0 +1,84 @@
+{
+  "package": "dynamodb-json",
+  "version": "1.4.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/6f/65/7216f2111c4e47ffb44b6415334c221d5543ce2a85c8d80e155e7cb06851/dynamodb_json-1.4.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Alon Reznik"
+      ],
+      [
+        "author-email",
+        "alonreznik@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/Alonreznik/dynamodb-json"
+      ],
+      [
+        "keywords",
+        "python dynamodb amazon json aws"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Alon Reznik <alonreznik@gmail.com>"
+      ],
+      [
+        "keywords",
+        "python,dynamodb,amazon,json,aws"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Alonreznik/dynamodb-json"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

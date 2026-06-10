@@ -1,0 +1,7 @@
+{
+  "package": "azure-cli-telemetry",
+  "version": "1.1.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/09/1d/c1cf3663391a271864d866e17f911b913ec257386aef7cac35121ed180a6/azure-cli-telemetry-1.1.0.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-kcz7eeni/azure-cli-telemetry-1.1.0-converted\n--- stdout ---\nconfiguration error: `project.readme` must be valid exactly by one definition (0 matches found):\n\n    - {type: string}\n    - type: table\n      all of the following:\n        - at least one of the following:\n            - keys:\n                'file': {type: string}\n              required: ['file']\n            - keys:\n                'text': {type: string}\n              required: ['text']\n        "
+}

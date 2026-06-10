@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avro-gen3"
+version = "0.7.16"
+description = "Avro record class and specific record reader generator"
+keywords = [ "avro", "class", "generator",]
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8",]
+dependencies = [ "avro>=1.10", "six",]
+
+[[project.authors]]
+name = "Harshal Sheth"
+email = "hsheth2@gmail.com"
+
+[project.license]
+text = "License :: OSI Approved :: Apache Software License"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/acryldata/avro_gen"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+avrogen = [ "py.typed",]
+
+[tool.setuptools.packages.find]
+exclude = [ "contrib",]
+namespaces = false

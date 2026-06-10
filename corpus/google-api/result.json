@@ -1,0 +1,76 @@
+{
+  "package": "google-api",
+  "version": "0.1.12",
+  "sdist_url": "https://files.pythonhosted.org/packages/85/2d/a6064ce3da7b8aede497559f445707a9cc53c8f7858d6237b6033db0782c/google_api-0.1.12.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Hive Solutions Lda."
+      ],
+      [
+        "author-email",
+        "development@hive.pt"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://google-api.hive.pt"
+      ],
+      [
+        "keywords",
+        "google api"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "\"Hive Solutions Lda.\" <development@hive.pt>"
+      ],
+      [
+        "keywords",
+        "google,api"
+      ],
+      [
+        "project-url",
+        "Homepage, http://google-api.hive.pt"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

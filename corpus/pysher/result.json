@@ -1,0 +1,17 @@
+{
+  "package": "pysher",
+  "version": "1.0.8",
+  "sdist_url": "https://files.pythonhosted.org/packages/12/a0/d0638470df605ce266991fb04f74c69ab1bed3b90ac3838e9c3c8b69b66a/Pysher-1.0.8.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "pysher/__init__.py",
+      "pysher/channel.py",
+      "pysher/connection.py",
+      "pysher/pusher.py"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

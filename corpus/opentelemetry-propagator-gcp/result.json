@@ -1,0 +1,34 @@
+{
+  "package": "opentelemetry-propagator-gcp",
+  "version": "1.12.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/1e/13/a12ca18674e4934913e425cc318e5beeb307b7e21cd7308e436a742661fe/opentelemetry_propagator_gcp-1.12.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Google"
+      ],
+      [
+        "author-email",
+        "opentelemetry-pypi@google.com"
+      ],
+      [
+        "home-page",
+        "https://github.com/GoogleCloudPlatform/opentelemetry-operations-python/tree/main/opentelemetry-propagator-gcp"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Google <opentelemetry-pypi@google.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/GoogleCloudPlatform/opentelemetry-operations-python/tree/main/opentelemetry-propagator-gcp"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

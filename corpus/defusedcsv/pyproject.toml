@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "defusedcsv"
+version = "3.0.0"
+description = "Drop-in replacement for Python's CSV library that tries to mitigate CSV injection attacks"
+keywords = [ "csv", "injection", "defuse", "save",]
+readme = "README.rst"
+classifiers = [ "Intended Audience :: Developers", "Intended Audience :: Other Audience", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13",]
+dependencies = []
+
+[[project.authors]]
+name = "Raphael Michel"
+email = "mail@raphaelmichel.de"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.urls]
+Homepage = "https://github.com/raphaelm/defusedcsv"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

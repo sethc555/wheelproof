@@ -1,0 +1,7 @@
+{
+  "package": "adlfs",
+  "version": "2026.5.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/6a/12/4cff4d6734ba073acd86adf789171946be81724ca143c21ab41144633573/adlfs-2026.5.0.tar.gz",
+  "status": "convert-error",
+  "detail": "/tmp/wheelproof-bc-_4sauftb/adlfs-2026.5.0 already has a [project] table \u2014 nothing to convert"
+}

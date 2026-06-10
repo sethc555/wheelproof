@@ -1,0 +1,90 @@
+{
+  "package": "mkdocs-minify-plugin",
+  "version": "0.8.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/52/67/fe4b77e7a8ae7628392e28b14122588beaf6078b53eb91c7ed000fd158ac/mkdocs-minify-plugin-0.8.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Byrne Reese, Lars Wilhelmer"
+      ],
+      [
+        "author-email",
+        "byrne@majordojo.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/byrnereese/mkdocs-minify-plugin"
+      ],
+      [
+        "keywords",
+        "mkdocs minify publishing documentation html css"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author",
+        "Lars Wilhelmer"
+      ],
+      [
+        "author-email",
+        "Byrne Reese <byrne@majordojo.com>"
+      ],
+      [
+        "keywords",
+        "mkdocs,minify,publishing,documentation,html,css"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/byrnereese/mkdocs-minify-plugin"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

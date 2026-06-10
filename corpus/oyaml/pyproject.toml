@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oyaml"
+version = "1.0"
+description = "Ordered YAML: drop-in replacement for PyYAML which preserves dict ordering"
+readme = "README.rst"
+dependencies = [ "pyyaml",]
+
+[[project.authors]]
+name = "Wim Glenn"
+email = "hey@wimglenn.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/wimglenn/oyaml"
+
+[tool.setuptools]
+py-modules = [ "oyaml",]
+license-files = [ "LICENSE",]
+include-package-data = false

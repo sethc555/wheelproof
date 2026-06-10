@@ -1,0 +1,70 @@
+{
+  "package": "pkce",
+  "version": "1.0.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/29/ea/ddd845c2ec21bf1e8555c782b32dc39b82f0b12764feb9f73ccbb2470f13/pkce-1.0.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Rom\u00e9o Despr\u00e9s"
+      ],
+      [
+        "author-email",
+        "despres.romeo@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/RomeoDespres/pkce"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Rom\u00e9o Despr\u00e9s <despres.romeo@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/RomeoDespres/pkce"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

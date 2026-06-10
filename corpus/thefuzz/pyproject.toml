@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thefuzz"
+version = "0.22.1"
+description = "Fuzzy string matching in python"
+readme = "README.rst"
+classifiers = [ "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3 :: Only",]
+requires-python = ">=3.8"
+dependencies = [ "rapidfuzz>=3.0.0, < 4.0.0",]
+
+[[project.authors]]
+name = "Adam Cohen"
+email = "adam@seatgeek.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/seatgeek/thefuzz"
+
+[project.optional-dependencies]
+speedup = []
+
+[tool.setuptools]
+packages = [ "thefuzz",]
+zip-safe = true
+include-package-data = false

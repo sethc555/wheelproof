@@ -1,0 +1,7 @@
+{
+  "package": "jsonpath-rw",
+  "version": "1.4.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/71/7c/45001b1f19af8c4478489fbae4fc657b21c4c669d7a5a036a86882581d85/jsonpath-rw-1.4.0.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-1e_g41h3/jsonpath-rw-1.4.0-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nDESCRIPTION:\n    ``setuptools``-specific configurations that can be set by users that require\n    customization. These configurations are completely optional and probably can\n    be skipped when creating simple packages. They are equivalent to some of the\n    `Keywords <https://setuptools.pypa.io/en/latest/references/keywo"
+}

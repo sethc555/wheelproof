@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "s3path"
+version = "0.6.5"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Natural Language :: English", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13",]
+requires-python = ">=3.9"
+dependencies = [ "boto3>=1.16.35", "smart-open>=5.1.0",]
+
+[[project.authors]]
+name = "Lior Mizrahi"
+email = "li.mizr@gmail.com"
+
+[project.license]
+text = "Apache 2.0"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/liormizr/s3path"
+
+[tool.setuptools]
+packages = [ "s3path",]
+include-package-data = true
+license-files = [ "LICENSE",]
+
+[tool.setuptools.package-data]
+s3path = [ "py.typed",]

@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-flakefinder"
+version = "1.1.0"
+description = "Runs tests multiple times to expose flakiness."
+readme = "README.rst"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Topic :: Software Development :: Testing", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Operating System :: OS Independent", "License :: OSI Approved :: Apache Software License",]
+requires-python = ">=3.5"
+dependencies = [ "pytest>=2.7.1",]
+
+[[project.authors]]
+name = "David Euresti"
+email = "david@euresti.com"
+
+[[project.maintainers]]
+name = "Nipunn Koorapati"
+email = "nipunn@dropbox.com"
+
+[project.license]
+text = "Apache"
+
+[project.urls]
+Homepage = "https://github.com/dropbox/pytest-flakefinder"
+
+[tool.setuptools]
+py-modules = [ "pytest_flakefinder",]
+include-package-data = false
+
+[project.entry-points.pytest11]
+flakefinder = "pytest_flakefinder"

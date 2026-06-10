@@ -1,0 +1,66 @@
+{
+  "package": "pyre-extensions",
+  "version": "0.0.32",
+  "sdist_url": "https://files.pythonhosted.org/packages/a7/53/5bc2532536e921c48366ad1047c1344ccef6afa5e84053f0f6e20a453767/pyre_extensions-0.0.32.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Facebook"
+      ],
+      [
+        "author-email",
+        "pyre@fb.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://pyre-check.org"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Facebook <pyre@fb.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://pyre-check.org"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

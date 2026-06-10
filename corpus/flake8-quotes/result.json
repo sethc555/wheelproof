@@ -1,0 +1,7 @@
+{
+  "package": "flake8-quotes",
+  "version": "3.4.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/dd/57/a173e3eb86072b7ee77650aca496b15d6886367d257f58ea9de5276e330a/flake8-quotes-3.4.0.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-hoz8yh4g/flake8-quotes-3.4.0-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nDESCRIPTION:\n    ``setuptools``-specific configurations that can be set by users that require\n    customization. These configurations are completely optional and probably can\n    be skipped when creating simple packages. They are equivalent to some of the\n    `Keywords <https://setuptools.pypa.io/en/latest/references/key"
+}

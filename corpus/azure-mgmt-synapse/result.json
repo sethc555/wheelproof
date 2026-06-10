@@ -1,0 +1,7 @@
+{
+  "package": "azure-mgmt-synapse",
+  "version": "2.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/af/fa/5a7c375d305ec0ec06978db07ac34c4894d2b8a00087ff3dd9e1435e397f/azure-mgmt-synapse-2.0.0.zip",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-5i6_blyo/azure-mgmt-synapse-2.0.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 119, in _main\n    con"
+}

@@ -1,0 +1,7 @@
+{
+  "package": "pyarmor",
+  "version": "9.2.5",
+  "sdist_url": "https://files.pythonhosted.org/packages/f3/16/42a6ddc287cd228fae6c2cf6590f579406efed7c85ac508bb6c5f940f073/pyarmor-9.2.5.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-oglp3nng/pyarmor-9.2.5-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-oglp3nng/pyarmor-9.2.5-converted/pyproject.toml: Unescaped '\\' in a string (at line 21, column 1257) \n"
+}

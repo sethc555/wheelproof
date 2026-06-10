@@ -1,0 +1,7 @@
+{
+  "package": "jsons",
+  "version": "1.6.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/ef/38/c1c4e06725568c21b2cdab96f95450caa257b73aac90f8041af18756f3bf/jsons-1.6.3.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-b12rrnls/jsons-1.6.3-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nDESCRIPTION:\n    ``setuptools``-specific configurations that can be set by users that require\n    customization. These configurations are completely optional and probably can\n    be skipped when creating simple packages. They are equivalent to some of the\n    `Keywords <https://setuptools.pypa.io/en/latest/references/keywords.ht"
+}

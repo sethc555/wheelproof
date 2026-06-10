@@ -1,0 +1,33 @@
+{
+  "package": "dash-table",
+  "version": "5.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/3a/81/34983fa0c67125d7fff9d55e5d1a065127bde7ca49ca32d04dedd55f9f35/dash_table-5.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ]
+    ],
+    "metadata_only_converted": [],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

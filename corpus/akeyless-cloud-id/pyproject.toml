@@ -1,0 +1,37 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "akeyless_cloud_id"
+version = "0.3.1"
+description = "AKEYLESS Cloud ID Retriever"
+keywords = [ "AKEYLESS Cloud ID",]
+classifiers = [ "Intended Audience :: Developers", "Natural Language :: English", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Topic :: Security",]
+dependencies = [ "urllib3 >= 1.15", "requests",]
+
+[[project.authors]]
+name = "Akeyless Security"
+email = "support@akeyless.io"
+
+[project.license]
+text = "Apache 2.0"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://www.akeyless.io/"
+
+[project.optional-dependencies]
+aws = [ "boto3",]
+gcp = [ "google-auth",]
+azure = [ "azure-identity",]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = [ "test",]
+namespaces = false

@@ -1,0 +1,63 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jupyter-lsp"
+description = "Multi-Language Server WebSocket proxy for Jupyter Notebook/Lab server"
+keywords = [ "Interactive", "Language Server", "LSP",]
+classifiers = [ "Framework :: Jupyter", "Intended Audience :: Developers", "Intended Audience :: Information Technology", "License :: OSI Approved :: BSD License", "Programming Language :: Python",]
+requires-python = ">=3.8"
+dependencies = [ "jupyter_server >=1.1.2", "importlib_metadata >=4.8.3 ; python_version<\"3.10\"",]
+dynamic = [ "version",]
+
+[[project.authors]]
+name = "jupyter-lsp Contributors"
+email = "project.jupyter@gmail.com"
+
+[project.readme]
+file = "./README.md"
+content-type = "text/markdown"
+
+[project.urls]
+"Bug Tracker" = "https://github.com/jupyter-lsp/jupyterlab-lsp/issues"
+Documentation = "https://jupyterlab-lsp.readthedocs.io/"
+"Source Code" = "https://github.com/jupyter-lsp/jupyterlab-lsp"
+
+[project.license]
+text = "BSD-3-Clause"
+
+[tool.setuptools]
+include-package-data = true
+zip-safe = false
+license-files = [ "LICENSE",]
+
+[project.entry-points.jupyter_lsp_spec_v1]
+basedpyright = "jupyter_lsp.specs:basedpyright"
+bash-language-server = "jupyter_lsp.specs:bash"
+dockerfile-language-server-nodejs = "jupyter_lsp.specs:dockerfile"
+javascript-typescript-langserver = "jupyter_lsp.specs:ts_old"
+jedi-language-server = "jupyter_lsp.specs:jedi"
+julia-language-server = "jupyter_lsp.specs:julia"
+python-language-server = "jupyter_lsp.specs:py_palantir"
+python-lsp-server = "jupyter_lsp.specs:py_lsp_server"
+pyrefly = "jupyter_lsp.specs:pyrefly"
+pyright = "jupyter_lsp.specs:pyright"
+r-languageserver = "jupyter_lsp.specs:r"
+texlab = "jupyter_lsp.specs:tex"
+typescript-language-server = "jupyter_lsp.specs:ts"
+sql-language-server = "jupyter_lsp.specs:sql"
+unified-language-server = "jupyter_lsp.specs:md"
+vscode-css-languageserver-bin = "jupyter_lsp.specs:css"
+vscode-html-languageserver-bin = "jupyter_lsp.specs:html"
+vscode-json-languageserver-bin = "jupyter_lsp.specs:json"
+yaml-language-server = "jupyter_lsp.specs:yaml"
+
+[tool.setuptools.data-files]
+"etc/jupyter/jupyter_server_config.d" = [ "jupyter_lsp/etc/jupyter-lsp-jupyter-server.json",]
+
+[tool.setuptools.packages.find]
+namespaces = false
+
+[tool.setuptools.dynamic.version]
+attr = "jupyter_lsp._version.__version__"

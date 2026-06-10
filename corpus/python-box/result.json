@@ -1,0 +1,7 @@
+{
+  "package": "python-box",
+  "version": "7.4.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/0f/0f/34e7ee0a72f1464b4c7a2e8bafb389f230477256af586bc82bcfad85295a/python_box-7.4.1.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-h9dfpt5g/python_box-7.4.1-converted\n--- stdout ---\nconfiguration error: `project.optional-dependencies.tomli[0]` must be pep508\nDESCRIPTION:\n    Project dependency specification according to PEP 508\n\nGIVEN VALUE:\n    \"tomli; python_version < '3.11'; tomli-w\"\n\nOFFENDING RULE: 'format'\n\nDEFINITION:\n    {\n        \"$id\": \"#/definitions/dependency\",\n        \"title\": \"Dependency\",\n        \"type\": \"string\",\n        \"format\": \"pep508\"\n    }\n\nFor more details abo"
+}

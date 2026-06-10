@@ -1,0 +1,7 @@
+{
+  "package": "aws-encryption-sdk",
+  "version": "4.0.6",
+  "sdist_url": "https://files.pythonhosted.org/packages/75/a5/abb298dfa715a53cb686a4aaf25ee1574b066a565fd810ad02ec3cd52c75/aws_encryption_sdk-4.0.6.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-429i6lau/aws_encryption_sdk-4.0.6-converted\n--- stdout ---\nrunning egg_info\nwriting src/aws_encryption_sdk.egg-info/PKG-INFO\nwriting dependency_links to src/aws_encryption_sdk.egg-info/dependency_links.txt\nwriting requirements to src/aws_encryption_sdk.egg-info/requires.txt\nwriting top-level names to src/aws_encryption_sdk.egg-info/top_level.txt\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n "
+}

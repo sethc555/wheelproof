@@ -1,0 +1,78 @@
+{
+  "package": "ajsonrpc",
+  "version": "1.2.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/da/5c/95a9b83195d37620028421e00d69d598aafaa181d3e55caec485468838e1/ajsonrpc-1.2.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Kirill Pavlov"
+      ],
+      [
+        "author-email",
+        "k@p99.io"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/pavlov99/ajsonrpc"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Kirill Pavlov <k@p99.io>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/pavlov99/ajsonrpc"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

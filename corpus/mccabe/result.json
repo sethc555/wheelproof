@@ -1,0 +1,104 @@
+{
+  "package": "mccabe",
+  "version": "0.7.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/e7/ff/0ffefdcac38932a54d2b5eed4e0ba8a408f215002cd178ad1df0f2806ff8/mccabe-0.7.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Tarek Ziade"
+      ],
+      [
+        "author-email",
+        "tarek@ziade.org"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/pycqa/mccabe"
+      ],
+      [
+        "keywords",
+        "flake8 mccabe"
+      ],
+      [
+        "maintainer",
+        "Ian Stapleton Cordasco"
+      ],
+      [
+        "maintainer-email",
+        "graffatcolmingov@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Tarek Ziade <tarek@ziade.org>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "flake8,mccabe"
+      ],
+      [
+        "maintainer-email",
+        "Ian Stapleton Cordasco <graffatcolmingov@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/pycqa/mccabe"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

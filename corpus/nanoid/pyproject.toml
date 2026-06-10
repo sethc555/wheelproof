@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nanoid"
+version = "2.0.0"
+description = "A tiny, secure, URL-friendly, unique string ID generator for Python"
+classifiers = [ "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Operating System :: OS Independent", "Topic :: Utilities",]
+
+[[project.authors]]
+name = "Paul Yuan"
+email = "puyuan1@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/puyuan/py-nanoid"
+
+[tool.setuptools]
+packages = [ "nanoid",]
+zip-safe = false
+include-package-data = false

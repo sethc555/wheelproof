@@ -1,0 +1,7 @@
+{
+  "package": "bandit",
+  "version": "1.9.4",
+  "sdist_url": "https://files.pythonhosted.org/packages/aa/c3/0cb80dfe0f3076e5da7e4c5ad8e57bac6ac357ff4a6406205501cade4965/bandit-1.9.4.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-16ammxfs/bandit-1.9.4-converted\n--- stdout ---\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - pbr>=2.0.0\n  - setuptools>=61.2\n* Getting build dependencies for wheel...\nTraceback (most recent call last):\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_in_process/_in_process.py\", line 389, in <module>\n    main()\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_in_pro"
+}

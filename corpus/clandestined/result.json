@@ -1,0 +1,7 @@
+{
+  "package": "clandestined",
+  "version": "1.1.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/11/97/44724631e87107c867625843c517462e822e516243e01334e93a078e377a/clandestined-1.1.0.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-ng2v3bpi/clandestined-1.1.0-converted/setup.py (dynamic setup.py? flag as manual)\n/tmp/v/lib/python3.12/site-packages/setuptools/_distutils/dist.py:287: UserWarning: Unknown distribution option: 'test_suite'\n  warnings.warn(msg)\n/tmp/v/lib/python3.12/site-packages/setuptools/_distutils/dist.py:287: UserWarning: Unknown distribution option: 'tests_require'\n  warnings.warn(msg)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", "
+}

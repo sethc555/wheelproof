@@ -1,0 +1,7 @@
+{
+  "package": "zstd",
+  "version": "1.5.7.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/49/62/b9c075ad664e7c4cbb3d8d2be7c246506abe1bc7f778eb58d260ef9538c8/zstd-1.5.7.3.tar.gz",
+  "status": "convert-error",
+  "detail": "unexpected: over.read_string(overlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1064, in _read\n    raise MissingSectionHeaderError(fpname, lineno, line)\nconfigparser.MissingSectionHeaderError: File contains no section headers.\nfile: '<string>', line: 1\n'use existing ./version file\\n'\n"
+}

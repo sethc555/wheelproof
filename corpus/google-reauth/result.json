@@ -1,0 +1,88 @@
+{
+  "package": "google-reauth",
+  "version": "0.1.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/7d/86/74242e08d24ec4c436b8325dabbd7c60422b4829dfb1ad6ec117bdebea76/google-reauth-0.1.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Google"
+      ],
+      [
+        "author-email",
+        "googleapis-publisher@google.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/Google/google-reauth-python"
+      ],
+      [
+        "keywords",
+        "google auth oauth client reauth"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Google <googleapis-publisher@google.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "google,auth,oauth,client,reauth"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Google/google-reauth-python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

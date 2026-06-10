@@ -1,0 +1,48 @@
+{
+  "package": "pycodestyle",
+  "version": "2.14.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/11/e0/abfd2a0d2efe47670df87f3e3a0e2edda42f055053c85361f19c0e2c1ca8/pycodestyle-2.14.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Johann C. Rocholl"
+      ],
+      [
+        "author-email",
+        "johann@rocholl.net"
+      ],
+      [
+        "home-page",
+        "https://pycodestyle.pycqa.org/"
+      ],
+      [
+        "maintainer",
+        "Ian Lee"
+      ],
+      [
+        "maintainer-email",
+        "IanLee1521@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "\"Johann C. Rocholl\" <johann@rocholl.net>"
+      ],
+      [
+        "maintainer-email",
+        "Ian Lee <IanLee1521@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://pycodestyle.pycqa.org/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

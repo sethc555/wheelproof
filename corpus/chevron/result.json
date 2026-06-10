@@ -1,0 +1,66 @@
+{
+  "package": "chevron",
+  "version": "0.14.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/15/1f/ca74b65b19798895d63a6e92874162f44233467c9e7c1ed8afd19016ebe9/chevron-0.14.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "noah morrison"
+      ],
+      [
+        "author-email",
+        "noah@morrison.ph"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/noahmorrison/chevron"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "noah morrison <noah@morrison.ph>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/noahmorrison/chevron"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

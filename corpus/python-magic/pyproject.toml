@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-magic"
+version = "0.4.27"
+description = "File type identification using libmagic"
+keywords = [ "mime", "magic", "file",]
+classifiers = [ "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: Implementation :: CPython",]
+requires-python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[project.authors]]
+name = "Adam Hupp"
+email = "adam@hupp.org"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "http://github.com/ahupp/python-magic"
+
+[tool.setuptools]
+packages = [ "magic",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+magic = [ "py.typed",]

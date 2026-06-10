@@ -1,0 +1,78 @@
+{
+  "package": "defusedcsv",
+  "version": "3.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/1d/1d/0c17ea5e5f8e456515e3368aa8821fbdf094ed29ac886f0b2f0f3779ab34/defusedcsv-3.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Raphael Michel"
+      ],
+      [
+        "author-email",
+        "mail@raphaelmichel.de"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/raphaelm/defusedcsv"
+      ],
+      [
+        "keywords",
+        "csv injection defuse save"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Raphael Michel <mail@raphaelmichel.de>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "csv,injection,defuse,save"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/raphaelm/defusedcsv"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

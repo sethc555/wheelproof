@@ -1,0 +1,86 @@
+{
+  "package": "hmsclient",
+  "version": "0.1.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/a4/b5/37ad13cc386f22ea68446aa636497082db38cff42801f9c3aefa02310eaa/hmsclient-0.1.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Giovanni Lanzani"
+      ],
+      [
+        "author-email",
+        "giovanni@lanzani.nl"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/gglanzani/hmsclient"
+      ],
+      [
+        "keywords",
+        "hive data database thrift metastore"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Giovanni Lanzani <giovanni@lanzani.nl>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "hive,data,database,thrift,metastore"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/gglanzani/hmsclient"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

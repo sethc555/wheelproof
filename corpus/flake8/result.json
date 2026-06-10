@@ -1,0 +1,48 @@
+{
+  "package": "flake8",
+  "version": "7.3.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/9b/af/fbfe3c4b5a657d79e5c47a2827a362f9e1b763336a52f926126aa6dc7123/flake8-7.3.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Tarek Ziade"
+      ],
+      [
+        "author-email",
+        "tarek@ziade.org"
+      ],
+      [
+        "home-page",
+        "https://github.com/pycqa/flake8"
+      ],
+      [
+        "maintainer",
+        "Ian Stapleton Cordasco"
+      ],
+      [
+        "maintainer-email",
+        "graffatcolmingov@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Tarek Ziade <tarek@ziade.org>"
+      ],
+      [
+        "maintainer-email",
+        "Ian Stapleton Cordasco <graffatcolmingov@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/pycqa/flake8"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

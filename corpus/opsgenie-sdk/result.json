@@ -1,0 +1,74 @@
+{
+  "package": "opsgenie-sdk",
+  "version": "2.1.5",
+  "sdist_url": "https://files.pythonhosted.org/packages/5d/13/ddaa92608384f64e8d0d22097e74c24e341f2b41096c52c872abfa35b63f/opsgenie-sdk-2.1.5.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "OpsGenie"
+      ],
+      [
+        "author-email",
+        "support@opsgenie.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/opsgenie/opsgenie-python-sdk"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "OpsGenie <support@opsgenie.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/opsgenie/opsgenie-python-sdk"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

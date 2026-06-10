@@ -1,0 +1,72 @@
+{
+  "package": "azure-cosmosdb-nspkg",
+  "version": "2.0.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/91/1b/68df002d2b3992da134244c27ca2380ad8159535391373fac66d7fb5f9fa/azure-cosmosdb-nspkg-2.0.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Microsoft Corporation"
+      ],
+      [
+        "author-email",
+        "ascl@microsoft.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/Azure/azure-cosmosdb-python"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Microsoft Corporation <ascl@microsoft.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Azure/azure-cosmosdb-python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

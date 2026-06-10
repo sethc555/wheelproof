@@ -1,0 +1,76 @@
+{
+  "package": "telepath",
+  "version": "0.3.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/65/58/5de8765687d6f9dfcbb72c89251036c3b901126404f872b936b13377a3fe/telepath-0.3.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Matthew Westcott"
+      ],
+      [
+        "author-email",
+        "matthew.westcott@torchbox.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/wagtail/telepath"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Matthew Westcott <matthew.westcott@torchbox.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/wagtail/telepath"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

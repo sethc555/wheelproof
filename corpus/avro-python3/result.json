@@ -1,0 +1,7 @@
+{
+  "package": "avro-python3",
+  "version": "1.10.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/cc/97/7a6970380ca8db9139a3cc0b0e3e0dd3e4bc584fb3644e1d06e71e1a55f0/avro-python3-1.10.2.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-i6_rmdf0/avro-python3-1.10.2-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nDESCRIPTION:\n    ``setuptools``-specific configurations that can be set by users that require\n    customization. These configurations are completely optional and probably can\n    be skipped when creating simple packages. They are equivalent to some of the\n    `Keywords <https://setuptools.pypa.io/en/latest/references/key"
+}

@@ -1,0 +1,15 @@
+{
+  "package": "backports-weakref",
+  "version": "1.0.post1",
+  "sdist_url": "https://files.pythonhosted.org/packages/12/ab/cf35cf43a4a6215e3255cf2e49c77d5ba1e9c733af2aa3ec1ca9c4d02592/backports.weakref-1.0.post1.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "backports/__init__.py",
+      "backports/weakref.py"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

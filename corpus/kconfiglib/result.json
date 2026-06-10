@@ -1,0 +1,88 @@
+{
+  "package": "kconfiglib",
+  "version": "14.1.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/59/29/d557718c84ef1a8f275faa4caf8e353778121beefbe9fadfa0055ca99aae/kconfiglib-14.1.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Ulf \"Ulfalizer\" Magnusson"
+      ],
+      [
+        "author-email",
+        "ulfalizer@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/ulfalizer/Kconfiglib"
+      ],
+      [
+        "requires-python",
+        ">=2.7,!=3.0.*,!=3.1.*"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "\"Ulf \\\"Ulfalizer\\\" Magnusson\" <ulfalizer@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/ulfalizer/Kconfiglib"
+      ],
+      [
+        "requires-python",
+        "!=3.0.*,!=3.1.*,>=2.7"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

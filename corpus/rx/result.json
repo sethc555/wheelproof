@@ -1,0 +1,98 @@
+{
+  "package": "rx",
+  "version": "3.2.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/34/b5/e0f602453b64b0a639d56f3c05ab27202a4eec993eb64d66c077c821b621/Rx-3.2.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Dag Brattli"
+      ],
+      [
+        "author-email",
+        "dag@brattli.net"
+      ],
+      [
+        "download-url",
+        "https://github.com/ReactiveX/RxPY"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://reactivex.io"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Dag Brattli <dag@brattli.net>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/ReactiveX/RxPY"
+      ],
+      [
+        "project-url",
+        "Homepage, http://reactivex.io"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "coverage>=4.5.3; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-asyncio>=0.10.0; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest>=4.6.1; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

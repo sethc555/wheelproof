@@ -1,0 +1,42 @@
+{
+  "package": "markdowntable",
+  "version": "6.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/3b/cc/eddabe77265b678c60a278c2c943151aeb420fbbe1c3b31a721f070f23b6/markdowntable-6.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/PokestarFan/Python-Markdown-Table"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "project-url",
+        "Homepage, https://github.com/PokestarFan/Python-Markdown-Table"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

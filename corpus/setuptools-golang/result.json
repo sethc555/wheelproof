@@ -1,0 +1,36 @@
+{
+  "package": "setuptools-golang",
+  "version": "2.9.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/83/60/aa914100664431d13f1480c630cf8cd8ea77d3d24022a58d45fa32de9e03/setuptools_golang-2.9.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Anthony Sottile"
+      ],
+      [
+        "author-email",
+        "asottile@umich.edu"
+      ],
+      [
+        "home-page",
+        "https://github.com/asottile/setuptools-golang"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Anthony Sottile <asottile@umich.edu>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/asottile/setuptools-golang"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

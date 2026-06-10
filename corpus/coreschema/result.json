@@ -1,0 +1,7 @@
+{
+  "package": "coreschema",
+  "version": "0.0.4",
+  "sdist_url": "https://files.pythonhosted.org/packages/93/08/1d105a70104e078718421e6c555b8b293259e7fc92f7e9a04869947f198f/coreschema-0.0.4.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-x05w7g0x/coreschema-0.0.4-converted\n--- stdout ---\nconfiguration error: `tool.setuptools.packages` must be valid exactly by one definition (0 matches found):\n\n    - type: array\n      items:\n        type: string\n        at least one of the following:\n          - {type: string, format: 'python-module-name-relaxed'}\n          - {type: string, format: 'pep561-stub-name'}\n    - type: table\n      additional keys: False\n      keys:\n        'find':\n          typ"
+}

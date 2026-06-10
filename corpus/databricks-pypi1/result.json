@@ -1,0 +1,12 @@
+{
+  "package": "databricks-pypi1",
+  "version": "0.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/ab/7d/20231e46fbcc69a1dee4337264182e38d03b7951e47188a8034d5d7d7e0b/databricks_pypi1-0.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [],
+    "metadata_only_converted": [],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

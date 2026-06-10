@@ -1,0 +1,15 @@
+{
+  "package": "pyro-api",
+  "version": "0.1.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/25/d7/a0812f5c16b0d4464f80a64a44626c5fe200098070be0f32436dbb662775/pyro-api-0.1.2.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "pyroapi/tests/__init__.py",
+      "pyroapi/tests/test_svi.py"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "package": "colour",
+  "version": "0.1.5",
+  "sdist_url": "https://files.pythonhosted.org/packages/a0/d4/5911a7618acddc3f594ddf144ecd8a03c29074a540f4494670ad8f153efe/colour-0.1.5.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-jsf4kum7/colour-0.1.5\n--- stdout ---\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - setuptools >= 40.8.0\n* Getting build dependencies for wheel...\n/tmp/build-env-mzh7jqiy/lib/python3.12/site-packages/setuptools/dist.py:599: SetuptoolsDeprecationWarning: Invalid dash-separated key 'description-file' in 'metadata' (setup.cfg), please use the underscore name 'description_file' instead.\n!!\n\n  "
+}

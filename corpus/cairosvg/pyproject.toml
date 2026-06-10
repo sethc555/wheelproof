@@ -1,0 +1,49 @@
+[build-system]
+requires = [ "setuptools",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "CairoSVG"
+description = "A Simple SVG Converter based on Cairo"
+keywords = [ "svg", "converter", "cairo", "pdf", "png", "postscript",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Intended Audience :: End Users/Desktop", "Operating System :: OS Independent", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "Topic :: Multimedia :: Graphics :: Graphics Conversion",]
+requires-python = ">= 3.10"
+dependencies = [ "cairocffi", "cssselect2", "defusedxml", "pillow", "tinycss2",]
+dynamic = [ "version",]
+
+[[project.authors]]
+name = "Guillaume Ayoub"
+email = "contact@courtbouillon.org"
+
+[project.license]
+text = "LGPL-3.0-or-later"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://courtbouillon.org/cairosvg"
+Documentation = "https://cairosvg.org/documentation/"
+Code = "https://github.com/Kozea/CairoSVG/"
+"Issue tracker" = "https://github.com/Kozea/CairoSVG/issues"
+Donation = "https://opencollective.com/courtbouillon"
+
+[project.optional-dependencies]
+doc = [ "sphinx", "sphinx_rtd_theme",]
+test = [ "pytest", "flake8", "isort",]
+
+[project.scripts]
+cairosvg = "cairosvg.__main__:main"
+
+[tool.setuptools]
+packages = [ "cairosvg",]
+platforms = [ "Linux", "macOS", "Windows",]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+cairosvg = [ "VERSION",]
+
+[tool.setuptools.dynamic.version]
+file = [ "cairosvg/VERSION",]

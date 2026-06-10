@@ -1,0 +1,90 @@
+{
+  "package": "pycognito",
+  "version": "2024.5.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/26/67/3975cf257fcc04903686ef87d39be386d894a0d8182f43d37e9cbfc9609f/pycognito-2024.5.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Pascal Vizeli"
+      ],
+      [
+        "author-email",
+        "pvizeli@syshack.ch"
+      ],
+      [
+        "download-url",
+        "https://github.com/pvizeli/pycognito/tarball/2024.5.1"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/pvizeli/pycognito"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Pascal Vizeli <pvizeli@syshack.ch>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/pvizeli/pycognito/tarball/2024.5.1"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/pvizeli/pycognito"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

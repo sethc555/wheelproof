@@ -1,0 +1,94 @@
+{
+  "package": "pytest-icdiff",
+  "version": "0.9",
+  "sdist_url": "https://files.pythonhosted.org/packages/5a/0c/66e1e2590e98f4428e374a3b6448dc086a908d15b1e24b914539d13b7ac4/pytest-icdiff-0.9.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Harry Percival"
+      ],
+      [
+        "author-email",
+        "obeythetestinggoat@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/hjwp/pytest-icdiff"
+      ],
+      [
+        "maintainer",
+        "Harry Percival"
+      ],
+      [
+        "maintainer-email",
+        "obeythetestinggoat@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Harry Percival <obeythetestinggoat@gmail.com>"
+      ],
+      [
+        "maintainer-email",
+        "Harry Percival <obeythetestinggoat@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/hjwp/pytest-icdiff"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
+}

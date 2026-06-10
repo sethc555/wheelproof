@@ -1,0 +1,14 @@
+{
+  "package": "types-pillow",
+  "version": "10.2.0.20240822",
+  "sdist_url": "https://files.pythonhosted.org/packages/18/4a/4495264dddaa600d65d68bcedb64dcccf9d9da61adff51f7d2ffd8e4c9ce/types-Pillow-10.2.0.20240822.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "PIL-stubs/METADATA.toml"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

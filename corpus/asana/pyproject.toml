@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asana"
+version = "5.2.5"
+description = "Asana"
+keywords = [ "asana", "Asana",]
+dependencies = [ "certifi>=2017.4.17", "python-dateutil>=2.1", "six>=1.10", "urllib3>=1.23",]
+
+[[project.authors]]
+name = "Asana"
+
+[[project.authors]]
+name = "Inc"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "http://github.com/asana/python-asana"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = false

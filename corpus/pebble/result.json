@@ -1,0 +1,82 @@
+{
+  "package": "pebble",
+  "version": "5.2.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/66/3b/7debef984e227a70798963cf2e5ea90882f62bca659b33cbd421a453abd1/pebble-5.2.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Matteo Cafasso"
+      ],
+      [
+        "author-email",
+        "noxdafox@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/noxdafox/pebble"
+      ],
+      [
+        "keywords",
+        "thread process pool decorator"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Matteo Cafasso <noxdafox@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "thread,process,pool,decorator"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/noxdafox/pebble"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "package": "pdfrw",
+  "version": "0.4",
+  "sdist_url": "https://files.pythonhosted.org/packages/61/96/cbde98b96115d10694010e584d00d39f7b97905e1c8303e6ffbb84080e6a/pdfrw-0.4.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Patrick Maupin"
+      ],
+      [
+        "author-email",
+        "pmaupin@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/pmaupin/pdfrw"
+      ],
+      [
+        "keywords",
+        "pdf vector graphics PDF nup watermark split join merge"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Patrick Maupin <pmaupin@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "pdf,vector,graphics,PDF,nup,watermark,split,join,merge"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/pmaupin/pdfrw"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

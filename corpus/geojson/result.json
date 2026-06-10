@@ -1,0 +1,102 @@
+{
+  "package": "geojson",
+  "version": "3.3.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/13/a9/bd61eee2c7904947094b74866b569f3fd5a8d6ac907ecdfecef74b19d459/geojson-3.3.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Sean Gillies"
+      ],
+      [
+        "author-email",
+        "sgillies@frii.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/jazzband/geojson"
+      ],
+      [
+        "keywords",
+        "gis geography json"
+      ],
+      [
+        "maintainer",
+        "Ray Riga"
+      ],
+      [
+        "maintainer-email",
+        "ray.maintainer@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Sean Gillies <sgillies@frii.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "gis,geography,json"
+      ],
+      [
+        "maintainer-email",
+        "Ray Riga <ray.maintainer@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/jazzband/geojson"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

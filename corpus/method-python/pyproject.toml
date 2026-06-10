@@ -1,0 +1,34 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "method-python"
+version = "2.1.1"
+description = "Python library for the Method API"
+requires-python = ">=3.6"
+dependencies = [ "hammock==0.2.4",]
+
+[[project.authors]]
+name = "Marco del Carmen"
+email = "marco@mdelcarmen.me"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "Python library for the Method API"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/MethodFi/method-python"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+readme = [ "README.md",]
+
+[tool.setuptools.packages.find]
+exclude = [ "test",]
+namespaces = false

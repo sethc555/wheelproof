@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-freezegun"
+version = "0.4.2"
+description = "Wrap tests with fixtures in freeze_time"
+readme = "README.rst"
+classifiers = [ "Development Status :: 4 - Beta", "Framework :: Pytest", "Intended Audience :: Developers", "Topic :: Software Development :: Testing", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Operating System :: OS Independent", "License :: OSI Approved :: MIT License",]
+dependencies = [ "freezegun>0.3", "pytest>=3.0.0",]
+
+[[project.authors]]
+name = "Tomasz Kontusz"
+email = "tomasz.kontusz@gmail.com"
+
+[[project.maintainers]]
+name = "Tomasz Kontusz"
+email = "tomasz.kontusz@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/ktosiek/pytest-freezegun"
+
+[tool.setuptools]
+zip-safe = true
+py-modules = [ "pytest_freezegun",]
+include-package-data = false
+
+[project.entry-points.pytest11]
+freezegun = "pytest_freezegun"

@@ -1,0 +1,70 @@
+{
+  "package": "django-choices",
+  "version": "2.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/33/e7/277cdc644e55780d77a8855c8c4b426c3470fe7c7f61608e6965ec552449/django-choices-2.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Jason Webb"
+      ],
+      [
+        "author-email",
+        "bigjasonwebb@gmail.com,sergeimaertens@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/bigjason/django-choices"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Jason Webb <bigjasonwebb@gmail.com>, sergeimaertens@gmail.com"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/bigjason/django-choices"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

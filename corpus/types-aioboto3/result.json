@@ -1,0 +1,26 @@
+{
+  "package": "types-aioboto3",
+  "version": "15.5.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/56/76/e162ea2ef8d414d4f36f28a6e0b6078ccef3f2f9d5f957859f303995c528/types_aioboto3-15.5.0.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "aioboto3-stubs/dynamodb/__init__.pyi",
+      "aioboto3-stubs/dynamodb/table.pyi",
+      "aioboto3-stubs/experimental/__init__.pyi",
+      "aioboto3-stubs/experimental/async_chalice.pyi",
+      "aioboto3-stubs/resources/__init__.pyi",
+      "aioboto3-stubs/resources/action.pyi",
+      "aioboto3-stubs/resources/base.pyi",
+      "aioboto3-stubs/resources/collection.pyi",
+      "aioboto3-stubs/resources/factory.pyi",
+      "aioboto3-stubs/resources/response.pyi",
+      "aioboto3-stubs/s3/__init__.pyi",
+      "aioboto3-stubs/s3/cse.pyi",
+      "aioboto3-stubs/s3/inject.pyi"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

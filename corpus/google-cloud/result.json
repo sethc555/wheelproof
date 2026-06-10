@@ -1,0 +1,80 @@
+{
+  "package": "google-cloud",
+  "version": "0.34.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/47/0e/8bf108fa9e3e036fe37a86598f1315e7b8de90b89012fd65704dc30ac6ad/google-cloud-0.34.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Google Cloud Platform"
+      ],
+      [
+        "author-email",
+        "googleapis-publisher@google.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/GoogleCloudPlatform/google-cloud-python"
+      ],
+      [
+        "platform",
+        "Posix; MacOS X; Windows"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Google Cloud Platform <googleapis-publisher@google.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "platform",
+        "Posix"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/GoogleCloudPlatform/google-cloud-python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

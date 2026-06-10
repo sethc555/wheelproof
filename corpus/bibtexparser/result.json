@@ -1,0 +1,66 @@
+{
+  "package": "bibtexparser",
+  "version": "1.4.4",
+  "sdist_url": "https://files.pythonhosted.org/packages/44/1c/577d3ce406e88f370e80a6ebf76ae52a2866521e0b585e8ec612759894f1/bibtexparser-1.4.4.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Francois Boulogne and other contributors"
+      ],
+      [
+        "author-email",
+        "code@mweiss.ch"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/sciunto-org/python-bibtexparser"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Francois Boulogne and other contributors <code@mweiss.ch>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/sciunto-org/python-bibtexparser"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

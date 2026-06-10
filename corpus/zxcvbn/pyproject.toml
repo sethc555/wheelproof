@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zxcvbn"
+version = "4.5.0"
+keywords = [ "zxcvbn", "password", "security",]
+readme = "README.rst"
+classifiers = [ "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Natural Language :: English", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Topic :: Security", "Topic :: Software Development :: Libraries :: Python Modules",]
+
+[[project.authors]]
+name = "Daniel Wolf"
+email = "danielrwolf5@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/dwolfhub/zxcvbn-python"
+Download = "https://github.com/dwolfhub/zxcvbn-python/tarball/v4.5.0"
+Changelog = "https://github.com/dwolfhub/zxcvbn-python/blob/master/CHANGELOG.md"
+
+[project.scripts]
+zxcvbn = "zxcvbn.__main__:cli"
+
+[tool.setuptools]
+packages = [ "zxcvbn",]
+include-package-data = false

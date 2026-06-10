@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openpyxl-stubs"
+version = "0.1.25"
+description = "Type stubs for openpyxl"
+keywords = [ "utility", "mypy", "stubs",]
+classifiers = [ "Development Status :: 3 - Alpha", "Intended Audience :: Developers", "Natural Language :: English",]
+dependencies = [ "mypy>=0.720", "typing-extensions>=3.7.4", "openpyxl>=3.0.0",]
+
+[[project.authors]]
+name = "Martin Thoma"
+email = "info@martin-thoma.de"
+
+[[project.maintainers]]
+name = "Martin Thoma"
+email = "info@martin-thoma.de"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+text = "MIT license"
+
+[project.urls]
+Homepage = "https://github.com/MartinThoma/openpyxl-stubs"
+
+[tool.setuptools]
+packages = [ "openpyxl-stubs",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+openpyxl-stubs = [ "__init__.pyi", "xml/__init__.pyi", "reader/drawings.pyi", "reader/__init__.pyi", "reader/excel.pyi", "reader/strings.pyi", "reader/workbook.pyi", "styles/fonts.pyi", "styles/numbers.pyi", "styles/differential.pyi", "styles/colors.pyi", "styles/named_styles.pyi", "styles/borders.pyi", "styles/alignment.pyi", "styles/__init__.pyi", "styles/protection.pyi", "styles/fills.pyi", "styles/styleable.pyi", "cell/_writer.pyi", "cell/__init__.pyi", "cell/cell.pyi", "cell/text.pyi", "utils/escape.pyi", "utils/__init__.pyi", "utils/cell.pyi", "utils/formulas.pyi", "workbook/child.pyi", "workbook/__init__.pyi", "workbook/defined_name.pyi", "workbook/workbook.pyi", "worksheet/worksheet.pyi", "worksheet/_writer.pyi", "worksheet/_reader.pyi", "worksheet/__init__.pyi", "worksheet/copier.pyi", "chart/axis.pyi", "chart/__init__.pyi",]

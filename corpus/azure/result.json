@@ -1,0 +1,7 @@
+{
+  "package": "azure",
+  "version": "5.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/e8/48/ef73d5e71ecb84cacaeaf533f519be81825ad6198acc41bd821f440e7f7c/azure-5.0.0.zip",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-gnpd8qp1/azure-5.0.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _main\n    setup_call_args "
+}

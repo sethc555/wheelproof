@@ -1,0 +1,40 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hdfs"
+version = "2.7.3"
+description = "HdfsCLI: API and command line interface for HDFS."
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12",]
+dependencies = [ "docopt", "requests>=2.7.0", "six>=1.9.0",]
+
+[[project.authors]]
+name = "Matthieu Monsch"
+email = "mtth@apache.org"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://hdfscli.readthedocs.io"
+
+[project.optional-dependencies]
+avro = [ "fastavro>=0.21.19",]
+kerberos = [ "requests-kerberos>=0.7.0",]
+dataframe = [ "fastavro>=0.21.19", "pandas>=0.14.1",]
+
+[project.scripts]
+hdfscli = "hdfs.__main__:main"
+hdfscli-avro = "hdfs.ext.avro.__main__:main"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "test*",]
+namespaces = false

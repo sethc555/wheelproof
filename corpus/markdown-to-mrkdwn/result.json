@@ -1,0 +1,7 @@
+{
+  "package": "markdown-to-mrkdwn",
+  "version": "0.3.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/44/9a/701c308edbac6fed7d6b25101e2877729c839328ff172cb87d9ff49b05d2/markdown_to_mrkdwn-0.3.3.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-r_hztxvf/markdown_to_mrkdwn-0.3.3-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _main\n    set"
+}

@@ -1,0 +1,74 @@
+{
+  "package": "requests-oauth",
+  "version": "0.4.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/b5/4c/b333b8ece6d9c59ac7113190a8dda844374d3bbbd3076913607fb2df326d/requests-oauth-0.4.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Miguel Araujo"
+      ],
+      [
+        "author-email",
+        "miguel.araujo.perez@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://github.com/maraujop/requests-oauth"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Miguel Araujo <miguel.araujo.perez@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/markdown"
+      ],
+      [
+        "project-url",
+        "Homepage, http://github.com/maraujop/requests-oauth"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "package": "delta-sharing",
+  "version": "1.4.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/8c/88/19549d3157f9870b22b7a75e2a81788cdcd79afb4a00b0ff5f2c0f88ea62/delta_sharing-1.4.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "The Delta Lake Project Authors"
+      ],
+      [
+        "author-email",
+        "delta-users@googlegroups.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/delta-io/delta-sharing/"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "The Delta Lake Project Authors <delta-users@googlegroups.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/delta-io/delta-sharing/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

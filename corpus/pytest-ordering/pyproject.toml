@@ -1,0 +1,24 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-ordering"
+version = "0.6"
+description = "pytest plugin to run your tests in a specific order"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: POSIX", "Operating System :: Microsoft :: Windows", "Operating System :: MacOS :: MacOS X", "Topic :: Software Development :: Testing", "Topic :: Software Development :: Quality Assurance", "Topic :: Utilities", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.2", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: Implementation :: PyPy",]
+dependencies = [ "pytest",]
+
+[[project.authors]]
+name = "Frank Tobia"
+email = "frank.tobia@gmail.com"
+
+[project.urls]
+Homepage = "https://github.com/ftobia/pytest-ordering"
+
+[tool.setuptools]
+packages = [ "pytest_ordering",]
+include-package-data = false
+
+[project.entry-points.pytest11]
+pytest_ordering = "pytest_ordering"

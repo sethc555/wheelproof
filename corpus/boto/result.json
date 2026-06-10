@@ -1,0 +1,7 @@
+{
+  "package": "boto",
+  "version": "2.49.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/c8/af/54a920ff4255664f5d238b5aebd8eedf7a07c7a5e71e27afcfe840b82f51/boto-2.49.0.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-22x3gop8/boto-2.49.0-converted/setup.py (dynamic setup.py? flag as manual)\n/tmp/wheelproof-bc-22x3gop8/boto-2.49.0-converted/boto/__init__.py:1139: SyntaxWarning: invalid escape sequence '\\c'\n  C:\\a\\b\\c)\n/tmp/wheelproof-bc-22x3gop8/boto-2.49.0-converted/boto/pyami/config.py:98: SyntaxWarning: invalid escape sequence '\\s'\n  match = re.match(\"^#import[\\s\\t]*([^\\s^\\t]*)[\\s\\t]*$\", line)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py"
+}

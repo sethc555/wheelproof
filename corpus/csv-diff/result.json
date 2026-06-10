@@ -1,0 +1,12 @@
+{
+  "package": "csv-diff",
+  "version": "1.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/8e/40/428351c5f57b676e30b7f3a2940b3d017ee1b8e4e091dec4931e488a59fe/csv_diff-1.2.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": true
+  }
+}

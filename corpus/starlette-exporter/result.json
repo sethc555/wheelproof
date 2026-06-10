@@ -1,0 +1,70 @@
+{
+  "package": "starlette-exporter",
+  "version": "0.23.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/b9/74/173c13e7257a358f275938b767bb8c4ac6a750f199095e1b09e4e7468555/starlette_exporter-0.23.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Stephen Hillier"
+      ],
+      [
+        "author-email",
+        "stephenhillier@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/stephenhillier/starlette_exporter"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Stephen Hillier <stephenhillier@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/stephenhillier/starlette_exporter"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

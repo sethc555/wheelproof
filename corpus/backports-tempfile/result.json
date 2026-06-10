@@ -1,0 +1,15 @@
+{
+  "package": "backports-tempfile",
+  "version": "1.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/0d/f9/fa432ec3d185a63d39c20c49e37e163633aaae4009cc79574aecc064d2d0/backports.tempfile-1.0.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "backports/__init__.py",
+      "backports/tempfile.py"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

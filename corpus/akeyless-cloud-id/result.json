@@ -1,0 +1,78 @@
+{
+  "package": "akeyless-cloud-id",
+  "version": "0.3.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/03/f1/617bd6d68a9790e28951844ac72cf608b986d726af0c18ec9d34beb22f15/akeyless_cloud_id-0.3.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Akeyless Security"
+      ],
+      [
+        "author-email",
+        "support@akeyless.io"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://www.akeyless.io/"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Akeyless Security <support@akeyless.io>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://www.akeyless.io/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

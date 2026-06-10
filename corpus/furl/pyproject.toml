@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "furl"
+version = "2.1.4"
+description = "URL manipulation made simple."
+classifiers = [ "License :: Public Domain", "Natural Language :: English", "Intended Audience :: Developers", "Topic :: Software Development :: Libraries", "Development Status :: 5 - Production/Stable", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: Implementation :: PyPy", "Programming Language :: Python :: Implementation :: CPython",]
+dependencies = [ "six>=1.8.0", "orderedmultidict>=1.0.1",]
+
+[[project.authors]]
+name = "Ansgar Grunseid"
+email = "grunseid@gmail.com"
+
+[project.license]
+text = "Unlicense"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/gruns/furl"
+
+[project.optional-dependencies]
+testing = [ "flake8", "six>=1.8.0",]
+
+[tool.setuptools]
+include-package-data = true
+platforms = [ "any",]
+license-files = [ "LICENSE.md",]
+
+[tool.setuptools.packages.find]
+namespaces = false

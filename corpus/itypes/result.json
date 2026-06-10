@@ -1,0 +1,66 @@
+{
+  "package": "itypes",
+  "version": "1.2.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/0e/53/764524b3907d0af00523f8794daca181c08ca7cb32ceee25a0754d5e63a5/itypes-1.2.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Tom Christie"
+      ],
+      [
+        "author-email",
+        "tom@tomchristie.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://github.com/PavanTatikonda/itypes"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Tom Christie <tom@tomchristie.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, http://github.com/PavanTatikonda/itypes"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

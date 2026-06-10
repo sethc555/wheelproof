@@ -1,0 +1,39 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "win32_setctime"
+version = "1.2.0"
+description = "A small Python utility to set file creation time on Windows"
+keywords = [ "win32", "windows", "filesystem", "filetime",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Topic :: System :: Filesystems", "Intended Audience :: Developers", "Environment :: Win32 (MS Windows)", "Natural Language :: English", "License :: OSI Approved :: MIT License", "Operating System :: Microsoft", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: Implementation :: CPython",]
+requires-python = ">=3.5"
+
+[[project.authors]]
+name = "Delgan"
+email = "delgan.py@gmail.com"
+
+[project.license]
+text = "MIT license"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/Delgan/win32-setctime"
+Download = "https://github.com/Delgan/win32-setctime/archive/1.2.0.tar.gz"
+
+[project.optional-dependencies]
+dev = [ "black>=19.3b0 ; python_version>='3.6'", "pytest>=4.6.2",]
+
+[tool.setuptools]
+packages = [ "win32_setctime",]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.package-data]
+win32_setctime = [ "py.typed",]

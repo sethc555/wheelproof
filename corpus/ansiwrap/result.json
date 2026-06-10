@@ -1,0 +1,7 @@
+{
+  "package": "ansiwrap",
+  "version": "0.8.4",
+  "sdist_url": "https://files.pythonhosted.org/packages/7c/45/2616341cfcace37d4619d5106a85fcc24f2170d1a161bc5f7fdb81772fbc/ansiwrap-0.8.4.zip",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-7ncboxw0/ansiwrap-0.8.4-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nDESCRIPTION:\n    ``setuptools``-specific configurations that can be set by users that require\n    customization. These configurations are completely optional and probably can\n    be skipped when creating simple packages. They are equivalent to some of the\n    `Keywords <https://setuptools.pypa.io/en/latest/references/keywords"
+}

@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pylogbeat"
+version = "2.1.0"
+description = "Simple, incomplete implementation of the Beats protocol used by Elastic Beats and Logstash."
+keywords = [ "logging", "logstash", "beats",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Topic :: Internet :: WWW/HTTP", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: System :: Logging",]
+requires-python = ">=3.11"
+
+[[project.authors]]
+name = "Enrico Tröger"
+email = "enrico.troeger@uvena.de"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/eht16/pylogbeat/"
+"Travis CI" = "https://travis-ci.org/eht16/pylogbeat/"
+"Source code" = "https://github.com/eht16/pylogbeat/"
+
+[tool.setuptools]
+py-modules = [ "pylogbeat",]
+include-package-data = true
+license-files = [ "LICENSE",]

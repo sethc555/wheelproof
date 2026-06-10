@@ -1,0 +1,7 @@
+{
+  "package": "j2cli",
+  "version": "0.3.10",
+  "sdist_url": "https://files.pythonhosted.org/packages/fa/ce/a21d12ee70515159d06acf406026b3f2f44a3ee9f87d048a43417311fb9c/j2cli-0.3.10.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-fl2qmo71/j2cli-0.3.10-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nDESCRIPTION:\n    ``setuptools``-specific configurations that can be set by users that require\n    customization. These configurations are completely optional and probably can\n    be skipped when creating simple packages. They are equivalent to some of the\n    `Keywords <https://setuptools.pypa.io/en/latest/references/keywords.h"
+}

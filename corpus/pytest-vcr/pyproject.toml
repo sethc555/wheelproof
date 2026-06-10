@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-vcr"
+version = "1.0.2"
+description = "Plugin for managing VCR.py cassettes"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Framework :: Pytest", "Intended Audience :: Developers", "Topic :: Software Development :: Testing", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Operating System :: OS Independent", "License :: OSI Approved :: MIT License",]
+dependencies = [ "pytest>=3.6.0", "vcrpy",]
+
+[[project.authors]]
+name = "Tomasz Kontusz"
+email = "tomasz.kontusz@gmail.com"
+
+[[project.maintainers]]
+name = "Tomasz Kontusz"
+email = "tomasz.kontusz@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/ktosiek/pytest-vcr"
+
+[tool.setuptools]
+py-modules = [ "pytest_vcr",]
+include-package-data = false
+
+[project.entry-points.pytest11]
+vcr = "pytest_vcr"

@@ -1,0 +1,80 @@
+{
+  "package": "flask-talisman",
+  "version": "1.1.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/38/5c/157d51e32eaffdb34ee316261239937d66400a57cd8146176fd8ce50c43a/flask-talisman-1.1.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Alethea Katherine Flowers"
+      ],
+      [
+        "author-email",
+        "me@thea.codes"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/wntrblm/flask-talisman"
+      ],
+      [
+        "keywords",
+        "flask security https xss"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Alethea Katherine Flowers <me@thea.codes>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "flask,security,https,xss"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/wntrblm/flask-talisman"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

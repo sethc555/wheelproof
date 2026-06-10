@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keyboard"
+version = "0.13.5"
+description = "Hook and simulate keyboard events on Windows and Linux"
+keywords = [ "keyboard", "hook", "simulate", "hotkey",]
+classifiers = [ "Development Status :: 4 - Beta", "License :: OSI Approved :: MIT License", "Operating System :: Microsoft :: Windows", "Operating System :: Unix", "Operating System :: MacOS :: MacOS X", "Programming Language :: Python :: 2", "Programming Language :: Python :: 3", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Utilities",]
+dependencies = [ "pyobjc; sys_platform=='darwin'",]
+
+[[project.authors]]
+name = "BoppreH"
+email = "boppreh@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "keyboard\n========\n\nTake full control of your keyboard with this small Python library. Hook global events, register hotkeys, simulate key presses and much more.\n\n\n- **Global event hook** on all keyboards (captures keys regardless of focus).\n- **Listen** and **send** keyboard events.\n- Works with **Windows** and **Linux** (requires sudo), with experimental **OS X** support (thanks @glitchassassin!).\n- **Pure Python**, no C modules to be compiled.\n- **Zero dependencies**. Trivial to install and deploy, just copy the files.\n- **Python 2 and 3**.\n- Complex hotkey support (e.g. `ctrl+shift+m, ctrl+space`) with controllable timeout.\n- Includes **high level API** (e.g. [record](#keyboard.record) and [play](#keyboard.play), [add_abbreviation](#keyboard.add_abbreviation)).\n- Maps keys as they actually are in your layout, with **full internationalization support** (e.g. `Ctrl+ç`).\n- Events automatically captured in separate thread, doesn't block main program.\n- Tested and documented.\n- Doesn't break accented dead keys (I'm looking at you, pyHook).\n- Mouse support available via project [mouse](https://github.com/boppreh/mouse) (`pip install mouse`).\n\n\nInstall the [PyPI package](https://pypi.python.org/pypi/keyboard/):\n\npip install keyboard\n\nor clone the repository (no installation required, source files are sufficient):\n\ngit clone https://github.com/boppreh/keyboard\n\nor [download and extract the zip](https://github.com/boppreh/keyboard/archive/master.zip) into your project folder.\n\nThen check the [API docs below](https://github.com/boppreh/keyboard#api) to see what features are available.\n\n\n\n\n```py\nimport keyboard\n\nkeyboard.press_and_release('shift+s, space')\n\nkeyboard.write('The quick brown fox jumps over the lazy dog.')\n\nkeyboard.add_hotkey('ctrl+shift+a', print, args=('triggered', 'hotkey'))\n\nkeyboard.add_hotkey('page up, page down', lambda: keyboard.write('foobar'))\n\nkeyboard.wait('esc')\n\nrecorded = keyboard.record(until='esc')\nkeyboard.play(recorded, speed_factor=3)\n\nkeyboard.add_abbreviation('@@', 'my.long.email@example.com')\n\nkeyboard.wait()\n```\n\n\n- Events generated under Windows don't report device id (`event.device == None`). [#21](https://github.com/boppreh/keyboard/issues/21)\n- Media keys on Linux may appear nameless (scan-code only) or not at all. [#20](https://github.com/boppreh/keyboard/issues/20)\n- Key suppression/blocking only available on Windows. [#22](https://github.com/boppreh/keyboard/issues/22)\n- To avoid depending on X, the Linux parts reads raw device files (`/dev/input/input*`)\nbut this requires root.\n- Other applications, such as some games, may register hooks that swallow all\nkey events. In this case `keyboard` will be unable to report events.\n- This program makes no attempt to hide itself, so don't use it for keyloggers or online gaming bots. Be responsible."
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/boppreh/keyboard"
+
+[tool.setuptools]
+packages = [ "keyboard",]
+include-package-data = false

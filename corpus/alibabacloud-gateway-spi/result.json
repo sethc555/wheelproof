@@ -1,0 +1,82 @@
+{
+  "package": "alibabacloud-gateway-spi",
+  "version": "0.0.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/ab/98/d7111245f17935bf72ee9bea60bbbeff2bc42cdfe24d2544db52bc517e1a/alibabacloud_gateway_spi-0.0.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Alibaba Cloud SDK"
+      ],
+      [
+        "author-email",
+        "sdk-team@alibabacloud.com"
+      ],
+      [
+        "description-content-type",
+        "text/markdown"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/aliyun/alibabacloud-gateway"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Alibaba Cloud SDK <sdk-team@alibabacloud.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/aliyun/alibabacloud-gateway"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

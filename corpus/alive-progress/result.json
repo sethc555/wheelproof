@@ -1,0 +1,14 @@
+{
+  "package": "alive-progress",
+  "version": "3.3.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/9a/26/d43128764a6f8fe1668c4f87aba6b1fe52bea81d05a35c84a70d3c70b6f7/alive-progress-3.3.0.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "alive_progress-3.3.0.data/data/LICENSE"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

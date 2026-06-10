@@ -1,0 +1,50 @@
+{
+  "package": "openpyxl-stubs",
+  "version": "0.1.25",
+  "sdist_url": "https://files.pythonhosted.org/packages/82/c4/8dfd61c01a2fb0ac8bd37cadf0f19b87a8133eb6f690fc057a9536b4def0/openpyxl-stubs-0.1.25.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Martin Thoma"
+      ],
+      [
+        "author-email",
+        "info@martin-thoma.de"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "home-page",
+        "https://github.com/MartinThoma/openpyxl-stubs"
+      ],
+      [
+        "maintainer",
+        "Martin Thoma"
+      ],
+      [
+        "maintainer-email",
+        "info@martin-thoma.de"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Martin Thoma <info@martin-thoma.de>"
+      ],
+      [
+        "maintainer-email",
+        "Martin Thoma <info@martin-thoma.de>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/MartinThoma/openpyxl-stubs"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

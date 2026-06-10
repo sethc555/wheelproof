@@ -1,0 +1,36 @@
+{
+  "package": "tokenize-rt",
+  "version": "6.2.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/69/ed/8f07e893132d5051d86a553e749d5c89b2a4776eb3a579b72ed61f8559ca/tokenize_rt-6.2.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Anthony Sottile"
+      ],
+      [
+        "author-email",
+        "asottile@umich.edu"
+      ],
+      [
+        "home-page",
+        "https://github.com/asottile/tokenize-rt"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Anthony Sottile <asottile@umich.edu>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/asottile/tokenize-rt"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

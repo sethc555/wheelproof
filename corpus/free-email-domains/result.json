@@ -1,0 +1,46 @@
+{
+  "package": "free-email-domains",
+  "version": "1.0.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/43/26/75b64b963e99eff350356c978738e4903000cfbae10fd680c5699cbe5cd5/free_email_domains-1.0.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/LukeRenton/free-email-domain-list"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "project-url",
+        "Homepage, https://github.com/LukeRenton/free-email-domain-list"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

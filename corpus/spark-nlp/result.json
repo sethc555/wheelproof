@@ -1,0 +1,60 @@
+{
+  "package": "spark-nlp",
+  "version": "6.4.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/e3/89/e6683e2caa24397b0a6de90e477e11116aaf5896c6b35063dfc78f253db7/spark_nlp-6.4.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/JohnSnowLabs/spark-nlp"
+      ],
+      [
+        "keywords",
+        "NLP spark vision speech deep learning transformer tensorflow BERT GPT-2 Wav2Vec2 ViT"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "keywords",
+        "NLP,spark,vision,speech,deep,learning,transformer,tensorflow,BERT,GPT-2,Wav2Vec2,ViT"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/JohnSnowLabs/spark-nlp"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

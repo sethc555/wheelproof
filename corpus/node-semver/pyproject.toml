@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "node-semver"
+version = "0.9.0"
+description = "port of node-semver"
+keywords = [ "version", "semver", "node-semver",]
+classifiers = [ "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: Implementation :: CPython",]
+dependencies = []
+
+[[project.authors]]
+name = "podhmo"
+email = "ababjam61+github@gmail.com"
+
+[project.license]
+text = "mit"
+
+[project.urls]
+Homepage = "https://github.com/podhmo/python-node-semver"
+
+[project.optional-dependencies]
+testing = [ "pytest",]
+docs = []
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = [ "nodesemver.tests",]
+namespaces = false

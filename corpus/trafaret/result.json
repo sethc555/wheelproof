@@ -1,0 +1,86 @@
+{
+  "package": "trafaret",
+  "version": "2.1.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/c9/ed/aac034e566f8846aee6472dcc90da6011a0b1829e3ffc768407df519a3b0/trafaret-2.1.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Barbuza, Deepwalker, nimnull"
+      ],
+      [
+        "author-email",
+        "krivushinme@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/Deepwalker/trafaret/"
+      ],
+      [
+        "keywords",
+        "validation form forms data schema"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author",
+        "Deepwalker, nimnull"
+      ],
+      [
+        "author-email",
+        "Barbuza <krivushinme@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "validation,form,forms,data,schema"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Deepwalker/trafaret/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "package": "jinja2-ansible-filters",
+  "version": "1.3.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/1a/27/fa186af4b246eb869ffca8ffa42d92b05abaec08c99329e74d88b2c46ec7/jinja2-ansible-filters-1.3.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Nick Shobe"
+      ],
+      [
+        "author-email",
+        "nickshobe@gmail.com"
+      ],
+      [
+        "home-page",
+        "https://gitlab.com/dreamer-labs/libraries/jinja2-ansible-filters"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Nick Shobe <nickshobe@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://gitlab.com/dreamer-labs/libraries/jinja2-ansible-filters"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

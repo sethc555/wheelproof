@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mkdocs-minify-plugin"
+version = "0.8.0"
+description = "An MkDocs plugin to minify HTML, JS or CSS files prior to being written to disk"
+keywords = [ "mkdocs", "minify", "publishing", "documentation", "html", "css",]
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Intended Audience :: Information Technology", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11",]
+requires-python = ">=3.8"
+dependencies = [ "mkdocs>=1.4.1", "htmlmin2>=0.1.13", "jsmin>=3.0.1", "csscompressor>=0.9.5",]
+
+[[project.authors]]
+name = "Byrne Reese"
+email = "byrne@majordojo.com"
+
+[[project.authors]]
+name = "Lars Wilhelmer"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/byrnereese/mkdocs-minify-plugin"
+
+[tool.setuptools]
+include-package-data = false
+
+[project.entry-points."mkdocs.plugins"]
+minify = "mkdocs_minify_plugin.plugin:MinifyPlugin"
+
+[tool.setuptools.packages.find]
+namespaces = false

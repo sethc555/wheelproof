@@ -1,0 +1,82 @@
+{
+  "package": "alibabacloud-credentials",
+  "version": "1.0.9",
+  "sdist_url": "https://files.pythonhosted.org/packages/ad/0d/1f340b3cd601174ea1fe92eca788a58283974b75d59dc1c7fabbcc1b935e/alibabacloud_credentials-1.0.9.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Alibaba Cloud"
+      ],
+      [
+        "author-email",
+        "alibaba-cloud-sdk-dev-team@list.alibaba-inc.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/aliyun/credentials-python"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Alibaba Cloud <alibaba-cloud-sdk-dev-team@list.alibaba-inc.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/aliyun/credentials-python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

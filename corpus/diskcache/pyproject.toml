@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "diskcache"
+version = "5.6.3"
+description = "Disk Cache -- Disk and file backed persistent cache."
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Natural Language :: English", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: Implementation :: CPython",]
+requires-python = ">=3"
+dependencies = []
+
+[[project.authors]]
+name = "Grant Jenks"
+email = "contact@grantjenks.com"
+
+[project.license]
+text = "Apache 2.0"
+
+[project.urls]
+Homepage = "http://www.grantjenks.com/docs/diskcache/"
+Documentation = "http://www.grantjenks.com/docs/diskcache/"
+Funding = "https://gum.co/diskcache"
+Source = "https://github.com/grantjenks/python-diskcache"
+Tracker = "https://github.com/grantjenks/python-diskcache/issues"
+
+[project.optional-dependencies]
+testing = [ "tox",]
+
+[tool.setuptools]
+packages = [ "diskcache",]
+include-package-data = false

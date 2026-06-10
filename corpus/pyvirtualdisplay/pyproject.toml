@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyVirtualDisplay"
+version = "3.0"
+description = "python wrapper for Xvfb, Xephyr and Xvnc"
+keywords = [ "Xvfb", "Xephyr", "X", "wrapper",]
+classifiers = [ "License :: OSI Approved :: BSD License", "Natural Language :: English", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10",]
+
+[[project.authors]]
+name = "ponty"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+text = "pyvirtualdisplay is a python wrapper for Xvfb, Xephyr and Xvnc\n\nDocumentation: https://github.com/ponty/pyvirtualdisplay/tree/3.0"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/ponty/pyvirtualdisplay"
+
+[tool.setuptools]
+packages = [ "pyvirtualdisplay", "pyvirtualdisplay.examples",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+pyvirtualdisplay = [ "py.typed",]

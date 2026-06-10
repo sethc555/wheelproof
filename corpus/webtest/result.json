@@ -1,0 +1,12 @@
+{
+  "package": "webtest",
+  "version": "3.0.7",
+  "sdist_url": "https://files.pythonhosted.org/packages/20/85/73877efb10ba4ef02364d5671724b1326d482dc928eace5fe114215443b7/webtest-3.0.7.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": true
+  }
+}

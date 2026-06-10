@@ -1,0 +1,40 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hyperopt"
+version = "0.2.7"
+description = "Distributed Asynchronous Hyperparameter Optimization"
+keywords = [ "Bayesian", "optimization", "hyperparameter", "model", "selection",]
+classifiers = [ "Development Status :: 3 - Alpha", "Intended Audience :: Education", "Intended Audience :: Science/Research", "Intended Audience :: Developers", "Environment :: Console", "License :: OSI Approved :: BSD License", "Operating System :: MacOS :: MacOS X", "Operating System :: Microsoft :: Windows", "Operating System :: POSIX", "Operating System :: Unix", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 3", "Topic :: Scientific/Engineering", "Topic :: Software Development",]
+dependencies = [ "numpy", "scipy", "six", "networkx>=2.2", "future", "tqdm", "cloudpickle", "py4j",]
+
+[[project.authors]]
+name = "James Bergstra"
+email = "james.bergstra@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "https://hyperopt.github.io/hyperopt"
+
+[project.optional-dependencies]
+sparktrials = [ "pyspark",]
+mongotrials = [ "pymongo",]
+atpe = [ "lightgbm", "scikit-learn",]
+dev = [ "black", "pre-commit", "nose", "pytest",]
+testing = [ "nose", "pytest",]
+
+[project.scripts]
+hyperopt-mongo-worker = "hyperopt.mongoexp:main"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+platforms = [ "Linux", "OS-X", "Windows",]
+
+[tool.setuptools.packages.find]
+include = [ "hyperopt*",]
+namespaces = false

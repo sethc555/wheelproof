@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyunormalize"
+version = "17.0.0"
+description = "A library for Unicode normalization (NFC, NFD, NFKC, NFKD) independent of Python's core Unicode database."
+keywords = [ "nfc", "nfd", "nfkc", "nfkd", "normalization forms", "normalize", "hangul", "text", "text processing", "unicode", "unicode normalization", "i18n", "python", "pure-python",]
+classifiers = [ "Intended Audience :: Developers", "Operating System :: OS Independent", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Topic :: Software Development :: Internationalization", "Topic :: Software Development :: Localization", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Text Processing", "Topic :: Utilities",]
+requires-python = ">=3.8"
+
+[[project.authors]]
+name = "Marc Lodewijck"
+email = "mlodewijck@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/mlodewijck/pyunormalize"
+"Bug Reports" = "https://github.com/mlodewijck/pyunormalize/issues"
+Source = "https://github.com/mlodewijck/pyunormalize/"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

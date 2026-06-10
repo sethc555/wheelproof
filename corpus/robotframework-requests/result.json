@@ -1,0 +1,110 @@
+{
+  "package": "robotframework-requests",
+  "version": "0.9.7",
+  "sdist_url": "https://files.pythonhosted.org/packages/61/e2/b17b940985e7b35f53767d908897870fcf4e143a2a7c2da76d152e4abc4c/robotframework-requests-0.9.7.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Bulkan Savun Evcimen"
+      ],
+      [
+        "author-email",
+        "bulkan@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/MarketSquare/robotframework-requests"
+      ],
+      [
+        "keywords",
+        "robotframework testing test automation http client requests rest api"
+      ],
+      [
+        "maintainer",
+        "Luca Giovenzana"
+      ],
+      [
+        "maintainer-email",
+        "luca@giovenzana.org"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Bulkan Savun Evcimen <bulkan@gmail.com>"
+      ],
+      [
+        "keywords",
+        "robotframework,testing,test,automation,http,client,requests,rest,api"
+      ],
+      [
+        "maintainer-email",
+        "Luca Giovenzana <luca@giovenzana.org>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/MarketSquare/robotframework-requests"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

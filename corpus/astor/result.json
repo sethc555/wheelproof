@@ -1,0 +1,7 @@
+{
+  "package": "astor",
+  "version": "0.8.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/5a/21/75b771132fee241dfe601d39ade629548a9626d1d39f333fde31bc46febe/astor-0.8.1.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-62q14nvo/astor-0.8.1-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {'tests-requires', 'test-suite'} properties\nDESCRIPTION:\n    ``setuptools``-specific configurations that can be set by users that require\n    customization. These configurations are completely optional and probably can\n    be skipped when creating simple packages. They are equivalent to some of the\n    `Keywords <https://setuptools.pypa.io/en/latest/refe"
+}

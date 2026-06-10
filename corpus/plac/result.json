@@ -1,0 +1,84 @@
+{
+  "package": "plac",
+  "version": "1.4.5",
+  "sdist_url": "https://files.pythonhosted.org/packages/23/09/26ef2d614cabdcc52a7f383d0dc7967bf46be3c9700898c594e37b710c3d/plac-1.4.5.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Michele Simionato"
+      ],
+      [
+        "author-email",
+        "michele.simionato@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/ialbert/plac"
+      ],
+      [
+        "keywords",
+        "command line arguments parser"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Michele Simionato <michele.simionato@gmail.com>"
+      ],
+      [
+        "keywords",
+        "command,line,arguments,parser"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/ialbert/plac"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

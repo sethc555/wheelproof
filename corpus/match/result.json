@@ -1,0 +1,90 @@
+{
+  "package": "match",
+  "version": "0.3.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/15/ba/fd1ef510717bd032a48a6818f64cd96adef1155ac8c1db159bb572acce79/match-0.3.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Diane Napolitano"
+      ],
+      [
+        "author-email",
+        "dmnapolitano@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/EducationalTestingService/match"
+      ],
+      [
+        "maintainer",
+        "Tamar Lavee"
+      ],
+      [
+        "maintainer-email",
+        "tlavee@ets.org"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Diane Napolitano <dmnapolitano@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "maintainer-email",
+        "Tamar Lavee <tlavee@ets.org>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/EducationalTestingService/match"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

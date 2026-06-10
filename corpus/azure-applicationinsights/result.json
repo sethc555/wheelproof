@@ -1,0 +1,7 @@
+{
+  "package": "azure-applicationinsights",
+  "version": "0.1.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/42/e6/59ceb8df1475c51d5eec1674a7f0dec868125119c9f7998343ad13b84d51/azure-applicationinsights-0.1.1.zip",
+  "status": "convert-error",
+  "detail": "unexpected: ages/wheelproof/convert.py\", line 68, in _merge_cfg\n    over.read_string(overlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1096, in _read\n    raise e\nconfigparser.ParsingError: Source contains parsing errors: '<string>'\n\t[line 53]: \":python_version<'3.0' = azure-nspkg\\n\"\n"
+}

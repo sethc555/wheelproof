@@ -1,0 +1,7 @@
+{
+  "package": "google-api-python-client-stubs",
+  "version": "1.37.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/86/ed/70af4fec5cb754a1eed06630376974de18c5f43579471b66548d88ad026c/google_api_python_client_stubs-1.37.0.tar.gz",
+  "status": "convert-error",
+  "detail": "/tmp/wheelproof-bc-lp5gktj9/google_api_python_client_stubs-1.37.0 has neither setup.cfg nor setup.py"
+}

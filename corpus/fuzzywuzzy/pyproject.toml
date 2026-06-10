@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fuzzywuzzy"
+version = "0.18.0"
+description = "Fuzzy string matching in python"
+readme = "README"
+classifiers = [ "Intended Audience :: Developers", "License :: OSI Approved :: GNU General Public License v2 (GPLv2)", "Programming Language :: Python", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6",]
+
+[[project.authors]]
+name = "Adam Cohen"
+email = "adam@seatgeek.com"
+
+[project.license]
+text = "GPLv2"
+
+[project.urls]
+Homepage = "https://github.com/seatgeek/fuzzywuzzy"
+
+[project.optional-dependencies]
+speedup = [ "python-levenshtein>=0.12",]
+
+[tool.setuptools]
+packages = [ "fuzzywuzzy",]
+zip-safe = true
+include-package-data = false

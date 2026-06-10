@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asynctest"
+version = "0.13.0"
+classifiers = [ "Development Status :: 3 - Alpha", "Intended Audience :: Developers", "Topic :: Software Development :: Testing", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy",]
+description = "Enhance the standard unittest package with features for testing asyncio libraries"
+readme = "README.rst"
+keywords = [ "unittest", "test", "testing", "asyncio", "tulip", "selectors", "async", "mock",]
+requires-python = ">=3.5"
+
+[[project.authors]]
+name = "Martin Richard"
+email = "martius@martiusweb.net"
+
+[project.license]
+text = "Apache 2"
+
+[project.urls]
+Homepage = "https://github.com/Martiusweb/asynctest/"
+
+[tool.setuptools]
+packages = [ "asynctest",]
+zip-safe = true
+license-files = [ "LICENSE.md",]
+include-package-data = false

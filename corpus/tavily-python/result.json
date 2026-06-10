@@ -1,0 +1,70 @@
+{
+  "package": "tavily-python",
+  "version": "0.7.25",
+  "sdist_url": "https://files.pythonhosted.org/packages/c3/17/c9eb61fdb8787008321724256a7b4d8537c2bd7e5dea3a9d906f344b873a/tavily_python-0.7.25.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Tavily AI"
+      ],
+      [
+        "author-email",
+        "support@tavily.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/tavily-ai/tavily-python"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Tavily AI <support@tavily.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/tavily-ai/tavily-python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

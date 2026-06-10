@@ -1,0 +1,82 @@
+{
+  "package": "avro-gen3",
+  "version": "0.7.16",
+  "sdist_url": "https://files.pythonhosted.org/packages/ba/d2/58133bc977971a846ea2cb89fd4ae27fc71e05efd45c64a5c2996c597491/avro_gen3-0.7.16.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Harshal Sheth"
+      ],
+      [
+        "author-email",
+        "hsheth2@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/acryldata/avro_gen"
+      ],
+      [
+        "keywords",
+        "avro class generator"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Harshal Sheth <hsheth2@gmail.com>"
+      ],
+      [
+        "keywords",
+        "avro,class,generator"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/acryldata/avro_gen"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

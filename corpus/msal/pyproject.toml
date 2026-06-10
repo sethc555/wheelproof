@@ -1,0 +1,42 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "msal"
+description = "The Microsoft Authentication Library (MSAL) for Python library enables your app to access the Microsoft Cloud by supporting authentication of users with Microsoft Azure Active Directory accounts (AAD) and Microsoft Accounts (MSA) using industry standard OAuth2 and OpenID Connect."
+classifiers = [ "Development Status :: 5 - Production/Stable", "Programming Language :: Python", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+requires-python = ">=3.9"
+dependencies = [ "requests>=2.0.0,<3", "PyJWT[crypto]>=1.0.0,<3", "cryptography>=2.5,<51",]
+dynamic = [ "version",]
+
+[[project.authors]]
+name = "Microsoft Corporation"
+email = "nugetaad@microsoft.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/AzureAD/microsoft-authentication-library-for-python"
+Changelog = "https://github.com/AzureAD/microsoft-authentication-library-for-python/releases"
+Documentation = "https://msal-python.readthedocs.io/"
+Questions = "https://stackoverflow.com/questions/tagged/azure-ad-msal+python"
+"Feature/Bug Tracker" = "https://github.com/AzureAD/microsoft-authentication-library-for-python/issues"
+
+[project.optional-dependencies]
+broker = [ "pymsalruntime>=0.20,<0.21; python_version>='3.9' and platform_system=='Windows'", "pymsalruntime>=0.20,<0.21; python_version>='3.9' and platform_system=='Darwin'", "pymsalruntime>=0.20,<0.21; python_version>='3.9' and platform_system=='Linux'",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false
+
+[tool.setuptools.dynamic.version]
+attr = "msal.__version__"

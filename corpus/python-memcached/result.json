@@ -1,0 +1,96 @@
+{
+  "package": "python-memcached",
+  "version": "1.62",
+  "sdist_url": "https://files.pythonhosted.org/packages/e8/3c/204e5c6087efc85b52a68edce8678d44eb28718f5f145e036c277beb467c/python-memcached-1.62.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Evan Martin"
+      ],
+      [
+        "author-email",
+        "martine@danga.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/linsomniac/python-memcached/releases/download/1.62/python-memcached-1.62.tar.gz"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/linsomniac/python-memcached"
+      ],
+      [
+        "maintainer",
+        "Sean Reifschneider"
+      ],
+      [
+        "maintainer-email",
+        "jafo00@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Evan Martin <martine@danga.com>"
+      ],
+      [
+        "maintainer-email",
+        "Sean Reifschneider <jafo00@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/linsomniac/python-memcached/releases/download/1.62/python-memcached-1.62.tar.gz"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/linsomniac/python-memcached"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

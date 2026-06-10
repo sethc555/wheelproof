@@ -1,0 +1,66 @@
+{
+  "package": "cint",
+  "version": "1.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/3e/c8/3ae22fa142be0bf9eee856e90c314f4144dfae376cc5e3e55b9a169670fb/cint-1.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "disconnect3d"
+      ],
+      [
+        "author-email",
+        "dominik.b.czarnota+cint@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/disconnect3d/cint"
+      ],
+      [
+        "requires-python",
+        ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "disconnect3d <dominik.b.czarnota+cint@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/disconnect3d/cint"
+      ],
+      [
+        "requires-python",
+        "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

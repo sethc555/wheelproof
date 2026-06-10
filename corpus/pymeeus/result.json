@@ -1,0 +1,90 @@
+{
+  "package": "pymeeus",
+  "version": "0.5.12",
+  "sdist_url": "https://files.pythonhosted.org/packages/81/76/599896b37e60f43078afd8354b3802eb7ca257a7e7f6253cc21c4c672877/PyMeeus-0.5.12.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Dagoberto Salazar"
+      ],
+      [
+        "author-email",
+        "dagoberto.salazar@gmail.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/architest/pymeeus"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/architest/pymeeus"
+      ],
+      [
+        "keywords",
+        "Meeus astronomy module library"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Dagoberto Salazar <dagoberto.salazar@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "Meeus,astronomy,module,library"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/architest/pymeeus"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/architest/pymeeus"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

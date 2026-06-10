@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "starlette_exporter"
+version = "0.23.0"
+description = "Prometheus metrics exporter for Starlette applications."
+requires-python = ">=3.8"
+dependencies = [ "prometheus_client>=0.12", "starlette>=0.35",]
+
+[[project.authors]]
+name = "Stephen Hillier"
+email = "stephenhillier@gmail.com"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/stephenhillier/starlette_exporter"
+
+[tool.setuptools]
+packages = [ "starlette_exporter",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+starlette_exporter = [ "py.typed",]

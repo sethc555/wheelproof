@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gsutil"
+version = "5.37"
+description = "A command line tool for interacting with cloud storage services."
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Intended Audience :: Developers", "Intended Audience :: System Administrators", "License :: OSI Approved :: Apache Software License", "Natural Language :: English", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "Topic :: System :: Filesystems", "Topic :: Utilities",]
+requires-python = ">=3.9, <3.15"
+dependencies = [ "argcomplete>=3.6.2", "crcmod>=1.7", "fasteners>=0.14.1", "gcs-oauth2-boto-plugin>=3.3", "google-apitools>=0.5.32", "httplib2==0.20.4", "google-reauth>=0.1.0", "mock>=2.0.0, <=3.0.5; python_version < \"3.3\"", "monotonic>=1.4", "pyOpenSSL>=0.13, <=26.0.0", "retry_decorator>=1.0.0", "six>=1.17.0", "google-auth[aiohttp]==2.39.0", "google-auth-httplib2>=0.3.0",]
+
+[[project.authors]]
+name = "Google Inc."
+email = "buganizer-system+187143@google.com"
+
+[project.license]
+text = "Apache 2.0"
+
+[project.readme]
+text = "gsutil is a Python application that lets you access Google Cloud Storage from\nthe command line. You can use gsutil to do a wide range of bucket and object\nmanagement tasks, including:\n* Creating and deleting buckets.\n* Uploading, downloading, and deleting objects.\n* Listing buckets and objects.\n* Moving, copying, and renaming objects.\n* Editing object and bucket ACLs."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://cloud.google.com/storage/docs/gsutil"
+Download = "https://cloud.google.com/storage/docs/gsutil_install"
+
+[project.scripts]
+gsutil = "gslib.__main__:main"
+
+[tool.setuptools]
+zip-safe = true
+include-package-data = true
+platforms = [ "any",]
+
+[tool.setuptools.packages.find]
+exclude = [ "third_party",]
+namespaces = false

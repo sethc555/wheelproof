@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdfrw"
+version = "0.4"
+description = "PDF file reader/writer library"
+keywords = [ "pdf", "vector", "graphics", "PDF", "nup", "watermark", "split", "join", "merge",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Topic :: Multimedia :: Graphics :: Graphics Conversion", "Topic :: Software Development :: Libraries", "Topic :: Text Processing", "Topic :: Printing", "Topic :: Utilities",]
+
+[[project.authors]]
+name = "Patrick Maupin"
+email = "pmaupin@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/pmaupin/pdfrw"
+
+[tool.setuptools]
+packages = [ "pdfrw", "pdfrw.objects",]
+zip-safe = true
+platforms = [ "Independent",]
+include-package-data = false

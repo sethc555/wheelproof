@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ip3country"
+version = "0.4.0"
+description = "A zero-dependency, local, fast, tiny ip-address to country lookup"
+keywords = [ "ip", "country", "lookup", "statsig",]
+classifiers = [ "Intended Audience :: Developers", "Topic :: Software Development :: Libraries", "Programming Language :: Python", "Programming Language :: Python :: 3",]
+requires-python = ">=2.0"
+dependencies = []
+
+[[project.authors]]
+name = "Statsig"
+email = "tore@statsig.com"
+
+[project.license]
+text = "ISC"
+
+[project.readme]
+text = "See https://github.com/statsig-io/ip3country-py"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/statsig-io/ip3country-py"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = false

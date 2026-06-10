@@ -1,0 +1,66 @@
+{
+  "package": "dateutils",
+  "version": "0.6.12",
+  "sdist_url": "https://files.pythonhosted.org/packages/70/2e/a2d1337ac0ebb32b3b4ad921d9621f8b2f6bb20de0da47ec5d3734f08ce2/dateutils-0.6.12.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Jeremy Cantrell"
+      ],
+      [
+        "author-email",
+        "jmcantrell@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/jmcantrell/python-dateutils"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Jeremy Cantrell <jmcantrell@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/jmcantrell/python-dateutils"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

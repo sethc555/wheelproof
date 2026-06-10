@@ -1,0 +1,7 @@
+{
+  "package": "azure-mgmt-datalake-store",
+  "version": "0.5.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/00/13/037f0128bdfcd47253f69a3b4ca6a7ff7b673b35832bc48f7c74df24a9be/azure-mgmt-datalake-store-0.5.0.zip",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-7n40i1bj/azure-mgmt-datalake-store-0.5.0-converted/setup.py (dynamic setup.py? flag as manual)\n/tmp/v/lib/python3.12/site-packages/setuptools/_vendor/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.\n  warn(\nTraceback (most recent call last"
+}

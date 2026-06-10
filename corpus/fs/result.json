@@ -1,0 +1,48 @@
+{
+  "package": "fs",
+  "version": "2.4.16",
+  "sdist_url": "https://files.pythonhosted.org/packages/5d/a9/af5bfd5a92592c16cdae5c04f68187a309be8a146b528eac3c6e30edbad2/fs-2.4.16.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Will McGugan"
+      ],
+      [
+        "author-email",
+        "will@willmcgugan.com"
+      ],
+      [
+        "home-page",
+        "https://github.com/PyFilesystem/pyfilesystem2"
+      ],
+      [
+        "maintainer",
+        "Martin Larralde"
+      ],
+      [
+        "maintainer-email",
+        "martin.larralde@embl.de"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Will McGugan <will@willmcgugan.com>"
+      ],
+      [
+        "maintainer-email",
+        "Martin Larralde <martin.larralde@embl.de>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/PyFilesystem/pyfilesystem2"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

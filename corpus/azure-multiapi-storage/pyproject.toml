@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-multiapi-storage"
+version = "1.6.0"
+description = "Microsoft Azure Storage Client Library for Python with multi API version support."
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "License :: OSI Approved :: MIT License",]
+requires-python = ">=3.9.0"
+dependencies = [ "azure-common", "python-dateutil", "requests", "azure-core<2.0.0,>=1.10.0", "msrest>=0.6.18", "cryptography>=2.1.4",]
+
+[[project.authors]]
+name = "Microsoft Corporation"
+email = "azpycli@microsoft.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/Azure/azure-multiapi-storage-python"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "azure",]
+namespaces = false

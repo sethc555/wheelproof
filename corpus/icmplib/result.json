@@ -1,0 +1,34 @@
+{
+  "package": "icmplib",
+  "version": "3.0.4",
+  "sdist_url": "https://files.pythonhosted.org/packages/6d/78/ca07444be85ec718d4a7617f43fdb5b4eaae40bc15a04a5c888b64f3e35f/icmplib-3.0.4.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Valentin BELYN"
+      ],
+      [
+        "author-email",
+        "valentin-hello@gmx.com"
+      ],
+      [
+        "home-page",
+        "https://github.com/ValentinBELYN/icmplib"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Valentin BELYN <valentin-hello@gmx.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/ValentinBELYN/icmplib"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

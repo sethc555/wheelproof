@@ -1,0 +1,16 @@
+{
+  "package": "braceexpand",
+  "version": "0.1.7",
+  "sdist_url": "https://files.pythonhosted.org/packages/54/93/badd4f5ccf25209f3fef2573073da9fe4a45a3da99fca2f800f942130c0f/braceexpand-0.1.7.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "braceexpand/__init__.py",
+      "braceexpand/__init__.pyi",
+      "braceexpand/py.typed"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

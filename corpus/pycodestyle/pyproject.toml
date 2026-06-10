@@ -1,0 +1,42 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycodestyle"
+description = "Python style guide checker"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Intended Audience :: Developers", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Software Development :: Libraries :: Python Modules",]
+keywords = [ "pycodestyle", "pep8", "PEP 8", "PEP-8", "PEP8",]
+requires-python = ">=3.9"
+dynamic = [ "version",]
+
+[[project.authors]]
+name = "Johann C. Rocholl"
+email = "johann@rocholl.net"
+
+[[project.maintainers]]
+name = "Ian Lee"
+email = "IanLee1521@gmail.com"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://pycodestyle.pycqa.org/"
+Changes = "https://pycodestyle.pycqa.org/en/latest/developer.html#changes"
+
+[project.scripts]
+pycodestyle = "pycodestyle:_main"
+
+[tool.setuptools]
+py-modules = [ "pycodestyle",]
+include-package-data = true
+zip-safe = false
+license-files = [ "LICENSE",]
+
+[tool.setuptools.dynamic.version]
+attr = "pycodestyle.__version__"

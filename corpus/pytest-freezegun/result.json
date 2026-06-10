@@ -1,0 +1,52 @@
+{
+  "package": "pytest-freezegun",
+  "version": "0.4.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/f0/e3/c39d7c3d3afef5652f19323f3483267d7e6b0d9911c3867e10d6e2d3c9ae/pytest-freezegun-0.4.2.zip",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Tomasz Kontusz"
+      ],
+      [
+        "author-email",
+        "tomasz.kontusz@gmail.com"
+      ],
+      [
+        "home-page",
+        "https://github.com/ktosiek/pytest-freezegun"
+      ],
+      [
+        "maintainer",
+        "Tomasz Kontusz"
+      ],
+      [
+        "maintainer-email",
+        "tomasz.kontusz@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Tomasz Kontusz <tomasz.kontusz@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "maintainer-email",
+        "Tomasz Kontusz <tomasz.kontusz@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/ktosiek/pytest-freezegun"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

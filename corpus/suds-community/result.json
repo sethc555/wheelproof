@@ -1,0 +1,114 @@
+{
+  "package": "suds-community",
+  "version": "1.2.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/9e/5d/da767935b4cb869417307fbd6dec93d2bf3723228214302b6e6b277f474b/suds_community-1.2.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Jeff Ortel"
+      ],
+      [
+        "author-email",
+        "jortel@redhat.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/suds-community/suds/archive/release-1.2.0.tar.gz"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "obsoletes"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/suds-community/suds"
+      ],
+      [
+        "maintainer",
+        "Jurko Gospodneti\u0107"
+      ],
+      [
+        "maintainer-email",
+        "jurko.gospodnetic@pke.hr"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Jeff Ortel <jortel@redhat.com>"
+      ],
+      [
+        "maintainer-email",
+        "Jurko Gospodneti\u0107 <jurko.gospodnetic@pke.hr>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/suds-community/suds/archive/release-1.2.0.tar.gz"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/suds-community/suds"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
+}

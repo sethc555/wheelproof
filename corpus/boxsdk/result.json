@@ -1,0 +1,106 @@
+{
+  "package": "boxsdk",
+  "version": "10.11.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/f0/b2/cc38ad962d41ac4f337a9e76c21f79e46dd7dbd0b6a1baaa106cd679f9a1/boxsdk-10.11.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Box"
+      ],
+      [
+        "author-email",
+        "oss@box.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/box/box-python-sdk.git"
+      ],
+      [
+        "license",
+        "Apache-2.0, http://www.apache.org/licenses/LICENSE-2.0"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Box <oss@box.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/box/box-python-sdk.git"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "pytest-cov; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-rerunfailures; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-timeout; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-xdist; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

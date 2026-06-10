@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torch_pitch_shift"
+version = "1.2.5"
+description = ""
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+requires-python = ">=3.4"
+dependencies = [ "torch>=1.7.0", "torchaudio>=0.7.0", "primePy>=1.3", "packaging>=21.3",]
+
+[[project.authors]]
+name = "KentoNishi"
+email = "kento24gs@outlook.com"
+
+[project.readme]
+file = "readme.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/KentoNishi/torch-pitch-shift"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = false

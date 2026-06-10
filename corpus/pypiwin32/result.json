@@ -1,0 +1,7 @@
+{
+  "package": "pypiwin32",
+  "version": "223",
+  "sdist_url": "https://files.pythonhosted.org/packages/13/e8/4f38eb30c4dae36634a53c5b2cd73b517ea3607e10d00f61f2494449cec0/pypiwin32-223.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-4vk2b7h4/pypiwin32-223-converted\n--- stdout ---\nconfiguration error: `project.dependencies[7]` must be pep508\nDESCRIPTION:\n    Project dependency specification according to PEP 508\n\nGIVEN VALUE:\n    \">\"\n\nOFFENDING RULE: 'format'\n\nDEFINITION:\n    {\n        \"$id\": \"#/definitions/dependency\",\n        \"title\": \"Dependency\",\n        \"type\": \"string\",\n        \"format\": \"pep508\"\n    }\n\nFor more details about `format` see\nhttps://validate-pyproject.readthedocs.i"
+}

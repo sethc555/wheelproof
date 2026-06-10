@@ -1,0 +1,66 @@
+{
+  "package": "codeguru-profiler-agent",
+  "version": "1.2.6",
+  "sdist_url": "https://files.pythonhosted.org/packages/b3/f5/ccd6b1f434dae4e37bdb767fe157fe7a2698d61e9bbd0aadbe151eb34740/codeguru_profiler_agent-1.2.6.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "download-url",
+        "https://github.com/aws/amazon-codeguru-profiler-python-agent"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/aws/amazon-codeguru-profiler-python-agent"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "project-url",
+        "Download, https://github.com/aws/amazon-codeguru-profiler-python-agent"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/aws/amazon-codeguru-profiler-python-agent"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

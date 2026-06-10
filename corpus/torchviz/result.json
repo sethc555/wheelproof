@@ -1,0 +1,66 @@
+{
+  "package": "torchviz",
+  "version": "0.0.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/5c/80/a84e0e8877630262c3f4c8d2e7fd0647c6751afeca301cfc04a1b65ac820/torchviz-0.0.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Sergey Zagoruyko"
+      ],
+      [
+        "author-email",
+        "sergey.zagoruyko@enpc.fr"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/pytorch/pytorchviz"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Sergey Zagoruyko <sergey.zagoruyko@enpc.fr>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/pytorch/pytorchviz"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

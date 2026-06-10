@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yaml-config"
+version = "0.1.5"
+description = "Python client for reading yaml based config files"
+keywords = [ "yaml", "config", "pyyaml",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Operating System :: OS Independent", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8",]
+dependencies = [ "PyYAML>=3.13", "typing>=3.6.1; python_version<'3.5'",]
+
+[[project.authors]]
+name = "Paul Munday"
+email = "paul@paulmunday.net"
+
+[[project.authors]]
+name = "Fable Turas"
+email = "fable@rainsoftware.tech"
+
+[[project.maintainers]]
+name = "GreenBuildingRegistry"
+email = "admin@greenbuildingregistry.com"
+
+[project.urls]
+Homepage = "https://github.com/GreenBuildingRegistry/yaml-config"
+
+[tool.setuptools]
+include-package-data = true
+zip-safe = false
+
+[tool.setuptools.packages.find]
+namespaces = false

@@ -1,0 +1,82 @@
+{
+  "package": "assemblyai",
+  "version": "0.64.9",
+  "sdist_url": "https://files.pythonhosted.org/packages/24/52/39427f1ce8aec0d55fca614a7a943a4261fb74153776a8c8eeb1e08f756a/assemblyai-0.64.9.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "AssemblyAI"
+      ],
+      [
+        "author-email",
+        "engineering.sdk@assemblyai.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/AssemblyAI/assemblyai-python-sdk"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "AssemblyAI <engineering.sdk@assemblyai.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/AssemblyAI/assemblyai-python-sdk"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

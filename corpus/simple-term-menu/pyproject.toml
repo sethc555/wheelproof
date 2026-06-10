@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "simple-term-menu"
+version = "1.6.6"
+description = "A Python package which creates simple interactive menus on the command line."
+keywords = [ "terminal", "menu", "choice",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "License :: OSI Approved :: MIT License", "Operating System :: MacOS", "Operating System :: POSIX :: Linux", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3 :: Only", "Topic :: Terminals", "Topic :: Utilities",]
+requires-python = "~=3.5"
+
+[[project.authors]]
+name = "Ingo Meyer"
+email = "i.meyer@fz-juelich.de"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/IngoMeyer441/simple-term-menu"
+
+[project.scripts]
+simple-term-menu = "simple_term_menu:main"
+
+[tool.setuptools]
+py-modules = [ "simple_term_menu",]
+include-package-data = false

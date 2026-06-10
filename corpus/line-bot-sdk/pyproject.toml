@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "line-bot-sdk"
+version = "3.23.0"
+description = "LINE Messaging API SDK for Python"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "License :: OSI Approved :: Apache Software License", "Intended Audience :: Developers", "Programming Language :: Python", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "Topic :: Software Development",]
+requires-python = ">=3.10.0"
+dependencies = [ "requests>=2.32.3,<3", "urllib3>=2.0.5,<3", "aiohttp >=3.10.9, <4", "future >= 1.0.0", "pydantic >=2.0.3, <3", "aenum >= 3.1.11, <4", "python_dateutil >= 2.5.3, <3", "Deprecated>=1.2.18",]
+
+[[project.authors]]
+name = "RyosukeHasebe"
+email = "hsb.1014@gmail.com"
+
+[[project.maintainers]]
+name = "RyosukeHasebe"
+email = "hsb.1014@gmail.com"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.urls]
+Homepage = "https://github.com/line/line-bot-sdk-python"
+
+[project.optional-dependencies]
+testing = [ "pytest==9.0.2", "pytest-pep8==1.0.6", "pytest-cov==7.1.0", "pytest-aiohttp==1.1.0", "pytest-asyncio==1.3.0", "responses==0.26.0", "pytest_httpserver >= 1.1.2",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = [ "linebot*",]
+namespaces = false

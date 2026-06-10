@@ -1,0 +1,74 @@
+{
+  "package": "ghp-import",
+  "version": "2.1.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/d9/29/d40217cbe2f6b1359e00c6c307bb3fc876ba74068cbab3dde77f03ca0dc4/ghp-import-2.1.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Paul Joseph Davis"
+      ],
+      [
+        "author-email",
+        "paul.joseph.davis@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/c-w/ghp-import"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Paul Joseph Davis <paul.joseph.davis@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/c-w/ghp-import"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "package": "catalogue",
+  "version": "2.0.10",
+  "sdist_url": "https://files.pythonhosted.org/packages/38/b4/244d58127e1cdf04cf2dc7d9566f0d24ef01d5ce21811bab088ecc62b5ea/catalogue-2.0.10.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Explosion"
+      ],
+      [
+        "author-email",
+        "contact@explosion.ai"
+      ],
+      [
+        "home-page",
+        "https://github.com/explosion/catalogue"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Explosion <contact@explosion.ai>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/explosion/catalogue"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

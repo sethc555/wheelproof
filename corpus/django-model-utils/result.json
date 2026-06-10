@@ -1,0 +1,86 @@
+{
+  "package": "django-model-utils",
+  "version": "5.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/81/60/5e232c32a2c977cc1af8c70a38ef436598bc649ad89c2c4568454edde2c9/django_model_utils-5.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Carl Meyer"
+      ],
+      [
+        "author-email",
+        "carl@oddbird.net"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/jazzband/django-model-utils"
+      ],
+      [
+        "version",
+        "5.0.0"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Carl Meyer <carl@oddbird.net>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/jazzband/django-model-utils"
+      ],
+      [
+        "version",
+        "0.0.0"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
+}

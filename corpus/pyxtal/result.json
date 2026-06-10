@@ -1,0 +1,7 @@
+{
+  "package": "pyxtal",
+  "version": "1.1.4",
+  "sdist_url": "https://files.pythonhosted.org/packages/d6/88/b4278eea62cd6810f0cf8f2150267034a65b2e234a4b6b498fddae1edbf1/pyxtal-1.1.4.tar.gz",
+  "status": "convert-error",
+  "detail": "unexpected: 3.12/site-packages/ini2toml/transformations.py\", line 336, in apply\n    return fn(x)\n           ^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/ini2toml/plugins/setuptools_pep621.py\", line 713, in normalise_keys\n    section.rename(option_name, self.normalise_key(option_name))\n  File \"/tmp/v/lib/python3.12/site-packages/ini2toml/intermediate_repr.py\", line 116, in rename\n    raise KeyError(f\"new_key={new_key!r} already exists\")\nKeyError: \"new_key='long-description-content-type' already exists\"\n"
+}

@@ -1,0 +1,70 @@
+{
+  "package": "undetected-chromedriver",
+  "version": "3.5.5",
+  "sdist_url": "https://files.pythonhosted.org/packages/1f/98/7ab46625ce2317756e4e857fe6ac24b6378c3e8f477da26c95226ed8ccb7/undetected-chromedriver-3.5.5.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "UltrafunkAmsterdam"
+      ],
+      [
+        "author-email",
+        "info@blackhat-security.nl"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/ultrafunkamsterdam/undetected-chromedriver"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "UltrafunkAmsterdam <info@blackhat-security.nl>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/ultrafunkamsterdam/undetected-chromedriver"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

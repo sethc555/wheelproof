@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pytest-runner",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cleanco"
+version = "2.3"
+description = "Python library to process company names"
+classifiers = [ "Topic :: Office/Business", "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3",]
+
+[[project.authors]]
+name = "Paul Solin"
+email = "paul@paulsolin.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/psolin/cleanco"
+
+[project.optional-dependencies]
+testing = [ "pytest", "tox",]
+
+[tool.setuptools]
+packages = [ "cleanco",]
+include-package-data = false

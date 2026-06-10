@@ -1,0 +1,24 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oldest-supported-numpy"
+description = "Meta-package that provides the oldest NumPy that supports a given Python version and platform. If wheels for the platform became available on PyPI only for a more recent NumPy version, then that NumPy version is specified."
+readme = "README.rst"
+version = "2023.12.21"
+requires-python = ">=3.7"
+dependencies = [ "numpy==1.16.0; python_version=='3.7' and platform_system=='AIX' and platform_machine!='loongarch64' and platform_python_implementation != 'PyPy'", "numpy==1.23.3; python_version=='3.9' and platform_system=='OS400' and platform_machine!='loongarch64' and platform_python_implementation!='PyPy'", "numpy==1.19.3; python_version=='3.7' and platform_machine=='aarch64' and platform_system!='AIX' and platform_python_implementation != 'PyPy'", "numpy==1.19.3; python_version=='3.8' and platform_machine=='aarch64' and platform_python_implementation != 'PyPy'", "numpy==1.21.0; python_version=='3.7' and platform_machine=='arm64' and platform_system=='Darwin' and platform_python_implementation!='PyPy'", "numpy==1.21.0; python_version=='3.8' and platform_machine=='arm64' and platform_system=='Darwin' and platform_python_implementation!='PyPy'", "numpy==1.21.0; python_version=='3.9' and platform_machine=='arm64' and platform_system=='Darwin' and platform_python_implementation!='PyPy'", "numpy==1.17.5; python_version=='3.8' and platform_machine=='s390x' and platform_python_implementation != 'PyPy'", "numpy==1.22.2; platform_machine=='loongarch64' and python_version>='3.8' and python_version<'3.11' and platform_python_implementation!='PyPy'", "numpy==1.14.5; python_version=='3.7' and platform_machine=='arm64' and platform_system=='Windows' and platform_python_implementation != 'PyPy'", "numpy==1.17.3; python_version=='3.8' and platform_machine=='arm64' and platform_system=='Windows' and platform_python_implementation != 'PyPy'", "numpy==1.19.3; python_version=='3.9' and platform_machine=='arm64' and platform_system=='Windows' and platform_python_implementation != 'PyPy'", "numpy==1.14.5; python_version=='3.7' and platform_machine not in 'arm64|aarch64|loongarch64' and platform_system!='AIX' and platform_python_implementation != 'PyPy'", "numpy==1.17.3; python_version=='3.8' and platform_machine not in 'arm64|aarch64|s390x|loongarch64' and platform_python_implementation != 'PyPy'", "numpy==1.19.3; python_version=='3.9' and platform_system not in 'OS400' and platform_machine not in 'arm64|loongarch64' and platform_python_implementation != 'PyPy'", "numpy==1.21.6; python_version=='3.10' and platform_machine!='loongarch64'", "numpy==1.23.2; python_version=='3.11'", "numpy==1.26.2; python_version=='3.12'", "numpy==1.19.0; python_version=='3.6' and platform_machine!='loongarch64' and platform_python_implementation=='PyPy'", "numpy==1.20.0; python_version=='3.7' and platform_machine!='loongarch64' and platform_python_implementation=='PyPy'", "numpy==1.22.2; python_version=='3.8' and platform_machine!='loongarch64' and platform_python_implementation=='PyPy'", "numpy==1.25.0; python_version=='3.9' and platform_python_implementation=='PyPy'", "numpy; python_version>='3.13'",]
+
+[[project.authors]]
+name = "Thomas Robitaille"
+email = "thomas.robitaille@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "https://github.com/scipy/oldest-supported-numpy"
+
+[tool.setuptools]
+include-package-data = false

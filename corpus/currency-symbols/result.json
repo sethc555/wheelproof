@@ -1,0 +1,62 @@
+{
+  "package": "currency-symbols",
+  "version": "2.0.4",
+  "sdist_url": "https://files.pythonhosted.org/packages/ba/ea/47b00ec684efb492c6cc1a7c044fb404c3efb961dba5aaa8e3c100bad56a/currency_symbols-2.0.4.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Arshad Kazmi"
+      ],
+      [
+        "author-email",
+        "arshadkazmi42@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/arshadkazmi42/currency-symbols"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Arshad Kazmi <arshadkazmi42@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/arshadkazmi42/currency-symbols"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

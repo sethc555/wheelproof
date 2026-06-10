@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bibtexparser"
+version = "1.4.4"
+description = "Bibtex parser for python 3"
+dependencies = [ "pyparsing>=2.0.3",]
+
+[[project.authors]]
+name = "Francois Boulogne and other contributors"
+email = "code@mweiss.ch"
+
+[project.license]
+text = "LGPLv3 or BSD"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/sciunto-org/python-bibtexparser"
+
+[tool.setuptools]
+packages = [ "bibtexparser",]
+include-package-data = false

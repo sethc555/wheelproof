@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "click-log"
+version = "0.4.0"
+description = "Logging integration for Click"
+readme = "README.rst"
+classifiers = [ "Development Status :: 4 - Beta", "Environment :: Console", "Environment :: Plugins", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Topic :: System :: Logging",]
+dependencies = [ "click",]
+
+[[project.authors]]
+name = "Markus Unterwaditzer"
+email = "markus@unterwaditzer.net"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/click-contrib/click-log"
+
+[tool.setuptools]
+packages = [ "click_log",]
+include-package-data = false

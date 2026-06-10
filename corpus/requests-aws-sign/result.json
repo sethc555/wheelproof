@@ -1,0 +1,78 @@
+{
+  "package": "requests-aws-sign",
+  "version": "0.1.6",
+  "sdist_url": "https://files.pythonhosted.org/packages/e8/14/27d8eed7ef7870525ed9888eaa273d6c564562367a1678a85496d6b4ccf2/requests_aws_sign-0.1.6.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Justin Menga"
+      ],
+      [
+        "author-email",
+        "justin.menga@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/jmenga/requests-aws-sign"
+      ],
+      [
+        "keywords",
+        "requests aws"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Justin Menga <justin.menga@gmail.com>"
+      ],
+      [
+        "keywords",
+        "requests,aws"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/jmenga/requests-aws-sign"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

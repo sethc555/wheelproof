@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alibabacloud_openapi_util"
+version = "0.2.4"
+description = "Aliyun Tea OpenApi Library for Python"
+keywords = [ "alibabacloud_openapi_util",]
+readme = "README.md"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Topic :: Software Development",]
+dependencies = [ "alibabacloud_tea_util>=0.3.13, <1.0.0", "cryptography>=3.0.0",]
+
+[[project.authors]]
+name = "Alibaba Cloud"
+email = "alibaba-cloud-sdk-dev-team@list.alibaba-inc.com"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.urls]
+Homepage = "https://github.com/aliyun/darabonba-openapi-util"
+
+[tool.setuptools]
+include-package-data = true
+platforms = [ "any",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests*",]
+namespaces = false

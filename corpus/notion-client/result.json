@@ -1,0 +1,80 @@
+{
+  "package": "notion-client",
+  "version": "3.1.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/c0/e3/4ac01384e86e2c381c21b87a0fefcdfe6d65577ae3153fad27e7e96c5d9c/notion_client-3.1.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Guillaume Gelin"
+      ],
+      [
+        "author-email",
+        "contact@ramnes.eu"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/ramnes/notion-sdk-py"
+      ],
+      [
+        "requires-python",
+        ">=3.8, <4"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Guillaume Gelin <contact@ramnes.eu>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/ramnes/notion-sdk-py"
+      ],
+      [
+        "requires-python",
+        "<4,>=3.8"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "package": "elasticsearch-dsl",
+  "version": "8.18.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/72/6d/00cbeee412a2dc825f0df18c98463a2e0b423b86800fba6c50ea2c627962/elasticsearch_dsl-8.18.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Elastic Client Library Maintainers"
+      ],
+      [
+        "author-email",
+        "client-libs@elastic.co"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/elasticsearch/elasticsearch-dsl-py"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Elastic Client Library Maintainers <client-libs@elastic.co>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/elasticsearch/elasticsearch-dsl-py"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "torch_ema"
+version = "0.3"
+description = "PyTorch library for computing moving averages of model parameters."
+keywords = [ "pytorch", "parameters", "deep-learning",]
+dependencies = [ "torch",]
+
+[[project.authors]]
+name = "Samuel G. Fadel"
+email = "samuelfadel@gmail.com"
+
+[project.urls]
+Homepage = "https://github.com/fadel/pytorch_ema"
+Download = "https://github.com/fadel/pytorch_ema/archive/0.3.tar.gz"
+
+[project.optional-dependencies]
+testing = []
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

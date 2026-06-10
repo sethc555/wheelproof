@@ -1,0 +1,48 @@
+{
+  "package": "factory-boy",
+  "version": "3.3.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/ba/98/75cacae9945f67cfe323829fc2ac451f64517a8a330b572a06a323997065/factory_boy-3.3.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Mark Sandstrom"
+      ],
+      [
+        "author-email",
+        "mark@deliciouslynerdy.com"
+      ],
+      [
+        "home-page",
+        "https://github.com/FactoryBoy/factory_boy"
+      ],
+      [
+        "maintainer",
+        "Rapha\u00ebl Barrois"
+      ],
+      [
+        "maintainer-email",
+        "raphael.barrois+fboy@polytechnique.org"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Mark Sandstrom <mark@deliciouslynerdy.com>"
+      ],
+      [
+        "maintainer-email",
+        "Rapha\u00ebl Barrois <raphael.barrois+fboy@polytechnique.org>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/FactoryBoy/factory_boy"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

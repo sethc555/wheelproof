@@ -1,0 +1,41 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Collectfasta"
+description = "A Faster Collectstatic"
+classifiers = [ "Environment :: Web Environment", "Intended Audience :: Developers", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "Framework :: Django", "Framework :: Django :: 4.2", "Framework :: Django :: 5.2", "Framework :: Django :: 6.0",]
+requires-python = ">=3.10"
+dependencies = [ "Django>=4.2", "django-storages>=1.13.2", "typing-extensions",]
+dynamic = [ "version",]
+
+[[project.authors]]
+name = "Anton Agestam"
+email = "jasongiancono+github@gmail.com"
+
+[[project.authors]]
+name = "Jason Giancono"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown; charset=UTF-8"
+
+[project.license]
+text = "MIT License"
+
+[project.urls]
+Homepage = "https://github.com/jasongi/collectfasta/"
+
+[tool.setuptools]
+include-package-data = true
+license-files = [ "LICENSE",]
+
+[tool.setuptools.package-data]
+collectfasta = [ "py.typed",]
+
+[tool.setuptools.packages.find]
+namespaces = false
+
+[tool.setuptools.dynamic.version]
+attr = "collectfasta.__version__"

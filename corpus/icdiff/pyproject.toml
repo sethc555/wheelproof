@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "icdiff"
+version = "2.0.10"
+description = "improved colored diff"
+classifiers = [ "License :: OSI Approved :: Python Software Foundation License",]
+
+[[project.authors]]
+name = "Jeff Kaufman"
+email = "jeff@jefftk.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://www.jefftk.com/icdiff"
+Source = "https://github.com/jeffkaufman/icdiff"
+
+[project.scripts]
+icdiff = "icdiff:start"
+
+[tool.setuptools]
+py-modules = [ "icdiff",]
+script-files = [ "git-icdiff",]
+include-package-data = false

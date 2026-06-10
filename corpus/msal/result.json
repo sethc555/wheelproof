@@ -1,0 +1,34 @@
+{
+  "package": "msal",
+  "version": "1.37.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/9a/99/d840198ecf6e8057bbc937f129ae940404485d736cda73253bbff9537f01/msal-1.37.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Microsoft Corporation"
+      ],
+      [
+        "author-email",
+        "nugetaad@microsoft.com"
+      ],
+      [
+        "home-page",
+        "https://github.com/AzureAD/microsoft-authentication-library-for-python"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Microsoft Corporation <nugetaad@microsoft.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/AzureAD/microsoft-authentication-library-for-python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

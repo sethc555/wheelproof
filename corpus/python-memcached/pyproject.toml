@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-memcached"
+version = "1.62"
+description = "Pure python memcached client"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Python Software Foundation License", "Operating System :: OS Independent", "Programming Language :: Python", "Topic :: Internet", "Topic :: Software Development :: Libraries :: Python Modules", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12",]
+dependencies = []
+
+[[project.authors]]
+name = "Evan Martin"
+email = "martine@danga.com"
+
+[[project.maintainers]]
+name = "Sean Reifschneider"
+email = "jafo00@gmail.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/linsomniac/python-memcached"
+Download = "https://github.com/linsomniac/python-memcached/releases/download/1.62/python-memcached-1.62.tar.gz"
+
+[tool.setuptools]
+py-modules = [ "memcache",]
+include-package-data = false

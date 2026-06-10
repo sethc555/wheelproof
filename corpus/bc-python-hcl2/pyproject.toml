@@ -1,0 +1,34 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bc-python-hcl2"
+version = "0.4.3"
+description = "A parser for HCL2"
+keywords = []
+classifiers = [ "Topic :: Software Development :: Libraries :: Python Modules", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3 :: Only", "Typing :: Typed",]
+requires-python = ">=3.8"
+dependencies = [ "lark>=1.0.0", "importlib-resources>=2.0.0,<7.0.0; python_version < '3.9'",]
+
+[[project.authors]]
+name = "bridgecrew"
+email = "meet@bridgecrew.io"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/bridgecrewio/python-hcl2"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+script-files = [ "bin/hcl2tojson",]
+
+[tool.setuptools.packages.find]
+namespaces = false

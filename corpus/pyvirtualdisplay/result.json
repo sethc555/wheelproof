@@ -1,0 +1,62 @@
+{
+  "package": "pyvirtualdisplay",
+  "version": "3.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/86/9f/23e5a82987c26d225139948a224a93318d7a7c8b166d4dbe4de7426dc4e4/PyVirtualDisplay-3.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/ponty/pyvirtualdisplay"
+      ],
+      [
+        "keywords",
+        "Xvfb Xephyr X wrapper"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "keywords",
+        "Xvfb,Xephyr,X,wrapper"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/ponty/pyvirtualdisplay"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

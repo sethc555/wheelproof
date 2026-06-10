@@ -1,0 +1,94 @@
+{
+  "package": "feedparser",
+  "version": "6.0.12",
+  "sdist_url": "https://files.pythonhosted.org/packages/dc/79/db7edb5e77d6dfbc54d7d9df72828be4318275b2e580549ff45a962f6461/feedparser-6.0.12.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Kurt McKee"
+      ],
+      [
+        "author-email",
+        "contactme@kurtmckee.org"
+      ],
+      [
+        "download-url",
+        "https://pypi.python.org/pypi/feedparser"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/kurtmckee/feedparser"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Kurt McKee <contactme@kurtmckee.org>"
+      ],
+      [
+        "project-url",
+        "Download, https://pypi.python.org/pypi/feedparser"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/kurtmckee/feedparser"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

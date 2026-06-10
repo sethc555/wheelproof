@@ -1,0 +1,118 @@
+{
+  "package": "sqlitedict",
+  "version": "2.1.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/12/9a/7620d1e9dcb02839ed6d4b14064e609cdd7a8ae1e47289aa0456796dd9ca/sqlitedict-2.1.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Radim Rehurek, Victor R. Escobar, Andrey Usov, Prasanna Swaminathan, Jeff Quast"
+      ],
+      [
+        "author-email",
+        "me@radimrehurek.com"
+      ],
+      [
+        "download-url",
+        "http://pypi.python.org/pypi/sqlitedict"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/piskvorky/sqlitedict"
+      ],
+      [
+        "keywords",
+        "sqlite,persistent dict,multithreaded"
+      ],
+      [
+        "maintainer",
+        "Radim Rehurek"
+      ],
+      [
+        "maintainer-email",
+        "me@radimrehurek.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author",
+        "Victor R. Escobar, Andrey Usov, Prasanna Swaminathan, Jeff Quast"
+      ],
+      [
+        "author-email",
+        "Radim Rehurek <me@radimrehurek.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "sqlite,persistent,dict,multithreaded"
+      ],
+      [
+        "maintainer-email",
+        "Radim Rehurek <me@radimrehurek.com>"
+      ],
+      [
+        "project-url",
+        "Download, http://pypi.python.org/pypi/sqlitedict"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/piskvorky/sqlitedict"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

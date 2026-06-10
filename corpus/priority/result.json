@@ -1,0 +1,74 @@
+{
+  "package": "priority",
+  "version": "2.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/f5/3c/eb7c35f4dcede96fca1842dac5f4f5d15511aa4b52f3a961219e68ae9204/priority-2.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Cory Benfield"
+      ],
+      [
+        "author-email",
+        "cory@lukasa.co.uk"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/python-hyper/priority/"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Cory Benfield <cory@lukasa.co.uk>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/python-hyper/priority/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

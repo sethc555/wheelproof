@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "browser-cookie3"
+version = "0.20.1"
+description = "Loads cookies from your browser into a cookiejar object so can download with urllib and other libraries the same content you see in the web browser."
+dependencies = [ "lz4", "pycryptodomex", "dbus-python; python_version < \"3.7\" and (\"bsd\" in sys_platform or sys_platform == \"linux\")", "jeepney; python_version >= \"3.7\" and (\"bsd\" in sys_platform or sys_platform == \"linux\")", "shadowcopy; python_version >= \"3.7\" and platform_system == \"Windows\"",]
+
+[[project.authors]]
+name = "Boris Babic"
+email = "boris.ivan.babic@gmail.com"
+
+[project.license]
+text = "lgpl"
+
+[project.urls]
+Homepage = "https://github.com/borisbabic/browser_cookie3"
+
+[project.scripts]
+browser-cookie = "browser_cookie3.__main__:main"
+
+[tool.setuptools]
+packages = [ "browser_cookie3",]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+browser_cookie3 = "browser_cookie3"

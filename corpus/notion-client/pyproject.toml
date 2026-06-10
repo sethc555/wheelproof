@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "notion-client"
+version = "3.1.0"
+description = "Python client for the official Notion API"
+classifiers = [ "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "Development Status :: 5 - Production/Stable", "License :: OSI Approved :: MIT License",]
+requires-python = ">=3.8, <4"
+dependencies = [ "httpx >= 0.23.0", "typing_extensions >= 4.0.0; python_version < '3.10'",]
+
+[[project.authors]]
+name = "Guillaume Gelin"
+email = "contact@ramnes.eu"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/ramnes/notion-sdk-py"
+
+[tool.setuptools]
+packages = [ "notion_client",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+notion_client = [ "py.typed",]

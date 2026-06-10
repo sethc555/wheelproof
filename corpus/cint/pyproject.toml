@@ -1,0 +1,23 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cint"
+version = "1.0.0"
+description = "cint - make ctypes great again"
+classifiers = [ "Development Status :: 5 - Production/Stable", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3",]
+requires-python = ">=2.7,!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*"
+
+[[project.authors]]
+name = "disconnect3d"
+email = "dominik.b.czarnota+cint@gmail.com"
+
+[project.urls]
+Homepage = "https://github.com/disconnect3d/cint"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

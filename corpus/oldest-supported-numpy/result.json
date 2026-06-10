@@ -1,0 +1,38 @@
+{
+  "package": "oldest-supported-numpy",
+  "version": "2023.12.21",
+  "sdist_url": "https://files.pythonhosted.org/packages/1a/a7/86bd933619916fb5982b106ed8ea16618c28894131ad5a61403e62067566/oldest-supported-numpy-2023.12.21.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Thomas Robitaille"
+      ],
+      [
+        "author-email",
+        "thomas.robitaille@gmail.com"
+      ],
+      [
+        "home-page",
+        "https://github.com/scipy/oldest-supported-numpy"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Thomas Robitaille <thomas.robitaille@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/scipy/oldest-supported-numpy"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

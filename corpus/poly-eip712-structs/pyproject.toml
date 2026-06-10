@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poly_eip712_structs"
+version = "0.0.1"
+description = "A python library for EIP712 objects"
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+requires-python = ">=3.9.10"
+dependencies = [ "eth-utils>=4.1.1", "pycryptodome>=3.20.0", "pytest",]
+
+[[project.authors]]
+name = "Polymarket Engineering"
+email = "engineering@polymarket.com"
+
+[[project.maintainers]]
+name = "Polymarket Engineering"
+email = "engineering@polymarket.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/Polymarket/poly-py-eip712-structs"
+"Bug Tracker" = "https://github.com/Polymarket/poly-py-eip712-structs"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+py_order_utils = [ "abi/*.json",]
+
+[tool.setuptools.packages.find]
+namespaces = false

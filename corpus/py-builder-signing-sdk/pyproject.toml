@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py_builder_signing_sdk"
+version = "0.0.2"
+description = "Python builder signing sdk"
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+requires-python = ">=3.9"
+dependencies = [ "python-dotenv", "requests",]
+
+[[project.authors]]
+name = "Polymarket Engineering"
+email = "engineering@polymarket.com"
+
+[[project.maintainers]]
+name = "Polymarket Engineering"
+email = "engineering@polymarket.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/Polymarket/py-builder-signing-sdk"
+"Bug Tracker" = "https://github.com/Polymarket/py-builder-signing-sdk/issues"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

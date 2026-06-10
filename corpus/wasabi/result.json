@@ -1,0 +1,34 @@
+{
+  "package": "wasabi",
+  "version": "1.1.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/ac/f9/054e6e2f1071e963b5e746b48d1e3727470b2a490834d18ad92364929db3/wasabi-1.1.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Explosion"
+      ],
+      [
+        "author-email",
+        "contact@explosion.ai"
+      ],
+      [
+        "home-page",
+        "https://github.com/explosion/wasabi"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Explosion <contact@explosion.ai>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/explosion/wasabi"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-icdiff"
+version = "0.9"
+description = "use icdiff for better error messages in pytest assertions"
+classifiers = [ "Development Status :: 4 - Beta", "Framework :: Pytest", "Intended Audience :: Developers", "Topic :: Software Development :: Testing", "Programming Language :: Python", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Operating System :: OS Independent", "License :: Public Domain",]
+requires-python = ">=3.7"
+dependencies = [ "pytest", "icdiff", "pprintpp",]
+
+[[project.authors]]
+name = "Harry Percival"
+email = "obeythetestinggoat@gmail.com"
+
+[[project.maintainers]]
+name = "Harry Percival"
+email = "obeythetestinggoat@gmail.com"
+
+[project.license]
+text = "Unlicense"
+
+[project.readme]
+text = "=============\npytest-icdiff\n=============\n\n.. image:: https://img.shields.io/pypi/v/pytest-icdiff.svg\n:target: https://pypi.org/project/pytest-icdiff\n:alt: PyPI version\n\n.. image:: https://img.shields.io/conda/vn/conda-forge/pytest-icdiff.svg\n:target: https://anaconda.org/conda-forge/pytest-icdiff\n:alt: conda-forge version\n\n.. image:: https://img.shields.io/pypi/pyversions/pytest-icdiff.svg\n:target: https://pypi.org/project/pytest-icdiff\n:alt: Python versions\n\nBetter diffs in `pytest`_ assertion error messages using  `ICDiff`_.\n\nUsage\n-----\n\npip install pytest-icdiff\n\nOnce you've installed it, ``pytest`` will produce nice colourised diffs for any ``assert ==`` :\n\n.. image:: https://raw.githubusercontent.com/hjwp/pytest-icdiff/main/example_output.png?raw=true\n:alt: example colourised diff\n\nIssues and PRs welcome.\n\nThanks to the maintainers of `ICDiff`_ and also `pprintpp`_ !\n\nLicense\n-------\n\nDistributed under the terms of the `Unlicense`_ license, \"pytest-icdiff\" is free and open source software\n\nThis `pytest`_ plugin was generated with `Cookiecutter`_ along with `@hackebrot`_'s `cookiecutter-pytest-plugin`_ template.\n\n\n.. _`Cookiecutter`: https://github.com/audreyr/cookiecutter\n.. _`@hackebrot`: https://github.com/hackebrot\n.. _`cookiecutter-pytest-plugin`: https://github.com/pytest-dev/cookiecutter-pytest-plugin\n.. _`pytest`: https://github.com/pytest-dev/pytest\n.. _`Unlicense`: http://unlicense.org\n.. _`icdiff`: https://www.jefftk.com/icdiff\n.. _`pprintpp`: https://github.com/wolever/pprintpp\n\nHistory\n-------\n\n0.3 (2020-01-28)\n~~~~~~~~~~~~~~~~\n\n* Disable colorization in sync with Pytest\n(`PR #12 <https://github.com/hjwp/pytest-icdiff/pull/12>`__).\n* Synchronize license in `setup.py` with LICENSE file\n(`PR #11 <https://github.com/hjwp/pytest-icdiff/pull/11>`__).\n* Show expression drill down small numbers\n(`Issue #5 <https://github.com/hjwp/pytest-icdiff/issues/5>`__).\n* Test with Python 3.8\n(`PR #15 <https://github.com/hjwp/pytest-icdiff/issues/15>`__).\n\n0.2 (2019-03-28)\n~~~~~~~~~~~~~~~~\n\n* Obey terminal width.\n\n0.0.4 (2018-08-26)\n~~~~~~~~~~~~~~~~~~\n\n* Fix for short expressions\n(`Issue #6 <https://github.com/hjwp/pytest-icdiff/issues/6>`__).\n\n0.0.3 (2018-08-10)\n~~~~~~~~~~~~~~~~~~\n\n* Add Conda Forge installation and badge\n(`PR #2 <https://github.com/hjwp/pytest-icdiff/pull/2>`__).\n* Fix PyPI License classifier\n(`Issue #3 <https://github.com/hjwp/pytest-icdiff/issues/3>`__).\n* Fix colorization when both sides contain differences\n(`Issue #4 <https://github.com/hjwp/pytest-icdiff/issues/4>`__).\n\n0.0.2 (2018-08-08)\n~~~~~~~~~~~~~~~~~~\n\n* Fix Travis link in README.\n\n0.0.1 (2018-08-08)\n~~~~~~~~~~~~~~~~~~\n\n* First release on PyPI."
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/hjwp/pytest-icdiff"
+
+[tool.setuptools]
+py-modules = [ "pytest_icdiff",]
+include-package-data = false
+
+[project.entry-points.pytest11]
+icdiff = "pytest_icdiff"

@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "suds-community"
+version = "1.2.0"
+description = "Lightweight SOAP client (community fork)"
+keywords = [ "SOAP", "web", "service", "client",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)", "Natural Language :: English", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Topic :: Internet",]
+requires-python = ">=3.7"
+
+[[project.authors]]
+name = "Jeff Ortel"
+email = "jortel@redhat.com"
+
+[[project.maintainers]]
+name = "Jurko Gospodnetić"
+email = "jurko.gospodnetic@pke.hr"
+
+[project.license]
+text = "(specified using classifiers)"
+
+[project.readme]
+text = "---------------------------------------\nLightweight SOAP client (Community fork).\n---------------------------------------\n\nBased on the original 'suds' project by Jeff Ortel (jortel at redhat\ndot com) hosted at 'http://fedorahosted.org/suds'.\n\n'Suds' is a lightweight SOAP-based web service client for Python\nlicensed under LGPL (see the LICENSE.txt file included in the\ndistribution)."
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/suds-community/suds"
+Download = "https://github.com/suds-community/suds/archive/release-1.2.0.tar.gz"
+
+[tool.setuptools]
+packages = [ "suds.umx", "suds.transport", "suds", "suds.bindings", "suds.xsd", "suds.mx", "suds.sax",]
+platforms = [ "(specified using classifiers)",]
+obsoletes = [ "suds",]
+include-package-data = false

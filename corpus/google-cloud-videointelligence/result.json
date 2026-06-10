@@ -1,0 +1,7 @@
+{
+  "package": "google-cloud-videointelligence",
+  "version": "2.19.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/4a/af/a1d11dc04a694f58536523c7f0cd266dff454b29b610fc57bf85afc1733f/google_cloud_videointelligence-2.19.0.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-5eixwsk4/google_cloud_videointelligence-2.19.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in "
+}

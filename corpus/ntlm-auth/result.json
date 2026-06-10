@@ -1,0 +1,7 @@
+{
+  "package": "ntlm-auth",
+  "version": "1.5.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/44/a5/ab45529cc1860a1cb05129b438b189af971928d9c9c9d1990b549a6707f9/ntlm-auth-1.5.0.tar.gz",
+  "status": "convert-error",
+  "detail": "unexpected: _string(overlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1075, in _read\n    raise DuplicateOptionError(sectname, optname,\nconfigparser.DuplicateOptionError: While reading from '<string>' [line 40]: option 'cryptography' in section 'options.extras_require' already exists\n"
+}

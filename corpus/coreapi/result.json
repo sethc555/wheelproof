@@ -1,0 +1,7 @@
+{
+  "package": "coreapi",
+  "version": "2.3.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/ca/f2/5fc0d91a0c40b477b016c0f77d9d419ba25fc47cc11a96c825875ddce5a6/coreapi-2.3.3.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-__ibidq5/coreapi-2.3.3-converted\n--- stdout ---\nconfiguration error: `tool.setuptools.packages` must be valid exactly by one definition (0 matches found):\n\n    - type: array\n      items:\n        type: string\n        at least one of the following:\n          - {type: string, format: 'python-module-name-relaxed'}\n          - {type: string, format: 'pep561-stub-name'}\n    - type: table\n      additional keys: False\n      keys:\n        'find':\n          type: "
+}

@@ -1,0 +1,44 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kconfiglib"
+version = "14.1.0"
+description = "A flexible Python Kconfig implementation"
+keywords = [ "kconfig", "kbuild", "menuconfig", "configuration-management",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Topic :: Software Development :: Build Tools", "Topic :: System :: Operating System Kernels :: Linux", "License :: OSI Approved :: ISC License (ISCL)", "Operating System :: POSIX", "Operating System :: Microsoft :: Windows", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.2", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy",]
+requires-python = ">=2.7,!=3.0.*,!=3.1.*"
+
+[[project.authors]]
+name = "Ulf \"Ulfalizer\" Magnusson"
+email = "ulfalizer@gmail.com"
+
+[project.license]
+text = "ISC"
+
+[project.urls]
+Homepage = "https://github.com/ulfalizer/Kconfiglib"
+"GitHub repository" = "https://github.com/ulfalizer/Kconfiglib"
+Examples = "https://github.com/ulfalizer/Kconfiglib/tree/master/examples"
+
+[project.scripts]
+menuconfig = "menuconfig:_main"
+guiconfig = "guiconfig:_main"
+genconfig = "genconfig:main"
+oldconfig = "oldconfig:_main"
+olddefconfig = "olddefconfig:main"
+savedefconfig = "savedefconfig:main"
+defconfig = "defconfig:main"
+alldefconfig = "alldefconfig:main"
+allnoconfig = "allnoconfig:main"
+allmodconfig = "allmodconfig:main"
+allyesconfig = "allyesconfig:main"
+listnewconfig = "listnewconfig:main"
+setconfig = "setconfig:main"
+
+[tool.setuptools]
+py-modules = [ "kconfiglib", "menuconfig", "guiconfig", "genconfig", "oldconfig", "olddefconfig", "savedefconfig", "defconfig", "alldefconfig", "allnoconfig", "allmodconfig", "allyesconfig", "listnewconfig", "setconfig",]
+license-files = [ "LICENSE.txt",]
+include-package-data = false

@@ -1,0 +1,39 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "delta-sharing"
+version = "1.4.1"
+description = "Python Connector for Delta Sharing"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent", "Topic :: Software Development :: Libraries :: Python Modules", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11",]
+requires-python = ">=3.8"
+dependencies = [ "delta-kernel-rust-sharing-wrapper>=0.3.1", "pandas", "pyarrow>=16.1.0", "fsspec>=0.7.4", "requests", "aiohttp", "dataclasses;python_version<\"3.8\"", "yarl>=1.6.0", "jwcrypto>=1.5.6",]
+
+[[project.authors]]
+name = "The Delta Lake Project Authors"
+email = "delta-users@googlegroups.com"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/delta-io/delta-sharing/"
+Source = "https://github.com/delta-io/delta-sharing"
+Documentation = "https://github.com/delta-io/delta-sharing"
+Issues = "https://github.com/delta-io/delta-sharing/issues"
+
+[project.optional-dependencies]
+s3 = [ "s3fs",]
+abfs = [ "adlfs",]
+adl = [ "adlfs",]
+gcs = [ "gcsfs",]
+gs = [ "gcsfs",]
+
+[tool.setuptools]
+packages = [ "delta_sharing",]
+include-package-data = false

@@ -1,0 +1,12 @@
+{
+  "package": "x-wr-timezone",
+  "version": "2.0.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/79/2b/8ae5f59ab852c8fe32dd37c1aa058eb98aca118fec2d3af5c3cd56fffb7b/x_wr_timezone-2.0.1.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": true
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "package": "haversine",
+  "version": "2.9.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/1f/fe/5dc394a9db15c9f08c64ae050c03c01128227632fce07cc62aa5d32240d5/haversine-2.9.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/mapado/haversine"
+      ],
+      [
+        "maintainer",
+        "Julien Deniau"
+      ],
+      [
+        "maintainer-email",
+        "julien.deniau@mapado.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "maintainer-email",
+        "Julien Deniau <julien.deniau@mapado.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/mapado/haversine"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

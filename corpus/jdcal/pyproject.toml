@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jdcal"
+version = "1.4.1"
+description = "Julian dates from proleptic Gregorian and Julian calendars."
+readme = "README.rst"
+classifiers = [ "Development Status :: 6 - Mature", "Intended Audience :: Science/Research", "Operating System :: OS Independent", "License :: OSI Approved :: BSD License", "Topic :: Scientific/Engineering :: Astronomy", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy",]
+
+[[project.authors]]
+name = "Prasanth Nair"
+email = "prasanthhn@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "https://github.com/phn/jdcal"
+
+[tool.setuptools]
+py-modules = [ "jdcal",]
+license-files = [ "LICENSE.txt",]
+include-package-data = false

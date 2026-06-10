@@ -1,0 +1,15 @@
+{
+  "package": "azure-keyvault-securitydomain",
+  "version": "1.0.0b1",
+  "sdist_url": "https://files.pythonhosted.org/packages/a6/18/3a67754d999a0244f3551c8c28031cdfb5d2b6f072df6b55fc2bf2e69ec5/azure_keyvault_securitydomain-1.0.0b1.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [],
+    "payload_only_converted": [
+      "azure/__init__.py",
+      "azure/keyvault/__init__.py"
+    ],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

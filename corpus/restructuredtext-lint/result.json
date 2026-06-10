@@ -1,0 +1,86 @@
+{
+  "package": "restructuredtext-lint",
+  "version": "2.0.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/ca/e6/eefcad2228f4124f17e01064428fbcd0ade06a274f3063ce3a126a569d6b/restructuredtext_lint-2.0.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Todd Wolfson"
+      ],
+      [
+        "author-email",
+        "todd@twolfson.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/twolfson/restructuredtext-lint/archive/master.zip"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/twolfson/restructuredtext-lint"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Todd Wolfson <todd@twolfson.com>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/twolfson/restructuredtext-lint/archive/master.zip"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/twolfson/restructuredtext-lint"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "package": "cairosvg",
+  "version": "2.9.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/38/07/e8412a13019b3f737972dea23a2c61ca42becafc16c9338f4ca7a0caa993/cairosvg-2.9.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Guillaume Ayoub"
+      ],
+      [
+        "author-email",
+        "contact@courtbouillon.org"
+      ],
+      [
+        "home-page",
+        "https://courtbouillon.org/cairosvg"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Guillaume Ayoub <contact@courtbouillon.org>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://courtbouillon.org/cairosvg"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "package": "cfgv",
+  "version": "3.5.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/4e/b5/721b8799b04bf9afe054a3899c6cf4e880fcf8563cc71c15610242490a0c/cfgv-3.5.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Anthony Sottile"
+      ],
+      [
+        "author-email",
+        "asottile@umich.edu"
+      ],
+      [
+        "home-page",
+        "https://github.com/asottile/cfgv"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Anthony Sottile <asottile@umich.edu>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/asottile/cfgv"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

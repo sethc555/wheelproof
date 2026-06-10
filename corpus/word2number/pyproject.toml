@@ -1,0 +1,26 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "word2number"
+version = "1.1"
+description = "Convert number words eg. three hundred and forty two to numbers (342)."
+keywords = [ "numbers", "convert", "words",]
+readme = "README.rst"
+classifiers = [ "Intended Audience :: Developers", "Programming Language :: Python",]
+
+[[project.authors]]
+name = "Akshay Nagpal"
+email = "akshay2626@gmail.com"
+
+[project.license]
+text = "file: LICENSE.txt"
+
+[project.urls]
+Homepage = "https://github.com/akshaynagpal/w2n"
+Download = "https://github.com/akshaynagpal/w2n/tarball/1.1"
+
+[tool.setuptools]
+packages = [ "word2number",]
+include-package-data = false

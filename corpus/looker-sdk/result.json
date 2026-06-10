@@ -1,0 +1,58 @@
+{
+  "package": "looker-sdk",
+  "version": "26.10.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/01/d5/ca38f92a4e2d8e1bd600bc78305d1f111624651bdee10c7367cff3493d3a/looker_sdk-26.10.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://pypi.python.org/pypi/looker_sdk"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "project-url",
+        "Homepage, https://pypi.python.org/pypi/looker_sdk"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

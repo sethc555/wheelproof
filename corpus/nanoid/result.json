@@ -1,0 +1,66 @@
+{
+  "package": "nanoid",
+  "version": "2.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/b7/9d/0250bf5935d88e214df469d35eccc0f6ff7e9db046fc8a9aeb4b2a192775/nanoid-2.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Paul Yuan"
+      ],
+      [
+        "author-email",
+        "puyuan1@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/puyuan/py-nanoid"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Paul Yuan <puyuan1@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/puyuan/py-nanoid"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

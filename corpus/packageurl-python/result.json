@@ -1,0 +1,26 @@
+{
+  "package": "packageurl-python",
+  "version": "0.17.6",
+  "sdist_url": "https://files.pythonhosted.org/packages/f5/d6/3b5a4e3cfaef7a53869a26ceb034d1ff5e5c27c814ce77260a96d50ab7bb/packageurl_python-0.17.6.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "home-page",
+        "https://github.com/package-url/packageurl-python"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/package-url/packageurl-python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

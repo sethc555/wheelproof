@@ -1,0 +1,17 @@
+{
+  "package": "comfyui-frontend-package",
+  "version": "1.45.15",
+  "sdist_url": "https://files.pythonhosted.org/packages/c6/a6/df3807259ee9635d215b58beac7e32bbd11beb0a4fc09d4d91425436458c/comfyui_frontend_package-1.45.15.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "requires-python"
+      ]
+    ],
+    "metadata_only_converted": [],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

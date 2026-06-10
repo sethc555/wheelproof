@@ -1,0 +1,70 @@
+{
+  "package": "s3path",
+  "version": "0.6.5",
+  "sdist_url": "https://files.pythonhosted.org/packages/94/61/246ed47bc9861207c5da53eb73ea8862ad76902fe3c7c4a7ef86b7e4540e/s3path-0.6.5.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Lior Mizrahi"
+      ],
+      [
+        "author-email",
+        "li.mizr@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "home-page",
+        "https://github.com/liormizr/s3path"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Lior Mizrahi <li.mizr@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/liormizr/s3path"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

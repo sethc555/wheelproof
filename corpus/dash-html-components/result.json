@@ -1,0 +1,62 @@
+{
+  "package": "dash-html-components",
+  "version": "2.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/14/c6/957d5e83b620473eb3c8557a253fb01c6a817b10ca43d3ff9d31796f32a6/dash_html_components-2.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Chris Parmer <chris@plotly.com>"
+      ],
+      [
+        "author-email",
+        "chris@plotly.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/plotly/dash-html-components"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "\"Chris Parmer <chris@plotly.com>\" <chris@plotly.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/plotly/dash-html-components"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

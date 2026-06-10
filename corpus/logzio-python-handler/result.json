@@ -1,0 +1,108 @@
+{
+  "package": "logzio-python-handler",
+  "version": "4.1.9",
+  "sdist_url": "https://files.pythonhosted.org/packages/97/d4/7a0ea713af92fa2cac0001075f15872c32255f4050e1d13bea75e895ee79/logzio_python_handler-4.1.9.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "roiravhon"
+      ],
+      [
+        "author-email",
+        "help@logz.io"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/logzio/logzio-python-handler/"
+      ],
+      [
+        "keywords",
+        "logging handler logz.io bulk https"
+      ],
+      [
+        "maintainer",
+        "yotam-loewenbach"
+      ],
+      [
+        "maintainer-email",
+        "yotam.loewenbach@logz.io"
+      ],
+      [
+        "version",
+        "4.1.9"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "roiravhon <help@logz.io>"
+      ],
+      [
+        "keywords",
+        "logging,handler,logz.io,bulk,https"
+      ],
+      [
+        "maintainer-email",
+        "yotam-loewenbach <yotam.loewenbach@logz.io>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/logzio/logzio-python-handler/"
+      ],
+      [
+        "version",
+        "0.0.0"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

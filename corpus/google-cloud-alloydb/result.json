@@ -1,0 +1,7 @@
+{
+  "package": "google-cloud-alloydb",
+  "version": "0.10.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/f6/b2/6e25926dcddae31a596be9cf54f2c02f10732d24def2bbfe1a2e99d08631/google_cloud_alloydb-0.10.0.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-1164isdf/google_cloud_alloydb-0.10.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _main\n    "
+}

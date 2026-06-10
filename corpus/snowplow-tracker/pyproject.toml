@@ -1,0 +1,49 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snowplow-tracker"
+version = "1.1.0"
+description = "Snowplow event tracker for Python. Add analytics to your Python and Django apps, webapps and games"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Operating System :: OS Independent",]
+dependencies = [ "requests>=2.25.1,<3.0", "typing_extensions>=3.7.4",]
+
+[[project.authors]]
+name = "Anuj More"
+email = "support@snowplow.io"
+
+[[project.authors]]
+name = "Alexander Dean"
+
+[[project.authors]]
+name = "Fred Blundun"
+
+[[project.authors]]
+name = "Paul Boocock"
+
+[[project.authors]]
+name = "Matus Tomlein"
+
+[[project.authors]]
+name = "Jack Keene"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "http://snowplow.io"
+
+[project.optional-dependencies]
+typing = [ "mypy>=0.971", "types-requests>=2.25.1,<3.0",]
+
+[tool.setuptools]
+packages = [ "snowplow_tracker", "snowplow_tracker.test", "snowplow_tracker.events",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+snowplow_tracker = [ "py.typed",]

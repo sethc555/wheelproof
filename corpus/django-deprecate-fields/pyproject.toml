@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-deprecate-fields"
+version = "0.2.3"
+description = "This package allows deprecating model fields and allows removing them in a backwards compatible manner."
+keywords = [ "django", "migration", "deprecation", "database", "backward", "compatibility",]
+classifiers = [ "Development Status :: 3 - Alpha", "Intended Audience :: Developers", "Environment :: Web Environment", "Framework :: Django", "Framework :: Django :: 2.1", "Framework :: Django :: 2.2", "Framework :: Django :: 3.0", "Framework :: Django :: 3.1", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7",]
+dependencies = [ "Django>=2.1",]
+
+[[project.authors]]
+name = "3YOURMIND GmbH"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/3YOURMIND/django-deprecate-fields"
+
+[tool.setuptools]
+packages = [ "django_deprecate_fields",]
+include-package-data = false

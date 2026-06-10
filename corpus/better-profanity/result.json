@@ -1,0 +1,15 @@
+{
+  "package": "better-profanity",
+  "version": "0.7.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/b5/4a/52966c1c883819f0b48540312a4a7f63b5c49f4e5b1a10838ae7f06ebb3c/better_profanity-0.7.0.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "better_profanity-0.7.0.data/data/unicode_characters/alphabetic_unicode.json",
+      "better_profanity-0.7.0.data/data/wordlist/profanity_wordlist.txt"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

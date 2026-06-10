@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mccabe"
+version = "0.7.0"
+description = "McCabe checker, plugin for flake8"
+keywords = [ "flake8", "mccabe",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Software Development :: Quality Assurance",]
+requires-python = ">=3.6"
+
+[[project.authors]]
+name = "Tarek Ziade"
+email = "tarek@ziade.org"
+
+[[project.maintainers]]
+name = "Ian Stapleton Cordasco"
+email = "graffatcolmingov@gmail.com"
+
+[project.license]
+text = "Expat license"
+
+[project.urls]
+Homepage = "https://github.com/pycqa/mccabe"
+
+[tool.setuptools]
+py-modules = [ "mccabe",]
+zip-safe = false
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[project.entry-points."flake8.extension"]
+C90 = "mccabe:McCabeChecker"

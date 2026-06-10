@@ -1,0 +1,34 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "openvino-telemetry"
+version = "2025.2.0"
+description = "OpenVINO™ Telemetry package for sending statistics with user's consent, used in combination with other OpenVINO™ packages."
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent",]
+
+[[project.authors]]
+name = "Intel® Corporation"
+email = "openvino_pushbot@intel.com"
+
+[project.license]
+text = "OSI Approved :: Apache Software License"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/openvinotoolkit/telemetry"
+
+[project.scripts]
+opt_in_out = "openvino_telemetry.opt_in_out:main"
+
+[tool.setuptools]
+py-modules = []
+packages = [ "openvino_telemetry", "openvino_telemetry.backend", "openvino_telemetry.utils",]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+openvino_telemetry = "src"

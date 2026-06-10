@@ -1,0 +1,14 @@
+{
+  "package": "facexlib",
+  "version": "0.3.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/e1/93/c820cd2c6315b635934770808e0b01ed4db257ec33bcf803909dcf4bce15/facexlib-0.3.0.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [],
+    "payload_only_converted": [],
+    "payload_changed": [
+      "facexlib/version.py"
+    ],
+    "entry_points_changed": false
+  }
+}

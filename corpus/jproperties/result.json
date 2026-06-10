@@ -1,0 +1,7 @@
+{
+  "package": "jproperties",
+  "version": "2.1.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/be/27/00abf648c6d573275d409b70196b66d9fb40ef03b8d1baf671ae3774e145/jproperties-2.1.2.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-al8zo6ru/jproperties-2.1.2\n--- stdout ---\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - setuptools >= 40.8.0\n* Getting build dependencies for wheel...\n* Installing packages in isolated environment:\n  - setuptools_scm ~= 3.3\n* Building wheel...\nTraceback (most recent call last):\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_in_process/_in_process.py\", line 389, in <module>\n "
+}

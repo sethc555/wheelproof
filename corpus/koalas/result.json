@@ -1,0 +1,90 @@
+{
+  "package": "koalas",
+  "version": "1.8.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/b6/c4/81dce696d90ac382e31ded2d8ba09205f8cb4633aa0a6fbb23c8d4874047/koalas-1.8.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Databricks"
+      ],
+      [
+        "author-email",
+        "koalas@databricks.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/databricks/koalas"
+      ],
+      [
+        "requires-python",
+        ">=3.5,<3.10"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Databricks <koalas@databricks.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/databricks/koalas"
+      ],
+      [
+        "requires-python",
+        "<3.10,>=3.5"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

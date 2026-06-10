@@ -1,0 +1,7 @@
+{
+  "package": "opencc-python-reimplemented",
+  "version": "0.1.7",
+  "sdist_url": "https://files.pythonhosted.org/packages/8d/6d/c6f37eed651dd6b752e50f80a93396cdaa42a6acc6ce05ad7452303ea511/opencc-python-reimplemented-0.1.7.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-frr_dzsu/opencc-python-reimplemented-0.1.7-converted\n--- stdout ---\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - setuptools>=61.2\n* Getting build dependencies for wheel...\nTraceback (most recent call last):\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_in_process/_in_process.py\", line 389, in <module>\n    main()\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_"
+}

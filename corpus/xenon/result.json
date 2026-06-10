@@ -1,0 +1,100 @@
+{
+  "package": "xenon",
+  "version": "0.9.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/c4/7c/2b341eaeec69d514b635ea18481885a956d196a74322a4b0942ef0c31691/xenon-0.9.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Michele Lacchia"
+      ],
+      [
+        "author-email",
+        "michelelacchia@gmail.com"
+      ],
+      [
+        "download-url",
+        "https://pypi.python.org/xenon/"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://xenon.readthedocs.org/"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Michele Lacchia <michelelacchia@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Download, https://pypi.python.org/xenon/"
+      ],
+      [
+        "project-url",
+        "Homepage, https://xenon.readthedocs.org/"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "httpretty; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "tox; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "awsiotsdk"
+version = "1.29.0"
+description = "AWS IoT SDK based on the AWS Common Runtime"
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent",]
+requires-python = ">=3.8"
+dependencies = [ "awscrt==0.32.1",]
+
+[[project.authors]]
+name = "AWS SDK Common Runtime Team"
+
+[project.license]
+text = "License :: OSI Approved :: Apache Software License"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/aws/aws-iot-device-sdk-python-v2"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = [ "awsiot*",]
+namespaces = false

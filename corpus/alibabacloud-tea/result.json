@@ -1,0 +1,82 @@
+{
+  "package": "alibabacloud-tea",
+  "version": "0.4.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/9a/7d/b22cb9a0d4f396ee0f3f9d7f26b76b9ed93d4101add7867a2c87ed2534f5/alibabacloud-tea-0.4.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Alibaba Cloud"
+      ],
+      [
+        "author-email",
+        "alibaba-cloud-sdk-dev-team@list.alibaba-inc.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/aliyun/tea-python"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Alibaba Cloud <alibaba-cloud-sdk-dev-team@list.alibaba-inc.com>"
+      ],
+      [
+        "description-content-type",
+        "text/markdown"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/aliyun/tea-python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

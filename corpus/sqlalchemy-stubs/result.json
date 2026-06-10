@@ -1,0 +1,70 @@
+{
+  "package": "sqlalchemy-stubs",
+  "version": "0.4",
+  "sdist_url": "https://files.pythonhosted.org/packages/81/60/db082788267740b17eac2c00666bbea1c8c5a94b569e8b1ea76b0cf42d57/sqlalchemy-stubs-0.4.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Ivan Levkivskyi"
+      ],
+      [
+        "author-email",
+        "levkivskyi@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/dropbox/sqlalchemy-stubs"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Ivan Levkivskyi <levkivskyi@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/dropbox/sqlalchemy-stubs"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
+}

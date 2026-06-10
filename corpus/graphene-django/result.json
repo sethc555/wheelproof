@@ -1,0 +1,132 @@
+{
+  "package": "graphene-django",
+  "version": "3.2.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/6f/7a/8aef131349329dcd167578720f6364412f1728bfda14bba22c1e7b5d8365/graphene-django-3.2.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Syrus Akbary"
+      ],
+      [
+        "author-email",
+        "me@syrusakbary.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/graphql-python/graphene-django"
+      ],
+      [
+        "keywords",
+        "api graphql protocol rest relay graphene"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Syrus Akbary <me@syrusakbary.com>"
+      ],
+      [
+        "keywords",
+        "api,graphql,protocol,rest,relay,graphene"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/graphql-python/graphene-django"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "coveralls; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "django-filter>=22.1; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "djangorestframework>=3.6.3; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "mock; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-cov; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-django>=4.5.2; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-random-order; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest>=7.3.1; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytz; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "package": "evaluate",
+  "version": "0.4.6",
+  "sdist_url": "https://files.pythonhosted.org/packages/ad/d0/0c17a8e6e8dc7245f22dea860557c32bae50fc4d287ae030cb0e8ab8720f/evaluate-0.4.6.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "evaluate/__init__.py",
+      "evaluate/commands/__init__.py",
+      "evaluate/commands/evaluate_cli.py",
+      "evaluate/config.py",
+      "evaluate/evaluation_suite/__init__.py",
+      "evaluate/evaluator/__init__.py",
+      "evaluate/evaluator/audio_classification.py",
+      "evaluate/evaluator/automatic_speech_recognition.py",
+      "evaluate/evaluator/base.py",
+      "evaluate/evaluator/image_classification.py",
+      "evaluate/evaluator/question_answering.py",
+      "evaluate/evaluator/text2text_generation.py",
+      "evaluate/evaluator/text_classification.py",
+      "evaluate/evaluator/text_generation.py",
+      "evaluate/evaluator/token_classification.py",
+      "evaluate/evaluator/utils.py",
+      "evaluate/hub.py",
+      "evaluate/info.py",
+      "evaluate/inspect.py",
+      "evaluate/loading.py",
+      "evaluate/module.py",
+      "evaluate/naming.py",
+      "evaluate/saving.py",
+      "evaluate/utils/__init__.py",
+      "evaluate/utils/file_utils.py",
+      "evaluate/utils/gradio.py",
+      "evaluate/utils/logging.py",
+      "evaluate/visualization.py"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

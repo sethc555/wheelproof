@@ -1,0 +1,37 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boa-str"
+version = "1.1.0"
+description = "Convert strings to snakecase"
+keywords = [ "boa", "snakecase", "snake_case", "snake", "case", "inflector", "astronomer", "astronomerio",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6",]
+dependencies = []
+
+[[project.authors]]
+name = "Astronomer"
+email = "taylor@astronomer.io"
+
+[[project.maintainers]]
+name = "Astronomer"
+email = "taylor@astronomer.io"
+
+[project.license]
+text = "MIT License"
+
+[project.urls]
+Homepage = "https://github.com/astronomerio/boa"
+
+[project.optional-dependencies]
+dev = [ "codecov", "cov-core", "nose2", "flake8", "invoke", "pycodestyle", "twine",]
+test = [ "codecov", "cov-core", "nose2",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

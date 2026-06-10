@@ -1,0 +1,7 @@
+{
+  "package": "brotlicffi",
+  "version": "1.2.0.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/8a/b6/017dc5f852ed9b8735af77774509271acbf1de02d238377667145fcee01d/brotlicffi-1.2.0.1.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-bk2r1pn4/brotlicffi-1.2.0.1-converted/setup.py (dynamic setup.py? flag as manual)\n/tmp/v/lib/python3.12/site-packages/setuptools/_vendor/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release. Please update to setuptools v70.1 or later which contains an integrated version of this command.\n  warn(\nTraceback (most recent call last):\n  File \"/t"
+}

@@ -1,0 +1,74 @@
+{
+  "package": "autograd-gamma",
+  "version": "0.5.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/85/ae/7f2031ea76140444b2453fa139041e5afd4a09fc5300cfefeb1103291f80/autograd-gamma-0.5.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Cameron Davidson-Pilon"
+      ],
+      [
+        "author-email",
+        "cam.davidson.pilon@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/CamDavidsonPilon/autograd-gamma"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Cameron Davidson-Pilon <cam.davidson.pilon@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/CamDavidsonPilon/autograd-gamma"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "package": "pywin32-ctypes",
+  "version": "0.2.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/85/9f/01a1a99704853cb63f253eea009390c88e7131c67e66a0a02099a8c917cb/pywin32-ctypes-0.2.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Enthought Inc."
+      ],
+      [
+        "author-email",
+        "info@enthough.com"
+      ],
+      [
+        "home-page",
+        "https://github.com/enthought/pywin32-ctypes"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "\"Enthought Inc.\" <info@enthough.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/enthought/pywin32-ctypes"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

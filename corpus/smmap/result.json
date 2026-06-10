@@ -1,0 +1,74 @@
+{
+  "package": "smmap",
+  "version": "5.0.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/1f/ea/49c993d6dfdd7338c9b1000a0f36817ed7ec84577ae2e52f890d1a4ff909/smmap-5.0.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Sebastian Thiel"
+      ],
+      [
+        "author-email",
+        "byronimo@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/gitpython-developers/smmap"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Sebastian Thiel <byronimo@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/gitpython-developers/smmap"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "package": "facebook-business",
+  "version": "25.0.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/90/56/7517842228b7b19ded686c5f825c6af90b89bc703763230d7ec00b675991/facebook_business-25.0.2.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-unp917p0/facebook_business-25.0.2-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {'dependency-links'} properties\nDESCRIPTION:\n    ``setuptools``-specific configurations that can be set by users that require\n    customization. These configurations are completely optional and probably can\n    be skipped when creating simple packages. They are equivalent to some of the\n    `Keywords <https://setuptools.pypa.io/en/latest/ref"
+}

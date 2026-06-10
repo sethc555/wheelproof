@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uptime_kuma_api"
+version = "1.2.1"
+description = "A python wrapper for the Uptime Kuma WebSocket API"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Web Environment", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Natural Language :: English", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3 :: Only", "Topic :: Internet :: WWW/HTTP", "Topic :: Software Development :: Libraries",]
+requires-python = ">=3.7, <4"
+dependencies = [ "python-socketio[client]>=5.0.0", "packaging",]
+
+[[project.authors]]
+name = "Lucas Held"
+email = "lucasheld@hotmail.de"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/lucasheld/uptime-kuma-api"
+
+[tool.setuptools]
+packages = [ "uptime_kuma_api",]
+include-package-data = false

@@ -1,0 +1,98 @@
+{
+  "package": "gsutil",
+  "version": "5.37",
+  "sdist_url": "https://files.pythonhosted.org/packages/9a/6f/5da5e0a8dd3b101809e9f6ba7875facdcd26de42d2ca8fede2ff9769bc39/gsutil-5.37.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Google Inc."
+      ],
+      [
+        "author-email",
+        "buganizer-system+187143@google.com"
+      ],
+      [
+        "download-url",
+        "https://cloud.google.com/storage/docs/gsutil_install"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://cloud.google.com/storage/docs/gsutil"
+      ],
+      [
+        "requires-python",
+        ">=3.9, <3.15"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "\"Google Inc.\" <buganizer-system+187143@google.com>"
+      ],
+      [
+        "project-url",
+        "Download, https://cloud.google.com/storage/docs/gsutil_install"
+      ],
+      [
+        "project-url",
+        "Homepage, https://cloud.google.com/storage/docs/gsutil"
+      ],
+      [
+        "requires-python",
+        "<3.15,>=3.9"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
+}

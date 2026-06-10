@@ -1,0 +1,80 @@
+{
+  "package": "docopt",
+  "version": "0.6.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/a2/55/8f8cab2afd404cf578136ef2cc5dfb50baa1761b68c9da1fb1e4eed343c9/docopt-0.6.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Vladimir Keleshev"
+      ],
+      [
+        "author-email",
+        "vladimir@keleshev.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://docopt.org"
+      ],
+      [
+        "keywords",
+        "option arguments parsing optparse argparse getopt"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Vladimir Keleshev <vladimir@keleshev.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "option,arguments,parsing,optparse,argparse,getopt"
+      ],
+      [
+        "project-url",
+        "Homepage, http://docopt.org"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

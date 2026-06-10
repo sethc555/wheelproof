@@ -1,0 +1,90 @@
+{
+  "package": "win32-setctime",
+  "version": "1.2.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/b3/8f/705086c9d734d3b663af0e9bb3d4de6578d08f46b1b101c2442fd9aecaa2/win32_setctime-1.2.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Delgan"
+      ],
+      [
+        "author-email",
+        "delgan.py@gmail.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/Delgan/win32-setctime/archive/1.2.0.tar.gz"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/Delgan/win32-setctime"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Delgan <delgan.py@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/Delgan/win32-setctime/archive/1.2.0.tar.gz"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Delgan/win32-setctime"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

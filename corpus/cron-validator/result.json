@@ -1,0 +1,7 @@
+{
+  "package": "cron-validator",
+  "version": "1.0.8",
+  "sdist_url": "https://files.pythonhosted.org/packages/31/55/d3d8e7acad9dc3f54133df0972c79d38f2c6fc4be41f281a396c3afe4411/cron-validator-1.0.8.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-ebifpd5m/cron-validator-1.0.8-converted\n--- stdout ---\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - setuptools>=61.2\n* Getting build dependencies for wheel...\nTraceback (most recent call last):\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_in_process/_in_process.py\", line 389, in <module>\n    main()\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_in_process/_i"
+}

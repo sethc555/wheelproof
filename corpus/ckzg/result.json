@@ -1,0 +1,14 @@
+{
+  "package": "ckzg",
+  "version": "2.1.7",
+  "sdist_url": "https://files.pythonhosted.org/packages/12/44/fdb579a0d035a1e510511e3c3b9ca98ba2ea240a24f112b1882478bfc2ff/ckzg-2.1.7.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "ckzg.cpython-312-x86_64-linux-gnu.so"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "plotly_express"
+version = "0.4.1"
+description = "Plotly Express - a high level wrapper for Plotly.py"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Topic :: Scientific/Engineering :: Visualization", "License :: OSI Approved :: MIT License",]
+dependencies = [ "pandas>=0.20.0", "plotly>=4.1.0", "statsmodels>=0.9.0", "scipy>=0.18", "patsy>=0.5", "numpy>=1.11",]
+
+[[project.authors]]
+name = "Nicolas Kruchten"
+email = "nicolas@plot.ly"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://plotly.express/"
+Github = "https://github.com/plotly/plotly_express/"
+
+[tool.setuptools]
+license-files = [ "LICENSE.txt",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

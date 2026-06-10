@@ -1,0 +1,7 @@
+{
+  "package": "pytest-docker",
+  "version": "3.2.5",
+  "sdist_url": "https://files.pythonhosted.org/packages/66/05/b7e47dc3e01b505838372e296bd780180b3b699a9a134bb8d6be85f3d567/pytest_docker-3.2.5.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-aoxamqq0/pytest_docker-3.2.5-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-aoxamqq0/pytest_docker-3.2.5-converted/pyproject.toml: Cannot declare ('build-system',) twice (at line 45, column 14) \n"
+}

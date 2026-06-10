@@ -1,0 +1,7 @@
+{
+  "package": "pygsheets",
+  "version": "2.0.6",
+  "sdist_url": "https://files.pythonhosted.org/packages/76/87/4589262da7fdc9cc8c609099a5525dcbd05bd0f4ee22c28f640f261a4292/pygsheets-2.0.6.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-_0mqngtn/pygsheets-2.0.6-converted\n--- stdout ---\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - setuptools>=61.2\n* Getting build dependencies for wheel...\nTraceback (most recent call last):\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_in_process/_in_process.py\", line 389, in <module>\n    main()\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_in_process/_in_pro"
+}

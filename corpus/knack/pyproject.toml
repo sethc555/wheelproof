@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "knack"
+version = "0.14.0"
+description = "A Command-Line Interface framework"
+readme = "README.rst"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Intended Audience :: System Administrators", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "License :: OSI Approved :: MIT License",]
+dependencies = [ "argcomplete", "jmespath", "packaging", "pygments", "pyyaml", "tabulate",]
+
+[[project.authors]]
+name = "Microsoft Corporation"
+email = "azpycli@microsoft.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/microsoft/knack"
+
+[tool.setuptools]
+packages = [ "knack", "knack.testsdk",]
+zip-safe = false
+license-files = [ "LICENSE",]
+include-package-data = false

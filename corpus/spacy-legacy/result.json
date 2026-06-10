@@ -1,0 +1,36 @@
+{
+  "package": "spacy-legacy",
+  "version": "3.0.12",
+  "sdist_url": "https://files.pythonhosted.org/packages/d9/79/91f9d7cc8db5642acad830dcc4b49ba65a7790152832c4eceb305e46d681/spacy-legacy-3.0.12.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Explosion"
+      ],
+      [
+        "author-email",
+        "contact@explosion.ai"
+      ],
+      [
+        "home-page",
+        "https://spacy.io"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Explosion <contact@explosion.ai>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://spacy.io"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

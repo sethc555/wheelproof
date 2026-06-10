@@ -1,0 +1,56 @@
+{
+  "package": "pyxdg",
+  "version": "0.28",
+  "sdist_url": "https://files.pythonhosted.org/packages/b0/25/7998cd2dec731acbd438fbf91bc619603fc5188de0a9a17699a781840452/pyxdg-0.28.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://freedesktop.org/wiki/Software/pyxdg"
+      ],
+      [
+        "maintainer",
+        "Freedesktop.org"
+      ],
+      [
+        "maintainer-email",
+        "xdg@lists.freedesktop.org"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "maintainer-email",
+        "\"Freedesktop.org\" <xdg@lists.freedesktop.org>"
+      ],
+      [
+        "project-url",
+        "Homepage, http://freedesktop.org/wiki/Software/pyxdg"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

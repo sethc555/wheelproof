@@ -1,0 +1,112 @@
+{
+  "package": "redis-py-cluster",
+  "version": "2.1.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/5e/7f/2d62d9a88b929ba10a46ba0eed1fbfc14fd83c82a6c88447ba0e9619a9ff/redis-py-cluster-2.1.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Johan Andersson"
+      ],
+      [
+        "author-email",
+        "Grokzen@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://github.com/grokzen/redis-py-cluster"
+      ],
+      [
+        "maintainer",
+        "Johan Andersson"
+      ],
+      [
+        "maintainer-email",
+        "Grokzen@gmail.com"
+      ],
+      [
+        "requires-python",
+        ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Johan Andersson <Grokzen@gmail.com>"
+      ],
+      [
+        "maintainer-email",
+        "Johan Andersson <Grokzen@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, http://github.com/grokzen/redis-py-cluster"
+      ],
+      [
+        "requires-python",
+        "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4,>=2.7"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

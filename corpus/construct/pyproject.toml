@@ -1,0 +1,42 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "construct"
+version = "2.10.70"
+description = "A powerful declarative symmetric parser/builder for binary data"
+keywords = [ "construct", "kaitai", "declarative", "data structure", "struct", "binary", "symmetric", "parser", "builder", "parsing", "building", "pack", "unpack", "packer", "unpacker",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "License :: OSI Approved :: MIT License", "Intended Audience :: Developers", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Software Development :: Build Tools", "Topic :: Software Development :: Code Generators", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy",]
+requires-python = ">=3.6"
+dependencies = []
+
+[[project.authors]]
+name = "Arkadiusz Bulski"
+email = "arek.bulski@gmail.com"
+
+[[project.authors]]
+name = "Tomer Filiba"
+email = "tomerfiliba@gmail.com"
+
+[[project.authors]]
+name = "Corbin Simpson"
+email = "MostAwesomeDude@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "http://construct.readthedocs.org"
+Source = "https://github.com/construct/construct"
+Documentation = "https://construct.readthedocs.io/en/latest/"
+Issues = "https://github.com/construct/construct/issues"
+
+[project.optional-dependencies]
+extras = [ "numpy", "arrow", "ruamel.yaml", "cloudpickle", "lz4", "cryptography",]
+
+[tool.setuptools]
+packages = [ "construct", "construct.lib",]
+platforms = [ "POSIX", "Windows",]
+include-package-data = false

@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opsgenie-sdk"
+version = "2.1.5"
+description = "Python SDK for Opsgenie REST API"
+keywords = [ "OpenAPI", "OpenAPI-Generator", "Python SDK for Opsgenie REST API", "OpsGenie", "Opsgenie",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent",]
+dependencies = [ "urllib3 >= 1.26.5", "six >= 1.10", "certifi", "python-dateutil", "setuptools >= 21.0.0", "tenacity >= 5.0.4",]
+
+[[project.authors]]
+name = "OpsGenie"
+email = "support@opsgenie.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/opsgenie/opsgenie-python-sdk"
+Documentation = "https://docs.opsgenie.com/docs/opsgenie-python-api"
+Source = "https://github.com/opsgenie/opsgenie-python-sdk"
+Tracker = "https://github.com/opsgenie/opsgenie-python-sdk/issues"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = [ "samples",]
+namespaces = false

@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cligj"
+version = "0.7.2"
+description = "Click params for commmand line interfaces to GeoJSON"
+keywords = []
+readme = "README.rst"
+classifiers = []
+requires-python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, <4"
+dependencies = [ "click >= 4.0",]
+
+[[project.authors]]
+name = "Sean Gillies"
+email = "sean@mapbox.com"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "https://github.com/mapbox/cligj"
+
+[project.optional-dependencies]
+test = [ "pytest-cov",]
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+license-files = [ "LICENSE",]
+
+[tool.setuptools.packages.find]
+exclude = [ "ez_setup",]
+namespaces = false

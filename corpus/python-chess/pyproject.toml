@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-chess"
+version = "1.999"
+description = "A chess library with move generation, move validation, and support for common formats."
+keywords = [ "chess", "fen", "epd", "pgn", "polyglot", "syzygy", "gaviota", "uci", "xboard",]
+classifiers = [ "Development Status :: 7 - Inactive",]
+dependencies = [ "chess>=1,<2",]
+
+[[project.authors]]
+name = "Niklas Fiekas"
+email = "niklas.fiekas@backscattering.de"
+
+[project.license]
+text = "GPL-3.0+"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/niklasf/python-chess"
+Documentation = "https://python-chess.readthedocs.io"
+
+[tool.setuptools]
+packages = []
+include-package-data = false

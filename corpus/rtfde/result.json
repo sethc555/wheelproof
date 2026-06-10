@@ -1,0 +1,74 @@
+{
+  "package": "rtfde",
+  "version": "0.1.2.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/9e/5c/116a016b38af589e8141160bc9b034b73dde2e50c22a921751f4d982a7ca/rtfde-0.1.2.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "seamus tuohy"
+      ],
+      [
+        "author-email",
+        "code@seamustuohy.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/seamustuohy/RTFDE"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "seamus tuohy <code@seamustuohy.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/seamustuohy/RTFDE"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "package": "glom",
+  "version": "25.12.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/78/74/8387f95565ba7c30cd152a585b275ebb9a834d1d32782425c5d2fe0a102c/glom-25.12.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Mahmoud Hashemi and Kurt Rose"
+      ],
+      [
+        "author-email",
+        "mahmoud@hatnote.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/mahmoud/glom"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Mahmoud Hashemi and Kurt Rose <mahmoud@hatnote.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/mahmoud/glom"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

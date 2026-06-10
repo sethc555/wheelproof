@@ -1,0 +1,94 @@
+{
+  "package": "numpy-financial",
+  "version": "1.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/0f/4e/6dff3733162d4a96140f0195f3b529c2d56f90d3245c8c1b506913d11f91/numpy-financial-1.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "download-url",
+        "https://pypi.org/project/numpy-financial/"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://numpy.org/numpy-financial/"
+      ],
+      [
+        "maintainer",
+        "Numpy Financial Developers"
+      ],
+      [
+        "maintainer-email",
+        "numpy-discussion@python.org"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "maintainer-email",
+        "Numpy Financial Developers <numpy-discussion@python.org>"
+      ],
+      [
+        "project-url",
+        "Download, https://pypi.org/project/numpy-financial/"
+      ],
+      [
+        "project-url",
+        "Homepage, https://numpy.org/numpy-financial/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

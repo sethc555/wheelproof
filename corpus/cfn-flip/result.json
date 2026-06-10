@@ -1,0 +1,82 @@
+{
+  "package": "cfn-flip",
+  "version": "1.3.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/ca/75/8eba0bb52a6c58e347bc4c839b249d9f42380de93ed12a14eba4355387b4/cfn_flip-1.3.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Steve Engledow"
+      ],
+      [
+        "author-email",
+        "sengledo@amazon.co.uk"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/awslabs/aws-cfn-template-flip"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Steve Engledow <sengledo@amazon.co.uk>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/awslabs/aws-cfn-template-flip"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "pytest-cov; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-runner; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest>=4.3.0; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

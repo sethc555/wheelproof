@@ -1,0 +1,7 @@
+{
+  "package": "inflector",
+  "version": "3.1.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/45/be/21de73919b8c34ffaee6ba3bd3e3bd9b83f684b1ae89db3d3c756daa6c35/Inflector-3.1.1.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-f_x7ib5_/Inflector-3.1.1-converted\n--- stdout ---\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - setuptools>=61.2\n* Getting build dependencies for wheel...\nTraceback (most recent call last):\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_in_process/_in_process.py\", line 389, in <module>\n    main()\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_in_process/_in_pro"
+}

@@ -1,0 +1,24 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ratelim"
+version = "0.1.6"
+description = "Makes it easy to respect rate limits."
+readme = "README.rst"
+dependencies = [ "decorator",]
+
+[[project.authors]]
+name = "Antonio Lima"
+email = "anto87@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "http://github.com/themiurgo/ratelim"
+
+[tool.setuptools]
+packages = [ "ratelim",]
+include-package-data = false

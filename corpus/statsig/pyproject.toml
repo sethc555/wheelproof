@@ -1,0 +1,40 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "statsig"
+version = "0.71.6"
+description = "Statsig Python Server SDK"
+classifiers = [ "Intended Audience :: Developers", "Programming Language :: Python", "Programming Language :: Python :: 3", "Topic :: Software Development :: Libraries",]
+requires-python = ">=3.7"
+dependencies = [ "requests", "ua_parser", "ip3country", "grpcio", "protobuf", "ijson", "typing-extensions", "brotli",]
+
+[[project.authors]]
+name = "Tore Hanssen"
+email = "tore@statsig.com"
+
+[[project.authors]]
+name = "Jiakan Wang"
+email = "jkw@statsig.com"
+
+[project.license]
+text = "ISC"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/statsig-io/python-sdk"
+
+[project.optional-dependencies]
+test = [ "requests", "user_agents", "semver",]
+testing = [ "requests", "user_agents", "semver",]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = [ "statsig", "statsig.grpc", "statsig.grpc.generated",]
+namespaces = false

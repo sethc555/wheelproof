@@ -1,0 +1,78 @@
+{
+  "package": "cobble",
+  "version": "0.1.4",
+  "sdist_url": "https://files.pythonhosted.org/packages/54/7a/a507c709be2c96e1bb6102eb7b7f4026c5e5e223ef7d745a17d239e9d844/cobble-0.1.4.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Michael Williamson"
+      ],
+      [
+        "author-email",
+        "mike@zwobble.org"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://github.com/mwilliamson/python-cobble"
+      ],
+      [
+        "keywords",
+        "data object case class"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Michael Williamson <mike@zwobble.org>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "data,object,case,class"
+      ],
+      [
+        "project-url",
+        "Homepage, http://github.com/mwilliamson/python-cobble"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jinja2-ansible-filters"
+description = "A port of Ansible's jinja2 filters without requiring ansible core."
+dynamic = [ "readme", "version",]
+dependencies = [ "Jinja2", "PyYAML",]
+
+[[project.authors]]
+name = "Nick Shobe"
+email = "nickshobe@gmail.com"
+
+[project.license]
+text = "GPL3"
+
+[project.urls]
+Homepage = "https://gitlab.com/dreamer-labs/libraries/jinja2-ansible-filters"
+
+[project.optional-dependencies]
+test = [ "pytest", "pytest-cov",]
+
+[tool.setuptools]
+include-package-data = true
+license-files = [ "LICENSE",]
+
+[tool.setuptools.packages.find]
+namespaces = false
+
+[tool.setuptools.dynamic.readme]
+file = [ "README.md", "CHANGELOG.md", "LICENSE",]
+content-type = "text/markdown"
+
+[tool.setuptools.dynamic.version]
+file = [ "VERSION",]

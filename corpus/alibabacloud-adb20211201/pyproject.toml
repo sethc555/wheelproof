@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "alibabacloud_adb20211201"
+version = "3.7.1"
+description = "Alibaba Cloud adb (20211201) SDK Library for Python"
+keywords = [ "alibabacloud", "adb20211201",]
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Topic :: Software Development",]
+requires-python = ">=3.7"
+dependencies = [ "darabonba-core>=1.0.0, <2.0.0", "alibabacloud_tea_openapi>=0.4.1, <1.0.0",]
+
+[[project.authors]]
+name = "Alibaba Cloud SDK"
+email = "sdk-team@alibabacloud.com"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/aliyun/alibabacloud-python-sdk"
+
+[tool.setuptools]
+include-package-data = true
+platforms = [ "any",]
+license-files = [ "LICENSE",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests*",]
+namespaces = false

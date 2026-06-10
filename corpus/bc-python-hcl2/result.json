@@ -1,0 +1,78 @@
+{
+  "package": "bc-python-hcl2",
+  "version": "0.4.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/60/43/8ee6ea8a19952045c15e6c9b164a9f88c2575b4bb86655c6da861b874986/bc_python_hcl2-0.4.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "bridgecrew"
+      ],
+      [
+        "author-email",
+        "meet@bridgecrew.io"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/bridgecrewio/python-hcl2"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "bridgecrew <meet@bridgecrew.io>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/bridgecrewio/python-hcl2"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "package": "scalar-fastapi",
+  "version": "1.8.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/cc/81/c0c70776a3d7d371ee06d38d26a8d361c97439d46f79acb6d67cf6c760ad/scalar_fastapi-1.8.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Scalar"
+      ],
+      [
+        "author-email",
+        "support@scalar.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/scalar/scalar"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Scalar <support@scalar.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/scalar/scalar"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

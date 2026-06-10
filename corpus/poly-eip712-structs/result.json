@@ -1,0 +1,94 @@
+{
+  "package": "poly-eip712-structs",
+  "version": "0.0.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/39/18/9fc1be6ac78bff14f56b88dedd019b2a669a5ff570cc40f055dccef294fe/poly_eip712_structs-0.0.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Polymarket Engineering"
+      ],
+      [
+        "author-email",
+        "engineering@polymarket.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/Polymarket/poly-py-eip712-structs"
+      ],
+      [
+        "maintainer",
+        "Polymarket Engineering"
+      ],
+      [
+        "maintainer-email",
+        "engineering@polymarket.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Polymarket Engineering <engineering@polymarket.com>"
+      ],
+      [
+        "maintainer-email",
+        "Polymarket Engineering <engineering@polymarket.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Polymarket/poly-py-eip712-structs"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

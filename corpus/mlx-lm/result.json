@@ -1,0 +1,74 @@
+{
+  "package": "mlx-lm",
+  "version": "0.31.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/84/94/9a38d6b0c6fcca995b9136c94eb7da1e9c5165652edf228b96b29960fa7a/mlx_lm-0.31.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "MLX Contributors"
+      ],
+      [
+        "author-email",
+        "mlx@group.apple.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/ml-explore/mlx-lm"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "MLX Contributors <mlx@group.apple.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/ml-explore/mlx-lm"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

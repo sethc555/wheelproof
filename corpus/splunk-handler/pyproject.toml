@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "splunk_handler"
+version = "3.0.0"
+description = "A Python logging handler that sends your logs to Splunk"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Natural Language :: English", "Operating System :: POSIX :: Linux", "Operating System :: MacOS :: MacOS X", "Programming Language :: Python", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Topic :: System :: Logging",]
+dependencies = [ "requests >= 2.6.0, < 3.0.0",]
+
+[[project.authors]]
+name = "Zach Taylor"
+email = "ztaylor234@gmail.com"
+
+[project.license]
+text = "MIT License"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/zach-taylor/splunk_handler"
+
+[tool.setuptools]
+packages = [ "splunk_handler",]
+include-package-data = false

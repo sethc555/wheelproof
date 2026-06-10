@@ -1,0 +1,7 @@
+{
+  "package": "vobject",
+  "version": "0.9.9",
+  "sdist_url": "https://files.pythonhosted.org/packages/d0/8a/15c34b3d27c43fc81a467d0f66577afc5542326804c42f30557e31c3259e/vobject-0.9.9.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-u3oy3kxm/vobject-0.9.9\n--- stdout ---\nNo `name` configuration, performing automatic discovery\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - setuptools >= 40.8.0\n* Getting build dependencies for wheel...\n/tmp/build-env-_5mpk8pq/lib/python3.12/site-packages/setuptools/_distutils/dist.py:287: UserWarning: Unknown distribution option: 'test_suite'\n  warnings.warn(msg)\nTraceback (most recent c"
+}

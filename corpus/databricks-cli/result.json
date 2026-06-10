@@ -1,0 +1,12 @@
+{
+  "package": "databricks-cli",
+  "version": "0.18.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/c7/6c/ee7a98f22ba6e4d39cdf7f3a7cd9461fcc562625ccbca58d94bf35fe598b/databricks-cli-0.18.0.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": true
+  }
+}

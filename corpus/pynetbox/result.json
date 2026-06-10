@@ -1,0 +1,24 @@
+{
+  "package": "pynetbox",
+  "version": "7.7.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/f7/99/dd840cd6a09956b2f762319e9c88c6afcd58b8094a127c7bd0e7017caca1/pynetbox-7.7.0.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [],
+    "payload_only_converted": [
+      "tests/unit/__init__.py",
+      "tests/unit/test_detailendpoint.py",
+      "tests/unit/test_endpoint.py",
+      "tests/unit/test_endpoint_strict_filter.py",
+      "tests/unit/test_extras.py",
+      "tests/unit/test_file_upload.py",
+      "tests/unit/test_mapper.py",
+      "tests/unit/test_multiformat_endpoint.py",
+      "tests/unit/test_query.py",
+      "tests/unit/test_request.py",
+      "tests/unit/test_response.py"
+    ],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

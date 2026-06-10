@@ -1,0 +1,60 @@
+{
+  "package": "glob2",
+  "version": "0.7",
+  "sdist_url": "https://files.pythonhosted.org/packages/d7/a5/bbbc3b74a94fbdbd7915e7ad030f16539bfdc1362f7e9003b594f0537950/glob2-0.7.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Michael Elsdoerfer"
+      ],
+      [
+        "author-email",
+        "michael@elsdoerfer.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://github.com/miracle2k/python-glob2/"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Michael Elsdoerfer <michael@elsdoerfer.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, http://github.com/miracle2k/python-glob2/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

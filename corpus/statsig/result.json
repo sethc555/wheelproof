@@ -1,0 +1,94 @@
+{
+  "package": "statsig",
+  "version": "0.71.6",
+  "sdist_url": "https://files.pythonhosted.org/packages/93/25/1ef1f50faaf2fe7261a58088edf55f2b40ed643f21de388828bb7eb0ae5a/statsig-0.71.6.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Tore Hanssen, Jiakan Wang"
+      ],
+      [
+        "author-email",
+        "tore@statsig.com, jkw@statsig.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/statsig-io/python-sdk"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Tore Hanssen <tore@statsig.com>, Jiakan Wang <jkw@statsig.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/statsig-io/python-sdk"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "requests; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "semver; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "user_agents; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

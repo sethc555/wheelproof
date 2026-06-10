@@ -1,0 +1,74 @@
+{
+  "package": "ip3country",
+  "version": "0.4.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/d3/1b/92701b05338dc85fbff31921edc8f8314a4fa37e5066f1716ab55df65f5c/ip3country-0.4.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Statsig"
+      ],
+      [
+        "author-email",
+        "tore@statsig.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/statsig-io/ip3country-py"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Statsig <tore@statsig.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/statsig-io/ip3country-py"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

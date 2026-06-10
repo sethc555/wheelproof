@@ -1,0 +1,82 @@
+{
+  "package": "langdetect",
+  "version": "1.0.9",
+  "sdist_url": "https://files.pythonhosted.org/packages/0e/72/a3add0e4eec4eb9e2569554f7c70f4a3c27712f40e3284d483e88094cc0e/langdetect-1.0.9.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Michal Mimino Danilak"
+      ],
+      [
+        "author-email",
+        "michal.danilak@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/Mimino666/langdetect"
+      ],
+      [
+        "keywords",
+        "language detection library"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Michal Mimino Danilak <michal.danilak@gmail.com>"
+      ],
+      [
+        "keywords",
+        "language,detection,library"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Mimino666/langdetect"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

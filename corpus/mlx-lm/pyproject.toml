@@ -1,0 +1,56 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mlx-lm"
+version = "0.31.3"
+description = "LLMs with MLX and the Hugging Face Hub"
+requires-python = ">=3.8"
+dependencies = [ "mlx>=0.31.2; platform_system == 'Darwin'", "numpy", "transformers>=5.0.0", "sentencepiece", "protobuf", "pyyaml", "jinja2",]
+
+[[project.authors]]
+name = "MLX Contributors"
+email = "mlx@group.apple.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/ml-explore/mlx-lm"
+
+[project.optional-dependencies]
+test = [ "datasets", "lm-eval",]
+train = [ "datasets", "tqdm",]
+evaluate = [ "lm-eval", "tqdm",]
+cuda13 = [ "mlx[cuda13]>=0.31.2",]
+cuda12 = [ "mlx[cuda12]>=0.31.2",]
+cpu = [ "mlx[cpu]>=0.31.2",]
+
+[project.scripts]
+mlx_lm = "mlx_lm.cli:main"
+"mlx_lm.awq" = "mlx_lm.quant.awq:main"
+"mlx_lm.dwq" = "mlx_lm.quant.dwq:main"
+"mlx_lm.dynamic_quant" = "mlx_lm.quant.dynamic_quant:main"
+"mlx_lm.gptq" = "mlx_lm.quant.gptq:main"
+"mlx_lm.benchmark" = "mlx_lm.benchmark:main"
+"mlx_lm.cache_prompt" = "mlx_lm.cache_prompt:main"
+"mlx_lm.chat" = "mlx_lm.chat:main"
+"mlx_lm.convert" = "mlx_lm.convert:main"
+"mlx_lm.evaluate" = "mlx_lm.evaluate:main"
+"mlx_lm.fuse" = "mlx_lm.fuse:main"
+"mlx_lm.generate" = "mlx_lm.generate:main"
+"mlx_lm.lora" = "mlx_lm.lora:main"
+"mlx_lm.perplexity" = "mlx_lm.perplexity:main"
+"mlx_lm.server" = "mlx_lm.server:main"
+"mlx_lm.share" = "mlx_lm.share:main"
+"mlx_lm.manage" = "mlx_lm.manage:main"
+"mlx_lm.upload" = "mlx_lm.upload:main"
+
+[tool.setuptools]
+packages = [ "mlx_lm", "mlx_lm.models", "mlx_lm.quant", "mlx_lm.tuner", "mlx_lm.tool_parsers", "mlx_lm.chat_templates",]
+include-package-data = false

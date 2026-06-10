@@ -1,0 +1,34 @@
+{
+  "package": "opentelemetry-resourcedetector-gcp",
+  "version": "1.12.0a0",
+  "sdist_url": "https://files.pythonhosted.org/packages/21/ae/b62c5e986c9c7f908a15682ea173bcfcdc00403c0c85243ccbd30eca7fc2/opentelemetry_resourcedetector_gcp-1.12.0a0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Google"
+      ],
+      [
+        "author-email",
+        "opentelemetry-pypi@google.com"
+      ],
+      [
+        "home-page",
+        "https://github.com/GoogleCloudPlatform/opentelemetry-operations-python/tree/main/opentelemetry-resourcedetector-gcp"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Google <opentelemetry-pypi@google.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/GoogleCloudPlatform/opentelemetry-operations-python/tree/main/opentelemetry-resourcedetector-gcp"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

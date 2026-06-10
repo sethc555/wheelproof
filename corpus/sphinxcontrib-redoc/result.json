@@ -1,0 +1,7 @@
+{
+  "package": "sphinxcontrib-redoc",
+  "version": "1.6.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/6d/73/872189269380d0271d575771986db8a77f06bc4565c1a971bebd54f38d2c/sphinxcontrib-redoc-1.6.0.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-86k4k747/sphinxcontrib-redoc-1.6.0-converted\n--- stdout ---\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - setuptools>=61.2\n  - setuptools_scm\n* Getting build dependencies for wheel...\ntoml section missing PosixPath('pyproject.toml') does not contain any of the tool sections: ['setuptools_scm', 'vcs-versioning']\n/tmp/build-env-6kidy3mt/lib/python3.12/site-packages/setuptools/config/_apply_"
+}

@@ -1,0 +1,7 @@
+{
+  "package": "yfinance",
+  "version": "1.4.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/6f/d2/941eea19644200c3f82e1be35a1faa94f1149760a0b6f43e3633bfa052d5/yfinance-1.4.1.tar.gz",
+  "status": "convert-error",
+  "detail": "unexpected: cal/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1064, in _read\n    raise MissingSectionHeaderError(fpname, lineno, line)\nconfigparser.MissingSectionHeaderError: File contains no section headers.\nfile: '<string>', line: 2\n'NOTE: yfinance is not affiliated, endorsed, or vetted by Yahoo, Inc.\\n'\n"
+}

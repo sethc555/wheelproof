@@ -1,0 +1,54 @@
+{
+  "package": "geopy",
+  "version": "2.4.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/0e/fd/ef6d53875ceab72c1fad22dbed5ec1ad04eb378c2251a6a8024bad890c3b/geopy-2.4.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "download-url",
+        "https://github.com/geopy/geopy/archive/2.4.1.tar.gz"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "home-page",
+        "https://github.com/geopy/geopy"
+      ],
+      [
+        "maintainer",
+        "Kostya Esmukov"
+      ],
+      [
+        "maintainer-email",
+        "kostya@esmukov.net"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "maintainer-email",
+        "Kostya Esmukov <kostya@esmukov.net>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/geopy/geopy/archive/2.4.1.tar.gz"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/geopy/geopy"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

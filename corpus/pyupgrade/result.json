@@ -1,0 +1,36 @@
+{
+  "package": "pyupgrade",
+  "version": "3.21.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/7f/a1/dc63caaeed232b1c58eae1b7a75f262d64ab8435882f696ffa9b58c0c415/pyupgrade-3.21.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Anthony Sottile"
+      ],
+      [
+        "author-email",
+        "asottile@umich.edu"
+      ],
+      [
+        "home-page",
+        "https://github.com/asottile/pyupgrade"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Anthony Sottile <asottile@umich.edu>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/asottile/pyupgrade"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

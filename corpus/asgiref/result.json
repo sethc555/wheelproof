@@ -1,0 +1,38 @@
+{
+  "package": "asgiref",
+  "version": "3.11.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/63/40/f03da1264ae8f7cfdbf9146542e5e7e8100a4c66ab48e791df9a03d3f6c0/asgiref-3.11.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Django Software Foundation"
+      ],
+      [
+        "author-email",
+        "foundation@djangoproject.com"
+      ],
+      [
+        "home-page",
+        "https://github.com/django/asgiref/"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Django Software Foundation <foundation@djangoproject.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/django/asgiref/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

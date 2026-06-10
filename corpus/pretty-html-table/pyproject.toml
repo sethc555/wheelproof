@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pretty_html_table"
+version = "0.9.16"
+description = "Make pandas dataframe looking pretty again"
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+dependencies = [ "pandas",]
+
+[[project.authors]]
+name = "Renaud Viot"
+email = "renaud.viot@simply-bi.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/sbi-rviot/ph_table"
+
+[tool.setuptools]
+packages = [ "pretty_html_table",]
+include-package-data = false

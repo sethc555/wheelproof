@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "boolean.py"
+version = "5.0"
+description = "Define boolean algebras, create and parse boolean expressions and create custom boolean DSL."
+keywords = [ "boolean", "expression", "boolean", "algebra", "logic", "expression", "parser",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Topic :: Scientific/Engineering :: Mathematics", "Topic :: Software Development :: Compilers", "Topic :: Software Development :: Libraries", "Topic :: Utilities",]
+
+[[project.authors]]
+name = "Sebastian Kraemer"
+email = "basti.kr@gmail.com"
+
+[project.license]
+text = "BSD-2-Clause"
+
+[project.readme]
+text = "This library helps you deal with boolean expressions and algebra with variables\nand the boolean functions AND, OR, NOT.\n\nYou can parse expressions from strings and simplify and compare expressions.\nYou can also easily create your custom algreba and mini DSL and create custom\ntokenizers to handle custom expressions.\n\nFor extensive documentation look either into the docs directory or view it online, at\nhttps://booleanpy.readthedocs.org/en/latest/\n\nhttps://github.com/bastikr/boolean.py\n\nCopyright (c) 2009-2020 Sebastian Kraemer, basti.kr@gmail.com and others\nSPDX-License-Identifier: BSD-2-Clause"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/bastikr/boolean.py"
+
+[project.optional-dependencies]
+testing = [ "pytest >= 6, != 7.0.0", "pytest-xdist >= 2",]
+dev = [ "twine", "build",]
+linting = [ "black", "isort", "pycodestyle",]
+docs = [ "Sphinx >= 3.3.1", "sphinx-rtd-theme >= 0.5.0", "doc8 >= 0.8.1", "sphinxcontrib-apidoc >= 0.3.0",]
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+license-files = [ "LICENSE.txt", "README.rst", "CHANGELOG.rst",]
+
+[tool.setuptools.packages.find]
+namespaces = false

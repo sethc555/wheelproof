@@ -1,0 +1,86 @@
+{
+  "package": "vertica-python",
+  "version": "1.4.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/29/25/a86f25e00bfeccf0cf22ac9a727d055d061d49e757dabadc37710f9b567c/vertica-python-1.4.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Justin Berka, Alex Kim, Siting Ren"
+      ],
+      [
+        "author-email",
+        "justin.berka@gmail.com, alex.kim@uber.com, sitingren@hotmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/vertica/vertica-python"
+      ],
+      [
+        "keywords",
+        "database vertica"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Justin Berka <justin.berka@gmail.com>, Alex Kim <alex.kim@uber.com>, Siting Ren <sitingren@hotmail.com>"
+      ],
+      [
+        "keywords",
+        "database,vertica"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/vertica/vertica-python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

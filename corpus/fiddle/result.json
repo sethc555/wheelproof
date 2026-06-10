@@ -1,0 +1,94 @@
+{
+  "package": "fiddle",
+  "version": "0.3.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/73/36/7a4fac76351619b36bbc7937abf59f7b601326dc4efc253b3c16819f782a/fiddle-0.3.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "The Fiddle Team"
+      ],
+      [
+        "author-email",
+        "noreply@google.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/google/fiddle"
+      ],
+      [
+        "keywords",
+        "fiddle python configuration machine learning"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "The Fiddle Team <noreply@google.com>"
+      ],
+      [
+        "keywords",
+        "fiddle,python,configuration,machine,learning"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/google/fiddle"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
+}

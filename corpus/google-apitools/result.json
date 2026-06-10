@@ -1,0 +1,7 @@
+{
+  "package": "google-apitools",
+  "version": "0.5.35",
+  "sdist_url": "https://files.pythonhosted.org/packages/f5/e4/15fbddfffa968e10c602a30b7ca4703f3e41d2dbdef011e98eee85575133/google-apitools-0.5.35.tar.gz",
+  "status": "convert-error",
+  "detail": "unexpected: _string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1096, in _read\n    raise e\nconfigparser.ParsingError: Source contains parsing errors: '<string>'\n\t[line 61]: ' =\\n'\n\t[line 62]: '    *_test.py\\n'\n\t[line 63]: '    */testing/*\\n'\n\t[line 64]: '    */testdata/*\\n'\n\t[line 65]: '    base/protorpclite/test_util.py\\n'\n\t[line 66]: '    gen/test_utils.py\\n'\n"
+}

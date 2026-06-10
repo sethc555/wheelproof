@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "primePy"
+version = "1.3"
+description = "This module contains several useful functions to work with prime numbers. from primePy import primes"
+keywords = [ "fast", "prime", "facorization", "Eular phi", "prime check",]
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+
+[[project.authors]]
+name = "Indrajit Jana"
+email = "ijana@temple.edu"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/janaindrajit/primePy"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

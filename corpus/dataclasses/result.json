@@ -1,0 +1,7 @@
+{
+  "package": "dataclasses",
+  "version": "0.8",
+  "sdist_url": "https://files.pythonhosted.org/packages/1f/12/7919c5d8b9c497f9180db15ea8ead6499812ea8264a6ae18766d93c59fe5/dataclasses-0.8.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-n6juhnxv/dataclasses-0.8-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 5, in <module>\n    from setuptools_py2cfg import main\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 7, in <module>\n    import setuptools\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools/__init__.py\", line 26, in <module>\n    from .dist import Distribution\n  File "
+}

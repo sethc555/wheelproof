@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "RTFDE"
+version = "0.1.2.2"
+description = "A library for extracting HTML content from RTF encapsulated HTML as commonly found in the exchange MSG email format."
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)", "Operating System :: OS Independent", "Topic :: Text Processing :: Markup :: HTML", "Intended Audience :: Developers", "Topic :: Text Processing :: Filters", "Topic :: Communications :: Email :: Filters",]
+requires-python = ">=3.8"
+dependencies = [ "lark~=1.3.0", "oletools>=0.56",]
+
+[[project.authors]]
+name = "seamus tuohy"
+email = "code@seamustuohy.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/seamustuohy/RTFDE"
+
+[project.optional-dependencies]
+msg_parse = [ "extract_msg~=0.27",]
+dev = [ "lxml~=6.0", "mypy~=1.1", "pdoc3~=0.10.0", "coverage~=7.2.2",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "tests*",]
+namespaces = false

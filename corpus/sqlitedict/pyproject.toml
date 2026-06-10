@@ -1,0 +1,43 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlitedict"
+version = "2.1.0"
+description = "Persistent dict in Python, backed up by sqlite3 and pickle, multithread-safe."
+keywords = [ "sqlite", "persistent", "dict", "multithreaded",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Topic :: Database :: Front-Ends",]
+
+[[project.authors]]
+name = "Radim Rehurek"
+email = "me@radimrehurek.com"
+
+[[project.authors]]
+name = "Victor R. Escobar"
+
+[[project.authors]]
+name = "Andrey Usov"
+
+[[project.authors]]
+name = "Prasanna Swaminathan"
+
+[[project.authors]]
+name = "Jeff Quast"
+
+[[project.maintainers]]
+name = "Radim Rehurek"
+email = "me@radimrehurek.com"
+
+[project.license]
+text = "Apache 2.0"
+
+[project.urls]
+Homepage = "https://github.com/piskvorky/sqlitedict"
+Download = "http://pypi.python.org/pypi/sqlitedict"
+
+[tool.setuptools]
+py-modules = [ "sqlitedict",]
+platforms = [ "any",]
+include-package-data = false

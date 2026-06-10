@@ -1,0 +1,86 @@
+{
+  "package": "formic2",
+  "version": "1.0.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/da/64/ac788d2757dcc9a20a7662da53ec51e1cce4b4400be55716e0bd4f30ec7b/formic2-1.0.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Aviser LLP, Singapore; wolfhong"
+      ],
+      [
+        "author-email",
+        "hongxucai1991@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/wolfhong/formic"
+      ],
+      [
+        "requires-python",
+        ">=2.6, <4"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author",
+        "Singapore"
+      ],
+      [
+        "author-email",
+        "Aviser LLP <hongxucai1991@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/wolfhong/formic"
+      ],
+      [
+        "requires-python",
+        "<4,>=2.6"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

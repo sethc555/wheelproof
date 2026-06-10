@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pytest-runner",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyte"
+version = "0.8.2"
+description = "Simple VTXXX-compatible terminal emulator."
+keywords = [ "vt102", "vte", "terminal emulator",]
+readme = "README"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Intended Audience :: Developers", "Operating System :: OS Independent", "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Terminals :: Terminal Emulators/X Terminals",]
+requires-python = ">=3.8"
+dependencies = [ "wcwidth",]
+
+[[project.authors]]
+name = "Sergei Lebedev"
+email = "superbobry@gmail.com"
+
+[project.urls]
+Homepage = "https://github.com/selectel/pyte"
+
+[project.optional-dependencies]
+testing = [ "pytest",]
+
+[tool.setuptools]
+packages = [ "pyte",]
+platforms = [ "any",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+pyte = [ "py.typed",]

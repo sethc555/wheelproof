@@ -1,0 +1,74 @@
+{
+  "package": "torch-ema",
+  "version": "0.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/45/af/db7d0c8b26a13062d9b85bdcf8d977acd8a51057fb6edca9eb30613ef5ef/torch_ema-0.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Samuel G. Fadel"
+      ],
+      [
+        "author-email",
+        "samuelfadel@gmail.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/fadel/pytorch_ema/archive/0.3.tar.gz"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/fadel/pytorch_ema"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "\"Samuel G. Fadel\" <samuelfadel@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/fadel/pytorch_ema/archive/0.3.tar.gz"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/fadel/pytorch_ema"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

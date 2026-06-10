@@ -1,0 +1,86 @@
+{
+  "package": "prometheus-flask-exporter",
+  "version": "0.23.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/8f/40/736bd2cb19b065cea395deb57b5b520a2df105dab92af3fb200ee560ad92/prometheus_flask_exporter-0.23.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Viktor Adam"
+      ],
+      [
+        "author-email",
+        "rycus86@gmail.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/rycus86/prometheus_flask_exporter/archive/0.23.2.tar.gz"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/rycus86/prometheus_flask_exporter"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Viktor Adam <rycus86@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/rycus86/prometheus_flask_exporter/archive/0.23.2.tar.gz"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/rycus86/prometheus_flask_exporter"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "package": "google-cloud-storage-transfer",
+  "version": "1.21.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/c6/77/ecb60a7358737c4ea39010332829eac034bce4c00394ec9f8d0505dc9b49/google_cloud_storage_transfer-1.21.0.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-xyjz4u0t/google_cloud_storage_transfer-1.21.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _"
+}

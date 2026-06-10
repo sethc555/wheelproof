@@ -1,0 +1,43 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snapshottest"
+version = "0.6.0"
+description = "Snapshot testing for pytest, unittest, Django, and Nose"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Framework :: Pytest", "Intended Audience :: Developers", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Topic :: Software Development :: Libraries",]
+dependencies = [ "six>=1.10.0", "termcolor", "fastdiff>=0.1.4,<1",]
+
+[[project.authors]]
+name = "Syrus Akbary"
+email = "me@syrusakbary.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/syrusakbary/snapshottest"
+
+[project.optional-dependencies]
+test = [ "six", "pytest>=4.6", "pytest-cov", "nose", "django>=1.10.6",]
+pytest = [ "pytest",]
+nose = [ "nose",]
+testing = [ "six", "pytest>=4.6", "pytest-cov", "nose", "django>=1.10.6",]
+
+[tool.setuptools]
+include-package-data = false
+
+[project.entry-points.pytest11]
+snapshottest = "snapshottest.pytest"
+
+[project.entry-points."nose.plugins.0.10"]
+snapshottest = "snapshottest.nose:SnapshotTestPlugin"
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

@@ -1,0 +1,82 @@
+{
+  "package": "jaydebeapi",
+  "version": "1.2.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/5c/8c/f27750106bf1fba33f92d83fb866af164179f7046495bc5a61fae26d9475/JayDeBeApi-1.2.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Bastian Bowe"
+      ],
+      [
+        "author-email",
+        "bastian.dev@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/baztian/jaydebeapi"
+      ],
+      [
+        "keywords",
+        "db api java jdbc bridge connect sql jpype jython"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Bastian Bowe <bastian.dev@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "db,api,java,jdbc,bridge,connect,sql,jpype,jython"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/baztian/jaydebeapi"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

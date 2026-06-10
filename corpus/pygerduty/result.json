@@ -1,0 +1,114 @@
+{
+  "package": "pygerduty",
+  "version": "0.38.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/4d/b3/c37eab00572848f3aa88b9f9e35a0c07b20eb65946c8bfcfd51a9f5faa10/pygerduty-0.38.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Mike Cugini"
+      ],
+      [
+        "author-email",
+        "cugini@dropbox.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/dropbox/pygerduty/archive/master.tar.gz"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/dropbox/pygerduty"
+      ],
+      [
+        "maintainer",
+        "Mike Cugini"
+      ],
+      [
+        "maintainer-email",
+        "cugini@dropbox.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Mike Cugini <cugini@dropbox.com>"
+      ],
+      [
+        "maintainer-email",
+        "Mike Cugini <cugini@dropbox.com>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/dropbox/pygerduty/archive/master.tar.gz"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/dropbox/pygerduty"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "httpretty<1; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pyparsing<3; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest<5.0,>=3.0; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "zipp<2; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

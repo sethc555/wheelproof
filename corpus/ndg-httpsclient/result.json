@@ -1,0 +1,82 @@
+{
+  "package": "ndg-httpsclient",
+  "version": "0.5.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/b9/f8/8f49278581cb848fb710a362bfc3028262a82044167684fb64ad068dbf92/ndg_httpsclient-0.5.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Richard Wilkinson and Philip Kershaw"
+      ],
+      [
+        "author-email",
+        "Philip.Kershaw@stfc.ac.uk"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/cedadev/ndg_httpsclient/"
+      ],
+      [
+        "requires-python",
+        ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Richard Wilkinson and Philip Kershaw <Philip.Kershaw@stfc.ac.uk>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/cedadev/ndg_httpsclient/"
+      ],
+      [
+        "requires-python",
+        "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

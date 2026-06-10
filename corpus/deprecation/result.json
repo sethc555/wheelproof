@@ -1,0 +1,100 @@
+{
+  "package": "deprecation",
+  "version": "2.1.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/5a/d3/8ae2869247df154b64c1884d7346d412fed0c49df84db635aab2d1c40e62/deprecation-2.1.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Brian Curtin"
+      ],
+      [
+        "author-email",
+        "brian@python.org"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://deprecation.readthedocs.io/"
+      ],
+      [
+        "maintainer",
+        "Brian Curtin"
+      ],
+      [
+        "maintainer-email",
+        "brian@python.org"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Brian Curtin <brian@python.org>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "maintainer-email",
+        "Brian Curtin <brian@python.org>"
+      ],
+      [
+        "project-url",
+        "Homepage, http://deprecation.readthedocs.io/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "package": "dpath",
+  "version": "2.2.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/b5/ce/e1fd64d36e4a5717bd5e6b2ad188f5eaa2e902fde871ea73a79875793fc9/dpath-2.2.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Caleb Case, Andrew Kesterson"
+      ],
+      [
+        "author-email",
+        "calebcase@gmail.com, andrew@aklabs.net"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/dpath-maintainers/dpath-python"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Caleb Case <calebcase@gmail.com>, Andrew Kesterson <andrew@aklabs.net>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/dpath-maintainers/dpath-python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

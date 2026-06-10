@@ -1,0 +1,7 @@
+{
+  "package": "folium",
+  "version": "0.20.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/c7/76/84a1b1b00ce71f9c0c44af7d80f310c02e2e583591fe7d4cb03baecd0d3f/folium-0.20.0.tar.gz",
+  "status": "convert-error",
+  "detail": "unexpected: le\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1096, in _read\n    raise e\nconfigparser.ParsingError: Source contains parsing errors: '<string>'\n\t[line 52]: ' =\\n'\n\t[line 53]: '    *.js\\n'\n\t[line 54]: '    plugins/*.js\\n'\n\t[line 55]: '    plugins/*.html\\n'\n\t[line 56]: '    plugins/*.css\\n'\n\t[line 57]: '    plugins/*.tpl\\n'\n\t[line 58]: '    templates/*.html\\n'\n\t[line 59]: '    templates/*.js\\n'\n\t[line 60]: '    templates/*.txt\\n'\n\t[line 61]: '    py.typed\\n'\n"
+}

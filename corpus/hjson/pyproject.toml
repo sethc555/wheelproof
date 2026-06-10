@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hjson"
+version = "3.1.0"
+description = "Hjson, a user interface for JSON."
+keywords = [ "json", "comments", "configuration",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "License :: OSI Approved :: Academic Free License (AFL)", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Software Development :: Libraries :: Python Modules",]
+
+[[project.authors]]
+name = "Christian Zangl"
+email = "laktak@cdak.net"
+
+[project.license]
+text = "MIT License"
+
+[project.urls]
+Homepage = "http://github.com/hjson/hjson-py"
+
+[project.scripts]
+hjson = "hjson.tool:main"
+
+[tool.setuptools]
+packages = [ "hjson", "hjson.tests",]
+platforms = [ "any",]
+include-package-data = false

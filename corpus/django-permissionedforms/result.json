@@ -1,0 +1,80 @@
+{
+  "package": "django-permissionedforms",
+  "version": "0.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/94/4b/364fe61a161ead607dc6af311901ba8e62f537f8fdab94b5252cb6efe6d7/django-permissionedforms-0.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Matthew Westcott"
+      ],
+      [
+        "author-email",
+        "matthew.westcott@torchbox.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/wagtail/django-permissionedforms"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Matthew Westcott <matthew.westcott@torchbox.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/wagtail/django-permissionedforms"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

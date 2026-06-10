@@ -1,0 +1,84 @@
+{
+  "package": "texttable",
+  "version": "1.7.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/1c/dc/0aff23d6036a4d3bf4f1d8c8204c5c79c4437e25e0ae94ffe4bbb55ee3c2/texttable-1.7.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Gerome Fournier"
+      ],
+      [
+        "author-email",
+        "jef@foutaise.org"
+      ],
+      [
+        "download-url",
+        "https://github.com/foutaise/texttable/archive/v1.7.0.tar.gz"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/foutaise/texttable/"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Gerome Fournier <jef@foutaise.org>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/foutaise/texttable/archive/v1.7.0.tar.gz"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/foutaise/texttable/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

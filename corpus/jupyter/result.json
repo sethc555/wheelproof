@@ -1,0 +1,72 @@
+{
+  "package": "jupyter",
+  "version": "1.1.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/58/f3/af28ea964ab8bc1e472dba2e82627d36d470c51f5cd38c37502eeffaa25e/jupyter-1.1.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Jupyter Development Team"
+      ],
+      [
+        "author-email",
+        "jupyter@googlegroups.org"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://jupyter.org"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Jupyter Development Team <jupyter@googlegroups.org>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://jupyter.org"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

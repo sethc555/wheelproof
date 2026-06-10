@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "darabonba_core"
+version = "1.0.6"
+description = "The darabonba module of alibabaCloud Python SDK."
+keywords = [ "alibabacloud", "sdk", "darabonba",]
+readme = "README.md"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Topic :: Software Development",]
+requires-python = ">=3.7"
+dependencies = [ "alibabacloud-tea", "requests>=2.21.0, <3.0.0", "aiohttp>=3.7.0, <4.0.0",]
+
+[[project.authors]]
+name = "Alibaba Cloud"
+email = "alibaba-cloud-sdk-dev-team@list.alibaba-inc.com"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.urls]
+Homepage = "https://github.com/aliyun/tea-python"
+
+[tool.setuptools]
+platforms = [ "any",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "tests*",]
+namespaces = false

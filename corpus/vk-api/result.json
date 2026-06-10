@@ -1,0 +1,86 @@
+{
+  "package": "vk-api",
+  "version": "11.10.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/1d/19/1c2733571bb38f8846d6048eb6c756b7651960c73561741ccdb41f6c31bf/vk_api-11.10.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "python273"
+      ],
+      [
+        "author-email",
+        "vk_api@python273.pw"
+      ],
+      [
+        "download-url",
+        "https://github.com/python273/vk_api/archive/v11.10.0.zip"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/python273/vk_api"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "python273 <vk_api@python273.pw>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/python273/vk_api/archive/v11.10.0.zip"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/python273/vk_api"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

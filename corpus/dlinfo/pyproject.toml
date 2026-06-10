@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2", "setuptools_scm",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dlinfo"
+description = "Python wrapper for libc's dlinfo and dyld_find on Mac"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Operating System :: MacOS :: MacOS X", "Operating System :: POSIX :: Linux",]
+requires-python = ">=3.9"
+dynamic = [ "version",]
+
+[[project.maintainers]]
+name = "Fabian Peter Hammerle"
+email = "fabian.dlinfo@hammerle.me"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/fphammerle/python-dlinfo"
+
+[project.optional-dependencies]
+testing = [ "pytest",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

@@ -1,0 +1,34 @@
+[build-system]
+requires = [ "setuptools>=61.2", "setuptools_scm",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "logzio-python-handler"
+description = "Logging handler to send logs to your Logz.io account with bulk SSL"
+keywords = [ "logging", "handler", "logz.io", "bulk", "https",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Programming Language :: Python :: 3.9",]
+dependencies = [ "requests>=2.27.0", "protobuf>=3.20.2",]
+dynamic = [ "version",]
+
+[[project.authors]]
+name = "roiravhon"
+email = "help@logz.io"
+
+[[project.maintainers]]
+name = "yotam-loewenbach"
+email = "yotam.loewenbach@logz.io"
+
+[project.license]
+text = "Apache License 2"
+
+[project.urls]
+Homepage = "https://github.com/logzio/logzio-python-handler/"
+
+[project.optional-dependencies]
+opentelemetry-logging = [ "opentelemetry-instrumentation-logging==0.60b1",]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = false

@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tokenize_rt"
+version = "6.2.0"
+description = "A wrapper around the stdlib `tokenize` which roundtrips."
+classifiers = [ "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy",]
+requires-python = ">=3.9"
+
+[[project.authors]]
+name = "Anthony Sottile"
+email = "asottile@umich.edu"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/asottile/tokenize-rt"
+
+[project.scripts]
+tokenize-rt = "tokenize_rt:main"
+
+[tool.setuptools]
+py-modules = [ "tokenize_rt",]
+license-files = [ "LICENSE",]
+include-package-data = false

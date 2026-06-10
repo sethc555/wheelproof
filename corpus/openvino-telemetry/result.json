@@ -1,0 +1,66 @@
+{
+  "package": "openvino-telemetry",
+  "version": "2025.2.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/71/8a/89d82f1a9d913fb266c2e6dc2f6030935db24b7152963a8db6c4f039787f/openvino_telemetry-2025.2.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Intel\u00ae Corporation"
+      ],
+      [
+        "author-email",
+        "openvino_pushbot@intel.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/openvinotoolkit/telemetry"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Intel\u00ae Corporation <openvino_pushbot@intel.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/openvinotoolkit/telemetry"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

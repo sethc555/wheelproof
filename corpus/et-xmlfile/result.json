@@ -1,0 +1,74 @@
+{
+  "package": "et-xmlfile",
+  "version": "2.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/d3/38/af70d7ab1ae9d4da450eeec1fa3918940a5fafb9055e934af8d6eb0c2313/et_xmlfile-2.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "See AUTHORS.txt"
+      ],
+      [
+        "author-email",
+        "charlie.clark@clark-consulting.eu"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://foss.heptapod.net/openpyxl/et_xmlfile"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "\"See AUTHORS.txt\" <charlie.clark@clark-consulting.eu>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://foss.heptapod.net/openpyxl/et_xmlfile"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

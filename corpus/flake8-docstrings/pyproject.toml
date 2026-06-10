@@ -1,0 +1,42 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flake8_docstrings"
+description = "Extension for flake8 which uses pydocstyle to check docstrings"
+classifiers = [ "Environment :: Console", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: Implementation :: CPython",]
+keywords = [ "PEP 257", "pydocstyle", "pep257", "docstrings", "flake8",]
+requires-python = ">=3.7"
+dependencies = [ "flake8>=3", "pydocstyle>=2.1",]
+dynamic = [ "version",]
+
+[[project.authors]]
+name = "Simon ANDRÉ"
+email = "sandre@anybox.fr"
+
+[[project.maintainers]]
+name = "Ian Cordasco"
+email = "graffatcolmingov@gmail.com"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/pycqa/flake8-docstrings"
+
+[tool.setuptools]
+py-modules = [ "flake8_docstrings",]
+provides = [ "flake8_docstrings",]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[project.entry-points."flake8.extension"]
+D = "flake8_docstrings:pep257Checker"
+
+[tool.setuptools.dynamic.version]
+attr = "flake8_docstrings.__version__"

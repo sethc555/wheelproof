@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mygene"
+version = "3.2.2"
+description = "Python Client for MyGene.Info services."
+keywords = [ "biology", "gene", "annotation", "web", "service", "client", "api",]
+readme = "README.rst"
+classifiers = [ "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Development Status :: 5 - Production/Stable", "License :: OSI Approved :: BSD License", "Operating System :: POSIX", "Operating System :: MacOS :: MacOS X", "Operating System :: Microsoft :: Windows", "Operating System :: OS Independent", "Intended Audience :: Science/Research", "Intended Audience :: Developers", "Topic :: Utilities", "Topic :: Scientific/Engineering :: Bio-Informatics",]
+dependencies = [ "biothings_client>=0.2.6",]
+
+[[project.authors]]
+name = "Chunlei Wu"
+email = "cwu@scripps.edu"
+
+[[project.authors]]
+name = "Cyrus Afrasiabi"
+
+[[project.authors]]
+name = "Sebastien Lelong"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "https://github.com/biothings/mygene.py"
+
+[tool.setuptools]
+packages = [ "mygene",]
+include-package-data = false

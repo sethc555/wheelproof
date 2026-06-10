@@ -1,0 +1,38 @@
+{
+  "package": "jsonlines",
+  "version": "4.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/35/87/bcda8e46c88d0e34cad2f09ee2d0c7f5957bccdb9791b0b934ec84d84be4/jsonlines-4.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "wouter bolsterlee"
+      ],
+      [
+        "author-email",
+        "wouter@bolsterl.ee"
+      ],
+      [
+        "home-page",
+        "https://github.com/wbolster/jsonlines"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "wouter bolsterlee <wouter@bolsterl.ee>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/wbolster/jsonlines"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

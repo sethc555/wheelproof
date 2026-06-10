@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytest-json-report"
+version = "1.5.0"
+description = "A pytest plugin to report test results as JSON files"
+classifiers = [ "Development Status :: 4 - Beta", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Framework :: Pytest",]
+dependencies = [ "pytest>=3.8.0", "pytest-metadata",]
+
+[[project.authors]]
+name = "numirias"
+email = "numirias@users.noreply.github.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/numirias/pytest-json-report"
+
+[tool.setuptools]
+packages = [ "pytest_jsonreport",]
+include-package-data = false
+
+[project.entry-points.pytest11]
+pytest_jsonreport = "pytest_jsonreport.plugin"

@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dynamodb-json"
+version = "1.4.2"
+description = "A DynamoDB json util from and to python objects"
+keywords = [ "python", "dynamodb", "amazon", "json", "aws",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Programming Language :: Python", "Operating System :: OS Independent", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12",]
+dependencies = [ "simplejson>=3.10.0", "boto3>=1.4.0", "six",]
+
+[[project.authors]]
+name = "Alon Reznik"
+email = "alonreznik@gmail.com"
+
+[project.license]
+text = "Mozilla"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/Alonreznik/dynamodb-json"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

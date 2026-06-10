@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "py-openapi-schema-to-json-schema"
+version = "0.0.3"
+description = "Convert OpenAPI Schemas to JSON Schemas"
+keywords = [ "openapi", "json", "schema", "convert", "translate",]
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8",]
+
+[[project.authors]]
+name = "Paul Glass"
+email = "pnglass@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/pglass/py-openapi-schema-to-json-schema"
+
+[tool.setuptools]
+packages = [ "openapi_schema_to_json_schema",]
+include-package-data = false

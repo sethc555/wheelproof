@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2", "setuptools_scm",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "html5tagger"
+description = "Pythonic HTML generation/templating (no template files)"
+keywords = [ "HTML", "HTML5", "templating", "Jinja2",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Topic :: Text Processing :: Markup :: HTML", "License :: OSI Approved :: MIT License", "License :: Public Domain", "Operating System :: OS Independent",]
+requires-python = ">=3.7"
+dependencies = []
+dynamic = [ "version",]
+
+[[project.authors]]
+name = "Sanic Community"
+email = "tronic@noreply.users.github.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/sanic-org/html5tagger"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = false

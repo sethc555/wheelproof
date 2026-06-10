@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scp"
+version = "0.15.0"
+description = "scp module for paramiko"
+keywords = [ "paramiko", "ssh", "scp", "transfer",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Topic :: Internet",]
+dependencies = [ "paramiko",]
+
+[[project.authors]]
+name = "James Bardin"
+email = "j.bardin@gmail.com"
+
+[[project.maintainers]]
+name = "Remi Rampin"
+email = "remi@rampin.org"
+
+[project.license]
+text = "LGPL-2.1-or-later"
+
+[project.urls]
+Homepage = "https://github.com/jbardin/scp.py"
+
+[tool.setuptools]
+py-modules = [ "scp",]
+include-package-data = false

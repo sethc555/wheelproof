@@ -1,0 +1,92 @@
+{
+  "package": "pytest-vcr",
+  "version": "1.0.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/1a/60/104c619483c1a42775d3f8b27293f1ecfc0728014874d065e68cb9702d49/pytest-vcr-1.0.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Tomasz Kontusz"
+      ],
+      [
+        "author-email",
+        "tomasz.kontusz@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/ktosiek/pytest-vcr"
+      ],
+      [
+        "maintainer",
+        "Tomasz Kontusz"
+      ],
+      [
+        "maintainer-email",
+        "tomasz.kontusz@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Tomasz Kontusz <tomasz.kontusz@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "maintainer-email",
+        "Tomasz Kontusz <tomasz.kontusz@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/ktosiek/pytest-vcr"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

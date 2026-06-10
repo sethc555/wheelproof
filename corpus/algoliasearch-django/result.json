@@ -1,0 +1,76 @@
+{
+  "package": "algoliasearch-django",
+  "version": "4.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/f1/b6/30682918e1d7a82b4b5d1c1c257b80edf4165f7b49c01c2f7d63a10968c0/algoliasearch_django-4.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Algolia Team"
+      ],
+      [
+        "author-email",
+        "support@algolia.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/algolia/algoliasearch-django"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Algolia Team <support@algolia.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/algolia/algoliasearch-django"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

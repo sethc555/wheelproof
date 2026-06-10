@@ -1,0 +1,23 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dash_table"
+version = "5.0.0"
+description = "Dash table"
+dependencies = []
+
+[[project.authors]]
+name = "Chris Parmer <chris@plotly.com>"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[tool.setuptools]
+packages = [ "dash_table",]
+include-package-data = true

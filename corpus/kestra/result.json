@@ -1,0 +1,86 @@
+{
+  "package": "kestra",
+  "version": "1.3.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/2a/a9/6a82367d2e146028d82dd983a46df015b7941f779501efcec84f169f184d/kestra-1.3.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Kestra"
+      ],
+      [
+        "author-email",
+        "hello@kestra.io"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://kestra.io"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Kestra <hello@kestra.io>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://kestra.io"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

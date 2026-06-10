@@ -1,0 +1,24 @@
+{
+  "package": "pytest-regressions",
+  "version": "2.11.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/ba/0f/1d6b8cc851596be52c401af53fd0d844e72921b0b11866b88995673cd320/pytest_regressions-2.11.0.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "pytest_regressions/__init__.py",
+      "pytest_regressions/common.py",
+      "pytest_regressions/data_regression.py",
+      "pytest_regressions/dataframe_regression.py",
+      "pytest_regressions/file_regression.py",
+      "pytest_regressions/image_regression.py",
+      "pytest_regressions/ndarrays_regression.py",
+      "pytest_regressions/num_regression.py",
+      "pytest_regressions/plugin.py",
+      "pytest_regressions/py.typed",
+      "pytest_regressions/testing.py"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

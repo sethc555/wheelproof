@@ -1,0 +1,38 @@
+{
+  "package": "flask-login",
+  "version": "0.6.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/c3/6e/2f4e13e373bb49e68c02c51ceadd22d172715a06716f9299d9df01b6ddb2/Flask-Login-0.6.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Matthew Frazier"
+      ],
+      [
+        "author-email",
+        "leafstormrush@gmail.com"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "home-page",
+        "https://github.com/maxcountryman/flask-login"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Matthew Frazier <leafstormrush@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/maxcountryman/flask-login"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

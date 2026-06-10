@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "click-help-colors"
+version = "0.9.4"
+description = "Colorization of help messages in Click"
+keywords = [ "click",]
+readme = "README.rst"
+dependencies = [ "click>=7.0,<9",]
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/click-contrib/click-help-colors"
+
+[project.optional-dependencies]
+dev = [ "mypy", "pytest",]
+
+[tool.setuptools]
+packages = [ "click_help_colors",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+click_help_colors = [ "py.typed",]

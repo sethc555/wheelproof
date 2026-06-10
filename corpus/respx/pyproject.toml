@@ -1,0 +1,40 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "respx"
+version = "0.23.1"
+description = "A utility for mocking out the Python HTTPX and HTTP Core libraries."
+keywords = [ "httpx", "httpcore", "mock", "responses", "requests", "async", "http",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14",]
+requires-python = ">=3.8"
+dependencies = [ "httpx>=0.25.0",]
+
+[[project.authors]]
+name = "Jonas Lundberg"
+email = "jonas@5monkeys.se"
+
+[project.license]
+text = "BSD-3-Clause"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://lundberg.github.io/respx/"
+GitHub = "https://github.com/lundberg/respx"
+Changelog = "https://github.com/lundberg/respx/blob/master/CHANGELOG.md"
+Issues = "https://github.com/lundberg/respx/issues"
+
+[tool.setuptools]
+packages = [ "respx",]
+zip-safe = false
+include-package-data = true
+
+[project.entry-points.pytest11]
+respx = "respx.plugin"
+
+[tool.setuptools.package-data]
+respx = [ "py.typed",]

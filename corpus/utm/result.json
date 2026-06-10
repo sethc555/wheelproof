@@ -1,0 +1,70 @@
+{
+  "package": "utm",
+  "version": "0.8.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/76/c4/f7662574e0d8c883cea257a59efdc2dbb21f19f4a78e7c54be570d740f24/utm-0.8.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Tobias Bieniek"
+      ],
+      [
+        "author-email",
+        "Tobias.Bieniek@gmx.de"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/Turbo87/utm"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Tobias Bieniek <Tobias.Bieniek@gmx.de>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Turbo87/utm"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

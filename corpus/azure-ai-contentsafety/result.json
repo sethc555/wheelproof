@@ -1,0 +1,15 @@
+{
+  "package": "azure-ai-contentsafety",
+  "version": "1.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/08/e9/c069efade0e4976d96208306f1cf0803838cdb0b60e00a2a96bd20806bff/azure-ai-contentsafety-1.0.0.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [],
+    "payload_only_converted": [
+      "azure/__init__.py",
+      "azure/ai/__init__.py"
+    ],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

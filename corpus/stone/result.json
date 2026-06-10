@@ -1,0 +1,7 @@
+{
+  "package": "stone",
+  "version": "3.3.9",
+  "sdist_url": "https://files.pythonhosted.org/packages/68/f0/efe39177ad1415ce277160e3186d74e3446d5c47d0b53de089448b7976de/stone-3.3.9.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-l76dtake/stone-3.3.9-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/wheelproof-bc-l76dtake/stone-3.3.9-converted/ez_setup.py\", line 125, in use_setuptools\n    import pkg_resources\nModuleNotFoundError: No module named 'pkg_resources'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n "
+}

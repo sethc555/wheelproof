@@ -1,0 +1,14 @@
+{
+  "package": "types-certifi",
+  "version": "2021.10.8.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/52/68/943c3aeaf14624712a0357c4a67814dba5cea36d194f5c764dad7959a00c/types-certifi-2021.10.8.3.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "certifi-stubs/METADATA.toml"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

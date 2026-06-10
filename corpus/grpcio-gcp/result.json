@@ -1,0 +1,72 @@
+{
+  "package": "grpcio-gcp",
+  "version": "0.2.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/3c/a2/69a79b928e4a6abb5979945be9382f8aaf4580a7496ad4389371bbc0c9eb/grpcio-gcp-0.2.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "The gRPC-GCP Authors"
+      ],
+      [
+        "author-email",
+        "grpc-io@googlegroups.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://grpc.io"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "The gRPC-GCP Authors <grpc-io@googlegroups.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://grpc.io"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

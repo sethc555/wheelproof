@@ -1,0 +1,7 @@
+{
+  "package": "strenum",
+  "version": "0.4.15",
+  "sdist_url": "https://files.pythonhosted.org/packages/85/ad/430fb60d90e1d112a62ff57bdd1f286ec73a2a0331272febfddd21f330e1/StrEnum-0.4.15.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-8ktuh7ia/StrEnum-0.4.15-converted/setup.py (dynamic setup.py? flag as manual)\n/tmp/wheelproof-bc-8ktuh7ia/StrEnum-0.4.15-converted/versioneer.py:564: SyntaxWarning: invalid escape sequence '\\s'\n  mo = re.search(r'=\\s*\"(.*)\"', line)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n  "
+}

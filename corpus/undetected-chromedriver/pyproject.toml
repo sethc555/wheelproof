@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "undetected-chromedriver"
+version = "3.5.5"
+description = "('Selenium.webdriver.Chrome replacement with compatiblity for Brave, and other Chromium based browsers.', 'Not triggered by CloudFlare/Imperva/hCaptcha and such.', 'NOTE: results may vary due to many factors. No guarantees are given, except for ongoing efforts in understanding detection algorithms.')"
+classifiers = [ "License :: OSI Approved :: GNU General Public License v3 (GPLv3)", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11",]
+dependencies = [ "selenium>=4.9.0", "requests", "websockets",]
+
+[[project.authors]]
+name = "UltrafunkAmsterdam"
+email = "info@blackhat-security.nl"
+
+[project.license]
+text = "GPL-3.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/ultrafunkamsterdam/undetected-chromedriver"
+
+[tool.setuptools]
+packages = [ "undetected_chromedriver",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+undetected_chromedriver = [ "example/example.py",]

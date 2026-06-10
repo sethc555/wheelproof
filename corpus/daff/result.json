@@ -1,0 +1,78 @@
+{
+  "package": "daff",
+  "version": "1.4.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/e1/d0/c0a1374db3afad0f9dfe6c795e5df102af03d49ad5e6e8502fb09eb88110/daff-1.4.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Paul Fitzpatrick"
+      ],
+      [
+        "author-email",
+        "paulfitz@alum.mit.edu"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/paulfitz/daff"
+      ],
+      [
+        "keywords",
+        "data diff patch"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Paul Fitzpatrick <paulfitz@alum.mit.edu>"
+      ],
+      [
+        "keywords",
+        "data,diff,patch"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/paulfitz/daff"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

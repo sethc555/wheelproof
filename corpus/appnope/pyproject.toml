@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "appnope"
+version = "0.1.4"
+description = "Disable App Nap on macOS >= 10.9"
+classifiers = [ "License :: OSI Approved :: BSD License", "Operating System :: MacOS :: MacOS X", "Programming Language :: Python :: 3",]
+requires-python = ">=3.6"
+
+[[project.authors]]
+name = "Min Ragan-Kelley"
+email = "benjaminrk@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "http://github.com/minrk/appnope"
+
+[tool.setuptools]
+packages = [ "appnope",]
+include-package-data = false

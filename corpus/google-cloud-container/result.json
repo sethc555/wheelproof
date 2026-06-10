@@ -1,0 +1,7 @@
+{
+  "package": "google-cloud-container",
+  "version": "2.65.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/18/ab/d4dde7a31a88b15a8d0abe37760669f0738a361803dd0a72a4ffc0d0be03/google_cloud_container-2.65.0.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-00w39b8t/google_cloud_container-2.65.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _main\n  "
+}

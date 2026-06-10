@@ -1,0 +1,86 @@
+{
+  "package": "dlinfo",
+  "version": "2.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/85/8e/8f2f94cd40af1b51e8e371a83b385d622170d42f98776441a6118f4dd682/dlinfo-2.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/fphammerle/python-dlinfo"
+      ],
+      [
+        "maintainer",
+        "Fabian Peter Hammerle"
+      ],
+      [
+        "maintainer-email",
+        "fabian.dlinfo@hammerle.me"
+      ],
+      [
+        "version",
+        "2.0.0"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "maintainer-email",
+        "Fabian Peter Hammerle <fabian.dlinfo@hammerle.me>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/fphammerle/python-dlinfo"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "pytest; extra == \"testing\""
+      ],
+      [
+        "version",
+        "0.0.0"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

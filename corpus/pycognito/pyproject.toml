@@ -1,0 +1,34 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pycognito"
+version = "2024.5.1"
+description = "Python class to integrate Boto3's Cognito client so it is easy to login users. With SRP support."
+keywords = [ "aws", "cognito", "api", "gateway", "serverless",]
+classifiers = [ "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Topic :: Software Development :: Libraries :: Python Modules", "Environment :: Web Environment",]
+requires-python = ">=3.8"
+dependencies = [ "boto3>=1.10.49", "envs>=1.3", "pyjwt[crypto]>=2.8.0", "requests>=2.22.0",]
+
+[[project.authors]]
+name = "Pascal Vizeli"
+email = "pvizeli@syshack.ch"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/pvizeli/pycognito"
+Download = "https://github.com/pvizeli/pycognito/tarball/2024.5.1"
+
+[tool.setuptools]
+zip-safe = true
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = false

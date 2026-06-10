@@ -1,0 +1,37 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytorch-metric-learning"
+version = "2.9.0"
+description = "The easiest way to use deep metric learning in your application. Modular, flexible, and extensible. Written in PyTorch."
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+requires-python = ">=3.0"
+dependencies = [ "numpy", "scikit-learn", "tqdm", "torch >= 1.6.0",]
+
+[[project.authors]]
+name = "Kevin Musgrave"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/KevinMusgrave/pytorch-metric-learning"
+
+[project.optional-dependencies]
+with-hooks = [ "record-keeper >= 0.9.32", "faiss-gpu >= 1.6.3", "tensorboard",]
+with-hooks-cpu = [ "record-keeper >= 0.9.32", "faiss-cpu >= 1.6.3", "tensorboard",]
+docs = [ "mkdocs-material",]
+dev = [ "black", "isort", "nbqa", "flake8",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.packages.find]
+where = [ "src",]
+namespaces = false

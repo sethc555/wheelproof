@@ -1,0 +1,86 @@
+{
+  "package": "pep8-naming",
+  "version": "0.15.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/8d/59/c32862134635ba231d45f1711035550dc38246396c27269a4cde4bfe18d2/pep8_naming-0.15.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Florent Xicluna"
+      ],
+      [
+        "author-email",
+        "florent.xicluna@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/PyCQA/pep8-naming"
+      ],
+      [
+        "keywords",
+        "flake8 pep8 naming"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Florent Xicluna <florent.xicluna@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "flake8,pep8,naming"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/PyCQA/pep8-naming"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

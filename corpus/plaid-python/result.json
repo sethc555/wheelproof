@@ -1,0 +1,82 @@
+{
+  "package": "plaid-python",
+  "version": "39.2.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/72/62/3dff402f2eb80b967ddcc142cd4f77c838740f15bdf3680de5a9bcdae8c8/plaid_python-39.2.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Plaid Inc."
+      ],
+      [
+        "author-email",
+        "developers@plaid.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/plaid/plaid-python/tarball/v39.2.0"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/plaid/plaid-python"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "\"Plaid Inc.\" <developers@plaid.com>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/plaid/plaid-python/tarball/v39.2.0"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/plaid/plaid-python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

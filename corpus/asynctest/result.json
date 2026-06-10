@@ -1,0 +1,38 @@
+{
+  "package": "asynctest",
+  "version": "0.13.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/0c/0f/6056f4435923d2f8c89ac9ef2d18506a569348d8f9cc827b0dd7a4c8acc4/asynctest-0.13.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Martin Richard"
+      ],
+      [
+        "author-email",
+        "martius@martiusweb.net"
+      ],
+      [
+        "home-page",
+        "https://github.com/Martiusweb/asynctest/"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Martin Richard <martius@martiusweb.net>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Martiusweb/asynctest/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

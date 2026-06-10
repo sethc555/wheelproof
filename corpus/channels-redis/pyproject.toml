@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "channels_redis"
+version = "4.3.0"
+description = "Redis-backed ASGI channel layer implementation"
+readme = "README.rst"
+requires-python = ">=3.9"
+dependencies = [ "redis>=4.6", "msgpack~=1.0", "asgiref>=3.9.1,<4", "channels>=4.2.2",]
+
+[[project.authors]]
+name = "Django Software Foundation"
+email = "foundation@djangoproject.com"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "http://github.com/django/channels_redis/"
+
+[project.optional-dependencies]
+cryptography = [ "cryptography>=1.3.0",]
+tests = [ "cryptography>=1.3.0", "pytest", "pytest-asyncio", "async-timeout", "pytest-timeout",]
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

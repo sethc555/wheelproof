@@ -1,0 +1,48 @@
+{
+  "package": "yaml-config",
+  "version": "0.1.5",
+  "sdist_url": "https://files.pythonhosted.org/packages/ae/d9/001bf4da6c05edbce0aabc9e19a95841c5ac7c1749234d6b1ec96a3b7563/yaml-config-0.1.5.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Paul Munday, Fable Turas"
+      ],
+      [
+        "author-email",
+        "paul@paulmunday.net, fable@rainsoftware.tech"
+      ],
+      [
+        "home-page",
+        "https://github.com/GreenBuildingRegistry/yaml-config"
+      ],
+      [
+        "maintainer",
+        "GreenBuildingRegistry"
+      ],
+      [
+        "maintainer-email",
+        "admin@greenbuildingregistry.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Paul Munday <paul@paulmunday.net>, Fable Turas <fable@rainsoftware.tech>"
+      ],
+      [
+        "maintainer-email",
+        "GreenBuildingRegistry <admin@greenbuildingregistry.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/GreenBuildingRegistry/yaml-config"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

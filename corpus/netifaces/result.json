@@ -1,0 +1,14 @@
+{
+  "package": "netifaces",
+  "version": "0.11.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/a6/91/86a6eac449ddfae239e93ffc1918cf33fd9bab35c04d1e963b311e347a73/netifaces-0.11.0.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "netifaces.cpython-312-x86_64-linux-gnu.so"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

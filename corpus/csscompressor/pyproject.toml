@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "csscompressor"
+version = "0.9.5"
+description = "A python port of YUI CSS Compressor"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 2.6", "Topic :: Software Development :: Build Tools", "Topic :: Text Processing :: General", "Topic :: Utilities",]
+dependencies = []
+
+[[project.authors]]
+name = "Yury Selivanov"
+email = "info@sprymix.com"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "http://github.com/sprymix/csscompressor"
+
+[tool.setuptools]
+packages = [ "csscompressor", "csscompressor.tests",]
+include-package-data = false

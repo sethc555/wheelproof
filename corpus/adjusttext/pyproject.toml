@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adjustText"
+version = "1.4.0"
+description = "Iteratively adjust text position in matplotlib plots to minimize overlaps"
+classifiers = [ "Framework :: Matplotlib", "Topic :: Scientific/Engineering :: Visualization",]
+dependencies = [ "numpy", "matplotlib", "scipy",]
+
+[[project.authors]]
+name = "Ilya Flyamer"
+email = "flyamer@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/Phlya/adjustText"
+Documentation = "https://adjusttext.readthedocs.io/"
+
+[tool.setuptools]
+packages = [ "adjustText",]
+include-package-data = true

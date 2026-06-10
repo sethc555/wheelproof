@@ -1,0 +1,72 @@
+{
+  "package": "django-loginas",
+  "version": "0.3.14",
+  "sdist_url": "https://files.pythonhosted.org/packages/8c/a4/3912075965bb1f3792d7ef2003608155d25401d84aa18beb4db577bb6cd0/django_loginas-0.3.14.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Stochastic Technologies"
+      ],
+      [
+        "author-email",
+        "info@stochastictechnologies.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/stochastic-technologies/django-loginas/"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Stochastic Technologies <info@stochastictechnologies.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/stochastic-technologies/django-loginas/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

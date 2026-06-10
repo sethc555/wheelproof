@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docopt"
+version = "0.6.2"
+description = "Pythonic argument parser, that will make you smile"
+keywords = [ "option", "arguments", "parsing", "optparse", "argparse", "getopt",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 3 - Alpha", "Topic :: Utilities", "Programming Language :: Python :: 2.5", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.2", "Programming Language :: Python :: 3.3", "License :: OSI Approved :: MIT License",]
+
+[[project.authors]]
+name = "Vladimir Keleshev"
+email = "vladimir@keleshev.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "http://docopt.org"
+
+[tool.setuptools]
+py-modules = [ "docopt",]
+include-package-data = false

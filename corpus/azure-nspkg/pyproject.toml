@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-nspkg"
+version = "3.0.2"
+description = "Microsoft Azure Namespace Package [Internal]"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "License :: OSI Approved :: MIT License",]
+
+[[project.authors]]
+name = "Microsoft Corporation"
+email = "azpysdkhelp@microsoft.com"
+
+[project.license]
+text = "MIT License"
+
+[project.urls]
+Homepage = "https://github.com/Azure/azure-sdk-for-python"
+
+[tool.setuptools]
+packages = []
+zip-safe = false
+include-package-data = false

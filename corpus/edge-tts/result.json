@@ -1,0 +1,38 @@
+{
+  "package": "edge-tts",
+  "version": "7.2.8",
+  "sdist_url": "https://files.pythonhosted.org/packages/3f/60/afbf548b43c78355e03926c6b1fff7500303a2da4d84db9e1324119e21ae/edge_tts-7.2.8.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "rany"
+      ],
+      [
+        "author-email",
+        "ranygh@riseup.net"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "home-page",
+        "https://github.com/rany2/edge-tts"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "rany <ranygh@riseup.net>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/rany2/edge-tts"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

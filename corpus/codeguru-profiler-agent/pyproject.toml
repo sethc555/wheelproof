@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "codeguru_profiler_agent"
+version = "1.2.6"
+description = "The Python agent to be used for Amazon CodeGuru Profiler"
+classifiers = [ "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Development Status :: 5 - Production/Stable", "Topic :: Utilities", "License :: OSI Approved :: Apache Software License",]
+requires-python = ">=3.6"
+dependencies = [ "boto3>=1.14.0",]
+
+[[project.authors]]
+name = "Amazon Web Services"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/aws/amazon-codeguru-profiler-python-agent"
+Download = "https://github.com/aws/amazon-codeguru-profiler-python-agent"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = [ "test",]
+namespaces = false

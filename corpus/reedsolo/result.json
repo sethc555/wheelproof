@@ -1,0 +1,90 @@
+{
+  "package": "reedsolo",
+  "version": "1.7.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/f7/61/a67338cbecf370d464e71b10e9a31355f909d6937c3a8d6b17dd5d5beb5e/reedsolo-1.7.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Tomer Filiba"
+      ],
+      [
+        "author-email",
+        "tomerfiliba@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/tomerfiliba/reedsolomon"
+      ],
+      [
+        "maintainer",
+        "Stephen Karl Larroque"
+      ],
+      [
+        "maintainer-email",
+        "lrq3000@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Tomer Filiba <tomerfiliba@gmail.com>"
+      ],
+      [
+        "maintainer-email",
+        "Stephen Karl Larroque <lrq3000@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/tomerfiliba/reedsolomon"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

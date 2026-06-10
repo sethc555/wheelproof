@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "icmplib"
+version = "3.0.4"
+description = "Easily forge ICMP packets and make your own ping and traceroute."
+keywords = [ "icmp", "sockets", "ping", "multiping", "traceroute", "async", "asyncio", "ipv4", "ipv6", "python", "python3",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Topic :: Software Development :: Libraries", "Topic :: Software Development :: Libraries :: Python Modules",]
+requires-python = ">=3.7"
+
+[[project.authors]]
+name = "Valentin BELYN"
+email = "valentin-hello@gmx.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+text = "GNU Lesser General Public License v3.0"
+
+[project.urls]
+Homepage = "https://github.com/ValentinBELYN/icmplib"
+
+[tool.setuptools]
+packages = [ "icmplib",]
+license-files = [ "LICENSE",]
+include-package-data = false

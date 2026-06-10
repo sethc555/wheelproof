@@ -1,0 +1,68 @@
+{
+  "package": "fuzzywuzzy",
+  "version": "0.18.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/11/4b/0a002eea91be6048a2b5d53c5f1b4dafd57ba2e36eea961d05086d7c28ce/fuzzywuzzy-0.18.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Adam Cohen"
+      ],
+      [
+        "author-email",
+        "adam@seatgeek.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/seatgeek/fuzzywuzzy"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Adam Cohen <adam@seatgeek.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/seatgeek/fuzzywuzzy"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

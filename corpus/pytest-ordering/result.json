@@ -1,0 +1,58 @@
+{
+  "package": "pytest-ordering",
+  "version": "0.6",
+  "sdist_url": "https://files.pythonhosted.org/packages/e1/ba/65091c36e6e18da479d22d860586e3ba3a4237cc92a66e3ddd945e4fe761/pytest-ordering-0.6.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Frank Tobia"
+      ],
+      [
+        "author-email",
+        "frank.tobia@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/ftobia/pytest-ordering"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Frank Tobia <frank.tobia@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/ftobia/pytest-ordering"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

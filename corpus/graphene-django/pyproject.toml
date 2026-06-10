@@ -1,0 +1,40 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pytest-runner",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphene-django"
+version = "3.2.3"
+description = "Graphene Django integration"
+keywords = [ "api", "graphql", "protocol", "rest", "relay", "graphene",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Topic :: Software Development :: Libraries", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: Implementation :: PyPy", "Framework :: Django", "Framework :: Django :: 3.2", "Framework :: Django :: 4.1", "Framework :: Django :: 4.2",]
+dependencies = [ "graphene>=3.0,<4", "graphql-core>=3.1.0,<4", "graphql-relay>=3.1.1,<4", "Django>=3.2", "promise>=2.1", "text-unidecode",]
+
+[[project.authors]]
+name = "Syrus Akbary"
+email = "me@syrusakbary.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/graphql-python/graphene-django"
+
+[project.optional-dependencies]
+test = [ "pytest>=7.3.1", "pytest-cov", "pytest-random-order", "coveralls", "mock", "pytz", "django-filter>=22.1", "pytest-django>=4.5.2", "djangorestframework>=3.6.3",]
+rest_framework = [ "djangorestframework>=3.6.3",]
+dev = [ "ruff==0.1.2", "pre-commit", "pytest>=7.3.1", "pytest-cov", "pytest-random-order", "coveralls", "mock", "pytz", "django-filter>=22.1", "pytest-django>=4.5.2", "djangorestframework>=3.6.3",]
+testing = [ "pytest>=7.3.1", "pytest-cov", "pytest-random-order", "coveralls", "mock", "pytz", "django-filter>=22.1", "pytest-django>=4.5.2", "djangorestframework>=3.6.3",]
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+platforms = [ "any",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

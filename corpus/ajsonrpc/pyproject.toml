@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ajsonrpc"
+version = "1.2.0"
+description = "Async JSON-RPC 2.0 protocol + server powered by asyncio"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Framework :: AsyncIO", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Natural Language :: English", "Operating System :: OS Independent", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Topic :: Software Development :: Libraries :: Python Modules",]
+requires-python = ">=3.5"
+
+[[project.authors]]
+name = "Kirill Pavlov"
+email = "k@p99.io"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/pavlov99/ajsonrpc"
+Documentation = "https://ajsonrpc.readthedocs.io"
+Code = "https://github.com/pavlov99/ajsonrpc"
+"Issue tracker" = "https://github.com/pavlov99/ajsonrpc/issues"
+
+[project.scripts]
+async-json-rpc-server = "ajsonrpc.scripts.server:main"
+
+[tool.setuptools]
+packages = [ "ajsonrpc",]
+include-package-data = true
+platforms = [ "any",]

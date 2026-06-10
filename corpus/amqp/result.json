@@ -1,0 +1,32 @@
+{
+  "package": "amqp",
+  "version": "5.3.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/79/fc/ec94a357dfc6683d8c86f8b4cfa5416a4c36b28052ec8260c77aca96a443/amqp-5.3.1.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [],
+    "payload_only_converted": [
+      "t/__init__.py",
+      "t/integration/__init__.py",
+      "t/integration/conftest.py",
+      "t/integration/test_integration.py",
+      "t/integration/test_rmq.py",
+      "t/mocks.py",
+      "t/unit/__init__.py",
+      "t/unit/conftest.py",
+      "t/unit/test_abstract_channel.py",
+      "t/unit/test_basic_message.py",
+      "t/unit/test_channel.py",
+      "t/unit/test_connection.py",
+      "t/unit/test_exceptions.py",
+      "t/unit/test_method_framing.py",
+      "t/unit/test_platform.py",
+      "t/unit/test_sasl.py",
+      "t/unit/test_serialization.py",
+      "t/unit/test_transport.py",
+      "t/unit/test_utils.py"
+    ],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

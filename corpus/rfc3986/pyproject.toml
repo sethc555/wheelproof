@@ -1,0 +1,44 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfc3986"
+description = "Validating URI References per RFC 3986"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Natural Language :: English", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: Implementation :: CPython",]
+requires-python = ">=3.7"
+dynamic = [ "version",]
+
+[[project.authors]]
+name = "Ian Stapleton Cordasco"
+email = "graffatcolmingov@gmail.com"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.license]
+text = "Apache 2.0"
+
+[project.urls]
+Homepage = "http://rfc3986.readthedocs.io"
+
+[project.optional-dependencies]
+idna2008 = [ "idna",]
+
+[tool.setuptools]
+include-package-data = true
+license-files = [ "LICENSE",]
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.package-data]
+"*" = [ "LICENSE",]
+
+[tool.setuptools.packages.find]
+where = [ "src",]
+namespaces = false
+
+[tool.setuptools.dynamic.version]
+attr = "rfc3986.__version__"

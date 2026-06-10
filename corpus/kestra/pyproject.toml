@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kestra"
+version = "0.0.0"
+description = "Kestra is an infinitely scalable orchestration and scheduling platform, creating, running, scheduling, and monitoring millions of complex pipelines."
+classifiers = [ "License :: OSI Approved :: Apache Software License", "Programming Language :: Python", "Programming Language :: Python :: 3",]
+requires-python = ">=3"
+dependencies = [ "requests", "amazon.ion", "python-dateutil",]
+
+[[project.authors]]
+name = "Kestra"
+email = "hello@kestra.io"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://kestra.io"
+Source = "https://github.com/kestra-io/libs"
+Tracker = "https://github.com/kestra-io/libs/issues"
+
+[project.optional-dependencies]
+test = [ "pytest", "requests_mock", "pytest-mock",]
+dev = [ "isort", "black", "flake8",]
+
+[tool.setuptools]
+include-package-data = true
+platforms = [ "any",]
+
+[tool.setuptools.package-dir]
+"" = "src"

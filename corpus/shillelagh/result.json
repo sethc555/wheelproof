@@ -1,0 +1,7 @@
+{
+  "package": "shillelagh",
+  "version": "1.4.4",
+  "sdist_url": "https://files.pythonhosted.org/packages/f8/43/993de2d915c0258d98b0fe06e4a53e98141199442220dd607694b24b9c31/shillelagh-1.4.4.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-au4spyim/shillelagh-1.4.4-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-au4spyim/shillelagh-1.4.4-converted/pyproject.toml: Cannot declare ('build-system',) twice (at line 90, column 14) \n"
+}

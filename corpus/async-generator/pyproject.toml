@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "async_generator"
+version = "1.10"
+description = "Async generators and context managers for Python 3.5+"
+keywords = [ "async",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Framework :: AsyncIO",]
+requires-python = ">=3.5"
+
+[[project.authors]]
+name = "Nathaniel J. Smith"
+email = "njs@pobox.com"
+
+[project.license]
+text = "MIT -or- Apache License 2.0"
+
+[project.urls]
+Homepage = "https://github.com/python-trio/async_generator"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

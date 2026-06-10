@@ -1,0 +1,18 @@
+{
+  "package": "ct3",
+  "version": "3.4.0.post5",
+  "sdist_url": "https://files.pythonhosted.org/packages/96/c2/2a1605af41829cd2a247271b5b6f6b2dbc2e9407df2dd9bcafdceafcd4b3/ct3-3.4.0.post5.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "Cheetah/Templates/SkeletonPage.tmpl",
+      "Cheetah/Tests/ImportHooksTemplates/index.tmpl",
+      "Cheetah/Tests/ImportHooksTemplates/layout.tmpl",
+      "Cheetah/Tools/MondoReportDoc.txt",
+      "Cheetah/_namemapper.cpython-312-x86_64-linux-gnu.so"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

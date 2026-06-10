@@ -1,0 +1,34 @@
+{
+  "package": "opentelemetry-exporter-gcp-logging",
+  "version": "1.12.0a0",
+  "sdist_url": "https://files.pythonhosted.org/packages/77/e4/95ecebaa1c5134adaa0d0374028b25e3b3c5c08535d29a66d39d372a3d11/opentelemetry_exporter_gcp_logging-1.12.0a0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Google"
+      ],
+      [
+        "author-email",
+        "opentelemetry-pypi@google.com"
+      ],
+      [
+        "home-page",
+        "https://github.com/GoogleCloudPlatform/opentelemetry-operations-python/tree/main/opentelemetry-exporter-gcp-logging"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Google <opentelemetry-pypi@google.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/GoogleCloudPlatform/opentelemetry-operations-python/tree/main/opentelemetry-exporter-gcp-logging"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

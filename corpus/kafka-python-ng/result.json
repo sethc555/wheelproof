@@ -1,0 +1,120 @@
+{
+  "package": "kafka-python-ng",
+  "version": "2.2.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/ce/04/1d65bdf3f0103a08710e226b851de4b357ac702f1cadabf6128bab7518a7/kafka_python_ng-2.2.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Dana Powers"
+      ],
+      [
+        "author-email",
+        "dana.powers@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/wbarnha/kafka-python-ng"
+      ],
+      [
+        "maintainer",
+        "William Barnhart"
+      ],
+      [
+        "maintainer-email",
+        "williambbarnhart@gmail.com"
+      ],
+      [
+        "version",
+        "2.2.3"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Dana Powers <dana.powers@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "maintainer-email",
+        "William Barnhart <williambbarnhart@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/wbarnha/kafka-python-ng"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "mock; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "tox; extra == \"testing\""
+      ],
+      [
+        "version",
+        "0.0.0"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

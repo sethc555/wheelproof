@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trafaret"
+version = "2.1.1"
+description = "Validation and parsing library"
+keywords = [ "validation", "form", "forms", "data", "schema",]
+readme = "README.rst"
+classifiers = [ "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3",]
+
+[[project.authors]]
+name = "Barbuza"
+email = "krivushinme@gmail.com"
+
+[[project.authors]]
+name = "Deepwalker"
+
+[[project.authors]]
+name = "nimnull"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "https://github.com/Deepwalker/trafaret/"
+
+[project.optional-dependencies]
+objectid = [ "pymongo>=2.4.1",]
+rfc3339 = [ "python-dateutil>=1.5",]
+
+[tool.setuptools]
+packages = [ "trafaret", "trafaret.contrib",]
+include-package-data = false

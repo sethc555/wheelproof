@@ -1,0 +1,98 @@
+{
+  "package": "readabilipy",
+  "version": "0.3.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/b8/e4/260a202516886c2e0cc6e6ae96d1f491792d829098886d9529a2439fbe8e/readabilipy-0.3.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "The Alan Turing Institute"
+      ],
+      [
+        "author-email",
+        "info@turing.ac.uk"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/alan-turing-institute/ReadabiliPy"
+      ],
+      [
+        "maintainer",
+        "James Robinson"
+      ],
+      [
+        "maintainer-email",
+        "jrobinson@turing.ac.uk"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "The Alan Turing Institute <info@turing.ac.uk>"
+      ],
+      [
+        "maintainer-email",
+        "James Robinson <jrobinson@turing.ac.uk>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/alan-turing-institute/ReadabiliPy"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
+}

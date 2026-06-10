@@ -1,0 +1,66 @@
+{
+  "package": "torch-pitch-shift",
+  "version": "1.2.5",
+  "sdist_url": "https://files.pythonhosted.org/packages/79/a6/722a832bca75d5079f6731e005b3d0c2eec7c6c6863d030620952d143d57/torch_pitch_shift-1.2.5.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "KentoNishi"
+      ],
+      [
+        "author-email",
+        "kento24gs@outlook.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "home-page",
+        "https://github.com/KentoNishi/torch-pitch-shift"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "KentoNishi <kento24gs@outlook.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/KentoNishi/torch-pitch-shift"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

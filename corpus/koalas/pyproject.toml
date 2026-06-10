@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "koalas"
+version = "1.8.2"
+description = "Koalas: pandas API on Apache Spark"
+classifiers = [ "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9",]
+requires-python = ">=3.5,<3.10"
+dependencies = [ "pandas>=0.23.2", "pyarrow>=0.10", "numpy>=1.14",]
+
+[[project.authors]]
+name = "Databricks"
+email = "koalas@databricks.com"
+
+[project.license]
+text = "http://www.apache.org/licenses/LICENSE-2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/databricks/koalas"
+"Bug Tracker" = "https://github.com/databricks/koalas/issues"
+Documentation = "https://koalas.readthedocs.io/"
+"Source Code" = "https://github.com/databricks/koalas"
+
+[project.optional-dependencies]
+spark = [ "pyspark>=2.4.0",]
+mlflow = [ "mlflow>=1.0",]
+plotly = [ "plotly>=4.8",]
+matplotlib = [ "matplotlib>=3.0.0,<3.3.0",]
+
+[tool.setuptools]
+packages = [ "databricks", "databricks.koalas", "databricks.koalas.indexes", "databricks.koalas.missing", "databricks.koalas.plot", "databricks.koalas.spark", "databricks.koalas.typedef", "databricks.koalas.usage_logging",]
+include-package-data = false

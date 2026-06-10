@@ -1,0 +1,90 @@
+{
+  "package": "dockerfile-parse",
+  "version": "2.0.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/92/df/929ee0b5d2c8bd8d713c45e71b94ab57c7e11e322130724d54f469b2cd48/dockerfile-parse-2.0.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Jiri Popelka"
+      ],
+      [
+        "author-email",
+        "jpopelka@redhat.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/containerbuildsystem/dockerfile-parse"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Jiri Popelka <jpopelka@redhat.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/containerbuildsystem/dockerfile-parse"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "flake8; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-cov; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-html; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest>=4.1.0; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

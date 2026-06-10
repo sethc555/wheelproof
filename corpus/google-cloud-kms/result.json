@@ -1,0 +1,7 @@
+{
+  "package": "google-cloud-kms",
+  "version": "3.13.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/25/a4/9125701c7120469a4381c3a576cebad191abbfa5bd3a0e1effd5c1ef0f52/google_cloud_kms-3.13.0.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-i0qu_duj/google_cloud_kms-3.13.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _main\n    setu"
+}

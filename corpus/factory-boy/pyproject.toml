@@ -1,0 +1,41 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "factory_boy"
+version = "3.3.3"
+description = "A versatile test fixtures replacement based on thoughtbot's factory_bot for Ruby."
+keywords = [ "factory_boy", "factory", "fixtures",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Framework :: Django", "Framework :: Django :: 4.2", "Framework :: Django :: 5.0", "Framework :: Django :: 5.1", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Software Development :: Testing", "Topic :: Software Development :: Libraries :: Python Modules",]
+requires-python = ">=3.8"
+dependencies = [ "Faker>=0.7.0",]
+
+[[project.authors]]
+name = "Mark Sandstrom"
+email = "mark@deliciouslynerdy.com"
+
+[[project.maintainers]]
+name = "Raphaël Barrois"
+email = "raphael.barrois+fboy@polytechnique.org"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/FactoryBoy/factory_boy"
+
+[project.optional-dependencies]
+dev = [ "coverage", "Django", "flake8", "isort", "mypy", "Pillow", "SQLAlchemy", "mongoengine", "mongomock", "wheel>=0.32.0", "tox", "zest.releaser[recommended]",]
+doc = [ "Sphinx", "sphinx_rtd_theme", "sphinxcontrib-spelling",]
+
+[tool.setuptools]
+packages = [ "factory",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+factory = [ "py.typed",]

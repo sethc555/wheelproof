@@ -1,0 +1,24 @@
+{
+  "package": "filetype",
+  "version": "1.2.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/bb/29/745f7d30d47fe0f251d3ad3dc2978a23141917661998763bebb6da007eb1/filetype-1.2.0.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [],
+    "payload_only_converted": [
+      "examples/__init__.py",
+      "examples/buffer.py",
+      "examples/bytes.py",
+      "examples/file.py",
+      "tests/__init__.py",
+      "tests/test_benchmark.py",
+      "tests/test_filetype.py",
+      "tests/test_helpers.py",
+      "tests/test_match.py",
+      "tests/test_types.py",
+      "tests/test_utils.py"
+    ],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

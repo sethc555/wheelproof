@@ -1,0 +1,7 @@
+{
+  "package": "llvmlite",
+  "version": "0.47.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/01/88/a8952b6d5c21e74cbf158515b779666f692846502623e9e3c39d8e8ba25f/llvmlite-0.47.0.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-5l_vcg3s/llvmlite-0.47.0-converted/setup.py (dynamic setup.py? flag as manual)\n/tmp/wheelproof-bc-5l_vcg3s/llvmlite-0.47.0-converted/versioneer.py:415: SyntaxWarning: invalid escape sequence '\\s'\n  mo = re.search(r'=\\s*\"(.*)\"', line)\n/tmp/v/lib/python3.12/site-packages/setuptools/_vendor/wheel/bdist_wheel.py:4: FutureWarning: The 'wheel' package is no longer the canonical location of the 'bdist_wheel' command, and will be removed in a future release"
+}

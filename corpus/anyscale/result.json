@@ -1,0 +1,7 @@
+{
+  "package": "anyscale",
+  "version": "0.26.102",
+  "sdist_url": "https://files.pythonhosted.org/packages/99/0d/3fb148cb02c29e58295b75e9bae027b97072d920a8c32da64dd8dfdbf6b1/anyscale-0.26.102.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-fcckjx4f/anyscale-0.26.102-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _main\n    setup_call"
+}

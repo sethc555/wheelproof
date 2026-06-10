@@ -1,0 +1,7 @@
+{
+  "package": "ics",
+  "version": "0.7.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/45/9d/f1fa704c153351f679245c0f1dc0099df2d5e3ddb94a06810403a8931bef/ics-0.7.3.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-zjibh5kd/ics-0.7.3-converted/setup.py (dynamic setup.py? flag as manual)\n/tmp/wheelproof-bc-zjibh5kd/ics-0.7.3-converted/setup.py:5: SetuptoolsDeprecationWarning: The test command is disabled and references to it are deprecated.\n!!\n\n        ********************************************************************************\n        Please remove any references to `setuptools.command.test` in all supported versions of the affected package.\n\n        This "
+}

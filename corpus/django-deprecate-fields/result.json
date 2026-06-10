@@ -1,0 +1,66 @@
+{
+  "package": "django-deprecate-fields",
+  "version": "0.2.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/3a/dc/281214543a8e3ebd67294e6a2765d425481726834bf6fe662013dff56eed/django_deprecate_fields-0.2.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/3YOURMIND/django-deprecate-fields"
+      ],
+      [
+        "keywords",
+        "django migration deprecation database backward compatibility"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "keywords",
+        "django,migration,deprecation,database,backward,compatibility"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/3YOURMIND/django-deprecate-fields"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trio-typing"
+version = "0.10.0"
+description = "Static type checking support for Trio and related projects"
+keywords = [ "async", "trio", "mypy",]
+classifiers = [ "License :: OSI Approved :: MIT License", "License :: OSI Approved :: Apache Software License", "Framework :: Trio", "Operating System :: POSIX :: Linux", "Operating System :: MacOS :: MacOS X", "Operating System :: POSIX :: BSD", "Operating System :: Microsoft :: Windows", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Development Status :: 3 - Alpha", "Intended Audience :: Developers",]
+dependencies = [ "trio >= 0.16.0", "typing_extensions >= 3.7.4", "mypy_extensions >= 0.4.2", "async_generator", "packaging", "importlib-metadata",]
+
+[[project.authors]]
+name = "Joshua Oreman"
+email = "oremanj@gmail.com"
+
+[project.license]
+text = "MIT -or- Apache License 2.0"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/python-trio/trio-typing"
+
+[project.optional-dependencies]
+mypy = [ "mypy >= 1.0",]
+
+[tool.setuptools]
+packages = [ "async_generator-stubs", "outcome-stubs", "trio-stubs", "trio_typing",]
+include-package-data = true

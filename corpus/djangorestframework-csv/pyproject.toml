@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "djangorestframework-csv"
+version = "3.0.2"
+description = "CSV Tools for Django REST Framework"
+classifiers = [ "Development Status :: 4 - Beta", "Environment :: Web Environment", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Framework :: Django",]
+dependencies = [ "djangorestframework",]
+
+[[project.authors]]
+name = "Mjumbe Wawatu Ukweli"
+email = "mjumbewu@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/mjumbewu/django-rest-framework-csv"
+
+[tool.setuptools]
+packages = [ "rest_framework_csv",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+rest_framework_csv = [ "testfixtures/nonewlines.csv", "__pycache__/renderers.cpython-311.pyc", "__pycache__/parsers.cpython-37.pyc", "__pycache__/tests.cpython-311.pyc", "__pycache__/tests.cpython-39.pyc", "__pycache__/misc.cpython-39.pyc", "__pycache__/models.cpython-37.pyc", "__pycache__/parsers.cpython-311.pyc", "__pycache__/orderedrows.cpython-37.pyc", "__pycache__/models.cpython-39.pyc", "__pycache__/renderers.cpython-37.pyc", "__pycache__/orderedrows.cpython-311.pyc", "__pycache__/misc.cpython-37.pyc", "__pycache__/__init__.cpython-311.pyc", "__pycache__/models.cpython-311.pyc", "__pycache__/__init__.cpython-39.pyc", "__pycache__/misc.cpython-311.pyc", "__pycache__/orderedrows.cpython-39.pyc", "__pycache__/__init__.cpython-37.pyc", "__pycache__/renderers.cpython-39.pyc", "__pycache__/tests.cpython-37.pyc", "__pycache__/parsers.cpython-39.pyc",]

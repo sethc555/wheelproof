@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "HyperPyYAML"
+version = "1.2.3"
+description = "Extensions to YAML syntax for better python interaction"
+classifiers = [ "Programming Language :: Python :: 3", "License :: OSI Approved :: Apache Software License",]
+dependencies = [ "pyyaml>=5.1", "ruamel.yaml>=0.17.28,<0.19.0",]
+
+[[project.authors]]
+name = "Peter Plantinga"
+email = "speechbrain@gmail.com"
+
+[[project.authors]]
+name = "Aku Rouhe"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/speechbrain/HyperPyYAML"
+
+[tool.setuptools]
+packages = [ "hyperpyyaml",]
+include-package-data = false

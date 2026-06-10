@@ -1,0 +1,86 @@
+{
+  "package": "jinja2-humanize-extension",
+  "version": "0.4.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/74/77/0bba383819dd4e67566487c11c49479ced87e77c3285d8e7f7a3401cf882/jinja2_humanize_extension-0.4.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Fabien MARTY, Jean-Baptiste VESLIN"
+      ],
+      [
+        "author-email",
+        "fabien.marty@gmail.com, jbaptiste31@free.fr"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/metwork-framework/jinja2_humanize_extension"
+      ],
+      [
+        "keywords",
+        "jinja2 extension"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Fabien MARTY <fabien.marty@gmail.com>, Jean-Baptiste VESLIN <jbaptiste31@free.fr>"
+      ],
+      [
+        "keywords",
+        "jinja2,extension"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/metwork-framework/jinja2_humanize_extension"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "package": "pylogbeat",
+  "version": "2.1.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/b7/41/1daad4fd3820e92365db6f0e867d6e7cf3dc2dc96fc2acf8db479282b310/pylogbeat-2.1.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Enrico Tr\u00f6ger"
+      ],
+      [
+        "author-email",
+        "enrico.troeger@uvena.de"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/eht16/pylogbeat/"
+      ],
+      [
+        "keywords",
+        "logging logstash beats"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Enrico Tr\u00f6ger <enrico.troeger@uvena.de>"
+      ],
+      [
+        "keywords",
+        "logging,logstash,beats"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/eht16/pylogbeat/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

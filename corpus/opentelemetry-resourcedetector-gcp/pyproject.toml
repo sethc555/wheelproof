@@ -1,0 +1,45 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opentelemetry-resourcedetector-gcp"
+description = "Google Cloud resource detector for OpenTelemetry"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13",]
+version = "1.12.0a0"
+requires-python = ">=3.9"
+dependencies = [ "opentelemetry-api ~= 1.30", "opentelemetry-sdk ~= 1.30", "requests ~= 2.24", "typing_extensions ~= 4.0",]
+
+[[project.authors]]
+name = "Google"
+email = "opentelemetry-pypi@google.com"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.urls]
+Homepage = "https://github.com/GoogleCloudPlatform/opentelemetry-operations-python/tree/main/opentelemetry-resourcedetector-gcp"
+
+[project.optional-dependencies]
+test = []
+
+[tool.setuptools]
+platforms = [ "any",]
+include-package-data = false
+
+[project.entry-points.opentelemetry_resource_detector]
+gcp_resource_detector = "opentelemetry.resourcedetector.gcp_resource_detector:GoogleCloudResourceDetector"
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.package-data]
+opentelemetry = [ "py.typed",]
+
+[tool.setuptools.packages.find]
+where = [ "src",]
+namespaces = true

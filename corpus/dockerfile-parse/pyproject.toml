@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dockerfile-parse"
+version = "2.0.1"
+description = "Python library for Dockerfile manipulation"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Other Environment", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: Implementation :: CPython", "Topic :: Software Development :: Libraries :: Python Modules",]
+requires-python = ">=3.6"
+dependencies = []
+
+[[project.authors]]
+name = "Jiri Popelka"
+email = "jpopelka@redhat.com"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/containerbuildsystem/dockerfile-parse"
+
+[project.optional-dependencies]
+testing = [ "pytest>=4.1.0", "pytest-cov", "pytest-html", "flake8",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pykwalify"
+version = "1.8.0"
+description = "Python lib/cli for JSON/YAML schema validation"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Operating System :: OS Independent", "License :: OSI Approved :: MIT License", "Environment :: Console", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9",]
+dependencies = [ "docopt>=0.6.2", "ruamel.yaml>=0.16.0", "python-dateutil>=2.8.0",]
+
+[[project.authors]]
+name = "Johan Andersson"
+email = "Grokzen@gmail.com"
+
+[[project.maintainers]]
+name = "Johan Andersson"
+email = "Grokzen@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "http://github.com/grokzen/pykwalify"
+
+[project.scripts]
+pykwalify = "pykwalify.cli:cli_entrypoint"
+
+[tool.setuptools]
+packages = [ "pykwalify",]
+license-files = [ "LICENSE",]
+include-package-data = false

@@ -1,0 +1,39 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pre_commit"
+version = "4.6.0"
+description = "A framework for managing and maintaining multi-language pre-commit hooks."
+classifiers = [ "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy",]
+requires-python = ">=3.10"
+dependencies = [ "cfgv>=2.0.0", "identify>=1.0.0", "nodeenv>=0.11.1", "pyyaml>=5.1", "virtualenv>=20.10.0",]
+
+[[project.authors]]
+name = "Anthony Sottile"
+email = "asottile@umich.edu"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/pre-commit/pre-commit"
+
+[project.scripts]
+pre-commit = "pre_commit.main:main"
+
+[tool.setuptools]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"pre_commit.resources" = [ "*.tar.gz", "empty_template_*", "hook-tmpl",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests*", "testing*",]
+namespaces = false

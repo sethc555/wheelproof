@@ -1,0 +1,92 @@
+{
+  "package": "pykwalify",
+  "version": "1.8.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/d5/77/2d6849510dbfce5f74f1f69768763630ad0385ad7bb0a4f39b55de3920c7/pykwalify-1.8.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Johan Andersson"
+      ],
+      [
+        "author-email",
+        "Grokzen@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://github.com/grokzen/pykwalify"
+      ],
+      [
+        "maintainer",
+        "Johan Andersson"
+      ],
+      [
+        "maintainer-email",
+        "Grokzen@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Johan Andersson <Grokzen@gmail.com>"
+      ],
+      [
+        "maintainer-email",
+        "Johan Andersson <Grokzen@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, http://github.com/grokzen/pykwalify"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+readme = "README.rst"
+name = "json-logging"
+version = "1.5.1"
+description = "JSON Python Logging"
+keywords = [ "json", "elastic", "python", "python3", "python2", "logging", "logging-library", "json", "elasticsearch", "elk", "elk-stack", "logstash", "kibana",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 3", "Topic :: System :: Logging", "Framework :: Flask",]
+
+[[project.authors]]
+name = "Bob T."
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.urls]
+Homepage = "https://github.com/thangbn/json-logging"
+
+[tool.setuptools]
+platforms = [ "any",]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "contrib", "docs", "tests*", "example", "dist", "build",]
+namespaces = false

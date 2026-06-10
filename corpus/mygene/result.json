@@ -1,0 +1,88 @@
+{
+  "package": "mygene",
+  "version": "3.2.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/0a/ec/a256003f84196aa3fdd65a7c6f5adfc0688398fb66442eba75b39c9b7627/mygene-3.2.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Chunlei Wu, Cyrus Afrasiabi, Sebastien Lelong"
+      ],
+      [
+        "author-email",
+        "cwu@scripps.edu"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/biothings/mygene.py"
+      ],
+      [
+        "keywords",
+        "biology gene annotation web service client api"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author",
+        "Cyrus Afrasiabi, Sebastien Lelong"
+      ],
+      [
+        "author-email",
+        "Chunlei Wu <cwu@scripps.edu>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "biology,gene,annotation,web,service,client,api"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/biothings/mygene.py"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

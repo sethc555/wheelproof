@@ -1,0 +1,7 @@
+{
+  "package": "mysql-connector",
+  "version": "2.2.9",
+  "sdist_url": "https://files.pythonhosted.org/packages/28/04/e40098f3730e75bbe36a338926f566ea803550a34fb50535499f4fc4787a/mysql-connector-2.2.9.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-0j6gqy31/mysql-connector-2.2.9-converted/setup.py (dynamic setup.py? flag as manual)\nWarning: 'keywords' should be a list, got type 'tuple'\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packag"
+}

@@ -1,0 +1,72 @@
+{
+  "package": "msgpack-numpy",
+  "version": "0.4.8",
+  "sdist_url": "https://files.pythonhosted.org/packages/08/94/61e8aee142733ebfdc400a05bdac6e1763c4514bba3b42743d223f388450/msgpack-numpy-0.4.8.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Lev E. Givon"
+      ],
+      [
+        "author-email",
+        "lev@columbia.edu"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/lebedov/msgpack-numpy"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "\"Lev E. Givon\" <lev@columbia.edu>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/lebedov/msgpack-numpy"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

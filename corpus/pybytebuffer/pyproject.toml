@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PyByteBuffer"
+version = "1.0.5"
+description = "A bytes manipulation library inspired by Java ByteBuffer"
+classifiers = [ "Programming Language :: Python :: Implementation :: PyPy", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7",]
+requires-python = ">=3"
+dependencies = []
+
+[[project.authors]]
+name = "iGio90"
+email = "giovanni.rocca.90@gmail.com"
+
+[project.license]
+text = "GPL 3.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/iGio90/PyByteBuffer"
+
+[tool.setuptools]
+packages = [ "PyByteBuffer",]
+include-package-data = false

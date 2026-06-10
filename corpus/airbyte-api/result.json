@@ -1,0 +1,54 @@
+{
+  "package": "airbyte-api",
+  "version": "0.53.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/ad/23/8debf9c4ca8652c9ceb60b8074e654191ba2053001616151993b39d6cdcb/airbyte-api-0.53.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/airbytehq/airbyte-api-python-sdk.git"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "project-url",
+        "Homepage, https://github.com/airbytehq/airbyte-api-python-sdk.git"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
+}

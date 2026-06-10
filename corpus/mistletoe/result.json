@@ -1,0 +1,82 @@
+{
+  "package": "mistletoe",
+  "version": "1.5.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/31/ae/d33647e2a26a8899224f36afc5e7b7a670af30f1fd87231e9f07ca19d673/mistletoe-1.5.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Mi Yu"
+      ],
+      [
+        "author-email",
+        "hello@afteryu.me"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/miyuchina/mistletoe"
+      ],
+      [
+        "keywords",
+        "markdown lexer parser development"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Mi Yu <hello@afteryu.me>"
+      ],
+      [
+        "keywords",
+        "markdown,lexer,parser,development"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/miyuchina/mistletoe"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

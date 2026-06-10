@@ -1,0 +1,70 @@
+{
+  "package": "hyperpyyaml",
+  "version": "1.2.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/ce/cf/000268ec653f354d464e6101505672365e8cecdcb216034a4bb0dbf9dca0/hyperpyyaml-1.2.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Peter Plantinga, Aku Rouhe"
+      ],
+      [
+        "author-email",
+        "speechbrain@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/speechbrain/HyperPyYAML"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author",
+        "Aku Rouhe"
+      ],
+      [
+        "author-email",
+        "Peter Plantinga <speechbrain@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/speechbrain/HyperPyYAML"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

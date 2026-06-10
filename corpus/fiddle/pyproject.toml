@@ -1,0 +1,43 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fiddle"
+version = "0.3.0"
+description = "Fiddle: A Python-first configuration library"
+keywords = [ "fiddle", "python", "configuration", "machine", "learning",]
+classifiers = [ "Development Status :: 3 - Alpha", "Intended Audience :: Developers", "Intended Audience :: Education", "Intended Audience :: Science/Research", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Topic :: Scientific/Engineering", "Topic :: Scientific/Engineering :: Mathematics", "Topic :: Scientific/Engineering :: Artificial Intelligence", "Topic :: Software Development", "Topic :: Software Development :: Libraries", "Topic :: Software Development :: Libraries :: Python Modules",]
+requires-python = ">=3.8"
+dependencies = [ "absl-py", "graphviz", "libcst", "typing-extensions",]
+
+[[project.authors]]
+name = "The Fiddle Team"
+email = "noreply@google.com"
+
+[project.license]
+text = "Apache 2.0"
+
+[project.readme]
+text = "Fiddle is a Python-first configuration library particularly well suited to ML\napplications. Fiddle enables deep configurability of parameters in a program,\nwhile allowing configuration to be expressed in readable and maintainable\nPython code.\n\n**Authors**: Dan Holtmann-Rice, Brennan Saeta, Sergio Guadarrama"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/google/fiddle"
+Documentation = "https://github.com/google/fiddle/docs"
+"Bug Reports" = "https://github.com/google/fiddle/issues"
+Source = "https://github.com/google/fiddle"
+
+[project.optional-dependencies]
+flags = [ "absl-py", "etils[epath]",]
+testing = [ "cloudpickle", "fiddle[flags]", "flax", "graphviz", "pytest", "pytype", "seqio", "tfds_nightly>=4.9.2.dev202308090034",]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+testdata = [ "testdata/*.fiddle",]
+
+[tool.setuptools.packages.find]
+exclude = [ "docs",]
+namespaces = false

@@ -1,0 +1,19 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "segment_anything"
+version = "1.0"
+dependencies = []
+
+[project.optional-dependencies]
+all = [ "matplotlib", "pycocotools", "opencv-python", "onnx", "onnxruntime",]
+dev = [ "flake8", "isort", "black", "mypy",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "notebooks",]
+namespaces = false

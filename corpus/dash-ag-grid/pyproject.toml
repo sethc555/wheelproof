@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dash_ag_grid"
+version = "35.2.0"
+description = "Dash wrapper around AG Grid, the best interactive data grid for the web."
+classifiers = [ "Framework :: Dash", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11",]
+requires-python = ">=3.6"
+dependencies = [ "dash>=2",]
+
+[[project.authors]]
+name = "Plotly <chris@plot.ly>"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://dash.plotly.com/dash-ag-grid"
+Documentation = "https://dash.plotly.com/dash-ag-grid"
+Source = "https://github.com/plotly/dash-ag-grid"
+"Issue Tracker" = "https://github.com/plotly/dash-ag-grid/issues"
+
+[project.optional-dependencies]
+dev = [ "dash[ci,dev,testing]>=2.0", "dash_mantine_components==0.12.1", "pyyaml>=5.0", "pytest<8.1.0", "wheel", "selenium>=4.0.0,<4.3.0",]
+docs = [ "dash>=2.9.0", "gunicorn>=19.9.0", "pandas>=1.2.3", "pyyaml>=6.0", "dash-bootstrap-components>=1.0.0", "yfinance", "dash-mantine-components", "dash-iconify", "colorlover", "statsmodels",]
+
+[tool.setuptools]
+packages = [ "dash_ag_grid",]
+include-package-data = true

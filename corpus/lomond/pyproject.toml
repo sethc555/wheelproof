@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pytest-runner",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lomond"
+version = "0.3.3"
+description = "Websocket Client Library"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Programming Language :: Python", "License :: OSI Approved :: BSD License", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Topic :: Internet",]
+dependencies = [ "six>=1.10.0",]
+
+[[project.authors]]
+name = "WildFoundry"
+email = "willmcgugan@gmail.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/wildfoundry/dataplicity-lomond"
+
+[project.optional-dependencies]
+testing = [ "pytest",]
+
+[tool.setuptools]
+zip-safe = true
+platforms = [ "any",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

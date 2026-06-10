@@ -1,0 +1,74 @@
+{
+  "package": "avalara",
+  "version": "26.6.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/3b/17/09e5b0fa416ae85bf50e09062e284829b2e0c99efa3341a54f85347c4ca3/avalara-26.6.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Han Bao, Adrienne Karnoski, Robert Bronson, Philip Werner, Genevieve Conty"
+      ],
+      [
+        "author-email",
+        "han.bao@avalara.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/avadev/AvaTax-REST-V2-Python-SDK"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author",
+        "Adrienne Karnoski, Robert Bronson, Philip Werner, Genevieve Conty"
+      ],
+      [
+        "author-email",
+        "Han Bao <han.bao@avalara.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/avadev/AvaTax-REST-V2-Python-SDK"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

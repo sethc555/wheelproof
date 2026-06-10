@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "types-Werkzeug"
+version = "1.0.9"
+description = "Typing stubs for Werkzeug"
+classifiers = [ "License :: OSI Approved :: Apache Software License", "Typing :: Typed",]
+dependencies = []
+
+[project.license]
+text = "Apache-2.0 license"
+
+[project.readme]
+text = "## Typing stubs for Werkzeug\n\nThis is a PEP 561 type stub package for the `Werkzeug` package.\nIt can be used by type-checking tools like mypy, PyCharm, pytype etc. to check code\nthat uses `Werkzeug`. The source for this package can be found at\nhttps://github.com/python/typeshed/tree/master/stubs/Werkzeug. All fixes for\ntypes and metadata should be contributed there.\n\n*Note:* The `Werkzeug` package includes type annotations or type stubs\nsince version 2.0. Please uninstall the `types-Werkzeug`\npackage if you use this or a newer version.\n\n\nSee https://github.com/python/typeshed/blob/master/README.md for more details.\nThis package was generated from typeshed commit `a5bc1e037fa9fb541d81de92ad27fa8543c65be4`."
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/python/typeshed"
+
+[tool.setuptools]
+packages = [ "werkzeug-stubs",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+werkzeug-stubs = [ "__init__.pyi", "_compat.pyi", "_internal.pyi", "_reloader.pyi", "contrib/__init__.pyi", "contrib/atom.pyi", "contrib/cache.pyi", "contrib/fixers.pyi", "contrib/iterio.pyi", "contrib/jsrouting.pyi", "contrib/limiter.pyi", "contrib/lint.pyi", "contrib/profiler.pyi", "contrib/securecookie.pyi", "contrib/sessions.pyi", "contrib/testtools.pyi", "contrib/wrappers.pyi", "datastructures.pyi", "debug/__init__.pyi", "debug/console.pyi", "debug/repr.pyi", "debug/tbtools.pyi", "exceptions.pyi", "filesystem.pyi", "formparser.pyi", "http.pyi", "local.pyi", "middleware/__init__.pyi", "middleware/dispatcher.pyi", "middleware/http_proxy.pyi", "middleware/lint.pyi", "middleware/profiler.pyi", "middleware/proxy_fix.pyi", "middleware/shared_data.pyi", "posixemulation.pyi", "routing.pyi", "script.pyi", "security.pyi", "serving.pyi", "test.pyi", "testapp.pyi", "urls.pyi", "useragents.pyi", "utils.pyi", "wrappers.pyi", "wsgi.pyi", "METADATA.toml",]

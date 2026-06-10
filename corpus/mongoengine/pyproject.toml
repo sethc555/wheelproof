@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mongoengine"
+version = "0.29.3"
+description = "MongoEngine is a Python Object-Document Mapper for working with MongoDB."
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Database", "Topic :: Software Development :: Libraries :: Python Modules",]
+requires-python = ">=3.7"
+dependencies = [ "pymongo>=3.4,<5.0",]
+
+[[project.authors]]
+name = "Harry Marr"
+email = "harry.marr@gmail.com"
+
+[[project.maintainers]]
+name = "Bastien Gerard"
+email = "bast.gerard@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/MongoEngine/mongoengine"
+Download = "https://github.com/MongoEngine/mongoengine/tarball/master"
+
+[project.optional-dependencies]
+test = [ "pytest", "pytest-cov", "coverage", "blinker", "Pillow>=7.0.0",]
+
+[tool.setuptools]
+include-package-data = true
+platforms = [ "any",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

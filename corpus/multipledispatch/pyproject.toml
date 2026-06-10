@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multipledispatch"
+version = "1.0.0"
+description = "Multiple dispatch"
+keywords = [ "dispatch",]
+readme = "README.rst"
+
+[[project.authors]]
+name = "Matthew Rocklin"
+email = "mrocklin@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "http://github.com/mrocklin/multipledispatch/"
+
+[tool.setuptools]
+packages = [ "multipledispatch",]
+zip-safe = false
+include-package-data = false

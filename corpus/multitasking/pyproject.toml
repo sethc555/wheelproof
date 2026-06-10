@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multitasking"
+version = "0.0.13"
+description = "Non-blocking Python methods using decorators"
+keywords = [ "multitasking", "multitask", "threading", "async",]
+classifiers = [ "License :: OSI Approved :: Apache Software License", "Development Status :: 5 - Production/Stable", "Operating System :: OS Independent", "Intended Audience :: Developers", "Topic :: Software Development :: Libraries", "Topic :: Software Development :: Libraries :: Python Modules", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13",]
+dependencies = []
+
+[[project.authors]]
+name = "Ran Aroussi"
+email = "ran@aroussi.com"
+
+[project.license]
+text = "Apache"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/ranaroussi/multitasking"
+
+[tool.setuptools]
+platforms = [ "any",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "contrib", "docs", "tests", "demo", "demos", "examples",]
+namespaces = false

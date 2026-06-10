@@ -1,0 +1,82 @@
+{
+  "package": "extract-msg",
+  "version": "0.55.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/5e/65/c70afb3b119a44b3ee36b029485dc15326cf3a7c50da19a1ecbbf949c5d1/extract_msg-0.55.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Destiny Peterson & Matthew Walker"
+      ],
+      [
+        "author-email",
+        "arceusthe@gmail.com, mattgwwalker@gmail.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/TeamMsgExtractor/msg-extractor/archives/master"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/TeamMsgExtractor/msg-extractor"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Destiny Peterson & Matthew Walker <arceusthe@gmail.com>, mattgwwalker@gmail.com"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/TeamMsgExtractor/msg-extractor/archives/master"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/TeamMsgExtractor/msg-extractor"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

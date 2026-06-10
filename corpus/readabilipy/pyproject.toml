@@ -1,0 +1,44 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "readabilipy"
+version = "0.3.0"
+description = "Python wrapper for Mozilla's Readability.js"
+classifiers = [ "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy",]
+requires-python = ">=3.6.0"
+dependencies = [ "beautifulsoup4>=4.7.1", "html5lib", "lxml", "regex",]
+
+[[project.authors]]
+name = "The Alan Turing Institute"
+email = "info@turing.ac.uk"
+
+[[project.maintainers]]
+name = "James Robinson"
+email = "jrobinson@turing.ac.uk"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "[![Coverage Status](https://coveralls.io/repos/github/alan-turing-institute/ReadabiliPy/badge.svg?branch=master)](https://coveralls.io/github/alan-turing-institute/ReadabiliPy?branch=master)\n\n`ReadabiliPy` contains a Python wrapper for Mozilla's [Readability.js](https://github.com/mozilla/readability) Node.js package, as well as article extraction routines written in pure Python.\n\nThis package augments the output of `Readability.js` to also return a list of plain text representations of article paragraphs.\n\n`ReadabiliPy` comes with a handy command line application: ``readabilipy``.\n\n\nTo use the `Readability.js` wrapper you need to have a working [Node.js](https://nodejs.org/en/download/) installation of version 14 or higher.\nMake sure to install Node.js before installing this package, as this ensures Readability.js will be installed.\nIf you only want to use the Python-based article extraction, you **do not need** to install Node.js.\n\n`ReadabiliPy` can be installed simply from PyPI:\n\n```\n$ pip install readabilipy\n```\n\nNote that to update to a new version of `Readability.js` you can simply reinstall `ReadabiliPy`.\n\n\n`ReadabiliPy` can be used either as a command line application or as a Python library.\n\n\nThe ``readabilipy`` command line application can be used to extract an article from an HTML source file.\n\nFor example, if you have the article saved as ``input.html`` in the current directory then you can run:\n\n```\n$ readabilipy -i ./input.html -o article.json\n```\n\nThe extracted article can then be found in the ``article.json`` file. By default ReadabiliPy will use the Readability.js functionality to extract the article, provided this is available. If instead you'd like to use the Python-based extraction, run:\n\n```\n$ readabilipy -p -i ./input.html -o article.json\n```\n\nThe complete help text of the command line application is as follows:\n\n```\n$ readabilipy -h\nusage: readabilipy [-h] -i INPUT_FILE -o OUTPUT_FILE [-c] [-n] [-p] [-V]\n\nExtract article data from a HTML file using either Mozilla's Readability.js\npackage or a simplified python-only alternative.\n\noptional arguments:\n-h, --help            show this help message and exit\n-i INPUT_FILE, --input-file INPUT_FILE\nPath to input file containing HTML.\n-o OUTPUT_FILE, --output-file OUTPUT_FILE\nPath to file to output the article data to as JSON.\n-c, --content-digests\nAdd a 'data-content-digest' attribute containing a\nSHA256-based digest of the element's contents to each\nHTML element in the plain_content output.\n-n, --node-indexes    Add a 'data-node-index' attribute containing a\nhierarchical representation of the element's position\nin the HTML structure each HTML element in the\nplain_content output.\n-p, --use-python-parser\nUse the pure-python 'plain_html' parser included in\nthis project rather than Mozilla's Readability.js.\n-V, --version         Show version and exit\n```\n\n\nReadabiliPy can also be used as a Python package.\nThe main routine is called ``simple_json_from_html_string`` and expects the HTML article as a string.\nHere is an example of extracting an article after downloading the page using [requests](https://requests.readthedocs.io/en/master/):\n\n```python\n>>> import requests\n>>> from readabilipy import simple_json_from_html_string\n>>> req = requests.get('https://en.wikipedia.org/wiki/Readability')\n>>> article = simple_json_from_html_string(req.text, use_readability=True)\n```\n\nNote that you need to use the flag ``use_readability=True`` to use Readability.js, otherwise the Python-based extraction is used.\n\nThe ``simple_json_from_html_string`` function returns a dictionary with the following fields:\n\n- `title`: The article title\n- `byline`: Author information\n- `content`: A simplified HTML representation of the article, with all article text contained in paragraph elements.\n- `plain_content`: A \"plain\" version of the simplified `Readability.js` article HTML present in the `content` field. This attempts to retain only the plain text content of the article, while preserving the HTML structure.\n- `plain_text`: A list containing plain text representations of each paragraph (`<p>`) or list (`<ol>` or `<ul>`) present in the simplified `Readability.js` article HTML in the `content` field. Each paragraph or list is represented as a single string. List strings look like `\"* item 1, * item 2, * item 3,\"` for both ordered and unordered lists (note the trailing `,`).\n\nNote further that:\n\n- All fields are guaranteed to be present. If individual fields are missing from the output of `Readability.js`, the value of these fields will be `None`. If no article data is returned by `Readability.js`, the value of all fields will be `None`.\n- All text in the `plain_content` and `plain_text` fields is encoded as unicode normalised using the \"NFKC\" normal form. This normal form is used to try and ensure as much as possible that things that appear visually the same are encoded with the same unicode representation (the K part) and characters are represented as a single composite character where possible (the C part).\n- An optional `content_digests` flag can be passed to the Python wrapper. When this is set to `True`, each HTML element in the `plain_content` field has a `data-content-digest` attribute, which holds the SHA-256 hash of its plain text content. For \"leaf\" nodes (containing only plain text in the output), this is the SHA-256 hash of their plain text content. For nodes containing other nodes, this is the SHA-256 hash of the concatenated SHA-256 hashes of their child nodes.\n- An optional `node_indexes` flag can be passed to the Python wrapper. When this is set to `True`, each HTML element in the `plain_content` field has a `data-node-indexes` attribute, which holds a hierarchical index describing the location of element within the `plain_content` HTML structure.\n- An optional `use_readability` flag can be passed to the Python wrapper. When this is set to `True`, Mozilla's `Readability.js` will be used as the parser. If it is set to `False` then the pure-python parser in `plain_html.py` will be used instead.\n\nThe second top-level function exported by ReadabiliPy is ``simple_tree_from_html_string``. This returns a cleaned, parsed HTML tree of the article as a [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) object.\n\n\nLicense: MIT License, see the `LICENSE` file.\n\nCopyright (c) 2018, The Alan Turing Institute\n\nIf you encounter any issues or have any suggestions for improvement, please open an issue [on Github](https://github.com/alan-turing-institute/ReadabiliPy).\nYou're helping to make this project better for everyone!"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/alan-turing-institute/ReadabiliPy"
+
+[project.optional-dependencies]
+docs = [ "sphinx", "m2r",]
+test = [ "coveralls", "pycodestyle", "pyflakes", "pylint", "pytest", "pytest-benchmark", "pytest-cov",]
+dev = [ "sphinx", "m2r", "coveralls", "pycodestyle", "pyflakes", "pylint", "pytest", "pytest-benchmark", "pytest-cov",]
+
+[project.scripts]
+readabilipy = "readabilipy.__main__:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

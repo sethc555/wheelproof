@@ -1,0 +1,102 @@
+{
+  "package": "box-sdk-gen",
+  "version": "1.17.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/74/ab/e9bd6c2b418f6221a0be767eaaee36e071cfb5b299f2a0b8d639f98139a9/box_sdk_gen-1.17.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Box"
+      ],
+      [
+        "author-email",
+        "oss@box.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/box/box-python-sdk-gen.git"
+      ],
+      [
+        "license",
+        "Apache-2.0, http://www.apache.org/licenses/LICENSE-2.0"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Box <oss@box.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/box/box-python-sdk-gen.git"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "pytest-cov; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-rerunfailures; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-timeout; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

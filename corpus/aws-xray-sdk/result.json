@@ -1,0 +1,72 @@
+{
+  "package": "aws-xray-sdk",
+  "version": "2.15.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/14/25/0cbd7a440080def5e6f063720c3b190a25f8aa2938c1e34415dc18241596/aws_xray_sdk-2.15.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/aws/aws-xray-sdk-python"
+      ],
+      [
+        "keywords",
+        "aws xray sdk"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "keywords",
+        "aws,xray,sdk"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/aws/aws-xray-sdk-python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

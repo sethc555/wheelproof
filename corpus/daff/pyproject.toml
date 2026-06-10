@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "daff"
+version = "1.4.2"
+description = "Diff and patch tables"
+keywords = [ "data", "diff", "patch",]
+classifiers = [ "Development Status :: 3 - Alpha", "Topic :: Utilities", "License :: OSI Approved :: MIT License",]
+
+[[project.authors]]
+name = "Paul Fitzpatrick"
+email = "paulfitz@alum.mit.edu"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/paulfitz/daff"
+
+[project.scripts]
+daff = "daff:main"
+
+[tool.setuptools]
+packages = [ "daff",]
+script-files = [ "daff.py",]
+include-package-data = false

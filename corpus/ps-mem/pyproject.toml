@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ps_mem"
+version = "3.14"
+description = "A utility to report core memory usage per program"
+keywords = [ "memory", "RAM", "profile", "program", "linux",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Topic :: Utilities", "Topic :: System :: Systems Administration", "License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)", "Programming Language :: Python",]
+
+[[project.authors]]
+name = "Pádraig Brady"
+email = "P@draigBrady.com"
+
+[project.license]
+text = "LGPLv2"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "http://github.com/pixelb/ps_mem"
+
+[project.scripts]
+ps_mem = "ps_mem:main"
+
+[tool.setuptools]
+py-modules = [ "ps_mem",]
+include-package-data = false

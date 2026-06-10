@@ -1,0 +1,7 @@
+{
+  "package": "pykerberos",
+  "version": "1.2.4",
+  "sdist_url": "https://files.pythonhosted.org/packages/07/e9/ae44ea7d7605df9e5ca1ed745a2c5672dc838a8398101051dd5f255b130d/pykerberos-1.2.4.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-blzgahbh/pykerberos-1.2.4-converted\n--- stdout ---\nconfiguration error: `project.readme` must be valid exactly by one definition (0 matches found):\n\n    - {type: string}\n    - type: table\n      all of the following:\n        - at least one of the following:\n            - keys:\n                'file': {type: string}\n              required: ['file']\n            - keys:\n                'text': {type: string}\n              required: ['text']\n        - keys:\n "
+}

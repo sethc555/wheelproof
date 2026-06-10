@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aliyun-python-sdk-core"
+version = "2.16.0"
+description = "The core module of Aliyun Python SDK."
+keywords = [ "aliyun", "sdk", "core",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Topic :: Software Development",]
+requires-python = ">=3.7"
+dependencies = [ "jmespath>=0.9.3,<1.0.0", "cryptography>=3.0.0",]
+
+[[project.authors]]
+name = "Alibaba Cloud"
+email = "alibaba-cloud-sdk-dev-team@list.alibaba-inc.com"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.urls]
+Homepage = "https://github.com/aliyun/aliyun-openapi-python-sdk"
+
+[tool.setuptools]
+platforms = [ "any",]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+aliyunsdkcore = [ "data/*.json",]
+"aliyunsdkcore.vendored.requests.packages.certifi" = [ "cacert.pem",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests*",]
+namespaces = false

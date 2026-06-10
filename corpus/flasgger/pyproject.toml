@@ -1,0 +1,42 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flasgger"
+version = "0.9.7.1"
+description = "Extract swagger specs from your flask project"
+classifiers = [ "Intended Audience :: Developers", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6",]
+dependencies = [ "Flask>=0.10", "PyYAML>=3.0", "jsonschema>=3.0.1", "mistune", "six>=1.10.0", "packaging",]
+
+[[project.authors]]
+name = "Bruno Rocha"
+email = "flasgger@flasgger.org"
+
+[[project.authors]]
+name = "Zixuan Rao"
+
+[[project.authors]]
+name = "Flasgger team"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/flasgger/flasgger/"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+platforms = [ "any",]
+
+[project.entry-points."flask.commands"]
+generate-api-schema = "flasgger.commands:generate_api_schema"
+
+[tool.setuptools.packages.find]
+exclude = [ "tests", "tests.*", "examples", "examples.*", "demo_app", "demo_app.*", "etc", "etc.*",]
+namespaces = false

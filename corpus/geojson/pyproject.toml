@@ -1,0 +1,37 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geojson"
+version = "3.3.0"
+description = "Python bindings and utilities for GeoJSON"
+keywords = [ "gis", "geography", "json",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Intended Audience :: Science/Research", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "Topic :: Scientific/Engineering :: GIS",]
+requires-python = ">=3.10"
+dependencies = []
+
+[[project.authors]]
+name = "Sean Gillies"
+email = "sgillies@frii.com"
+
+[[project.maintainers]]
+name = "Ray Riga"
+email = "ray.maintainer@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "https://github.com/jazzband/geojson"
+
+[tool.setuptools]
+packages = [ "geojson",]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+geojson = "geojson"
+
+[tool.setuptools.package-data]
+geojson = [ "*.rst",]

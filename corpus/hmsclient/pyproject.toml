@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hmsclient"
+version = "0.1.1"
+description = "A package interact with the Hive metastore via the Thrift protocol"
+keywords = [ "hive", "data", "database", "thrift", "metastore",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Information Technology", "Topic :: Database", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6",]
+dependencies = [ "thrift", "click",]
+
+[[project.authors]]
+name = "Giovanni Lanzani"
+email = "giovanni@lanzani.nl"
+
+[project.license]
+text = "Apache 2.0"
+
+[project.urls]
+Homepage = "https://github.com/gglanzani/hmsclient"
+
+[project.optional-dependencies]
+dev = [ "pytest",]
+test = [ "pytest",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

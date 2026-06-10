@@ -1,0 +1,98 @@
+{
+  "package": "sqlalchemy-json",
+  "version": "0.7.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/3e/57/73ba3d0ee5efbec5a0d15ee3e21606edd33b1d1fd11b5d64e581c8b8a3f6/sqlalchemy-json-0.7.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Elmer de Looff"
+      ],
+      [
+        "author-email",
+        "elmer.delooff@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/edelooff/sqlalchemy-json"
+      ],
+      [
+        "keywords",
+        "sqlalchemy json mutable"
+      ],
+      [
+        "requires-python",
+        ">= 3.6"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Elmer de Looff <elmer.delooff@gmail.com>"
+      ],
+      [
+        "keywords",
+        "sqlalchemy,json,mutable"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/edelooff/sqlalchemy-json"
+      ],
+      [
+        "requires-python",
+        ">=3.6"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

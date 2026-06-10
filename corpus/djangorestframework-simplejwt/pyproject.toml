@@ -1,0 +1,39 @@
+[build-system]
+requires = [ "setuptools>=61.2", "setuptools_scm",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "djangorestframework_simplejwt"
+description = "A minimal JSON Web Token authentication plugin for Django REST Framework"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Web Environment", "Framework :: Django", "Framework :: Django :: 4.2", "Framework :: Django :: 5.0", "Framework :: Django :: 5.1", "Framework :: Django :: 5.2", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Topic :: Internet :: WWW/HTTP",]
+requires-python = ">=3.9"
+dependencies = [ "django>=4.2", "djangorestframework>=3.14", "pyjwt>=1.7.1",]
+dynamic = [ "version",]
+
+[[project.authors]]
+name = "David Sanders"
+email = "davesque@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/jazzband/djangorestframework-simplejwt"
+
+[project.optional-dependencies]
+test = [ "cryptography", "freezegun", "pytest-cov", "pytest-django", "pytest-xdist", "pytest", "tox",]
+lint = [ "ruff", "yesqa", "pyupgrade", "pre-commit",]
+doc = [ "Sphinx", "sphinx_rtd_theme>=0.1.9",]
+dev = [ "pytest-watch", "wheel", "twine", "ipython", "cryptography", "freezegun", "pytest-cov", "pytest-django", "pytest-xdist", "pytest", "tox", "ruff", "yesqa", "pyupgrade", "pre-commit", "Sphinx", "sphinx_rtd_theme>=0.1.9", "python-jose==3.3.0",]
+python-jose = [ "python-jose==3.3.0",]
+crypto = [ "cryptography>=3.3.1",]
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+license-files = [ "LICENSE.txt",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

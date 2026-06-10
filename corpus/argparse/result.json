@@ -1,0 +1,84 @@
+{
+  "package": "argparse",
+  "version": "1.4.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/18/dd/e617cfc3f6210ae183374cd9f6a26b20514bbb5a792af97949c5aacddf0f/argparse-1.4.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Thomas Waldmann"
+      ],
+      [
+        "author-email",
+        "tw@waldmann-edv.de"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/ThomasWaldmann/argparse/"
+      ],
+      [
+        "keywords",
+        "argparse command line parser parsing"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Thomas Waldmann <tw@waldmann-edv.de>"
+      ],
+      [
+        "description-content-type",
+        "text/plain"
+      ],
+      [
+        "keywords",
+        "argparse,command,line,parser,parsing"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/ThomasWaldmann/argparse/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

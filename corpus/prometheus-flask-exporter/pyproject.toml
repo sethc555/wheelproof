@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prometheus_flask_exporter"
+version = "0.23.2"
+description = "Prometheus metrics exporter for Flask"
+keywords = [ "prometheus", "flask", "monitoring", "exporter",]
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Intended Audience :: System Administrators", "Topic :: System :: Monitoring", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12",]
+dependencies = [ "prometheus_client", "flask",]
+
+[[project.authors]]
+name = "Viktor Adam"
+email = "rycus86@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/rycus86/prometheus_flask_exporter"
+Download = "https://github.com/rycus86/prometheus_flask_exporter/archive/0.23.2.tar.gz"
+
+[tool.setuptools]
+packages = [ "prometheus_flask_exporter",]
+include-package-data = false

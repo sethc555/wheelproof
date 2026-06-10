@@ -1,0 +1,82 @@
+{
+  "package": "multitasking",
+  "version": "0.0.13",
+  "sdist_url": "https://files.pythonhosted.org/packages/be/c3/ac2cc9307fb15cc28ed6d4a9266b216c83ee7fe64299f0264047982bce88/multitasking-0.0.13.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Ran Aroussi"
+      ],
+      [
+        "author-email",
+        "ran@aroussi.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/ranaroussi/multitasking"
+      ],
+      [
+        "keywords",
+        "multitasking multitask threading async"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Ran Aroussi <ran@aroussi.com>"
+      ],
+      [
+        "keywords",
+        "multitasking,multitask,threading,async"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/ranaroussi/multitasking"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

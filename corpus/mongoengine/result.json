@@ -1,0 +1,114 @@
+{
+  "package": "mongoengine",
+  "version": "0.29.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/b4/76/160e35d90a671913146b884b1ca586909036dd56070600035821870b1aad/mongoengine-0.29.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Harry Marr"
+      ],
+      [
+        "author-email",
+        "harry.marr@gmail.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/MongoEngine/mongoengine/tarball/master"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/MongoEngine/mongoengine"
+      ],
+      [
+        "maintainer",
+        "Bastien Gerard"
+      ],
+      [
+        "maintainer-email",
+        "bast.gerard@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Harry Marr <harry.marr@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "maintainer-email",
+        "Bastien Gerard <bast.gerard@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/MongoEngine/mongoengine/tarball/master"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/MongoEngine/mongoengine"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

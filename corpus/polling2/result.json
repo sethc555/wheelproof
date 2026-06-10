@@ -1,0 +1,7 @@
+{
+  "package": "polling2",
+  "version": "0.5.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/04/9d/6a560ab95e1b92dfce97321d8ffc9f20d352fa4b12a91525d4c575df1c74/polling2-0.5.0.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-kt3lt27q/polling2-0.5.0-converted\n--- stdout ---\nconfiguration error: `project.urls.Download` must be url\nGIVEN VALUE:\n    \"\"\n\nOFFENDING RULE: 'format'\n\nDEFINITION:\n    {\n        \"type\": \"string\",\n        \"format\": \"url\"\n    }\n\nFor more details about `format` see\nhttps://validate-pyproject.readthedocs.io/en/latest/api/validate_pyproject.formats.html\n\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environme"
+}

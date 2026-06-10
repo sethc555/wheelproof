@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "et_xmlfile"
+version = "2.0.0"
+description = "An implementation of lxml.xmlfile for the standard library"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Operating System :: MacOS :: MacOS X", "Operating System :: Microsoft :: Windows", "Operating System :: POSIX", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13",]
+requires-python = ">=3.8"
+
+[[project.authors]]
+name = "See AUTHORS.txt"
+email = "charlie.clark@clark-consulting.eu"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://foss.heptapod.net/openpyxl/et_xmlfile"
+Documentation = "https://openpyxl.pages.heptapod.net/et_xmlfile/"
+Source = "https://foss.heptapod.net/openpyxl/et_xmlfile"
+Tracker = "https://foss.heptapod.net/openpyxl/et_xmfile/-/issues"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "*.tests*",]
+namespaces = false

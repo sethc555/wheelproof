@@ -1,0 +1,106 @@
+{
+  "package": "pytz",
+  "version": "2026.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/ff/46/dd499ec9038423421951e4fad73051febaa13d2df82b4064f87af8b8c0c3/pytz-2026.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Stuart Bishop"
+      ],
+      [
+        "author-email",
+        "stuart@stuartbishop.net"
+      ],
+      [
+        "download-url",
+        "https://pypi.org/project/pytz/"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://pythonhosted.org/pytz"
+      ],
+      [
+        "maintainer",
+        "Stuart Bishop"
+      ],
+      [
+        "maintainer-email",
+        "stuart@stuartbishop.net"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Stuart Bishop <stuart@stuartbishop.net>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "maintainer-email",
+        "Stuart Bishop <stuart@stuartbishop.net>"
+      ],
+      [
+        "project-url",
+        "Download, https://pypi.org/project/pytz/"
+      ],
+      [
+        "project-url",
+        "Homepage, http://pythonhosted.org/pytz"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

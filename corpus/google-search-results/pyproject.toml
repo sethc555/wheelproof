@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google_search_results"
+version = "2.4.2"
+description = "Scrape and search localized results from Google, Bing, Baidu, Yahoo, Yandex, Ebay, Homedepot, youtube at scale using SerpApi.com"
+keywords = [ "scrape", "serp", "api", "json", "search", "localized", "rank", "google", "bing", "baidu", "yandex", "yahoo", "ebay", "scale", "datamining", "training", "machine", "ml", "youtube", "naver", "walmart", "apple", "store", "app",]
+classifiers = [ "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Natural Language :: English", "Topic :: Utilities",]
+requires-python = ">=3.5"
+dependencies = [ "requests",]
+
+[[project.authors]]
+name = "vikoky"
+email = "victor@serpapi.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/serpapi/google-search-results-python"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = false

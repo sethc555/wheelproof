@@ -1,0 +1,74 @@
+{
+  "package": "typing-utils",
+  "version": "0.1.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/c0/9f/ddc5ed9182f49d6ca5d87a7629dea81ca076db54f30f78d057a081f5ec50/typing_utils-0.1.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "bojiang"
+      ],
+      [
+        "author-email",
+        "bojiang_@outlook.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/bojiang/typing_utils"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "bojiang <bojiang_@outlook.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/bojiang/typing_utils"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

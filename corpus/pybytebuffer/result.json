@@ -1,0 +1,70 @@
+{
+  "package": "pybytebuffer",
+  "version": "1.0.5",
+  "sdist_url": "https://files.pythonhosted.org/packages/22/07/124736940ea5c8526c0e33c241fb25fce5b154e5481b243db50be42f7c3b/PyByteBuffer-1.0.5.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "iGio90"
+      ],
+      [
+        "author-email",
+        "giovanni.rocca.90@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/iGio90/PyByteBuffer"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "iGio90 <giovanni.rocca.90@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/iGio90/PyByteBuffer"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "package": "slicer",
+  "version": "0.0.8",
+  "sdist_url": "https://files.pythonhosted.org/packages/d3/f9/b4bce2825b39b57760b361e6131a3dacee3d8951c58cb97ad120abb90317/slicer-0.0.8.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "InterpretML"
+      ],
+      [
+        "author-email",
+        "interpret@microsoft.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/interpretml/slicer"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "InterpretML <interpret@microsoft.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/interpretml/slicer"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

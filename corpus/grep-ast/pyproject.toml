@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grep-ast"
+version = "0.9.0"
+description = "A tool to grep through the AST of a source file"
+classifiers = [ "License :: OSI Approved :: Apache Software License",]
+dependencies = [ "tree-sitter-language-pack", "pathspec",]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/paul-gauthier/grep-ast"
+
+[project.scripts]
+grep-ast = "grep_ast.main:main"
+gast = "grep_ast.main:main"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

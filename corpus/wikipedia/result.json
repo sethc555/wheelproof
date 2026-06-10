@@ -1,0 +1,82 @@
+{
+  "package": "wikipedia",
+  "version": "1.4.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/67/35/25e68fbc99e672127cc6fbb14b8ec1ba3dfef035bf1e4c90f78f24a80b7d/wikipedia-1.4.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Jonathan Goldsmith"
+      ],
+      [
+        "author-email",
+        "jhghank@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/goldsmith/Wikipedia"
+      ],
+      [
+        "keywords",
+        "python wikipedia API"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Jonathan Goldsmith <jhghank@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "python,wikipedia,API"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/goldsmith/Wikipedia"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

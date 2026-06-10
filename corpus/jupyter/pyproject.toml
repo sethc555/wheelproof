@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jupyter"
+version = "1.1.1"
+description = "Jupyter metapackage. Install all the Jupyter components in one go."
+classifiers = [ "Intended Audience :: Developers", "Intended Audience :: System Administrators", "Intended Audience :: Science/Research", "License :: OSI Approved :: BSD License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9",]
+dependencies = [ "notebook", "jupyter-console", "nbconvert", "ipykernel", "ipywidgets", "jupyterlab",]
+
+[[project.authors]]
+name = "Jupyter Development Team"
+email = "jupyter@googlegroups.org"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+file = "long_description.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://jupyter.org"
+
+[tool.setuptools]
+py-modules = []
+license-files = [ "LICENSE",]
+include-package-data = false

@@ -1,0 +1,7 @@
+{
+  "package": "pycarlo",
+  "version": "0.12.481",
+  "sdist_url": "https://files.pythonhosted.org/packages/b6/51/8eb073b2e86a8f1ca60faaca7184db94bb99e68073fd27cef0deb0e9653e/pycarlo-0.12.481.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-vpl49o37/pycarlo-0.12.481-converted\n--- stdout ---\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - setuptools\n  - setuptools_scm\n* Getting build dependencies for wheel...\ntoml section missing PosixPath('pyproject.toml') does not contain any of the tool sections: ['setuptools_scm', 'vcs-versioning']\nTraceback (most recent call last):\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hook"
+}

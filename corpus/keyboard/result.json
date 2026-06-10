@@ -1,0 +1,82 @@
+{
+  "package": "keyboard",
+  "version": "0.13.5",
+  "sdist_url": "https://files.pythonhosted.org/packages/79/75/c969f2258e908c39aadfc57d1cb78247dc49e6d36371bb3a48c194640c01/keyboard-0.13.5.zip",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "BoppreH"
+      ],
+      [
+        "author-email",
+        "boppreh@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/boppreh/keyboard"
+      ],
+      [
+        "keywords",
+        "keyboard hook simulate hotkey"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "BoppreH <boppreh@gmail.com>"
+      ],
+      [
+        "keywords",
+        "keyboard,hook,simulate,hotkey"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/boppreh/keyboard"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
+}

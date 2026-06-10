@@ -1,0 +1,41 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "identify"
+version = "2.6.19"
+description = "File identification library for Python"
+classifiers = [ "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy",]
+requires-python = ">=3.10"
+
+[[project.authors]]
+name = "Chris Kuehl"
+email = "ckuehl@ocf.berkeley.edu"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/pre-commit/identify"
+
+[project.optional-dependencies]
+license = [ "ukkonen",]
+
+[project.scripts]
+identify-cli = "identify.cli:main"
+
+[tool.setuptools]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+identify = [ "py.typed",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests*", "testing*",]
+namespaces = false

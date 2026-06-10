@@ -1,0 +1,94 @@
+{
+  "package": "pynamodb",
+  "version": "6.1.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/af/0b/35d24cdfe532fd9c774c184fbd09118b0a8c94eb51ca9598c0c5ef21174d/pynamodb-6.1.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Jharrod LaFon"
+      ],
+      [
+        "author-email",
+        "jlafon@eyesopen.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://jlafon.io/pynamodb.html"
+      ],
+      [
+        "keywords",
+        "python dynamodb amazon"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Jharrod LaFon <jlafon@eyesopen.com>"
+      ],
+      [
+        "keywords",
+        "python,dynamodb,amazon"
+      ],
+      [
+        "project-url",
+        "Homepage, http://jlafon.io/pynamodb.html"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

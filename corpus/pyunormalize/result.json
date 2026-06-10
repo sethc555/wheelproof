@@ -1,0 +1,78 @@
+{
+  "package": "pyunormalize",
+  "version": "17.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/25/ab/b912c484cfb96ba4834efe050bbf10c9e157bd8189eb859aefba8712b136/pyunormalize-17.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Marc Lodewijck"
+      ],
+      [
+        "author-email",
+        "mlodewijck@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/mlodewijck/pyunormalize"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Marc Lodewijck <mlodewijck@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/mlodewijck/pyunormalize"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,24 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dash_core_components"
+version = "2.0.0"
+description = "Core component suite for Dash"
+dependencies = []
+
+[[project.authors]]
+name = "Chris Parmer <chris@plotly.com>"
+email = "chris@plotly.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[tool.setuptools]
+packages = [ "dash_core_components",]
+include-package-data = true

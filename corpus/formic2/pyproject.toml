@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "formic2"
+version = "1.0.3"
+description = "An implementation of Apache Ant FileSet and Globs"
+keywords = [ "Apache Ant", "glob", "recurse", "FileSet", "file utilities", "find", "fnmatcher",]
+readme = "README.rst"
+classifiers = [ "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 3", "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Topic :: Software Development :: Libraries", "Topic :: Utilities",]
+requires-python = ">=2.6, <4"
+
+[[project.authors]]
+name = "Aviser LLP"
+email = "hongxucai1991@gmail.com"
+
+[[project.authors]]
+name = "Singapore"
+
+[project.license]
+text = "GPLv3+"
+
+[project.urls]
+Homepage = "https://github.com/wolfhong/formic"
+
+[project.scripts]
+formic = "formic.command:entry_point"
+
+[tool.setuptools]
+packages = [ "formic",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+formic = [ "*.txt",]

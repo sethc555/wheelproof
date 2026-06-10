@@ -1,0 +1,16 @@
+{
+  "package": "dash",
+  "version": "4.2.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/04/25/90e909e6605445b7348a5453f1b242af7e1f2eb4220497b561874d9bc121/dash-4.2.0.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [
+      "dash-4.2.0.data/data/etc/jupyter/nbconfig/notebook.d/dash.json",
+      "dash-4.2.0.data/data/share/jupyter/lab/extensions/dash-jupyterlab.tgz",
+      "dash-4.2.0.data/data/share/jupyter/nbextensions/dash/main.js"
+    ],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": false
+  }
+}

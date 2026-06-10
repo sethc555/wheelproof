@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Pebble"
+version = "5.2.0"
+description = "Threading and multiprocessing eye-candy."
+keywords = [ "thread", "process", "pool", "decorator",]
+readme = "README.rst"
+classifiers = [ "Programming Language :: Python :: 3", "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Operating System :: OS Independent", "Topic :: Software Development :: Libraries :: Python Modules", "License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)",]
+requires-python = ">=3.8"
+
+[[project.authors]]
+name = "Matteo Cafasso"
+email = "noxdafox@gmail.com"
+
+[project.license]
+text = "LGPL"
+
+[project.urls]
+Homepage = "https://github.com/noxdafox/pebble"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "test",]
+namespaces = false

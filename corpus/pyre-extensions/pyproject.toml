@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyre-extensions"
+version = "0.0.32"
+description = "Type system extensions for use with the pyre type checker"
+classifiers = [ "Development Status :: 3 - Alpha", "Environment :: Console", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Topic :: Software Development", "Operating System :: OS Independent", "Typing :: Typed",]
+dependencies = [ "typing-inspect", "typing-extensions",]
+
+[[project.authors]]
+name = "Facebook"
+email = "pyre@fb.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://pyre-check.org"
+
+[tool.setuptools]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

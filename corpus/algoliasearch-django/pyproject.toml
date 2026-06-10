@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "algoliasearch-django"
+version = "4.0.0"
+description = "Algolia Search integration for Django"
+keywords = [ "algolia", "pyalgolia", "search", "backend", "hosted", "cloud", "full-text search", "faceted search", "django",]
+classifiers = [ "Environment :: Web Environment", "Framework :: Django", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Topic :: Internet :: WWW/HTTP",]
+dependencies = [ "django>=4.0",]
+
+[[project.authors]]
+name = "Algolia Team"
+email = "support@algolia.com"
+
+[project.license]
+text = "MIT License"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/algolia/algoliasearch-django"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

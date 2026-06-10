@@ -1,0 +1,84 @@
+{
+  "package": "zxcvbn",
+  "version": "4.5.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/ae/40/9366940b1484fd4e9423c8decbbf34a73bf52badb36281e082fe02b57aca/zxcvbn-4.5.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Daniel Wolf"
+      ],
+      [
+        "author-email",
+        "danielrwolf5@gmail.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/dwolfhub/zxcvbn-python/tarball/v4.5.0"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "home-page",
+        "https://github.com/dwolfhub/zxcvbn-python"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Daniel Wolf <danielrwolf5@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/dwolfhub/zxcvbn-python/tarball/v4.5.0"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/dwolfhub/zxcvbn-python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

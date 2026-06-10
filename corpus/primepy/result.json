@@ -1,0 +1,66 @@
+{
+  "package": "primepy",
+  "version": "1.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/35/77/0cfa1b4697cfb5336f3a96e8bc73327f64610be3a64c97275f1801afb395/primePy-1.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Indrajit Jana"
+      ],
+      [
+        "author-email",
+        "ijana@temple.edu"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/janaindrajit/primePy"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Indrajit Jana <ijana@temple.edu>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/janaindrajit/primePy"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

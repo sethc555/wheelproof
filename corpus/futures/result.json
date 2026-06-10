@@ -1,0 +1,7 @@
+{
+  "package": "futures",
+  "version": "3.4.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/56/99/75ceaebf317cb027319909ed09ee117388f0d53ba0880520952a0e8a8458/futures-3.4.0.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-3zv7ntqi/futures-3.4.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 5, in <module>\n    from setuptools_py2cfg import main\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 18, in <module>\n    from unittest.mock import Mock\n  File \"/usr/local/lib/python3.12/unittest/mock.py\", line 26, in <module>\n    import asyncio\n  File \"/usr/local/lib/pyth"
+}

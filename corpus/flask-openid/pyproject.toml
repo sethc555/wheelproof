@@ -1,0 +1,47 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Flask-OpenID"
+version = "1.3.1"
+description = "OpenID support for Flask"
+classifiers = [ "Development Status :: 4 - Beta", "Environment :: Web Environment", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Topic :: Internet :: WWW/HTTP :: Dynamic Content", "Topic :: Software Development :: Libraries :: Python Modules",]
+requires-python = ">=3.0"
+dependencies = [ "Flask>=0.10.1", "python3-openid>=2.0",]
+
+[[project.authors]]
+name = "Armin Ronacher"
+email = "armin.ronacher@active-4.com"
+
+[[project.authors]]
+name = "Patrick Uiterwijk"
+email = "puiterwijk@redhat.com"
+
+[[project.authors]]
+name = "Jarek Potiuk"
+email = "jarek@potiuk.com"
+
+[[project.authors]]
+name = "Jason R. Coombs"
+email = "jaraco@jaraco.com"
+
+[[project.authors]]
+name = "Emmanuel Bavoux"
+email = "emmanuel.bavoux@free2move.com"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.license]
+text = "BSD"
+
+[project.urls]
+Homepage = "http://github.com/mitsuhiko/flask-openid/"
+
+[tool.setuptools]
+py-modules = [ "flask_openid",]
+zip-safe = false
+platforms = [ "any",]
+include-package-data = false

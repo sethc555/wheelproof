@@ -1,0 +1,7 @@
+{
+  "package": "grpc-google-logging-v2",
+  "version": "0.11.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/9a/83/8f309f49862c5ee43ff210a7f3a4a512c1f1896d670282a222b0cadbe9ae/grpc-google-logging-v2-0.11.1.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-tj274wsg/grpc-google-logging-v2-0.11.1-converted\n--- stdout ---\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - setuptools>=61.2\n* Getting build dependencies for wheel...\n/tmp/build-env-r4_oxn5n/lib/python3.12/site-packages/setuptools/config/_apply_pyprojecttoml.py:82: SetuptoolsDeprecationWarning: `project.license` as a TOML table is deprecated\n!!\n\n        *********************************"
+}

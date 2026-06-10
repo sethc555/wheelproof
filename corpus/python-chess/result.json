@@ -1,0 +1,86 @@
+{
+  "package": "python-chess",
+  "version": "1.999",
+  "sdist_url": "https://files.pythonhosted.org/packages/5f/60/7c7d132b6683ff215bf705fc55ffc0240a6cddea89657407ca0a4fb628d0/python-chess-1.999.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Niklas Fiekas"
+      ],
+      [
+        "author-email",
+        "niklas.fiekas@backscattering.de"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/niklasf/python-chess"
+      ],
+      [
+        "keywords",
+        "chess fen epd pgn polyglot syzygy gaviota uci xboard"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Niklas Fiekas <niklas.fiekas@backscattering.de>"
+      ],
+      [
+        "keywords",
+        "chess,fen,epd,pgn,polyglot,syzygy,gaviota,uci,xboard"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/niklasf/python-chess"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "package": "jsonpointer",
+  "version": "3.1.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/18/c7/af399a2e7a67fd18d63c40c5e62d3af4e67b836a2107468b6a5ea24c4304/jsonpointer-3.1.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Stefan K\u00f6gl"
+      ],
+      [
+        "author-email",
+        "stefan@skoegl.net"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/stefankoegl/python-json-pointer"
+      ],
+      [
+        "summary",
+        "Identify specific nodes in a JSON document (RFC 6901) "
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Stefan K\u00f6gl <stefan@skoegl.net>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/stefankoegl/python-json-pointer"
+      ],
+      [
+        "summary",
+        "Identify specific nodes in a JSON document (RFC 6901)"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

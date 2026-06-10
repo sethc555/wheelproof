@@ -1,0 +1,78 @@
+{
+  "package": "node-semver",
+  "version": "0.9.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/eb/c5/e823658f716b17ab1c52d68ed13a0e09c0130af052401a26b5738e4290cc/node-semver-0.9.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "podhmo"
+      ],
+      [
+        "author-email",
+        "ababjam61+github@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/podhmo/python-node-semver"
+      ],
+      [
+        "keywords",
+        "version semver node-semver"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "podhmo <ababjam61+github@gmail.com>"
+      ],
+      [
+        "keywords",
+        "version,semver,node-semver"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/podhmo/python-node-semver"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "package": "pdfplumber",
+  "version": "0.11.9",
+  "sdist_url": "https://files.pythonhosted.org/packages/38/37/9ca3519e92a8434eb93be570b131476cc0a4e840bb39c62ddb7813a39d53/pdfplumber-0.11.9.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Jeremy Singer-Vine"
+      ],
+      [
+        "author-email",
+        "jsvine@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/jsvine/pdfplumber"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Jeremy Singer-Vine <jsvine@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/jsvine/pdfplumber"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "Pillow>=9.1; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "black==24.8.0; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "flake8==7.1.1; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "isort==5.13.2; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "jupyterlab>=4.4.8; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "mypy==1.11.1; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "nbexec==0.2.0; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pandas-stubs>=2.2.2.240805; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pandas>=2.2.2; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pdfminer.six==20251230; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "py==1.11.0; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pypdfium2>=4.18.0; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-cov==5.0.0; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-xdist==3.8.0; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest==8.3.2; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "setuptools>=78.1.1; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "types-Pillow==10.2.0.20240520; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

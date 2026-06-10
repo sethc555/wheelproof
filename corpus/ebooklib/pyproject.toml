@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "EbookLib"
+version = "0.20"
+description = "Ebook library which can handle EPUB2/EPUB3 format"
+keywords = [ "ebook", "epub",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)", "Operating System :: OS Independent", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Topic :: Software Development :: Libraries :: Python Modules",]
+requires-python = ">=2.7"
+dependencies = [ "lxml", "six",]
+
+[[project.authors]]
+name = "Aleksandar Erkalovic"
+email = "aerkalov@gmail.com"
+
+[project.license]
+text = "GNU Affero General Public License"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/aerkalov/ebooklib"
+Documentation = "https://ebooklib.readthedocs.io"
+Source = "https://github.com/aerkalov/ebooklib"
+"Bug Tracker" = "https://github.com/aerkalov/ebooklib/issues"
+
+[project.optional-dependencies]
+dev = [ "pytest", "pytest-cov", "sphinx",]
+test = [ "pytest", "pytest-cov",]
+docs = [ "sphinx",]
+
+[tool.setuptools]
+packages = [ "ebooklib", "ebooklib.plugins",]
+include-package-data = false

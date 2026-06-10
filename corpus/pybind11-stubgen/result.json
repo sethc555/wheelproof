@@ -1,0 +1,66 @@
+{
+  "package": "pybind11-stubgen",
+  "version": "2.5.5",
+  "sdist_url": "https://files.pythonhosted.org/packages/81/81/81900180501a51056572dd01aa852cc2d162478d4676ecebbfaad5cc20d1/pybind11_stubgen-2.5.5.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/sizmailov/pybind11-stubgen"
+      ],
+      [
+        "maintainer",
+        "Sergei Izmailov"
+      ],
+      [
+        "maintainer-email",
+        "sergei.a.izmailov@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "maintainer-email",
+        "Sergei Izmailov <sergei.a.izmailov@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/sizmailov/pybind11-stubgen"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

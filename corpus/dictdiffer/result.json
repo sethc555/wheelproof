@@ -1,0 +1,132 @@
+{
+  "package": "dictdiffer",
+  "version": "0.9.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/61/7b/35cbccb7effc5d7e40f4c55e2b79399e1853041997fcda15c9ff160abba0/dictdiffer-0.9.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Invenio Collaboration"
+      ],
+      [
+        "author-email",
+        "info@inveniosoftware.org"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/inveniosoftware/dictdiffer"
+      ],
+      [
+        "version",
+        "0.9.0"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Invenio Collaboration <info@inveniosoftware.org>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/inveniosoftware/dictdiffer"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "check-manifest>=0.42; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "mock>=1.3.0; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-cov>=2.10.1; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-isort>=1.2.0; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-pycodestyle>=2.2.0; python_version > \"3.5\" and extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-pycodestyle>=2; python_version <= \"3.5\" and extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-pydocstyle>=2.2.0; python_version > \"3.5\" and extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-pydocstyle>=2; python_version <= \"3.5\" and extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest==5.4.3; python_version <= \"3.5\" and extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest>=6; python_version > \"3.5\" and extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "sphinx>=3; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "tox>=3.7.0; extra == \"testing\""
+      ],
+      [
+        "version",
+        "0.0.0"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

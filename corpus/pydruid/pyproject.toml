@@ -1,0 +1,48 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydruid"
+version = "0.6.9"
+description = "A Python connector for Druid."
+classifiers = [ "License :: OSI Approved :: Apache Software License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8",]
+dependencies = [ "requests",]
+
+[[project.authors]]
+name = "Druid Developers"
+email = "druid-development@googlegroups.com"
+
+[project.license]
+text = "Apache License, Version 2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://druid.apache.org"
+"Bug Tracker" = "https://github.com/druid-io/pydruid/issues"
+Documentation = "https://pythonhosted.org/pydruid/"
+"Source Code" = "https://github.com/druid-io/pydruid"
+
+[project.optional-dependencies]
+pandas = [ "pandas",]
+async = [ "tornado",]
+sqlalchemy = [ "sqlalchemy",]
+cli = [ "pygments", "prompt_toolkit>=2.0.0", "tabulate",]
+testing = [ "pytest",]
+
+[project.scripts]
+pydruid = "pydruid.console:main"
+
+[tool.setuptools]
+include-package-data = true
+
+[project.entry-points."sqlalchemy.dialects"]
+druid = "pydruid.db.sqlalchemy:DruidHTTPDialect"
+"druid.http" = "pydruid.db.sqlalchemy:DruidHTTPDialect"
+"druid.https" = "pydruid.db.sqlalchemy:DruidHTTPSDialect"
+
+[tool.setuptools.packages.find]
+namespaces = false

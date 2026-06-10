@@ -1,0 +1,52 @@
+{
+  "package": "flake8-docstrings",
+  "version": "1.7.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/93/24/f839e3a06e18f4643ccb81370909a497297909f15106e6af2fecdef46894/flake8_docstrings-1.7.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Simon ANDR\u00c9"
+      ],
+      [
+        "author-email",
+        "sandre@anybox.fr"
+      ],
+      [
+        "dynamic",
+        "provides"
+      ],
+      [
+        "home-page",
+        "https://github.com/pycqa/flake8-docstrings"
+      ],
+      [
+        "maintainer",
+        "Ian Cordasco"
+      ],
+      [
+        "maintainer-email",
+        "graffatcolmingov@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Simon ANDR\u00c9 <sandre@anybox.fr>"
+      ],
+      [
+        "maintainer-email",
+        "Ian Cordasco <graffatcolmingov@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/pycqa/flake8-docstrings"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

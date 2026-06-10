@@ -1,0 +1,70 @@
+{
+  "package": "pygdbmi",
+  "version": "0.11.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/2a/d0/d386ad42b12b90e60293c56a3b793910f34aa21c63f7ddc8a857e498d458/pygdbmi-0.11.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Chad Smith"
+      ],
+      [
+        "author-email",
+        "grassfedcode@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/cs01/pygdbmi"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Chad Smith <grassfedcode@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/cs01/pygdbmi"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

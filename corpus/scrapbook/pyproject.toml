@@ -1,0 +1,42 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scrapbook"
+version = "0.5.0"
+description = "A library for recording and reading data in Jupyter and nteract Notebooks"
+keywords = [ "jupyter", "mapreduce", "nteract", "pipeline", "notebook",]
+classifiers = [ "Intended Audience :: Developers", "Intended Audience :: System Administrators", "Intended Audience :: Science/Research", "License :: OSI Approved :: BSD License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8",]
+requires-python = ">=3.5"
+dependencies = [ "pandas", "papermill", "jsonschema", "ipython", "pyarrow",]
+
+[[project.authors]]
+name = "nteract contributors"
+email = "nteract@googlegroups.com"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/nteract/scrapbook"
+Documentation = "https://nteract-scrapbook.readthedocs.io"
+Funding = "https://nteract.io"
+Source = "https://github.com/nteract/scrapbook/"
+Tracker = "https://github.com/nteract/scrapbook/issues"
+
+[project.optional-dependencies]
+test = [ "bumpversion", "wheel>=0.31.0", "setuptools>=38.6.0", "twine>=1.11.0", "flake8", "tox", "mock", "ipython", "papermill[dev]", "pytest>=4.1", "pytest-cov>=2.6.1", "pytest-mock>=1.10", "pytest-env>=0.6.2", "codecov", "coverage",]
+dev = [ "bumpversion", "wheel>=0.31.0", "setuptools>=38.6.0", "twine>=1.11.0", "flake8", "tox", "mock", "ipython", "papermill[dev]", "pytest>=4.1", "pytest-cov>=2.6.1", "pytest-mock>=1.10", "pytest-env>=0.6.2", "codecov", "coverage",]
+all = [ "papermill[all]",]
+s3 = [ "papermill[s3]",]
+azure = [ "papermill[azure]",]
+gcs = [ "papermill[gcs]",]
+
+[tool.setuptools]
+packages = [ "scrapbook",]
+include-package-data = true

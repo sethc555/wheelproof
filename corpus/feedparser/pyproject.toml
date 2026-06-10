@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "feedparser"
+version = "6.0.12"
+description = "Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds"
+keywords = [ "atom", "cdf", "feed", "parser", "rdf", "rss",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Text Processing :: Markup :: XML",]
+requires-python = ">=3.6"
+dependencies = [ "sgmllib3k",]
+
+[[project.authors]]
+name = "Kurt McKee"
+email = "contactme@kurtmckee.org"
+
+[project.license]
+text = "BSD-2-Clause"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/kurtmckee/feedparser"
+Download = "https://pypi.python.org/pypi/feedparser"
+
+[tool.setuptools]
+packages = [ "feedparser", "feedparser.datetimes", "feedparser.namespaces", "feedparser.parsers",]
+platforms = [ "POSIX", "Windows",]
+include-package-data = false

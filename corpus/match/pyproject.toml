@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "match"
+version = "0.3.2"
+description = "Match tokenized words and phrases within the original, untokenized, often messy, text."
+keywords = [ "tokenization",]
+readme = "README.rst"
+classifiers = [ "License :: OSI Approved :: Apache Software License", "Topic :: Text Processing", "Programming Language :: Python", "Operating System :: Microsoft :: Windows", "Operating System :: POSIX", "Operating System :: Unix", "Operating System :: MacOS", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10",]
+dependencies = [ "nltk>=3.4", "regex>=2018.7.11",]
+
+[[project.authors]]
+name = "Diane Napolitano"
+email = "dmnapolitano@gmail.com"
+
+[[project.maintainers]]
+name = "Tamar Lavee"
+email = "tlavee@ets.org"
+
+[project.urls]
+Homepage = "https://github.com/EducationalTestingService/match"
+
+[tool.setuptools]
+packages = [ "match",]
+include-package-data = false

@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-choices"
+version = "2.0.0"
+description = "Sanity for the django choices functionality."
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Operating System :: OS Independent", "License :: OSI Approved :: MIT License", "Intended Audience :: Developers", "Framework :: Django", "Framework :: Django :: 3.2", "Framework :: Django :: 4.1", "Framework :: Django :: 4.2", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: Implementation :: PyPy",]
+dependencies = [ "Django>=3.2",]
+
+[[project.authors]]
+name = "Jason Webb"
+email = "bigjasonwebb@gmail.com"
+
+[[project.authors]]
+email = "sergeimaertens@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/bigjason/django-choices"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = false

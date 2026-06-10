@@ -1,0 +1,70 @@
+{
+  "package": "pytest-json-report",
+  "version": "1.5.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/4f/d3/765dae9712fcd68d820338908c1337e077d5fdadccd5cacf95b9b0bea278/pytest-json-report-1.5.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "numirias"
+      ],
+      [
+        "author-email",
+        "numirias@users.noreply.github.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/numirias/pytest-json-report"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "numirias <numirias@users.noreply.github.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/numirias/pytest-json-report"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cloudscraper"
+version = "1.2.71"
+description = "A Python module to bypass Cloudflare's anti-bot page."
+keywords = [ "cloudflare", "scraping", "ddos", "scrape", "webscraper", "anti-bot", "waf", "iuam", "bypass", "challenge",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Natural Language :: English", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Topic :: Internet :: WWW/HTTP", "Topic :: Software Development :: Libraries :: Application Frameworks", "Topic :: Software Development :: Libraries :: Python Modules",]
+dependencies = [ "requests >= 2.9.2", "requests_toolbelt >= 0.9.1", "pyparsing >= 2.4.7",]
+
+[[project.authors]]
+name = "VeNoMouS"
+email = "venom@gen-x.co.nz"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/venomous/cloudscraper"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+exclude = [ "tests*",]
+namespaces = false

@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reedsolo"
+version = "1.7.0"
+description = "Pure-Python Reed Solomon encoder/decoder"
+classifiers = [ "Development Status :: 6 - Mature", "Intended Audience :: Developers", "Intended Audience :: Information Technology", "License :: OSI Approved :: The Unlicense (Unlicense)", "License :: OSI Approved :: MIT No Attribution License (MIT-0)", "Operating System :: Microsoft :: Windows", "Operating System :: MacOS :: MacOS X", "Operating System :: POSIX :: Linux", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: Implementation :: PyPy", "Programming Language :: Cython", "Topic :: Communications", "Topic :: Scientific/Engineering :: Mathematics", "Topic :: System :: Archiving :: Backup", "Topic :: System :: Recovery Tools",]
+
+[[project.authors]]
+name = "Tomer Filiba"
+email = "tomerfiliba@gmail.com"
+
+[[project.maintainers]]
+name = "Stephen Karl Larroque"
+email = "lrq3000@gmail.com"
+
+[project.license]
+text = "Public Domain"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/tomerfiliba/reedsolomon"
+
+[tool.setuptools]
+py-modules = [ "reedsolo",]
+platforms = [ "any",]
+include-package-data = false

@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-decouple"
+version = "3.8"
+description = "Strict separation of settings from code."
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Framework :: Django", "Framework :: Flask", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Natural Language :: English", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Topic :: Software Development :: Libraries",]
+
+[[project.authors]]
+name = "Henrique Bastos"
+email = "henrique@bastos.net"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "http://github.com/henriquebastos/python-decouple/"
+
+[tool.setuptools]
+py-modules = [ "decouple",]
+zip-safe = false
+include-package-data = true
+platforms = [ "any",]
+license-files = [ "LICENSE",]

@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "glom"
+version = "25.12.0"
+description = "A declarative object transformer and formatter, for conglomerating nested data."
+classifiers = [ "Topic :: Utilities", "Intended Audience :: Developers", "Topic :: Software Development :: Libraries", "Development Status :: 5 - Production/Stable", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "License :: OSI Approved :: BSD License",]
+dependencies = [ "boltons>=19.3.0", "attrs", "face>=20.1.1",]
+
+[[project.authors]]
+name = "Mahmoud Hashemi and Kurt Rose"
+email = "mahmoud@hatnote.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/mahmoud/glom"
+Documentation = "https://glom.readthedocs.io/en/latest/"
+
+[project.optional-dependencies]
+toml = [ "tomli; python_version<\"3.11\"",]
+yaml = [ "PyYAML",]
+
+[project.scripts]
+glom = "glom.cli:console_main"
+
+[tool.setuptools]
+packages = [ "glom", "glom.test",]
+zip-safe = false
+include-package-data = true
+platforms = [ "any",]

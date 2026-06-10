@@ -1,0 +1,66 @@
+{
+  "package": "pretty-html-table",
+  "version": "0.9.16",
+  "sdist_url": "https://files.pythonhosted.org/packages/d5/cf/99ae7225dcd8ab44f80778fd4a1ef024f1535cad520df7b852a84fd0962a/pretty_html_table-0.9.16.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Renaud Viot"
+      ],
+      [
+        "author-email",
+        "renaud.viot@simply-bi.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/sbi-rviot/ph_table"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Renaud Viot <renaud.viot@simply-bi.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/sbi-rviot/ph_table"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

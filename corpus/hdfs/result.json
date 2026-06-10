@@ -1,0 +1,74 @@
+{
+  "package": "hdfs",
+  "version": "2.7.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/29/c7/1be559eb10cb7cac0d26373f18656c8037553619ddd4098e50b04ea8b4ab/hdfs-2.7.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Matthieu Monsch"
+      ],
+      [
+        "author-email",
+        "mtth@apache.org"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://hdfscli.readthedocs.io"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Matthieu Monsch <mtth@apache.org>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://hdfscli.readthedocs.io"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

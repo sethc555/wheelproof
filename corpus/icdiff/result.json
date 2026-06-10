@@ -1,0 +1,66 @@
+{
+  "package": "icdiff",
+  "version": "2.0.10",
+  "sdist_url": "https://files.pythonhosted.org/packages/5b/6d/41c8ff13b67c30ceb9325398ff6bb9fc4b77208c6c1d79db8d5913840bc6/icdiff-2.0.10.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Jeff Kaufman"
+      ],
+      [
+        "author-email",
+        "jeff@jefftk.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://www.jefftk.com/icdiff"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Jeff Kaufman <jeff@jefftk.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://www.jefftk.com/icdiff"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

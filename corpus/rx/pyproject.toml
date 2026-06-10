@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Rx"
+version = "3.2.0"
+description = "Reactive Extensions (Rx) for Python"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Other Environment", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: Implementation :: CPython", "Topic :: Software Development :: Libraries :: Python Modules",]
+requires-python = ">=3.6.0"
+
+[[project.authors]]
+name = "Dag Brattli"
+email = "dag@brattli.net"
+
+[project.license]
+text = "MIT License"
+
+[project.urls]
+Homepage = "http://reactivex.io"
+Download = "https://github.com/ReactiveX/RxPY"
+
+[project.optional-dependencies]
+testing = [ "pytest>=4.6.1", "pytest-asyncio>=0.10.0", "coverage>=4.5.3",]
+
+[tool.setuptools]
+packages = [ "rx", "rx.internal", "rx.core", "rx.core.abc", "rx.core.operators", "rx.core.operators.connectable", "rx.core.observable", "rx.core.observer", "rx.scheduler", "rx.scheduler.eventloop", "rx.scheduler.mainloop", "rx.operators", "rx.disposable", "rx.subject", "rx.testing",]
+zip-safe = true
+include-package-data = true
+
+[tool.setuptools.package-dir]
+rx = "rx"
+
+[tool.setuptools.package-data]
+rx = [ "py.typed",]

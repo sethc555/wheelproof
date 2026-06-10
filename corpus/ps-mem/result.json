@@ -1,0 +1,78 @@
+{
+  "package": "ps-mem",
+  "version": "3.14",
+  "sdist_url": "https://files.pythonhosted.org/packages/1d/44/26189e96f535a3479e1a4b858da3fb75ad25f82e9ab3323e032deab28420/ps_mem-3.14.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "P\u00e1draig Brady"
+      ],
+      [
+        "author-email",
+        "P@draigBrady.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://github.com/pixelb/ps_mem"
+      ],
+      [
+        "keywords",
+        "memory RAM profile program linux"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "P\u00e1draig Brady <P@draigBrady.com>"
+      ],
+      [
+        "keywords",
+        "memory,RAM,profile,program,linux"
+      ],
+      [
+        "project-url",
+        "Homepage, http://github.com/pixelb/ps_mem"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smmap"
+version = "5.0.3"
+description = "A pure Python implementation of a sliding window memory map manager"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Operating System :: POSIX", "Operating System :: Microsoft :: Windows", "Operating System :: MacOS :: MacOS X", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3 :: Only",]
+requires-python = ">=3.7"
+
+[[project.authors]]
+name = "Sebastian Thiel"
+email = "byronimo@gmail.com"
+
+[project.license]
+text = "BSD-3-Clause"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/gitpython-developers/smmap"
+
+[tool.setuptools]
+zip-safe = true
+platforms = [ "any",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

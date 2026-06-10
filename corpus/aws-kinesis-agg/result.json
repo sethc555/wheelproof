@@ -1,0 +1,7 @@
+{
+  "package": "aws-kinesis-agg",
+  "version": "1.2.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/5d/6c/e4402effc9583f4d991f20e9d1992375ecaa3921d86d4688ec37c399186e/aws_kinesis_agg-1.2.3.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-nlscniwk/aws_kinesis_agg-1.2.3-converted\n--- stdout ---\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environment:\n  - setuptools>=61.2\n* Getting build dependencies for wheel...\nTraceback (most recent call last):\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_in_process/_in_process.py\", line 389, in <module>\n    main()\n  File \"/tmp/v/lib/python3.12/site-packages/pyproject_hooks/_in_process/_"
+}

@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "patsy"
+version = "1.0.2"
+description = "A Python package for describing statistical models and for building design matrices."
+classifiers = [ "Development Status :: 6 - Mature", "Intended Audience :: Developers", "Intended Audience :: Science/Research", "Intended Audience :: Financial and Insurance Industry", "License :: OSI Approved :: BSD License", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Topic :: Scientific/Engineering",]
+requires-python = ">=3.6"
+dependencies = [ "numpy >= 1.4",]
+
+[[project.authors]]
+name = "Nathaniel J. Smith"
+email = "njs@pobox.com"
+
+[project.license]
+text = "2-clause BSD"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/pydata/patsy"
+
+[project.optional-dependencies]
+test = [ "pytest", "pytest-cov", "scipy",]
+
+[tool.setuptools]
+packages = [ "patsy",]
+license-files = [ "LICENSE.txt",]
+include-package-data = false

@@ -1,0 +1,40 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robotframework-requests"
+version = "0.9.7"
+description = "Robot Framework keyword library wrapper around requests"
+keywords = [ "robotframework", "testing", "test", "automation", "http", "client", "requests", "rest", "api",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Topic :: Software Development :: Testing",]
+dependencies = [ "robotframework", "requests",]
+
+[[project.authors]]
+name = "Bulkan Savun Evcimen"
+email = "bulkan@gmail.com"
+
+[[project.maintainers]]
+name = "Luca Giovenzana"
+email = "luca@giovenzana.org"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/MarketSquare/robotframework-requests"
+
+[project.optional-dependencies]
+test = [ "robotframework>=3.2.1", "pytest", "flask", "six", "coverage", "flake8",]
+
+[tool.setuptools]
+packages = [ "RequestsLibrary",]
+platforms = [ "any",]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+"" = "src"

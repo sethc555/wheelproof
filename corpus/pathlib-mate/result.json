@@ -1,0 +1,7 @@
+{
+  "package": "pathlib-mate",
+  "version": "1.3.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/ff/dd/ee187b2d46bced8deb3b69ebfdb07c74cc622d5ddc1bec208cdc76b23b3a/pathlib_mate-1.3.2.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-mtp3kkon/pathlib_mate-1.3.2-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _main\n    setup_cal"
+}

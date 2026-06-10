@@ -1,0 +1,7 @@
+{
+  "package": "brotlipy",
+  "version": "0.7.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/d9/91/bc79b88590e4f662bd40a55a2b6beb0f15da4726732efec5aa5a3763d856/brotlipy-0.7.0.tar.gz",
+  "status": "convert-error",
+  "detail": "unexpected:  in _merge_cfg\n    over.read_string(overlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1096, in _read\n    raise e\nconfigparser.ParsingError: Source contains parsing errors: '<string>'\n\t[line 117]: ':python_version == \"2.7\" or python_version == \"3.3\" = enum34>=1.0.4, <2\\n'\n"
+}

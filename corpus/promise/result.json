@@ -1,0 +1,130 @@
+{
+  "package": "promise",
+  "version": "2.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/cf/9c/fb5d48abfe5d791cd496e4242ebcf87a4bb2e0c3dcd6e0ae68c11426a528/promise-2.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Syrus Akbary"
+      ],
+      [
+        "author-email",
+        "me@syrusakbary.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/syrusakbary/promise/releases"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/syrusakbary/promise"
+      ],
+      [
+        "keywords",
+        "concurrent future deferred promise"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Syrus Akbary <me@syrusakbary.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "concurrent,future,deferred,promise"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/syrusakbary/promise/releases"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/syrusakbary/promise"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "coveralls; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "futures; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "mock; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-asyncio; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-benchmark; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-cov; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest>=2.7.3; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

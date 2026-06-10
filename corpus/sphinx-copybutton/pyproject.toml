@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sphinx-copybutton"
+version = "0.5.2"
+description = "Add a copy button to each of your code cells."
+classifiers = [ "Framework :: Sphinx :: Extension", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3 :: Only",]
+requires-python = ">=3.7"
+dependencies = [ "sphinx>=1.8",]
+
+[[project.authors]]
+name = "Executable Book Project"
+
+[project.license]
+text = "MIT License"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/executablebooks/sphinx-copybutton"
+
+[project.optional-dependencies]
+code_style = [ "pre-commit==2.12.1",]
+rtd = [ "sphinx", "ipython", "myst-nb", "sphinx-book-theme", "sphinx-examples",]
+
+[tool.setuptools]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+sphinx_copybutton = [ "_static/copybutton.css", "_static/copybutton_funcs.js", "_static/copybutton.js_t", "_static/copy-button.svg", "_static/check-solid.svg", "_static/clipboard.min.js",]
+
+[tool.setuptools.packages.find]
+namespaces = false

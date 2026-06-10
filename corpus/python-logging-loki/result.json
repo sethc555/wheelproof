@@ -1,0 +1,74 @@
+{
+  "package": "python-logging-loki",
+  "version": "0.3.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/39/e2/b1ca91524530e5c7d73e70c4a2df952e5b7f1519977c7c51b3966b0332a8/python-logging-loki-0.3.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Andrey Maslov"
+      ],
+      [
+        "author-email",
+        "greyzmeem@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/greyzmeem/python-logging-loki"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Andrey Maslov <greyzmeem@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/greyzmeem/python-logging-loki"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

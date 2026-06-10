@@ -1,0 +1,70 @@
+{
+  "package": "method-python",
+  "version": "2.1.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/3e/94/b323bd02dd04ccaf22e3fc55c56f526524331d8a889caf454e9a13cad626/method_python-2.1.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Marco del Carmen"
+      ],
+      [
+        "author-email",
+        "marco@mdelcarmen.me"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/MethodFi/method-python"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Marco del Carmen <marco@mdelcarmen.me>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/MethodFi/method-python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

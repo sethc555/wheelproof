@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-cli-core"
+version = "2.87.0"
+description = "Microsoft Azure Command-Line Tools Core Module"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Intended Audience :: System Administrators", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "License :: OSI Approved :: MIT License",]
+requires-python = ">=3.10.0"
+dependencies = [ "argcomplete~=3.5.2", "azure-cli-telemetry==1.1.0.*", "azure-core~=1.39.0", "azure-mgmt-core>=1.2.0,<2", "cryptography", "distro; sys_platform == \"linux\"", "humanfriendly~=10.0", "jmespath", "knack~=0.14.0", "microsoft-security-utilities-secret-masker~=1.0.0b4", "msal-extensions==1.3.1", "msal[broker]==1.36.0; sys_platform == \"win32\"", "msal==1.36.0; sys_platform != \"win32\"", "packaging>=20.9", "pkginfo>=1.5.0.1", "psutil>=5.9; sys_platform != \"cygwin\"", "PyJWT>=2.1.0", "pyopenssl>=17.1.0", "py-deviceid", "requests[socks]",]
+
+[[project.authors]]
+name = "Microsoft Corporation"
+email = "azpycli@microsoft.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/Azure/azure-cli"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = false
+
+[tool.setuptools.package-data]
+"azure.cli.core" = [ "auth/landing_pages/*.html", "commandIndex.latest.json", "helpIndex.latest.json",]
+
+[tool.setuptools.packages.find]
+exclude = [ "*.tests", "*.tests.*", "tests.*", "tests", "azure", "azure.cli",]
+namespaces = false

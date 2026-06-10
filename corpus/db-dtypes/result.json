@@ -1,0 +1,94 @@
+{
+  "package": "db-dtypes",
+  "version": "1.7.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/67/9f/5569a989ad23915e51fd1b4a52ecbc7513832c1c7b5e5df262bcecae1b21/db_dtypes-1.7.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "The db-dtypes Authors"
+      ],
+      [
+        "author-email",
+        "googleapis-packages@google.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/googleapis/google-cloud-python/tree/main/packages/db-dtypes"
+      ],
+      [
+        "platform",
+        "Posix; MacOS X; Windows"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "The db-dtypes Authors <googleapis-packages@google.com>"
+      ],
+      [
+        "platform",
+        "Posix"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/googleapis/google-cloud-python/tree/main/packages/db-dtypes"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "pytest; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

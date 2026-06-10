@@ -1,0 +1,74 @@
+{
+  "package": "pyinotify",
+  "version": "0.9.6",
+  "sdist_url": "https://files.pythonhosted.org/packages/e3/c0/fd5b18dde17c1249658521f69598f3252f11d9d7a980c5be8619970646e1/pyinotify-0.9.6.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Sebastien Martini"
+      ],
+      [
+        "author-email",
+        "seb@dbzteam.org"
+      ],
+      [
+        "download-url",
+        "http://pypi.python.org/pypi/pyinotify"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://github.com/seb-m/pyinotify"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Sebastien Martini <seb@dbzteam.org>"
+      ],
+      [
+        "project-url",
+        "Download, http://pypi.python.org/pypi/pyinotify"
+      ],
+      [
+        "project-url",
+        "Homepage, http://github.com/seb-m/pyinotify"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

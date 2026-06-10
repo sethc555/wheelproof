@@ -1,0 +1,41 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "priority"
+version = "2.0.0"
+description = "A pure-Python implementation of the HTTP/2 priority tree"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy",]
+requires-python = ">=3.6.1"
+
+[[project.authors]]
+name = "Cory Benfield"
+email = "cory@lukasa.co.uk"
+
+[project.license]
+text = "MIT License"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/python-hyper/priority/"
+Documentation = "https://python-hyper.org/projects/priority/"
+Source = "https://github.com/python-hyper/priority/"
+Tracker = "https://github.com/python-hyper/priority/issues"
+Changelog = "https://github.com/python-hyper/priority/blob/master/HISTORY.rst"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+"" = "src"
+
+[tool.setuptools.package-data]
+priority = [ "py.typed",]
+
+[tool.setuptools.packages.find]
+where = [ "src",]
+namespaces = false

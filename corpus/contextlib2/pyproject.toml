@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contextlib2"
+version = "21.6.0"
+description = "Backports and enhancements for the contextlib module"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "License :: OSI Approved :: Apache Software License", "License :: OSI Approved :: Python Software Foundation License", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10",]
+requires-python = ">=3.6"
+
+[[project.authors]]
+name = "Nick Coghlan"
+email = "ncoghlan@gmail.com"
+
+[project.license]
+text = "PSF License"
+
+[project.urls]
+Homepage = "http://contextlib2.readthedocs.org"
+
+[tool.setuptools]
+packages = [ "contextlib2",]
+include-package-data = true

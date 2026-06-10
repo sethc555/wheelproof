@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "adal"
+version = "1.2.7"
+description = "Note: This library is already replaced by MSAL Python, available here: https://pypi.org/project/msal/ .ADAL Python remains available here as a legacy. The ADAL for Python library makes it easy for python application to authenticate to Azure Active Directory (AAD) in order to access AAD protected web resources."
+classifiers = [ "Development Status :: 6 - Mature", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "License :: OSI Approved :: MIT License",]
+dependencies = [ "PyJWT>=1.0.0,<3", "requests>=2.0.0,<3", "python-dateutil>=2.1.0,<3", "cryptography>=1.1.0",]
+
+[[project.authors]]
+name = "Microsoft Corporation"
+email = "nugetaad@microsoft.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/AzureAD/azure-activedirectory-library-for-python"
+
+[tool.setuptools]
+packages = [ "adal",]
+include-package-data = false

@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jinja2_humanize_extension"
+version = "0.4.0"
+description = "a jinja2 extension to use humanize library inside jinja2 templates"
+keywords = [ "jinja2", "extension",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Programming Language :: Python :: 3",]
+requires-python = ">=3.0"
+dependencies = [ "jinja2", "humanize>=3.14.0",]
+
+[[project.authors]]
+name = "Fabien MARTY"
+email = "fabien.marty@gmail.com"
+
+[[project.authors]]
+name = "Jean-Baptiste VESLIN"
+email = "jbaptiste31@free.fr"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/metwork-framework/jinja2_humanize_extension"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

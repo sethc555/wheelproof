@@ -1,0 +1,24 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scandir"
+version = "1.10.0"
+description = "scandir, a better directory iterator and faster os.walk()"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Operating System :: OS Independent", "License :: OSI Approved :: BSD License", "Programming Language :: Python", "Topic :: System :: Filesystems", "Topic :: System :: Operating System", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: Implementation :: CPython",]
+
+[[project.authors]]
+name = "Ben Hoyt"
+email = "benhoyt@gmail.com"
+
+[project.license]
+text = "New BSD License"
+
+[project.urls]
+Homepage = "https://github.com/benhoyt/scandir"
+
+[tool.setuptools]
+py-modules = [ "scandir",]
+include-package-data = false

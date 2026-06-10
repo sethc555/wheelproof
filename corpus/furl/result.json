@@ -1,0 +1,88 @@
+{
+  "package": "furl",
+  "version": "2.1.4",
+  "sdist_url": "https://files.pythonhosted.org/packages/53/e4/203a76fa2ef46cdb0a618295cc115220cbb874229d4d8721068335eb87f0/furl-2.1.4.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Ansgar Grunseid"
+      ],
+      [
+        "author-email",
+        "grunseid@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/gruns/furl"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Ansgar Grunseid <grunseid@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/gruns/furl"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "flake8; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "six>=1.8.0; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

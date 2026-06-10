@@ -1,0 +1,82 @@
+{
+  "package": "boolean-py",
+  "version": "5.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/c4/cf/85379f13b76f3a69bca86b60237978af17d6aa0bc5998978c3b8cf05abb2/boolean_py-5.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Sebastian Kraemer"
+      ],
+      [
+        "author-email",
+        "basti.kr@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/bastikr/boolean.py"
+      ],
+      [
+        "keywords",
+        "boolean expression,boolean algebra,logic,expression parser"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Sebastian Kraemer <basti.kr@gmail.com>"
+      ],
+      [
+        "keywords",
+        "boolean,expression,boolean,algebra,logic,expression,parser"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/bastikr/boolean.py"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

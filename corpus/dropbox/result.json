@@ -1,0 +1,7 @@
+{
+  "package": "dropbox",
+  "version": "12.0.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/9e/56/ac085f58e8e0d0bcafdf98c2605e454ac946e3d0c72679669ae112dc30be/dropbox-12.0.2.tar.gz",
+  "status": "convert-error",
+  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-w_sa6a4c/dropbox-12.0.2-converted/setup.py (dynamic setup.py? flag as manual)\nDownloading https://pypi.python.org/packages/source/s/setuptools/setuptools-3.1.zip\nExtracting in /tmp/tmpep89pefp\nTraceback (most recent call last):\n  File \"/tmp/wheelproof-bc-w_sa6a4c/dropbox-12.0.2-converted/ez_setup.py\", line 126, in use_setuptools\n    import pkg_resources\nModuleNotFoundError: No module named 'pkg_resources'\n\nDuring handling of the above exception, ano"
+}

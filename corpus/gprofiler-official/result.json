@@ -1,0 +1,66 @@
+{
+  "package": "gprofiler-official",
+  "version": "1.0.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/ec/c1/d9252620d09a064247d1623ebc4732d624921a2ed80a677f8b9ce61810dd/gprofiler-official-1.0.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Uku Raudvere"
+      ],
+      [
+        "author-email",
+        "biit.support@ut.ee"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://biit.cs.ut.ee/gprofiler/"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Uku Raudvere <biit.support@ut.ee>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://biit.cs.ut.ee/gprofiler/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

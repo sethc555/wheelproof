@@ -1,0 +1,114 @@
+{
+  "package": "qtconsole",
+  "version": "5.7.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/cd/28/4070eb0bacb99bc00bf60173fda25fb6a559d6600040035ba96c196d3647/qtconsole-5.7.2.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Jupyter Development Team"
+      ],
+      [
+        "author-email",
+        "spyder.python@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://jupyter.org"
+      ],
+      [
+        "platform",
+        "Mac OS X"
+      ],
+      [
+        "requires-python",
+        ">= 3.9"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Jupyter Development Team <spyder.python@gmail.com>"
+      ],
+      [
+        "platform",
+        "Mac"
+      ],
+      [
+        "platform",
+        "OS"
+      ],
+      [
+        "platform",
+        "X"
+      ],
+      [
+        "project-url",
+        "Homepage, http://jupyter.org"
+      ],
+      [
+        "requires-python",
+        ">=3.9"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

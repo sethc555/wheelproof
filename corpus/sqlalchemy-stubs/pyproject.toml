@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlalchemy-stubs"
+version = "0.4"
+description = "SQLAlchemy stubs and mypy plugin"
+classifiers = [ "Development Status :: 3 - Alpha", "Programming Language :: Python :: 3",]
+dependencies = [ "mypy>=0.790", "typing-extensions>=3.7.4",]
+
+[[project.authors]]
+name = "Ivan Levkivskyi"
+email = "levkivskyi@gmail.com"
+
+[project.license]
+text = "MIT License"
+
+[project.readme]
+text = "# Experimental SQLAlchemy type stubs and mypy plugin\n\nThis package contains type stubs and mypy plugin to provide more precise\nstatic types and type inference for SQLAlchemy framework. SQLAlchemy uses\ndynamic Python features that are hard to understand by static type checkers,\nthis is why the plugin is needed in addition to type stubs.\n\nCurrently, some basic use cases like inferring model field types are supported.\nThe final goal is to be able to get precise types for most common patterns.\n\n\n```\npip install sqlalchemy-stubs\n```\n\nImportant: you need to enable the plugin in your mypy config file:\n```\n[mypy]\nplugins = sqlmypy\n```"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/dropbox/sqlalchemy-stubs"
+
+[tool.setuptools]
+py-modules = [ "sqlmypy", "sqltyping",]
+packages = [ "sqlalchemy-stubs",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+sqlalchemy-stubs = [ "types.pyi", "exc.pyi", "__init__.pyi", "processors.pyi", "schema.pyi", "inspection.pyi", "interfaces.pyi", "log.pyi", "pool.pyi", "events.pyi", "sql/base.pyi", "sql/elements.pyi", "sql/type_api.pyi", "sql/sqltypes.pyi", "sql/util.pyi", "sql/naming.pyi", "sql/crud.pyi", "sql/compiler.pyi", "sql/__init__.pyi", "sql/ddl.pyi", "sql/expression.pyi", "sql/schema.pyi", "sql/annotation.pyi", "sql/dml.pyi", "sql/visitors.pyi", "sql/operators.pyi", "sql/functions.pyi", "sql/selectable.pyi", "connectors/__init__.pyi", "event/base.pyi", "event/__init__.pyi", "event/registry.pyi", "event/api.pyi", "event/attr.pyi", "databases/__init__.pyi", "util/langhelpers.pyi", "util/deprecations.pyi", "util/compat.pyi", "util/queue.pyi", "util/_collections.pyi", "util/__init__.pyi", "util/topological.pyi", "orm/scoping.pyi", "orm/collections.pyi", "orm/query.pyi", "orm/base.pyi", "orm/properties.pyi", "orm/strategy_options.pyi", "orm/path_registry.pyi", "orm/dynamic.pyi", "orm/exc.pyi", "orm/util.pyi", "orm/unitofwork.pyi", "orm/descriptor_props.pyi", "orm/__init__.pyi", "orm/strategies.pyi", "orm/loading.pyi", "orm/persistence.pyi", "orm/state.pyi", "orm/relationships.pyi", "orm/interfaces.pyi", "orm/attributes.pyi", "orm/sync.pyi", "orm/instrumentation.pyi", "orm/mapper.pyi", "orm/identity.pyi", "orm/dependency.pyi", "orm/evaluator.pyi", "orm/session.pyi", "orm/events.pyi", "ext/orderinglist.pyi", "ext/indexable.pyi", "ext/baked.pyi", "ext/serializer.pyi", "ext/compiler.pyi", "ext/__init__.pyi", "ext/hybrid.pyi", "ext/horizontal_shard.pyi", "ext/automap.pyi", "ext/instrumentation.pyi", "ext/mutable.pyi", "ext/associationproxy.pyi", "ext/declarative/base.pyi", "ext/declarative/clsregistry.pyi", "ext/declarative/__init__.pyi", "ext/declarative/api.pyi", "dialects/__init__.pyi", "dialects/oracle/__init__.pyi", "dialects/mysql/mysqldb.pyi", "dialects/mysql/cymysql.pyi", "dialects/mysql/base.pyi", "dialects/mysql/json.pyi", "dialects/mysql/zxjdbc.pyi", "dialects/mysql/types.pyi", "dialects/mysql/reflection.pyi", "dialects/mysql/oursql.pyi", "dialects/mysql/gaerdbms.pyi", "dialects/mysql/__init__.pyi", "dialects/mysql/pyodbc.pyi", "dialects/mysql/pymysql.pyi", "dialects/mysql/enumerated.pyi", "dialects/mysql/mysqlconnector.pyi", "dialects/sqlite/__init__.pyi", "dialects/firebird/__init__.pyi", "dialects/mssql/base.pyi", "dialects/mssql/__init__.pyi", "dialects/postgresql/ext.pyi", "dialects/postgresql/base.pyi", "dialects/postgresql/hstore.pyi", "dialects/postgresql/json.pyi", "dialects/postgresql/__init__.pyi", "dialects/postgresql/ranges.pyi", "dialects/postgresql/dml.pyi", "dialects/postgresql/array.pyi", "dialects/sybase/__init__.pyi", "engine/threadlocal.pyi", "engine/base.pyi", "engine/default.pyi", "engine/util.pyi", "engine/reflection.pyi", "engine/url.pyi", "engine/__init__.pyi", "engine/result.pyi", "engine/strategies.pyi", "engine/interfaces.pyi",]

@@ -1,0 +1,82 @@
+{
+  "package": "circuitbreaker",
+  "version": "2.1.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/df/ac/de7a92c4ed39cba31fe5ad9203b76a25ca67c530797f6bb420fff5f65ccb/circuitbreaker-2.1.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Fabian Fuelling"
+      ],
+      [
+        "author-email",
+        "pypi@fabfuel.de"
+      ],
+      [
+        "download-url",
+        "https://github.com/fabfuel/circuitbreaker/archive/2.1.3.tar.gz"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/fabfuel/circuitbreaker"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Fabian Fuelling <pypi@fabfuel.de>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/fabfuel/circuitbreaker/archive/2.1.3.tar.gz"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/fabfuel/circuitbreaker"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

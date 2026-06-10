@@ -1,0 +1,80 @@
+{
+  "package": "flasgger",
+  "version": "0.9.7.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/8a/e4/05e80adeadc39f171b51bd29b24a6d9838127f3aaa1b07c1501e662a8cee/flasgger-0.9.7.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Bruno Rocha, Zixuan Rao, Flasgger team"
+      ],
+      [
+        "author-email",
+        "flasgger@flasgger.org"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "platform"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/flasgger/flasgger/"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author",
+        "Zixuan Rao, Flasgger team"
+      ],
+      [
+        "author-email",
+        "Bruno Rocha <flasgger@flasgger.org>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/flasgger/flasgger/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pygdbmi"
+version = "0.11.0.0"
+description = "Parse gdb machine interface output with Python"
+keywords = [ "gdb", "python", "machine-interface", "parse", "frontend",]
+classifiers = [ "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: Implementation :: PyPy",]
+
+[[project.authors]]
+name = "Chad Smith"
+email = "grassfedcode@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/cs01/pygdbmi"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+script-files = []
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

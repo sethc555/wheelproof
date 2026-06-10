@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mergedeep"
+description = "A deep merge function for 🐍."
+classifiers = [ "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent",]
+requires-python = ">=3.6"
+dynamic = [ "version",]
+
+[[project.authors]]
+name = "Travis Clarke"
+email = "travis.m.clarke@gmail.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/clarketm/mergedeep"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+mergedeep = [ "py.typed",]
+
+[tool.setuptools.packages.find]
+namespaces = false
+
+[tool.setuptools.dynamic.version]
+attr = "mergedeep.__version__"

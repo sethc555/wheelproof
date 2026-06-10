@@ -1,0 +1,86 @@
+{
+  "package": "scrapbook",
+  "version": "0.5.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/44/5f/cb73e0d1c92d73d992c6e77e050f7288e5a1503644822c2792a0e4bad996/scrapbook-0.5.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "nteract contributors"
+      ],
+      [
+        "author-email",
+        "nteract@googlegroups.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/nteract/scrapbook"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "nteract contributors <nteract@googlegroups.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/nteract/scrapbook"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

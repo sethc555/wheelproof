@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "types-redis"
+version = "4.6.0.20241004"
+description = "Typing stubs for redis"
+classifiers = [ "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 3", "Typing :: Stubs Only",]
+requires-python = ">=3.8"
+dependencies = [ "types-pyOpenSSL", "cryptography>=35.0.0",]
+
+[project.license]
+text = "Apache-2.0"
+
+[project.readme]
+text = "## Typing stubs for redis\n\nThis is a [PEP 561](https://peps.python.org/pep-0561/)\ntype stub package for the [`redis`](https://github.com/redis/redis-py) package.\nIt can be used by type-checking tools like\n[mypy](https://github.com/python/mypy/),\n[pyright](https://github.com/microsoft/pyright),\n[pytype](https://github.com/google/pytype/),\nPyCharm, etc. to check code that uses\n`redis`.\n\nThis version of `types-redis` aims to provide accurate annotations\nfor `redis==4.6.0`.\nThe source for this package can be found at\nhttps://github.com/python/typeshed/tree/main/stubs/redis. All fixes for\ntypes and metadata should be contributed there.\n\n*Note:* The `redis` package includes type annotations or type stubs\nsince version 5.0.0. Please uninstall the `types-redis`\npackage if you use this or a newer version.\n\n\nThis stub package is marked as [partial](https://peps.python.org/pep-0561/#partial-stub-packages).\nIf you find that annotations are missing, feel free to contribute and help complete them.\n\n\nSee https://github.com/python/typeshed/blob/main/README.md for more details.\nThis package was generated from typeshed commit\n[`d16fe74e1f7a56ae05dfaa2fad595d5184c574d6`](https://github.com/python/typeshed/commit/d16fe74e1f7a56ae05dfaa2fad595d5184c574d6) and was tested\nwith mypy 1.11.2, pyright 1.1.383, and\npytype 2024.9.13."
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/python/typeshed"
+GitHub = "https://github.com/python/typeshed"
+Changes = "https://github.com/typeshed-internal/stub_uploader/blob/main/data/changelogs/redis.md"
+"Issue tracker" = "https://github.com/python/typeshed/issues"
+Chat = "https://gitter.im/python/typing"
+
+[tool.setuptools]
+packages = [ "redis-stubs",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+redis-stubs = [ "__init__.pyi", "asyncio/__init__.pyi", "asyncio/client.pyi", "asyncio/cluster.pyi", "asyncio/connection.pyi", "asyncio/lock.pyi", "asyncio/parser.pyi", "asyncio/retry.pyi", "asyncio/sentinel.pyi", "asyncio/utils.pyi", "backoff.pyi", "client.pyi", "cluster.pyi", "commands/__init__.pyi", "commands/bf/__init__.pyi", "commands/bf/commands.pyi", "commands/bf/info.pyi", "commands/cluster.pyi", "commands/core.pyi", "commands/graph/__init__.pyi", "commands/graph/commands.pyi", "commands/graph/edge.pyi", "commands/graph/exceptions.pyi", "commands/graph/node.pyi", "commands/graph/path.pyi", "commands/graph/query_result.pyi", "commands/helpers.pyi", "commands/json/__init__.pyi", "commands/json/commands.pyi", "commands/json/decoders.pyi", "commands/json/path.pyi", "commands/parser.pyi", "commands/redismodules.pyi", "commands/search/__init__.pyi", "commands/search/aggregation.pyi", "commands/search/commands.pyi", "commands/search/query.pyi", "commands/search/result.pyi", "commands/sentinel.pyi", "commands/timeseries/__init__.pyi", "commands/timeseries/commands.pyi", "commands/timeseries/info.pyi", "commands/timeseries/utils.pyi", "connection.pyi", "crc.pyi", "credentials.pyi", "exceptions.pyi", "lock.pyi", "ocsp.pyi", "retry.pyi", "sentinel.pyi", "typing.pyi", "utils.pyi", "METADATA.toml", "py.typed",]

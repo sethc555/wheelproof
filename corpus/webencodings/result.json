@@ -1,0 +1,88 @@
+{
+  "package": "webencodings",
+  "version": "0.5.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/0b/02/ae6ceac1baeda530866a85075641cec12989bd8d31af6d5ab4a3e8c92f47/webencodings-0.5.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Simon Sapin"
+      ],
+      [
+        "author-email",
+        "simon.sapin@exyr.org"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/SimonSapin/python-webencodings"
+      ],
+      [
+        "maintainer",
+        "Geoffrey Sneddon"
+      ],
+      [
+        "maintainer-email",
+        "me@gsnedders.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Simon Sapin <simon.sapin@exyr.org>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "maintainer-email",
+        "Geoffrey Sneddon <me@gsnedders.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/SimonSapin/python-webencodings"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

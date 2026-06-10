@@ -1,0 +1,48 @@
+{
+  "package": "jinja2-simple-tags",
+  "version": "0.6.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/d8/b7/a2c8a0c60e6f2cb0dbc5020b43df7b0dc9a8fae0767c2f72665a1c7b76c9/jinja2-simple-tags-0.6.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Mihail Mishakin"
+      ],
+      [
+        "author-email",
+        "x896321475@gmail.com"
+      ],
+      [
+        "home-page",
+        "https://github.com/dldevinc/jinja2-simple-tags"
+      ],
+      [
+        "maintainer",
+        "Mihail Mishakin"
+      ],
+      [
+        "maintainer-email",
+        "x896321475@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Mihail Mishakin <x896321475@gmail.com>"
+      ],
+      [
+        "maintainer-email",
+        "Mihail Mishakin <x896321475@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/dldevinc/jinja2-simple-tags"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

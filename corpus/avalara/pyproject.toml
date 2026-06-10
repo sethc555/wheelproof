@@ -1,0 +1,43 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Avalara"
+version = "26.6.0"
+description = "Avalara Tax Python SDK."
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.6",]
+dependencies = [ "requests",]
+
+[[project.authors]]
+name = "Han Bao"
+email = "han.bao@avalara.com"
+
+[[project.authors]]
+name = "Adrienne Karnoski"
+
+[[project.authors]]
+name = "Robert Bronson"
+
+[[project.authors]]
+name = "Philip Werner"
+
+[[project.authors]]
+name = "Genevieve Conty"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/avadev/AvaTax-REST-V2-Python-SDK"
+
+[project.optional-dependencies]
+test = [ "pytest", "pytest-cov", "tox",]
+
+[tool.setuptools]
+packages = [ "avalara",]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+"" = "src"

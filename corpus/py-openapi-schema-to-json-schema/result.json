@@ -1,0 +1,78 @@
+{
+  "package": "py-openapi-schema-to-json-schema",
+  "version": "0.0.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/51/c5/5d6a9b08df175a886b4085eb51e0351854a96e4896a367b2373ad19d881b/py-openapi-schema-to-json-schema-0.0.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Paul Glass"
+      ],
+      [
+        "author-email",
+        "pnglass@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/pglass/py-openapi-schema-to-json-schema"
+      ],
+      [
+        "keywords",
+        "openapi json schema convert translate"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Paul Glass <pnglass@gmail.com>"
+      ],
+      [
+        "keywords",
+        "openapi,json,schema,convert,translate"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/pglass/py-openapi-schema-to-json-schema"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

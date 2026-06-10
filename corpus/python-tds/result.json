@@ -1,0 +1,7 @@
+{
+  "package": "python-tds",
+  "version": "1.17.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/ae/8a/cf778bd80d142d4b3c39f9879485e2e93e4ace2ae9aabae77e07e8117f41/python_tds-1.17.1.tar.gz",
+  "status": "convert-error",
+  "detail": "unexpected: File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1064, in _read\n    raise MissingSectionHeaderError(fpname, lineno, line)\nconfigparser.MissingSectionHeaderError: File contains no section headers.\nfile: '<string>', line: 1\n\"<Mock name='mock.find_packages()' id='139220882839056'>\\n\"\n"
+}

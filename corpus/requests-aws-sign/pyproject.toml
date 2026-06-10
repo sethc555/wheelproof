@@ -1,0 +1,26 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "requests_aws_sign"
+version = "0.1.6"
+description = "This package provides AWS V4 request signing using the requests library."
+keywords = [ "requests", "aws",]
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "License :: OSI Approved :: ISC License (ISCL)",]
+dependencies = [ "requests>=2.0.0", "boto3",]
+
+[[project.authors]]
+name = "Justin Menga"
+email = "justin.menga@gmail.com"
+
+[project.license]
+text = "ISC"
+
+[project.urls]
+Homepage = "https://github.com/jmenga/requests-aws-sign"
+
+[tool.setuptools]
+packages = [ "requests_aws_sign",]
+provides = [ "requests_aws_sign",]
+include-package-data = false

@@ -1,0 +1,86 @@
+{
+  "package": "google-auth-httplib2",
+  "version": "0.4.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/1c/b3/f192c8bc7e41e0ebdbd95afcae4783417a34b6a6af62d22daf22c3fd38fc/google_auth_httplib2-0.4.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Google Cloud Platform"
+      ],
+      [
+        "author-email",
+        "googleapis-packages@google.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/googleapis/google-cloud-python/packages/google-auth-httplib2"
+      ],
+      [
+        "keywords",
+        "google auth oauth client"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Google Cloud Platform <googleapis-packages@google.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "google,auth,oauth,client"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/googleapis/google-cloud-python/packages/google-auth-httplib2"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

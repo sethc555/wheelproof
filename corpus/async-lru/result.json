@@ -1,0 +1,34 @@
+{
+  "package": "async-lru",
+  "version": "2.3.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/e8/1f/989ecfef8e64109a489fff357450cb73fa73a865a92bd8c272170a6922c2/async_lru-2.3.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "home-page",
+        "https://github.com/aio-libs/async-lru"
+      ],
+      [
+        "maintainer",
+        "aiohttp team <team@aiohttp.org>"
+      ],
+      [
+        "maintainer-email",
+        "team@aiohttp.org"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "maintainer-email",
+        "\"aiohttp team <team@aiohttp.org>\" <team@aiohttp.org>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/aio-libs/async-lru"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

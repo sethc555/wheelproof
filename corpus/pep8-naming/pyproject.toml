@@ -1,0 +1,37 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pep8-naming"
+version = "0.15.1"
+description = "Check PEP-8 naming conventions, plugin for flake8"
+keywords = [ "flake8", "pep8", "naming",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Framework :: Flake8", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3 :: Only", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Software Development :: Quality Assurance",]
+requires-python = ">=3.9"
+dependencies = [ "flake8>=5.0.0",]
+
+[[project.authors]]
+name = "Florent Xicluna"
+email = "florent.xicluna@gmail.com"
+
+[project.urls]
+Homepage = "https://github.com/PyCQA/pep8-naming"
+Source = "https://github.com/PyCQA/pep8-naming"
+Issues = "https://github.com/PyCQA/pep8-naming/issues"
+Changelog = "https://github.com/PyCQA/pep8-naming/blob/main/CHANGELOG.rst"
+
+[project.license]
+text = "Expat license"
+
+[tool.setuptools]
+py-modules = [ "pep8ext_naming",]
+zip-safe = false
+include-package-data = false
+
+[project.entry-points."flake8.extension"]
+N8 = "pep8ext_naming:NamingChecker"
+
+[tool.setuptools.package-dir]
+"" = "src"

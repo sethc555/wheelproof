@@ -1,0 +1,27 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "types-Jinja2"
+version = "2.11.9"
+description = "Typing stubs for Jinja2"
+classifiers = [ "License :: OSI Approved :: Apache Software License", "Typing :: Typed",]
+dependencies = [ "types-MarkupSafe",]
+
+[project.license]
+text = "Apache-2.0 license"
+
+[project.readme]
+text = "## Typing stubs for Jinja2\n\nThis is a PEP 561 type stub package for the `Jinja2` package.\nIt can be used by type-checking tools like mypy, PyCharm, pytype etc. to check code\nthat uses `Jinja2`. The source for this package can be found at\nhttps://github.com/python/typeshed/tree/master/stubs/Jinja2. All fixes for\ntypes and metadata should be contributed there.\n\n*Note:* The `Jinja2` package includes type annotations or type stubs\nsince version 3.0. Please uninstall the `types-Jinja2`\npackage if you use this or a newer version.\n\n\nSee https://github.com/python/typeshed/blob/master/README.md for more details.\nThis package was generated from typeshed commit `a5bc1e037fa9fb541d81de92ad27fa8543c65be4`."
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/python/typeshed"
+
+[tool.setuptools]
+packages = [ "jinja2-stubs",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+jinja2-stubs = [ "__init__.pyi", "_compat.pyi", "_stringdefs.pyi", "bccache.pyi", "compiler.pyi", "constants.pyi", "debug.pyi", "defaults.pyi", "environment.pyi", "exceptions.pyi", "ext.pyi", "filters.pyi", "lexer.pyi", "loaders.pyi", "meta.pyi", "nodes.pyi", "optimizer.pyi", "parser.pyi", "runtime.pyi", "sandbox.pyi", "tests.pyi", "utils.pyi", "visitor.pyi", "METADATA.toml",]

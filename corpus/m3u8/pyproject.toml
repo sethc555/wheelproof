@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "m3u8"
+version = "6.0.0"
+description = "Python m3u8 parser"
+requires-python = ">=3.7"
+dependencies = [ "backports-datetime-fromisoformat; python_version < '3.11'",]
+
+[[project.authors]]
+name = "Globo.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/globocom/m3u8"
+
+[tool.setuptools]
+packages = [ "m3u8",]
+zip-safe = false
+include-package-data = true

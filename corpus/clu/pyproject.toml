@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clu"
+version = "0.0.12"
+description = "Set of libraries for ML training loops in JAX."
+keywords = [ "JAX", "machine", "learning",]
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Intended Audience :: Science/Research", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python", "Topic :: Scientific/Engineering :: Artificial Intelligence",]
+dependencies = [ "absl-py", "etils[epath]", "flax", "jax", "jaxlib", "ml_collections", "numpy", "packaging", "typing_extensions", "wrapt",]
+
+[[project.authors]]
+name = "Common Loop Utils Authors"
+email = "no-reply@google.com"
+
+[project.license]
+text = "Apache 2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "http://github.com/google/CommonLoopUtils"
+
+[project.optional-dependencies]
+test = [ "pytest", "tensorflow", "tensorflow_datasets", "torch>=2.0.0",]
+testing = [ "pytest", "tensorflow", "tensorflow_datasets", "torch>=2.0.0",]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = false

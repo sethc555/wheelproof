@@ -1,0 +1,40 @@
+{
+  "package": "collectfasta",
+  "version": "3.3.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/00/6b/0a60d21e16357a9f3204f892cc17eaccc736d0213ff73db78ea4c03f8e34/collectfasta-3.3.3.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Anton Agestam, Jason Giancono"
+      ],
+      [
+        "author-email",
+        "jasongiancono+github@gmail.com"
+      ],
+      [
+        "home-page",
+        "https://github.com/jasongi/collectfasta/"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author",
+        "Jason Giancono"
+      ],
+      [
+        "author-email",
+        "Anton Agestam <jasongiancono+github@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/jasongi/collectfasta/"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

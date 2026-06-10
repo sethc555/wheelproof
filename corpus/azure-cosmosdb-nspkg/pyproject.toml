@@ -1,0 +1,26 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-cosmosdb-nspkg"
+version = "2.0.2"
+description = "Microsoft Azure CosmosDB Namespace Package [Internal]"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "License :: OSI Approved :: Apache Software License",]
+dependencies = [ "azure-nspkg>=2.0.0",]
+
+[[project.authors]]
+name = "Microsoft Corporation"
+email = "ascl@microsoft.com"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.urls]
+Homepage = "https://github.com/Azure/azure-cosmosdb-python"
+
+[tool.setuptools]
+packages = [ "azure", "azure.cosmosdb",]
+zip-safe = false
+include-package-data = false

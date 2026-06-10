@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pytest-runner>=2.7", "setuptools_scm>=3.1.0",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dictdiffer"
+description = "Dictdiffer is a library that helps you to diff and patch dictionaries."
+readme = "README.rst"
+classifiers = [ "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Topic :: Utilities",]
+dynamic = [ "version",]
+
+[[project.authors]]
+name = "Invenio Collaboration"
+email = "info@inveniosoftware.org"
+
+[project.urls]
+Homepage = "https://github.com/inveniosoftware/dictdiffer"
+Changelog = "https://github.com/inveniosoftware/dictdiffer/blob/master/CHANGES"
+Docs = "https://dictdiffer.rtfd.io/"
+
+[project.optional-dependencies]
+docs = [ "Sphinx>=3", "sphinx-rtd-theme>=0.2",]
+numpy = [ "numpy>=1.13.0;python_version<\"3.7\"", "numpy>=1.15.0;python_version<\"3.8\"", "numpy>=1.18.0;python_version<\"3.9\"", "numpy>=1.20.0;python_version>=\"3.9\"",]
+tests = [ "check-manifest>=0.42", "mock>=1.3.0", "pytest==5.4.3;python_version<=\"3.5\"", "pytest>=6;python_version>\"3.5\"", "pytest-cov>=2.10.1", "pytest-isort>=1.2.0", "pytest-pycodestyle>=2;python_version<=\"3.5\"", "pytest-pycodestyle>=2.2.0;python_version>\"3.5\"", "pytest-pydocstyle>=2;python_version<=\"3.5\"", "pytest-pydocstyle>=2.2.0;python_version>\"3.5\"", "sphinx>=3", "tox>=3.7.0",]
+all = [ "Sphinx>=3", "sphinx-rtd-theme>=0.2", "numpy>=1.13.0;python_version<\"3.7\"", "numpy>=1.15.0;python_version<\"3.8\"", "numpy>=1.18.0;python_version<\"3.9\"", "numpy>=1.20.0;python_version>=\"3.9\"", "check-manifest>=0.42", "mock>=1.3.0", "pytest==5.4.3;python_version<=\"3.5\"", "pytest>=6;python_version>\"3.5\"", "pytest-cov>=2.10.1", "pytest-isort>=1.2.0", "pytest-pycodestyle>=2;python_version<=\"3.5\"", "pytest-pycodestyle>=2.2.0;python_version>\"3.5\"", "pytest-pydocstyle>=2;python_version<=\"3.5\"", "pytest-pydocstyle>=2.2.0;python_version>\"3.5\"", "sphinx>=3", "tox>=3.7.0", "Sphinx>=3", "sphinx-rtd-theme>=0.2", "numpy>=1.13.0;python_version<\"3.7\"", "numpy>=1.15.0;python_version<\"3.8\"", "numpy>=1.18.0;python_version<\"3.9\"", "numpy>=1.20.0;python_version>=\"3.9\"", "check-manifest>=0.42", "mock>=1.3.0", "pytest==5.4.3;python_version<=\"3.5\"", "pytest>=6;python_version>\"3.5\"", "pytest-cov>=2.10.1", "pytest-isort>=1.2.0", "pytest-pycodestyle>=2;python_version<=\"3.5\"", "pytest-pycodestyle>=2.2.0;python_version>\"3.5\"", "pytest-pydocstyle>=2;python_version<=\"3.5\"", "pytest-pydocstyle>=2.2.0;python_version>\"3.5\"", "sphinx>=3", "tox>=3.7.0",]
+testing = [ "check-manifest>=0.42", "mock>=1.3.0", "pytest==5.4.3;python_version<=\"3.5\"", "pytest>=6;python_version>\"3.5\"", "pytest-cov>=2.10.1", "pytest-isort>=1.2.0", "pytest-pycodestyle>=2;python_version<=\"3.5\"", "pytest-pycodestyle>=2.2.0;python_version>\"3.5\"", "pytest-pydocstyle>=2;python_version<=\"3.5\"", "pytest-pydocstyle>=2.2.0;python_version>\"3.5\"", "sphinx>=3", "tox>=3.7.0",]
+
+[tool.setuptools]
+packages = [ "dictdiffer",]
+zip-safe = false
+include-package-data = false

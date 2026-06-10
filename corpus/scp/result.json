@@ -1,0 +1,96 @@
+{
+  "package": "scp",
+  "version": "0.15.0",
+  "sdist_url": "https://files.pythonhosted.org/packages/d6/1c/d213e1c6651d0bd37636b21b1ba9b895f276e8057f882c9f944931e4f002/scp-0.15.0.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "James Bardin"
+      ],
+      [
+        "author-email",
+        "j.bardin@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/jbardin/scp.py"
+      ],
+      [
+        "maintainer",
+        "Remi Rampin"
+      ],
+      [
+        "maintainer-email",
+        "remi@rampin.org"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "James Bardin <j.bardin@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "maintainer-email",
+        "Remi Rampin <remi@rampin.org>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/jbardin/scp.py"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

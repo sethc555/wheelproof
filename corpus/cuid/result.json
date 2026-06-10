@@ -1,0 +1,96 @@
+{
+  "package": "cuid",
+  "version": "0.4",
+  "sdist_url": "https://files.pythonhosted.org/packages/55/ca/d323556e2bf9bfb63219fbb849ce61bb830cc42d1b25b91cde3815451b91/cuid-0.4.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Rami Chowdhury"
+      ],
+      [
+        "author-email",
+        "rami.chowdhury@gmail.com"
+      ],
+      [
+        "download-url",
+        "http://github.com/necaris/cuid.py/tarball/v0.4"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://github.com/necaris/cuid.py"
+      ],
+      [
+        "maintainer",
+        "Rami Chowdhury"
+      ],
+      [
+        "maintainer-email",
+        "rami.chowdhury@gmail.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Rami Chowdhury <rami.chowdhury@gmail.com>"
+      ],
+      [
+        "maintainer-email",
+        "Rami Chowdhury <rami.chowdhury@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Download, http://github.com/necaris/cuid.py/tarball/v0.4"
+      ],
+      [
+        "project-url",
+        "Homepage, http://github.com/necaris/cuid.py"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
+}

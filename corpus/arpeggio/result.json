@@ -1,0 +1,7 @@
+{
+  "package": "arpeggio",
+  "version": "2.0.3",
+  "sdist_url": "https://files.pythonhosted.org/packages/3b/58/ba011f3cf8291804ce80f9d81289ac15f0319a27f9d7e3c124aa5e4981cc/Arpeggio-2.0.3.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-lmdwog6d/Arpeggio-2.0.3-converted\n--- stdout ---\nconfiguration error: `project.urls.Download` must be url\nGIVEN VALUE:\n    \"\"\n\nOFFENDING RULE: 'format'\n\nDEFINITION:\n    {\n        \"type\": \"string\",\n        \"format\": \"url\"\n    }\n\nFor more details about `format` see\nhttps://validate-pyproject.readthedocs.io/en/latest/api/validate_pyproject.formats.html\n\n\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\n* Installing packages in isolated environme"
+}

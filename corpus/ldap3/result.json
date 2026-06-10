@@ -1,0 +1,82 @@
+{
+  "package": "ldap3",
+  "version": "2.9.1",
+  "sdist_url": "https://files.pythonhosted.org/packages/43/ac/96bd5464e3edbc61595d0d69989f5d9969ae411866427b2500a8e5b812c0/ldap3-2.9.1.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Giovanni Cannata"
+      ],
+      [
+        "author-email",
+        "cannatag@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/cannatag/ldap3"
+      ],
+      [
+        "keywords",
+        "python3 python2 ldap"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Giovanni Cannata <cannatag@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "python3,python2,ldap"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/cannatag/ldap3"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

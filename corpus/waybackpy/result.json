@@ -1,0 +1,7 @@
+{
+  "package": "waybackpy",
+  "version": "3.0.6",
+  "sdist_url": "https://files.pythonhosted.org/packages/34/ab/90085feb81e7fad7d00c736f98e74ec315159ebef2180a77c85a06b2f0aa/waybackpy-3.0.6.tar.gz",
+  "status": "build-error",
+  "detail": "wheel build failed for /tmp/wheelproof-bc-_1j72pfw/waybackpy-3.0.6-converted\n--- stdout ---\n\n--- stderr ---\n* Creating isolated environment: venv+pip...\nERROR Failed to parse /tmp/wheelproof-bc-_1j72pfw/waybackpy-3.0.6-converted/pyproject.toml: Cannot declare ('build-system',) twice (at line 50, column 14) \n"
+}

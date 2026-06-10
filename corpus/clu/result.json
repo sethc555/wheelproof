@@ -1,0 +1,106 @@
+{
+  "package": "clu",
+  "version": "0.0.12",
+  "sdist_url": "https://files.pythonhosted.org/packages/77/b2/09a9ab02dc856b2edff2085259c2fe6830b728f5a78e89ffaa2a763002cc/clu-0.0.12.tar.gz",
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Common Loop Utils Authors"
+      ],
+      [
+        "author-email",
+        "no-reply@google.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://github.com/google/CommonLoopUtils"
+      ],
+      [
+        "keywords",
+        "JAX machine learning"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Common Loop Utils Authors <no-reply@google.com>"
+      ],
+      [
+        "keywords",
+        "JAX,machine,learning"
+      ],
+      [
+        "project-url",
+        "Homepage, http://github.com/google/CommonLoopUtils"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "pytest; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "tensorflow; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "tensorflow_datasets; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "torch>=2.0.0; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
+}

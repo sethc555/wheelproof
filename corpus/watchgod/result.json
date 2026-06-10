@@ -1,0 +1,12 @@
+{
+  "package": "watchgod",
+  "version": "0.8.2",
+  "sdist_url": "https://files.pythonhosted.org/packages/e8/6e/3904af0715e03fc5b2636cb8cf8b0eabc45b1f2cf6e4cf8453ddb6d23042/watchgod-0.8.2.tar.gz",
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [],
+    "payload_only_converted": [],
+    "payload_changed": [],
+    "entry_points_changed": true
+  }
+}
