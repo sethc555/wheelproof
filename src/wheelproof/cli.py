@@ -21,8 +21,12 @@ def main(argv: list[str] | None = None) -> int:
     p_verify.add_argument("dir_a", type=Path, help="original source tree")
     p_verify.add_argument("dir_b", type=Path, help="converted source tree")
 
-    p_convert = sub.add_parser("convert", help="convert setup.py/setup.cfg to pyproject.toml [planned]")
+    p_convert = sub.add_parser(
+        "convert", help="convert setup.py/setup.cfg to pyproject.toml (verify-gated)"
+    )
     p_convert.add_argument("srcdir", type=Path)
+    p_convert.add_argument("--output", type=Path, help="converted tree (default: <srcdir>-converted)")
+    p_convert.add_argument("--no-verify", action="store_true", help="skip the wheel-diff gate")
 
     p_batch = sub.add_parser("batch", help="scan many packages, resumable JSONL output")
     p_batch.add_argument("--top", type=int, help="scan the top N packages by downloads")
@@ -62,8 +66,29 @@ def main(argv: list[str] | None = None) -> int:
         return 0 if report.passed else 1
 
     if args.command == "convert":
-        print("convert is not implemented yet — see PLAN.md phase 3", file=sys.stderr)
-        return 2
+        from . import convert as convert_mod
+        from . import verify as verify_mod
+
+        if not args.srcdir.is_dir():
+            print(f"error: {args.srcdir} is not a directory", file=sys.stderr)
+            return 1
+        outdir = args.output or args.srcdir.parent / (args.srcdir.name + "-converted")
+        try:
+            convert_mod.convert(args.srcdir, outdir)
+        except convert_mod.ConvertError as exc:
+            print(f"error: {exc}", file=sys.stderr)
+            return 1
+        print(f"converted tree written to {outdir}")
+        if args.no_verify:
+            print("verify SKIPPED — this conversion carries no proof")
+            return 0
+        try:
+            report = verify_mod.verify(args.srcdir, outdir)
+        except verify_mod.BuildError as exc:
+            print(f"error: conversion built but verify could not run: {exc}", file=sys.stderr)
+            return 1
+        verify_mod.print_report(report, str(args.srcdir), str(outdir))
+        return 0 if report.passed else 1
 
     if args.command == "batch":
         from . import batch, scan as scan_mod
