@@ -50,7 +50,7 @@ So the strategy, in order of reliability:
 3. **Refuse loudly**: truly dynamic builds (custom build_ext, code-generating
    setup.py) get flagged "manual," not half-converted.
 
-- [ ] verify-gated wrapper around setuptools-py2cfg + ini2toml
+- [x] verify-gated wrapper around setuptools-py2cfg + ini2toml (2026-06-09: six, toml, webencodings PASS)
 - [ ] verify-gated LLM pass for setup.py the chain can't handle
 - [ ] optional diffoscope HTML report on verify failures
 - [ ] batch mode: scan -> convert -> verify -> emit per-package result dir
