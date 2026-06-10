@@ -1,0 +1,144 @@
+[
+  {
+    "package": "albumentations",
+    "builds": false,
+    "version": "2.0.8",
+    "error": "ModuleNotFoundError: No module named 'pkg_resources'"
+  },
+  {
+    "package": "asyncpg",
+    "builds": true,
+    "version": "0.31.0"
+  },
+  {
+    "package": "clickclick",
+    "builds": true,
+    "version": "20.10.2"
+  },
+  {
+    "package": "cx-oracle",
+    "builds": false,
+    "version": "8.3.0",
+    "error": "ModuleNotFoundError: No module named 'pkg_resources'"
+  },
+  {
+    "package": "decopatch",
+    "builds": false,
+    "version": "1.4.10",
+    "error": "ModuleNotFoundError: No module named 'pkg_resources'"
+  },
+  {
+    "package": "docker-compose",
+    "builds": false,
+    "version": "1.29.2",
+    "error": "ModuleNotFoundError: No module named 'pkg_resources'"
+  },
+  {
+    "package": "dropbox",
+    "builds": false,
+    "version": "12.0.2",
+    "error": "ModuleNotFoundError: No module named 'pkg_resources'"
+  },
+  {
+    "package": "elastic-apm",
+    "builds": true,
+    "version": "6.26.1"
+  },
+  {
+    "package": "google-apitools",
+    "builds": true,
+    "version": "0.5.35"
+  },
+  {
+    "package": "html5lib",
+    "builds": false,
+    "version": "1.1",
+    "error": "ModuleNotFoundError: No module named 'pkg_resources'"
+  },
+  {
+    "package": "humanfriendly",
+    "builds": true,
+    "version": "10.0"
+  },
+  {
+    "package": "hydra-core",
+    "builds": false,
+    "version": "1.3.2",
+    "error": "ModuleNotFoundError: No module named 'pkg_resources'"
+  },
+  {
+    "package": "imgaug",
+    "builds": false,
+    "version": "0.4.0",
+    "error": "ModuleNotFoundError: No module named 'pkg_resources'"
+  },
+  {
+    "package": "impyla",
+    "builds": false,
+    "version": "0.23.0",
+    "error": "ModuleNotFoundError: No module named 'pkg_resources'"
+  },
+  {
+    "package": "macholib",
+    "builds": true,
+    "version": "1.16.4"
+  },
+  {
+    "package": "makefun",
+    "builds": true,
+    "version": "1.16.0"
+  },
+  {
+    "package": "omegaconf",
+    "builds": false,
+    "version": "2.3.0",
+    "error": "ModuleNotFoundError: No module named 'pkg_resources'"
+  },
+  {
+    "package": "py-ubjson",
+    "builds": true,
+    "version": "0.16.1"
+  },
+  {
+    "package": "pyannote-audio",
+    "builds": true,
+    "version": "4.0.4"
+  },
+  {
+    "package": "pytest-cases",
+    "builds": true,
+    "version": "3.10.1"
+  },
+  {
+    "package": "sql-formatter",
+    "builds": false,
+    "version": "0.6.2",
+    "error": "ModuleNotFoundError: No module named 'pkg_resources'"
+  },
+  {
+    "package": "stone",
+    "builds": true,
+    "version": "3.3.9"
+  },
+  {
+    "package": "supervisor",
+    "builds": true,
+    "version": "4.3.0"
+  },
+  {
+    "package": "tinytuya",
+    "builds": true,
+    "version": "1.18.1"
+  },
+  {
+    "package": "uvloop",
+    "builds": true,
+    "version": "0.22.1"
+  },
+  {
+    "package": "wirerope",
+    "builds": false,
+    "version": "1.0.0",
+    "error": "ModuleNotFoundError: No module named 'pkg_resources'"
+  }
+]
