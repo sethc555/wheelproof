@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyarmor"
+version = "9.2.5"
+description = "A tool used to obfuscate python scripts, bind obfuscated scripts to fixed machine or expire obfuscated scripts."
+readme = {file = "pyarmor/README.rst", content-type = "text/x-rst"}
+license = {text = "Free To Use But Restricted"}
+authors = [{name = "Jondy Zhao"}, {email = "pyarmor@163.com"}]
+keywords = ["protect obfuscate encrypt obfuscation distribute"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Utilities",
+    "Topic :: Security",
+    "Topic :: System :: Software Distribution",
+    "License :: Free To Use But Restricted",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "pyarmor.cli.core~=8.1.1",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dashingsoft/pyarmor"
+
+[project.scripts]
+"pyarmor" = "pyarmor.cli.__main__:main"
+"pyarmor-auth" = "pyarmor.cli.docker:main"
+"pyarmor-7" = "pyarmor.pyarmor:main_entry"
+"pyarmor-8" = "pyarmor.pyarmor:main_entry_8"
+
+[tool.setuptools]
+packages = [
+    "pyarmor",
+    "pyarmor.polyfills",
+    "pyarmor.helper",
+    "pyarmor.cli",
+]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"pyarmor" = ["LICENSE", "LICENSE-ZH", "pyshield.key", "pyshield.lic", "public.key", "product.key", "license.tri", "README.rst", "protect_code.pt", "protect_code2.pt", "public_capsule.zip", "plugins/README.md", "plugins/check_ntp_time.py", "examples/README.md", "examples/README-ZH.md", "examples/*.sh", "examples/*.bat", "examples/simple/*.py", "examples/testmod/*.py", "examples/testpkg/*.py", "examples/testpkg/mypkg/*.py", "examples/pybench/*.py", "examples/pybench/package/*.py", "examples/py2exe/*.py", "examples/cx_Freeze/*.py", "examples/helloworld/*.py", "platforms/windows/x86/_pytransform.dll", "platforms/windows/x86_64/_pytransform.dll", "platforms/linux/x86/_pytransform.so", "platforms/linux/x86_64/_pytransform.so", "platforms/darwin/x86_64/_pytransform.dylib"]
+"pyarmor.cli" = ["default.cfg", "public_capsule.zip", "core.data.*"]

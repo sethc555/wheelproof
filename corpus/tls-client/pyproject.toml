@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tls_client"
+version = "1.0.1"
+description = "Advanced Python HTTP Client."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Florian Zager"},
+]
+classifiers = [
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: Unix",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Libraries",
+]
+
+[project.urls]
+Source = "https://github.com/FlorianREGAZ/Python-Tls-Client"
+
+[tool.setuptools]
+packages = ["tls_client", "tls_client.dependencies"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"*" = ["*"]

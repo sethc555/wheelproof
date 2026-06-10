@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "uuid7"
+version = "0.1.0"
+description = "UUID version 7, generating time-sorted UUIDs with 200ns time resolution and 48 bits of randomness"
+readme = {text = "uuid7 - time-sortable UUIDs\n===========================\n\nThis module implements the version 7 UUIDs, proposed by Peabody and Davis in\nhttps://www.ietf.org/id/draft-peabody-dispatch-new-uuid-format-02.html\nas an extension to RFC4122.\n\nVersion 7 has the nice characteristic that the start of a UUID encodes\nthe time with a chronological sort order and potentially ~50ns time\nresolution, while the end of the UUID includes sufficient random bits to\nensure consecutive UUIDs will remain unique.\n\nImplementation notes\n--------------------\n\nThe 128 bits in the UUID are allocated as follows: \n\n* 36 bits of whole seconds\n* 24 bits of fractional seconds, giving approx 50ns resolution\n* 14 bits of sequential counter, if called repeatedly in same time tick\n* 48 bits of randomness\n\nplus, at locations defined by RFC4122, 4 bits for the uuid version (0b111) and 2 bits for the uuid variant (0b10).\n\n.. code:: text\n\n                0                   1                   2                   3\n                0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1\n               +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n       t1      |                 unixts (secs since epoch)                     |\n               +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n       t2/t3   |unixts |  frac secs (12 bits)  |  ver  |  frac secs (12 bits)  |\n               +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n       t4/rand |var|       seq (14 bits)       |          rand (16 bits)       |\n               +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n       rand    |                          rand (32 bits)                       |\n               +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n\nIndicative timings:\n\n* `uuid.uuid4()` - 2.4us\n* `uuid7()` - 3.7us\n* `uuid7(as_type='int')` - 1.6us\n* `uuid7(as_type='str')` - 2.5us\n\nInstallation\n------------\n\n.. code:: bash\n\n   > pip install uuid7\n\nUsage\n-----\n\n.. code:: ipython\n\n   >>> from uuid_extensions import uuid7, uuid7str\n   >>> uuid7()\n   UUID('061cb26a-54b8-7a52-8000-2124e7041024')\n\n   >>> uuid7(0)\n   UUID('00000000-0000-0000-0000-00000000000')\n\n   >>> for fmt in ('bytes', 'hex', 'int', 'str', 'uuid', None):\n   ...     print(fmt, repr(uuid7(as_type=fmt)))\n   bytes b'\\x06\\x1c\\xb8\\xfe\\x0f\\x0b|9\\x80\\x00\\tjt\\x85\\xb3\\xbb'\n   hex '061cb8fe0f0b7c3980011863b956b758'\n   int 8124504378724980906989670469352026642\n   str '061cb8fe-0f0b-7c39-8003-d44a7ee0bdf6'\n   uuid UUID('061cb8fe-0f0b-7c39-8004-0489578299f6')\n   None UUID('061cb8fe-0f0f-7df2-8000-afd57c2bf446')\n\n   >>> uuid7str() # Shorthand for uuid7(as_type='str')\n   '061cb26a-54b8-7a52-8000-2124e7041024'\n\nLicence\n-------\n\n-  Free software: MIT license\n\n\n=======\nHistory\n=======\n\n0.1.0 (2021-12-28)\n------------------\n\n* First release on PyPI.\n", content-type = "text/x-rst"}
+license = {text = "MIT license"}
+authors = [
+    {name = "Stephen Simmons"},
+    {email = "mail@stevesimmons.com"},
+]
+requires-python = ">=3.7"
+keywords = ["uuid7"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/stevesimmons/uuid7"
+
+[tool.setuptools]
+packages = ["uuid_extensions"]
+include-package-data = true
+
+[tool.distutils.bdist_wheel]
+universal = true

@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ldfparser"
+version = "0.26.0"
+description = "LDF Language support for Python"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Balazs Eszes", email = "c4deszes@gmail.com"},
+]
+keywords = [
+    "LIN",
+    "LDF",
+]
+classifiers = [
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = "!=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, <4"
+dependencies = [
+    "lark>=1,<2",
+    "bitstruct",
+    "jinja2",
+]
+
+[project.urls]
+Homepage = "https://github.com/c4deszes/ldfparser"
+Documentation = "https://c4deszes.github.io/ldfparser/"
+"Source Code" = "https://github.com/c4deszes/ldfparser"
+
+[project.optional-dependencies]
+dev = [
+    "setuptools",
+    "wheel",
+    "twine",
+    "pytest",
+    "pytest-cov",
+    "pytest-benchmark",
+    "jsonschema",
+    "pylint",
+    "flake8",
+]
+
+[project.scripts]
+ldfparser = "ldfparser.cli:main"
+
+[tool.setuptools]
+packages = [
+    "ldfparser",
+    "ldfparser.grammars",
+    "ldfparser.templates",
+]
+py-modules = [
+    "lin",
+    "parser",
+]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"*" = [
+    "*.lark",
+]

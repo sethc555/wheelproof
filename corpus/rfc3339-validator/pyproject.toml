@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfc3339_validator"
+version = "0.1.4"
+description = "A pure python RFC3339 validator"
+keywords = [ "rfc3339", "validator",]
+classifiers = [ "Development Status :: 2 - Pre-Alpha", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Natural Language :: English", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8",]
+requires-python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+dependencies = [ "six",]
+[[project.authors]]
+name = "Nicolas Aimetti"
+email = "naimetti@yahoo.com.ar"
+
+[project.license]
+text = "MIT license"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/naimetti/rfc3339-validator"
+
+[project.optional-dependencies]
+testing = [ "pytest>=3", "pytest-runner", "hypothesis", "strict_rfc3339",]
+
+[tool.setuptools]
+py-modules = [ "rfc3339_validator",]
+zip-safe = false
+include-package-data = true

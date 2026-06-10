@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "readerwriterlock"
+version = "1.0.9"
+description = "A python implementation of the three Reader-Writer problems."
+readme = {text = "Reader Writer Lock\n==================\n\n**A python implementation of a solution for the three Reader-Writer problems.**\n\n[![repo status Active](https://www.repostatus.org/badges/latest/active.svg \"repo status Active\")](https://www.repostatus.org/#active)\n[![Build Status](https://travis-ci.org/elarivie/pyReaderWriterLock.svg?branch=master)](https://travis-ci.org/elarivie/pyReaderWriterLock)\n[![Coverage Status](https://codecov.io/gh/elarivie/pyreaderwriterlock/branch/master/graph/badge.svg)](https://codecov.io/gh/elarivie/pyreaderwriterlock)\n[![BugTracker](https://img.shields.io/github/issues/elarivie/pyReaderWriterLock.svg)][pyReaderWriterLock_BugTracker]\n\n\n[![Python Version](https://img.shields.io/pypi/pyversions/readerwriterlock.svg)][python]\n[![Pypi Version](https://img.shields.io/pypi/v/readerwriterlock.svg)][pyReaderWriterLock_Pypi]\n\n[![Code size in bytes](https://img.shields.io/github/languages/code-size/elarivie/pyReaderWriterLock.svg)][pyReaderWriterLock_repo]\n[![License](https://img.shields.io/pypi/l/readerwriterlock.svg)][pyReaderWriterLock_License]\n\n[![Downloads](https://pepy.tech/badge/readerwriterlock)](https://pepy.tech/project/readerwriterlock)\n[![Downloads](https://pepy.tech/badge/readerwriterlock/month)](https://pepy.tech/project/readerwriterlock/month)\n[![Downloads](https://pepy.tech/badge/readerwriterlock/week)](https://pepy.tech/project/readerwriterlock/week)\n[![pyReaderWriterLock_repo_star](https://img.shields.io/github/stars/elarivie/pyReaderWriterLock.svg?style=social&label=Stars)][pyReaderWriterLock_repo_star]\n\nNot only does it implement the reader-writer problems, it is also compliant with the python [lock interface](https://docs.python.org/3/library/threading.html#threading.Lock) which among others include support for timeout.\n\nFor reading about the theory behind the reader-writer problems refer to [Wikipedia](https://wikipedia.org/wiki/Readers\u2013writers_problem).\n\n# Installation\n\nInstall the python package [readerwriterlock](https://pypi.python.org/pypi/readerwriterlock)\n\n```bash\npython3 -m pip install -U readerwriterlock\n```\n\n# Usage\n\n1. Choose a rwlock class base on your access priority need and feature need which is going to be use by the threads:\n\n| Priority                                                      | +Speed  | +Downgradable*         |\n|---------------------------------------------------------------|-----------------|---------------|\n| **Reader priority** (*aka First readers-writers problem*)     |   RWLockRead    |  RWLockReadD  |\n| **Writer priority** (*aka Second readers-writers problem*)    |   RWLockWrite   |  RWLockWriteD |\n| **Fair priority** (*aka Third readers-writers problem*)       |   RWLockFair    |  RWLockFairD  |\n\n&ast; **Downgradable** feature allows the locks to be atomically downgraded from being locked in write-mode to locked in read-mode\n\n\u24d8 Downgradable classes come with a theoretical ~20% negative effect on performance for acquiring and releasing locks.\n\n2. Instantiate an instance of the chosen RWLock class:\n\n```python\nfrom readerwriterlock import rwlock\na = rwlock.RWLockFairD()\n```\n3. Generate read locks and write locks using the following methods:\n\n```python\n      a_reader_lock = a.gen_rlock()\n\n      a_writer_lock = a.gen_wlock()\n```\n\n4. Use the generated read/write locks to protect section in your code:\n\n## Pythonic usage example\n\n```python\nwith a.gen_rlock():\n  #Read stuff\n\nwith a.gen_wlock():\n  #Write stuff\n```\n\n## Use case (Timeout) example\n```python\nb = a.gen_wlock()\nif b.acquire(blocking=True, timeout=5):\n  try:\n    #Do stuff\n  finally:\n    b.release()\n```\n\n## Use case (Downgrade) example\n\n```python\nb = a.gen_wlock()\nif b.acquire():\n    try:\n        #Read/Write stuff\n        b = b.downgrade()\n        #Read stuff\n    finally:\n        b.release()\n```\n\n## Live example\nRefer to the file [test_rwlock.py](tests/test_rwlock.py) which has above 90% line coverage of [rwlock.py](readerwriterlock/rwlock.py).\n\nThe tests can be initiated by doing\n\n```bash\nmake check.test.coverage\n```\n\nContact\n----\n* Project: [GitHub](https://github.com/elarivie/pyReaderWriterLock)\n* \u00c9ric Larivi\u00e8re <ericlariviere@hotmail.com>\n\n\n[python]: https://www.python.org\n[pyReaderWriterLock_repo]: https://github.com/elarivie/pyReaderWriterLock\n[pyReaderWriterLock_BugTracker]: https://github.com/elarivie/pyReaderWriterLock/issues\n[pyReaderWriterLock_repo_star]: https://github.com/elarivie/pyReaderWriterLock/stargazers\n[pyReaderWriterLock_Pypi]: https://pypi.python.org/pypi/readerwriterlock\n[pyReaderWriterLock_License]: https://github.com/elarivie/pyReaderWriterLock/blob/master/LICENSE.txt", content-type = "text/markdown"}
+license = {text = "MIT"}
+authors = [
+    {name = "\u00c9ric Larivi\u00e8re", email = "ericlariviere@hotmail.com"},
+]
+maintainers = [
+    {name = "\u00c9ric Larivi\u00e8re"},
+]
+keywords = [
+    "rwlock",
+    "read-write lock",
+    "lock",
+    "priority",
+    "reader",
+    "writer",
+    "fair",
+    "read",
+    "write",
+    "thread",
+    "synchronize",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+requires-python = ">=3.6"
+dependencies = [
+    "typing_extensions",
+]
+
+[project.urls]
+Homepage = "https://github.com/elarivie/pyReaderWriterLock"
+Download = "https://github.com/elarivie/pyReaderWriterLock"
+Source = "https://github.com/elarivie/pyReaderWriterLock"
+Tracker = "https://github.com/elarivie/pyReaderWriterLock/issues"
+
+[tool.setuptools]
+include-package-data = false
+packages = ["readerwriterlock"]
+
+[tool.setuptools.package-data]
+readerwriterlock = ["py.typed"]

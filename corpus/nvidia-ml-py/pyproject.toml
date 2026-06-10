@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nvidia-ml-py"
+version = "13.610.43"
+description = "Python Bindings for the NVIDIA Management Library"
+readme = {file = "README.txt", content-type = "text/markdown"}
+license = {text = "BSD"}
+authors = [
+    {name = "NVIDIA Corporation"},
+    {email = "nvml-bindings@nvidia.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Hardware",
+    "Topic :: System :: Systems Administration",
+]
+
+[project.urls]
+Homepage = "https://forums.developer.nvidia.com"
+
+[tool.setuptools]
+py-modules = ["pynvml", "example"]
+include-package-data = false

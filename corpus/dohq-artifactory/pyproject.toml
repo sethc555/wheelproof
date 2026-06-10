@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dohq-artifactory"
+version = "1.0.1"
+description = "A Python interface to Artifactory"
+readme = {text = "See full documentation here: https://devopshq.github.io/artifactory/", content-type = "text/plain"}
+license = {text = "MIT License"}
+authors = [
+    {name = "Alexey Burov"},
+    {email = "aburov@ptsecurity.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: System :: Filesystems",
+]
+dependencies = [
+    "requests>=2.30.0",
+    "python-dateutil",
+    "PyJWT~=2.0",
+]
+
+[project.optional-dependencies]
+tests = [
+    "pytest>=7.0.0",
+    "responses>=0.23.1",
+    "mock",
+    "flake8",
+]
+
+[project.urls]
+Homepage = "https://devopshq.github.io/artifactory/"
+Download = "https://github.com/devopshq/artifactory"
+
+[tool.setuptools]
+include-package-data = false
+py-modules = ["artifactory"]
+packages = ["dohq_artifactory"]
+
+[tool.setuptools.package-data]
+"*" = ["README.md"]

@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pytest-runner",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ndjson"
+version = "0.3.1"
+description = "JsonDecoder for ndjson"
+keywords = [ "ndjson",]
+classifiers = [ "Development Status :: 2 - Pre-Alpha", "Intended Audience :: Developers", "License :: OSI Approved :: GNU General Public License v3 (GPLv3)", "Natural Language :: English", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7",]
+dependencies = []
+[[project.authors]]
+name = "Robert Grant"
+email = "rhgrant10@gmail.com"
+
+[project.license]
+text = "GNU General Public License v3"
+
+[project.readme]
+text = "======\nndjson\n======\n\nSupport for ndjson. Plain and simple.\n\n.. image:: https://img.shields.io/pypi/v/ndjson.svg\n:target: https://pypi.python.org/pypi/ndjson\n\n.. image:: https://img.shields.io/travis/rhgrant10/ndjson.svg\n:target: https://travis-ci.org/rhgrant10/ndjson\n\n.. image:: https://img.shields.io/pypi/pyversions/ndjson\n:target: https://pypi.python.org/pypi/ndjson\n\n.. image:: https://img.shields.io/pypi/l/ndjson\n:target: https://pypi.python.org/pypi/ndjson\n\n\nFeatures\n--------\n\n* familiar interface\n* very small\n* no dependencies\n* works as advertised\n* has tests\n\n\nUsage\n-----\n\n``ndjson`` exposes the same api as the builtin ``json`` and ``pickle`` packages.\n\n.. code-block:: python\n\nimport ndjson\n\nwith open('data.ndjson') as f:\ndata = ndjson.load(f)\n\ntext = ndjson.dumps(data)\ndata = ndjson.loads(text)\n\nwith open('backup.ndjson', 'w') as f:\nndjson.dump(items, f)\n\n\nIt contains ``JSONEncoder`` and ``JSONDecoder`` classes for easy\nuse with other libraries, such as ``requests``:\n\n.. code-block:: python\n\nimport ndjson\nimport requests\n\nresponse = requests.get('https://example.com/api/data')\nitems = response.json(cls=ndjson.Decoder)\n\nThe library also packs ``reader`` and ``writer`` classes very similar to standard csv ones:\n\n.. code-block:: python\n\nimport ndjson\n\nwith open('./posts.ndjson') as f:\nreader = ndjson.reader(f)\n\nfor post in reader:\nprint(post)\n\nwith open('./posts.ndjson', 'w') as f:\nwriter = ndjson.writer(f, ensure_ascii=False)\n\nfor post in posts:\nwriter.writerow(post)\n\n\nCredits\n-------\n\nThis package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.\n\n.. _Cookiecutter: https://github.com/audreyr/cookiecutter\n.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage\n\n\n=======\nHistory\n=======\n\n0.3.1 (2020-02-24)\n------------------\n\n* Fix a small spelling mistake\n\n0.3.0 (2020-02-24)\n------------------\n\n* Add ``ndjson.writer``\n* Add ``ndjson.reader``\n\n0.2.0 (2019-08-01)\n------------------\n\n* Add 3.7 support\n* Remove 3.4 support\n\n0.1.0 (2018-05-17)\n------------------\n\n* First release on PyPI."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/rhgrant10/ndjson"
+
+[project.optional-dependencies]
+testing = [ "pytest", "six",]
+
+[tool.setuptools]
+zip-safe = true
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = [ "ndjson",]
+namespaces = false

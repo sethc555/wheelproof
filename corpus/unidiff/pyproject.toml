@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unidiff"
+version = "0.7.5"
+description = "Unified diff parsing/metadata extraction library."
+keywords = [ "unified", "diff", "parse", "metadata",]
+readme = "README.rst"
+classifiers = [ "Intended Audience :: Developers", "Development Status :: 4 - Beta", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11",]
+[[project.authors]]
+name = "Matias Bordese"
+email = "mbordese@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "http://github.com/matiasb/python-unidiff"
+
+[tool.setuptools]
+include-package-data = true
+script-files = [ "bin/unidiff",]
+license-files = [ "LICENSE",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

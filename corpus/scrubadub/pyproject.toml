@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scrubadub"
+version = "2.0.1"
+description = "Clean personally identifiable information from dirty dirty text."
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "MIT"}
+authors = [
+    {name = "Dean Malmgren", email = "dean.malmgren@datascopeanalytics.com"},
+]
+dependencies = [
+    "textblob==0.15.3",
+    "phonenumbers",
+    "python-stdnum",
+    "dateparser",
+    "catalogue",
+    "scikit-learn",
+    "typing_extensions",
+    "faker",
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Text Processing",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/LeapBeyond/scrubadub"
+Download = "https://github.com/LeapBeyond/scrubadub/archives/master"
+
+[tool.setuptools]
+packages = [
+    "scrubadub",
+    "scrubadub.detectors",
+    "scrubadub.filth",
+    "scrubadub.post_processors",
+    "scrubadub.detectors.en_US",
+    "scrubadub.detectors.en_GB",
+    "scrubadub.filth.en_US",
+    "scrubadub.filth.en_GB",
+]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"*" = ["scrubadub/detectors/models/sklearn_address/*.json"]

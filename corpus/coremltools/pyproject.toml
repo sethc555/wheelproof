@@ -1,0 +1,147 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coremltools"
+version = "9.0"
+description = "Community Tools for Core ML"
+readme = {text = "coremltools\n===========\n\n`Core ML <http://developer.apple.com/documentation/coreml>`_\nis an Apple framework that allows developers to easily integrate\nmachine learning (ML) models into apps. Core ML is available on iOS, iPadOS,\nwatchOS, macOS, and tvOS. Core ML introduces a public file format (.mlmodel)\nfor a broad set of ML methods including deep neural networks (convolutional\nand recurrent), tree ensembles (boosted trees, random forest, decision trees),\nand generalized linear models. Core ML models can be directly integrated into\napps within Xcode.\n\n:code:`coremltools` is a python package for creating, examining, and testing models in\nthe .mlmodel format. In particular, it can be used to:\n\n- Convert trained models from popular machine learning tools into Core ML format\n  (.mlmodel).\n- Write models to Core ML format with a simple API.\n- Making predictions using the Core ML framework (on select platforms) to\n  verify conversion.\n\nMore Information\n----------------\n\n- `coremltools user guide and examples <https://coremltools.readme.io/>`_\n- `Core ML framework documentation <http://developer.apple.com/documentation/coreml>`_\n- `Machine learning at Apple <https://developer.apple.com/machine-learning>`_\n\nLicense\n-------\nCopyright (c) 2020, Apple Inc. All rights reserved.\n\nUse of this source code is governed by the\n`3-Clause BSD License <https://opensource.org/licenses/BSD-3-Clause>`_\nthat can be found in the LICENSE.txt file.\n", content-type = "text/x-rst"}
+license = {text = "BSD"}
+authors = [
+  {name = "Apple Inc.", email = "coremltools@apple.com"},
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Operating System :: MacOS :: MacOS X",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering",
+  "Topic :: Software Development",
+]
+dependencies = [
+  "numpy >= 1.14.5",
+  "protobuf >= 3.1.0",
+  "sympy",
+  "tqdm",
+  "packaging",
+  "attrs>=21.3.0",
+  "cattrs",
+  "pyaml",
+]
+
+[project.urls]
+Homepage = "https://github.com/apple/coremltools"
+
+[tool.setuptools]
+include-package-data = false
+packages = [
+  "coremltools",
+  "coremltools.test",
+  "coremltools.optimize",
+  "coremltools._deps",
+  "coremltools.models",
+  "coremltools.proto",
+  "coremltools.converters",
+  "coremltools.test.optimize",
+  "coremltools.test.api",
+  "coremltools.test.blob",
+  "coremltools.test.modelpackage",
+  "coremltools.test.pipeline",
+  "coremltools.test.neural_network",
+  "coremltools.test.xgboost_tests",
+  "coremltools.test.sklearn_tests",
+  "coremltools.test.ml_program",
+  "coremltools.test.optimize.api",
+  "coremltools.test.optimize.coreml",
+  "coremltools.test.optimize.torch",
+  "coremltools.test.optimize.torch.test_utils",
+  "coremltools.test.optimize.torch.conversion",
+  "coremltools.test.optimize.torch.palettization",
+  "coremltools.test.optimize.torch.models",
+  "coremltools.test.optimize.torch.layerwise_compression",
+  "coremltools.test.optimize.torch.quantization",
+  "coremltools.test.optimize.torch.pruning",
+  "coremltools.test.optimize.torch.conversion.palettization",
+  "coremltools.test.optimize.torch.conversion.joint",
+  "coremltools.test.optimize.torch.conversion.quantization",
+  "coremltools.test.optimize.torch.conversion.pruning",
+  "coremltools.test.ml_program.experimental",
+  "coremltools.optimize.coreml",
+  "coremltools.optimize.torch",
+  "coremltools.optimize.coreml.experimental",
+  "coremltools.optimize.torch.palettization",
+  "coremltools.optimize.torch.layerwise_compression",
+  "coremltools.optimize.torch.quantization",
+  "coremltools.optimize.torch.pruning",
+  "coremltools.optimize.torch._utils",
+  "coremltools.optimize.torch.quantization.modules",
+  "coremltools.models.nearest_neighbors",
+  "coremltools.models.neural_network",
+  "coremltools.models.ml_program",
+  "coremltools.models.ml_program.experimental",
+  "coremltools.models.ml_program.experimental.torch",
+  "coremltools.converters.xgboost",
+  "coremltools.converters.libsvm",
+  "coremltools.converters.mil",
+  "coremltools.converters.sklearn",
+  "coremltools.converters.mil.backend",
+  "coremltools.converters.mil.frontend",
+  "coremltools.converters.mil.mil",
+  "coremltools.converters.mil.experimental",
+  "coremltools.converters.mil.backend.mil",
+  "coremltools.converters.mil.backend.nn",
+  "coremltools.converters.mil.backend.mil.passes",
+  "coremltools.converters.mil.backend.nn.passes",
+  "coremltools.converters.mil.frontend.tensorflow2",
+  "coremltools.converters.mil.frontend.milproto",
+  "coremltools.converters.mil.frontend.tensorflow",
+  "coremltools.converters.mil.frontend.torch",
+  "coremltools.converters.mil.frontend.tensorflow2.test",
+  "coremltools.converters.mil.frontend.tensorflow2.tf_graph_pass",
+  "coremltools.converters.mil.frontend.tensorflow2.ssa_passes",
+  "coremltools.converters.mil.frontend.tensorflow.test",
+  "coremltools.converters.mil.frontend.tensorflow.tf_graph_pass",
+  "coremltools.converters.mil.frontend.tensorflow.ssa_passes",
+  "coremltools.converters.mil.frontend.torch.test",
+  "coremltools.converters.mil.frontend.torch.ssa_passes",
+  "coremltools.converters.mil.mil.tests",
+  "coremltools.converters.mil.mil.ops",
+  "coremltools.converters.mil.mil.passes",
+  "coremltools.converters.mil.mil.visitors",
+  "coremltools.converters.mil.mil.types",
+  "coremltools.converters.mil.mil.ops.tests",
+  "coremltools.converters.mil.mil.ops.defs",
+  "coremltools.converters.mil.mil.ops.tests.coreml_dialect",
+  "coremltools.converters.mil.mil.ops.tests.iOS15",
+  "coremltools.converters.mil.mil.ops.tests.iOS17",
+  "coremltools.converters.mil.mil.ops.tests.iOS14",
+  "coremltools.converters.mil.mil.ops.tests.iOS18",
+  "coremltools.converters.mil.mil.ops.tests.iOS16",
+  "coremltools.converters.mil.mil.ops.defs.coreml_dialect",
+  "coremltools.converters.mil.mil.ops.defs.iOS15",
+  "coremltools.converters.mil.mil.ops.defs.iOS17",
+  "coremltools.converters.mil.mil.ops.defs.iOS18",
+  "coremltools.converters.mil.mil.ops.defs.iOS16",
+  "coremltools.converters.mil.mil.passes.tests",
+  "coremltools.converters.mil.mil.passes.defs",
+  "coremltools.converters.mil.mil.passes.defs.cleanup",
+  "coremltools.converters.mil.experimental.passes",
+]
+
+[tool.setuptools.package-data]
+"*" = [
+  "_core.*.so",
+  "libcoremlpython.so",
+  "libmilstoragepython.so",
+  "libmodelpackage.so",
+  "LICENSE.txt",
+  "README.md",
+]

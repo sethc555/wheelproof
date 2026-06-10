@@ -2,6 +2,77 @@
   "package": "gast",
   "version": "0.7.0",
   "sdist_url": "https://files.pythonhosted.org/packages/91/f6/e73969782a2ecec280f8a176f2476149dd9dba69d5f8779ec6108a7721e6/gast-0.7.0.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-7t9_0dyv/gast-0.7.0-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {'test- ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-x9zvtor3/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-x9zvtor3/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-x9zvtor3/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-x9zvtor3/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-x9zvtor3/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "serge-sans-paille"
+      ],
+      [
+        "author-email",
+        "serge.guelton@telecom-bretagne.eu"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/serge-sans-paille/gast/"
+      ],
+      [
+        "requires-python",
+        ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "serge-sans-paille <serge.guelton@telecom-bretagne.eu>"
+      ],
+      [
+        "description-content-type",
+        "text/plain"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/serge-sans-paille/gast/"
+      ],
+      [
+        "requires-python",
+        "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,>=2.7"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

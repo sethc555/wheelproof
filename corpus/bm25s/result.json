@@ -1,7 +1,6 @@
 {
   "package": "bm25s",
   "version": "0.3.9",
-  "sdist_url": "https://files.pythonhosted.org/packages/7c/ab/39d08d4589dad6f5735a6b03ee083088dc37fba57fa45d4a0749393b9295/bm25s-0.3.9.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-nbjblq4h/bm25s-0.3.9-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 119, in _main\n    config = merge_c"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

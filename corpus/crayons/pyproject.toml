@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "crayons"
+version = "0.4.0"
+description = "TextUI colors for Python."
+readme = {text = "\nCrayons: Text UI colors for Python.\n===================================\n\n.. image:: https://img.shields.io/pypi/v/crayons.svg\n    :target: https://pypi.org/project/crayons/\n\n.. image:: https://github.com/MasterOdin/crayons/workflows/Test/badge.svg\n    :target: https://github.com/MasterOdin/crayons/actions?query=workflow%3ATest+branch%3Amaster\n\n.. image:: https://img.shields.io/pypi/l/crayons.svg\n    :target: https://pypi.python.org/pypi/crayons\n\n.. image:: https://img.shields.io/pypi/wheel/crayons.svg\n    :target: https://pypi.python.org/pypi/crayons\n\n.. image:: https://img.shields.io/pypi/pyversions/crayons.svg\n    :target: https://pypi.python.org/pypi/crayons\n\n\nThis module is really simple, it gives you colored strings for terminal\nusage. Included colors are ``red``, ``green``, ``yellow``, ``blue``, ``black``, ``magenta``, ``cyan``, ``white``, and\n``normal`` (as well as ``clean`` and ``disable``).\n\n**Crayons** is nice because it automatically wraps a given string in both the foreground color, as well as returning to the\noriginal state after the string is complete. Most terminal color libraries make you manage this yourself.\n\n\n.. image:: https://d3vv6lp55qjaqc.cloudfront.net/items/3q0I293q1z293R3a3a3n/Screen%20Shot%202017-01-23%20at%206.00.02%20PM.png?X-CloudApp-Visitor-Id=2577\n\n\nArguments include ``always=True`` and ``bold=True``.\n\nFeatures\n--------\n\n- If you call ``disable()``, all future calls to colors will be ignored.\n- If you call ``normal()``, color is reset to default foreground color\n- If the current process is not in a TTY (e.g. being piped), no colors will be displayed.\n- Length of ColoredStrings can be properly calculated.\n- Powered by colorama.\n\nUsage is simple\n---------------\n\n::\n\n    # red is red, white is white.\n    >>> print('{} white'.format(crayons.red('red')))\n    red white\n\nThat's it!\n\nInstallation\n------------\n\n::\n\n    $ pip install crayons\n", content-type = "text/x-rst"}
+license = {text = "MIT"}
+authors = [
+    {name = "Kenneth Reitz", email = "me@kennethreitz.com"},
+]
+maintainers = [
+    {name = "Matthew Peveler", email = "matt.peveler@gmail.com"},
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = [
+    "colorama",
+]
+
+[project.urls]
+Homepage = "https://github.com/MasterOdin/crayons"
+
+[tool.setuptools]
+py-modules = ["crayons"]
+license-files = ["LICENSE"]
+include-package-data = false
+
+[tool.distutils.bdist_wheel]
+universal = true

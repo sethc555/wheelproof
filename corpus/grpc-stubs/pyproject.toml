@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grpc-stubs"
+version = "1.53.0.6"
+description = "Mypy stubs for gRPC"
+readme = {file = "README.md", content-type = "text/x-rst"}
+license = {text = "MIT"}
+authors = [
+    {name = "Blake Williams", email = "code@shabbyrobe.org"},
+]
+requires-python = ">=3.6"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+dependencies = [
+    "grpcio",
+]
+
+[project.urls]
+Homepage = "https://github.com/shabbyrobe/grpc-stubs"
+
+[tool.setuptools]
+include-package-data = false
+py-modules = []
+packages = [
+    "grpc-stubs",
+    "grpc_channelz-stubs",
+    "grpc_health-stubs",
+    "grpc_reflection-stubs",
+    "grpc_status-stubs",
+]
+
+[tool.setuptools.package-data]
+"grpc-stubs" = [
+    "py.typed",
+    "__init__.pyi",
+    "aio/py.typed",
+    "aio/__init__.pyi",
+]
+"grpc_channelz-stubs" = [
+    "py.typed",
+    "__init__.pyi",
+    "v1/channelz.pyi",
+    "v1/__init__.pyi",
+    "v1/_servicer.pyi",
+]
+"grpc_health-stubs" = [
+    "py.typed",
+    "__init__.pyi",
+    "v1/__init__.pyi",
+    "v1/health.pyi",
+]
+"grpc_reflection-stubs" = [
+    "py.typed",
+    "__init__.pyi",
+    "v1alpha/reflection.pyi",
+    "v1alpha/__init__.pyi",
+]
+"grpc_status-stubs" = [
+    "py.typed",
+    "__init__.pyi",
+    "rpc_status.pyi",
+]

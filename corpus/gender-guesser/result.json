@@ -2,6 +2,71 @@
   "package": "gender-guesser",
   "version": "0.4.0",
   "sdist_url": "https://files.pythonhosted.org/packages/a8/dc/69939b7af56b7adf3aa2736771b7c3e7191f7cd36fbc80b0727570c275fa/gender-guesser-0.4.0.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-ugwcpdrc/gender-guesser-0.4.0-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not conta ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-_h5jb8f9/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-_h5jb8f9/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-_h5jb8f9/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-_h5jb8f9/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-_h5jb8f9/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Israel Saeta P\u00e9rez"
+      ],
+      [
+        "author-email",
+        "israel@lead-ratings.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/lead-ratings/gender-guesser"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Israel Saeta P\u00e9rez <israel@lead-ratings.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/lead-ratings/gender-guesser"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "tox; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
 }

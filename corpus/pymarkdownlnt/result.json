@@ -1,7 +1,6 @@
 {
   "package": "pymarkdownlnt",
   "version": "0.9.37",
-  "sdist_url": "https://files.pythonhosted.org/packages/27/b1/3cb62d33eaf59e95d3aab1d0ffb240a90c2d6b7acee12e02661d59a38efd/pymarkdownlnt-0.9.37.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected: /lib/python3.12/site-packages/wheelproof/convert.py\", line 68, in _merge_cfg\n    over.read_string(overlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1096, in _read\n    raise e\nconfigparser.ParsingError: Source contains parsing errors: '<string>'\n\t[line 74]: ' = *.typed\\n'\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

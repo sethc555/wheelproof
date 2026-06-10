@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tools"
+version = "1.0.30"
+description = "python syntax tool"
+readme = {file = "README.md", content-type = "text/markdown"}
+authors = [
+    {name = "JaeSung Yoo"},
+    {email = "jsyoo61@unc.edu"},
+]
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/jsyoo61/tools"
+
+[tool.setuptools]
+packages = [
+    "tools",
+    "tools.hydra",
+    "tools.numpy",
+    "tools.pandas",
+    "tools.plot",
+    "tools.sklearn",
+    "tools.stats",
+    "tools.torch",
+    "tools.torch.optim",
+]
+include-package-data = false

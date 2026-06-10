@@ -1,7 +1,6 @@
 {
   "package": "objgraph",
   "version": "3.6.2",
-  "sdist_url": "https://files.pythonhosted.org/packages/ba/74/60dfb345ca493d69551dd1ba599ceb6fe325527fedabe4217d6e030449e2/objgraph-3.6.2.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-jbtkmcdt/objgraph-3.6.2-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 119, in _main\n    config = merg"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

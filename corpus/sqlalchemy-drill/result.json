@@ -2,6 +2,105 @@
   "package": "sqlalchemy-drill",
   "version": "1.1.10",
   "sdist_url": "https://files.pythonhosted.org/packages/28/bc/e6e06d0f39340d1c4b170a158daacd66baee87a9c93155ac5cc649f7af31/sqlalchemy_drill-1.1.10.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-3fb1auxk/sqlalchemy_drill-1.1.10-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not co ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-qh5qylhg/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-qh5qylhg/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-qh5qylhg/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-qh5qylhg/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-qh5qylhg/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "John Omernik, Charles Givre, Davide Miceli, Massimo Martiradonna, James Turton"
+      ],
+      [
+        "author-email",
+        "john@omernik.com, cgivre@thedataist.com, davide.miceli.dap@gmail.com, massimo.martiradonna.dap@gmail.com, james@somecomputer.xyz"
+      ],
+      [
+        "download-url",
+        "https://github.com/JohnOmernik/sqlalchemy-drill/archive/1.1.10.tar.gz"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/JohnOmernik/sqlalchemy-drill"
+      ],
+      [
+        "keywords",
+        "SQLAlchemy Apache Drill"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "John Omernik <john@omernik.com>, Charles Givre <cgivre@thedataist.com>, Davide Miceli <davide.miceli.dap@gmail.com>, Massimo Martiradonna <massimo.martiradonna.dap@gmail.com>, James Turton <james@somecomputer.xyz>"
+      ],
+      [
+        "keywords",
+        "SQLAlchemy,Apache,Drill"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/JohnOmernik/sqlalchemy-drill/archive/1.1.10.tar.gz"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/JohnOmernik/sqlalchemy-drill"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "nose>=0.11; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

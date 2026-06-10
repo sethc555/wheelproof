@@ -2,6 +2,81 @@
   "package": "protobuf3-to-dict",
   "version": "0.1.5",
   "sdist_url": "https://files.pythonhosted.org/packages/6b/55/522bb43539fed463275ee803d79851faaebe86d17e7e3dbc89870d0322b9/protobuf3-to-dict-0.1.5.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-tm73n439/protobuf3-to-dict-0.1.5-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not co ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-q2bl947i/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-q2bl947i/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-q2bl947i/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-q2bl947i/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-q2bl947i/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Kapor Zhu"
+      ],
+      [
+        "author-email",
+        "kapor.zhu@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/kaporzhu/protobuf-to-dict"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Kapor Zhu <kapor.zhu@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/kaporzhu/protobuf-to-dict"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "coverage; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "nose>=1.0; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "nosexcover; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

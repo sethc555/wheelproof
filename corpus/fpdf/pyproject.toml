@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fpdf"
+version = "1.7.2"
+description = "Simple PDF generation for Python"
+license = {text = "LGPLv3+"}
+authors = [
+    {name = "Olivier PLATHEY ported by Max", email = "maxpat78@yahoo.it"},
+]
+maintainers = [
+    {name = "Mariano Reingart", email = "reingart@gmail.com"},
+]
+keywords = ["pdf", "unicode", "png", "jpg", "ttf"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2.5",
+    "Programming Language :: Python :: 2.6",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3.2",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries :: PHP Classes",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Multimedia :: Graphics",
+]
+
+[project.urls]
+Homepage = "http://code.google.com/p/pyfpdf"
+Download = "https://github.com/reingart/pyfpdf/tarball/1.7.2"
+
+[tool.setuptools]
+include-package-data = false
+packages = ["fpdf"]
+
+[tool.setuptools.package-data]
+fpdf = ["font/*.ttf", "font/*.txt"]
+
+[tool.distutils.bdist_wheel]
+universal = true

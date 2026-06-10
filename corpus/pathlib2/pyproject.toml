@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pathlib2"
+version = "2.3.7.post1"
+description = "Object-oriented filesystem paths"
+readme = {text = "The `old pathlib <https://web.archive.org/web/20181106215056/https://bitbucket.org/pitrou/pathlib/>`_\nmodule on bitbucket is no longer maintained.\nThe goal of pathlib2 is to provide a backport of\n`standard pathlib <http://docs.python.org/dev/library/pathlib.html>`_\nmodule which tracks the standard library module,\nso all the newest features of the standard pathlib can be\nused also on older Python versions.\n\nDownload\n--------\n\nStandalone releases are available on PyPI:\nhttp://pypi.python.org/pypi/pathlib2/\n\nDevelopment\n-----------\n\nThe main development takes place in the Python standard library: see\nthe `Python developer's guide <http://docs.python.org/devguide/>`_.\nIn particular, new features should be submitted to the\n`Python bug tracker <http://bugs.python.org/>`_.\n\nIssues that occur in this backport, but that do not occur not in the\nstandard Python pathlib module can be submitted on\nthe `pathlib2 bug tracker <https://github.com/jazzband/pathlib2/issues>`_.\n\nDocumentation\n-------------\n\nRefer to the\n`standard pathlib <http://docs.python.org/dev/library/pathlib.html>`_\ndocumentation.\n\nKnown Issues\n------------\n\nFor historic reasons, pathlib2 still uses bytes to represent file paths internally.\nUnfortunately, on Windows with Python 2.7, the file system encoder (``mcbs``)\nhas only poor support for non-ascii characters,\nand can silently replace non-ascii characters without warning.\nFor example, ``u'тест'.encode(sys.getfilesystemencoding())`` results in ``????``\nwhich is obviously completely useless.\n\nTherefore, on Windows with Python 2.7, until this problem is fixed upstream,\nunfortunately you cannot rely on pathlib2 to support the full unicode range for filenames.\nSee `issue #56 <https://github.com/jazzband/pathlib2/issues/56>`_ for more details.\n\n.. |github| image:: https://github.com/jazzband/pathlib2/actions/workflows/python-package.yml/badge.svg\n   :target: https://github.com/jazzband/pathlib2/actions/workflows/python-package.yml\n   :alt: github\n\n.. |codecov| image:: https://codecov.io/gh/jazzband/pathlib2/branch/develop/graph/badge.svg\n    :target: https://codecov.io/gh/jazzband/pathlib2\n    :alt: codecov\n\n.. |jazzband| image:: https://jazzband.co/static/img/badge.svg\n   :alt: Jazzband\n   :target: https://jazzband.co/\n", content-type = "text/x-rst"}
+license = {text = "MIT"}
+authors = [
+    {name = "Matthias C. M. Troffaes", email = "matthias.troffaes@gmail.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: System :: Filesystems",
+]
+dependencies = [
+    "six",
+    "scandir; python_version < \"3.5\"",
+    "typing; python_version < \"3.5\"",
+]
+
+[project.urls]
+Homepage = "https://github.com/jazzband/pathlib2"
+
+[tool.setuptools]
+packages = [
+    "pathlib2",
+]
+include-package-data = false
+
+[tool.distutils.bdist_wheel]
+universal = true

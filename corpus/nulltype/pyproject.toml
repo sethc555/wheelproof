@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nulltype"
+version = "2.3.1"
+description = "Null values and sentinels like (but not) None, False & True"
+keywords = [ "null", "none", "nothing", "Empty", "False", "True", "singleton", "sentinel",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Operating System :: OS Independent", "License :: OSI Approved :: Apache Software License", "Intended Audience :: Developers", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Software Development :: Libraries :: Python Modules",]
+dependencies = []
+[[project.authors]]
+name = "Jonathan Eunice"
+email = "jonathan.eunice@gmail.com"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.urls]
+Homepage = "https://bitbucket.org/jeunice/nulltype"
+
+[project.optional-dependencies]
+testing = [ "tox", "pytest", "pytest-cov", "coverage",]
+
+[tool.setuptools]
+py-modules = [ "nulltype",]
+zip-safe = false
+include-package-data = false

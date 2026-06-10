@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tonyg-rfc3339"
+version = "0.1"
+description = "Python implementation of RFC 3339"
+authors = [
+    {name = "Tony Garnock-Jones", email = "tonyg@lshift.net"},
+]
+
+[project.urls]
+Homepage = "https://github.com/cardforcoin/python-rfc3339"
+
+[tool.setuptools]
+py-modules = ["rfc3339"]
+include-package-data = false

@@ -2,6 +2,73 @@
   "package": "mdx-truly-sane-lists",
   "version": "1.3",
   "sdist_url": "https://files.pythonhosted.org/packages/e6/27/16456314311abac2cedef4527679924e80ac4de19dd926699c1b261e0b9b/mdx_truly_sane_lists-1.3.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-wsaganu9/mdx_truly_sane_lists-1.3-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not c ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-aj53v8gy/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-aj53v8gy/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-aj53v8gy/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-aj53v8gy/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-aj53v8gy/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "radude"
+      ],
+      [
+        "author-email",
+        "admin@rentry.co"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/radude/mdx_truly_sane_lists"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "radude <admin@rentry.co>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/radude/mdx_truly_sane_lists"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

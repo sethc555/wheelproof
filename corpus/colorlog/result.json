@@ -1,7 +1,6 @@
 {
   "package": "colorlog",
   "version": "6.10.1",
-  "sdist_url": "https://files.pythonhosted.org/packages/a2/61/f083b5ac52e505dfc1c624eafbf8c7589a0d7f32daa398d2e7590efa5fda/colorlog-6.10.1.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected: ckages/wheelproof/convert.py\", line 68, in _merge_cfg\n    over.read_string(overlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1096, in _read\n    raise e\nconfigparser.ParsingError: Source contains parsing errors: '<string>'\n\t[line 44]: ':sys_platform==\"win32\" = colorama\\n'\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

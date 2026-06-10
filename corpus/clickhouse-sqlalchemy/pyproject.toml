@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clickhouse-sqlalchemy"
+version = "0.3.2"
+description = "Simple ClickHouse SQLAlchemy Dialect"
+keywords = [ "ClickHouse", "db", "database", "cloud", "analytics",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 4 - Beta", "Environment :: Console", "Intended Audience :: Developers", "Intended Audience :: Information Technology", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: SQL", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Topic :: Database", "Topic :: Software Development", "Topic :: Software Development :: Libraries", "Topic :: Software Development :: Libraries :: Application Frameworks", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Scientific/Engineering :: Information Analysis",]
+requires-python = ">=3.7, <4"
+dependencies = [ "sqlalchemy>=2.0.0,<2.1.0", "requests", "clickhouse-driver>=0.1.2", "asynch>=0.2.2",]
+[[project.authors]]
+name = "Konstantin Lebedev"
+email = "kostyan.lebedev@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/xzkostyan/clickhouse-sqlalchemy"
+Documentation = "https://clickhouse-sqlalchemy.readthedocs.io"
+Changes = "https://github.com/xzkostyan/clickhouse-sqlalchemy/blob/master/CHANGELOG.md"
+
+[tool.setuptools]
+license-files = [ "LICENSE",]
+include-package-data = false
+
+[project.entry-points."sqlalchemy.dialects"]
+clickhouse = "clickhouse_sqlalchemy.drivers.http.base:ClickHouseDialect_http"
+"clickhouse.http" = "clickhouse_sqlalchemy.drivers.http.base:ClickHouseDialect_http"
+"clickhouse.native" = "clickhouse_sqlalchemy.drivers.native.base:ClickHouseDialect_native"
+"clickhouse.asynch" = "clickhouse_sqlalchemy.drivers.asynch.base:ClickHouseDialect_asynch"
+
+[tool.setuptools.packages.find]
+exclude = [ "tests*",]
+namespaces = false

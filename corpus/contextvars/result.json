@@ -1,7 +1,6 @@
 {
   "package": "contextvars",
   "version": "2.4",
-  "sdist_url": "https://files.pythonhosted.org/packages/83/96/55b82d9f13763be9d672622e1b8106c85acb83edd7cc2fa5bc67cd9877e9/contextvars-2.4.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-7_h36qga/contextvars-2.4-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 5, in <module>\n    from setuptools_py2cfg import main\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 18, in <module>\n    from unittest.mock import Mock\n  File \"/usr/local/lib/python3.12/unittest/mock.py\", line 26, in <module>\n    import asyncio\n  File \"/usr/local/lib/py"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opencensus-context"
+version = "0.1.3"
+description = "OpenCensus Runtime Context"
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "OpenCensus Authors", email = "census-developers@googlegroups.com"},
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+dependencies = [
+    'contextvars ; python_version >= "3.6" and python_version < "3.7"',
+]
+
+[project.urls]
+Homepage = "https://github.com/census-instrumentation/opencensus-python/tree/master/context/opencensus-context"
+
+[tool.setuptools]
+include-package-data = true
+packages = [
+    "opencensus",
+    "opencensus.common",
+    "opencensus.common.runtime_context",
+]
+
+[tool.distutils.bdist_wheel]
+universal = true

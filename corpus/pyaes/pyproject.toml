@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyaes"
+version = "1.6.1"
+description = "Pure-Python Implementation of the AES block-cipher and common modes of operation"
+readme = {text = """A pure-Python implementation of the AES (FIPS-197)
+block-cipher algorithm and common modes of operation (CBC, CFB, CTR, ECB,
+OFB) with no dependencies beyond standard Python libraries. See README.md
+for API reference and details.""", content-type = "text/plain"}
+license = {text = "License :: OSI Approved :: MIT License"}
+authors = [
+    {name = "Richard Moore"},
+    {email = "pyaes@ricmoo.com"},
+]
+classifiers = [
+    "Topic :: Security :: Cryptography",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/ricmoo/pyaes"
+
+[tool.setuptools]
+packages = ["pyaes"]
+include-package-data = false

@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "korean_lunar_calendar"
+version = "0.3.1"
+description = "Korean Lunar Calendar"
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "MIT"}
+authors = [
+    {name = "Jinil Lee", email = "usingsky@gmail.com"},
+]
+maintainers = [
+    {name = "Jinil Lee", email = "usingsky@gmail.com"},
+]
+keywords = [
+    "calendar",
+    "korean",
+    "lunar",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: End Users/Desktop",
+    "Topic :: Software Development :: Libraries",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/usingsky/korean_lunar_calendar_py"
+
+[tool.setuptools]
+include-package-data = false
+packages = ["korean_lunar_calendar"]

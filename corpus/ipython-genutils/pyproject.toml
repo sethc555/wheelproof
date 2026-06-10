@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ipython_genutils"
+version = "0.2.0"
+description = "Vestigial utilities from IPython"
+readme = {text = "Pretend this doesn't exist. Nobody should use it.", content-type = "text/plain"}
+license = {text = "BSD"}
+authors = [
+    {name = "IPython Development Team", email = "ipython-dev@scipy.org"},
+]
+keywords = ["Interactive", "Interpreter", "Shell", "Web"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.3",
+]
+
+[project.urls]
+Homepage = "http://ipython.org"
+
+[tool.setuptools]
+packages = [
+    "ipython_genutils",
+    "ipython_genutils.testing",
+    "ipython_genutils.tests",
+]
+include-package-data = false
+
+[tool.distutils.bdist_wheel]
+universal = true

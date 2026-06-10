@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "applicationinsights"
+version = "0.11.10"
+description = "This project extends the Application Insights API surface to support Python."
+keywords = [ "analytics", "applicationinsights", "telemetry", "appinsights", "development",]
+classifiers = [ "Development Status :: 3 - Alpha", "Intended Audience :: Developers", "Topic :: Software Development :: Libraries :: Python Modules", "Operating System :: OS Independent", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6",]
+[[project.authors]]
+name = "Microsoft"
+email = "appinsightssdk@microsoft.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "This SDK is no longer maintained or supported by Microsoft. Check out the `Python OpenCensus SDK <https://docs.microsoft.com/azure/azure-monitor/app/opencensus-python>`_ for Azure Monitor's latest Python investments. Azure Monitor only provides support when using the `supported SDKs <https://docs.microsoft.com/en-us/azure/azure-monitor/app/platforms#unsupported-community-sdks>`_. We’re constantly assessing opportunities to expand our support for other languages, so follow our `GitHub Announcements <https://github.com/microsoft/ApplicationInsights-Announcements/issues>`_ page to receive the latest SDK news."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/Microsoft/ApplicationInsights-Python"
+Download = "https://github.com/Microsoft/ApplicationInsights-Python"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "contrib", "docs", "tests*",]
+namespaces = false

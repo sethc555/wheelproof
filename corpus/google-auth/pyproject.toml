@@ -1,0 +1,87 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-auth"
+version = "2.53.0"
+description = "Google Authentication Library"
+readme = "README.rst"
+license = {text = "Apache 2.0"}
+authors = [
+    {name = "Google Cloud Platform"},
+    {email = "googleapis-packages@google.com"},
+]
+keywords = ["google auth oauth client"]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = [
+    "pyasn1-modules>=0.2.1",
+    "cryptography >= 38.0.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/googleapis/google-auth-library-python"
+
+[project.optional-dependencies]
+cryptography = ["cryptography >= 38.0.3"]
+aiohttp = ["aiohttp >= 3.8.0, < 4.0.0", "requests >= 2.20.0, < 3.0.0"]
+enterprise_cert = ["pyopenssl"]
+pyopenssl = ["pyopenssl>=20.0.0"]
+pyjwt = ["pyjwt>=2.0"]
+reauth = ["pyu2f>=0.1.5"]
+requests = ["requests >= 2.20.0, < 3.0.0"]
+testing = [
+    "grpcio",
+    "flask",
+    "freezegun",
+    "pyjwt>=2.0",
+    "pytest",
+    "pytest-cov",
+    "pytest-localserver",
+    "pyopenssl>=20.0.0",
+    "pyu2f>=0.1.5",
+    "responses",
+    "urllib3",
+    "packaging",
+    "aiohttp >= 3.8.0, < 4.0.0",
+    "requests >= 2.20.0, < 3.0.0",
+    "aioresponses",
+    "pytest-asyncio",
+    "pyopenssl < 24.3.0",
+    "aiohttp < 3.10.0",
+]
+urllib3 = ["urllib3", "packaging"]
+rsa = ["rsa>=3.1.4,<5"]
+
+[tool.setuptools]
+include-package-data = false
+packages = [
+    "google",
+    "google.auth",
+    "google.auth.aio",
+    "google.auth.aio.transport",
+    "google.auth.compute_engine",
+    "google.auth.crypt",
+    "google.auth.transport",
+    "google.oauth2",
+]
+
+[tool.setuptools.package-data]
+"google.auth" = ["py.typed"]
+"google.oauth2" = ["py.typed"]

@@ -1,0 +1,86 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlalchemy_mate"
+version = "2.0.0.3"
+description = "A library extend sqlalchemy module, makes CRUD easier."
+readme = "README.rst"
+license = {text = "MIT"}
+authors = [
+    {name = "Sanhe Hu"},
+    {email = "husanhe@gmail.com"},
+]
+maintainers = [
+    {name = "Unknown"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS",
+    "Operating System :: Unix",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3 :: Only",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "sqlalchemy>=2.0.0,<3.0.0",
+    "prettytable>=3.0.0,<4.0.0",
+]
+
+[project.optional-dependencies]
+tests = [
+    "pytest",
+    "pytest-cov",
+    "pg8000",
+    "attrs",
+    "superjson",
+    "pandas>=2.0.0,<3.0.0",
+    "moto>=4.1.12,<5.0.0",
+    "boto_session_manager>=1.7.2,<2.0.0",
+    "s3pathlib>=2.1.2,<3.0.0",
+]
+docs = [
+    "Sphinx==5.3.0",
+    "sphinx-jinja==2.0.2",
+    "sphinx-copybutton==0.5.1",
+    "sphinx-design==0.5.0",
+    "furo==2023.03.27",
+    "nbsphinx==0.8.12",
+    "rstobj==1.2.1",
+    "pygments==2.15.1",
+    "ipython==8.10.0",
+    "docfly==2.0.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/MacHu-GWU/sqlalchemy_mate-2.0.0.3"
+Download = "https://pypi.python.org/pypi/sqlalchemy_mate/2.0.0.3#downloads"
+
+[tool.setuptools]
+platforms = ["Windows", "MacOS", "Unix"]
+packages = [
+    "sqlalchemy_mate",
+    "sqlalchemy_mate.docs",
+    "sqlalchemy_mate.crud",
+    "sqlalchemy_mate.orm",
+    "sqlalchemy_mate.patterns",
+    "sqlalchemy_mate.vendor",
+    "sqlalchemy_mate.types",
+    "sqlalchemy_mate.patterns.large_binary_column",
+    "sqlalchemy_mate.patterns.status_tracker",
+    "sqlalchemy_mate.vendor.timeout_decorator",
+]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]

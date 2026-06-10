@@ -1,7 +1,6 @@
 {
   "package": "stanza",
   "version": "1.12.2",
-  "sdist_url": "https://files.pythonhosted.org/packages/33/8d/091be6e3f21ce031cc9b31776a167a39f12a354fc19fe2f8764960f5da75/stanza-1.12.2.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected:  self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1096, in _read\n    raise e\nconfigparser.ParsingError: Source contains parsing errors: '<string>'\n\t[line 80]: ' =\\n'\n\t[line 81]: '    pipeline/demo/*ttf\\n'\n\t[line 82]: '    pipeline/demo/*css\\n'\n\t[line 83]: '    pipeline/demo/*html\\n'\n\t[line 84]: '    pipeline/demo/*js\\n'\n\t[line 85]: '    pipeline/demo/*gif\\n'\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

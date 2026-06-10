@@ -1,7 +1,6 @@
 {
   "package": "google-cloud-orchestration-airflow",
   "version": "1.21.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/1e/2a/a7ea528e427b3a044ac84c671b7c9f81195b2b03029971d82d33b8ef6040/google_cloud_orchestration_airflow-1.21.0.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-7cjkabmq/google_cloud_orchestration_airflow-1.21.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100,"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

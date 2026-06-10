@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paypalrestsdk"
+version = "1.13.3"
+description = "Deprecated"
+readme = {text = "Deprecated", content-type = "text/plain"}
+license = {text = "PayPal SDK License"}
+authors = [
+    {name = "PayPal", email = "DL-PP-PYTHON-SDK@paypal.com"},
+]
+keywords = [
+    "paypal",
+    "rest",
+    "sdk",
+    "payments",
+    "invoice",
+    "subscription",
+    "webhook",
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.6",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "requests>=1.0.0",
+    "six>=1.0.0",
+    "pyopenssl>=0.15",
+]
+
+[project.urls]
+Homepage = "https://github.com/paypal/PayPal-Python-SDK"
+
+[tool.setuptools]
+include-package-data = false
+packages = ["paypalrestsdk"]
+
+[tool.setuptools.package-data]
+paypalrestsdk = ["data/*.crt.pem"]

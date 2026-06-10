@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-whois"
+version = "0.9.6"
+description = "Whois querying and parsing of domain registration information."
+keywords = [ "whois", "python",]
+classifiers = [ "Environment :: Web Environment", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Topic :: Internet :: WWW/HTTP", "Programming Language :: Python :: 3",]
+dependencies = [ "python-dateutil",]
+[[project.authors]]
+name = "Richard Penman"
+email = "richard.penman@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/richardpenman/whois"
+
+[project.optional-dependencies]
+testing = [ "nose", "simplejson",]
+
+[tool.setuptools]
+packages = [ "whois",]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.package-dir]
+whois = "whois"

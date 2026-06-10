@@ -1,7 +1,6 @@
 {
   "package": "google-cloud-org-policy",
   "version": "1.17.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/a2/44/df6d39606b3ff6cf1779debdfd4f4af1801fc71f072e896515f90c3b0751/google_cloud_org_policy-1.17.0.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-x8lzlr7d/google_cloud_org_policy-1.17.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _main\n "
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

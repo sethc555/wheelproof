@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "minio"
+version = "7.2.20"
+description = "MinIO Python SDK for Amazon S3 Compatible Cloud Storage"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "MinIO, Inc.", email = "dev@min.io"},
+]
+requires-python = ">=3.9"
+dependencies = [
+    "certifi",
+    "urllib3",
+    "argon2-cffi",
+    "pycryptodome",
+    "typing-extensions",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/minio/minio-py"
+Download = "https://github.com/minio/minio-py/releases"
+
+[tool.setuptools]
+packages = ["minio", "minio.credentials"]
+include-package-data = true
+
+[tool.setuptools.package-dir]
+minio = "minio"
+
+[tool.setuptools.package-data]
+"*" = ["LICENSE", "README.md", "py.typed"]

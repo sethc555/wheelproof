@@ -1,0 +1,115 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyxtal"
+version = "1.1.4"
+description = "Python code for generation of crystal structures based on symmetry constraints."
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "Scott Fredericks, Kevin Parrish, Qiang Zhu", email = "alecfans@gmail.com"},
+]
+requires-python = ">=3.9"
+dependencies = [
+    "spglib>=2.5.0",
+    "pymatgen>=2024.3.1",
+    "pandas>=2.0.2",
+    "networkx>=2.3",
+    "ase>=3.23.0",
+    "scipy>=1.7.3",
+    "vasprun-xml>=1.0.4",
+    "importlib_metadata>=1.4",
+    "typing-extensions>=4.12",
+    "pyocse>=0.1.1",
+    "psutil",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.optional-dependencies]
+visualization = ["py3Dmol>=0.8.0"]
+descriptor = ["pyshtools>=4.10.3"]
+molecules = ["openbabel", "pybel"]
+test = ["wheel", "pytest", "coverage", "pytest-cov", "monty>=2024.2.26"]
+
+[project.urls]
+Homepage = "https://github.com/MaterSim/PyXtal"
+
+[tool.setuptools]
+packages = [
+    "pyxtal",
+    "pyxtal.database",
+    "pyxtal.interface",
+    "pyxtal.lego",
+    "pyxtal.optimize",
+    "pyxtal.potentials",
+    "pyxtal.database.cifs",
+]
+script-files = [
+    "scripts/pyxtal_main.py",
+    "scripts/pyxtal_symmetry.py",
+    "scripts/pyxtal_csp_plot.py",
+    "scripts/pyxtal_csp_match.py",
+    "scripts/pyxtal_csp_rank.py",
+]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"pyxtal.database" = ["*.csv", "*.json", "*.db"]
+"pyxtal.database.cifs" = ["*.cif", "*.vasp"]
+"pyxtal.potentials" = ["*"]
+
+[tool.mypy]
+no_implicit_optional = false
+
+[tool.ruff]
+target-version = "py39"
+line-length = 120
+include = ["**/pyproject.toml", "*.ipynb", "*.py", "*.pyi"]
+lint.select = [
+  "C4",   # flake8-comprehensions
+  "E",    # pycodestyle error
+  "F",    # pyflakes
+  "FA",   # flake8-future-annotations
+  "FLY",  # flynt
+  "I",    # isort
+  "ICN",  # flake8-import-conventions
+  "ISC",  # flake8-implicit-str-concat
+  "PD",   # pandas-vet
+  "PERF", # perflint
+  "PIE",  # flake8-pie
+  "PL",   # pylint
+  "PT",   # flake8-pytest-style
+  "PYI",  # flakes8-pyi
+  "Q",    # flake8-quotes
+  "RET",  # flake8-return
+  "RSE",  # flake8-raise
+  "RUF",  # Ruff-specific rules
+  "SIM",  # flake8-simplify
+  "SLOT", # flake8-slots
+  "TCH",  # flake8-type-checking
+  "TID",  # tidy imports
+  "TID",  # flake8-tidy-imports
+  "UP",   # pyupgrade
+  "W",    # pycodestyle warning
+  "YTT",  # flake8-2020
+]
+lint.ignore = [
+  "C408",  # Unnecessary dict call - rewrite as a literal
+  "E731",  # Do not assign a lambda expression, use a def
+  "PD901", # pandas-df-variable-name
+  "PLR",   # pylint refactor
+  "PT006", # pytest-parametrize-names-wrong-type
+  "E741",  # ambiguous variable name -- turn off due to miller indices h, k, l
+  "E722",  # do not use bare 'except' -- should be fixed but too much tech debt to fix now
+  "RET505",  # Unnecessary else after return
+  "SIM300",  # Yoda conditions are not allowed
+  "PLW2901", # loop variable is overwritten
+]
+lint.pydocstyle.convention = "google"
+lint.isort.known-third-party = ["wandb"]

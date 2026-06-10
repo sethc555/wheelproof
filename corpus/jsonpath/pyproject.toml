@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jsonpath"
+version = "0.82.2"
+description = "An XPath for JSON"
+license = {text = "MIT"}
+authors = [
+    {name = "Phil Budne", email = "phil@ultimate.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: Markup",
+]
+
+[project.readme]
+text = """A port of the Perl, and JavaScript versions of JSONPath
+see http://goessner.net/articles/JsonPath/
+
+Based on on JavaScript version by Stefan Goessner at:
+        https://goessner.net/articles/JsonPath/
+        http://code.google.com/p/jsonpath/
+and Perl version by Kay Rhodes at:
+        http://github.com/masukomi/jsonpath-perl/
+
+Python3 compatibily by Per J. Sandstrom
+"""
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "http://www.ultimate.com/phil/python/#jsonpath"
+Download = "http://www.ultimate.com/phil/python/download/jsonpath-0.82.2.tar.gz"
+
+[tool.setuptools]
+py-modules = ["jsonpath"]
+include-package-data = false
+platforms = ["Any"]

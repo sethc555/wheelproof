@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "spinners"
+version = "0.0.24"
+description = "Spinners for terminals"
+readme = {text = "More than 60 spinners for terminal, this is python port of amazing node library cli-spinners. Find the documentation here: https://github.com/manrajgrover/py-spinners.", content-type = "text/plain"}
+license = {text = "MIT"}
+authors = [
+    {name = "Manraj Singh"},
+    {email = "manrajsinghgrover@gmail.com"},
+]
+keywords = [
+    "cli",
+    "spinner",
+    "spinners",
+    "terminal",
+    "term",
+    "console",
+    "ascii",
+    "unicode",
+    "loading",
+    "indicator",
+    "progress",
+    "busy",
+    "wait",
+    "idle",
+    "json",
+]
+dependencies = [
+    'enum34==1.1.6; python_version < "3.4"',
+]
+
+[project.urls]
+Homepage = "https://github.com/manrajgrover/py-spinners"
+
+[tool.setuptools]
+include-package-data = true
+packages = ["spinners"]

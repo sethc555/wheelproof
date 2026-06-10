@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-mgmt-sqlvirtualmachine"
+version = "0.5.0"
+description = "Microsoft Azure SQL Virtual Machine Management Client Library for Python"
+readme = {text = "Microsoft Azure SDK for Python\n==============================\n\nThis is the Microsoft Azure SQL Virtual Machine Management Client Library.\n\nAzure Resource Manager (ARM) is the next generation of management APIs that\nreplace the old Azure Service Management (ASM).\n\nThis package has been tested with Python 2.7, 3.5, 3.6 and 3.7.\n\nFor the older Azure Service Management (ASM) libraries, see\n`azure-servicemanagement-legacy <https://pypi.python.org/pypi/azure-servicemanagement-legacy>`__ library.\n\nFor a more complete set of Azure libraries, see the `azure <https://pypi.python.org/pypi/azure>`__ bundle package.\n\n\nUsage\n=====\n\nFor code examples, see `SQL Virtual Machine Management\n<https://docs.microsoft.com/python/api/overview/azure/>`__\non docs.microsoft.com.\n\n\nProvide Feedback\n================\n\nIf you encounter any bugs or have suggestions, please file an issue in the\n`Issues <https://github.com/Azure/azure-sdk-for-python/issues>`__\nsection of the project.\n\n\n.. image::  https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-sqlvirtualmachine%2FREADME.png\n\n\n.. :changelog:\n\nRelease History\n===============\n\n0.5.0 (2019-11-27)\n++++++++++++++++++\n\n**Features**\n\n- Model SqlVirtualMachine has a new parameter storage_configuration_settings\n- Added operation SqlVirtualMachinesOperations.list_by_sql_vm_group\n\n0.4.0 (2019-07-04)\n++++++++++++++++++\n\n**Features**\n\n- Model SqlVirtualMachine has a new parameter sql_management\n\n**General Breaking changes**\n\nThis version uses a next-generation code generator that *might* introduce breaking changes if from some import.\nIn summary, some modules were incorrectly visible/importable and have been renamed. This fixed several issues caused by usage of classes that were not supposed to be used in the first place.\n\n- SqlVirtualMachineManagementClient cannot be imported from `azure.mgmt.sqlvirtualmachine.sql_virtual_machine_management_client` anymore (import from `azure.mgmt.sqlvirtualmachine` works like before)\n- SqlVirtualMachineManagementClientConfiguration import has been moved from `azure.mgmt.sqlvirtualmachine.sql_virtual_machine_management_client` to `azure.mgmt.sqlvirtualmachine`\n- A model `MyClass` from a \"models\" sub-module cannot be imported anymore using `azure.mgmt.sqlvirtualmachine.models.my_class` (import from `azure.mgmt.sqlvirtualmachine.models` works like before)\n- An operation class `MyClassOperations` from an `operations` sub-module cannot be imported anymore using `azure.mgmt.sqlvirtualmachine.operations.my_class_operations` (import from `azure.mgmt.sqlvirtualmachine.operations` works like before)\n\nLast but not least, HTTP connection pooling is now enabled by default. You should always use a client as a context manager, or call close(), or use no more than one client per process.\n\n0.3.0 (2019-06-03)\n++++++++++++++++++\n\n**Features**\n\n- sql_image_sku is now writable\n\n0.2.0 (2018-12-07)\n++++++++++++++++++\n\n**Features**\n\n- Model SqlStorageUpdateSettings has a new parameter starting_device_id\n\n**Breaking changes**\n\n- Model AdditionalFeaturesServerConfigurations no longer has parameter backup_permissions_for_azure_backup_svc\n\n0.1.0 (2018-11-27)\n++++++++++++++++++\n\n* Initial Release\n", content-type = "text/x-rst"}
+license = {text = "MIT License"}
+authors = [
+    {name = "Microsoft Corporation"},
+    {email = "azpysdkhelp@microsoft.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "msrest>=0.5.0",
+    "msrestazure>=0.4.32,<2.0.0",
+    "azure-common~=1.1",
+    "azure-mgmt-nspkg; python_version<'3.0'",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Azure/azure-sdk-for-python"
+
+[tool.setuptools]
+packages = [
+    "azure.mgmt.sqlvirtualmachine",
+    "azure.mgmt.sqlvirtualmachine.models",
+    "azure.mgmt.sqlvirtualmachine.operations",
+]
+include-package-data = false
+
+[tool.distutils.bdist_wheel]
+universal = true

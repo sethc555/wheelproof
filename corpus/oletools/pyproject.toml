@@ -1,0 +1,140 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oletools"
+version = "0.60.2"
+description = "Python tools to analyze security characteristics of MS Office and OLE files (also called Structured Storage, Compound File Binary Format or Compound Document File Format), for Malware Analysis and Incident Response #DFIR"
+readme = {file = "oletools/README.rst", content-type = "text/x-rst"}
+license = {text = "BSD"}
+authors = [
+    {name = "Philippe Lagadec", email = "nospam@decalage.info"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "pyparsing>=2.1.0,<4",
+    "olefile>=0.46",
+    "easygui",
+    "colorclass",
+    "msoffcrypto-tool; platform_python_implementation!=\"PyPy\" or (python_version>=\"3\" and platform_system!=\"Windows\" and platform_system!=\"Darwin\")",
+    "pcodedmp>=1.2.5",
+]
+
+[project.optional-dependencies]
+full = [
+    "XLMMacroDeobfuscator",
+]
+
+[project.urls]
+Homepage = "https://github.com/decalage2/oletools"
+Download = "https://github.com/decalage2/oletools/releases"
+
+[project.scripts]
+ezhexviewer = "oletools.ezhexviewer:main"
+ftguess = "oletools.ftguess:main"
+mraptor = "oletools.mraptor:main"
+msodde = "oletools.msodde:main"
+olebrowse = "oletools.olebrowse:main"
+oledir = "oletools.oledir:main"
+oleid = "oletools.oleid:main"
+olemap = "oletools.olemap:main"
+olemeta = "oletools.olemeta:main"
+oletimes = "oletools.oletimes:main"
+olevba = "oletools.olevba:main"
+pyxswf = "oletools.pyxswf:main"
+rtfobj = "oletools.rtfobj:main"
+oleobj = "oletools.oleobj:main"
+olefile = "olefile.olefile:main"
+
+[tool.setuptools]
+packages = [
+    "oletools",
+    "oletools.common",
+    "oletools.common.log_helper",
+    "oletools.thirdparty",
+    "oletools.thirdparty.xxxswf",
+    "oletools.thirdparty.prettytable",
+    "oletools.thirdparty.xglob",
+    "oletools.thirdparty.tablestream",
+    "oletools.thirdparty.oledump",
+]
+include-package-data = false
+
+[tool.setuptools.package-data]
+oletools = [
+    "README.rst",
+    "README.html",
+    "LICENSE.txt",
+    "doc/oletimes.html",
+    "doc/rtfobj.html",
+    "doc/Install.html",
+    "doc/pyxswf.html",
+    "doc/oleid.html",
+    "doc/oleobj.html",
+    "doc/msodde.html",
+    "doc/mraptor.html",
+    "doc/License.html",
+    "doc/Home.html",
+    "doc/olemap.html",
+    "doc/olemeta.html",
+    "doc/olevba.html",
+    "doc/oledir.html",
+    "doc/olebrowse.html",
+    "doc/Contribute.html",
+    "doc/oleobj.md",
+    "doc/oledir.md",
+    "doc/olemeta.md",
+    "doc/oletimes.md",
+    "doc/oleid.md",
+    "doc/olebrowse.md",
+    "doc/formats_vs_techniques.md",
+    "doc/License.md",
+    "doc/Home.md",
+    "doc/rtfobj.md",
+    "doc/Changelog.md",
+    "doc/olevba.md",
+    "doc/pyxswf.md",
+    "doc/olemap.md",
+    "doc/Install.md",
+    "doc/msodde.md",
+    "doc/mraptor.md",
+    "doc/Contribute.md",
+    "doc/olebrowse1_menu.png",
+    "doc/rtfobj1.png",
+    "doc/oledir.png",
+    "doc/olemap2.png",
+    "doc/mraptor1.png",
+    "doc/olemeta1.png",
+    "doc/olebrowse2_stream.png",
+    "doc/olemap1.png",
+    "doc/olebrowse3_hexview.png",
+]
+"oletools.thirdparty.xglob" = ["LICENSE.txt"]
+"oletools.thirdparty.xxxswf" = ["LICENSE.txt"]
+"oletools.thirdparty.prettytable" = ["CHANGELOG", "COPYING", "README"]
+"oletools.thirdparty.DridexUrlDecoder" = ["LICENSE.txt"]

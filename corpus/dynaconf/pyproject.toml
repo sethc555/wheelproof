@@ -1,0 +1,87 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dynaconf"
+version = "3.2.13"
+description = "The dynamic configurator for your Python Project"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "MIT"}
+authors = [
+    {name = "Bruno Rocha", email = "rochacbruno@gmail.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Django",
+    "Framework :: Flask",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Utilities",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+requires-python = ">=3.8"
+
+[project.urls]
+Homepage = "https://github.com/dynaconf/dynaconf"
+
+[project.optional-dependencies]
+redis = ["redis"]
+vault = ["hvac"]
+yaml = ["ruamel.yaml"]
+toml = ["toml"]
+ini = ["configobj"]
+configobj = ["configobj"]
+all = ["redis", "ruamel.yaml", "configobj", "hvac"]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-xdist",
+    "pytest-mock",
+    "radon",
+    "flask>=0.12",
+    "django",
+    "python-dotenv",
+    "toml",
+    "redis",
+    "hvac>=1.1.0",
+    "configobj",
+]
+
+[project.scripts]
+dynaconf = "dynaconf.cli:main"
+
+[tool.setuptools]
+packages = [
+    "dynaconf",
+    "dynaconf.contrib",
+    "dynaconf.loaders",
+    "dynaconf.strategies",
+    "dynaconf.utils",
+    "dynaconf.vendor",
+    "dynaconf.vendor.box",
+    "dynaconf.vendor.click",
+    "dynaconf.vendor.dotenv",
+    "dynaconf.vendor.ruamel",
+    "dynaconf.vendor.ruamel.yaml",
+    "dynaconf.vendor.toml",
+    "dynaconf.vendor.tomllib",
+]
+include-package-data = true
+license-files = ["LICENSE", "vendor_licenses/*"]
+platforms = ["any"]
+
+[tool.distutils.bdist_wheel]
+universal = true

@@ -2,6 +2,91 @@
   "package": "sshpubkeys",
   "version": "3.3.1",
   "sdist_url": "https://files.pythonhosted.org/packages/a3/b9/e5b76b4089007dcbe9a7e71b1976d3c0f27e7110a95a13daf9620856c220/sshpubkeys-3.3.1.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-h5uqpv78/sshpubkeys-3.3.1-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain { ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-z0whgznb/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-z0whgznb/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-z0whgznb/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-z0whgznb/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-z0whgznb/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Olli Jarva"
+      ],
+      [
+        "author-email",
+        "olli@jarva.fi"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/ojarva/python-sshpubkeys"
+      ],
+      [
+        "keywords",
+        "ssh pubkey public key openssh ssh-rsa ssh-dss ssh-ed25519"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Olli Jarva <olli@jarva.fi>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "ssh,pubkey,public,key,openssh,ssh-rsa,ssh-dss,ssh-ed25519"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/ojarva/python-sshpubkeys"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
 }

@@ -1,7 +1,6 @@
 {
   "package": "fugue-sql-antlr",
   "version": "0.2.4",
-  "sdist_url": "https://files.pythonhosted.org/packages/fc/67/a9719eb2fc568f39dd9b7f6063d5844d6c4b348aeb86bae0777a9462693d/fugue_sql_antlr-0.2.4.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-474zlrjx/fugue_sql_antlr-0.2.4-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _main\n    setup_"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

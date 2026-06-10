@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stone"
+version = "3.3.9"
+description = "Stone is an interface description language (IDL) for APIs."
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "MIT License"}
+authors = [
+    {name = "Ken Elkabany", email = "kelkabany@dropbox.com"},
+]
+maintainers = [
+    {name = "Dropbox", email = "api-platform@dropbox.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Topic :: Software Development :: Code Generators",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "ply>= 3.4",
+    "six>= 1.12.0",
+    "packaging>=21.0",
+    "Jinja2>= 3.0.3",
+]
+
+[project.urls]
+Homepage = "https://github.com/dropbox/stone"
+
+[project.scripts]
+stone = "stone.cli:main"
+
+[tool.setuptools]
+include-package-data = false
+packages = [
+    "stone",
+    "stone.backends",
+    "stone.backends.python_rsrc",
+    "stone.frontend",
+    "stone.ir",
+]
+
+[tool.setuptools.package-data]
+stone = ["py.typed"]

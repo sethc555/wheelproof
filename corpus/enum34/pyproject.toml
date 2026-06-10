@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "enum34"
+version = "1.1.10"
+description = "Python 3.4 Enum backported to 3.3, 3.2, 3.1, 2.7, 2.6, 2.5, and 2.4"
+readme = {text = "enum --- support for enumerations\n========================================\n\nAn enumeration is a set of symbolic names (members) bound to unique, constant\nvalues.  Within an enumeration, the members can be compared by identity, and\nthe enumeration itself can be iterated over.\n\n    from enum import Enum\n\n    class Fruit(Enum):\n        apple = 1\n        banana = 2\n        orange = 3\n\n    list(Fruit)\n    # [<Fruit.apple: 1>, <Fruit.banana: 2>, <Fruit.orange: 3>]\n\n    len(Fruit)\n    # 3\n\n    Fruit.banana\n    # <Fruit.banana: 2>\n\n    Fruit['banana']\n    # <Fruit.banana: 2>\n\n    Fruit(2)\n    # <Fruit.banana: 2>\n\n    Fruit.banana is Fruit['banana'] is Fruit(2)\n    # True\n\n    Fruit.banana.name\n    # 'banana'\n\n    Fruit.banana.value\n    # 2\n\nRepository and Issue Tracker at https://bitbucket.org/stoneleaf/enum34.\n", content-type = "text/x-rst"}
+license = {text = "BSD License"}
+authors = [
+    {name = "Ethan Furman", email = "ethan@stoneleaf.us"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Topic :: Software Development",
+    "Programming Language :: Python :: 2.4",
+    "Programming Language :: Python :: 2.5",
+    "Programming Language :: Python :: 2.6",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3.3",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://bitbucket.org/stoneleaf/enum34"
+
+[tool.setuptools]
+include-package-data = false
+packages = []
+
+[tool.setuptools.package-data]
+enum = [
+    "LICENSE",
+    "README",
+    "doc/enum.rst",
+    "doc/enum.pdf",
+    "test.py",
+]

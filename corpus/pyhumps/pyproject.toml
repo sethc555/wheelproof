@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyhumps"
+version = "3.8.0"
+description = "🐫  Convert strings (and dictionary keys) between snake case, camel case and pascal case in Python. Inspired by Humps for Node"
+readme = {text = "\n<p align=\"center\">\n  <img src=\"https://raw.githubusercontent.com/nficano/humps/master/artwork/humps.png\" alt=\"Humps logo\" width=\"245\" height=\"118\">\n</p>\n\n<div align=\"center\">\n  <a href=\"http://humps.readthedocs.io/en/latest/?badge=latest\">\n    <img src=\"https://readthedocs.org/projects/humps/badge/?version=latest\" />\n  </a>\n  <a href=\"https://coveralls.io/github/nficano/humps?branch=master\">\n    <img src=\"https://coveralls.io/repos/github/nficano/humps/badge.svg?branch=master#cachebus\" />\n  </a>\n  <a href=\"https://pypi.org/project/pyhumps/\">\n    <img src=\"https://img.shields.io/pypi/v/pyhumps.svg#cachebust\" />\n  </a>\n  <a href=\"https://pypi.org/project/pyhumps/\">\n    <img src=\"https://img.shields.io/pypi/dm/pyhumps.svg\" />\n  </a>\n  <a href=\"https://pypi.python.org/pypi/pyhumps/\">\n    <img src=\"https://img.shields.io/pypi/pyversions/pyhumps.svg\" />\n  </a>\n</div>\n</p>\n\nConvert strings (and dictionary keys) between snake case, camel case and pascal case in Python. Inspired by [Humps](https://github.com/domchristie/humps) for Node.\n\n## Jan 11, 2021: An open call for contributors:\n\nPlease email me at nficano@gmail.com.\n\n## Installation\n\nTo install humps, simply use pipenv (or pip, of course):\n\n```bash\n$ pipenv install pyhumps\n```\n\n## Usage\n\n### Converting strings\n\n```python\nimport humps\n\nhumps.camelize(\"jack_in_the_box\")  # jackInTheBox\nhumps.decamelize(\"rubyTuesdays\")  # ruby_tuesdays\nhumps.pascalize(\"red_robin\")  # RedRobin\nhumps.kebabize(\"white_castle\")  # white-castle\n```\n\n### Converting dictionary keys\n\n```python\nimport humps\n\narray = [{\"attrOne\": \"foo\"}, {\"attrOne\": \"bar\"}]\nhumps.decamelize(array) # [{\"attr_one\": \"foo\"}, {\"attr_one\": \"bar\"}]\n\narray = [{\"attr_one\": \"foo\"}, {\"attr_one\": \"bar\"}]\nhumps.camelize(array)  # [{\"attrOne\": \"foo\"}, {\"attrOne\": \"bar\"}]\n\narray = [{'attr_one': 'foo'}, {'attr_one': 'bar'}]\nhumps.kebabize(array)  # [{'attr-one': 'foo'}, {'attr-one': 'bar'}]\n\narray = [{\"attr_one\": \"foo\"}, {\"attr_one\": \"bar\"}]\nhumps.pascalize(array)  # [{\"AttrOne\": \"foo\"}, {\"AttrOne\": \"bar\"}]\n```\n\n### Checking character casing\n\n```python\nimport humps\n\nhumps.is_camelcase(\"illWearYourGranddadsClothes\")  # True\nhumps.is_pascalcase(\"ILookIncredible\")  # True\nhumps.is_snakecase(\"im_in_this_big_ass_coat\")  # True\nhumps.is_kebabcase('from-that-thrift-shop')  # True\nhumps.is_camelcase(\"down_the_road\")  # False\n\nhumps.is_snakecase(\"imGonnaPopSomeTags\")  # False\nhumps.is_kebabcase('only_got_twenty_dollars_in_my_pocket')  # False\n\n\n# what about abbrevations, acronyms, and initialisms? No problem!\nhumps.decamelize(\"APIResponse\")  # api_response\n```\n\n<hr>\n\n## Cookbook\n\n#### Pythonic Boto3 API Wrapper\n\n```python\n# aws.py\nimport humps\nimport boto3\n\ndef api(service, decamelize=True, *args, **kwargs):\n    service, func = service.split(\":\")\n    client = boto3.client(service)\n    kwargs = humps.pascalize(kwargs)\n    response = getattr(client, func)(*args, **kwargs)\n    return (depascalize(response) if decamelize else response)\n\n# usage\napi(\"s3:download_file\", bucket=\"bucket\", key=\"hello.png\", filename=\"hello.png\")\n```\n", content-type = "text/markdown"}
+license = {text = "The Unlicense (Unlicense)"}
+authors = [
+    {name = "Nick Ficano", email = "nficano@gmail.com"},
+]
+keywords = [
+    "humps",
+    "snakecase",
+    "convert case",
+    "camelcase",
+]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[project.urls]
+Homepage = "https://github.com/nficano/humps"
+
+[tool.setuptools]
+include-package-data = true
+packages = ["humps"]
+
+[tool.setuptools.package-data]
+"*" = ["LICENSE"]
+humps = [
+    "py.typed",
+    "__init__.pyi",
+    "main.pyi",
+]

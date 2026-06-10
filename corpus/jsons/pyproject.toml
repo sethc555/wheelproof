@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jsons"
+version = "1.6.3"
+description = "For serializing Python objects to JSON (dicts) and back"
+classifiers = [ "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Natural Language :: English", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10",]
+requires-python = ">=3.5"
+dependencies = [ "typish>=1.9.2",]
+[[project.authors]]
+name = "Ramon Hagenaars"
+email = "ramon.hagenaars@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/ramonhagenaars/jsons"
+
+[project.optional-dependencies]
+test = [ "dataclasses;python_version==\"3.6\"", "tzdata;python_version>=\"3.9\"", "attrs", "coverage", "codecov", "pytest", "scons",]
+
+[tool.setuptools]
+packages = [ "jsons", "jsons.classes", "jsons.deserializers", "jsons.serializers",]
+zip-safe = false
+include-package-data = false

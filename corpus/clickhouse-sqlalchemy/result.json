@@ -2,6 +2,97 @@
   "package": "clickhouse-sqlalchemy",
   "version": "0.3.2",
   "sdist_url": "https://files.pythonhosted.org/packages/2d/b9/801073bb20edd4efc5e7240ea318b755867fb0d62acb374daafc35419b39/clickhouse-sqlalchemy-0.3.2.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-rfzqstie/clickhouse-sqlalchemy-0.3.2-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must no ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-p311_ada/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-p311_ada/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-p311_ada/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-p311_ada/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-p311_ada/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Konstantin Lebedev"
+      ],
+      [
+        "author-email",
+        "kostyan.lebedev@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/xzkostyan/clickhouse-sqlalchemy"
+      ],
+      [
+        "keywords",
+        "ClickHouse db database cloud analytics"
+      ],
+      [
+        "requires-python",
+        ">=3.7, <4"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Konstantin Lebedev <kostyan.lebedev@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "ClickHouse,db,database,cloud,analytics"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/xzkostyan/clickhouse-sqlalchemy"
+      ],
+      [
+        "requires-python",
+        "<4,>=3.7"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dataclasses"
+version = "0.8"
+description = "A backport of the dataclasses module for Python 3.6"
+readme = "README.rst"
+license = {text = "Apache"}
+authors = [
+    {name = "Eric V. Smith", email = "eric@python.org"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.6",
+]
+requires-python = ">=3.6, <3.7"
+
+[project.urls]
+Homepage = "https://github.com/ericvsmith/dataclasses"
+
+[tool.setuptools]
+py-modules = [
+    "dataclasses",
+]
+include-package-data = false

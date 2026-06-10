@@ -2,6 +2,91 @@
   "package": "flaky",
   "version": "3.8.1",
   "sdist_url": "https://files.pythonhosted.org/packages/5b/c5/ef69119a01427204ff2db5fc8f98001087bcce719bbb94749dcd7b191365/flaky-3.8.1.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-tv9znnd0/flaky-3.8.1-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {'test ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-u19qtz6r/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-u19qtz6r/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-u19qtz6r/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-u19qtz6r/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-u19qtz6r/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Box"
+      ],
+      [
+        "author-email",
+        "oss@box.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/box/flaky"
+      ],
+      [
+        "keywords",
+        "pytest plugin flaky tests rerun retry"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Box <oss@box.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "pytest,plugin,flaky,tests,rerun,retry"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/box/flaky"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "tox; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
 }

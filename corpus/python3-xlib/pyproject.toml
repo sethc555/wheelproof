@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python3-xlib"
+version = "0.15"
+description = "Python3 X Library"
+
+[project.readme]
+text = "python3-xlib is python3 version of python-xlib.\n"
+content-type = "text/plain"
+
+[[project.authors]]
+name = "Peter Liljenberg"
+email = "petli@ctrl-c.liu.se"
+
+[[project.maintainers]]
+name = "LiuLang"
+email = "gsushzhsosgsu@gmail.com"
+
+[project.license]
+text = "GPLv2"
+
+[project.urls]
+Homepage = "https://github.com/LiuLang/python3-xlib"
+
+[tool.setuptools]
+packages = ["Xlib", "Xlib.ext", "Xlib.keysymdef", "Xlib.protocol", "Xlib.support", "Xlib.xobject"]
+include-package-data = false

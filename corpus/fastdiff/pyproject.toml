@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pytest-runner",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastdiff"
+version = "0.3.0"
+description = "A fast native implementation of diff algorithm with a pure python fallback"
+keywords = [ "fastdiff",]
+classifiers = [ "Development Status :: 2 - Pre-Alpha", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Natural Language :: English", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7",]
+dependencies = [ "wasmer>=1.0.0", "wasmer-compiler-cranelift>=1.0.0",]
+[[project.authors]]
+name = "Syrus Akbary"
+email = "me@syrusakbary.com"
+
+[project.license]
+text = "MIT license"
+
+[project.readme]
+text = "========\nfastdiff\n========\n\n\n.. image:: https://img.shields.io/pypi/v/fastdiff.svg\n:target: https://pypi.python.org/pypi/fastdiff\n\n.. image:: https://img.shields.io/travis/syrusakbary/fastdiff.svg\n:target: https://travis-ci.org/syrusakbary/fastdiff\n\n.. image:: https://readthedocs.org/projects/fastdiff/badge/?version=latest\n:target: https://fastdiff.readthedocs.io/en/latest/?badge=latest\n:alt: Documentation Status\n\n\n.. image:: https://pyup.io/repos/github/syrusakbary/fastdiff/shield.svg\n:target: https://pyup.io/repos/github/syrusakbary/fastdiff/\n:alt: Updates\n\n\n\nA fast/native implementation of diff algorithms using WebAssembly and Wasmer_.\n\n* Free software: MIT license\n\n\nFeatures\n--------\n\n* Uses WebAssembly to achieve 75x speedup in the compare algorithm\n* Compatible with any platform\n\n\nCredits\n-------\n\nThis package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.\n\n.. _Wasmer: https://pypi.org/project/wasmer/\n.. _Cookiecutter: https://github.com/audreyr/cookiecutter\n.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage\n\n\n=======\nHistory\n=======\n\n0.1.0 (2019-07-04)\n------------------\n\n* First release on PyPI."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/syrusakbary/fastdiff"
+
+[project.optional-dependencies]
+testing = [ "pytest",]
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = [ "fastdiff",]
+namespaces = false

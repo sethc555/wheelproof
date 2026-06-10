@@ -1,7 +1,6 @@
 {
   "package": "korean-lunar-calendar",
   "version": "0.3.1",
-  "sdist_url": "https://files.pythonhosted.org/packages/5a/93/a0bd2bd53ab19330e83ecc5652b7774ae86fd2fee19bc05ad220cf9db08b/korean_lunar_calendar-0.3.1.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected: c, pos, multiline=False)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/tomllib/_parser.py\", line 575, in parse_basic_str\n    pos, parsed_escape = parse_escapes(src, pos)\n                         ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.12/tomllib/_parser.py\", line 494, in parse_basic_str_escape\n    raise suffixed_err(src, pos, \"Unescaped '\\\\' in a string\") from None\ntomllib.TOMLDecodeError: Unescaped '\\' in a string (at line 24, column 17)\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

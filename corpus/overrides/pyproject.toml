@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "overrides"
+version = "7.7.0"
+description = "A decorator to automatically detect mismatch when overriding a method."
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "Apache License, Version 2.0"}
+authors = [
+    {name = "Mikko Korpela", email = "mikko.korpela@gmail.com"},
+]
+requires-python = ">=3.6"
+dependencies = [
+    'typing;python_version<"3.5"',
+]
+keywords = ["override", "inheritence", "OOP"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+
+[project.urls]
+Homepage = "https://github.com/mkorpela/overrides"
+
+[tool.setuptools]
+packages = ["overrides"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+overrides = ["*.pyi", "py.typed"]

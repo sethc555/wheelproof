@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geohash2"
+version = "1.1"
+description = "(Geohash fixed for python3) Module to decode/encode Geohashes to/from latitude and longitude.  See http://en.wikipedia.org/wiki/Geohash"
+readme = {text = "This module provides functions to decode and encode Geohashes to and from latitude and longitude coordinates.", content-type = "text/x-rst"}
+license = {text = "GNU Affero General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version."}
+authors = [
+    {name = "Leonard Norrgard, Barthelemy Delemotte", email = "barthelemy.delemotte@gmail.com"},
+]
+keywords = [
+    "Geohash GIS latitude longitude encode decode Galileo GPS WGS84 coordinates geotagging",
+]
+dependencies = [
+    "docutils>=0.3",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/dbarthe/geohash/"
+
+[tool.setuptools]
+packages = [
+    "geohash2",
+]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"*" = [
+    "*.txt",
+    "*.rst",
+]

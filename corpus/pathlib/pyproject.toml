@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pathlib"
+version = "1.0.1"
+description = "Object-oriented filesystem paths"
+readme = {file = "README.txt", content-type = "text/plain"}
+license = {text = "MIT License"}
+authors = [
+    {name = "Antoine Pitrou", email = "solipsis@pitrou.net"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 2.6",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3.2",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: System :: Filesystems",
+]
+
+[project.urls]
+Homepage = "https://pathlib.readthedocs.org/"
+Download = "https://pypi.python.org/pypi/pathlib/"
+
+[tool.setuptools]
+py-modules = ["pathlib"]
+include-package-data = false

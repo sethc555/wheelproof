@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bm25s"
+version = "0.3.9"
+description = "An ultra-fast implementation of BM25 based on sparse matrices."
+readme = {file = "README.md", content-type = "text/markdown"}
+authors = [
+    {name = "Xing Han Lù", email = "bm25s@googlegroups.com"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+]
+
+[project.urls]
+Homepage = "https://github.com/xhluca/bm25s"
+
+[project.optional-dependencies]
+core = ["orjson", "tqdm", "PyStemmer", "numba"]
+stem = ["PyStemmer"]
+hf = ["huggingface_hub"]
+dev = ["black"]
+selection = ["jax[cpu]"]
+indexing = ["scipy"]
+evaluation = ["pytrec_eval"]
+mcp = ["mcp"]
+cli = ["rich"]
+full = [
+    "orjson",
+    "tqdm",
+    "PyStemmer",
+    "numba",
+    "PyStemmer",
+    "huggingface_hub",
+    "black",
+    "jax[cpu]",
+    "scipy",
+    "pytrec_eval",
+    "mcp",
+    "rich",
+]
+
+[project.scripts]
+bm25 = "bm25s.cli:main"
+
+[tool.setuptools]
+packages = [
+    "bm25s",
+    "bm25s.high_level",
+    "bm25s.mcp",
+    "bm25s.numba",
+    "bm25s.terminal",
+    "bm25s.utils",
+]
+include-package-data = false

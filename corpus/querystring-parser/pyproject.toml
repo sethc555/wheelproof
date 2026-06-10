@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "querystring_parser"
+version = "1.2.4"
+description = "QueryString parser for Python/Django that correctly handles nested dictionaries"
+authors = [
+    {name = "bernii", email = "berni@extensa.pl"},
+]
+classifiers = [
+    "Development Status :: 6 - Mature",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+]
+dependencies = [
+    "six",
+]
+
+[project.urls]
+Homepage = "https://github.com/bernii/querystring-parser"
+
+[tool.setuptools]
+include-package-data = false
+packages = ["querystring_parser"]

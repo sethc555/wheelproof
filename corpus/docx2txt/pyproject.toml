@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docx2txt"
+version = "0.9"
+description = "A pure python-based utility to extract text and images from docx files."
+authors = [{name = "Ankush Shah"}, {email = "ankush.shah.nitk@gmail.com"}]
+keywords = ["python", "docx", "text", "images", "extract"]
+
+[project.urls]
+"Homepage" = "https://github.com/ankushshah89/python-docx2txt"
+"Download" = "https://github.com/ankushshah89/python-docx2txt/tarball/0.9"
+
+[tool.setuptools]
+packages = [
+    "docx2txt",
+]
+script-files = ["bin/docx2txt"]
+include-package-data = false

@@ -1,0 +1,26 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-pasta"
+version = "0.2.0"
+description = "pasta is an AST-based Python refactoring library"
+keywords = [ "python", "refactoring", "ast",]
+classifiers = [ "Development Status :: 2 - Pre-Alpha", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8",]
+dependencies = [ "six",]
+[[project.authors]]
+name = "Nick Smith"
+email = "smithnick@google.com"
+
+[project.license]
+text = "Apache 2.0"
+
+[project.urls]
+Homepage = "https://github.com/google/pasta"
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

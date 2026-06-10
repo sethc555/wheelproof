@@ -1,7 +1,6 @@
 {
   "package": "enum34",
   "version": "1.1.10",
-  "sdist_url": "https://files.pythonhosted.org/packages/11/c4/2da1f4952ba476677a42f25cd32ab8aaf0e1c0d0e00b89822b835c7e654c/enum34-1.1.10.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-m4o86dez/enum34-1.1.10-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 3, in <module>\n    import re\n  File \"/usr/local/lib/python3.12/re/__init__.py\", line 141, in <module>\n    @enum.global_enum\n     ^^^^^^^^^^^^^^^^\nAttributeError: module 'enum' has no attribute 'global_enum'\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

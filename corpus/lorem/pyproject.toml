@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lorem"
+version = "0.1.1"
+description = "Generator for random text that looks like Latin."
+keywords = [ "lorem", "ipsum", "random", "text", "placeholder",]
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: Implementation", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Software Development :: Libraries", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Text Processing", "Topic :: Text Processing :: Linguistic",]
+dependencies = []
+[[project.authors]]
+name = "Stefan Fischer"
+email = "sfischer13@ymail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "====================\nPython Lorem Package\n====================\n\n.. image:: https://img.shields.io/pypi/v/lorem.svg\n:target: https://pypi.python.org/pypi/lorem\n\n.. image:: https://img.shields.io/travis/sfischer13/python-lorem.svg\n:target: https://travis-ci.org/sfischer13/python-lorem\n\n\nSummary\n-------\n\nGenerator for random text that looks like Latin.\n\nSimple Example\n--------------\n\n.. code:: python\n\nimport lorem\n\ns = lorem.sentence()  # 'Eius dolorem dolorem labore neque.'\np = lorem.paragraph()\nt = lorem.text()\n\nComplex Example\n---------------\n\n.. code:: python\n\nfrom lorem.text import TextLorem\n\nlorem = TextLorem(wsep='-', srange=(2,3), words=\"A B C D\".split())\n\ns1 = lorem.sentence()  # 'C-B.'\ns2 = lorem.sentence()  # 'C-A-C.'\n\n\n=======\nHistory\n=======\n\n0.1.1 (2016-06-18)\n------------------\n\n* Update documentation\n\n0.1.0 (2016-06-17)\n------------------\n\n* Minimum viable product\n\n0.0.1 (2016-06-14)\n------------------\n\n* First release on PyPI."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/sfischer13/python-lorem"
+
+[project.optional-dependencies]
+testing = []
+
+[tool.setuptools]
+packages = [ "lorem",]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.package-dir]
+lorem = "lorem"

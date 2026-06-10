@@ -1,0 +1,25 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "email_reply_parser"
+version = "0.5.12"
+description = "Email reply parser"
+classifiers = [ "Topic :: Software Development", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8",]
+[[project.authors]]
+name = "Royce Haynes"
+email = "royce.haynes@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/zapier/email-reply-parser"
+
+[tool.setuptools]
+packages = [ "email_reply_parser",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+email_reply_parser = [ "../VERSION",]

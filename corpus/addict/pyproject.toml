@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "addict"
+version = "2.4.0"
+description = "Addict is a dictionary whose items can be set using both attribute and item syntax."
+classifiers = ["Programming Language :: Python", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Intended Audience :: Developers", "Topic :: Software Development :: Libraries :: Python Modules"]
+
+[project.readme]
+text = "Addict is a module that exposes a dictionary subclass that allows items to be set like attributes. Values are gettable and settable using both attribute and item syntax. For more info check out the README at 'github.com/mewwts/addict'."
+content-type = "text/plain"
+
+[[project.authors]]
+name = "Mats Julian Olsen"
+email = "mats@plysjbyen.net"
+
+[project.urls]
+Homepage = "https://github.com/mewwts/addict"
+
+[tool.setuptools]
+packages = ["addict"]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"*" = ["LICENSE"]

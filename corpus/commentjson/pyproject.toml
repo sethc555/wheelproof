@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "commentjson"
+version = "0.9.0"
+description = "Add Python and JavaScript style comments in your JSON files."
+classifiers = [ "Programming Language :: Python",]
+dependencies = [ "lark-parser>=0.7.1,<0.8.0",]
+[[project.authors]]
+name = "Vaidik Kapoor"
+email = "kapoor.vaidik@gmail.com"
+
+[project.readme]
+text = "===========\ncommentjson\n===========\n\n`commentjson` (Comment JSON) is a Python package that helps you create JSON\nfiles with Python and JavaScript style inline comments. Its API is very similar\nto the Python standard library's `json`_ module.\n\n.. _`json`: http://docs.python.org/2/library/json.html\n\n.. image:: https://travis-ci.org/vaidik/commentjson.png\n\nInstallation\n============\n\npip install commentjson\n\nBasic Usage\n===========\n\n.. code-block:: python\n\n>>> import commentjson\n>>>\n>>> json_string = \"\"\"{\n...     \"name\": \"Vaidik Kapoor\", # Person's name\n...     \"location\": \"Delhi, India\", // Person's location\n...\n...     # Section contains info about\n...     // person's appearance\n...     \"appearance\": {\n...         \"hair_color\": \"black\",\n...         \"eyes_color\": \"black\",\n...         \"height\": \"6\"\n...     }\n... }\"\"\"\n>>>\n>>> json_loaded = commentjson.loads(json_string)\n>>> print json_loaded\n{u'appearance': {u'eyes_color': u'black', u'hair_color': u'black', u'height': u'6'}, u'name': u'Vaidik Kapoor', u'location': u'Delhi, India'}\n\nDocumentation\n=============\n\nComplete documentation can be found `here`_.\n\n.. _`here`: http://commentjson.readthedocs.org/en/latest/\n\nTests\n=====\n\npython setup.py test\n\nLicense\n=======\n\nSee `license`_.\n\n.. _`license`: https://github.com/vaidik/commentjson/blob/master/LICENSE.rst"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/vaidik/commentjson"
+
+[project.optional-dependencies]
+testing = [ "six",]
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = false

@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "braintrust_core"
+version = "0.0.59"
+description = "Shared core dependencies for Braintrust packages"
+readme = {file = "README.md", content-type = "text/markdown"}
+authors = [
+    {name = "Braintrust", email = "info@braintrust.dev"},
+]
+requires-python = ">=3.8.0"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://www.braintrust.dev"
+
+[tool.setuptools]
+include-package-data = false
+package-dir = {"" = "src"}
+packages = ["braintrust_core"]

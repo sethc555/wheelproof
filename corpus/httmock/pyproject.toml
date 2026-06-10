@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "httmock"
+version = "1.4.0"
+description = "A mocking library for requests."
+keywords = [ "requests", "testing", "mock",]
+classifiers = [ "Programming Language :: Python :: 2", "Programming Language :: Python :: 3", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Topic :: Software Development :: Testing", "Operating System :: OS Independent",]
+dependencies = [ "requests >= 1.0.0",]
+[[project.authors]]
+name = "Patryk Zawadzki"
+email = "patrys@room-303.com"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.readme]
+text = "httmock\n=======\n\nA mocking library for `requests` for Python 2.7 and 3.4+.\n\nInstallation\n------------\n\npip install httmock\n\nOr, if you are a Gentoo user:\n\nemerge dev-python/httmock\n\nUsage\n-----\nYou can use it to mock third-party APIs and test libraries that use `requests` internally, conditionally using mocked replies with the `urlmatch` decorator:\n\n```python\nfrom httmock import urlmatch, HTTMock\nimport requests\n\n@urlmatch(netloc=r'(.*\\.)?google\\.com$')\ndef google_mock(url, request):\nreturn 'Feeling lucky, punk?'\n\nwith HTTMock(google_mock):\nr = requests.get('http://google.com/')\nprint r.content  # 'Feeling lucky, punk?'\n```\n\nThe `all_requests` decorator doesn't conditionally block real requests. If you return a dictionary, it will map to the `requests.Response` object returned:\n\n```python\nfrom httmock import all_requests, HTTMock\nimport requests\n\n@all_requests\ndef response_content(url, request):\nreturn {'status_code': 200,\n'content': 'Oh hai'}\n\nwith HTTMock(response_content):\nr = requests.get('https://foo_bar')\n\nprint r.status_code\nprint r.content\n```\n\nIf you pass in `Set-Cookie` headers, `requests.Response.cookies` will contain the values. You can also use `response` method directly instead of returning a dict:\n\n```python\nfrom httmock import all_requests, response, HTTMock\nimport requests\n\n@all_requests\ndef response_content(url, request):\nheaders = {'content-type': 'application/json',\n'Set-Cookie': 'foo=bar;'}\ncontent = {'message': 'API rate limit exceeded'}\nreturn response(403, content, headers, None, 5, request)\n\nwith HTTMock(response_content):\nr = requests.get('https://api.github.com/users/whatever')\n\nprint r.json().get('message')\nprint r.cookies['foo']\n```"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/patrys/httmock"
+
+[tool.setuptools]
+py-modules = [ "httmock",]
+include-package-data = false

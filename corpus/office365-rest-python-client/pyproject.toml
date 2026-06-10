@@ -1,0 +1,114 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Office365-REST-Python-Client"
+version = "2.6.2"
+description = "Microsoft 365 & Microsoft Graph Library for Python"
+keywords = [ "git",]
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Topic :: Internet :: WWW/HTTP", "Topic :: Software Development :: Libraries", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11",]
+dependencies = [ "requests", "msal", "pytz", "typing_extensions>=4.0.0",]
+[[project.authors]]
+name = "Vadim Gremyachev"
+email = "vvgrem@gmail.com"
+
+[[project.maintainers]]
+name = "Konrad Gądek"
+email = "kgadek@gmail.com"
+
+[[project.maintainers]]
+name = "Domenico Di Nicola"
+email = "dom.dinicola@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/vgrem/Office365-REST-Python-Client"
+
+[project.optional-dependencies]
+ntlmprovider = [ "requests_ntlm",]
+testing = [ "pytest", "adal",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+office365 = [ "runtime/auth/providers/templates/SAML.xml", "runtime/auth/providers/templates/RST2.xml", "runtime/auth/providers/templates/FederatedSAML.xml",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests", "tests.*", "generator", "generator.*", "examples", "examples.*",]
+namespaces = false
+
+[tool.ruff]
+line-length = 121
+# pyflakes, pycodestyle, isort
+lint.select = ["F", "E", "W", "I001"]
+
+[tool.pylint]
+max-line-length = 120
+disable = [
+    "C0103",
+    "C0111",
+    "C0112", # empty-docstring
+    "C0114", # missing-module-docstring
+    "C0201", # consider-iterating-dictionary (Python 2)
+    "C0206", # consider-using-dict-items (Python 2)
+    "C0209", # consider-using f-string
+    "C0302", # too-many-lines
+    "C0303",
+    "C0415", # import-outside-toplevel
+    "E0307", # invalid-str-returned
+    "E0611", # no-name-in-module (!)
+    "E1102", # not-callable
+    "R0205", # useless-object-inheritance (Python 2)
+    "R0401", # cyclic-import (!)
+    "R0801", # duplicate-code
+    "R0902", # too-many-instance-attributes
+    "R0903", # too-few-public-methods
+    "R0903", # too-few-public-methods
+    "R0904", # too-many-public-methods
+    "R0912", # too-many-branches
+    "R0913", # too-many-arguments
+    "R0914", # too-many-locals
+    "R1705", # no-else-return
+    "R1710", # inconsistent-return-statements (!)
+    "R1711", # useless-return
+    "R1714", # consider-using-in
+    "R1720", # no-else-raise
+    "R1721", # unnecessary-comprehension
+    "R1725", # super-with-arguments
+    "R1732", #consider-using-with
+    "W0105", # pointless-string-statement
+    "W0106", # expression-not-assigned
+    "W0107", # unnecessary-pass
+    "W0201", # attribute-defined-outside-init
+    "W0212", # protected-access
+    "W0221", # arguments-differ
+    "W0237", # arguments-renamed
+    "W0246", # useless-parent-delegation
+    "W0404", # reimported
+    "W0611", # unused-imports # typing
+    "W0613", # unused-argument
+    "W0621", # redefine-outer-name
+    "W0707", # raise-missing-from
+    "W1113", # keyword-arg-before-vararg
+    "W3101", # missing-timeout
+] # all codes: http://pylint-messages.wikidot.com/all-codes
+
+[tool.pylint.FORMAT]
+max-line-length = 121
+ignore-long-lines = '^\s*# (<?https?://\S+>?|type: .+)$'
+
+[tool.pylint.MASTER]
+ignore-patterns = 'office365\todo\tasks\**'
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**/*.py" = ["F401"]
+"examples/**/*.py" = ["F401"]
+"office365/**/*.py" = ["F401"]

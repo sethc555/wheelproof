@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bottle"
+version = "0.13.4"
+description = "Fast and simple WSGI-framework for small web-applications."
+readme = {text = "", content-type = "text/markdown"}
+license = {text = "MIT"}
+authors = [
+    {name = "Marcel Hellkamp", email = "marc@gsites.de"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Internet :: WWW/HTTP :: Dynamic Content :: CGI Tools/Libraries",
+    "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    "Topic :: Internet :: WWW/HTTP :: WSGI",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Middleware",
+    "Topic :: Internet :: WWW/HTTP :: WSGI :: Server",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+
+[project.urls]
+Homepage = "http://bottlepy.org/"
+Source = "https://github.com/bottlepy/bottle"
+
+[project.scripts]
+bottle = "bottle:main"
+
+[tool.setuptools]
+py-modules = ["bottle"]
+script-files = ["bottle.py"]
+platforms = ["any"]
+license-files = ["LICENSE"]
+include-package-data = false
+
+[tool.distutils.bdist_wheel]
+universal = true

@@ -2,6 +2,116 @@
   "package": "jinxed",
   "version": "2.0.4",
   "sdist_url": "https://files.pythonhosted.org/packages/3c/5e/2eea62fd64689685b082f29e1dcd0e57a19009c90733318a4bc9ddb54b2c/jinxed-2.0.4.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-o3a8tm6u/jinxed-2.0.4-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {'tes ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-msigw64a/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-msigw64a/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-msigw64a/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-msigw64a/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-msigw64a/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Avram Lubkin"
+      ],
+      [
+        "author-email",
+        "avylove@rockhopper.net"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/Rockhopper-Technologies/jinxed"
+      ],
+      [
+        "keywords",
+        "terminal console blessed curses"
+      ],
+      [
+        "license-file",
+        "LICENSE.ncurses"
+      ],
+      [
+        "maintainer",
+        "Avram Lubkin"
+      ],
+      [
+        "maintainer-email",
+        "avylove@rockhopper.net"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Avram Lubkin <avylove@rockhopper.net>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "terminal,console,blessed,curses"
+      ],
+      [
+        "maintainer-email",
+        "Avram Lubkin <avylove@rockhopper.net>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Rockhopper-Technologies/jinxed"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "mock; python_version < \"3.3\" and extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL",
+      "licenses/LICENSE.ncurses"
+    ]
+  }
 }

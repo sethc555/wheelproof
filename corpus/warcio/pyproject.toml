@@ -1,0 +1,37 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "warcio"
+version = "1.8.1"
+description = "Streaming WARC (and ARC) IO library"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Web Environment", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Utilities",]
+dependencies = [ "six",]
+[[project.authors]]
+name = "Ilya Kreymer"
+email = "ikreymer@gmail.com"
+
+[project.license]
+text = "Apache 2.0"
+
+[project.urls]
+Homepage = "https://github.com/webrecorder/warcio"
+
+[project.optional-dependencies]
+testing = [ "urllib3>=1.26.5,<1.26.16", "pytest", "pytest-cov", "httpbin>=0.10.2", "requests", "wsgiprox", "hookdns", "warcio[s3]", "moto[s3]>=4", "s3fs", "flask", "flask_cors", "botocore",]
+all = [ "brotlipy", "warcio[s3]",]
+s3 = [ "fsspec", "s3fs", "aiohttp", "requests",]
+
+[project.scripts]
+warcio = "warcio.cli:main"
+
+[tool.setuptools]
+zip-safe = true
+provides = [ "warcio",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "test",]
+namespaces = false

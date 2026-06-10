@@ -1,7 +1,6 @@
 {
   "package": "paypalrestsdk",
   "version": "1.13.3",
-  "sdist_url": "https://files.pythonhosted.org/packages/af/f9/5e585f31a1c6caeec1af093edc3c6046a46af330ab9d9f91bbf86b019b59/paypalrestsdk-1.13.3.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-4vzt60wy/paypalrestsdk-1.13.3-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _main\n    setup_c"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

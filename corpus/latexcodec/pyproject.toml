@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latexcodec"
+version = "3.0.1"
+description = "A lexer and codec to work with LaTeX code in Python."
+readme = {text = "* **Instead of using latexcodec, I encourage you to consider pylatexenc instead, which is far superior:** https://github.com/phfaist/pylatexenc\n\n* Download: http://pypi.python.org/pypi/latexcodec/#downloads\n\n* Documentation: http://latexcodec.readthedocs.org/\n\n* Development: http://github.com/mcmtroffaes/latexcodec/\n\n.. |ci| image:: https://github.com/mcmtroffaes/latexcodec/actions/workflows/python-package.yml/badge.svg\n    :target: https://github.com/mcmtroffaes/latexcodec/actions/workflows/python-package.yml\n    :alt: ci\n\n.. |codecov| image:: https://codecov.io/gh/mcmtroffaes/latexcodec/branch/develop/graph/badge.svg\n    :target: https://codecov.io/gh/mcmtroffaes/latexcodec\n    :alt: codecov\n\nThe codec provides a convenient way of going between text written in\nLaTeX and unicode. Since it is not a LaTeX compiler, it is more\nappropriate for short chunks of text, such as a paragraph or the\nvalues of a BibTeX entry, and it is not appropriate for a full LaTeX\ndocument. In particular, its behavior on the LaTeX commands that do\nnot simply select characters is intended to allow the unicode\nrepresentation to be understandable by a human reader, but is not\ncanonical and may require hand tuning to produce the desired effect.\n\nThe encoder does a best effort to replace unicode characters outside\nof the range used as LaTeX input (ascii by default) with a LaTeX\ncommand that selects the character. More technically, the unicode code\npoint is replaced by a LaTeX command that selects a glyph that\nreasonably represents the code point. Unicode characters with special\nuses in LaTeX are replaced by their LaTeX equivalents. For example,\n\n====================== ===================\noriginal text          encoded LaTeX\n====================== ===================\n``¥``                  ``\\yen``\n``ü``                  ``\\\"u``\n``\\N{NO-BREAK SPACE}`` ``~``\n``~``                  ``\\textasciitilde``\n``%``                  ``\\%``\n``#``                  ``\\#``\n``\\textbf{x}``         ``\\textbf{x}``\n====================== ===================\n\nThe decoder does a best effort to replace LaTeX commands that select\ncharacters with the unicode for the character they are selecting. For\nexample,\n\n===================== ======================\noriginal LaTeX        decoded unicode\n===================== ======================\n``\\yen``              ``¥``\n``\\\"u``               ``ü``\n``~``                 ``\\N{NO-BREAK SPACE}``\n``\\textasciitilde``   ``~``\n``\\%``                ``%``\n``\\#``                ``#``\n``\\textbf{x}``        ``\\textbf {x}``\n``#``                 ``#``\n===================== ======================\n\nIn addition, comments are dropped (including the final newline that\nmarks the end of a comment), paragraphs are canonicalized into double\nnewlines, and other newlines are left as is. Spacing after LaTeX\ncommands is also canonicalized.\n\nFor example,\n\n::\n\n  hi % bye\n  there\\par world\n  \\textbf     {awesome}\n\nis decoded as\n\n::\n\n  hi there\n\n  world\n  \\textbf {awesome}\n\nWhen decoding, LaTeX commands not directly selecting characters (for\nexample, macros and formatting commands) are passed through\nunchanged. The same happens for LaTeX commands that select characters\nbut are not yet recognized by the codec.  Either case can result in a\nhybrid unicode string in which some characters are understood as\nliterally the character and others as parts of unexpanded commands.\nConsequently, at times, backslashes will be left intact for denoting\nthe start of a potentially unrecognized control sequence.\n\nGiven the numerous and changing packages providing such LaTeX\ncommands, the codec will never be complete, and new translations of\nunrecognized unicode or unrecognized LaTeX symbols are always welcome.\n", content-type = "text/x-rst"}
+license = {text = "MIT"}
+authors = [
+    {name = "Matthias C. M. Troffaes"},
+    {email = "matthias.troffaes@gmail.com"},
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Text Processing :: Markup :: LaTeX",
+    "Topic :: Text Processing :: Filters",
+]
+
+[project.urls]
+Homepage = "https://github.com/mcmtroffaes/latexcodec"
+Download = "http://pypi.python.org/pypi/latexcodec"
+
+[tool.setuptools]
+packages = ["latexcodec"]
+include-package-data = false
+
+[tool.setuptools.package-data]
+latexcodec = ["table.txt"]

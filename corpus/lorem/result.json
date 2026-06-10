@@ -2,6 +2,81 @@
   "package": "lorem",
   "version": "0.1.1",
   "sdist_url": "https://files.pythonhosted.org/packages/3a/ae/6a5d8faaec3bc847ae1999e760f76c7238cefd99452e040e4aea5f723738/lorem-0.1.1.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-0fg3_xfo/lorem-0.1.1-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {'test ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-km6dxot9/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-km6dxot9/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-km6dxot9/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-km6dxot9/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-km6dxot9/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Stefan Fischer"
+      ],
+      [
+        "author-email",
+        "sfischer13@ymail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/sfischer13/python-lorem"
+      ],
+      [
+        "keywords",
+        "lorem ipsum random text placeholder"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Stefan Fischer <sfischer13@ymail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/plain"
+      ],
+      [
+        "keywords",
+        "lorem,ipsum,random,text,placeholder"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/sfischer13/python-lorem"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
 }

@@ -2,6 +2,95 @@
   "package": "analytics-python",
   "version": "1.4.post1",
   "sdist_url": "https://files.pythonhosted.org/packages/52/f2/6e06e01b5ed7806286e301287ebc0fda39e8b1da47a3cfa50eb62174d233/analytics-python-1.4.post1.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-ffjf0zx9/analytics-python-1.4.post1-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-acr5pkpq/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-acr5pkpq/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-acr5pkpq/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-acr5pkpq/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-acr5pkpq/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Segment"
+      ],
+      [
+        "author-email",
+        "friends@segment.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/segmentio/analytics-python"
+      ],
+      [
+        "maintainer",
+        "Segment"
+      ],
+      [
+        "maintainer-email",
+        "friends@segment.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Segment <friends@segment.com>"
+      ],
+      [
+        "description-content-type",
+        "text/plain"
+      ],
+      [
+        "maintainer-email",
+        "Segment <friends@segment.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/segmentio/analytics-python"
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
 }

@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vaderSentiment"
+version = "3.3.2"
+description = "VADER Sentiment Analysis. VADER (Valence Aware Dictionary and sEntiment Reasoner) is a lexicon and rule-based sentiment analysis tool that is specifically attuned to sentiments expressed in social media, and works well on texts from other domains."
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "MIT License"}
+authors = [
+    {name = "C.J. Hutto"},
+    {email = "cjhutto@gatech.edu"},
+]
+keywords = ["vader", "sentiment", "analysis", "opinion", "mining", "nlp", "text", "data", "text analysis", "opinion analysis", "sentiment analysis", "text mining", "twitter sentiment", "opinion mining", "social media", "twitter", "social", "media"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.5",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Text Processing :: General",
+]
+dependencies = [
+    "requests",
+]
+
+[project.urls]
+Homepage = "https://github.com/cjhutto/vaderSentiment"
+Download = "https://github.com/cjhutto/vaderSentiment/archive/master.zip"
+
+[tool.setuptools]
+include-package-data = true
+platforms = ["any"]
+packages = ["vaderSentiment"]
+
+[tool.distutils.bdist_wheel]
+universal = true

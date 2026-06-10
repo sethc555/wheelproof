@@ -1,7 +1,6 @@
 {
   "package": "findspark",
   "version": "2.0.1",
-  "sdist_url": "https://files.pythonhosted.org/packages/41/86/445e2b90fff1efc0858512102ff78746a04c1a4a9c1d3fa9e4650c11a000/findspark-2.0.1.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-fm5mgymm/findspark-2.0.1-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _main\n    setup_call_a"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

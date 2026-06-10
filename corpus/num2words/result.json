@@ -2,6 +2,109 @@
   "package": "num2words",
   "version": "0.5.14",
   "sdist_url": "https://files.pythonhosted.org/packages/f6/58/ad645bd38b4b648eb2fc2ba1b909398e54eb0cbb6a7dbd2b4953e38c9621/num2words-0.5.14.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-0djbe5xb/num2words-0.5.14-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain { ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-a8nw8ukn/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-a8nw8ukn/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-a8nw8ukn/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-a8nw8ukn/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-a8nw8ukn/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Taro Ogawa <tso at users sourceforge net>"
+      ],
+      [
+        "author-email",
+        "tos@users.sourceforge.net"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/savoirfairelinux/num2words"
+      ],
+      [
+        "keywords",
+        "number word numbers words convert conversion i18n localisation localization internationalisation internationalization"
+      ],
+      [
+        "maintainer",
+        "Savoir-faire Linux inc."
+      ],
+      [
+        "maintainer-email",
+        "support@savoirfairelinux.com"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "\"Taro Ogawa <tso at users sourceforge net>\" <tos@users.sourceforge.net>"
+      ],
+      [
+        "keywords",
+        "number,word,numbers,words,convert,conversion,i18n,localisation,localization,internationalisation,internationalization"
+      ],
+      [
+        "maintainer-email",
+        "\"Savoir-faire Linux inc.\" <support@savoirfairelinux.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/savoirfairelinux/num2words"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "delegator.py; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
 }

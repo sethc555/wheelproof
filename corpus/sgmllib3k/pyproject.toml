@@ -1,0 +1,24 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sgmllib3k"
+version = "1.0.0"
+description = "Py3k port of sgmllib."
+readme = "README"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Programming Language :: Python :: 3",]
+[[project.authors]]
+name = "Hardcoded Software"
+email = "hsoft@hardcoded.net"
+
+[project.license]
+text = "BSD License"
+
+[project.urls]
+Homepage = "http://hg.hardcoded.net/sgmllib"
+
+[tool.setuptools]
+py-modules = [ "sgmllib",]
+script-files = []
+include-package-data = false

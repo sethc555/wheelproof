@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stix2-patterns"
+version = "2.1.2"
+description = "Validate STIX 2 Patterns."
+readme = {file = "README.rst", content-type = "text/x-rst"}
+authors = [
+    {name = "OASIS Cyber Threat Intelligence Technical Committee", email = "cti-users@lists.oasis-open.org"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "antlr4-python3-runtime~=4.13.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "sphinx",
+    "sphinx-prompt",
+    "coverage",
+    "pytest",
+    "pytest-cov",
+    "bumpversion",
+    "check-manifest",
+    "pre-commit",
+    "tox",
+]
+docs = [
+    "sphinx",
+    "sphinx-prompt",
+]
+test = [
+    "coverage",
+    "pytest",
+    "pytest-cov",
+]
+
+[project.urls]
+Homepage = "https://github.com/oasis-open/cti-pattern-validator"
+
+[project.scripts]
+validate-patterns = "stix2patterns.validator:main"
+
+[tool.setuptools]
+packages = [
+    "stix2patterns",
+    "stix2patterns.test",
+    "stix2patterns.grammars",
+    "stix2patterns.v21",
+    "stix2patterns.v20",
+    "stix2patterns.test.v21",
+    "stix2patterns.test.v20",
+    "stix2patterns.v21.grammars",
+    "stix2patterns.v20.grammars",
+]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"stix2patterns.test.v20" = ["spec_examples.txt"]
+"stix2patterns.test.v21" = ["spec_examples.txt"]
+
+[tool.distutils.bdist_wheel]
+universal = true

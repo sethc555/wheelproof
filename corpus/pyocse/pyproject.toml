@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyocse"
+version = "0.1.3"
+description = "Python Organic Crystal Simulation Environment"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "MIT"}
+authors = [
+    {name = "Qiang Zhu, Shinnosule Hattori"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["toml", "xmltodict"]
+
+[project.urls]
+Homepage = "https://github.com/MaterSim/pyocse"
+
+[tool.setuptools]
+packages = [
+    "pyocse",
+    "pyocse.interfaces",
+    "pyocse.lmp",
+    "pyocse.charmm",
+    "pyocse.data",
+    "pyocse.templates",
+]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"pyocse.data" = ["*"]
+"pyocse.templates" = ["*.in"]

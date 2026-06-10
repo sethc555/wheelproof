@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "colorful"
+version = "0.5.8"
+description = "Terminal string styling done right, in Python."
+readme = {file = "README.md", content-type = "text/markdown"}
+authors = [
+    {name = "Timo Furrer", email = "tuxtimo@gmail.com"},
+]
+maintainers = [
+    {name = "Timo Furrer", email = "tuxtimo@gmail.com"},
+]
+dependencies = [
+    'colorama;platform_system=="Windows"',
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: Implementation",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[project.urls]
+Homepage = "http://github.com/timofurrer/colorful"
+
+[tool.setuptools]
+packages = ["colorful", "colorful.data"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"*" = ["colorful/data/*.txt", "colorful/data/*.json", "README.md"]
+
+[tool.distutils.bdist_wheel]
+universal = true

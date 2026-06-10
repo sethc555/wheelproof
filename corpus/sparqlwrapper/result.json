@@ -1,7 +1,6 @@
 {
   "package": "sparqlwrapper",
   "version": "2.0.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/4e/cc/453752fffa759ef41a3ceadb3f167e13dae1a74c1db057d9f6a7affa9240/SPARQLWrapper-2.0.0.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected: read_string(text)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1075, in _read\n    raise DuplicateOptionError(sectname, optname,\nconfigparser.DuplicateOptionError: While reading from '<string>' [line 45]: option 'sparqlwrapper' in section 'options.package_data' already exists\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

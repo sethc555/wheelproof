@@ -2,6 +2,89 @@
   "package": "pylink-square",
   "version": "2.0.1",
   "sdist_url": "https://files.pythonhosted.org/packages/25/ff/526cbc6c97110a8307a0c3ecdedcf6d01e440b185be3e1b44dc8113baae9/pylink_square-2.0.1.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-or4k4wqr/pylink_square-2.0.1-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contai ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-11coj5g_/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-11coj5g_/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-11coj5g_/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-11coj5g_/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-11coj5g_/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Square Embedded Software Team"
+      ],
+      [
+        "author-email",
+        "esw-team@squareup.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "http://www.github.com/Square/pylink"
+      ],
+      [
+        "keywords",
+        "SEGGER J-Link"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Square Embedded Software Team <esw-team@squareup.com>"
+      ],
+      [
+        "description-content-type",
+        "text/markdown"
+      ],
+      [
+        "keywords",
+        "SEGGER,J-Link"
+      ],
+      [
+        "project-url",
+        "Homepage, http://www.github.com/Square/pylink"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "mock==2.0.0; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

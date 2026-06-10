@@ -1,0 +1,117 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-ai-generativelanguage"
+version = "0.12.0"
+description = "Google Ai Generativelanguage API client library"
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Google LLC", email = "googleapis-packages@google.com"},
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent",
+    "Topic :: Internet",
+]
+dependencies = [
+    "google-api-core[grpc] >= 2.17.1, <3.0.0",
+    "google-auth >= 2.14.1, <3.0.0,!=2.24.0,!=2.25.0",
+    "grpcio >= 1.59.0, < 2.0.0",
+    "grpcio >= 1.75.1, < 2.0.0; python_version >= '3.14'",
+    "proto-plus >= 1.22.3, <2.0.0",
+    "proto-plus >= 1.25.0, <2.0.0; python_version >= '3.13'",
+    "protobuf >= 4.25.8, < 8.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-ai-generativelanguage"
+
+[tool.setuptools]
+include-package-data = true
+packages = [
+    "google",
+    "google.ai",
+    "google.ai.generativelanguage_v1alpha",
+    "google.ai.generativelanguage_v1beta3",
+    "google.ai.generativelanguage",
+    "google.ai.generativelanguage_v1",
+    "google.ai.generativelanguage_v1beta",
+    "google.ai.generativelanguage_v1beta2",
+    "google.ai.generativelanguage_v1alpha.services",
+    "google.ai.generativelanguage_v1alpha.types",
+    "google.ai.generativelanguage_v1alpha.services.prediction_service",
+    "google.ai.generativelanguage_v1alpha.services.generative_service",
+    "google.ai.generativelanguage_v1alpha.services.text_service",
+    "google.ai.generativelanguage_v1alpha.services.permission_service",
+    "google.ai.generativelanguage_v1alpha.services.retriever_service",
+    "google.ai.generativelanguage_v1alpha.services.discuss_service",
+    "google.ai.generativelanguage_v1alpha.services.cache_service",
+    "google.ai.generativelanguage_v1alpha.services.file_service",
+    "google.ai.generativelanguage_v1alpha.services.model_service",
+    "google.ai.generativelanguage_v1alpha.services.prediction_service.transports",
+    "google.ai.generativelanguage_v1alpha.services.generative_service.transports",
+    "google.ai.generativelanguage_v1alpha.services.text_service.transports",
+    "google.ai.generativelanguage_v1alpha.services.permission_service.transports",
+    "google.ai.generativelanguage_v1alpha.services.retriever_service.transports",
+    "google.ai.generativelanguage_v1alpha.services.discuss_service.transports",
+    "google.ai.generativelanguage_v1alpha.services.cache_service.transports",
+    "google.ai.generativelanguage_v1alpha.services.file_service.transports",
+    "google.ai.generativelanguage_v1alpha.services.model_service.transports",
+    "google.ai.generativelanguage_v1beta3.services",
+    "google.ai.generativelanguage_v1beta3.types",
+    "google.ai.generativelanguage_v1beta3.services.text_service",
+    "google.ai.generativelanguage_v1beta3.services.permission_service",
+    "google.ai.generativelanguage_v1beta3.services.discuss_service",
+    "google.ai.generativelanguage_v1beta3.services.model_service",
+    "google.ai.generativelanguage_v1beta3.services.text_service.transports",
+    "google.ai.generativelanguage_v1beta3.services.permission_service.transports",
+    "google.ai.generativelanguage_v1beta3.services.discuss_service.transports",
+    "google.ai.generativelanguage_v1beta3.services.model_service.transports",
+    "google.ai.generativelanguage_v1.services",
+    "google.ai.generativelanguage_v1.types",
+    "google.ai.generativelanguage_v1.services.generative_service",
+    "google.ai.generativelanguage_v1.services.model_service",
+    "google.ai.generativelanguage_v1.services.generative_service.transports",
+    "google.ai.generativelanguage_v1.services.model_service.transports",
+    "google.ai.generativelanguage_v1beta.services",
+    "google.ai.generativelanguage_v1beta.types",
+    "google.ai.generativelanguage_v1beta.services.prediction_service",
+    "google.ai.generativelanguage_v1beta.services.generative_service",
+    "google.ai.generativelanguage_v1beta.services.text_service",
+    "google.ai.generativelanguage_v1beta.services.permission_service",
+    "google.ai.generativelanguage_v1beta.services.retriever_service",
+    "google.ai.generativelanguage_v1beta.services.discuss_service",
+    "google.ai.generativelanguage_v1beta.services.cache_service",
+    "google.ai.generativelanguage_v1beta.services.file_service",
+    "google.ai.generativelanguage_v1beta.services.model_service",
+    "google.ai.generativelanguage_v1beta.services.prediction_service.transports",
+    "google.ai.generativelanguage_v1beta.services.generative_service.transports",
+    "google.ai.generativelanguage_v1beta.services.text_service.transports",
+    "google.ai.generativelanguage_v1beta.services.permission_service.transports",
+    "google.ai.generativelanguage_v1beta.services.retriever_service.transports",
+    "google.ai.generativelanguage_v1beta.services.discuss_service.transports",
+    "google.ai.generativelanguage_v1beta.services.cache_service.transports",
+    "google.ai.generativelanguage_v1beta.services.file_service.transports",
+    "google.ai.generativelanguage_v1beta.services.model_service.transports",
+    "google.ai.generativelanguage_v1beta2.services",
+    "google.ai.generativelanguage_v1beta2.types",
+    "google.ai.generativelanguage_v1beta2.services.text_service",
+    "google.ai.generativelanguage_v1beta2.services.discuss_service",
+    "google.ai.generativelanguage_v1beta2.services.model_service",
+    "google.ai.generativelanguage_v1beta2.services.text_service.transports",
+    "google.ai.generativelanguage_v1beta2.services.discuss_service.transports",
+    "google.ai.generativelanguage_v1beta2.services.model_service.transports",
+]

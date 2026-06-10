@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "log_symbols"
+version = "0.0.14"
+description = "Colored symbols for various log levels for Python"
+readme = {text = "Colored symbols for various log levels for Python. Find the documentation here: https://github.com/manrajgrover/py-log-symbols.", content-type = "text/plain"}
+license = {text = "MIT"}
+authors = [
+    {name = "Manraj Singh"},
+    {email = "manrajsinghgrover@gmail.com"},
+]
+keywords = [
+    "log symbols",
+    "symbols",
+    "log",
+]
+dependencies = [
+    "colorama>=0.3.9",
+    'enum34==1.1.6; python_version < "3.4"',
+]
+
+[project.urls]
+Homepage = "https://github.com/manrajgrover/py-log-symbols"
+
+[tool.setuptools]
+packages = ["log_symbols"]
+include-package-data = true

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rarfile"
+version = "4.2"
+description = "RAR archive reader for Python"
+readme = {text = "rarfile - RAR archive reader for Python\n=======================================\n\nThis is Python module for RAR_ archive reading.\nThe interface follows the style of zipfile_.\nLicensed under ISC_ license.\n\nFeatures:\n\n* Supports both RAR3 and RAR5 format archives.\n* Supports multi volume archives.\n* Supports Unicode filenames.\n* Supports password-protected archives.\n* Supports archive and file comments.\n* Archive parsing and non-compressed files are handled in pure Python code.\n* Compressed files are extracted by executing external tool:\n  unrar_ (preferred), unar_, 7zip_ or bsdtar_.\n* Works with Python 3.6+.\n\n.. _RAR: https://en.wikipedia.org/wiki/RAR_%28file_format%29\n.. _zipfile: https://docs.python.org/3/library/zipfile.html\n.. _ISC: https://en.wikipedia.org/wiki/ISC_license\n.. _bsdtar: https://github.com/libarchive/libarchive\n.. _unrar: https://www.rarlab.com/\n.. _unar: https://theunarchiver.com/command-line\n.. _7zip: https://www.7-zip.org/\n\nBackends:\n\n+-------------+----------------------+-----------------------------------------------------+\n| Backend     | Status               | Notes                                               |\n+=============+======================+=====================================================+\n| unrar_      | Supported            | * Recommended: full format support.                 |\n|             |                      | * Non-free software, but free to use.               |\n+-------------+----------------------+-----------------------------------------------------+\n| unar_       | Supported            | * Not usable on Windows: last build is from 2013    |\n|             |                      |   (v1.8.1) that does support output to stdout.      |\n|             |                      | * Does not support RAR2 locked files.               |\n|             |                      | * Does not support RAR5 Blake2 hash checking.       |\n+-------------+----------------------+-----------------------------------------------------+\n| 7zip_       | Supported            | * RAR support not available on Debian/Ubuntu repos. |\n+-------------+----------------------+-----------------------------------------------------+\n| p7zip_      | Supported            | * Unmaintained?                                     |\n|             |                      | * Requires ``p7zip-rar`` package on Debian/Ubuntu.  |\n+-------------+----------------------+-----------------------------------------------------+\n| bsdtar_     | Supported            | * Not recommended: limited RAR format support.      |\n|             |                      | * Does not support multi-volume archives.           |\n|             |                      | * Does not support solid archives.                  |\n|             |                      | * Does not support password-protected archives.     |\n|             |                      | * Does not support RARVM-based compression filters. |\n+-------------+----------------------+-----------------------------------------------------+\n| unrar-free_ | Supported            | * Supports output to stdout (v0.2.0).               |\n|             |                      | * Based on libarchive so similar format support     |\n|             |                      |   as ``bsdtar`` but supports multi-volume (v0.3.0). |\n+-------------+----------------------+-----------------------------------------------------+\n\n.. _p7zip: https://sourceforge.net/projects/p7zip/\n.. _unrar-free: https://gitlab.com/bgermann/unrar-free\n\nLinks:\n\n- `Documentation`_\n- `Downloads`_\n- `Git`_ repo\n\n.. _Git: https://github.com/markokr/rarfile\n.. _Downloads: https://pypi.org/project/rarfile/#files\n.. _Documentation: https://rarfile.readthedocs.io/", content-type = "text/x-rst"}
+license = {text = "ISC"}
+authors = [
+    {name = "Marko Kreen"},
+    {email = "markokr@gmail.com"},
+]
+keywords = ["rar", "unrar", "archive"]
+requires-python = ">=3.6"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: ISC License (ISCL)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Archiving :: Compression",
+]
+
+[project.urls]
+Homepage = "https://github.com/markokr/rarfile"
+
+[tool.setuptools]
+py-modules = ["rarfile"]
+include-package-data = false

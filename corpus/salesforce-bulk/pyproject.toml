@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "salesforce-bulk"
+version = "2.2.0"
+description = "Python interface to the Salesforce.com Bulk API."
+readme = {text = "\n.. figure:: https://travis-ci.org/heroku/salesforce-bulk.svg?branch=main\n   :alt: travis-badge\n\nSalesforce Bulk\n===============\n\nPython client library for accessing the asynchronous Salesforce.com Bulk\nAPI.\n\nInstallation\n------------\n.. code-block:: bash\n\n    pip install salesforce-bulk\n\nAuthentication\n--------------\n\nTo access the Bulk API you need to authenticate a user into Salesforce.\nThe easiest way to do this is just to supply ``username``, ``password``\nand ``security_token``. This library will use the ``simple-salesforce``\npackage to handle password based authentication.\n\n.. code-block:: python\n\n    from salesforce_bulk import SalesforceBulk\n\n    bulk = SalesforceBulk(username=username, password=password, security_token=security_token)\n    ...\n\nAlternatively if you run have access to a session ID and instance\\_url\nyou can use those directly:\n\n.. code-block:: python\n\n    from urlparse import urlparse\n    from salesforce_bulk import SalesforceBulk\n\n    bulk = SalesforceBulk(sessionId=sessionId, host=urlparse(instance_url).hostname)\n    ...\n\nOperations\n----------\n\nThe basic sequence for driving the Bulk API is:\n\n1. Create a new job\n2. Add one or more batches to the job\n3. Close the job\n4. Wait for each batch to finish\n\nBulk Query\n----------\n\n``bulk.create_query_job(object_name, contentType='JSON')``\n\nUsing API v39.0 or higher, you can also use the queryAll operation:\n\n``bulk.create_queryall_job(object_name, contentType='JSON')``\n\nExample\n\n.. code-block:: python\n\n    import json\n    from salesforce_bulk.util import IteratorBytesIO\n\n    job = bulk.create_query_job(\"Contact\", contentType='JSON')\n    batch = bulk.query(job, \"select Id,LastName from Contact\")\n    bulk.close_job(job)\n    while not bulk.is_batch_done(batch):\n        sleep(10)\n\n    for result in bulk.get_all_results_for_query_batch(batch):\n        result = json.load(IteratorBytesIO(result))\n        for row in result:\n            print row # dictionary rows\n\nSame example but for CSV:\n\n.. code-block:: python\n\n    import unicodecsv\n    \n    job = bulk.create_query_job(\"Contact\", contentType='CSV')\n    batch = bulk.query(job, \"select Id,LastName from Contact\")\n    bulk.close_job(job)\n    while not bulk.is_batch_done(batch):\n        sleep(10)\n\n    for result in bulk.get_all_results_for_query_batch(batch):\n        reader = unicodecsv.DictReader(result, encoding='utf-8')\n        for row in reader:\n            print(row) # dictionary rows\n\nNote that while CSV is the default for historical reasons, JSON should\nbe prefered since CSV has some drawbacks including its handling of NULL\nvs empty string.\n\nPK Chunk Header\n^^^^^^^^^^^^^^^\n\nIf you are querying a large number of records you probably want to turn on `PK Chunking\n<https://developer.salesforce.com/docs/atlas.en-us.api_asynch.meta/api_asynch/async_api_headers_enable_pk_chunking.htm>`_:\n\n``bulk.create_query_job(object_name, contentType='CSV', pk_chunking=True)``\n\nThat will use the default setting for chunk size. You can use a different chunk size by providing a\nnumber of records per chunk:\n\n``bulk.create_query_job(object_name, contentType='CSV', pk_chunking=100000)``\n\nAdditionally if you want to do something more sophisticated you can provide a header value:\n\n``bulk.create_query_job(object_name, contentType='CSV', pk_chunking='chunkSize=50000; startRow=00130000000xEftMGH')``\n\nBulk Insert, Update, Delete\n---------------------------\n\nAll Bulk upload operations work the same. You set the operation when you\ncreate the job. Then you submit one or more documents that specify\nrecords with columns to insert/update/delete. When deleting you should\nonly submit the Id for each record.\n\nFor efficiency you should use the ``post_batch`` method to post each\nbatch of data. (Note that a batch can have a maximum 10,000 records and\nbe 1GB in size.) You pass a generator or iterator into this function and\nit will stream data via POST to Salesforce. For help sending CSV\nformatted data you can use the salesforce\\_bulk.CsvDictsAdapter class.\nIt takes an iterator returning dictionaries and returns an iterator\nwhich produces CSV data.\n\nFull example:\n\n.. code-block:: python\n\n    from salesforce_bulk import CsvDictsAdapter\n\n    job = bulk.create_insert_job(\"Account\", contentType='CSV')\n    accounts = [dict(Name=\"Account%d\" % idx) for idx in xrange(5)]\n    csv_iter = CsvDictsAdapter(iter(accounts))\n    batch = bulk.post_batch(job, csv_iter)\n    bulk.wait_for_batch(job, batch)\n    bulk.close_job(job)\n    print(\"Done. Accounts uploaded.\")\n\nConcurrency mode\n^^^^^^^^^^^^^^^^\n\nWhen creating the job, pass ``concurrency='Serial'`` or\n``concurrency='Parallel'`` to set the concurrency mode for the job.\n", content-type = "text/x-rst"}
+license = {text = "MIT"}
+authors = [
+    {name = "Scott Persinger", email = "scottp@heroku.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+]
+dependencies = [
+    "six",
+    "requests>=2.24.0",
+    "unicodecsv>=0.14.1",
+    "simple-salesforce>=1.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/heroku/salesforce-bulk"
+
+[tool.setuptools]
+packages = [
+    "salesforce_bulk",
+]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"*" = ["LICENSE"]
+
+[tool.distutils.bdist_wheel]
+universal = true

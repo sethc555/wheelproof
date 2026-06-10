@@ -1,0 +1,64 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stix2"
+version = "3.0.2"
+description = "Produce and consume STIX 2 JSON content"
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "BSD"}
+authors = [
+    {name = "OASIS Cyber Threat Intelligence Technical Committee", email = "cti-users@lists.oasis-open.org"},
+]
+requires-python = ">=3.10"
+keywords = ["stix stix2 json cti cyber threat intelligence"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Security",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+]
+dependencies = [
+    "pytz",
+    "requests",
+    "simplejson",
+    "stix2-patterns>=2.1.2",
+]
+
+[project.urls]
+Homepage = "https://oasis-open.github.io/cti-documentation/"
+Documentation = "https://stix2.readthedocs.io/"
+"Source Code" = "https://github.com/oasis-open/cti-python-stix2/"
+"Bug Tracker" = "https://github.com/oasis-open/cti-python-stix2/issues/"
+
+[project.optional-dependencies]
+taxii = ["taxii2-client>=2.3.0"]
+semantic = ["haversine", "rapidfuzz"]
+
+[tool.setuptools]
+include-package-data = false
+packages = [
+    "stix2",
+    "stix2.canonicalization",
+    "stix2.confidence",
+    "stix2.datastore",
+    "stix2.equivalence",
+    "stix2.equivalence.graph",
+    "stix2.equivalence.object",
+    "stix2.equivalence.pattern",
+    "stix2.equivalence.pattern.compare",
+    "stix2.equivalence.pattern.transform",
+    "stix2.markings",
+    "stix2.v20",
+    "stix2.v21",
+]
+
+[tool.distutils.bdist_wheel]
+universal = true

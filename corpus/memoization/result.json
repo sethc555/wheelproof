@@ -1,7 +1,6 @@
 {
   "package": "memoization",
   "version": "0.4.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/af/53/e948a943e16423a87ced16e34ea7583c300e161a4c3e85d47d77d83830bf/memoization-0.4.0.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected: 12/site-packages/wheelproof/convert.py\", line 68, in _merge_cfg\n    over.read_string(overlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1096, in _read\n    raise e\nconfigparser.ParsingError: Source contains parsing errors: '<string>'\n\t[line 74]: ' = examples.py; test.py\\n'\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

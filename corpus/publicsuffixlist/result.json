@@ -2,6 +2,75 @@
   "package": "publicsuffixlist",
   "version": "1.0.2.20260529",
   "sdist_url": "https://files.pythonhosted.org/packages/75/78/9d4ac999842095519ddd56ca255f0d4a15ec3de3a37c958b64e3812a3b38/publicsuffixlist-1.0.2.20260529.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-2bzy4ec6/publicsuffixlist-1.0.2.20260529-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` mus ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-vv174t_r/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-vv174t_r/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-vv174t_r/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-vv174t_r/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-vv174t_r/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "ko-zu"
+      ],
+      [
+        "author-email",
+        "causeless@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/ko-zu/psl"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "ko-zu <causeless@gmail.com>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/ko-zu/psl"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
 }

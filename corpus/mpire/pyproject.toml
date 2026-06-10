@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mpire"
+version = "2.10.2"
+description = "A Python package for easy multiprocessing, but faster than multiprocessing"
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "License :: OSI Approved :: MIT License", "Topic :: Software Development", "Topic :: Software Development :: Libraries", "Topic :: Software Development :: Libraries :: Python Modules",]
+dependencies = [ "importlib_resources; python_version<\"3.9\"", "pywin32>=301; platform_system==\"Windows\"", "pygments>=2.0", "tqdm>=4.27",]
+[[project.authors]]
+name = "Sybren Jansen"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/sybrenjansen/mpire"
+
+[project.optional-dependencies]
+dashboard = [ "flask",]
+dill = [ "multiprocess; python_version<\"3.11\"", "multiprocess>=0.70.15; python_version>=\"3.11\"",]
+docs = [ "docutils==0.17.1", "sphinx==3.2.1", "sphinx-rtd-theme==0.5.0", "sphinx-autodoc-typehints==1.11.0", "sphinxcontrib-images==0.9.2", "sphinx-versions==1.0.1",]
+testing = [ "ipywidgets", "multiprocess; python_version<\"3.11\"", "multiprocess>=0.70.15; python_version>=\"3.11\"", "numpy", "pywin32>=301; platform_system==\"Windows\"", "rich",]
+
+[tool.setuptools]
+include-package-data = true
+script-files = [ "bin/mpire-dashboard",]
+
+[tool.setuptools.packages.find]
+exclude = [ "*tests*",]
+namespaces = false

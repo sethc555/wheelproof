@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "presto-python-client"
+version = "0.8.4"
+description = "Client for the Presto distributed SQL Engine"
+readme = {text = "\nClient for Presto (https://prestodb.io), a distributed SQL engine for\ninteractive and batch big data processing. Provides a low-level client and\na DBAPI 2.0 implementation.\n", content-type = "text/x-rst"}
+license = {text = "Apache 2.0"}
+authors = [
+    {name = "Presto Team", email = "presto-users@googlegroups.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: POSIX",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Database :: Front-Ends",
+]
+dependencies = [
+    "click",
+    "requests",
+    "six",
+    'ipaddress; python_version=="2.7"',
+    'typing; python_version=="2.7"',
+]
+
+[project.optional-dependencies]
+all = [
+    "requests_kerberos",
+    "google_auth",
+]
+kerberos = [
+    "requests_kerberos",
+]
+google_auth = [
+    "google_auth",
+]
+tests = [
+    "requests_kerberos",
+    "google_auth",
+    "httpretty",
+    "pytest",
+    "pytest-runner",
+]
+
+[project.urls]
+Homepage = "https://github.com/prestodb/presto-python-client"
+
+[tool.setuptools]
+include-package-data = false
+packages = ["prestodb"]
+
+[tool.setuptools.package-data]
+"*" = ["LICENSE", "README.md"]

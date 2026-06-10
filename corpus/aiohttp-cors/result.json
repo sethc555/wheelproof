@@ -2,6 +2,93 @@
   "package": "aiohttp-cors",
   "version": "0.8.1",
   "sdist_url": "https://files.pythonhosted.org/packages/6f/6d/d89e846a5444b3d5eb8985a6ddb0daef3774928e1bfbce8e84ec97b0ffa7/aiohttp_cors-0.8.1.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-4uc5h3pt/aiohttp_cors-0.8.1-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-sfp96n_h/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-sfp96n_h/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-sfp96n_h/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-sfp96n_h/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-sfp96n_h/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Vladimir Rutsky and aio-libs team"
+      ],
+      [
+        "author-email",
+        "vladimir@rutsky.org"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/aio-libs/aiohttp-cors"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Vladimir Rutsky and aio-libs team <vladimir@rutsky.org>"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/aio-libs/aiohttp-cors"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "pytest-cov; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-pylint; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "selenium; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
 }

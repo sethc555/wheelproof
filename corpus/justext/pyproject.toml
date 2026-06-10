@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jusText"
+version = "3.0.2"
+description = "Heuristic based boilerplate removal tool"
+readme = {text = ".. _jusText: http://code.google.com/p/justext/\n.. _Python: http://www.python.org/\n.. _lxml: http://lxml.de/\n\njusText\n=======\n.. image:: https://github.com/miso-belica/jusText/actions/workflows/run-tests.yml/badge.svg\n  :target: https://github.com/miso-belica/jusText/actions/workflows/run-tests.yml\n\nProgram jusText is a tool for removing boilerplate content, such as navigation\nlinks, headers, and footers from HTML pages. It is\n`designed <doc/algorithm.rst>`_ to preserve\nmainly text containing full sentences and it is therefore well suited for\ncreating linguistic resources such as Web corpora. You can\n`try it online <http://nlp.fi.muni.cz/projects/justext/>`_.\n\nThis is a fork of original (currently unmaintained) code of jusText_ hosted\non Google Code.\n\n\nAdaptations of the algorithm to other languages:\n\n- `C++ <https://github.com/endredy/jusText>`_\n- `Go <https://github.com/JalfResi/justext>`_\n- `Java <https://github.com/wizenoze/justext-java>`_\n\n\nSome libraries using jusText:\n\n- `chirp <https://github.com/9b/chirp>`_\n- `lazynlp <https://github.com/chiphuyen/lazynlp>`_\n- `off-topic-memento-toolkit <https://github.com/oduwsdl/off-topic-memento-toolkit>`_\n- `pears <https://github.com/PeARSearch/PeARS-orchard>`_\n- `readability calculator <https://github.com/joaopalotti/readability_calculator>`_\n- `sky <https://github.com/kootenpv/sky>`_\n\n\nSome currently (Jan 2020) maintained alternatives:\n\n- `dragnet <https://github.com/dragnet-org/dragnet>`_\n- `html2text <https://github.com/Alir3z4/html2text>`_\n- `inscriptis <https://github.com/weblyzard/inscriptis>`_\n- `newspaper <https://github.com/codelucas/newspaper>`_\n- `python-readability <https://github.com/buriy/python-readability>`_\n- `trafilatura <https://github.com/adbar/trafilatura>`_\n\n\nInstallation\n------------\nMake sure you have Python_ 2.7+/3.5+ and `pip <https://pip.pypa.io/en/stable/>`_\n(`Windows <http://docs.python-guide.org/en/latest/starting/install/win/>`_,\n`Linux <http://docs.python-guide.org/en/latest/starting/install/linux/>`_) installed.\nRun simply:\n\n.. code-block:: bash\n\n  $ [sudo] pip install justext\n\n\nDependencies\n------------\n::\n\n  lxml (version depends on your Python version)\n\n\nUsage\n-----\n.. code-block:: bash\n\n  $ python -m justext -s Czech -o text.txt http://www.zdrojak.cz/clanky/automaticke-zabezpeceni/\n  $ python -m justext -s English -o plain_text.txt english_page.html\n  $ python -m justext --help # for more info\n\n\nPython API\n----------\n.. code-block:: python\n\n  import requests\n  import justext\n\n  response = requests.get(\"http://planet.python.org/\")\n  paragraphs = justext.justext(response.content, justext.get_stoplist(\"English\"))\n  for paragraph in paragraphs:\n    if not paragraph.is_boilerplate:\n      print paragraph.text\n\n\nTesting\n-------\nRun tests via\n\n.. code-block:: bash\n\n  $ py.test-2.7 && py.test-3.5 && py.test-3.6 && py.test-3.7 && py.test-3.8 && py.test-3.9\n\n\nAcknowledgements\n----------------\n.. _`Natural Language Processing Centre`: http://nlp.fi.muni.cz/en/nlpc\n.. _`Masaryk University in Brno`: http://nlp.fi.muni.cz/en\n.. _PRESEMT: http://presemt.eu/\n.. _`Lexical Computing Ltd.`: http://lexicalcomputing.com/\n.. _`PhD research`: http://is.muni.cz/th/45523/fi_d/phdthesis.pdf\n\nThis software has been developed at the `Natural Language Processing Centre`_ of\n`Masaryk University in Brno`_ with a financial support from PRESEMT_ and\n`Lexical Computing Ltd.`_ It also relates to `PhD research`_ of Jan Pomikálek.\n\n\n.. :changelog:\n\nChangelog for jusText\n=====================\n\n3.0.2 (2025-02-25)\n------------------\n- *BUG FIX:* Handle urllib imports in Python 2 and 3 correctly `#51 <https://github.com/miso-belica/jusText/pull/51>`_.\n\n3.0.1 (2024-05-09)\n------------------\n- *BUG FIX:* Fix issue with new version of lxml `#48 <https://github.com/miso-belica/jusText/pull/48>`_.\n\n3.0.0 (2021-10-21)\n------------------\n- *INCOMPATIBLE CHANGE:* Dropped support for Python 3.4 and below.\n- *BUG FIX:* Don't join words separated only by ``<br>`` tag.\n- *BUG FIX:* List available stop-lists alphabetically.\n\n2.2.0 (2016-03-06)\n------------------\n- *INCOMPATIBLE CHANGE:* Stop words are case insensitive.\n- *INCOMPATIBLE CHANGE:* Dropped support for Python 3.2\n- *BUG FIX:* Preserve new lines from original text in paragraphs.\n\n2.1.1 (2014-05-27)\n------------------\n- *BUG FIX:* Function ``decode_html`` now respects parameter ``errors`` when falling to ``default_encoding`` `#9 <https://github.com/miso-belica/jusText/issues/9>`_.\n\n2.1.0 (2014-01-25)\n------------------\n- *FEATURE:* Added XPath selector to the paragrahs. XPath selector is also available in detailed output as ``xpath`` attribute of ``<p>`` tag `#5 <https://github.com/miso-belica/jusText/pull/5>`_.\n\n2.0.0 (2013-08-26)\n------------------\n- *FEATURE:* Added pluggable DOM preprocessor.\n- *FEATURE:* Added support for Python 3.2+.\n- *INCOMPATIBLE CHANGE:* Paragraphs are instances of\n  ``justext.paragraph.Paragraph``.\n- *INCOMPATIBLE CHANGE:* Script 'justext' removed in favour of\n  command ``python -m justext``.\n- *FEATURE:* It's possible to enter an URI as input document in CLI.\n- *FEATURE:* It is possible to pass unicode string directly.\n\n1.2.0 (2011-08-08)\n------------------\n- *FEATURE:* Character counts used instead of word counts where possible in\n  order to make the algorithm work well in the language independent\n  mode (without a stoplist) for languages where counting words is\n  not easy (Japanese, Chinese, Thai, etc).\n- *BUG FIX:* More robust parsing of meta tags containing the information about\n  used charset.\n- *BUG FIX:* Corrected decoding of HTML entities &#128; to &#159;\n\n1.1.0 (2011-03-09)\n------------------\n- First public release.\n", content-type = "text/x-rst"}
+license = {text = "The BSD 2-Clause License"}
+authors = [
+    {name = "Jan Pomikálek", email = "jan.pomikalek@gmail.com"},
+]
+maintainers = [
+    {name = "Michal Belica", email = "miso.belica@gmail.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development :: Pre-processors",
+    "Topic :: Text Processing :: Filters",
+    "Topic :: Text Processing :: Markup :: HTML",
+]
+dependencies = [
+    "lxml[html_clean] >= 4.4.2",
+    "backports.functools-lru-cache; python_version < \"3.2\"",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/miso-belica/jusText"
+
+[tool.setuptools]
+packages = [
+    "justext",
+]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"justext" = [
+    "stoplists/*.txt",
+]
+
+[tool.distutils.bdist_wheel]
+universal = true

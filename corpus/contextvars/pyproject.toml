@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contextvars"
+version = "2.4"
+description = "PEP 567 Backport"
+readme = "README.rst"
+license = {text = "Apache License, Version 2.0"}
+authors = [
+    {name = "MagicStack Inc", email = "hello@magic.io"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.5",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "immutables>=0.9",
+]
+
+[project.urls]
+"Homepage" = "http://github.com/MagicStack/contextvars"
+
+[tool.setuptools]
+packages = [
+    "contextvars",
+]
+provides = [
+    "contextvars",
+]
+include-package-data = true

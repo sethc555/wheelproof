@@ -1,0 +1,161 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stanza"
+version = "1.12.2"
+description = "A Python NLP Library for Many Human Languages, by the Stanford NLP Group"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "Apache License 2.0"}
+authors = [
+    {name = "Stanford Natural Language Processing Group"},
+    {email = "jebolton@stanford.edu"},
+]
+keywords = ["natural-language-processing nlp natural-language-understanding stanford-nlp deep-learning"]
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Information Technology",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "emoji",
+    "numpy",
+    "platformdirs",
+    "protobuf>=3.15.0",
+    "requests",
+    "networkx",
+    'tomli;python_version<"3.11"',
+    "torch>=1.13.0",
+    "tqdm",
+    "udtools>=0.2.4",
+]
+
+[project.optional-dependencies]
+dev = [
+    "check-manifest",
+]
+test = [
+    "coverage",
+    "pytest",
+]
+transformers = [
+    "transformers>=3.0.0",
+    "peft>=0.6.1",
+]
+datasets = [
+    "datasets",
+]
+tokenizers = [
+    "jieba",
+    "pythainlp",
+    "python-crfsuite",
+    "spacy",
+    "sudachidict_core",
+    "sudachipy",
+]
+visualization = [
+    "spacy",
+    "streamlit",
+    "ipython",
+]
+morphseg = [
+    "morphseg>=0.2.5.1",
+]
+
+[project.urls]
+Homepage = "https://github.com/stanfordnlp/stanza"
+
+[tool.setuptools]
+include-package-data = true
+packages = [
+    "stanza",
+    "stanza.models",
+    "stanza.tests",
+    "stanza.pipeline",
+    "stanza.server",
+    "stanza.resources",
+    "stanza.utils",
+    "stanza.protobuf",
+    "stanza.models.depparse",
+    "stanza.models.common",
+    "stanza.models.coref",
+    "stanza.models.lemma_classifier",
+    "stanza.models.classifiers",
+    "stanza.models.langid",
+    "stanza.models.tokenization",
+    "stanza.models.lemma",
+    "stanza.models.pos",
+    "stanza.models.mwt",
+    "stanza.models.constituency",
+    "stanza.models.ner",
+    "stanza.models.depparse.transition",
+    "stanza.tests.depparse",
+    "stanza.tests.common",
+    "stanza.tests.pipeline",
+    "stanza.tests.lemma_classifier",
+    "stanza.tests.server",
+    "stanza.tests.classifiers",
+    "stanza.tests.langid",
+    "stanza.tests.resources",
+    "stanza.tests.tokenization",
+    "stanza.tests.lemma",
+    "stanza.tests.pos",
+    "stanza.tests.utils",
+    "stanza.tests.datasets",
+    "stanza.tests.morphseg",
+    "stanza.tests.core",
+    "stanza.tests.mwt",
+    "stanza.tests.constituency",
+    "stanza.tests.ner",
+    "stanza.tests.depparse.transition",
+    "stanza.tests.datasets.coref",
+    "stanza.tests.datasets.ner",
+    "stanza.pipeline.external",
+    "stanza.pipeline.demo",
+    "stanza.utils.pretrain",
+    "stanza.utils.training",
+    "stanza.utils.coref",
+    "stanza.utils.charlm",
+    "stanza.utils.lemma",
+    "stanza.utils.languages",
+    "stanza.utils.datasets",
+    "stanza.utils.visualization",
+    "stanza.utils.constituency",
+    "stanza.utils.ner",
+    "stanza.utils.datasets.pretrain",
+    "stanza.utils.datasets.depparse",
+    "stanza.utils.datasets.coref",
+    "stanza.utils.datasets.sentiment",
+    "stanza.utils.datasets.tokenization",
+    "stanza.utils.datasets.vietnamese",
+    "stanza.utils.datasets.pos",
+    "stanza.utils.datasets.spanish",
+    "stanza.utils.datasets.indic",
+    "stanza.utils.datasets.constituency",
+    "stanza.utils.datasets.ner",
+]
+
+[tool.setuptools.package-data]
+"*" = [
+    "pipeline/demo/*ttf",
+    "pipeline/demo/*css",
+    "pipeline/demo/*html",
+    "pipeline/demo/*js",
+    "pipeline/demo/*gif",
+]

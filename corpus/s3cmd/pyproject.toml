@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "s3cmd"
+version = "2.4.0"
+description = "Command line tool for managing Amazon S3 and CloudFront services"
+readme = {text = "\n\nS3cmd lets you copy files from/to Amazon S3\n(Simple Storage Service) using a simple to use\ncommand line client. Supports rsync-like backup,\nGPG encryption, and more. Also supports management\nof Amazon's CloudFront content delivery network.\n\n\nAuthors:\n--------\n    Florent Viard <florent@sodria.com>\n\n    Michal Ludvig  <michal@logix.cz>\n\n    Matt Domsch (github.com/mdomsch)\n", content-type = "text/plain"}
+license = {text = "GNU GPL v2+"}
+authors = [
+    {name = "Michal Ludvig"},
+    {email = "michal@logix.cz"},
+]
+maintainers = [
+    {name = "github.com/fviard, github.com/matteobar"},
+    {email = "s3tools-bugs@lists.sourceforge.net"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Environment :: MacOS X",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: GNU General Public License v2 or later (GPLv2+)",
+    "Natural Language :: English",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX",
+    "Operating System :: Unix",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.6",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: System :: Archiving",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "python-dateutil",
+    "python-magic",
+]
+
+[project.urls]
+Homepage = "http://s3tools.org"
+
+[tool.setuptools]
+packages = ["S3"]
+script-files = ["s3cmd"]
+include-package-data = false
+
+[tool.setuptools.data-files]
+"share/doc/packages/s3cmd" = ["README.md", "INSTALL.md", "LICENSE", "NEWS"]
+"share/man/man1" = ["s3cmd.1"]
+
+[tool.distutils.bdist_wheel]
+universal = true

@@ -1,0 +1,143 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-stdnum"
+version = "2.2"
+description = "Python module to handle standardized numbers and codes"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "LGPL"}
+authors = [{name = "Arthur de Jong"}, {email = "arthur@arthurdejong.org"}]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Telecommunications Industry",
+    "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Office/Business :: Financial",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing :: General",
+]
+requires-python = ">=3.8"
+dependencies = [
+]
+
+[project.urls]
+"Homepage" = "https://arthurdejong.org/python-stdnum/"
+"Documentation" = "https://arthurdejong.org/python-stdnum/doc/"
+"GitHub" = "https://github.com/arthurdejong/python-stdnum/"
+
+[project.optional-dependencies]
+"SOAP" = ["zeep"]
+
+[tool.setuptools]
+packages = [
+    "stdnum",
+    "stdnum.ad",
+    "stdnum.al",
+    "stdnum.ar",
+    "stdnum.at",
+    "stdnum.au",
+    "stdnum.az",
+    "stdnum.be",
+    "stdnum.bg",
+    "stdnum.br",
+    "stdnum.by",
+    "stdnum.ca",
+    "stdnum.ch",
+    "stdnum.cl",
+    "stdnum.cn",
+    "stdnum.co",
+    "stdnum.cr",
+    "stdnum.cu",
+    "stdnum.cy",
+    "stdnum.cz",
+    "stdnum.de",
+    "stdnum.dk",
+    "stdnum.do",
+    "stdnum.dz",
+    "stdnum.ec",
+    "stdnum.ee",
+    "stdnum.eg",
+    "stdnum.es",
+    "stdnum.eu",
+    "stdnum.fi",
+    "stdnum.fo",
+    "stdnum.fr",
+    "stdnum.gb",
+    "stdnum.gh",
+    "stdnum.gn",
+    "stdnum.gr",
+    "stdnum.gt",
+    "stdnum.hr",
+    "stdnum.hu",
+    "stdnum.id",
+    "stdnum.ie",
+    "stdnum.il",
+    "stdnum.in_",
+    "stdnum.is_",
+    "stdnum.iso7064",
+    "stdnum.it",
+    "stdnum.jp",
+    "stdnum.ke",
+    "stdnum.kr",
+    "stdnum.li",
+    "stdnum.lt",
+    "stdnum.lu",
+    "stdnum.lv",
+    "stdnum.ma",
+    "stdnum.mc",
+    "stdnum.md",
+    "stdnum.me",
+    "stdnum.mk",
+    "stdnum.mt",
+    "stdnum.mu",
+    "stdnum.mx",
+    "stdnum.my",
+    "stdnum.mz",
+    "stdnum.nl",
+    "stdnum.no",
+    "stdnum.nz",
+    "stdnum.pe",
+    "stdnum.pk",
+    "stdnum.pl",
+    "stdnum.pt",
+    "stdnum.py",
+    "stdnum.ro",
+    "stdnum.rs",
+    "stdnum.ru",
+    "stdnum.se",
+    "stdnum.sg",
+    "stdnum.si",
+    "stdnum.sk",
+    "stdnum.sm",
+    "stdnum.sn",
+    "stdnum.sv",
+    "stdnum.th",
+    "stdnum.tn",
+    "stdnum.tr",
+    "stdnum.tw",
+    "stdnum.ua",
+    "stdnum.us",
+    "stdnum.uy",
+    "stdnum.ve",
+    "stdnum.vn",
+    "stdnum.za",
+]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"*" = ["*.dat", "*.crt", "py.typed"]

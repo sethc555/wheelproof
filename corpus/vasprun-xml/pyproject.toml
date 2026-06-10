@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vasprun-xml"
+version = "1.0.4"
+description = "A python package for quick analysis of vasp calculation"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "MIT"}
+authors = [
+    {name = "Qiang Zhu", email = "qiang.zhu@unlv.edu"},
+]
+requires-python = ">=3.6.1"
+dependencies = [
+    "lxml>=4.2.5",
+    "pandas>=0.23.4",
+    "numpy>=1.13.3",
+    "scipy>=1.1.0",
+    "matplotlib>=2.0.0",
+    "tabulate",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/qzhu2017/vasprun"
+
+[tool.setuptools]
+packages = ["vasprun"]
+script-files = ["scripts/vasprun"]
+include-package-data = false

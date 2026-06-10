@@ -1,0 +1,40 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "j2cli"
+version = "0.3.10"
+description = "Command-line interface to Jinja2 for templating in shell scripts."
+keywords = [ "Jinja2", "templating", "command-line", "CLI",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Intended Audience :: System Administrators", "Operating System :: OS Independent", "Topic :: Software Development", "Natural Language :: English", "Programming Language :: Python :: 2", "Programming Language :: Python :: 3",]
+dependencies = [ "jinja2 >= 2.7.2",]
+[[project.authors]]
+name = "Mark Vartanyan"
+email = "kolypto@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+text = "j2cli - Jinja2 Command-Line Tool\n================================\n\n`j2cli` is a command-line tool for templating in shell-scripts,\nleveraging the [Jinja2](http://jinja.pocoo.org/docs/) library.\n\nFeatures:\n\n* Jinja2 templating\n* INI, YAML, JSON data sources supported\n* Allows the use of environment variables in templates! Hello [Docker](http://www.docker.com/) :)\n\nInspired by [mattrobenolt/jinja2-cli](https://github.com/mattrobenolt/jinja2-cli)"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/kolypto/j2cli"
+
+[project.optional-dependencies]
+yaml = [ "pyyaml >= 3.10",]
+
+[project.scripts]
+j2 = "j2cli:main"
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+script-files = []
+platforms = [ "any",]
+license-files = [ "LICENSE",]
+
+[tool.setuptools.packages.find]
+namespaces = false

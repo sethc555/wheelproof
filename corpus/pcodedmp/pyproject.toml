@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pcodedmp"
+version = "1.2.6"
+description = "A VBA p-code disassembler"
+readme = "README.md"
+license = {text = "GPL"}
+authors = [
+    {name = "Vesselin Bontchev"},
+    {email = "vbontchev@yahoo.com"},
+]
+maintainers = [
+    {name = "Vesselin Bontchev"},
+    {email = "vbontchev@yahoo.com"},
+]
+keywords = ["vba", "p-code", "disassembler"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Topic :: Security",
+    "Topic :: Software Development :: Disassemblers",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "oletools>=0.54",
+    'win_unicode_console; platform_system=="Windows" and platform_python_implementation!="PyPy"',
+]
+
+[project.urls]
+Homepage = "https://github.com/bontchev/pcodedmp"
+
+[project.scripts]
+pcodedmp = "pcodedmp.pcodedmp:main"
+
+[tool.setuptools]
+include-package-data = false
+packages = ["pcodedmp"]
+
+[tool.distutils.bdist_wheel]
+universal = true

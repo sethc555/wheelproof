@@ -1,0 +1,37 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "publicsuffixlist"
+version = "1.0.2.20260529"
+description = "publicsuffixlist implement"
+classifiers = [ "Development Status :: 5 - Production/Stable", "License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)", "Topic :: Internet :: Name Service (DNS)", "Topic :: Text Processing :: Filters", "Operating System :: OS Independent",]
+requires-python = ">=3.5"
+[[project.authors]]
+name = "ko-zu"
+email = "causeless@gmail.com"
+
+[project.license]
+text = "MPL-2.0"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/ko-zu/psl"
+
+[project.optional-dependencies]
+update = [ "requests",]
+readme = [ "pandoc",]
+
+[project.scripts]
+publicsuffixlist-download = "publicsuffixlist.update:updatePSL"
+
+[tool.setuptools]
+packages = [ "publicsuffixlist",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+publicsuffixlist = [ "public_suffix_list.dat", "test_psl.txt",]

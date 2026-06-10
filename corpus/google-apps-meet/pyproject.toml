@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-apps-meet"
+version = "0.5.0"
+description = "Google Apps Meet API client library"
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Google LLC", email = "googleapis-packages@google.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent",
+    "Topic :: Internet",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "google-api-core[grpc] >= 2.17.1, <3.0.0",
+    "google-auth >= 2.14.1, <3.0.0,!=2.24.0,!=2.25.0",
+    "grpcio >= 1.59.0, < 2.0.0",
+    "grpcio >= 1.75.1, < 2.0.0; python_version >= '3.14'",
+    "proto-plus >= 1.22.3, <2.0.0",
+    "proto-plus >= 1.25.0, <2.0.0; python_version >= '3.13'",
+    "protobuf >= 4.25.8, < 8.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-apps-meet"
+
+[tool.setuptools]
+include-package-data = true
+packages = [
+    "google",
+    "google.apps",
+    "google.apps.meet",
+    "google.apps.meet_v2",
+    "google.apps.meet_v2beta",
+    "google.apps.meet_v2.services",
+    "google.apps.meet_v2.types",
+    "google.apps.meet_v2.services.conference_records_service",
+    "google.apps.meet_v2.services.spaces_service",
+    "google.apps.meet_v2.services.conference_records_service.transports",
+    "google.apps.meet_v2.services.spaces_service.transports",
+    "google.apps.meet_v2beta.services",
+    "google.apps.meet_v2beta.types",
+    "google.apps.meet_v2beta.services.conference_records_service",
+    "google.apps.meet_v2beta.services.spaces_service",
+    "google.apps.meet_v2beta.services.conference_records_service.transports",
+    "google.apps.meet_v2beta.services.spaces_service.transports",
+]

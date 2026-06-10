@@ -2,6 +2,115 @@
   "package": "rfc3339-validator",
   "version": "0.1.4",
   "sdist_url": "https://files.pythonhosted.org/packages/28/ea/a9387748e2d111c3c2b275ba970b735e04e15cdb1eb30693b6b5708c4dbd/rfc3339_validator-0.1.4.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-zf1ymt6b/rfc3339_validator-0.1.4-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not co ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-u5zdj0cx/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-u5zdj0cx/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-u5zdj0cx/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-u5zdj0cx/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-u5zdj0cx/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Nicolas Aimetti"
+      ],
+      [
+        "author-email",
+        "naimetti@yahoo.com.ar"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/naimetti/rfc3339-validator"
+      ],
+      [
+        "keywords",
+        "rfc3339 validator"
+      ],
+      [
+        "requires-python",
+        ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Nicolas Aimetti <naimetti@yahoo.com.ar>"
+      ],
+      [
+        "keywords",
+        "rfc3339,validator"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/naimetti/rfc3339-validator"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "hypothesis; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-runner; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest>=3; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "strict_rfc3339; extra == \"testing\""
+      ],
+      [
+        "requires-python",
+        "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
 }

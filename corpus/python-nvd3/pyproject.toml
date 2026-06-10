@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-nvd3"
+version = "0.16.0"
+description = "Python NVD3 - Chart Library for d3.js"
+license = {text = "MIT"}
+authors = [
+    {name = "Belaid Arezqui", email = "areski@gmail.com"},
+]
+keywords = ["plot, graph, nvd3, d3"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Graphics :: Presentation",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "python-slugify>=1.2.5",
+    "Jinja2>=2.8",
+]
+dynamic = ["readme"]
+
+[project.urls]
+Homepage = "http://github.com/areski/python-nvd3"
+
+[project.scripts]
+nvd3 = "nvd3.NVD3Chart:_main"
+
+[tool.setuptools]
+include-package-data = true
+py-modules = ["nvd3"]
+packages = ["nvd3"]
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.rst", "CHANGELOG.rst"], content-type = "text/x-rst"}

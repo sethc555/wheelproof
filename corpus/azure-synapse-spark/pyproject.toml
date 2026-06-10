@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-synapse-spark"
+version = "0.7.0"
+description = "Microsoft Azure Synapse Spark Client Library for Python"
+readme = {text = "# Microsoft Azure SDK for Python\n\nThis is the Microsoft Azure Synapse Spark Client Library.\nThis package has been tested with Python 2.7, 3.6, 3.7, 3.8 and 3.9.\nFor a more complete view of Azure libraries, see the [azure sdk python release](https://aka.ms/azsdk/python/all).\n\n## _Disclaimer_\n\n_Azure SDK Python packages support for Python 2.7 is ending 01 January 2022. For more information and questions, please refer to https://github.com/Azure/azure-sdk-for-python/issues/20691_\n\n# Usage\n\nFor code examples, see [Synapse Spark](https://docs.microsoft.com/python/api/overview/azure/) on docs.microsoft.com.\n\n# Provide Feedback\n\nIf you encounter any bugs or have suggestions, please file an issue in the\n[Issues](https://github.com/Azure/azure-sdk-for-python/issues)\nsection of the project.\n\n![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-synapse-spark%2FREADME.png)\n\n\n# Release History\n\n## 0.7.0 (2021-10-05)\n\n### Features Added\n\n- Added `LivyStatementStates` and `LivyStates`\n\n## 0.6.0 (2021-08-10)\n\n- Updated API version to \"2020-12-01\"\n\n## 0.5.0 (2021-03-09)\n\n- Internal bugfixes (re-generated with latest generator)\n- Stop Python 3.5 support\n\n## 0.4.0 (2020-12-08)\n\n- Internal bugfixes (re-generated with latest generator)\n\n## 0.3.0 (2020-09-15)\n\n- Internal bugfixes (re-generated with latest generator)\n\n## 0.2.0 (2020-07-01)\n\n- Initial Release\n", content-type = "text/markdown"}
+license = {text = "MIT License"}
+authors = [
+    {name = "Microsoft Corporation", email = "azpysdkhelp@microsoft.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "msrest>=0.5.0",
+    "azure-common~=1.1",
+    "azure-core>=1.6.0,<2.0.0",
+    "azure-synapse-nspkg; python_version<\"3.0\"",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Azure/azure-sdk-for-python"
+
+[tool.setuptools]
+packages = [
+    "azure.synapse.spark",
+    "azure.synapse.spark.aio",
+    "azure.synapse.spark.aio.operations",
+    "azure.synapse.spark.models",
+    "azure.synapse.spark.operations",
+]
+include-package-data = true
+
+[tool.distutils.bdist_wheel]
+universal = true

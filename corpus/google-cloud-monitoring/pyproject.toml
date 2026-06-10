@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-cloud-monitoring"
+version = "2.31.0"
+description = "Google Cloud Monitoring API client library"
+requires-python = ">=3.10"
+dependencies = ["google-api-core[grpc] >= 2.17.1, <3.0.0", "google-auth >= 2.14.1, <3.0.0,!=2.24.0,!=2.25.0", "grpcio >= 1.59.0, < 2.0.0", "grpcio >= 1.75.1, < 2.0.0; python_version >= '3.14'", "proto-plus >= 1.22.3, <2.0.0", "proto-plus >= 1.25.0, <2.0.0; python_version >= '3.13'", "protobuf >= 4.25.8, < 8.0.0"]
+classifiers = ["Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "Operating System :: OS Independent", "Topic :: Internet"]
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[[project.authors]]
+name = "Google LLC"
+email = "googleapis-packages@google.com"
+
+[project.license]
+text = "Apache-2.0"
+
+[project.urls]
+Homepage = "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-monitoring"
+
+[project.optional-dependencies]
+pandas = ["pandas >= 1.3.4"]
+
+[tool.setuptools]
+platforms = ["Posix; MacOS X; Windows"]
+packages = ["google", "google.cloud", "google.cloud.monitoring", "google.cloud.monitoring_v3", "google.cloud.monitoring_v3.services", "google.cloud.monitoring_v3.types", "google.cloud.monitoring_v3.services.metric_service", "google.cloud.monitoring_v3.services.notification_channel_service", "google.cloud.monitoring_v3.services.group_service", "google.cloud.monitoring_v3.services.alert_policy_service", "google.cloud.monitoring_v3.services.service_monitoring_service", "google.cloud.monitoring_v3.services.query_service", "google.cloud.monitoring_v3.services.uptime_check_service", "google.cloud.monitoring_v3.services.snooze_service", "google.cloud.monitoring_v3.services.metric_service.transports", "google.cloud.monitoring_v3.services.notification_channel_service.transports", "google.cloud.monitoring_v3.services.group_service.transports", "google.cloud.monitoring_v3.services.alert_policy_service.transports", "google.cloud.monitoring_v3.services.service_monitoring_service.transports", "google.cloud.monitoring_v3.services.query_service.transports", "google.cloud.monitoring_v3.services.uptime_check_service.transports", "google.cloud.monitoring_v3.services.snooze_service.transports"]
+include-package-data = true

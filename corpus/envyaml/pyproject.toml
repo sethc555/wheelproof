@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "envyaml"
+version = "1.10.211231"
+description = "Simple YAML configuration file parser with easy access for structured data"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "MIT"}
+authors = [
+    {name = "Mykola Bubelich", email = "m+github@bubelich.com"},
+]
+requires-python = ">=2.7"
+dependencies = [
+    "PyYAML",
+]
+classifiers = [
+    "Operating System :: OS Independent",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Utilities",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+[project.urls]
+Homepage = "https://github.com/thesimj/envyaml"
+
+[tool.setuptools]
+packages = ["envyaml"]
+include-package-data = true
+
+[tool.distutils.bdist_wheel]
+universal = true

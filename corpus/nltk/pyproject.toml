@@ -1,0 +1,130 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nltk"
+version = "3.9.4"
+description = "Natural Language Toolkit"
+readme = {text = "The Natural Language Toolkit (NLTK) is a Python package for\nnatural language processing.  NLTK requires Python 3.10, 3.11, 3.12, 3.13, or 3.14.", content-type = "text/plain"}
+license = {text = "Apache License, Version 2.0"}
+authors = [
+    {name = "NLTK Team"},
+    {email = "nltk.team@gmail.com"},
+]
+maintainers = [
+    {name = "NLTK Team"},
+    {email = "nltk.team@gmail.com"},
+]
+keywords = [
+    "NLP",
+    "CL",
+    "natural language processing",
+    "computational linguistics",
+    "parsing",
+    "tagging",
+    "tokenizing",
+    "syntax",
+    "linguistics",
+    "language",
+    "natural language",
+    "text analytics",
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Human Machine Interfaces",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: Filters",
+    "Topic :: Text Processing :: General",
+    "Topic :: Text Processing :: Indexing",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+    "click",
+    "joblib",
+    "regex>=2021.8.3",
+    "tqdm",
+]
+
+[project.optional-dependencies]
+machine_learning = [
+    "numpy",
+    "python-crfsuite",
+    "scikit-learn",
+    "scipy",
+]
+plot = ["matplotlib"]
+tgrep = ["pyparsing"]
+twitter = ["twython"]
+corenlp = ["requests"]
+all = [
+    "matplotlib",
+    "scipy",
+    "python-crfsuite",
+    "twython",
+    "numpy",
+    "pyparsing",
+    "scikit-learn",
+    "requests",
+]
+
+[project.scripts]
+nltk = "nltk.cli:cli"
+
+[project.urls]
+Homepage = "https://www.nltk.org/"
+Documentation = "https://www.nltk.org/"
+"Source Code" = "https://github.com/nltk/nltk"
+"Issue Tracker" = "https://github.com/nltk/nltk/issues"
+
+[tool.setuptools]
+packages = [
+    "nltk",
+    "nltk.app",
+    "nltk.ccg",
+    "nltk.chat",
+    "nltk.chunk",
+    "nltk.classify",
+    "nltk.cluster",
+    "nltk.corpus",
+    "nltk.corpus.reader",
+    "nltk.draw",
+    "nltk.inference",
+    "nltk.lm",
+    "nltk.metrics",
+    "nltk.misc",
+    "nltk.parse",
+    "nltk.sem",
+    "nltk.sentiment",
+    "nltk.stem",
+    "nltk.tag",
+    "nltk.tbl",
+    "nltk.test",
+    "nltk.test.unit",
+    "nltk.test.unit.lm",
+    "nltk.test.unit.translate",
+    "nltk.tokenize",
+    "nltk.translate",
+    "nltk.tree",
+    "nltk.twitter",
+]
+include-package-data = false
+license-files = ["LICENSE.txt", "AUTHORS.md", "README.md"]
+
+[tool.setuptools.package-data]
+nltk = ["test/*.doctest", "VERSION"]

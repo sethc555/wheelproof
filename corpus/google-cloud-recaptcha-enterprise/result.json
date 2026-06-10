@@ -1,7 +1,6 @@
 {
   "package": "google-cloud-recaptcha-enterprise",
   "version": "1.31.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/dc/db/858a7bd4c7335f8d8075579c6624c0ec94b9a54f38e0930b7b1cd14178e0/google_cloud_recaptcha_enterprise-1.31.0.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-o_ncg71h/google_cloud_recaptcha_enterprise-1.31.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, "
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

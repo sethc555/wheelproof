@@ -1,0 +1,36 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pusher"
+version = "3.3.4"
+description = "A Python library to interract with the Pusher Channels API"
+keywords = [ "pusher", "rest", "realtime", "websockets", "service",]
+classifiers = [ "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Topic :: Internet :: WWW/HTTP", "Programming Language :: Python :: 2", "Programming Language :: Python :: 3",]
+dependencies = [ "six", "requests>=2.3.0", "urllib3", "pyopenssl", "ndg-httpsclient", "pyasn1", "pynacl",]
+[[project.authors]]
+name = "Pusher"
+email = "support@pusher.com"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+text = "A Python library to interract with the Pusher Channels API"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/pusher/pusher-http-python"
+
+[project.optional-dependencies]
+aiohttp = [ "aiohttp>=0.20.0",]
+tornado = [ "tornado>=5.0.0",]
+testing = [ "nose", "mock", "HTTPretty",]
+
+[tool.setuptools]
+packages = [ "pusher",]
+include-package-data = false
+
+[tool.setuptools.package-data]
+pusher = [ "cacert.pem",]

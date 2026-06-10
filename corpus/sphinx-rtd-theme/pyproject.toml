@@ -1,0 +1,72 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sphinx_rtd_theme"
+version = "3.1.0"
+description = "Read the Docs theme for Sphinx"
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "MIT"}
+authors = [
+    {name = "Dave Snider, Read the Docs, Inc. & contributors", email = "dev@readthedocs.org"},
+]
+classifiers = [
+    "Framework :: Sphinx",
+    "Framework :: Sphinx :: Theme",
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Environment :: Console",
+    "Environment :: Web Environment",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent",
+    "Topic :: Documentation",
+    "Topic :: Software Development :: Documentation",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "sphinx >=6,<10",
+    "docutils >0.18,<0.23",
+    "sphinxcontrib-jquery >=4,<5",
+]
+
+[project.urls]
+Homepage = "https://sphinx-rtd-theme.readthedocs.io/"
+"Source Code" = "https://github.com/readthedocs/sphinx_rtd_theme"
+"Issue Tracker" = "https://github.com/readthedocs/sphinx_rtd_theme/issues"
+
+[project.optional-dependencies]
+dev = [
+    "transifex-client",
+    "bump2version",
+    "wheel",
+    "twine",
+]
+
+[project.entry-points."sphinx.html_themes"]
+sphinx_rtd_theme = "sphinx_rtd_theme"
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[tool.setuptools]
+include-package-data = true
+packages = ["sphinx_rtd_theme"]
+
+[tool.setuptools.package-data]
+sphinx_rtd_theme = [
+    "theme.conf",
+    "*.html",
+    "static/css/*.css",
+    "static/css/fonts/*.*",
+    "static/js/*.js",
+]

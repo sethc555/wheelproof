@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "businesstimedelta"
+version = "1.0.1"
+description = "Timedelta for business time. Supports exact amounts of time (hours, seconds), custom schedules, holidays, and time zones."
+keywords = [ "business", "working", "time", "timedelta", "hours", "businesstime", "businesshours",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Topic :: Office/Business :: Scheduling",]
+dependencies = [ "pytz", "holidays",]
+[[project.authors]]
+name = "seppemans"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "http://github.com/seppemans/businesstimedelta"
+
+[project.optional-dependencies]
+testing = [ "nose",]
+
+[tool.setuptools]
+packages = [ "businesstimedelta", "businesstimedelta.rules",]
+zip-safe = false
+include-package-data = false

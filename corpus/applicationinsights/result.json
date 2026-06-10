@@ -2,6 +2,91 @@
   "package": "applicationinsights",
   "version": "0.11.10",
   "sdist_url": "https://files.pythonhosted.org/packages/d3/f2/46a75ac6096d60da0e71a068015b610206e697de01fa2fb5bba8564b0798/applicationinsights-0.11.10.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-x0095r2k/applicationinsights-0.11.10-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must no ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-dhx_8g98/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-dhx_8g98/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-dhx_8g98/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-dhx_8g98/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-dhx_8g98/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Microsoft"
+      ],
+      [
+        "author-email",
+        "appinsightssdk@microsoft.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/Microsoft/ApplicationInsights-Python"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/Microsoft/ApplicationInsights-Python"
+      ],
+      [
+        "keywords",
+        "analytics applicationinsights telemetry appinsights development"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Microsoft <appinsightssdk@microsoft.com>"
+      ],
+      [
+        "description-content-type",
+        "text/plain"
+      ],
+      [
+        "keywords",
+        "analytics,applicationinsights,telemetry,appinsights,development"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/Microsoft/ApplicationInsights-Python"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Microsoft/ApplicationInsights-Python"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
 }

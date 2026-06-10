@@ -2,6 +2,125 @@
   "package": "websocket-client",
   "version": "1.9.0",
   "sdist_url": "https://files.pythonhosted.org/packages/2c/41/aa4bf9664e4cda14c3b39865b12251e8e7d239f4cd0e3cc1b6c2ccde25c1/websocket_client-1.9.0.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-7srdwqv3/websocket_client-1.9.0-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not con ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-86ddr5nf/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-86ddr5nf/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-86ddr5nf/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-86ddr5nf/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-86ddr5nf/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "liris"
+      ],
+      [
+        "author-email",
+        "liris.pp@gmail.com"
+      ],
+      [
+        "download-url",
+        "https://github.com/websocket-client/websocket-client/releases"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "download-url"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "maintainer"
+      ],
+      [
+        "dynamic",
+        "maintainer-email"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/websocket-client/websocket-client.git"
+      ],
+      [
+        "keywords",
+        "websockets client"
+      ],
+      [
+        "maintainer",
+        "engn33r"
+      ],
+      [
+        "maintainer-email",
+        "websocket.client@proton.me"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "liris <liris.pp@gmail.com>"
+      ],
+      [
+        "keywords",
+        "websockets,client"
+      ],
+      [
+        "maintainer-email",
+        "engn33r <websocket.client@proton.me>"
+      ],
+      [
+        "project-url",
+        "Download, https://github.com/websocket-client/websocket-client/releases"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/websocket-client/websocket-client.git"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

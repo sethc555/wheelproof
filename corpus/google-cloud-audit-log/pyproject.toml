@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-cloud-audit-log"
+version = "0.6.0"
+description = "Google Cloud Audit Protos"
+readme = {file = "README.rst", content-type = "text/markdown"}
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Google LLC", email = "googleapis-packages@google.com"},
+]
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+dependencies = [
+    "protobuf >= 4.25.8, < 8.0.0",
+    "googleapis-common-protos >= 1.56.2, < 2.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-audit-log"
+
+[tool.setuptools]
+include-package-data = true
+packages = [
+    "docs",
+    "google",
+    "google.cloud",
+    "google.cloud.audit",
+]

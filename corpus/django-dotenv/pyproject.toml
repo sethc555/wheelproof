@@ -1,0 +1,23 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "django-dotenv"
+version = "1.4.2"
+description = "foreman reads from .env. manage.py doesn't. Let's fix that."
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Web Environment", "Framework :: Django", "Intended Audience :: Developers", "Operating System :: OS Independent", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.2", "Programming Language :: Python :: 3.4", "Topic :: Internet :: WWW/HTTP",]
+[[project.authors]]
+name = "Jacob Kaplan-Moss"
+email = "jacob@jacobian.org"
+
+[[project.maintainers]]
+name = "José Padilla"
+email = "hello@jpadilla.com"
+
+[project.urls]
+Homepage = "http://github.com/jpadilla/django-dotenv"
+
+[tool.setuptools]
+py-modules = [ "dotenv",]
+include-package-data = false

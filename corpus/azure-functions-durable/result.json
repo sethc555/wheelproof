@@ -2,6 +2,101 @@
   "package": "azure-functions-durable",
   "version": "1.5.0",
   "sdist_url": "https://files.pythonhosted.org/packages/d0/7c/3654377e7000c4bd6b6edbb959efc4ad867005353843a4d810dfa8fbb72b/azure_functions_durable-1.5.0.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-k3_sqplt/azure-functions-durable-1.5.0-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must  ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-7oxjjah2/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-7oxjjah2/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-7oxjjah2/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-7oxjjah2/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-7oxjjah2/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Azure Functions team at Microsoft Corp."
+      ],
+      [
+        "author-email",
+        "azurefunctions@microsoft.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/Azure/azure-functions-durable-python"
+      ],
+      [
+        "keywords",
+        "azure functions azurefunctions python serverless workflows durablefunctions"
+      ],
+      [
+        "requires-python",
+        ">=3.9,<4"
+      ],
+      [
+        "version",
+        "1.5.0"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "\"Azure Functions team at Microsoft Corp.\" <azurefunctions@microsoft.com>"
+      ],
+      [
+        "keywords",
+        "azure,functions,azurefunctions,python,serverless,workflows,durablefunctions"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/Azure/azure-functions-durable-python"
+      ],
+      [
+        "requires-python",
+        "<4,>=3.9"
+      ],
+      [
+        "version",
+        "0.0.0"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

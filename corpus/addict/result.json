@@ -1,7 +1,6 @@
 {
   "package": "addict",
   "version": "2.4.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/85/ef/fd7649da8af11d93979831e8f1f8097e85e82d5bfeabc8c68b39175d8e75/addict-2.4.0.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected: /lib/python3.12/site-packages/wheelproof/convert.py\", line 68, in _merge_cfg\n    over.read_string(overlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1096, in _read\n    raise e\nconfigparser.ParsingError: Source contains parsing errors: '<string>'\n\t[line 30]: ' = LICENSE\\n'\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

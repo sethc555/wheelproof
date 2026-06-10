@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "configcat-client"
+version = "10.0.0"
+description = "ConfigCat SDK for Python. https://configcat.com"
+readme = {text = "Feature Flags created by developers for developers with <3. ConfigCat lets you manage feature flags across frontend, backend, mobile, and desktop apps without (re)deploying code. % rollouts, user targeting, segmentation. Feature toggle SDKs for all main languages. Alternative to LaunchDarkly. Host yourself, or use the hosted management app at https://configcat.com.", content-type = "text/plain"}
+license = {text = "MIT"}
+authors = [
+    {name = "ConfigCat", email = "developer@configcat.com"},
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "requests>=2.32.4",
+    "semver>=2.10.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/configcat/python-sdk"
+
+[tool.setuptools]
+packages = ["configcatclient"]
+include-package-data = false
+
+[tool.distutils.bdist_wheel]
+universal = true

@@ -1,7 +1,6 @@
 {
   "package": "ruamel-yaml-jinja2",
   "version": "0.2.7",
-  "sdist_url": "https://files.pythonhosted.org/packages/91/e0/ad199ab894f773551fc352541ce3305b9e7c366a4ae8c44ab1bc9ca3abff/ruamel.yaml.jinja2-0.2.7.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected: ing\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1064, in _read\n    raise MissingSectionHeaderError(fpname, lineno, line)\nconfigparser.MissingSectionHeaderError: File contains no section headers.\nfile: '<string>', line: 1\n'You should use the latest setuptools. The namespaces.py file that this setup.py uses was added in setuptools 28.7.0 (Oct 2016)\\n'\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

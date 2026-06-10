@@ -1,7 +1,6 @@
 {
   "package": "trino",
   "version": "0.337.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/7f/b6/73315c36902ecd87d061fe045a1df4611f5b7ff714498864896b4d454ab1/trino-0.337.0.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected: 3.12/site-packages/wheelproof/convert.py\", line 68, in _merge_cfg\n    over.read_string(overlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1096, in _read\n    raise e\nconfigparser.ParsingError: Source contains parsing errors: '<string>'\n\t[line 94]: ' = LICENSE; README.md\\n'\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

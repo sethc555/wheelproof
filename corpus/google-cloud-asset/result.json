@@ -1,7 +1,6 @@
 {
   "package": "google-cloud-asset",
   "version": "4.4.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/4c/d4/92b37789e99dc416b2d17f6d3be5a32a50049ffe6c350953abda85c4a0fd/google_cloud_asset-4.4.0.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-ywvwe_73/google_cloud_asset-4.4.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _main\n    set"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

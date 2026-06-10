@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "traittypes"
+version = "0.2.3"
+description = "Scipy trait types"
+readme = {text = "Custom trait types for scientific computing.", content-type = "text/plain"}
+license = {text = "BSD"}
+authors = [
+    {name = "IPython Development Team", email = "ipython-dev@scipy.org"},
+]
+keywords = [
+    "Interactive",
+    "Interpreter",
+    "Shell",
+    "Web",
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+]
+dependencies = [
+    "traitlets>=4.2.2",
+]
+
+[project.urls]
+Homepage = "http://ipython.org"
+
+[project.optional-dependencies]
+test = [
+    "numpy",
+    "pandas",
+    "xarray",
+    "pytest",
+]
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[tool.setuptools]
+include-package-data = false
+packages = [
+    "traittypes",
+    "traittypes.tests",
+]

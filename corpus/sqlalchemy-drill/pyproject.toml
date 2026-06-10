@@ -1,0 +1,59 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlalchemy_drill"
+version = "1.1.10"
+description = "Apache Drill for SQLAlchemy"
+keywords = [ "SQLAlchemy", "Apache", "Drill",]
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "License :: OSI Approved :: MIT License", "Intended Audience :: Developers", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: Implementation :: CPython", "Topic :: Database :: Front-Ends",]
+dependencies = [ "requests", "ijson", "sqlalchemy",]
+[[project.authors]]
+name = "John Omernik"
+email = "john@omernik.com"
+
+[[project.authors]]
+name = "Charles Givre"
+email = "cgivre@thedataist.com"
+
+[[project.authors]]
+name = "Davide Miceli"
+email = "davide.miceli.dap@gmail.com"
+
+[[project.authors]]
+name = "Massimo Martiradonna"
+email = "massimo.martiradonna.dap@gmail.com"
+
+[[project.authors]]
+name = "James Turton"
+email = "james@somecomputer.xyz"
+
+[project.license]
+text = "MIT"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/JohnOmernik/sqlalchemy-drill"
+Download = "https://github.com/JohnOmernik/sqlalchemy-drill/archive/1.1.10.tar.gz"
+
+[project.optional-dependencies]
+jdbc = [ "JPype1", "JayDeBeApi",]
+odbc = [ "pyodbc",]
+testing = [ "nose >= 0.11",]
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[project.entry-points."sqlalchemy.dialects"]
+drill = "sqlalchemy_drill.sadrill:DrillDialect_sadrill"
+"drill.sadrill" = "sqlalchemy_drill.sadrill:DrillDialect_sadrill"
+"drill.jdbc" = "sqlalchemy_drill.jdbc:DrillDialect_jdbc"
+"drill.odbc" = "sqlalchemy_drill.odbc:DrillDialect_odbc"
+
+[tool.setuptools.packages.find]
+namespaces = false

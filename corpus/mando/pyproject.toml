@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mando"
+version = "0.8.2"
+description = "Create Python CLI apps with little to no effort at all!"
+keywords = [ "argparse,argument", "parser,arguments,cli,command", "line,commands,decorator,dispatch,flags,getopt,options,optparse,parser,subcommands",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Natural Language :: English", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Software Development", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Utilities",]
+dependencies = []
+[[project.authors]]
+name = "Michele Lacchia"
+email = "michelelacchia@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://mando.readthedocs.org/"
+Download = "https://pypi.python.org/mando/"
+
+[project.optional-dependencies]
+restructuredtext = [ "rst2ansi",]
+
+[tool.setuptools]
+platforms = [ "any",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+namespaces = false

@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jaconv"
+version = "0.5.0"
+description = "Pure-Python Japanese character interconverter for Hiragana, Katakana, Hankaku, Zenkaku and more"
+license = {text = "MIT License"}
+authors = [
+    {name = "Yukino Ikegami", email = "yknikgm@gmail.com"},
+]
+keywords = [
+    "Japanese converter",
+    "Japanese",
+    "text preprocessing",
+    "half-width kana",
+    "Hiragana",
+    "Katakana",
+    "Hankaku",
+    "Zenkaku",
+    "transliteration",
+    "Julius",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Information Technology",
+    "Natural Language :: Japanese",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft",
+    "Operating System :: POSIX",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: General",
+]
+dynamic = ["readme"]
+
+[project.urls]
+Homepage = "https://github.com/ikegami-yukino/jaconv"
+
+[tool.setuptools]
+include-package-data = false
+platforms = ["POSIX", "Windows", "Unix", "MacOS"]
+packages = ["jaconv"]
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.rst", "CHANGES.rst"], content-type = "text/x-rst"}
+
+[tool.setuptools.package-data]
+jaconv = ["py.typed", "*.pyi"]

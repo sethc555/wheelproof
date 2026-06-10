@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "opencensus"
+version = "0.11.4"
+description = "A stats collection and distributed tracing framework"
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "OpenCensus Authors", email = "census-developers@googlegroups.com"},
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+]
+dependencies = [
+    "opencensus-context >= 0.1.3",
+    'google-api-core >= 1.0.0, < 2.0.0; python_version<"3.6"',
+    'google-api-core >= 1.0.0, < 3.0.0; python_version>="3.6"',
+    "six ~= 1.16",
+]
+
+[project.urls]
+Homepage = "https://github.com/census-instrumentation/opencensus-python"
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[tool.setuptools]
+include-package-data = true
+packages = [
+    "opencensus",
+    "opencensus.log",
+    "opencensus.stats",
+    "opencensus.tags",
+    "opencensus.common",
+    "opencensus.metrics",
+    "opencensus.trace",
+    "opencensus.tags.propagation",
+    "opencensus.common.http_handler",
+    "opencensus.common.schedule",
+    "opencensus.common.version",
+    "opencensus.common.backports",
+    "opencensus.common.utils",
+    "opencensus.common.configuration",
+    "opencensus.common.monitored_resource",
+    "opencensus.common.resource",
+    "opencensus.common.transports",
+    "opencensus.metrics.export",
+    "opencensus.trace.tracers",
+    "opencensus.trace.propagation",
+    "opencensus.trace.samplers",
+]

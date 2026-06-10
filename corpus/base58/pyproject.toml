@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "base58"
+version = "2.1.1"
+description = "Base58 and Base58Check implementation."
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "MIT"}
+authors = [
+    {name = "David Keijser", email = "keijser@gmail.com"},
+]
+requires-python = ">=3.5"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "https://github.com/keis/base58"
+
+[project.optional-dependencies]
+tests = [
+    "mypy",
+    "PyHamcrest>=2.0.2",
+    "pytest>=4.6",
+    "pytest-benchmark",
+    "pytest-cov",
+    "pytest-flake8",
+]
+
+[project.scripts]
+base58 = "base58.__main__:main"
+
+[tool.setuptools]
+packages = ["base58"]
+include-package-data = false
+
+[tool.setuptools.package-data]
+base58 = ["py.typed"]

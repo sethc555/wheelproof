@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-auth-oauthlib"
+version = "1.4.0"
+description = "Google Authentication Library"
+readme = {file = "README.rst", content-type = ""}
+license = {text = "Apache 2.0"}
+authors = [
+    {name = "Google Cloud Platform"},
+    {email = "googleapis-packages@google.com"},
+]
+requires-python = ">=3.10"
+keywords = ["google auth oauth client oauthlib"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: POSIX",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP",
+]
+dependencies = [
+    "google-auth>=2.15.0,<3.0.0,!=2.43.0,!=2.44.0,!=2.45.0",
+    "requests-oauthlib>=0.7.0",
+]
+
+[project.optional-dependencies]
+tool = ["click>=6.0.0"]
+
+[project.scripts]
+google-oauthlib-tool = "google_auth_oauthlib.tool.__main__:main [tool]"
+
+[project.urls]
+Homepage = "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-auth-oauthlib"
+
+[tool.setuptools]
+packages = ["google_auth_oauthlib", "google_auth_oauthlib.tool"]
+include-package-data = false

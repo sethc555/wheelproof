@@ -2,6 +2,101 @@
   "package": "atlasclient",
   "version": "1.0.0",
   "sdist_url": "https://files.pythonhosted.org/packages/87/03/76764a0d6812a2a1418d5a964a6532a3d830e23f617187a2fd9220abe211/atlasclient-1.0.0.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-8j77zf9k/atlasclient-1.0.0-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain  ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-0v0lh4w_/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-0v0lh4w_/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-0v0lh4w_/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-0v0lh4w_/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-0v0lh4w_/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Jean-Baptiste Poullet"
+      ],
+      [
+        "author-email",
+        "jeanbaptistepoullet@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/jpoullet2000/atlasclient"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Jean-Baptiste Poullet <jeanbaptistepoullet@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/plain"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/jpoullet2000/atlasclient"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "coveralls==1.8.2; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest==4.6.3; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest_cov>=2.5.1; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest_mock>=1.6.3; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "tox-travis==0.12; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "tox==3.12.1; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": true,
+    "distinfo_changed": []
+  }
 }

@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "slackclient"
+version = "2.9.4"
+description = "Slack API clients for Web API and RTM API (Legacy) - Please use https://pypi.org/project/slack-sdk/ instead."
+readme = "README.md"
+requires-python = ">=3.6.0"
+license = {text = "MIT"}
+authors = [
+    {name = "Slack Technologies, LLC", email = "opensource@slack.com"},
+]
+keywords = [
+    "slack slack-web slack-rtm chat chatbots bots chatops",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Communications :: Chat",
+    "Topic :: System :: Networking",
+    "Topic :: Office/Business",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+dependencies = [
+    "aiohttp>3.5.2,<4.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/slackapi/python-slack-sdk"
+
+[project.optional-dependencies]
+"optional" = [
+    "aiodns>1.0",
+]
+
+[tool.setuptools]
+packages = [
+    "slack",
+    "slack.web",
+    "slack.webhook",
+    "slack.signature",
+    "slack.rtm",
+    "slack.web.classes",
+]
+include-package-data = true

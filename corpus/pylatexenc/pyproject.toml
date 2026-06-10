@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pylatexenc"
+version = "2.10"
+description = "Simple LaTeX parser providing latex-to-unicode and unicode-to-latex conversion"
+readme = "README.rst"
+license = {text = "MIT"}
+authors = [
+    {name = "Philippe Faist", email = "philippe.faist@bluewin.ch"},
+]
+keywords = [
+    "latex text unicode encode parse expression",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: POSIX :: Linux",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Text Processing :: General",
+    "Topic :: Text Processing :: Markup :: LaTeX",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/phfaist/pylatexenc"
+
+[project.scripts]
+latexwalker = "pylatexenc.latexwalker.__main__:main"
+latex2text = "pylatexenc.latex2text.__main__:main"
+latexencode = "pylatexenc.latexencode.__main__:main"
+
+[tool.setuptools]
+packages = [
+    "pylatexenc",
+    "pylatexenc.latex2text",
+    "pylatexenc.latexwalker",
+    "pylatexenc.latexencode",
+    "pylatexenc.macrospec",
+]
+include-package-data = false

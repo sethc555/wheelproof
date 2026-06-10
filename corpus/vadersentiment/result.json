@@ -1,7 +1,6 @@
 {
   "package": "vadersentiment",
   "version": "3.3.2",
-  "sdist_url": "https://files.pythonhosted.org/packages/77/8c/4a48c10a50f750ae565e341e697d74a38075a3e43ff0df6f1ab72e186902/vaderSentiment-3.3.2.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected: /v/lib/python3.12/site-packages/ini2toml/transformations.py\", line 336, in apply\n    return fn(x)\n           ^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/ini2toml/plugins/setuptools_pep621.py\", line 713, in normalise_keys\n    section.rename(option_name, self.normalise_key(option_name))\n  File \"/tmp/v/lib/python3.12/site-packages/ini2toml/intermediate_repr.py\", line 116, in rename\n    raise KeyError(f\"new_key={new_key!r} already exists\")\nKeyError: \"new_key='long-description' already exists\"\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

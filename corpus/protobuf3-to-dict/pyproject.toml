@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "protobuf3-to-dict"
+version = "0.1.5"
+description = "Ben Hodgson: A teeny Python library for creating Python dicts from protocol buffers and the reverse. Useful as an intermediate step before serialisation (e.g. to JSON). Kapor: upgrade it to PB3 and PY3, rename it to protobuf3-to-dict"
+keywords = [ "protobuf", "json", "dict",]
+classifiers = [ "Programming Language :: Python", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: Public Domain", "Operating System :: OS Independent", "Topic :: Software Development :: Libraries :: Python Modules",]
+dependencies = [ "protobuf>=2.3.0", "six",]
+[[project.authors]]
+name = "Kapor Zhu"
+email = "kapor.zhu@gmail.com"
+
+[project.license]
+text = "Public Domain"
+
+[project.urls]
+Homepage = "https://github.com/kaporzhu/protobuf-to-dict"
+
+[project.optional-dependencies]
+testing = [ "nose>=1.0", "coverage", "nosexcover",]
+
+[tool.setuptools]
+py-modules = [ "protobuf_to_dict",]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+"" = "src"

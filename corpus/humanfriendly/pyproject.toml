@@ -1,0 +1,65 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "humanfriendly"
+version = "10.0"
+description = "Human friendly output for text interfaces using Python"
+readme = "README.rst"
+license = {text = "MIT"}
+authors = [
+    {name = "Peter Odding"},
+    {email = "peter@peterodding.com"},
+]
+classifiers = [
+    "Development Status :: 6 - Mature",
+    "Environment :: Console",
+    "Framework :: Sphinx :: Extension",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Communications",
+    "Topic :: Scientific/Engineering :: Human Machine Interfaces",
+    "Topic :: Software Development",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Software Development :: User Interfaces",
+    "Topic :: System :: Shells",
+    "Topic :: System :: System Shells",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Terminals",
+    "Topic :: Text Processing :: General",
+    "Topic :: Text Processing :: Linguistic",
+    "Topic :: Utilities",
+]
+requires-python = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+dependencies = [
+    "monotonic; python_version == \"2.7\"",
+    "pyreadline; sys_platform == \"win32\" and python_version<\"3.8\"",
+    "pyreadline3; sys_platform == \"win32\" and python_version>=\"3.8\"",
+]
+
+[project.scripts]
+humanfriendly = "humanfriendly.cli:main"
+
+[project.urls]
+Homepage = "https://humanfriendly.readthedocs.io"
+
+[tool.setuptools]
+packages = ["humanfriendly", "humanfriendly.terminal"]
+include-package-data = false
+
+[tool.distutils.bdist_wheel]
+universal = true

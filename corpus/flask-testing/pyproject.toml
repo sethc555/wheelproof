@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Flask-Testing"
+version = "0.8.1"
+description = "Unit testing for Flask"
+classifiers = [ "Development Status :: 4 - Beta", "Environment :: Web Environment", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3", "Topic :: Internet :: WWW/HTTP :: Dynamic Content", "Topic :: Software Development :: Libraries :: Python Modules",]
+dependencies = [ "Flask",]
+[[project.authors]]
+name = "Dan Jacob"
+email = "danjac354@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+text = "Flask-Testing\n-------------\n\nFlask unittest integration.\n\nLinks\n`````\n\n* `documentation <http://packages.python.org/Flask-Testing>`\n* `development version <http://github.com/jarus/flask-testing/zipball/master#egg=Flask-Testing-dev>`"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/jarus/flask-testing"
+
+[project.optional-dependencies]
+testing = [ "blinker",]
+
+[tool.setuptools]
+packages = [ "flask_testing",]
+zip-safe = false
+platforms = [ "any",]
+include-package-data = false

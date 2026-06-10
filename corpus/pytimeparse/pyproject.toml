@@ -1,0 +1,33 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pytimeparse"
+version = "1.1.8"
+description = "Time expression parser"
+keywords = [ "time", "parsing", "parser",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "Topic :: Text Processing", "Natural Language :: English", "License :: OSI Approved :: MIT License", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.2", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6",]
+[[project.authors]]
+name = "Will Roberts"
+email = "wildwilhelm@gmail.com"
+
+[project.license]
+text = "License :: OSI Approved :: MIT License"
+
+[project.urls]
+Homepage = "https://github.com/wroberts/pytimeparse"
+
+[project.optional-dependencies]
+testing = [ "nose",]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.package-data]
+pytimeparse = [ "VERSION",]
+
+[tool.setuptools.packages.find]
+exclude = []
+namespaces = false

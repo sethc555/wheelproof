@@ -1,0 +1,40 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flower"
+version = "2.0.1"
+description = "Celery Flower"
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: BSD License", "Topic :: System :: Distributed Computing", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Operating System :: OS Independent",]
+requires-python = ">=3.7"
+dependencies = [ "celery>=5.0.5", "tornado>=5.0.0,<7.0.0", "prometheus_client>=0.8.0", "humanize", "pytz",]
+[[project.authors]]
+name = "Mher Movsisyan"
+email = "mher.movsisyan@gmail.com"
+
+[project.license]
+text = "BSD"
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[project.urls]
+Homepage = "https://github.com/mher/flower"
+
+[project.optional-dependencies]
+testing = []
+
+[tool.setuptools]
+include-package-data = false
+
+[project.entry-points."celery.commands"]
+flower = "flower.command:flower"
+
+[tool.setuptools.package-data]
+flower = [ "templates/*", "static/*.*", "static/**/*.*", "static/**/**/*.*",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests", "tests.*",]
+namespaces = false

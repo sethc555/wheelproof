@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sqlalchemy_adapter"
+version = "1.9.0"
+description = "SQLAlchemy Adapter for PyCasbin"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "Apache 2.0"}
+authors = [
+    {name = "Casbin"},
+    {email = "admin@casbin.org"},
+]
+requires-python = ">=3.3"
+keywords = [
+    "pycasbin",
+    "casbin",
+    "SQLAlchemy",
+    "casbin-adapter",
+    "rbac",
+    "access control",
+    "abac",
+    "acl",
+    "permission",
+]
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["pycasbin>=2.0.0", "SQLAlchemy>=1.2.18"]
+
+[project.urls]
+Homepage = "https://github.com/officialpycasbin/sqlalchemy-adapter"
+
+[tool.setuptools]
+packages = ["sqlalchemy_adapter"]
+include-package-data = false

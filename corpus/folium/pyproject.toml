@@ -1,0 +1,60 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "folium"
+version = "0.20.0"
+description = "Make beautiful maps with Leaflet.js & Python"
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "MIT"}
+authors = [
+    {name = "Rob Story", email = "wrobstory@gmail.com"},
+]
+keywords = ["data visualization"]
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 5 - Production/Stable",
+]
+dependencies = [
+    "branca>=0.6.0",
+    "jinja2>=2.9",
+    "numpy",
+    "requests",
+    "xyzservices",
+]
+
+[project.optional-dependencies]
+testing = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/python-visualization/folium"
+
+[tool.setuptools]
+include-package-data = false
+platforms = ["any"]
+packages = ["folium", "folium.plugins"]
+
+[tool.distutils.bdist_wheel]
+universal = true
+
+[tool.setuptools.package-data]
+"*" = [
+    "*.js",
+    "plugins/*.js",
+    "plugins/*.html",
+    "plugins/*.css",
+    "plugins/*.tpl",
+    "templates/*.html",
+    "templates/*.js",
+    "templates/*.txt",
+    "py.typed",
+]

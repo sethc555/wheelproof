@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "passlib"
+version = "1.7.4"
+description = "comprehensive password hashing framework supporting over 30 schemes"
+readme = {text = "Passlib is a password hashing library for Python 2 & 3, which provides\ncross-platform implementations of over 30 password hashing algorithms, as well\nas a framework for managing existing password hashes. It's designed to be useful\nfor a wide range of tasks, from verifying a hash found in /etc/shadow, to\nproviding full-strength password hashing for multi-user applications.\n\n* See the `documentation <https://passlib.readthedocs.io>`_\n  for details, installation instructions, and examples.\n\n* See the `homepage <https://foss.heptapod.net/python-libs/passlib/wikis/home>`_\n  for the latest news and more information.\n\n* See the `changelog <https://passlib.readthedocs.io/en/stable/history>`_\n  for a description of what's new in Passlib.\n\nAll releases are signed with the gpg key\n`4D8592DF4CE1ED31 <http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x4D8592DF4CE1ED31>`_.\n", content-type = "text/x-rst"}
+license = {text = "BSD"}
+authors = [
+    {name = "Eli Collins", email = "elic@assurancetechnologies.com"},
+]
+keywords = ["password secret hash security\ncrypt md5-crypt\nsha256-crypt sha512-crypt pbkdf2 argon2 scrypt bcrypt\napache htpasswd htdigest\ntotp 2fa\n"]
+classifiers = [
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.6",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: Jython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Security :: Cryptography",
+    "Topic :: Software Development :: Libraries",
+    "Development Status :: 5 - Production/Stable",
+]
+
+[project.urls]
+Homepage = "https://passlib.readthedocs.io"
+Download = "https://pypi.python.org/packages/source/p/passlib/passlib-1.7.4.tar.gz"
+
+[project.optional-dependencies]
+argon2 = ["argon2_cffi>=18.2.0"]
+bcrypt = ["bcrypt>=3.1.0"]
+totp = ["cryptography"]
+build_docs = [
+    "sphinx>=1.6",
+    "sphinxcontrib-fulltoc>=1.2.0",
+    "cloud_sptheme>=1.10.1",
+]
+
+[tool.setuptools]
+include-package-data = false
+packages = [
+    "passlib",
+    "passlib.handlers",
+    "passlib.tests",
+    "passlib._setup",
+    "passlib.utils",
+    "passlib.ext",
+    "passlib.crypto",
+    "passlib.utils.compat",
+    "passlib.ext.django",
+    "passlib.crypto._blowfish",
+    "passlib.crypto.scrypt",
+]
+
+[tool.setuptools.package-data]
+"passlib.tests" = ["*.cfg"]
+passlib = ["_data/wordsets/*.txt"]
+
+[tool.distutils.bdist_wheel]
+universal = true

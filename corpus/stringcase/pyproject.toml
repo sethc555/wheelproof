@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stringcase"
+version = "1.2.0"
+description = "String case converter."
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "MIT"}
+authors = [{name = "Taka Okunishi"}, {email = "okunishitaka.com@gmail.com"}]
+
+[project.urls]
+"Homepage" = "https://github.com/okunishinishi/python-stringcase"
+
+[tool.setuptools]
+py-modules = ["stringcase"]
+include-package-data = false

@@ -1,7 +1,6 @@
 {
   "package": "pynput",
   "version": "1.8.2",
-  "sdist_url": "https://files.pythonhosted.org/packages/86/c6/e2d415610cfbc78308bee44218a46124aaa3301b1df08814df819b2254a1/pynput-1.8.2.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected:    over.read_string(overlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1075, in _read\n    raise DuplicateOptionError(sectname, optname,\nconfigparser.DuplicateOptionError: While reading from '<string>' [line 67]: option '' in section 'options.extras_require' already exists\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

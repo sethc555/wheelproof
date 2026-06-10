@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "atlasclient"
+version = "1.0.0"
+description = "Apache Atlas client"
+keywords = [ "atlasclient",]
+classifiers = [ "Development Status :: 2 - Pre-Alpha", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Natural Language :: English", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6",]
+dependencies = [ "six >=1.11.0", "Click >=6.0", "requests >=2.18.4",]
+[[project.authors]]
+name = "Jean-Baptiste Poullet"
+email = "jeanbaptistepoullet@gmail.com"
+
+[project.license]
+text = "Apache Software License 2.0"
+
+[project.readme]
+text = "=============================\nApache Atlas Client in Python\n=============================\n\n\n.. image:: https://img.shields.io/pypi/v/atlasclient.svg\n:target: https://pypi.python.org/pypi/atlasclient\n\n.. image:: https://img.shields.io/travis/jpoullet2000/atlasclient.svg\n:target: https://travis-ci.org/jpoullet2000/atlasclient\n\n.. image:: https://coveralls.io/repos/github/jpoullet2000/atlasclient/badge.svg?branch=master\n:target: https://coveralls.io/github/jpoullet2000/atlasclient?branch=master\n\n.. image:: https://readthedocs.org/projects/atlasclient/badge/?version=latest\n:target: https://atlasclient.readthedocs.io/en/latest/?badge=latest\n:alt: Documentation Status\n\n.. image:: https://pyup.io/repos/github/jpoullet2000/atlasclient/shield.svg\n:target: https://pyup.io/repos/github/jpoullet2000/atlasclient/\n:alt: Updates\n\n\nApache Atlas client in Python.\nOnly compatible with Apache Atlas REST API **v2**.\n\n* Free software: Apache Software License 2.0\n* Documentation: https://atlasclient.readthedocs.io.\n\nGet started\n-----------\n\n>>> from atlasclient.client import Atlas\n>>> client = Atlas('<atlas.host>', port=21000, username='admin', password='admin')\n>>> client.entity_guid(<guid>).status\n>>> params = {'typeName': 'DataSet', 'attrName': 'name', 'attrValue': 'data', 'offset': '1', 'limit':'10'}\n>>> search_results = client.search_attribute(**params)\n>>> for s in search_results:\n...    for e in s.entities:\n...         print(e.name)\n...         print(e.guid)\n\n\nFeatures\n--------\n\n* Lazy loading: requests are only performed when data are required and not yet available\n* Resource object relationships: REST API from sub-resources are done transparently for the user, for instance the user does not have to know that it needs to trigger a different REST request for getting the classifications of a specific entity.\n\nTODO features\n-------------\n\n* allow multiprocessing\n\nCredits\n---------\n\nThis package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.\n\n.. _Cookiecutter: https://github.com/audreyr/cookiecutter\n.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage\n\n\n\n=======\nHistory\n=======\n\n1.0.0 (2019-08-10)\n------------------\n* Adds the helper functions to parse the qualified name\n* Updates the version to 1.x to get some confidence from community as the module is pretty stable now\n\n0.1.8 (2019-08-08)\n------------------\n* Add support for Atlas' Admin Metrics REST API\n\n0.1.7 (2019-07-08)\n------------------\n* Add support for Atlas' DSL Saved Search (#81)\n* Fixes list lookups for searching\n\n0.1.6 (2019-04-26)\n------------------\n* Call of DependentClass inflate (#79)\n\n0.1.5 (2019-04-24)\n------------------\n* Add support for Post type Basic Search (#76)\n\n\n0.1.4 (2019-04-16)\n------------------\n* fixes (BasicSearch, when no result in _data, etc)\n\n0.1.3 (2019-04-05)\n------------------\n* HTTP Auth\n* Basic search inflate\n* relationshipAttributes\n\n0.1.2 (2018-03-27)\n------------------\n\n* Bug fixes\n* Response is returned after entity creation (easier to figure out the guid)\n\n0.1.1 (2018-03-07)\n------------------\n\n* Bug fixes\n* Most of the resources have been implemented (except RelationshipREST)\n* Basic authentication (only the Basic token is sent on the network)\n\n0.1.0 (2018-01-09)\n------------------\n\n* First push."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/jpoullet2000/atlasclient"
+
+[project.optional-dependencies]
+testing = [ "pytest==4.6.3", "pytest_mock>=1.6.3", "pytest_cov>=2.5.1", "tox==3.12.1", "tox-travis==0.12", "coveralls==1.8.2",]
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = [ "atlasclient",]
+namespaces = false

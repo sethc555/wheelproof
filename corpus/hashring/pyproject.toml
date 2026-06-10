@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hashring"
+version = "1.5.1"
+description = "Implements consistent hashing in Python (using md5 as hashing function)."
+readme = {file = "LONG_DESCRIPTION.rst", content-type = "text/x-rst"}
+license = {text = "BSD"}
+authors = [
+    {name = "Chris Goller", email = "goller@gmail.com"},
+]
+keywords = []
+dependencies = []
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: BSD License",
+    "Operating System :: Unix",
+    "Operating System :: POSIX",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2.6",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://github.com/goller/hashring"
+
+[project.scripts]
+hashring = "hashring.__main__:main"
+
+[tool.setuptools]
+packages = ["hashring"]
+package-dir = {"" = "src"}
+py-modules = []
+include-package-data = true
+
+[tool.distutils.bdist_wheel]
+universal = true

@@ -1,7 +1,6 @@
 {
   "package": "fhir-resources",
   "version": "8.2.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/a3/99/b82d8a5c96918844ab4a59cf7cae2b269cab46acf902b4f6533f78790287/fhir_resources-8.2.0.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-srsfdmha/fhir_resources-8.2.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 101, in _main\n    metadat"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

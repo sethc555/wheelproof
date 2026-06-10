@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wordninja"
+version = "2.0.0"
+description = "Probabilistically split concatenated words using NLP based on English Wikipedia uni-gram frequencies."
+authors = [
+    {name = "Derek Anderson", email = "public@kered.org"},
+]
+
+[project.urls]
+Homepage = "https://github.com/keredson/wordninja"
+
+[tool.setuptools]
+packages = ["wordninja"]
+py-modules = ["wordninja"]
+include-package-data = true
+
+[tool.setuptools.package-dir]
+wordninja = "wordninja"
+
+[tool.setuptools.package-data]
+wordninja = ["wordninja_words.txt.gz"]

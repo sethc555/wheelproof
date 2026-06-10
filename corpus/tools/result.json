@@ -1,7 +1,6 @@
 {
   "package": "tools",
   "version": "1.0.30",
-  "sdist_url": "https://files.pythonhosted.org/packages/4f/d2/4381168356092a3a04b9edc8e1d5ccfb7b0979f2892518523f16e2848d88/tools-1.0.30.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected:     over.read_string(overlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1064, in _read\n    raise MissingSectionHeaderError(fpname, lineno, line)\nconfigparser.MissingSectionHeaderError: File contains no section headers.\nfile: '<string>', line: 1\n'Installing tools@1.0.30\\n'\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

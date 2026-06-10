@@ -1,7 +1,6 @@
 {
   "package": "future",
   "version": "1.0.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/a7/b2/4140c69c6a66432916b26158687e821ba631a4c9273c474343badf84d3ba/future-1.0.0.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected: read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1096, in _read\n    raise e\nconfigparser.ParsingError: Source contains parsing errors: '<string>'\n\t[line 174]: ' =\\n'\n\t[line 175]: '    README.rst\\n'\n\t[line 176]: '    LICENSE.txt\\n'\n\t[line 177]: '    futurize.py\\n'\n\t[line 178]: '    pasteurize.py\\n'\n\t[line 179]: '    check_rst.sh\\n'\n\t[line 180]: '    TESTING.txt\\n'\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

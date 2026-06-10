@@ -1,7 +1,6 @@
 {
   "package": "sqlalchemy-adapter",
   "version": "1.9.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/f1/97/a7a3ba4edb229be8c21e7ff962d6d40ca0955dbdd6d8545bd5583ec381fd/sqlalchemy_adapter-1.9.0.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-qewb6bxc/sqlalchemy_adapter-1.9.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _main\n    set"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

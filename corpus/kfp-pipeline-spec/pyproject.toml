@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kfp-pipeline-spec"
+version = "2.16.1"
+description = "Kubeflow Pipelines pipeline spec"
+license = {text = "Apache 2.0"}
+authors = [
+    {name = "google", email = "kubeflow-pipelines@google.com"},
+]
+requires-python = ">=3.9.0"
+dependencies = [
+    "protobuf>=6.31.1,<7.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/kubeflow/pipelines"
+
+[tool.setuptools]
+packages = ["kfp.pipeline_spec"]
+include-package-data = true

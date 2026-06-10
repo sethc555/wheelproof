@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textstat"
+version = "0.7.13"
+description = "Calculate statistical features from text"
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [
+    {name = "Shivam Bansal, Chaitanya Aggarwal", email = "shivam5992@gmail.com"},
+]
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3 :: Only",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "Topic :: Text Processing",
+]
+dependencies = [
+    "pyphen",
+    "nltk",
+    "setuptools",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/textstat/textstat"
+
+[tool.setuptools]
+packages = [
+    "textstat",
+    "tests",
+    "textstat.backend",
+    "textstat.backend.transformations",
+    "textstat.backend.selections",
+    "textstat.backend.metrics",
+    "textstat.backend.utils",
+    "textstat.backend.counts",
+    "textstat.backend.validations",
+    "tests.backend",
+    "tests.textstat",
+    "tests.backend.transformations",
+    "tests.backend.selections",
+    "tests.backend.metrics",
+    "tests.backend.utils",
+    "tests.backend.counts",
+    "tests.backend.validations",
+]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"*" = [
+    "easy_word_list",
+]

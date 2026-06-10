@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-tds"
+version = "1.17.1"
+description = "Python DBAPI driver for MSSQL using pure Python TDS (Tabular Data Stream) protocol implementation"
+license = {text = "MIT"}
+authors = [
+    {name = "Mikhail Denisenko"},
+    {email = "denisenkom@gmail.com"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/denisenkom/pytds"
+
+[tool.setuptools]
+include-package-data = false
+packages = ["pytds"]
+
+[tool.setuptools.package-dir]
+"" = "src"

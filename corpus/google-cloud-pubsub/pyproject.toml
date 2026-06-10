@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-cloud-pubsub"
+version = "2.39.0"
+description = "Google Cloud Pub/Sub API client library"
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "Google LLC", email = "googleapis-packages@google.com"},
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent",
+    "Topic :: Internet",
+]
+dependencies = [
+    "google-api-core[grpc] >= 2.17.1, <3.0.0",
+    "google-auth >= 2.14.1, <3.0.0,!=2.24.0,!=2.25.0",
+    "grpcio >= 1.51.3, < 2.0.0; python_version < '3.14'",
+    "grpcio >= 1.75.1, < 2.0.0; python_version >= '3.14'",
+    "proto-plus >= 1.22.3, <2.0.0",
+    "proto-plus >= 1.25.0, <2.0.0; python_version >= '3.13'",
+    "protobuf >= 4.25.8, < 8.0.0",
+    "grpc-google-iam-v1 >= 0.14.0, <1.0.0",
+    "grpcio-status >= 1.51.3",
+    "opentelemetry-api >= 1.27.0",
+    "opentelemetry-sdk >= 1.27.0",
+]
+
+[project.optional-dependencies]
+libcst = [
+    "libcst >= 0.3.10",
+]
+
+[project.urls]
+Homepage = "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-pubsub"
+
+[tool.setuptools]
+include-package-data = true
+packages = [
+    "google",
+    "google.pubsub_v1",
+    "google.pubsub",
+    "google.cloud",
+    "google.pubsub_v1.services",
+    "google.pubsub_v1.types",
+    "google.pubsub_v1.services.subscriber",
+    "google.pubsub_v1.services.publisher",
+    "google.pubsub_v1.services.schema_service",
+    "google.pubsub_v1.services.subscriber.transports",
+    "google.pubsub_v1.services.publisher.transports",
+    "google.pubsub_v1.services.schema_service.transports",
+    "google.cloud.pubsub_v1",
+    "google.cloud.pubsub",
+    "google.cloud.pubsub_v1.subscriber",
+    "google.cloud.pubsub_v1.publisher",
+    "google.cloud.pubsub_v1.proto",
+    "google.cloud.pubsub_v1.open_telemetry",
+    "google.cloud.pubsub_v1.subscriber._protocol",
+    "google.cloud.pubsub_v1.publisher._batch",
+    "google.cloud.pubsub_v1.publisher._sequencer",
+]

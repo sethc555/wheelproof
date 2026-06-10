@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "msal-extensions"
+version = "1.3.1"
+description = "Microsoft Authentication Library extensions (MSAL EX) provides a persistence API that can save your data on disk, encrypted on Windows, macOS and Linux. Concurrent data access will be coordinated by a file lock mechanism."
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "MIT License"}
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "msal>=1.29,<2",
+]
+
+[project.urls]
+Changelog = "https://github.com/AzureAD/microsoft-authentication-extensions-for-python/releases"
+
+[project.optional-dependencies]
+portalocker = [
+    "portalocker<4,>=1.4",
+]
+
+[tool.setuptools]
+packages = ["msal_extensions"]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"*" = ["LICENSE"]

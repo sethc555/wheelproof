@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pywinauto"
+version = "0.6.9"
+description = "A set of Python modules to automate the Microsoft Windows GUI"
+readme = {text = "\nAt it's simplest it allows you to send mouse and keyboard\nactions to windows dialogs and controls, but it has support for more complex\ncontrols also.\n\nUseful links\n-------------\n- Home page: https://github.com/pywinauto/pywinauto\n- Docs Intro: https://pywinauto.readthedocs.io/en/latest/\n- Getting Started Guide: https://pywinauto.readthedocs.io/en/latest/getting_started.html\n- StackOverflow tag: https://stackoverflow.com/questions/tagged/pywinauto\n", content-type = "text/x-rst"}
+license = {text = "BSD 3-clause"}
+authors = [
+  {name = "Mark Mc Mahon and Contributors", email = "pywinauto-users@lists.sourceforge.net"},
+]
+keywords = ["windows gui automation GuiAuto testing test desktop mouse keyboard"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: BSD License",
+  "Operating System :: Microsoft :: Windows",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 2.7",
+  "Programming Language :: Python :: 3.5",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: Software Development :: Testing",
+  "Topic :: Software Development :: User Interfaces",
+  "Topic :: Software Development :: Quality Assurance",
+]
+dependencies = [
+  "six",
+  "comtypes<=1.2.1; python_version <= \"3.6\"",
+  "pywin32<=227; python_version <= \"3.6\"",
+  "comtypes; python_version > \"3.6\" and sys_platform == \"win32\"",
+  "pywin32; python_version > \"3.6\" and sys_platform == \"win32\"",
+  "python-xlib; platform_system == \"Linux\"",
+]
+
+[project.urls]
+Homepage = "https://github.com/pywinauto/pywinauto"
+
+[tool.setuptools]
+include-package-data = false
+platforms = ["win32"]
+packages = ["pywinauto", "pywinauto.linux"]

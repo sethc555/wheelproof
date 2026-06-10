@@ -2,6 +2,105 @@
   "package": "configargparse",
   "version": "1.7.5",
   "sdist_url": "https://files.pythonhosted.org/packages/3f/0b/30328302903c55218ffc5199646d0e9d28348ff26c02ba77b2ffc58d294a/configargparse-1.7.5.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-l6tl6tj0/configargparse-1.7.5-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not conta ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-f3awsoj6/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-f3awsoj6/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-f3awsoj6/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-f3awsoj6/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-f3awsoj6/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-python"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/bw2/ConfigArgParse"
+      ],
+      [
+        "keywords",
+        "options,argparse,ConfigArgParse,config,environment variables,envvars,ENV,environment,optparse,YAML,INI"
+      ],
+      [
+        "version",
+        "1.7.5"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "keywords",
+        "options,argparse,ConfigArgParse,config,environment,variables,envvars,ENV,environment,optparse,YAML,INI"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/bw2/ConfigArgParse"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "PyYAML; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "black; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "mock; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-cov; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-subtests; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "toml; extra == \"testing\""
+      ],
+      [
+        "version",
+        "0.0.0"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-cloud-bigtable"
+version = "2.38.0"
+description = "Google Cloud Bigtable API client library"
+requires-python = ">=3.9"
+dependencies = ["google-api-core[grpc] >= 2.11.0, <3.0.0", "google-auth >= 2.14.1, <3.0.0,!=2.24.0,!=2.25.0", "grpcio >= 1.33.2, < 2.0.0", "grpcio >= 1.75.1, < 2.0.0; python_version >= '3.14'", "proto-plus >= 1.22.3, <2.0.0", "proto-plus >= 1.25.0, <2.0.0; python_version >= '3.13'", "protobuf >= 4.25.8, < 8.0.0", "google-cloud-core >= 1.4.4, <3.0.0", "grpc-google-iam-v1 >= 0.12.4, <1.0.0", "google-crc32c>=1.5.0, <2.0.0dev"]
+classifiers = ["Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Programming Language :: Python :: 3.13", "Programming Language :: Python :: 3.14", "Operating System :: OS Independent", "Topic :: Internet"]
+
+[project.readme]
+file = "README.rst"
+content-type = "text/x-rst"
+
+[[project.authors]]
+name = "Google LLC"
+email = "googleapis-packages@google.com"
+
+[project.license]
+text = "Apache 2.0"
+
+[project.urls]
+Homepage = "https://github.com/googleapis/google-cloud-python/tree/main/packages/google-cloud-bigtable"
+
+[project.optional-dependencies]
+libcst = ["libcst >= 0.2.5"]
+
+[tool.setuptools]
+platforms = ["Posix; MacOS X; Windows"]
+packages = ["google", "google.cloud", "google.cloud.bigtable_admin", "google.cloud.bigtable_v2", "google.cloud.bigtable_admin_v2", "google.cloud.bigtable", "google.cloud.bigtable_v2.services", "google.cloud.bigtable_v2.types", "google.cloud.bigtable_v2.services.bigtable", "google.cloud.bigtable_v2.services.bigtable.transports", "google.cloud.bigtable_admin_v2.overlay", "google.cloud.bigtable_admin_v2.services", "google.cloud.bigtable_admin_v2.utils", "google.cloud.bigtable_admin_v2.types", "google.cloud.bigtable_admin_v2.overlay.services", "google.cloud.bigtable_admin_v2.overlay.types", "google.cloud.bigtable_admin_v2.overlay.services.bigtable_table_admin", "google.cloud.bigtable_admin_v2.services.bigtable_table_admin", "google.cloud.bigtable_admin_v2.services.bigtable_instance_admin", "google.cloud.bigtable_admin_v2.services.bigtable_table_admin.transports", "google.cloud.bigtable_admin_v2.services.bigtable_instance_admin.transports", "google.cloud.bigtable.data", "google.cloud.bigtable.data.execute_query", "google.cloud.bigtable.data._cross_sync", "google.cloud.bigtable.data._async", "google.cloud.bigtable.data._sync_autogen", "google.cloud.bigtable.data._metrics", "google.cloud.bigtable.data.execute_query._async", "google.cloud.bigtable.data.execute_query._sync_autogen", "google.cloud.bigtable.data._metrics.handlers"]
+include-package-data = true

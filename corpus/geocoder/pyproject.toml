@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geocoder"
+version = "1.38.1"
+description = "Geocoder is a simple and consistent geocoding library."
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "The MIT License"}
+authors = [
+    {name = "Denis Carriere", email = "carriere.denis@gmail.com"},
+]
+keywords = ["geocoder arcgis tomtom opencage google bing here"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Topic :: Internet",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "requests",
+    "ratelim",
+    "click",
+    "six",
+    "future",
+]
+
+[project.urls]
+Homepage = "https://github.com/DenisCarriere/geocoder"
+Download = "https://github.com/DenisCarriere/geocoder"
+
+[project.scripts]
+geocode = "geocoder.cli:cli"
+
+[tool.setuptools]
+packages = ["geocoder"]
+include-package-data = true
+
+[tool.setuptools.package-dir]
+geocoder = "geocoder"
+
+[tool.setuptools.package-data]
+"*" = ["LICENSE", "README.md"]
+
+[tool.distutils.bdist_wheel]
+universal = true

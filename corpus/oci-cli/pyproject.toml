@@ -1,0 +1,2489 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oci-cli"
+version = "3.86.0"
+description = "Oracle Cloud Infrastructure CLI"
+readme = "README.rst"
+license = {text = "Universal Permissive License 1.0 or Apache License 2.0"}
+authors = [
+    {name = "Oracle"},
+    {email = "rajditya.shahdeo@oracle.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Information Technology",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "License :: OSI Approved :: Universal Permissive License (UPL)",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+requires-python = ">=3.6"
+dependencies = [
+    "oci==2.178.0",
+    "arrow>=1.0.0,<2.0.0",
+    "certifi>=2025.1.31,<2026.0.0",
+    "click<=8.1.2",
+    "cryptography>=3.2.1,<47.0.0",
+    "jmespath>=0.10.0,<=1.0.1",
+    "python-dateutil>=2.5.3,<3.0.0",
+    "pytz>=2016.10,<=2026.2",
+    "six>=1.15.0,<2.0.0",
+    "terminaltables==3.1.10",
+    "pyOpenSSL>=17.5.0,<27.0.0",
+    "PyYAML>=5.4,<=6.0.2",
+    "prompt-toolkit>=3.0.38,<=3.0.43; python_version > \"3.6\"",
+    "prompt-toolkit==3.0.29; python_version == \"3.6\"",
+    "setuptools>=78.1.1,<81; python_version >= \"3.12\"",
+]
+
+[project.optional-dependencies]
+db = [
+    "cx_Oracle==8.3",
+]
+
+[project.urls]
+"Homepage" = "https://docs.cloud.oracle.com/iaas/Content/API/Concepts/cliconcepts.htm"
+
+[project.scripts]
+"oci" = "oci_cli.cli:cli"
+"create_backup_from_onprem" = "oci_cli.scripts.database.dbaas:create_backup_from_onprem"
+
+[tool.setuptools]
+packages = [
+    "oci_cli",
+    "common_util",
+    "interactive",
+    "alloy",
+    "oci_cli.file_filters",
+    "oci_cli.util",
+    "oci_cli.help_text_producer",
+    "oci_cli.scripts",
+    "oci_cli.aliasing",
+    "oci_cli.custom_types",
+    "oci_cli.scripts.database",
+    "services",
+    "services",
+    "services.jms_utils",
+    "services.data_integration",
+    "services.cloud_guard",
+    "services.vn_monitoring",
+    "services.iot",
+    "services.cluster_placement_groups",
+    "services.adm",
+    "services.loggingsearch",
+    "services.appmgmt_control",
+    "services.apm_synthetics",
+    "services.generative_ai_agent_runtime",
+    "services.work_requests",
+    "services.zpr",
+    "services.fusion_apps",
+    "services.disaster_recovery",
+    "services.batch",
+    "services.onesubscription",
+    "services.opa",
+    "services.opsi",
+    "services.events",
+    "services.monitoring",
+    "services.data_science",
+    "services.ai_data_platform",
+    "services.container_registry",
+    "services.network_firewall",
+    "services.dif",
+    "services.database_tools",
+    "services.jms",
+    "services.vbs_inst",
+    "services.fleet_apps_management",
+    "services.logging",
+    "services.bds",
+    "services.wlms",
+    "services.object_storage",
+    "services.capacity_management",
+    "services.costad",
+    "services.generative_ai_data",
+    "services.generative_ai_inference",
+    "services.audit",
+    "services.waas",
+    "services.osub_usage",
+    "services.usage_api",
+    "services.identity_domains",
+    "services.visual_builder",
+    "services.marketplace_private_offer",
+    "services.cims",
+    "services.resource_analytics",
+    "services.mngdmac",
+    "services.email_data_plane",
+    "services.generative_ai_agent",
+    "services.stack_monitoring",
+    "services.identity",
+    "services.apm_traces",
+    "services.oda",
+    "services.compute_cloud_at_customer",
+    "services.ons",
+    "services.oce",
+    "services.self",
+    "services.mysql",
+    "services.nosql",
+    "services.key_management",
+    "services.access_governance_cp",
+    "services.limits",
+    "services.cloud_migrations",
+    "services.lockbox",
+    "services.resource_scheduler",
+    "services.osub_billing_schedule",
+    "services.devops",
+    "services.ocvp",
+    "services.apm_control_plane",
+    "services.management_dashboard",
+    "services.generic_artifacts_content",
+    "services.psql",
+    "services.managed_kafka",
+    "services.container_instances",
+    "services.bastion",
+    "services.management_agent",
+    "services.data_safe",
+    "services.oci_control_center",
+    "services.healthchecks",
+    "services.operator_access_control",
+    "services.tenant_manager_control_plane",
+    "services.network_load_balancer",
+    "services.compute_instance_agent",
+    "services.limits_increase",
+    "services.loggingingestion",
+    "services.secrets",
+    "services.lustre_file_storage",
+    "services.waa",
+    "services.apiaccesscontrol",
+    "services.sch",
+    "services.license_manager",
+    "services.certificates_management",
+    "services.resource_manager",
+    "services.certificates",
+    "services.waf",
+    "services.security_attribute",
+    "services.dbmulticloud",
+    "services.marketplace",
+    "services.vulnerability_scanning",
+    "services.ai_language",
+    "services.integration",
+    "services.budget",
+    "services.os_management_hub",
+    "services.log_analytics",
+    "services.database_migration",
+    "services.em_warehouse",
+    "services.rover",
+    "services.email",
+    "services.ai_speech",
+    "services.marketplace_publisher",
+    "services.psa",
+    "services.ai_document",
+    "services.dns",
+    "services.database_tools_runtime",
+    "services.core",
+    "services.autoscaling",
+    "services.vault",
+    "services.optimizer",
+    "services.opensearch",
+    "services.recovery",
+    "services.queue",
+    "services.data_labeling_service_dataplane",
+    "services.model_deployment",
+    "services.streaming",
+    "services.data_labeling_service",
+    "services.identity_data_plane",
+    "services.service_catalog",
+    "services.database_management",
+    "services.api_platform",
+    "services.osub_subscription",
+    "services.osub_organization_subscription",
+    "services.multicloud",
+    "services.osp_gateway",
+    "services.service_manager_proxy",
+    "services.media_services",
+    "services.delegate_access_control",
+    "services.redis",
+    "services.analytics",
+    "services.data_catalog",
+    "services.artifacts",
+    "services.threat_intelligence",
+    "services.governance_rules_control_plane",
+    "services.data_flow",
+    "services.jms_java_downloads",
+    "services.fleet_software_update",
+    "services.apigateway",
+    "services.load_balancer",
+    "services.blockchain",
+    "services.gdp",
+    "services.ai_vision",
+    "services.distributed_database",
+    "services.apm_config",
+    "services.announcements_service",
+    "services.resource_search",
+    "services.golden_gate",
+    "services.demand_signal",
+    "services.dashboard_service",
+    "services.generative_ai",
+    "services.functions",
+    "services.usage",
+    "services.cloud_bridge",
+    "services.desktops",
+    "services.file_storage",
+    "services.dblm",
+    "services.database",
+    "services.container_engine",
+    "services.jms_utils.tests",
+    "services.jms_utils.src",
+    "services.jms_utils.src.oci_cli_jms_utils",
+    "services.jms_utils.src.oci_cli_jms_utils.generated",
+    "services.data_integration.tests",
+    "services.data_integration.src",
+    "services.data_integration.src.oci_cli_data_integration",
+    "services.data_integration.src.oci_cli_data_integration.generated",
+    "services.cloud_guard.tests",
+    "services.cloud_guard.src",
+    "services.cloud_guard.src.oci_cli_cloud_guard",
+    "services.cloud_guard.src.oci_cli_cloud_guard.generated",
+    "services.vn_monitoring.tests",
+    "services.vn_monitoring.src",
+    "services.vn_monitoring.src.oci_cli_vn_monitoring",
+    "services.vn_monitoring.src.oci_cli_vn_monitoring.generated",
+    "services.iot.tests",
+    "services.iot.src",
+    "services.iot.src.oci_cli_iot",
+    "services.iot.src.oci_cli_iot.generated",
+    "services.cluster_placement_groups.tests",
+    "services.cluster_placement_groups.src",
+    "services.cluster_placement_groups.src.oci_cli_cluster_placement_groups_cp",
+    "services.cluster_placement_groups.src.oci_cli_cluster_placement_groups_cp.generated",
+    "services.adm.tests",
+    "services.adm.src",
+    "services.adm.src.oci_cli_application_dependency_management",
+    "services.adm.src.oci_cli_application_dependency_management.generated",
+    "services.loggingsearch.tests",
+    "services.loggingsearch.src",
+    "services.loggingsearch.src.oci_cli_log_search",
+    "services.loggingsearch.src.oci_cli_log_search.generated",
+    "services.appmgmt_control.tests",
+    "services.appmgmt_control.src",
+    "services.appmgmt_control.src.oci_cli_appmgmt_control",
+    "services.appmgmt_control.src.oci_cli_appmgmt_control.generated",
+    "services.apm_synthetics.tests",
+    "services.apm_synthetics.src",
+    "services.apm_synthetics.src.oci_cli_apm_synthetic",
+    "services.apm_synthetics.src.oci_cli_apm_synthetic.generated",
+    "services.generative_ai_agent_runtime.tests",
+    "services.generative_ai_agent_runtime.src",
+    "services.generative_ai_agent_runtime.src.oci_cli_generative_ai_agent_runtime",
+    "services.generative_ai_agent_runtime.src.oci_cli_generative_ai_agent_runtime.generated",
+    "services.work_requests.tests",
+    "services.work_requests.src",
+    "services.work_requests.src.oci_cli_work_request",
+    "services.work_requests.src.oci_cli_work_request.generated",
+    "services.zpr.tests",
+    "services.zpr.src",
+    "services.zpr.src.oci_cli_zpr",
+    "services.zpr.src.oci_cli_zpr.generated",
+    "services.fusion_apps.tests",
+    "services.fusion_apps.src",
+    "services.fusion_apps.src.oci_cli_fusion_applications",
+    "services.fusion_apps.src.oci_cli_fusion_applications.generated",
+    "services.disaster_recovery.tests",
+    "services.disaster_recovery.src",
+    "services.disaster_recovery.src.oci_cli_disaster_recovery",
+    "services.disaster_recovery.src.oci_cli_disaster_recovery.generated",
+    "services.batch.tests",
+    "services.batch.src",
+    "services.batch.src.oci_cli_batch_computing",
+    "services.batch.src.oci_cli_batch_computing.generated",
+    "services.onesubscription.tests",
+    "services.onesubscription.src",
+    "services.onesubscription.src.oci_cli_billing_schedule",
+    "services.onesubscription.src.oci_cli_onesubscription",
+    "services.onesubscription.src.oci_cli_subscribed_service",
+    "services.onesubscription.src.oci_cli_computed_usage",
+    "services.onesubscription.src.oci_cli_subscription",
+    "services.onesubscription.src.oci_cli_organization_subscription",
+    "services.onesubscription.src.oci_cli_ratecard",
+    "services.onesubscription.src.oci_cli_commitment",
+    "services.onesubscription.src.oci_cli_invoice_summary",
+    "services.onesubscription.src.oci_cli_billing_schedule.generated",
+    "services.onesubscription.src.oci_cli_onesubscription.generated",
+    "services.onesubscription.src.oci_cli_subscribed_service.generated",
+    "services.onesubscription.src.oci_cli_computed_usage.generated",
+    "services.onesubscription.src.oci_cli_subscription.generated",
+    "services.onesubscription.src.oci_cli_organization_subscription.generated",
+    "services.onesubscription.src.oci_cli_ratecard.generated",
+    "services.onesubscription.src.oci_cli_commitment.generated",
+    "services.onesubscription.src.oci_cli_invoice_summary.generated",
+    "services.opa.tests",
+    "services.opa.src",
+    "services.opa.src.oci_cli_opa_instance",
+    "services.opa.src.oci_cli_opa_instance.generated",
+    "services.opsi.tests",
+    "services.opsi.src",
+    "services.opsi.src.oci_cli_operations_insights",
+    "services.opsi.src.oci_cli_operations_insights.generated",
+    "services.events.tests",
+    "services.events.src",
+    "services.events.src.oci_cli_events",
+    "services.events.src.oci_cli_events.generated",
+    "services.monitoring.tests",
+    "services.monitoring.src",
+    "services.monitoring.src.oci_cli_monitoring",
+    "services.monitoring.src.oci_cli_monitoring.generated",
+    "services.data_science.tests",
+    "services.data_science.src",
+    "services.data_science.src.oci_cli_data_science",
+    "services.data_science.src.oci_cli_data_science.generated",
+    "services.ai_data_platform.tests",
+    "services.ai_data_platform.src",
+    "services.ai_data_platform.src.oci_cli_ai_data_platform",
+    "services.ai_data_platform.src.oci_cli_ai_data_platform.generated",
+    "services.container_registry.tests",
+    "services.container_registry.src",
+    "services.container_registry.src.oci_cli_container_registry",
+    "services.container_registry.src.oci_cli_container_registry.generated",
+    "services.network_firewall.tests",
+    "services.network_firewall.src",
+    "services.network_firewall.src.oci_cli_network_firewall",
+    "services.network_firewall.src.oci_cli_network_firewall.generated",
+    "services.dif.tests",
+    "services.dif.src",
+    "services.dif.src.oci_cli_stack",
+    "services.dif.src.oci_cli_stack.generated",
+    "services.database_tools.tests",
+    "services.database_tools.src",
+    "services.database_tools.src.oci_cli_database_tools",
+    "services.database_tools.src.oci_cli_database_tools.generated",
+    "services.jms.tests",
+    "services.jms.src",
+    "services.jms.src.oci_cli_java_management_service",
+    "services.jms.src.oci_cli_java_management_service.generated",
+    "services.vbs_inst.tests",
+    "services.vbs_inst.src",
+    "services.vbs_inst.src.oci_cli_vbs_instance",
+    "services.vbs_inst.src.oci_cli_vbs_instance.generated",
+    "services.fleet_apps_management.tests",
+    "services.fleet_apps_management.src",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management_runbooks",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management_provision",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management_work_request",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management_admin",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management_operations",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management_maintenance_window",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management_catalog",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management_runbooks.generated",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management_provision.generated",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management_work_request.generated",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management_admin.generated",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management_operations.generated",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management_maintenance_window.generated",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management.generated",
+    "services.fleet_apps_management.src.oci_cli_fleet_apps_management_catalog.generated",
+    "services.logging.tests",
+    "services.logging.src",
+    "services.logging.src.oci_cli_logging_management",
+    "services.logging.src.oci_cli_logging_management.generated",
+    "services.bds.tests",
+    "services.bds.src",
+    "services.bds.src.oci_cli_bds",
+    "services.bds.src.oci_cli_bds.generated",
+    "services.wlms.tests",
+    "services.wlms.src",
+    "services.wlms.src.oci_cli_weblogic_management_service",
+    "services.wlms.src.oci_cli_weblogic_management_service_configuration",
+    "services.wlms.src.oci_cli_wlms",
+    "services.wlms.src.oci_cli_weblogic_management_service.generated",
+    "services.wlms.src.oci_cli_weblogic_management_service_configuration.generated",
+    "services.wlms.src.oci_cli_wlms.generated",
+    "services.object_storage.tests",
+    "services.object_storage.src",
+    "services.object_storage.tests.common",
+    "services.object_storage.src.oci_cli_object_storage",
+    "services.object_storage.src.oci_cli_object_storage.object_storage_transfer_manager",
+    "services.object_storage.src.oci_cli_object_storage.generated",
+    "services.capacity_management.tests",
+    "services.capacity_management.src",
+    "services.capacity_management.src.oci_cli_demand_signal",
+    "services.capacity_management.src.oci_cli_internal_demand_signal",
+    "services.capacity_management.src.oci_cli_capacity_management",
+    "services.capacity_management.src.oci_cli_demand_signal.generated",
+    "services.capacity_management.src.oci_cli_internal_demand_signal.generated",
+    "services.capacity_management.src.oci_cli_capacity_management.generated",
+    "services.costad.tests",
+    "services.costad.src",
+    "services.costad.src.oci_cli_cost_ad",
+    "services.costad.src.oci_cli_cost_ad.generated",
+    "services.generative_ai_data.tests",
+    "services.generative_ai_data.src",
+    "services.generative_ai_data.src.oci_cli_generate_sql_from_nl_job",
+    "services.generative_ai_data.src.oci_cli_cancel_enrichment_job",
+    "services.generative_ai_data.src.oci_cli_list_enrichment_jobs",
+    "services.generative_ai_data.src.oci_cli_get_enrichment_job",
+    "services.generative_ai_data.src.oci_cli_generative_ai_data",
+    "services.generative_ai_data.src.oci_cli_generate_enrichment_job",
+    "services.generative_ai_data.src.oci_cli_generate_sql_from_nl_job.generated",
+    "services.generative_ai_data.src.oci_cli_cancel_enrichment_job.generated",
+    "services.generative_ai_data.src.oci_cli_list_enrichment_jobs.generated",
+    "services.generative_ai_data.src.oci_cli_get_enrichment_job.generated",
+    "services.generative_ai_data.src.oci_cli_generative_ai_data.generated",
+    "services.generative_ai_data.src.oci_cli_generate_enrichment_job.generated",
+    "services.generative_ai_inference.tests",
+    "services.generative_ai_inference.src",
+    "services.generative_ai_inference.src.oci_cli_generative_ai_inference",
+    "services.generative_ai_inference.src.oci_cli_generative_ai_inference.generated",
+    "services.audit.tests",
+    "services.audit.src",
+    "services.audit.src.oci_cli_audit",
+    "services.audit.src.oci_cli_audit.generated",
+    "services.waas.tests",
+    "services.waas.src",
+    "services.waas.src.oci_cli_redirect",
+    "services.waas.src.oci_cli_waas",
+    "services.waas.src.oci_cli_redirect.generated",
+    "services.waas.src.oci_cli_waas.generated",
+    "services.osub_usage.tests",
+    "services.osub_usage.src",
+    "services.osub_usage.src.oci_cli_computed_usage",
+    "services.osub_usage.src.oci_cli_computed_usage.generated",
+    "services.usage_api.tests",
+    "services.usage_api.src",
+    "services.usage_api.src.oci_cli_usageapi",
+    "services.usage_api.src.oci_cli_usageapi.generated",
+    "services.identity_domains.tests",
+    "services.identity_domains.src",
+    "services.identity_domains.src.oci_cli_identity_domains",
+    "services.identity_domains.src.oci_cli_identity_domains.generated",
+    "services.visual_builder.tests",
+    "services.visual_builder.src",
+    "services.visual_builder.src.oci_cli_vb_instance",
+    "services.visual_builder.src.oci_cli_vb_instance.generated",
+    "services.marketplace_private_offer.tests",
+    "services.marketplace_private_offer.src",
+    "services.marketplace_private_offer.src.oci_cli_offer",
+    "services.marketplace_private_offer.src.oci_cli_marketplace_private_offer",
+    "services.marketplace_private_offer.src.oci_cli_attachment",
+    "services.marketplace_private_offer.src.oci_cli_offer.generated",
+    "services.marketplace_private_offer.src.oci_cli_marketplace_private_offer.generated",
+    "services.marketplace_private_offer.src.oci_cli_attachment.generated",
+    "services.cims.tests",
+    "services.cims.src",
+    "services.cims.src.oci_cli_incident",
+    "services.cims.src.oci_cli_incident.generated",
+    "services.resource_analytics.tests",
+    "services.resource_analytics.src",
+    "services.resource_analytics.src.oci_cli_resource_analytics",
+    "services.resource_analytics.src.oci_cli_tenancy_attachment",
+    "services.resource_analytics.src.oci_cli_monitored_region",
+    "services.resource_analytics.src.oci_cli_resource_analytics_instance",
+    "services.resource_analytics.src.oci_cli_resource_analytics.generated",
+    "services.resource_analytics.src.oci_cli_tenancy_attachment.generated",
+    "services.resource_analytics.src.oci_cli_monitored_region.generated",
+    "services.resource_analytics.src.oci_cli_resource_analytics_instance.generated",
+    "services.mngdmac.tests",
+    "services.mngdmac.src",
+    "services.mngdmac.src.oci_cli_mngdmac",
+    "services.mngdmac.src.oci_cli_mac_device",
+    "services.mngdmac.src.oci_cli_mac_order",
+    "services.mngdmac.src.oci_cli_mngdmac.generated",
+    "services.mngdmac.src.oci_cli_mac_device.generated",
+    "services.mngdmac.src.oci_cli_mac_order.generated",
+    "services.email_data_plane.tests",
+    "services.email_data_plane.src",
+    "services.email_data_plane.src.oci_cli_email_dp",
+    "services.email_data_plane.src.oci_cli_email_dp.generated",
+    "services.generative_ai_agent.tests",
+    "services.generative_ai_agent.src",
+    "services.generative_ai_agent.src.oci_cli_generative_ai_agent",
+    "services.generative_ai_agent.src.oci_cli_generative_ai_agent.generated",
+    "services.stack_monitoring.tests",
+    "services.stack_monitoring.src",
+    "services.stack_monitoring.src.oci_cli_stack_monitoring",
+    "services.stack_monitoring.src.oci_cli_stack_monitoring.generated",
+    "services.identity.tests",
+    "services.identity.src",
+    "services.identity.src.oci_cli_identity",
+    "services.identity.src.oci_cli_identity.generated",
+    "services.apm_traces.tests",
+    "services.apm_traces.src",
+    "services.apm_traces.src.oci_cli_query",
+    "services.apm_traces.src.oci_cli_apm_traces",
+    "services.apm_traces.src.oci_cli_scheduled_query",
+    "services.apm_traces.src.oci_cli_trace",
+    "services.apm_traces.src.oci_cli_attributes",
+    "services.apm_traces.src.oci_cli_query.generated",
+    "services.apm_traces.src.oci_cli_apm_traces.generated",
+    "services.apm_traces.src.oci_cli_scheduled_query.generated",
+    "services.apm_traces.src.oci_cli_trace.generated",
+    "services.apm_traces.src.oci_cli_attributes.generated",
+    "services.oda.tests",
+    "services.oda.src",
+    "services.oda.src.oci_cli_oda",
+    "services.oda.src.oci_cli_management",
+    "services.oda.src.oci_cli_odapackage",
+    "services.oda.src.oci_cli_oda.generated",
+    "services.oda.src.oci_cli_management.generated",
+    "services.oda.src.oci_cli_odapackage.generated",
+    "services.compute_cloud_at_customer.tests",
+    "services.compute_cloud_at_customer.src",
+    "services.compute_cloud_at_customer.src.oci_cli_compute_cloud_at_customer",
+    "services.compute_cloud_at_customer.src.oci_cli_compute_cloud_at_customer.generated",
+    "services.ons.tests",
+    "services.ons.src",
+    "services.ons.src.oci_cli_notification_data_plane",
+    "services.ons.src.oci_cli_ons",
+    "services.ons.src.oci_cli_notification_control_plane",
+    "services.ons.src.oci_cli_notification_data_plane.generated",
+    "services.ons.src.oci_cli_ons.generated",
+    "services.ons.src.oci_cli_notification_control_plane.generated",
+    "services.oce.tests",
+    "services.oce.src",
+    "services.oce.src.oci_cli_oce_instance",
+    "services.oce.src.oci_cli_oce_instance.generated",
+    "services.self.tests",
+    "services.self.src",
+    "services.self.src.oci_cli_self",
+    "services.self.src.oci_cli_subscription",
+    "services.self.src.oci_cli_partner_integeration",
+    "services.self.src.oci_cli_self.generated",
+    "services.self.src.oci_cli_subscription.generated",
+    "services.self.src.oci_cli_partner_integeration.generated",
+    "services.mysql.tests",
+    "services.mysql.src",
+    "services.mysql.src.oci_cli_db_system",
+    "services.mysql.src.oci_cli_replicas",
+    "services.mysql.src.oci_cli_mysqlaas",
+    "services.mysql.src.oci_cli_db_backups",
+    "services.mysql.src.oci_cli_channels",
+    "services.mysql.src.oci_cli_work_requests",
+    "services.mysql.src.oci_cli_mysql",
+    "services.mysql.src.oci_cli_db_system.generated",
+    "services.mysql.src.oci_cli_replicas.generated",
+    "services.mysql.src.oci_cli_mysqlaas.generated",
+    "services.mysql.src.oci_cli_db_backups.generated",
+    "services.mysql.src.oci_cli_channels.generated",
+    "services.mysql.src.oci_cli_work_requests.generated",
+    "services.mysql.src.oci_cli_mysql.generated",
+    "services.nosql.tests",
+    "services.nosql.src",
+    "services.nosql.src.oci_cli_nosql",
+    "services.nosql.src.oci_cli_nosql.generated",
+    "services.key_management.tests",
+    "services.key_management.src",
+    "services.key_management.src.oci_cli_kms_crypto",
+    "services.key_management.src.oci_cli_kms_management",
+    "services.key_management.src.oci_cli_ekm",
+    "services.key_management.src.oci_cli_kms_vault",
+    "services.key_management.src.oci_cli_kms_hsm_cluster",
+    "services.key_management.src.oci_cli_key_management",
+    "services.key_management.src.oci_cli_kms_crypto.generated",
+    "services.key_management.src.oci_cli_kms_management.generated",
+    "services.key_management.src.oci_cli_ekm.generated",
+    "services.key_management.src.oci_cli_kms_vault.generated",
+    "services.key_management.src.oci_cli_kms_hsm_cluster.generated",
+    "services.key_management.src.oci_cli_key_management.generated",
+    "services.access_governance_cp.tests",
+    "services.access_governance_cp.src",
+    "services.access_governance_cp.src.oci_cli_access_governance_cp",
+    "services.access_governance_cp.src.oci_cli_access_governance_cp.generated",
+    "services.limits.tests",
+    "services.limits.src",
+    "services.limits.src.oci_cli_quotas",
+    "services.limits.src.oci_cli_limits",
+    "services.limits.src.oci_cli_quotas.generated",
+    "services.limits.src.oci_cli_limits.generated",
+    "services.cloud_migrations.tests",
+    "services.cloud_migrations.src",
+    "services.cloud_migrations.src.oci_cli_migration",
+    "services.cloud_migrations.src.oci_cli_migration.generated",
+    "services.lockbox.tests",
+    "services.lockbox.src",
+    "services.lockbox.src.oci_cli_lockbox",
+    "services.lockbox.src.oci_cli_lockbox.generated",
+    "services.resource_scheduler.tests",
+    "services.resource_scheduler.src",
+    "services.resource_scheduler.src.oci_cli_schedule",
+    "services.resource_scheduler.src.oci_cli_schedule.generated",
+    "services.osub_billing_schedule.tests",
+    "services.osub_billing_schedule.src",
+    "services.osub_billing_schedule.src.oci_cli_billing_schedule",
+    "services.osub_billing_schedule.src.oci_cli_billing_schedule.generated",
+    "services.devops.tests",
+    "services.devops.src",
+    "services.devops.src.oci_cli_devops",
+    "services.devops.src.oci_cli_devops.generated",
+    "services.ocvp.tests",
+    "services.ocvp.src",
+    "services.ocvp.src.oci_cli_ocvp",
+    "services.ocvp.src.oci_cli_sddc",
+    "services.ocvp.src.oci_cli_datastore",
+    "services.ocvp.src.oci_cli_datastore_cluster",
+    "services.ocvp.src.oci_cli_byol",
+    "services.ocvp.src.oci_cli_esxi_host",
+    "services.ocvp.src.oci_cli_management_appliance",
+    "services.ocvp.src.oci_cli_cluster",
+    "services.ocvp.src.oci_cli_work_request",
+    "services.ocvp.src.oci_cli_byol_allocation",
+    "services.ocvp.src.oci_cli_ocvp.generated",
+    "services.ocvp.src.oci_cli_sddc.generated",
+    "services.ocvp.src.oci_cli_datastore.generated",
+    "services.ocvp.src.oci_cli_datastore_cluster.generated",
+    "services.ocvp.src.oci_cli_byol.generated",
+    "services.ocvp.src.oci_cli_esxi_host.generated",
+    "services.ocvp.src.oci_cli_management_appliance.generated",
+    "services.ocvp.src.oci_cli_cluster.generated",
+    "services.ocvp.src.oci_cli_work_request.generated",
+    "services.ocvp.src.oci_cli_byol_allocation.generated",
+    "services.apm_control_plane.tests",
+    "services.apm_control_plane.src",
+    "services.apm_control_plane.src.oci_cli_apm_domain",
+    "services.apm_control_plane.src.oci_cli_apm_domain.generated",
+    "services.management_dashboard.tests",
+    "services.management_dashboard.src",
+    "services.management_dashboard.src.oci_cli_dashx_apis",
+    "services.management_dashboard.src.oci_cli_dashx_apis.generated",
+    "services.generic_artifacts_content.tests",
+    "services.generic_artifacts_content.src",
+    "services.generic_artifacts_content.src.oci_cli_generic_artifacts_content",
+    "services.generic_artifacts_content.src.oci_cli_generic_artifacts_content.generated",
+    "services.psql.tests",
+    "services.psql.src",
+    "services.psql.src.oci_cli_postgresql",
+    "services.psql.src.oci_cli_postgresql.generated",
+    "services.managed_kafka.tests",
+    "services.managed_kafka.src",
+    "services.managed_kafka.src.oci_cli_kafka_cluster",
+    "services.managed_kafka.src.oci_cli_kafka_cluster.generated",
+    "services.container_instances.tests",
+    "services.container_instances.src",
+    "services.container_instances.src.oci_cli_container_instance",
+    "services.container_instances.src.oci_cli_container_instance.generated",
+    "services.bastion.tests",
+    "services.bastion.src",
+    "services.bastion.src.oci_cli_bastion",
+    "services.bastion.src.oci_cli_bastion.generated",
+    "services.management_agent.tests",
+    "services.management_agent.src",
+    "services.management_agent.src.oci_cli_management_agent",
+    "services.management_agent.src.oci_cli_management_agent.generated",
+    "services.data_safe.tests",
+    "services.data_safe.src",
+    "services.data_safe.src.oci_cli_data_safe",
+    "services.data_safe.src.oci_cli_data_safe.generated",
+    "services.oci_control_center.tests",
+    "services.oci_control_center.src",
+    "services.oci_control_center.src.oci_cli_occ_metrics",
+    "services.oci_control_center.src.oci_cli_occ_metrics.generated",
+    "services.healthchecks.tests",
+    "services.healthchecks.src",
+    "services.healthchecks.src.oci_cli_health_checks",
+    "services.healthchecks.src.oci_cli_health_checks.generated",
+    "services.operator_access_control.tests",
+    "services.operator_access_control.src",
+    "services.operator_access_control.src.oci_cli_operator_actions",
+    "services.operator_access_control.src.oci_cli_operator_control_assignment",
+    "services.operator_access_control.src.oci_cli_operator_control",
+    "services.operator_access_control.src.oci_cli_operator_access_control",
+    "services.operator_access_control.src.oci_cli_access_requests",
+    "services.operator_access_control.src.oci_cli_operator_actions.generated",
+    "services.operator_access_control.src.oci_cli_operator_control_assignment.generated",
+    "services.operator_access_control.src.oci_cli_operator_control.generated",
+    "services.operator_access_control.src.oci_cli_operator_access_control.generated",
+    "services.operator_access_control.src.oci_cli_access_requests.generated",
+    "services.tenant_manager_control_plane.tests",
+    "services.tenant_manager_control_plane.src",
+    "services.tenant_manager_control_plane.src.oci_cli_governance",
+    "services.tenant_manager_control_plane.src.oci_cli_link",
+    "services.tenant_manager_control_plane.src.oci_cli_recipient_invitation",
+    "services.tenant_manager_control_plane.src.oci_cli_tenant_manager_control_plane",
+    "services.tenant_manager_control_plane.src.oci_cli_work_request",
+    "services.tenant_manager_control_plane.src.oci_cli_domain_governance",
+    "services.tenant_manager_control_plane.src.oci_cli_subscription",
+    "services.tenant_manager_control_plane.src.oci_cli_orders",
+    "services.tenant_manager_control_plane.src.oci_cli_organization",
+    "services.tenant_manager_control_plane.src.oci_cli_sender_invitation",
+    "services.tenant_manager_control_plane.src.oci_cli_domain",
+    "services.tenant_manager_control_plane.src.oci_cli_governance.generated",
+    "services.tenant_manager_control_plane.src.oci_cli_link.generated",
+    "services.tenant_manager_control_plane.src.oci_cli_recipient_invitation.generated",
+    "services.tenant_manager_control_plane.src.oci_cli_tenant_manager_control_plane.generated",
+    "services.tenant_manager_control_plane.src.oci_cli_work_request.generated",
+    "services.tenant_manager_control_plane.src.oci_cli_domain_governance.generated",
+    "services.tenant_manager_control_plane.src.oci_cli_subscription.generated",
+    "services.tenant_manager_control_plane.src.oci_cli_orders.generated",
+    "services.tenant_manager_control_plane.src.oci_cli_organization.generated",
+    "services.tenant_manager_control_plane.src.oci_cli_sender_invitation.generated",
+    "services.tenant_manager_control_plane.src.oci_cli_domain.generated",
+    "services.network_load_balancer.tests",
+    "services.network_load_balancer.src",
+    "services.network_load_balancer.src.oci_cli_network_load_balancer",
+    "services.network_load_balancer.src.oci_cli_network_load_balancer.generated",
+    "services.compute_instance_agent.tests",
+    "services.compute_instance_agent.src",
+    "services.compute_instance_agent.src.oci_cli_plugin",
+    "services.compute_instance_agent.src.oci_cli_pluginconfig",
+    "services.compute_instance_agent.src.oci_cli_compute_instance_agent",
+    "services.compute_instance_agent.src.oci_cli_plugin.generated",
+    "services.compute_instance_agent.src.oci_cli_pluginconfig.generated",
+    "services.compute_instance_agent.src.oci_cli_compute_instance_agent.generated",
+    "services.limits_increase.tests",
+    "services.limits_increase.src",
+    "services.limits_increase.src.oci_cli_limits_increase",
+    "services.limits_increase.src.oci_cli_limits_increase.generated",
+    "services.loggingingestion.tests",
+    "services.loggingingestion.src",
+    "services.loggingingestion.src.oci_cli_logging",
+    "services.loggingingestion.src.oci_cli_logging.generated",
+    "services.secrets.tests",
+    "services.secrets.src",
+    "services.secrets.src.oci_cli_secrets",
+    "services.secrets.src.oci_cli_secrets.generated",
+    "services.lustre_file_storage.tests",
+    "services.lustre_file_storage.src",
+    "services.lustre_file_storage.src.oci_cli_lustre_file_storage",
+    "services.lustre_file_storage.src.oci_cli_lustre_file_storage.generated",
+    "services.waa.tests",
+    "services.waa.src",
+    "services.waa.src.oci_cli_work_request",
+    "services.waa.src.oci_cli_waa",
+    "services.waa.src.oci_cli_work_request.generated",
+    "services.waa.src.oci_cli_waa.generated",
+    "services.apiaccesscontrol.tests",
+    "services.apiaccesscontrol.src",
+    "services.apiaccesscontrol.src.oci_cli_api_metadata",
+    "services.apiaccesscontrol.src.oci_cli_privileged_api_work_request",
+    "services.apiaccesscontrol.src.oci_cli_privileged_api_control",
+    "services.apiaccesscontrol.src.oci_cli_apiaccesscontrol",
+    "services.apiaccesscontrol.src.oci_cli_privileged_api_requests",
+    "services.apiaccesscontrol.src.oci_cli_api_metadata.generated",
+    "services.apiaccesscontrol.src.oci_cli_privileged_api_work_request.generated",
+    "services.apiaccesscontrol.src.oci_cli_privileged_api_control.generated",
+    "services.apiaccesscontrol.src.oci_cli_apiaccesscontrol.generated",
+    "services.apiaccesscontrol.src.oci_cli_privileged_api_requests.generated",
+    "services.sch.tests",
+    "services.sch.src",
+    "services.sch.src.oci_cli_connector_plugins",
+    "services.sch.src.oci_cli_service_connector",
+    "services.sch.src.oci_cli_sch",
+    "services.sch.src.oci_cli_connector_plugins.generated",
+    "services.sch.src.oci_cli_service_connector.generated",
+    "services.sch.src.oci_cli_sch.generated",
+    "services.license_manager.tests",
+    "services.license_manager.src",
+    "services.license_manager.src.oci_cli_license_manager",
+    "services.license_manager.src.oci_cli_license_manager.generated",
+    "services.certificates_management.tests",
+    "services.certificates_management.src",
+    "services.certificates_management.src.oci_cli_certificates_management",
+    "services.certificates_management.src.oci_cli_certificates_management.generated",
+    "services.resource_manager.tests",
+    "services.resource_manager.src",
+    "services.resource_manager.src.oci_cli_resource_manager",
+    "services.resource_manager.src.oci_cli_resource_manager.generated",
+    "services.certificates.tests",
+    "services.certificates.src",
+    "services.certificates.src.oci_cli_certificates",
+    "services.certificates.src.oci_cli_certificates.generated",
+    "services.waf.tests",
+    "services.waf.src",
+    "services.waf.src.oci_cli_waf",
+    "services.waf.src.oci_cli_waf.generated",
+    "services.security_attribute.tests",
+    "services.security_attribute.src",
+    "services.security_attribute.src.oci_cli_security_attribute",
+    "services.security_attribute.src.oci_cli_security_attribute.generated",
+    "services.dbmulticloud.tests",
+    "services.dbmulticloud.src",
+    "services.dbmulticloud.src.oci_cli_oracle_db_azure_vault_association",
+    "services.dbmulticloud.src.oci_cli_dbmulticloud",
+    "services.dbmulticloud.src.oci_cli_oracle_db_azure_key",
+    "services.dbmulticloud.src.oci_cli_db_multicloud_aws_provider",
+    "services.dbmulticloud.src.oci_cli_work_request",
+    "services.dbmulticloud.src.oci_cli_oracle_db_azure_blob_mount",
+    "services.dbmulticloud.src.oci_cli_db_multicloud_gcp_provider",
+    "services.dbmulticloud.src.oci_cli_oracle_db_azure_connector",
+    "services.dbmulticloud.src.oci_cli_oracle_db_azure_vault",
+    "services.dbmulticloud.src.oci_cli_oracle_db_azure_blob_container",
+    "services.dbmulticloud.src.oci_cli_multi_cloud_resource_discovery",
+    "services.dbmulticloud.src.oci_cli_oracle_db_azure_vault_association.generated",
+    "services.dbmulticloud.src.oci_cli_dbmulticloud.generated",
+    "services.dbmulticloud.src.oci_cli_oracle_db_azure_key.generated",
+    "services.dbmulticloud.src.oci_cli_db_multicloud_aws_provider.generated",
+    "services.dbmulticloud.src.oci_cli_work_request.generated",
+    "services.dbmulticloud.src.oci_cli_oracle_db_azure_blob_mount.generated",
+    "services.dbmulticloud.src.oci_cli_db_multicloud_gcp_provider.generated",
+    "services.dbmulticloud.src.oci_cli_oracle_db_azure_connector.generated",
+    "services.dbmulticloud.src.oci_cli_oracle_db_azure_vault.generated",
+    "services.dbmulticloud.src.oci_cli_oracle_db_azure_blob_container.generated",
+    "services.dbmulticloud.src.oci_cli_multi_cloud_resource_discovery.generated",
+    "services.marketplace.tests",
+    "services.marketplace.src",
+    "services.marketplace.src.oci_cli_account",
+    "services.marketplace.src.oci_cli_marketplace",
+    "services.marketplace.src.oci_cli_account.generated",
+    "services.marketplace.src.oci_cli_marketplace.generated",
+    "services.vulnerability_scanning.tests",
+    "services.vulnerability_scanning.src",
+    "services.vulnerability_scanning.src.oci_cli_vulnerability_scanning",
+    "services.vulnerability_scanning.src.oci_cli_vulnerability_scanning.generated",
+    "services.ai_language.tests",
+    "services.ai_language.src",
+    "services.ai_language.src.oci_cli_ai_service_language",
+    "services.ai_language.src.oci_cli_ai_service_language.generated",
+    "services.integration.tests",
+    "services.integration.src",
+    "services.integration.src.oci_cli_integration_instance",
+    "services.integration.src.oci_cli_integration_instance.generated",
+    "services.budget.tests",
+    "services.budget.src",
+    "services.budget.src.oci_cli_cost_ad",
+    "services.budget.src.oci_cli_budget",
+    "services.budget.src.oci_cli_cost_ad.generated",
+    "services.budget.src.oci_cli_budget.generated",
+    "services.os_management_hub.tests",
+    "services.os_management_hub.src",
+    "services.os_management_hub.src.oci_cli_dynamic_set",
+    "services.os_management_hub.src.oci_cli_work_request",
+    "services.os_management_hub.src.oci_cli_event",
+    "services.os_management_hub.src.oci_cli_scheduled_job",
+    "services.os_management_hub.src.oci_cli_managed_instance",
+    "services.os_management_hub.src.oci_cli_management_station",
+    "services.os_management_hub.src.oci_cli_software_source",
+    "services.os_management_hub.src.oci_cli_lifecycle_environment",
+    "services.os_management_hub.src.oci_cli_onboarding",
+    "services.os_management_hub.src.oci_cli_managed_instance_group",
+    "services.os_management_hub.src.oci_cli_os_management_hub",
+    "services.os_management_hub.src.oci_cli_reporting_managed_instance",
+    "services.os_management_hub.src.oci_cli_dynamic_set.generated",
+    "services.os_management_hub.src.oci_cli_work_request.generated",
+    "services.os_management_hub.src.oci_cli_event.generated",
+    "services.os_management_hub.src.oci_cli_scheduled_job.generated",
+    "services.os_management_hub.src.oci_cli_managed_instance.generated",
+    "services.os_management_hub.src.oci_cli_management_station.generated",
+    "services.os_management_hub.src.oci_cli_software_source.generated",
+    "services.os_management_hub.src.oci_cli_lifecycle_environment.generated",
+    "services.os_management_hub.src.oci_cli_onboarding.generated",
+    "services.os_management_hub.src.oci_cli_managed_instance_group.generated",
+    "services.os_management_hub.src.oci_cli_os_management_hub.generated",
+    "services.os_management_hub.src.oci_cli_reporting_managed_instance.generated",
+    "services.log_analytics.tests",
+    "services.log_analytics.src",
+    "services.log_analytics.src.oci_cli_log_analytics",
+    "services.log_analytics.src.oci_cli_log_analytics.generated",
+    "services.database_migration.tests",
+    "services.database_migration.src",
+    "services.database_migration.src.oci_cli_database_migration",
+    "services.database_migration.src.oci_cli_database_migration.generated",
+    "services.em_warehouse.tests",
+    "services.em_warehouse.src",
+    "services.em_warehouse.src.oci_cli_em_warehouse",
+    "services.em_warehouse.src.oci_cli_em_warehouse.generated",
+    "services.rover.tests",
+    "services.rover.src",
+    "services.rover.src.oci_cli_rover",
+    "services.rover.src.oci_cli_rover_node",
+    "services.rover.src.oci_cli_rover_bundle",
+    "services.rover.src.oci_cli_shape",
+    "services.rover.src.oci_cli_work_requests",
+    "services.rover.src.oci_cli_rover_cluster",
+    "services.rover.src.oci_cli_rover_entitlement",
+    "services.rover.src.oci_cli_rover.generated",
+    "services.rover.src.oci_cli_rover_node.generated",
+    "services.rover.src.oci_cli_rover_bundle.generated",
+    "services.rover.src.oci_cli_shape.generated",
+    "services.rover.src.oci_cli_work_requests.generated",
+    "services.rover.src.oci_cli_rover_cluster.generated",
+    "services.rover.src.oci_cli_rover_entitlement.generated",
+    "services.email.tests",
+    "services.email.src",
+    "services.email.src.oci_cli_email",
+    "services.email.src.oci_cli_email.generated",
+    "services.ai_speech.tests",
+    "services.ai_speech.src",
+    "services.ai_speech.src.oci_cli_ai_service_speech",
+    "services.ai_speech.src.oci_cli_ai_service_speech.generated",
+    "services.marketplace_publisher.tests",
+    "services.marketplace_publisher.src",
+    "services.marketplace_publisher.src.oci_cli_marketplace_publisher",
+    "services.marketplace_publisher.src.oci_cli_marketplace_publisher.generated",
+    "services.psa.tests",
+    "services.psa.src",
+    "services.psa.src.oci_cli_private_service_access",
+    "services.psa.src.oci_cli_private_service_access.generated",
+    "services.ai_document.tests",
+    "services.ai_document.src",
+    "services.ai_document.src.oci_cli_ai_service_document",
+    "services.ai_document.src.oci_cli_ai_service_document.generated",
+    "services.dns.tests",
+    "services.dns.src",
+    "services.dns.src.oci_cli_dns",
+    "services.dns.src.oci_cli_dns.generated",
+    "services.database_tools_runtime.tests",
+    "services.database_tools_runtime.src",
+    "services.database_tools_runtime.src.oci_cli_database_tools_runtime",
+    "services.database_tools_runtime.src.oci_cli_database_tools_runtime.generated",
+    "services.core.tests",
+    "services.core.src",
+    "services.core.src.oci_cli_virtual_network",
+    "services.core.src.oci_cli_core",
+    "services.core.src.oci_cli_compute_management",
+    "services.core.src.oci_cli_blockstorage",
+    "services.core.src.oci_cli_compute",
+    "services.core.src.oci_cli_virtual_network.generated",
+    "services.core.src.oci_cli_core.generated",
+    "services.core.src.oci_cli_compute_management.generated",
+    "services.core.src.oci_cli_blockstorage.generated",
+    "services.core.src.oci_cli_compute.generated",
+    "services.autoscaling.tests",
+    "services.autoscaling.src",
+    "services.autoscaling.src.oci_cli_auto_scaling",
+    "services.autoscaling.src.oci_cli_auto_scaling.generated",
+    "services.vault.tests",
+    "services.vault.src",
+    "services.vault.src.oci_cli_vaults",
+    "services.vault.src.oci_cli_vaults.generated",
+    "services.optimizer.tests",
+    "services.optimizer.src",
+    "services.optimizer.src.oci_cli_optimizer",
+    "services.optimizer.src.oci_cli_optimizer.generated",
+    "services.opensearch.tests",
+    "services.opensearch.src",
+    "services.opensearch.src.oci_cli_opensearch_cluster_backup",
+    "services.opensearch.src.oci_cli_opensearch_cluster_pipeline",
+    "services.opensearch.src.oci_cli_opensearch",
+    "services.opensearch.src.oci_cli_opensearch_cluster",
+    "services.opensearch.src.oci_cli_opensearch_cluster_backup.generated",
+    "services.opensearch.src.oci_cli_opensearch_cluster_pipeline.generated",
+    "services.opensearch.src.oci_cli_opensearch.generated",
+    "services.opensearch.src.oci_cli_opensearch_cluster.generated",
+    "services.recovery.tests",
+    "services.recovery.src",
+    "services.recovery.src.oci_cli_database_recovery",
+    "services.recovery.src.oci_cli_database_recovery.generated",
+    "services.queue.tests",
+    "services.queue.src",
+    "services.queue.src.oci_cli_queue_admin",
+    "services.queue.src.oci_cli_queue",
+    "services.queue.src.oci_cli_queue_admin.generated",
+    "services.queue.src.oci_cli_queue.generated",
+    "services.data_labeling_service_dataplane.tests",
+    "services.data_labeling_service_dataplane.src",
+    "services.data_labeling_service_dataplane.src.oci_cli_data_labeling",
+    "services.data_labeling_service_dataplane.src.oci_cli_data_labeling.generated",
+    "services.model_deployment.tests",
+    "services.model_deployment.src",
+    "services.model_deployment.src.oci_cli_model_deployment",
+    "services.model_deployment.src.oci_cli_model_deployment.generated",
+    "services.streaming.tests",
+    "services.streaming.src",
+    "services.streaming.src.oci_cli_stream_admin",
+    "services.streaming.src.oci_cli_streaming",
+    "services.streaming.src.oci_cli_stream",
+    "services.streaming.src.oci_cli_stream_admin.generated",
+    "services.streaming.src.oci_cli_streaming.generated",
+    "services.streaming.src.oci_cli_stream.generated",
+    "services.data_labeling_service.tests",
+    "services.data_labeling_service.src",
+    "services.data_labeling_service.src.oci_cli_data_labeling_management",
+    "services.data_labeling_service.src.oci_cli_data_labeling_management.generated",
+    "services.identity_data_plane.tests",
+    "services.identity_data_plane.src",
+    "services.identity_data_plane.src.oci_cli_dataplane",
+    "services.identity_data_plane.src.oci_cli_dataplane.generated",
+    "services.service_catalog.tests",
+    "services.service_catalog.src",
+    "services.service_catalog.src.oci_cli_service_catalog",
+    "services.service_catalog.src.oci_cli_service_catalog.generated",
+    "services.database_management.tests",
+    "services.database_management.src",
+    "services.database_management.src.oci_cli_db_management",
+    "services.database_management.src.oci_cli_sql_tuning",
+    "services.database_management.src.oci_cli_managed_my_sql_databases",
+    "services.database_management.src.oci_cli_database_management",
+    "services.database_management.src.oci_cli_perfhub",
+    "services.database_management.src.oci_cli_diagnosability",
+    "services.database_management.src.oci_cli_db_management.generated",
+    "services.database_management.src.oci_cli_sql_tuning.generated",
+    "services.database_management.src.oci_cli_managed_my_sql_databases.generated",
+    "services.database_management.src.oci_cli_database_management.generated",
+    "services.database_management.src.oci_cli_perfhub.generated",
+    "services.database_management.src.oci_cli_diagnosability.generated",
+    "services.api_platform.tests",
+    "services.api_platform.src",
+    "services.api_platform.src.oci_cli_api_platform",
+    "services.api_platform.src.oci_cli_api_platform.generated",
+    "services.osub_subscription.tests",
+    "services.osub_subscription.src",
+    "services.osub_subscription.src.oci_cli_subscription",
+    "services.osub_subscription.src.oci_cli_osub_subscription",
+    "services.osub_subscription.src.oci_cli_ratecard",
+    "services.osub_subscription.src.oci_cli_commitment",
+    "services.osub_subscription.src.oci_cli_subscription.generated",
+    "services.osub_subscription.src.oci_cli_osub_subscription.generated",
+    "services.osub_subscription.src.oci_cli_ratecard.generated",
+    "services.osub_subscription.src.oci_cli_commitment.generated",
+    "services.osub_organization_subscription.tests",
+    "services.osub_organization_subscription.src",
+    "services.osub_organization_subscription.src.oci_cli_organization_subscription",
+    "services.osub_organization_subscription.src.oci_cli_organization_subscription.generated",
+    "services.multicloud.tests",
+    "services.multicloud.src",
+    "services.multicloud.src.oci_cli_metadata",
+    "services.multicloud.src.oci_cli_multicloudsubscriptions",
+    "services.multicloud.src.oci_cli_multi_clouds_metadata",
+    "services.multicloud.src.oci_cli_omhub_resource_anchor",
+    "services.multicloud.src.oci_cli_multicloud_alerts",
+    "services.multicloud.src.oci_cli_multicloud_resources",
+    "services.multicloud.src.oci_cli_multicloud",
+    "services.multicloud.src.oci_cli_omhub_network_anchor",
+    "services.multicloud.src.oci_cli_multicloud_policies",
+    "services.multicloud.src.oci_cli_metadata.generated",
+    "services.multicloud.src.oci_cli_multicloudsubscriptions.generated",
+    "services.multicloud.src.oci_cli_multi_clouds_metadata.generated",
+    "services.multicloud.src.oci_cli_omhub_resource_anchor.generated",
+    "services.multicloud.src.oci_cli_multicloud_alerts.generated",
+    "services.multicloud.src.oci_cli_multicloud_resources.generated",
+    "services.multicloud.src.oci_cli_multicloud.generated",
+    "services.multicloud.src.oci_cli_omhub_network_anchor.generated",
+    "services.multicloud.src.oci_cli_multicloud_policies.generated",
+    "services.osp_gateway.tests",
+    "services.osp_gateway.src",
+    "services.osp_gateway.src.oci_cli_invoice_service",
+    "services.osp_gateway.src.oci_cli_address_rule_service",
+    "services.osp_gateway.src.oci_cli_osp_gateway",
+    "services.osp_gateway.src.oci_cli_subscription_service",
+    "services.osp_gateway.src.oci_cli_address_service",
+    "services.osp_gateway.src.oci_cli_invoice_service.generated",
+    "services.osp_gateway.src.oci_cli_address_rule_service.generated",
+    "services.osp_gateway.src.oci_cli_osp_gateway.generated",
+    "services.osp_gateway.src.oci_cli_subscription_service.generated",
+    "services.osp_gateway.src.oci_cli_address_service.generated",
+    "services.service_manager_proxy.tests",
+    "services.service_manager_proxy.src",
+    "services.service_manager_proxy.src.oci_cli_service_manager_proxy",
+    "services.service_manager_proxy.src.oci_cli_service_manager_proxy.generated",
+    "services.media_services.tests",
+    "services.media_services.src",
+    "services.media_services.src.oci_cli_media_services",
+    "services.media_services.src.oci_cli_media_stream",
+    "services.media_services.src.oci_cli_media_services.generated",
+    "services.media_services.src.oci_cli_media_stream.generated",
+    "services.delegate_access_control.tests",
+    "services.delegate_access_control.src",
+    "services.delegate_access_control.src.oci_cli_delegate_access_control",
+    "services.delegate_access_control.src.oci_cli_work_request",
+    "services.delegate_access_control.src.oci_cli_delegate_access_control.generated",
+    "services.delegate_access_control.src.oci_cli_work_request.generated",
+    "services.redis.tests",
+    "services.redis.src",
+    "services.redis.src.oci_cli_oci_cache_default_config_set",
+    "services.redis.src.oci_cli_oci_cache_user",
+    "services.redis.src.oci_cli_oci_cache_engine_options",
+    "services.redis.src.oci_cli_redis",
+    "services.redis.src.oci_cli_redis_cluster",
+    "services.redis.src.oci_cli_redis_identity",
+    "services.redis.src.oci_cli_oci_cache_backup",
+    "services.redis.src.oci_cli_oci_cache_config_set",
+    "services.redis.src.oci_cli_oci_cache_default_config_set.generated",
+    "services.redis.src.oci_cli_oci_cache_user.generated",
+    "services.redis.src.oci_cli_oci_cache_engine_options.generated",
+    "services.redis.src.oci_cli_redis.generated",
+    "services.redis.src.oci_cli_redis_cluster.generated",
+    "services.redis.src.oci_cli_redis_identity.generated",
+    "services.redis.src.oci_cli_oci_cache_backup.generated",
+    "services.redis.src.oci_cli_oci_cache_config_set.generated",
+    "services.analytics.tests",
+    "services.analytics.src",
+    "services.analytics.src.oci_cli_analytics",
+    "services.analytics.src.oci_cli_analytics.generated",
+    "services.data_catalog.tests",
+    "services.data_catalog.src",
+    "services.data_catalog.src.oci_cli_data_catalog",
+    "services.data_catalog.src.oci_cli_data_catalog.generated",
+    "services.artifacts.tests",
+    "services.artifacts.src",
+    "services.artifacts.src.oci_cli_artifacts",
+    "services.artifacts.src.oci_cli_artifacts.generated",
+    "services.threat_intelligence.tests",
+    "services.threat_intelligence.src",
+    "services.threat_intelligence.src.oci_cli_threatintel",
+    "services.threat_intelligence.src.oci_cli_threatintel.generated",
+    "services.governance_rules_control_plane.tests",
+    "services.governance_rules_control_plane.src",
+    "services.governance_rules_control_plane.src.oci_cli_governance_rule",
+    "services.governance_rules_control_plane.src.oci_cli_governance_rules_control_plane",
+    "services.governance_rules_control_plane.src.oci_cli_work_request",
+    "services.governance_rules_control_plane.src.oci_cli_governance_rule.generated",
+    "services.governance_rules_control_plane.src.oci_cli_governance_rules_control_plane.generated",
+    "services.governance_rules_control_plane.src.oci_cli_work_request.generated",
+    "services.data_flow.tests",
+    "services.data_flow.src",
+    "services.data_flow.src.oci_cli_data_flow",
+    "services.data_flow.src.oci_cli_data_flow.generated",
+    "services.jms_java_downloads.tests",
+    "services.jms_java_downloads.src",
+    "services.jms_java_downloads.src.oci_cli_java_download",
+    "services.jms_java_downloads.src.oci_cli_java_download.generated",
+    "services.fleet_software_update.tests",
+    "services.fleet_software_update.src",
+    "services.fleet_software_update.src.oci_cli_fleet_software_update",
+    "services.fleet_software_update.src.oci_cli_fleet_software_update.generated",
+    "services.apigateway.tests",
+    "services.apigateway.src",
+    "services.apigateway.src.oci_cli_usage_plans",
+    "services.apigateway.src.oci_cli_apigateway",
+    "services.apigateway.src.oci_cli_gateway",
+    "services.apigateway.src.oci_cli_subscribers",
+    "services.apigateway.src.oci_cli_api_gateway",
+    "services.apigateway.src.oci_cli_deployment",
+    "services.apigateway.src.oci_cli_work_requests",
+    "services.apigateway.src.oci_cli_usage_plans.generated",
+    "services.apigateway.src.oci_cli_apigateway.generated",
+    "services.apigateway.src.oci_cli_gateway.generated",
+    "services.apigateway.src.oci_cli_subscribers.generated",
+    "services.apigateway.src.oci_cli_api_gateway.generated",
+    "services.apigateway.src.oci_cli_deployment.generated",
+    "services.apigateway.src.oci_cli_work_requests.generated",
+    "services.load_balancer.tests",
+    "services.load_balancer.src",
+    "services.load_balancer.src.oci_cli_load_balancer",
+    "services.load_balancer.src.oci_cli_load_balancer.generated",
+    "services.blockchain.tests",
+    "services.blockchain.src",
+    "services.blockchain.src.oci_cli_blockchain_platform",
+    "services.blockchain.src.oci_cli_blockchain_platform.generated",
+    "services.gdp.tests",
+    "services.gdp.src",
+    "services.gdp.src.oci_cli_guarded_data_pipeline",
+    "services.gdp.src.oci_cli_guarded_data_pipeline.generated",
+    "services.ai_vision.tests",
+    "services.ai_vision.src",
+    "services.ai_vision.src.oci_cli_ai_service_vision",
+    "services.ai_vision.src.oci_cli_ai_service_vision.generated",
+    "services.distributed_database.tests",
+    "services.distributed_database.src",
+    "services.distributed_database.src.oci_cli_distributed_db_private_endpoint_service",
+    "services.distributed_database.src.oci_cli_distributed_autonomous_db_service",
+    "services.distributed_database.src.oci_cli_distributed_db_service",
+    "services.distributed_database.src.oci_cli_distributed_db_work_request_service",
+    "services.distributed_database.src.oci_cli_distributed_database",
+    "services.distributed_database.src.oci_cli_distributed_db_private_endpoint_service.generated",
+    "services.distributed_database.src.oci_cli_distributed_autonomous_db_service.generated",
+    "services.distributed_database.src.oci_cli_distributed_db_service.generated",
+    "services.distributed_database.src.oci_cli_distributed_db_work_request_service.generated",
+    "services.distributed_database.src.oci_cli_distributed_database.generated",
+    "services.apm_config.tests",
+    "services.apm_config.src",
+    "services.apm_config.src.oci_cli_config",
+    "services.apm_config.src.oci_cli_config.generated",
+    "services.announcements_service.tests",
+    "services.announcements_service.src",
+    "services.announcements_service.src.oci_cli_announcement",
+    "services.announcements_service.src.oci_cli_announcements_service",
+    "services.announcements_service.src.oci_cli_announcements_preferences",
+    "services.announcements_service.src.oci_cli_service",
+    "services.announcements_service.src.oci_cli_announcement_subscription",
+    "services.announcements_service.src.oci_cli_announcement.generated",
+    "services.announcements_service.src.oci_cli_announcements_service.generated",
+    "services.announcements_service.src.oci_cli_announcements_preferences.generated",
+    "services.announcements_service.src.oci_cli_service.generated",
+    "services.announcements_service.src.oci_cli_announcement_subscription.generated",
+    "services.resource_search.tests",
+    "services.resource_search.src",
+    "services.resource_search.src.oci_cli_resource_search",
+    "services.resource_search.src.oci_cli_resource_search.generated",
+    "services.golden_gate.tests",
+    "services.golden_gate.src",
+    "services.golden_gate.src.oci_cli_golden_gate",
+    "services.golden_gate.src.oci_cli_golden_gate.generated",
+    "services.demand_signal.tests",
+    "services.demand_signal.src",
+    "services.demand_signal.src.oci_cli_occ_metric_alarm",
+    "services.demand_signal.src.oci_cli_occ_demand_signal",
+    "services.demand_signal.src.oci_cli_demand_signal",
+    "services.demand_signal.src.oci_cli_occ_metric_alarm.generated",
+    "services.demand_signal.src.oci_cli_occ_demand_signal.generated",
+    "services.demand_signal.src.oci_cli_demand_signal.generated",
+    "services.dashboard_service.tests",
+    "services.dashboard_service.src",
+    "services.dashboard_service.src.oci_cli_dashboard_group",
+    "services.dashboard_service.src.oci_cli_dashboard",
+    "services.dashboard_service.src.oci_cli_dashboard_service",
+    "services.dashboard_service.src.oci_cli_dashboard_group.generated",
+    "services.dashboard_service.src.oci_cli_dashboard.generated",
+    "services.dashboard_service.src.oci_cli_dashboard_service.generated",
+    "services.generative_ai.tests",
+    "services.generative_ai.src",
+    "services.generative_ai.src.oci_cli_generative_ai",
+    "services.generative_ai.src.oci_cli_generative_ai.generated",
+    "services.functions.tests",
+    "services.functions.src",
+    "services.functions.src.oci_cli_functions_invoke",
+    "services.functions.src.oci_cli_functions",
+    "services.functions.src.oci_cli_functions_management",
+    "services.functions.src.oci_cli_functions_invoke.generated",
+    "services.functions.src.oci_cli_functions.generated",
+    "services.functions.src.oci_cli_functions_management.generated",
+    "services.usage.tests",
+    "services.usage.src",
+    "services.usage.src.oci_cli_rewards",
+    "services.usage.src.oci_cli_usagelimits",
+    "services.usage.src.oci_cli_usage",
+    "services.usage.src.oci_cli_resources",
+    "services.usage.src.oci_cli_rewards.generated",
+    "services.usage.src.oci_cli_usagelimits.generated",
+    "services.usage.src.oci_cli_usage.generated",
+    "services.usage.src.oci_cli_resources.generated",
+    "services.cloud_bridge.tests",
+    "services.cloud_bridge.src",
+    "services.cloud_bridge.src.oci_cli_cloud_bridge",
+    "services.cloud_bridge.src.oci_cli_inventory",
+    "services.cloud_bridge.src.oci_cli_common",
+    "services.cloud_bridge.src.oci_cli_discovery",
+    "services.cloud_bridge.src.oci_cli_ocb_agent_svc",
+    "services.cloud_bridge.src.oci_cli_cloud_bridge.generated",
+    "services.cloud_bridge.src.oci_cli_inventory.generated",
+    "services.cloud_bridge.src.oci_cli_common.generated",
+    "services.cloud_bridge.src.oci_cli_discovery.generated",
+    "services.cloud_bridge.src.oci_cli_ocb_agent_svc.generated",
+    "services.desktops.tests",
+    "services.desktops.src",
+    "services.desktops.src.oci_cli_desktop_service",
+    "services.desktops.src.oci_cli_desktop_service.generated",
+    "services.file_storage.tests",
+    "services.file_storage.src",
+    "services.file_storage.src.oci_cli_file_storage",
+    "services.file_storage.src.oci_cli_file_storage.generated",
+    "services.dblm.tests",
+    "services.dblm.src",
+    "services.dblm.src.oci_cli_db_life_cycle_management",
+    "services.dblm.src.oci_cli_db_life_cycle_management.generated",
+    "services.database.tests",
+    "services.database.src",
+    "services.database.src.oci_cli_database",
+    "services.database.src.oci_cli_database.generated",
+    "services.container_engine.tests",
+    "services.container_engine.src",
+    "services.container_engine.src.oci_cli_container_engine",
+    "services.container_engine.src.oci_cli_container_engine.generated",
+]
+include-package-data = true
+
+[tool.setuptools.package-dir]
+"" = "src"
+"services" = "./services"
+"services.jms_utils" = "./services/jms_utils"
+"services.data_integration" = "./services/data_integration"
+"services.cloud_guard" = "./services/cloud_guard"
+"services.vn_monitoring" = "./services/vn_monitoring"
+"services.iot" = "./services/iot"
+"services.cluster_placement_groups" = "./services/cluster_placement_groups"
+"services.adm" = "./services/adm"
+"services.loggingsearch" = "./services/loggingsearch"
+"services.appmgmt_control" = "./services/appmgmt_control"
+"services.apm_synthetics" = "./services/apm_synthetics"
+"services.generative_ai_agent_runtime" = "./services/generative_ai_agent_runtime"
+"services.work_requests" = "./services/work_requests"
+"services.zpr" = "./services/zpr"
+"services.fusion_apps" = "./services/fusion_apps"
+"services.disaster_recovery" = "./services/disaster_recovery"
+"services.batch" = "./services/batch"
+"services.onesubscription" = "./services/onesubscription"
+"services.opa" = "./services/opa"
+"services.opsi" = "./services/opsi"
+"services.events" = "./services/events"
+"services.monitoring" = "./services/monitoring"
+"services.data_science" = "./services/data_science"
+"services.ai_data_platform" = "./services/ai_data_platform"
+"services.container_registry" = "./services/container_registry"
+"services.network_firewall" = "./services/network_firewall"
+"services.dif" = "./services/dif"
+"services.database_tools" = "./services/database_tools"
+"services.jms" = "./services/jms"
+"services.vbs_inst" = "./services/vbs_inst"
+"services.fleet_apps_management" = "./services/fleet_apps_management"
+"services.logging" = "./services/logging"
+"services.bds" = "./services/bds"
+"services.wlms" = "./services/wlms"
+"services.object_storage" = "./services/object_storage"
+"services.capacity_management" = "./services/capacity_management"
+"services.costad" = "./services/costad"
+"services.generative_ai_data" = "./services/generative_ai_data"
+"services.generative_ai_inference" = "./services/generative_ai_inference"
+"services.audit" = "./services/audit"
+"services.waas" = "./services/waas"
+"services.osub_usage" = "./services/osub_usage"
+"services.usage_api" = "./services/usage_api"
+"services.identity_domains" = "./services/identity_domains"
+"services.visual_builder" = "./services/visual_builder"
+"services.marketplace_private_offer" = "./services/marketplace_private_offer"
+"services.cims" = "./services/cims"
+"services.resource_analytics" = "./services/resource_analytics"
+"services.mngdmac" = "./services/mngdmac"
+"services.email_data_plane" = "./services/email_data_plane"
+"services.generative_ai_agent" = "./services/generative_ai_agent"
+"services.stack_monitoring" = "./services/stack_monitoring"
+"services.identity" = "./services/identity"
+"services.apm_traces" = "./services/apm_traces"
+"services.oda" = "./services/oda"
+"services.compute_cloud_at_customer" = "./services/compute_cloud_at_customer"
+"services.ons" = "./services/ons"
+"services.oce" = "./services/oce"
+"services.self" = "./services/self"
+"services.mysql" = "./services/mysql"
+"services.nosql" = "./services/nosql"
+"services.key_management" = "./services/key_management"
+"services.access_governance_cp" = "./services/access_governance_cp"
+"services.limits" = "./services/limits"
+"services.cloud_migrations" = "./services/cloud_migrations"
+"services.lockbox" = "./services/lockbox"
+"services.resource_scheduler" = "./services/resource_scheduler"
+"services.osub_billing_schedule" = "./services/osub_billing_schedule"
+"services.devops" = "./services/devops"
+"services.ocvp" = "./services/ocvp"
+"services.apm_control_plane" = "./services/apm_control_plane"
+"services.management_dashboard" = "./services/management_dashboard"
+"services.generic_artifacts_content" = "./services/generic_artifacts_content"
+"services.psql" = "./services/psql"
+"services.managed_kafka" = "./services/managed_kafka"
+"services.container_instances" = "./services/container_instances"
+"services.bastion" = "./services/bastion"
+"services.management_agent" = "./services/management_agent"
+"services.data_safe" = "./services/data_safe"
+"services.oci_control_center" = "./services/oci_control_center"
+"services.healthchecks" = "./services/healthchecks"
+"services.operator_access_control" = "./services/operator_access_control"
+"services.tenant_manager_control_plane" = "./services/tenant_manager_control_plane"
+"services.network_load_balancer" = "./services/network_load_balancer"
+"services.compute_instance_agent" = "./services/compute_instance_agent"
+"services.limits_increase" = "./services/limits_increase"
+"services.loggingingestion" = "./services/loggingingestion"
+"services.secrets" = "./services/secrets"
+"services.lustre_file_storage" = "./services/lustre_file_storage"
+"services.waa" = "./services/waa"
+"services.apiaccesscontrol" = "./services/apiaccesscontrol"
+"services.sch" = "./services/sch"
+"services.license_manager" = "./services/license_manager"
+"services.certificates_management" = "./services/certificates_management"
+"services.resource_manager" = "./services/resource_manager"
+"services.certificates" = "./services/certificates"
+"services.waf" = "./services/waf"
+"services.security_attribute" = "./services/security_attribute"
+"services.dbmulticloud" = "./services/dbmulticloud"
+"services.marketplace" = "./services/marketplace"
+"services.vulnerability_scanning" = "./services/vulnerability_scanning"
+"services.ai_language" = "./services/ai_language"
+"services.integration" = "./services/integration"
+"services.budget" = "./services/budget"
+"services.os_management_hub" = "./services/os_management_hub"
+"services.log_analytics" = "./services/log_analytics"
+"services.database_migration" = "./services/database_migration"
+"services.em_warehouse" = "./services/em_warehouse"
+"services.rover" = "./services/rover"
+"services.email" = "./services/email"
+"services.ai_speech" = "./services/ai_speech"
+"services.marketplace_publisher" = "./services/marketplace_publisher"
+"services.psa" = "./services/psa"
+"services.ai_document" = "./services/ai_document"
+"services.dns" = "./services/dns"
+"services.database_tools_runtime" = "./services/database_tools_runtime"
+"services.core" = "./services/core"
+"services.autoscaling" = "./services/autoscaling"
+"services.vault" = "./services/vault"
+"services.optimizer" = "./services/optimizer"
+"services.opensearch" = "./services/opensearch"
+"services.recovery" = "./services/recovery"
+"services.queue" = "./services/queue"
+"services.data_labeling_service_dataplane" = "./services/data_labeling_service_dataplane"
+"services.model_deployment" = "./services/model_deployment"
+"services.streaming" = "./services/streaming"
+"services.data_labeling_service" = "./services/data_labeling_service"
+"services.identity_data_plane" = "./services/identity_data_plane"
+"services.service_catalog" = "./services/service_catalog"
+"services.database_management" = "./services/database_management"
+"services.api_platform" = "./services/api_platform"
+"services.osub_subscription" = "./services/osub_subscription"
+"services.osub_organization_subscription" = "./services/osub_organization_subscription"
+"services.multicloud" = "./services/multicloud"
+"services.osp_gateway" = "./services/osp_gateway"
+"services.service_manager_proxy" = "./services/service_manager_proxy"
+"services.media_services" = "./services/media_services"
+"services.delegate_access_control" = "./services/delegate_access_control"
+"services.redis" = "./services/redis"
+"services.analytics" = "./services/analytics"
+"services.data_catalog" = "./services/data_catalog"
+"services.artifacts" = "./services/artifacts"
+"services.threat_intelligence" = "./services/threat_intelligence"
+"services.governance_rules_control_plane" = "./services/governance_rules_control_plane"
+"services.data_flow" = "./services/data_flow"
+"services.jms_java_downloads" = "./services/jms_java_downloads"
+"services.fleet_software_update" = "./services/fleet_software_update"
+"services.apigateway" = "./services/apigateway"
+"services.load_balancer" = "./services/load_balancer"
+"services.blockchain" = "./services/blockchain"
+"services.gdp" = "./services/gdp"
+"services.ai_vision" = "./services/ai_vision"
+"services.distributed_database" = "./services/distributed_database"
+"services.apm_config" = "./services/apm_config"
+"services.announcements_service" = "./services/announcements_service"
+"services.resource_search" = "./services/resource_search"
+"services.golden_gate" = "./services/golden_gate"
+"services.demand_signal" = "./services/demand_signal"
+"services.dashboard_service" = "./services/dashboard_service"
+"services.generative_ai" = "./services/generative_ai"
+"services.functions" = "./services/functions"
+"services.usage" = "./services/usage"
+"services.cloud_bridge" = "./services/cloud_bridge"
+"services.desktops" = "./services/desktops"
+"services.file_storage" = "./services/file_storage"
+"services.dblm" = "./services/dblm"
+"services.database" = "./services/database"
+"services.container_engine" = "./services/container_engine"
+"services.jms_utils.tests" = "./services/jms_utils/tests"
+"services.jms_utils.src" = "./services/jms_utils/src"
+"services.jms_utils.src.oci_cli_jms_utils" = "./services/jms_utils/src/oci_cli_jms_utils"
+"services.jms_utils.src.oci_cli_jms_utils.generated" = "./services/jms_utils/src/oci_cli_jms_utils/generated"
+"services.data_integration.tests" = "./services/data_integration/tests"
+"services.data_integration.src" = "./services/data_integration/src"
+"services.data_integration.src.oci_cli_data_integration" = "./services/data_integration/src/oci_cli_data_integration"
+"services.data_integration.src.oci_cli_data_integration.generated" = "./services/data_integration/src/oci_cli_data_integration/generated"
+"services.cloud_guard.tests" = "./services/cloud_guard/tests"
+"services.cloud_guard.src" = "./services/cloud_guard/src"
+"services.cloud_guard.src.oci_cli_cloud_guard" = "./services/cloud_guard/src/oci_cli_cloud_guard"
+"services.cloud_guard.src.oci_cli_cloud_guard.generated" = "./services/cloud_guard/src/oci_cli_cloud_guard/generated"
+"services.vn_monitoring.tests" = "./services/vn_monitoring/tests"
+"services.vn_monitoring.src" = "./services/vn_monitoring/src"
+"services.vn_monitoring.src.oci_cli_vn_monitoring" = "./services/vn_monitoring/src/oci_cli_vn_monitoring"
+"services.vn_monitoring.src.oci_cli_vn_monitoring.generated" = "./services/vn_monitoring/src/oci_cli_vn_monitoring/generated"
+"services.iot.tests" = "./services/iot/tests"
+"services.iot.src" = "./services/iot/src"
+"services.iot.src.oci_cli_iot" = "./services/iot/src/oci_cli_iot"
+"services.iot.src.oci_cli_iot.generated" = "./services/iot/src/oci_cli_iot/generated"
+"services.cluster_placement_groups.tests" = "./services/cluster_placement_groups/tests"
+"services.cluster_placement_groups.src" = "./services/cluster_placement_groups/src"
+"services.cluster_placement_groups.src.oci_cli_cluster_placement_groups_cp" = "./services/cluster_placement_groups/src/oci_cli_cluster_placement_groups_cp"
+"services.cluster_placement_groups.src.oci_cli_cluster_placement_groups_cp.generated" = "./services/cluster_placement_groups/src/oci_cli_cluster_placement_groups_cp/generated"
+"services.adm.tests" = "./services/adm/tests"
+"services.adm.src" = "./services/adm/src"
+"services.adm.src.oci_cli_application_dependency_management" = "./services/adm/src/oci_cli_application_dependency_management"
+"services.adm.src.oci_cli_application_dependency_management.generated" = "./services/adm/src/oci_cli_application_dependency_management/generated"
+"services.loggingsearch.tests" = "./services/loggingsearch/tests"
+"services.loggingsearch.src" = "./services/loggingsearch/src"
+"services.loggingsearch.src.oci_cli_log_search" = "./services/loggingsearch/src/oci_cli_log_search"
+"services.loggingsearch.src.oci_cli_log_search.generated" = "./services/loggingsearch/src/oci_cli_log_search/generated"
+"services.appmgmt_control.tests" = "./services/appmgmt_control/tests"
+"services.appmgmt_control.src" = "./services/appmgmt_control/src"
+"services.appmgmt_control.src.oci_cli_appmgmt_control" = "./services/appmgmt_control/src/oci_cli_appmgmt_control"
+"services.appmgmt_control.src.oci_cli_appmgmt_control.generated" = "./services/appmgmt_control/src/oci_cli_appmgmt_control/generated"
+"services.apm_synthetics.tests" = "./services/apm_synthetics/tests"
+"services.apm_synthetics.src" = "./services/apm_synthetics/src"
+"services.apm_synthetics.src.oci_cli_apm_synthetic" = "./services/apm_synthetics/src/oci_cli_apm_synthetic"
+"services.apm_synthetics.src.oci_cli_apm_synthetic.generated" = "./services/apm_synthetics/src/oci_cli_apm_synthetic/generated"
+"services.generative_ai_agent_runtime.tests" = "./services/generative_ai_agent_runtime/tests"
+"services.generative_ai_agent_runtime.src" = "./services/generative_ai_agent_runtime/src"
+"services.generative_ai_agent_runtime.src.oci_cli_generative_ai_agent_runtime" = "./services/generative_ai_agent_runtime/src/oci_cli_generative_ai_agent_runtime"
+"services.generative_ai_agent_runtime.src.oci_cli_generative_ai_agent_runtime.generated" = "./services/generative_ai_agent_runtime/src/oci_cli_generative_ai_agent_runtime/generated"
+"services.work_requests.tests" = "./services/work_requests/tests"
+"services.work_requests.src" = "./services/work_requests/src"
+"services.work_requests.src.oci_cli_work_request" = "./services/work_requests/src/oci_cli_work_request"
+"services.work_requests.src.oci_cli_work_request.generated" = "./services/work_requests/src/oci_cli_work_request/generated"
+"services.zpr.tests" = "./services/zpr/tests"
+"services.zpr.src" = "./services/zpr/src"
+"services.zpr.src.oci_cli_zpr" = "./services/zpr/src/oci_cli_zpr"
+"services.zpr.src.oci_cli_zpr.generated" = "./services/zpr/src/oci_cli_zpr/generated"
+"services.fusion_apps.tests" = "./services/fusion_apps/tests"
+"services.fusion_apps.src" = "./services/fusion_apps/src"
+"services.fusion_apps.src.oci_cli_fusion_applications" = "./services/fusion_apps/src/oci_cli_fusion_applications"
+"services.fusion_apps.src.oci_cli_fusion_applications.generated" = "./services/fusion_apps/src/oci_cli_fusion_applications/generated"
+"services.disaster_recovery.tests" = "./services/disaster_recovery/tests"
+"services.disaster_recovery.src" = "./services/disaster_recovery/src"
+"services.disaster_recovery.src.oci_cli_disaster_recovery" = "./services/disaster_recovery/src/oci_cli_disaster_recovery"
+"services.disaster_recovery.src.oci_cli_disaster_recovery.generated" = "./services/disaster_recovery/src/oci_cli_disaster_recovery/generated"
+"services.batch.tests" = "./services/batch/tests"
+"services.batch.src" = "./services/batch/src"
+"services.batch.src.oci_cli_batch_computing" = "./services/batch/src/oci_cli_batch_computing"
+"services.batch.src.oci_cli_batch_computing.generated" = "./services/batch/src/oci_cli_batch_computing/generated"
+"services.onesubscription.tests" = "./services/onesubscription/tests"
+"services.onesubscription.src" = "./services/onesubscription/src"
+"services.onesubscription.src.oci_cli_billing_schedule" = "./services/onesubscription/src/oci_cli_billing_schedule"
+"services.onesubscription.src.oci_cli_onesubscription" = "./services/onesubscription/src/oci_cli_onesubscription"
+"services.onesubscription.src.oci_cli_subscribed_service" = "./services/onesubscription/src/oci_cli_subscribed_service"
+"services.onesubscription.src.oci_cli_computed_usage" = "./services/onesubscription/src/oci_cli_computed_usage"
+"services.onesubscription.src.oci_cli_subscription" = "./services/onesubscription/src/oci_cli_subscription"
+"services.onesubscription.src.oci_cli_organization_subscription" = "./services/onesubscription/src/oci_cli_organization_subscription"
+"services.onesubscription.src.oci_cli_ratecard" = "./services/onesubscription/src/oci_cli_ratecard"
+"services.onesubscription.src.oci_cli_commitment" = "./services/onesubscription/src/oci_cli_commitment"
+"services.onesubscription.src.oci_cli_invoice_summary" = "./services/onesubscription/src/oci_cli_invoice_summary"
+"services.onesubscription.src.oci_cli_billing_schedule.generated" = "./services/onesubscription/src/oci_cli_billing_schedule/generated"
+"services.onesubscription.src.oci_cli_onesubscription.generated" = "./services/onesubscription/src/oci_cli_onesubscription/generated"
+"services.onesubscription.src.oci_cli_subscribed_service.generated" = "./services/onesubscription/src/oci_cli_subscribed_service/generated"
+"services.onesubscription.src.oci_cli_computed_usage.generated" = "./services/onesubscription/src/oci_cli_computed_usage/generated"
+"services.onesubscription.src.oci_cli_subscription.generated" = "./services/onesubscription/src/oci_cli_subscription/generated"
+"services.onesubscription.src.oci_cli_organization_subscription.generated" = "./services/onesubscription/src/oci_cli_organization_subscription/generated"
+"services.onesubscription.src.oci_cli_ratecard.generated" = "./services/onesubscription/src/oci_cli_ratecard/generated"
+"services.onesubscription.src.oci_cli_commitment.generated" = "./services/onesubscription/src/oci_cli_commitment/generated"
+"services.onesubscription.src.oci_cli_invoice_summary.generated" = "./services/onesubscription/src/oci_cli_invoice_summary/generated"
+"services.opa.tests" = "./services/opa/tests"
+"services.opa.src" = "./services/opa/src"
+"services.opa.src.oci_cli_opa_instance" = "./services/opa/src/oci_cli_opa_instance"
+"services.opa.src.oci_cli_opa_instance.generated" = "./services/opa/src/oci_cli_opa_instance/generated"
+"services.opsi.tests" = "./services/opsi/tests"
+"services.opsi.src" = "./services/opsi/src"
+"services.opsi.src.oci_cli_operations_insights" = "./services/opsi/src/oci_cli_operations_insights"
+"services.opsi.src.oci_cli_operations_insights.generated" = "./services/opsi/src/oci_cli_operations_insights/generated"
+"services.events.tests" = "./services/events/tests"
+"services.events.src" = "./services/events/src"
+"services.events.src.oci_cli_events" = "./services/events/src/oci_cli_events"
+"services.events.src.oci_cli_events.generated" = "./services/events/src/oci_cli_events/generated"
+"services.monitoring.tests" = "./services/monitoring/tests"
+"services.monitoring.src" = "./services/monitoring/src"
+"services.monitoring.src.oci_cli_monitoring" = "./services/monitoring/src/oci_cli_monitoring"
+"services.monitoring.src.oci_cli_monitoring.generated" = "./services/monitoring/src/oci_cli_monitoring/generated"
+"services.data_science.tests" = "./services/data_science/tests"
+"services.data_science.src" = "./services/data_science/src"
+"services.data_science.src.oci_cli_data_science" = "./services/data_science/src/oci_cli_data_science"
+"services.data_science.src.oci_cli_data_science.generated" = "./services/data_science/src/oci_cli_data_science/generated"
+"services.ai_data_platform.tests" = "./services/ai_data_platform/tests"
+"services.ai_data_platform.src" = "./services/ai_data_platform/src"
+"services.ai_data_platform.src.oci_cli_ai_data_platform" = "./services/ai_data_platform/src/oci_cli_ai_data_platform"
+"services.ai_data_platform.src.oci_cli_ai_data_platform.generated" = "./services/ai_data_platform/src/oci_cli_ai_data_platform/generated"
+"services.container_registry.tests" = "./services/container_registry/tests"
+"services.container_registry.src" = "./services/container_registry/src"
+"services.container_registry.src.oci_cli_container_registry" = "./services/container_registry/src/oci_cli_container_registry"
+"services.container_registry.src.oci_cli_container_registry.generated" = "./services/container_registry/src/oci_cli_container_registry/generated"
+"services.network_firewall.tests" = "./services/network_firewall/tests"
+"services.network_firewall.src" = "./services/network_firewall/src"
+"services.network_firewall.src.oci_cli_network_firewall" = "./services/network_firewall/src/oci_cli_network_firewall"
+"services.network_firewall.src.oci_cli_network_firewall.generated" = "./services/network_firewall/src/oci_cli_network_firewall/generated"
+"services.dif.tests" = "./services/dif/tests"
+"services.dif.src" = "./services/dif/src"
+"services.dif.src.oci_cli_stack" = "./services/dif/src/oci_cli_stack"
+"services.dif.src.oci_cli_stack.generated" = "./services/dif/src/oci_cli_stack/generated"
+"services.database_tools.tests" = "./services/database_tools/tests"
+"services.database_tools.src" = "./services/database_tools/src"
+"services.database_tools.src.oci_cli_database_tools" = "./services/database_tools/src/oci_cli_database_tools"
+"services.database_tools.src.oci_cli_database_tools.generated" = "./services/database_tools/src/oci_cli_database_tools/generated"
+"services.jms.tests" = "./services/jms/tests"
+"services.jms.src" = "./services/jms/src"
+"services.jms.src.oci_cli_java_management_service" = "./services/jms/src/oci_cli_java_management_service"
+"services.jms.src.oci_cli_java_management_service.generated" = "./services/jms/src/oci_cli_java_management_service/generated"
+"services.vbs_inst.tests" = "./services/vbs_inst/tests"
+"services.vbs_inst.src" = "./services/vbs_inst/src"
+"services.vbs_inst.src.oci_cli_vbs_instance" = "./services/vbs_inst/src/oci_cli_vbs_instance"
+"services.vbs_inst.src.oci_cli_vbs_instance.generated" = "./services/vbs_inst/src/oci_cli_vbs_instance/generated"
+"services.fleet_apps_management.tests" = "./services/fleet_apps_management/tests"
+"services.fleet_apps_management.src" = "./services/fleet_apps_management/src"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management_runbooks" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management_runbooks"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management_provision" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management_provision"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management_work_request" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management_work_request"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management_admin" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management_admin"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management_operations" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management_operations"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management_maintenance_window" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management_maintenance_window"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management_catalog" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management_catalog"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management_runbooks.generated" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management_runbooks/generated"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management_provision.generated" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management_provision/generated"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management_work_request.generated" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management_work_request/generated"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management_admin.generated" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management_admin/generated"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management_operations.generated" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management_operations/generated"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management_maintenance_window.generated" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management_maintenance_window/generated"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management.generated" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management/generated"
+"services.fleet_apps_management.src.oci_cli_fleet_apps_management_catalog.generated" = "./services/fleet_apps_management/src/oci_cli_fleet_apps_management_catalog/generated"
+"services.logging.tests" = "./services/logging/tests"
+"services.logging.src" = "./services/logging/src"
+"services.logging.src.oci_cli_logging_management" = "./services/logging/src/oci_cli_logging_management"
+"services.logging.src.oci_cli_logging_management.generated" = "./services/logging/src/oci_cli_logging_management/generated"
+"services.bds.tests" = "./services/bds/tests"
+"services.bds.src" = "./services/bds/src"
+"services.bds.src.oci_cli_bds" = "./services/bds/src/oci_cli_bds"
+"services.bds.src.oci_cli_bds.generated" = "./services/bds/src/oci_cli_bds/generated"
+"services.wlms.tests" = "./services/wlms/tests"
+"services.wlms.src" = "./services/wlms/src"
+"services.wlms.src.oci_cli_weblogic_management_service" = "./services/wlms/src/oci_cli_weblogic_management_service"
+"services.wlms.src.oci_cli_weblogic_management_service_configuration" = "./services/wlms/src/oci_cli_weblogic_management_service_configuration"
+"services.wlms.src.oci_cli_wlms" = "./services/wlms/src/oci_cli_wlms"
+"services.wlms.src.oci_cli_weblogic_management_service.generated" = "./services/wlms/src/oci_cli_weblogic_management_service/generated"
+"services.wlms.src.oci_cli_weblogic_management_service_configuration.generated" = "./services/wlms/src/oci_cli_weblogic_management_service_configuration/generated"
+"services.wlms.src.oci_cli_wlms.generated" = "./services/wlms/src/oci_cli_wlms/generated"
+"services.object_storage.tests" = "./services/object_storage/tests"
+"services.object_storage.src" = "./services/object_storage/src"
+"services.object_storage.tests.common" = "./services/object_storage/tests/common"
+"services.object_storage.src.oci_cli_object_storage" = "./services/object_storage/src/oci_cli_object_storage"
+"services.object_storage.src.oci_cli_object_storage.object_storage_transfer_manager" = "./services/object_storage/src/oci_cli_object_storage/object_storage_transfer_manager"
+"services.object_storage.src.oci_cli_object_storage.generated" = "./services/object_storage/src/oci_cli_object_storage/generated"
+"services.capacity_management.tests" = "./services/capacity_management/tests"
+"services.capacity_management.src" = "./services/capacity_management/src"
+"services.capacity_management.src.oci_cli_demand_signal" = "./services/capacity_management/src/oci_cli_demand_signal"
+"services.capacity_management.src.oci_cli_internal_demand_signal" = "./services/capacity_management/src/oci_cli_internal_demand_signal"
+"services.capacity_management.src.oci_cli_capacity_management" = "./services/capacity_management/src/oci_cli_capacity_management"
+"services.capacity_management.src.oci_cli_demand_signal.generated" = "./services/capacity_management/src/oci_cli_demand_signal/generated"
+"services.capacity_management.src.oci_cli_internal_demand_signal.generated" = "./services/capacity_management/src/oci_cli_internal_demand_signal/generated"
+"services.capacity_management.src.oci_cli_capacity_management.generated" = "./services/capacity_management/src/oci_cli_capacity_management/generated"
+"services.costad.tests" = "./services/costad/tests"
+"services.costad.src" = "./services/costad/src"
+"services.costad.src.oci_cli_cost_ad" = "./services/costad/src/oci_cli_cost_ad"
+"services.costad.src.oci_cli_cost_ad.generated" = "./services/costad/src/oci_cli_cost_ad/generated"
+"services.generative_ai_data.tests" = "./services/generative_ai_data/tests"
+"services.generative_ai_data.src" = "./services/generative_ai_data/src"
+"services.generative_ai_data.src.oci_cli_generate_sql_from_nl_job" = "./services/generative_ai_data/src/oci_cli_generate_sql_from_nl_job"
+"services.generative_ai_data.src.oci_cli_cancel_enrichment_job" = "./services/generative_ai_data/src/oci_cli_cancel_enrichment_job"
+"services.generative_ai_data.src.oci_cli_list_enrichment_jobs" = "./services/generative_ai_data/src/oci_cli_list_enrichment_jobs"
+"services.generative_ai_data.src.oci_cli_get_enrichment_job" = "./services/generative_ai_data/src/oci_cli_get_enrichment_job"
+"services.generative_ai_data.src.oci_cli_generative_ai_data" = "./services/generative_ai_data/src/oci_cli_generative_ai_data"
+"services.generative_ai_data.src.oci_cli_generate_enrichment_job" = "./services/generative_ai_data/src/oci_cli_generate_enrichment_job"
+"services.generative_ai_data.src.oci_cli_generate_sql_from_nl_job.generated" = "./services/generative_ai_data/src/oci_cli_generate_sql_from_nl_job/generated"
+"services.generative_ai_data.src.oci_cli_cancel_enrichment_job.generated" = "./services/generative_ai_data/src/oci_cli_cancel_enrichment_job/generated"
+"services.generative_ai_data.src.oci_cli_list_enrichment_jobs.generated" = "./services/generative_ai_data/src/oci_cli_list_enrichment_jobs/generated"
+"services.generative_ai_data.src.oci_cli_get_enrichment_job.generated" = "./services/generative_ai_data/src/oci_cli_get_enrichment_job/generated"
+"services.generative_ai_data.src.oci_cli_generative_ai_data.generated" = "./services/generative_ai_data/src/oci_cli_generative_ai_data/generated"
+"services.generative_ai_data.src.oci_cli_generate_enrichment_job.generated" = "./services/generative_ai_data/src/oci_cli_generate_enrichment_job/generated"
+"services.generative_ai_inference.tests" = "./services/generative_ai_inference/tests"
+"services.generative_ai_inference.src" = "./services/generative_ai_inference/src"
+"services.generative_ai_inference.src.oci_cli_generative_ai_inference" = "./services/generative_ai_inference/src/oci_cli_generative_ai_inference"
+"services.generative_ai_inference.src.oci_cli_generative_ai_inference.generated" = "./services/generative_ai_inference/src/oci_cli_generative_ai_inference/generated"
+"services.audit.tests" = "./services/audit/tests"
+"services.audit.src" = "./services/audit/src"
+"services.audit.src.oci_cli_audit" = "./services/audit/src/oci_cli_audit"
+"services.audit.src.oci_cli_audit.generated" = "./services/audit/src/oci_cli_audit/generated"
+"services.waas.tests" = "./services/waas/tests"
+"services.waas.src" = "./services/waas/src"
+"services.waas.src.oci_cli_redirect" = "./services/waas/src/oci_cli_redirect"
+"services.waas.src.oci_cli_waas" = "./services/waas/src/oci_cli_waas"
+"services.waas.src.oci_cli_redirect.generated" = "./services/waas/src/oci_cli_redirect/generated"
+"services.waas.src.oci_cli_waas.generated" = "./services/waas/src/oci_cli_waas/generated"
+"services.osub_usage.tests" = "./services/osub_usage/tests"
+"services.osub_usage.src" = "./services/osub_usage/src"
+"services.osub_usage.src.oci_cli_computed_usage" = "./services/osub_usage/src/oci_cli_computed_usage"
+"services.osub_usage.src.oci_cli_computed_usage.generated" = "./services/osub_usage/src/oci_cli_computed_usage/generated"
+"services.usage_api.tests" = "./services/usage_api/tests"
+"services.usage_api.src" = "./services/usage_api/src"
+"services.usage_api.src.oci_cli_usageapi" = "./services/usage_api/src/oci_cli_usageapi"
+"services.usage_api.src.oci_cli_usageapi.generated" = "./services/usage_api/src/oci_cli_usageapi/generated"
+"services.identity_domains.tests" = "./services/identity_domains/tests"
+"services.identity_domains.src" = "./services/identity_domains/src"
+"services.identity_domains.src.oci_cli_identity_domains" = "./services/identity_domains/src/oci_cli_identity_domains"
+"services.identity_domains.src.oci_cli_identity_domains.generated" = "./services/identity_domains/src/oci_cli_identity_domains/generated"
+"services.visual_builder.tests" = "./services/visual_builder/tests"
+"services.visual_builder.src" = "./services/visual_builder/src"
+"services.visual_builder.src.oci_cli_vb_instance" = "./services/visual_builder/src/oci_cli_vb_instance"
+"services.visual_builder.src.oci_cli_vb_instance.generated" = "./services/visual_builder/src/oci_cli_vb_instance/generated"
+"services.marketplace_private_offer.tests" = "./services/marketplace_private_offer/tests"
+"services.marketplace_private_offer.src" = "./services/marketplace_private_offer/src"
+"services.marketplace_private_offer.src.oci_cli_offer" = "./services/marketplace_private_offer/src/oci_cli_offer"
+"services.marketplace_private_offer.src.oci_cli_marketplace_private_offer" = "./services/marketplace_private_offer/src/oci_cli_marketplace_private_offer"
+"services.marketplace_private_offer.src.oci_cli_attachment" = "./services/marketplace_private_offer/src/oci_cli_attachment"
+"services.marketplace_private_offer.src.oci_cli_offer.generated" = "./services/marketplace_private_offer/src/oci_cli_offer/generated"
+"services.marketplace_private_offer.src.oci_cli_marketplace_private_offer.generated" = "./services/marketplace_private_offer/src/oci_cli_marketplace_private_offer/generated"
+"services.marketplace_private_offer.src.oci_cli_attachment.generated" = "./services/marketplace_private_offer/src/oci_cli_attachment/generated"
+"services.cims.tests" = "./services/cims/tests"
+"services.cims.src" = "./services/cims/src"
+"services.cims.src.oci_cli_incident" = "./services/cims/src/oci_cli_incident"
+"services.cims.src.oci_cli_incident.generated" = "./services/cims/src/oci_cli_incident/generated"
+"services.resource_analytics.tests" = "./services/resource_analytics/tests"
+"services.resource_analytics.src" = "./services/resource_analytics/src"
+"services.resource_analytics.src.oci_cli_resource_analytics" = "./services/resource_analytics/src/oci_cli_resource_analytics"
+"services.resource_analytics.src.oci_cli_tenancy_attachment" = "./services/resource_analytics/src/oci_cli_tenancy_attachment"
+"services.resource_analytics.src.oci_cli_monitored_region" = "./services/resource_analytics/src/oci_cli_monitored_region"
+"services.resource_analytics.src.oci_cli_resource_analytics_instance" = "./services/resource_analytics/src/oci_cli_resource_analytics_instance"
+"services.resource_analytics.src.oci_cli_resource_analytics.generated" = "./services/resource_analytics/src/oci_cli_resource_analytics/generated"
+"services.resource_analytics.src.oci_cli_tenancy_attachment.generated" = "./services/resource_analytics/src/oci_cli_tenancy_attachment/generated"
+"services.resource_analytics.src.oci_cli_monitored_region.generated" = "./services/resource_analytics/src/oci_cli_monitored_region/generated"
+"services.resource_analytics.src.oci_cli_resource_analytics_instance.generated" = "./services/resource_analytics/src/oci_cli_resource_analytics_instance/generated"
+"services.mngdmac.tests" = "./services/mngdmac/tests"
+"services.mngdmac.src" = "./services/mngdmac/src"
+"services.mngdmac.src.oci_cli_mngdmac" = "./services/mngdmac/src/oci_cli_mngdmac"
+"services.mngdmac.src.oci_cli_mac_device" = "./services/mngdmac/src/oci_cli_mac_device"
+"services.mngdmac.src.oci_cli_mac_order" = "./services/mngdmac/src/oci_cli_mac_order"
+"services.mngdmac.src.oci_cli_mngdmac.generated" = "./services/mngdmac/src/oci_cli_mngdmac/generated"
+"services.mngdmac.src.oci_cli_mac_device.generated" = "./services/mngdmac/src/oci_cli_mac_device/generated"
+"services.mngdmac.src.oci_cli_mac_order.generated" = "./services/mngdmac/src/oci_cli_mac_order/generated"
+"services.email_data_plane.tests" = "./services/email_data_plane/tests"
+"services.email_data_plane.src" = "./services/email_data_plane/src"
+"services.email_data_plane.src.oci_cli_email_dp" = "./services/email_data_plane/src/oci_cli_email_dp"
+"services.email_data_plane.src.oci_cli_email_dp.generated" = "./services/email_data_plane/src/oci_cli_email_dp/generated"
+"services.generative_ai_agent.tests" = "./services/generative_ai_agent/tests"
+"services.generative_ai_agent.src" = "./services/generative_ai_agent/src"
+"services.generative_ai_agent.src.oci_cli_generative_ai_agent" = "./services/generative_ai_agent/src/oci_cli_generative_ai_agent"
+"services.generative_ai_agent.src.oci_cli_generative_ai_agent.generated" = "./services/generative_ai_agent/src/oci_cli_generative_ai_agent/generated"
+"services.stack_monitoring.tests" = "./services/stack_monitoring/tests"
+"services.stack_monitoring.src" = "./services/stack_monitoring/src"
+"services.stack_monitoring.src.oci_cli_stack_monitoring" = "./services/stack_monitoring/src/oci_cli_stack_monitoring"
+"services.stack_monitoring.src.oci_cli_stack_monitoring.generated" = "./services/stack_monitoring/src/oci_cli_stack_monitoring/generated"
+"services.identity.tests" = "./services/identity/tests"
+"services.identity.src" = "./services/identity/src"
+"services.identity.src.oci_cli_identity" = "./services/identity/src/oci_cli_identity"
+"services.identity.src.oci_cli_identity.generated" = "./services/identity/src/oci_cli_identity/generated"
+"services.apm_traces.tests" = "./services/apm_traces/tests"
+"services.apm_traces.src" = "./services/apm_traces/src"
+"services.apm_traces.src.oci_cli_query" = "./services/apm_traces/src/oci_cli_query"
+"services.apm_traces.src.oci_cli_apm_traces" = "./services/apm_traces/src/oci_cli_apm_traces"
+"services.apm_traces.src.oci_cli_scheduled_query" = "./services/apm_traces/src/oci_cli_scheduled_query"
+"services.apm_traces.src.oci_cli_trace" = "./services/apm_traces/src/oci_cli_trace"
+"services.apm_traces.src.oci_cli_attributes" = "./services/apm_traces/src/oci_cli_attributes"
+"services.apm_traces.src.oci_cli_query.generated" = "./services/apm_traces/src/oci_cli_query/generated"
+"services.apm_traces.src.oci_cli_apm_traces.generated" = "./services/apm_traces/src/oci_cli_apm_traces/generated"
+"services.apm_traces.src.oci_cli_scheduled_query.generated" = "./services/apm_traces/src/oci_cli_scheduled_query/generated"
+"services.apm_traces.src.oci_cli_trace.generated" = "./services/apm_traces/src/oci_cli_trace/generated"
+"services.apm_traces.src.oci_cli_attributes.generated" = "./services/apm_traces/src/oci_cli_attributes/generated"
+"services.oda.tests" = "./services/oda/tests"
+"services.oda.src" = "./services/oda/src"
+"services.oda.src.oci_cli_oda" = "./services/oda/src/oci_cli_oda"
+"services.oda.src.oci_cli_management" = "./services/oda/src/oci_cli_management"
+"services.oda.src.oci_cli_odapackage" = "./services/oda/src/oci_cli_odapackage"
+"services.oda.src.oci_cli_oda.generated" = "./services/oda/src/oci_cli_oda/generated"
+"services.oda.src.oci_cli_management.generated" = "./services/oda/src/oci_cli_management/generated"
+"services.oda.src.oci_cli_odapackage.generated" = "./services/oda/src/oci_cli_odapackage/generated"
+"services.compute_cloud_at_customer.tests" = "./services/compute_cloud_at_customer/tests"
+"services.compute_cloud_at_customer.src" = "./services/compute_cloud_at_customer/src"
+"services.compute_cloud_at_customer.src.oci_cli_compute_cloud_at_customer" = "./services/compute_cloud_at_customer/src/oci_cli_compute_cloud_at_customer"
+"services.compute_cloud_at_customer.src.oci_cli_compute_cloud_at_customer.generated" = "./services/compute_cloud_at_customer/src/oci_cli_compute_cloud_at_customer/generated"
+"services.ons.tests" = "./services/ons/tests"
+"services.ons.src" = "./services/ons/src"
+"services.ons.src.oci_cli_notification_data_plane" = "./services/ons/src/oci_cli_notification_data_plane"
+"services.ons.src.oci_cli_ons" = "./services/ons/src/oci_cli_ons"
+"services.ons.src.oci_cli_notification_control_plane" = "./services/ons/src/oci_cli_notification_control_plane"
+"services.ons.src.oci_cli_notification_data_plane.generated" = "./services/ons/src/oci_cli_notification_data_plane/generated"
+"services.ons.src.oci_cli_ons.generated" = "./services/ons/src/oci_cli_ons/generated"
+"services.ons.src.oci_cli_notification_control_plane.generated" = "./services/ons/src/oci_cli_notification_control_plane/generated"
+"services.oce.tests" = "./services/oce/tests"
+"services.oce.src" = "./services/oce/src"
+"services.oce.src.oci_cli_oce_instance" = "./services/oce/src/oci_cli_oce_instance"
+"services.oce.src.oci_cli_oce_instance.generated" = "./services/oce/src/oci_cli_oce_instance/generated"
+"services.self.tests" = "./services/self/tests"
+"services.self.src" = "./services/self/src"
+"services.self.src.oci_cli_self" = "./services/self/src/oci_cli_self"
+"services.self.src.oci_cli_subscription" = "./services/self/src/oci_cli_subscription"
+"services.self.src.oci_cli_partner_integeration" = "./services/self/src/oci_cli_partner_integeration"
+"services.self.src.oci_cli_self.generated" = "./services/self/src/oci_cli_self/generated"
+"services.self.src.oci_cli_subscription.generated" = "./services/self/src/oci_cli_subscription/generated"
+"services.self.src.oci_cli_partner_integeration.generated" = "./services/self/src/oci_cli_partner_integeration/generated"
+"services.mysql.tests" = "./services/mysql/tests"
+"services.mysql.src" = "./services/mysql/src"
+"services.mysql.src.oci_cli_db_system" = "./services/mysql/src/oci_cli_db_system"
+"services.mysql.src.oci_cli_replicas" = "./services/mysql/src/oci_cli_replicas"
+"services.mysql.src.oci_cli_mysqlaas" = "./services/mysql/src/oci_cli_mysqlaas"
+"services.mysql.src.oci_cli_db_backups" = "./services/mysql/src/oci_cli_db_backups"
+"services.mysql.src.oci_cli_channels" = "./services/mysql/src/oci_cli_channels"
+"services.mysql.src.oci_cli_work_requests" = "./services/mysql/src/oci_cli_work_requests"
+"services.mysql.src.oci_cli_mysql" = "./services/mysql/src/oci_cli_mysql"
+"services.mysql.src.oci_cli_db_system.generated" = "./services/mysql/src/oci_cli_db_system/generated"
+"services.mysql.src.oci_cli_replicas.generated" = "./services/mysql/src/oci_cli_replicas/generated"
+"services.mysql.src.oci_cli_mysqlaas.generated" = "./services/mysql/src/oci_cli_mysqlaas/generated"
+"services.mysql.src.oci_cli_db_backups.generated" = "./services/mysql/src/oci_cli_db_backups/generated"
+"services.mysql.src.oci_cli_channels.generated" = "./services/mysql/src/oci_cli_channels/generated"
+"services.mysql.src.oci_cli_work_requests.generated" = "./services/mysql/src/oci_cli_work_requests/generated"
+"services.mysql.src.oci_cli_mysql.generated" = "./services/mysql/src/oci_cli_mysql/generated"
+"services.nosql.tests" = "./services/nosql/tests"
+"services.nosql.src" = "./services/nosql/src"
+"services.nosql.src.oci_cli_nosql" = "./services/nosql/src/oci_cli_nosql"
+"services.nosql.src.oci_cli_nosql.generated" = "./services/nosql/src/oci_cli_nosql/generated"
+"services.key_management.tests" = "./services/key_management/tests"
+"services.key_management.src" = "./services/key_management/src"
+"services.key_management.src.oci_cli_kms_crypto" = "./services/key_management/src/oci_cli_kms_crypto"
+"services.key_management.src.oci_cli_kms_management" = "./services/key_management/src/oci_cli_kms_management"
+"services.key_management.src.oci_cli_ekm" = "./services/key_management/src/oci_cli_ekm"
+"services.key_management.src.oci_cli_kms_vault" = "./services/key_management/src/oci_cli_kms_vault"
+"services.key_management.src.oci_cli_kms_hsm_cluster" = "./services/key_management/src/oci_cli_kms_hsm_cluster"
+"services.key_management.src.oci_cli_key_management" = "./services/key_management/src/oci_cli_key_management"
+"services.key_management.src.oci_cli_kms_crypto.generated" = "./services/key_management/src/oci_cli_kms_crypto/generated"
+"services.key_management.src.oci_cli_kms_management.generated" = "./services/key_management/src/oci_cli_kms_management/generated"
+"services.key_management.src.oci_cli_ekm.generated" = "./services/key_management/src/oci_cli_ekm/generated"
+"services.key_management.src.oci_cli_kms_vault.generated" = "./services/key_management/src/oci_cli_kms_vault/generated"
+"services.key_management.src.oci_cli_kms_hsm_cluster.generated" = "./services/key_management/src/oci_cli_kms_hsm_cluster/generated"
+"services.key_management.src.oci_cli_key_management.generated" = "./services/key_management/src/oci_cli_key_management/generated"
+"services.access_governance_cp.tests" = "./services/access_governance_cp/tests"
+"services.access_governance_cp.src" = "./services/access_governance_cp/src"
+"services.access_governance_cp.src.oci_cli_access_governance_cp" = "./services/access_governance_cp/src/oci_cli_access_governance_cp"
+"services.access_governance_cp.src.oci_cli_access_governance_cp.generated" = "./services/access_governance_cp/src/oci_cli_access_governance_cp/generated"
+"services.limits.tests" = "./services/limits/tests"
+"services.limits.src" = "./services/limits/src"
+"services.limits.src.oci_cli_quotas" = "./services/limits/src/oci_cli_quotas"
+"services.limits.src.oci_cli_limits" = "./services/limits/src/oci_cli_limits"
+"services.limits.src.oci_cli_quotas.generated" = "./services/limits/src/oci_cli_quotas/generated"
+"services.limits.src.oci_cli_limits.generated" = "./services/limits/src/oci_cli_limits/generated"
+"services.cloud_migrations.tests" = "./services/cloud_migrations/tests"
+"services.cloud_migrations.src" = "./services/cloud_migrations/src"
+"services.cloud_migrations.src.oci_cli_migration" = "./services/cloud_migrations/src/oci_cli_migration"
+"services.cloud_migrations.src.oci_cli_migration.generated" = "./services/cloud_migrations/src/oci_cli_migration/generated"
+"services.lockbox.tests" = "./services/lockbox/tests"
+"services.lockbox.src" = "./services/lockbox/src"
+"services.lockbox.src.oci_cli_lockbox" = "./services/lockbox/src/oci_cli_lockbox"
+"services.lockbox.src.oci_cli_lockbox.generated" = "./services/lockbox/src/oci_cli_lockbox/generated"
+"services.resource_scheduler.tests" = "./services/resource_scheduler/tests"
+"services.resource_scheduler.src" = "./services/resource_scheduler/src"
+"services.resource_scheduler.src.oci_cli_schedule" = "./services/resource_scheduler/src/oci_cli_schedule"
+"services.resource_scheduler.src.oci_cli_schedule.generated" = "./services/resource_scheduler/src/oci_cli_schedule/generated"
+"services.osub_billing_schedule.tests" = "./services/osub_billing_schedule/tests"
+"services.osub_billing_schedule.src" = "./services/osub_billing_schedule/src"
+"services.osub_billing_schedule.src.oci_cli_billing_schedule" = "./services/osub_billing_schedule/src/oci_cli_billing_schedule"
+"services.osub_billing_schedule.src.oci_cli_billing_schedule.generated" = "./services/osub_billing_schedule/src/oci_cli_billing_schedule/generated"
+"services.devops.tests" = "./services/devops/tests"
+"services.devops.src" = "./services/devops/src"
+"services.devops.src.oci_cli_devops" = "./services/devops/src/oci_cli_devops"
+"services.devops.src.oci_cli_devops.generated" = "./services/devops/src/oci_cli_devops/generated"
+"services.ocvp.tests" = "./services/ocvp/tests"
+"services.ocvp.src" = "./services/ocvp/src"
+"services.ocvp.src.oci_cli_ocvp" = "./services/ocvp/src/oci_cli_ocvp"
+"services.ocvp.src.oci_cli_sddc" = "./services/ocvp/src/oci_cli_sddc"
+"services.ocvp.src.oci_cli_datastore" = "./services/ocvp/src/oci_cli_datastore"
+"services.ocvp.src.oci_cli_datastore_cluster" = "./services/ocvp/src/oci_cli_datastore_cluster"
+"services.ocvp.src.oci_cli_byol" = "./services/ocvp/src/oci_cli_byol"
+"services.ocvp.src.oci_cli_esxi_host" = "./services/ocvp/src/oci_cli_esxi_host"
+"services.ocvp.src.oci_cli_management_appliance" = "./services/ocvp/src/oci_cli_management_appliance"
+"services.ocvp.src.oci_cli_cluster" = "./services/ocvp/src/oci_cli_cluster"
+"services.ocvp.src.oci_cli_work_request" = "./services/ocvp/src/oci_cli_work_request"
+"services.ocvp.src.oci_cli_byol_allocation" = "./services/ocvp/src/oci_cli_byol_allocation"
+"services.ocvp.src.oci_cli_ocvp.generated" = "./services/ocvp/src/oci_cli_ocvp/generated"
+"services.ocvp.src.oci_cli_sddc.generated" = "./services/ocvp/src/oci_cli_sddc/generated"
+"services.ocvp.src.oci_cli_datastore.generated" = "./services/ocvp/src/oci_cli_datastore/generated"
+"services.ocvp.src.oci_cli_datastore_cluster.generated" = "./services/ocvp/src/oci_cli_datastore_cluster/generated"
+"services.ocvp.src.oci_cli_byol.generated" = "./services/ocvp/src/oci_cli_byol/generated"
+"services.ocvp.src.oci_cli_esxi_host.generated" = "./services/ocvp/src/oci_cli_esxi_host/generated"
+"services.ocvp.src.oci_cli_management_appliance.generated" = "./services/ocvp/src/oci_cli_management_appliance/generated"
+"services.ocvp.src.oci_cli_cluster.generated" = "./services/ocvp/src/oci_cli_cluster/generated"
+"services.ocvp.src.oci_cli_work_request.generated" = "./services/ocvp/src/oci_cli_work_request/generated"
+"services.ocvp.src.oci_cli_byol_allocation.generated" = "./services/ocvp/src/oci_cli_byol_allocation/generated"
+"services.apm_control_plane.tests" = "./services/apm_control_plane/tests"
+"services.apm_control_plane.src" = "./services/apm_control_plane/src"
+"services.apm_control_plane.src.oci_cli_apm_domain" = "./services/apm_control_plane/src/oci_cli_apm_domain"
+"services.apm_control_plane.src.oci_cli_apm_domain.generated" = "./services/apm_control_plane/src/oci_cli_apm_domain/generated"
+"services.management_dashboard.tests" = "./services/management_dashboard/tests"
+"services.management_dashboard.src" = "./services/management_dashboard/src"
+"services.management_dashboard.src.oci_cli_dashx_apis" = "./services/management_dashboard/src/oci_cli_dashx_apis"
+"services.management_dashboard.src.oci_cli_dashx_apis.generated" = "./services/management_dashboard/src/oci_cli_dashx_apis/generated"
+"services.generic_artifacts_content.tests" = "./services/generic_artifacts_content/tests"
+"services.generic_artifacts_content.src" = "./services/generic_artifacts_content/src"
+"services.generic_artifacts_content.src.oci_cli_generic_artifacts_content" = "./services/generic_artifacts_content/src/oci_cli_generic_artifacts_content"
+"services.generic_artifacts_content.src.oci_cli_generic_artifacts_content.generated" = "./services/generic_artifacts_content/src/oci_cli_generic_artifacts_content/generated"
+"services.psql.tests" = "./services/psql/tests"
+"services.psql.src" = "./services/psql/src"
+"services.psql.src.oci_cli_postgresql" = "./services/psql/src/oci_cli_postgresql"
+"services.psql.src.oci_cli_postgresql.generated" = "./services/psql/src/oci_cli_postgresql/generated"
+"services.managed_kafka.tests" = "./services/managed_kafka/tests"
+"services.managed_kafka.src" = "./services/managed_kafka/src"
+"services.managed_kafka.src.oci_cli_kafka_cluster" = "./services/managed_kafka/src/oci_cli_kafka_cluster"
+"services.managed_kafka.src.oci_cli_kafka_cluster.generated" = "./services/managed_kafka/src/oci_cli_kafka_cluster/generated"
+"services.container_instances.tests" = "./services/container_instances/tests"
+"services.container_instances.src" = "./services/container_instances/src"
+"services.container_instances.src.oci_cli_container_instance" = "./services/container_instances/src/oci_cli_container_instance"
+"services.container_instances.src.oci_cli_container_instance.generated" = "./services/container_instances/src/oci_cli_container_instance/generated"
+"services.bastion.tests" = "./services/bastion/tests"
+"services.bastion.src" = "./services/bastion/src"
+"services.bastion.src.oci_cli_bastion" = "./services/bastion/src/oci_cli_bastion"
+"services.bastion.src.oci_cli_bastion.generated" = "./services/bastion/src/oci_cli_bastion/generated"
+"services.management_agent.tests" = "./services/management_agent/tests"
+"services.management_agent.src" = "./services/management_agent/src"
+"services.management_agent.src.oci_cli_management_agent" = "./services/management_agent/src/oci_cli_management_agent"
+"services.management_agent.src.oci_cli_management_agent.generated" = "./services/management_agent/src/oci_cli_management_agent/generated"
+"services.data_safe.tests" = "./services/data_safe/tests"
+"services.data_safe.src" = "./services/data_safe/src"
+"services.data_safe.src.oci_cli_data_safe" = "./services/data_safe/src/oci_cli_data_safe"
+"services.data_safe.src.oci_cli_data_safe.generated" = "./services/data_safe/src/oci_cli_data_safe/generated"
+"services.oci_control_center.tests" = "./services/oci_control_center/tests"
+"services.oci_control_center.src" = "./services/oci_control_center/src"
+"services.oci_control_center.src.oci_cli_occ_metrics" = "./services/oci_control_center/src/oci_cli_occ_metrics"
+"services.oci_control_center.src.oci_cli_occ_metrics.generated" = "./services/oci_control_center/src/oci_cli_occ_metrics/generated"
+"services.healthchecks.tests" = "./services/healthchecks/tests"
+"services.healthchecks.src" = "./services/healthchecks/src"
+"services.healthchecks.src.oci_cli_health_checks" = "./services/healthchecks/src/oci_cli_health_checks"
+"services.healthchecks.src.oci_cli_health_checks.generated" = "./services/healthchecks/src/oci_cli_health_checks/generated"
+"services.operator_access_control.tests" = "./services/operator_access_control/tests"
+"services.operator_access_control.src" = "./services/operator_access_control/src"
+"services.operator_access_control.src.oci_cli_operator_actions" = "./services/operator_access_control/src/oci_cli_operator_actions"
+"services.operator_access_control.src.oci_cli_operator_control_assignment" = "./services/operator_access_control/src/oci_cli_operator_control_assignment"
+"services.operator_access_control.src.oci_cli_operator_control" = "./services/operator_access_control/src/oci_cli_operator_control"
+"services.operator_access_control.src.oci_cli_operator_access_control" = "./services/operator_access_control/src/oci_cli_operator_access_control"
+"services.operator_access_control.src.oci_cli_access_requests" = "./services/operator_access_control/src/oci_cli_access_requests"
+"services.operator_access_control.src.oci_cli_operator_actions.generated" = "./services/operator_access_control/src/oci_cli_operator_actions/generated"
+"services.operator_access_control.src.oci_cli_operator_control_assignment.generated" = "./services/operator_access_control/src/oci_cli_operator_control_assignment/generated"
+"services.operator_access_control.src.oci_cli_operator_control.generated" = "./services/operator_access_control/src/oci_cli_operator_control/generated"
+"services.operator_access_control.src.oci_cli_operator_access_control.generated" = "./services/operator_access_control/src/oci_cli_operator_access_control/generated"
+"services.operator_access_control.src.oci_cli_access_requests.generated" = "./services/operator_access_control/src/oci_cli_access_requests/generated"
+"services.tenant_manager_control_plane.tests" = "./services/tenant_manager_control_plane/tests"
+"services.tenant_manager_control_plane.src" = "./services/tenant_manager_control_plane/src"
+"services.tenant_manager_control_plane.src.oci_cli_governance" = "./services/tenant_manager_control_plane/src/oci_cli_governance"
+"services.tenant_manager_control_plane.src.oci_cli_link" = "./services/tenant_manager_control_plane/src/oci_cli_link"
+"services.tenant_manager_control_plane.src.oci_cli_recipient_invitation" = "./services/tenant_manager_control_plane/src/oci_cli_recipient_invitation"
+"services.tenant_manager_control_plane.src.oci_cli_tenant_manager_control_plane" = "./services/tenant_manager_control_plane/src/oci_cli_tenant_manager_control_plane"
+"services.tenant_manager_control_plane.src.oci_cli_work_request" = "./services/tenant_manager_control_plane/src/oci_cli_work_request"
+"services.tenant_manager_control_plane.src.oci_cli_domain_governance" = "./services/tenant_manager_control_plane/src/oci_cli_domain_governance"
+"services.tenant_manager_control_plane.src.oci_cli_subscription" = "./services/tenant_manager_control_plane/src/oci_cli_subscription"
+"services.tenant_manager_control_plane.src.oci_cli_orders" = "./services/tenant_manager_control_plane/src/oci_cli_orders"
+"services.tenant_manager_control_plane.src.oci_cli_organization" = "./services/tenant_manager_control_plane/src/oci_cli_organization"
+"services.tenant_manager_control_plane.src.oci_cli_sender_invitation" = "./services/tenant_manager_control_plane/src/oci_cli_sender_invitation"
+"services.tenant_manager_control_plane.src.oci_cli_domain" = "./services/tenant_manager_control_plane/src/oci_cli_domain"
+"services.tenant_manager_control_plane.src.oci_cli_governance.generated" = "./services/tenant_manager_control_plane/src/oci_cli_governance/generated"
+"services.tenant_manager_control_plane.src.oci_cli_link.generated" = "./services/tenant_manager_control_plane/src/oci_cli_link/generated"
+"services.tenant_manager_control_plane.src.oci_cli_recipient_invitation.generated" = "./services/tenant_manager_control_plane/src/oci_cli_recipient_invitation/generated"
+"services.tenant_manager_control_plane.src.oci_cli_tenant_manager_control_plane.generated" = "./services/tenant_manager_control_plane/src/oci_cli_tenant_manager_control_plane/generated"
+"services.tenant_manager_control_plane.src.oci_cli_work_request.generated" = "./services/tenant_manager_control_plane/src/oci_cli_work_request/generated"
+"services.tenant_manager_control_plane.src.oci_cli_domain_governance.generated" = "./services/tenant_manager_control_plane/src/oci_cli_domain_governance/generated"
+"services.tenant_manager_control_plane.src.oci_cli_subscription.generated" = "./services/tenant_manager_control_plane/src/oci_cli_subscription/generated"
+"services.tenant_manager_control_plane.src.oci_cli_orders.generated" = "./services/tenant_manager_control_plane/src/oci_cli_orders/generated"
+"services.tenant_manager_control_plane.src.oci_cli_organization.generated" = "./services/tenant_manager_control_plane/src/oci_cli_organization/generated"
+"services.tenant_manager_control_plane.src.oci_cli_sender_invitation.generated" = "./services/tenant_manager_control_plane/src/oci_cli_sender_invitation/generated"
+"services.tenant_manager_control_plane.src.oci_cli_domain.generated" = "./services/tenant_manager_control_plane/src/oci_cli_domain/generated"
+"services.network_load_balancer.tests" = "./services/network_load_balancer/tests"
+"services.network_load_balancer.src" = "./services/network_load_balancer/src"
+"services.network_load_balancer.src.oci_cli_network_load_balancer" = "./services/network_load_balancer/src/oci_cli_network_load_balancer"
+"services.network_load_balancer.src.oci_cli_network_load_balancer.generated" = "./services/network_load_balancer/src/oci_cli_network_load_balancer/generated"
+"services.compute_instance_agent.tests" = "./services/compute_instance_agent/tests"
+"services.compute_instance_agent.src" = "./services/compute_instance_agent/src"
+"services.compute_instance_agent.src.oci_cli_plugin" = "./services/compute_instance_agent/src/oci_cli_plugin"
+"services.compute_instance_agent.src.oci_cli_pluginconfig" = "./services/compute_instance_agent/src/oci_cli_pluginconfig"
+"services.compute_instance_agent.src.oci_cli_compute_instance_agent" = "./services/compute_instance_agent/src/oci_cli_compute_instance_agent"
+"services.compute_instance_agent.src.oci_cli_plugin.generated" = "./services/compute_instance_agent/src/oci_cli_plugin/generated"
+"services.compute_instance_agent.src.oci_cli_pluginconfig.generated" = "./services/compute_instance_agent/src/oci_cli_pluginconfig/generated"
+"services.compute_instance_agent.src.oci_cli_compute_instance_agent.generated" = "./services/compute_instance_agent/src/oci_cli_compute_instance_agent/generated"
+"services.limits_increase.tests" = "./services/limits_increase/tests"
+"services.limits_increase.src" = "./services/limits_increase/src"
+"services.limits_increase.src.oci_cli_limits_increase" = "./services/limits_increase/src/oci_cli_limits_increase"
+"services.limits_increase.src.oci_cli_limits_increase.generated" = "./services/limits_increase/src/oci_cli_limits_increase/generated"
+"services.loggingingestion.tests" = "./services/loggingingestion/tests"
+"services.loggingingestion.src" = "./services/loggingingestion/src"
+"services.loggingingestion.src.oci_cli_logging" = "./services/loggingingestion/src/oci_cli_logging"
+"services.loggingingestion.src.oci_cli_logging.generated" = "./services/loggingingestion/src/oci_cli_logging/generated"
+"services.secrets.tests" = "./services/secrets/tests"
+"services.secrets.src" = "./services/secrets/src"
+"services.secrets.src.oci_cli_secrets" = "./services/secrets/src/oci_cli_secrets"
+"services.secrets.src.oci_cli_secrets.generated" = "./services/secrets/src/oci_cli_secrets/generated"
+"services.lustre_file_storage.tests" = "./services/lustre_file_storage/tests"
+"services.lustre_file_storage.src" = "./services/lustre_file_storage/src"
+"services.lustre_file_storage.src.oci_cli_lustre_file_storage" = "./services/lustre_file_storage/src/oci_cli_lustre_file_storage"
+"services.lustre_file_storage.src.oci_cli_lustre_file_storage.generated" = "./services/lustre_file_storage/src/oci_cli_lustre_file_storage/generated"
+"services.waa.tests" = "./services/waa/tests"
+"services.waa.src" = "./services/waa/src"
+"services.waa.src.oci_cli_work_request" = "./services/waa/src/oci_cli_work_request"
+"services.waa.src.oci_cli_waa" = "./services/waa/src/oci_cli_waa"
+"services.waa.src.oci_cli_work_request.generated" = "./services/waa/src/oci_cli_work_request/generated"
+"services.waa.src.oci_cli_waa.generated" = "./services/waa/src/oci_cli_waa/generated"
+"services.apiaccesscontrol.tests" = "./services/apiaccesscontrol/tests"
+"services.apiaccesscontrol.src" = "./services/apiaccesscontrol/src"
+"services.apiaccesscontrol.src.oci_cli_api_metadata" = "./services/apiaccesscontrol/src/oci_cli_api_metadata"
+"services.apiaccesscontrol.src.oci_cli_privileged_api_work_request" = "./services/apiaccesscontrol/src/oci_cli_privileged_api_work_request"
+"services.apiaccesscontrol.src.oci_cli_privileged_api_control" = "./services/apiaccesscontrol/src/oci_cli_privileged_api_control"
+"services.apiaccesscontrol.src.oci_cli_apiaccesscontrol" = "./services/apiaccesscontrol/src/oci_cli_apiaccesscontrol"
+"services.apiaccesscontrol.src.oci_cli_privileged_api_requests" = "./services/apiaccesscontrol/src/oci_cli_privileged_api_requests"
+"services.apiaccesscontrol.src.oci_cli_api_metadata.generated" = "./services/apiaccesscontrol/src/oci_cli_api_metadata/generated"
+"services.apiaccesscontrol.src.oci_cli_privileged_api_work_request.generated" = "./services/apiaccesscontrol/src/oci_cli_privileged_api_work_request/generated"
+"services.apiaccesscontrol.src.oci_cli_privileged_api_control.generated" = "./services/apiaccesscontrol/src/oci_cli_privileged_api_control/generated"
+"services.apiaccesscontrol.src.oci_cli_apiaccesscontrol.generated" = "./services/apiaccesscontrol/src/oci_cli_apiaccesscontrol/generated"
+"services.apiaccesscontrol.src.oci_cli_privileged_api_requests.generated" = "./services/apiaccesscontrol/src/oci_cli_privileged_api_requests/generated"
+"services.sch.tests" = "./services/sch/tests"
+"services.sch.src" = "./services/sch/src"
+"services.sch.src.oci_cli_connector_plugins" = "./services/sch/src/oci_cli_connector_plugins"
+"services.sch.src.oci_cli_service_connector" = "./services/sch/src/oci_cli_service_connector"
+"services.sch.src.oci_cli_sch" = "./services/sch/src/oci_cli_sch"
+"services.sch.src.oci_cli_connector_plugins.generated" = "./services/sch/src/oci_cli_connector_plugins/generated"
+"services.sch.src.oci_cli_service_connector.generated" = "./services/sch/src/oci_cli_service_connector/generated"
+"services.sch.src.oci_cli_sch.generated" = "./services/sch/src/oci_cli_sch/generated"
+"services.license_manager.tests" = "./services/license_manager/tests"
+"services.license_manager.src" = "./services/license_manager/src"
+"services.license_manager.src.oci_cli_license_manager" = "./services/license_manager/src/oci_cli_license_manager"
+"services.license_manager.src.oci_cli_license_manager.generated" = "./services/license_manager/src/oci_cli_license_manager/generated"
+"services.certificates_management.tests" = "./services/certificates_management/tests"
+"services.certificates_management.src" = "./services/certificates_management/src"
+"services.certificates_management.src.oci_cli_certificates_management" = "./services/certificates_management/src/oci_cli_certificates_management"
+"services.certificates_management.src.oci_cli_certificates_management.generated" = "./services/certificates_management/src/oci_cli_certificates_management/generated"
+"services.resource_manager.tests" = "./services/resource_manager/tests"
+"services.resource_manager.src" = "./services/resource_manager/src"
+"services.resource_manager.src.oci_cli_resource_manager" = "./services/resource_manager/src/oci_cli_resource_manager"
+"services.resource_manager.src.oci_cli_resource_manager.generated" = "./services/resource_manager/src/oci_cli_resource_manager/generated"
+"services.certificates.tests" = "./services/certificates/tests"
+"services.certificates.src" = "./services/certificates/src"
+"services.certificates.src.oci_cli_certificates" = "./services/certificates/src/oci_cli_certificates"
+"services.certificates.src.oci_cli_certificates.generated" = "./services/certificates/src/oci_cli_certificates/generated"
+"services.waf.tests" = "./services/waf/tests"
+"services.waf.src" = "./services/waf/src"
+"services.waf.src.oci_cli_waf" = "./services/waf/src/oci_cli_waf"
+"services.waf.src.oci_cli_waf.generated" = "./services/waf/src/oci_cli_waf/generated"
+"services.security_attribute.tests" = "./services/security_attribute/tests"
+"services.security_attribute.src" = "./services/security_attribute/src"
+"services.security_attribute.src.oci_cli_security_attribute" = "./services/security_attribute/src/oci_cli_security_attribute"
+"services.security_attribute.src.oci_cli_security_attribute.generated" = "./services/security_attribute/src/oci_cli_security_attribute/generated"
+"services.dbmulticloud.tests" = "./services/dbmulticloud/tests"
+"services.dbmulticloud.src" = "./services/dbmulticloud/src"
+"services.dbmulticloud.src.oci_cli_oracle_db_azure_vault_association" = "./services/dbmulticloud/src/oci_cli_oracle_db_azure_vault_association"
+"services.dbmulticloud.src.oci_cli_dbmulticloud" = "./services/dbmulticloud/src/oci_cli_dbmulticloud"
+"services.dbmulticloud.src.oci_cli_oracle_db_azure_key" = "./services/dbmulticloud/src/oci_cli_oracle_db_azure_key"
+"services.dbmulticloud.src.oci_cli_db_multicloud_aws_provider" = "./services/dbmulticloud/src/oci_cli_db_multicloud_aws_provider"
+"services.dbmulticloud.src.oci_cli_work_request" = "./services/dbmulticloud/src/oci_cli_work_request"
+"services.dbmulticloud.src.oci_cli_oracle_db_azure_blob_mount" = "./services/dbmulticloud/src/oci_cli_oracle_db_azure_blob_mount"
+"services.dbmulticloud.src.oci_cli_db_multicloud_gcp_provider" = "./services/dbmulticloud/src/oci_cli_db_multicloud_gcp_provider"
+"services.dbmulticloud.src.oci_cli_oracle_db_azure_connector" = "./services/dbmulticloud/src/oci_cli_oracle_db_azure_connector"
+"services.dbmulticloud.src.oci_cli_oracle_db_azure_vault" = "./services/dbmulticloud/src/oci_cli_oracle_db_azure_vault"
+"services.dbmulticloud.src.oci_cli_oracle_db_azure_blob_container" = "./services/dbmulticloud/src/oci_cli_oracle_db_azure_blob_container"
+"services.dbmulticloud.src.oci_cli_multi_cloud_resource_discovery" = "./services/dbmulticloud/src/oci_cli_multi_cloud_resource_discovery"
+"services.dbmulticloud.src.oci_cli_oracle_db_azure_vault_association.generated" = "./services/dbmulticloud/src/oci_cli_oracle_db_azure_vault_association/generated"
+"services.dbmulticloud.src.oci_cli_dbmulticloud.generated" = "./services/dbmulticloud/src/oci_cli_dbmulticloud/generated"
+"services.dbmulticloud.src.oci_cli_oracle_db_azure_key.generated" = "./services/dbmulticloud/src/oci_cli_oracle_db_azure_key/generated"
+"services.dbmulticloud.src.oci_cli_db_multicloud_aws_provider.generated" = "./services/dbmulticloud/src/oci_cli_db_multicloud_aws_provider/generated"
+"services.dbmulticloud.src.oci_cli_work_request.generated" = "./services/dbmulticloud/src/oci_cli_work_request/generated"
+"services.dbmulticloud.src.oci_cli_oracle_db_azure_blob_mount.generated" = "./services/dbmulticloud/src/oci_cli_oracle_db_azure_blob_mount/generated"
+"services.dbmulticloud.src.oci_cli_db_multicloud_gcp_provider.generated" = "./services/dbmulticloud/src/oci_cli_db_multicloud_gcp_provider/generated"
+"services.dbmulticloud.src.oci_cli_oracle_db_azure_connector.generated" = "./services/dbmulticloud/src/oci_cli_oracle_db_azure_connector/generated"
+"services.dbmulticloud.src.oci_cli_oracle_db_azure_vault.generated" = "./services/dbmulticloud/src/oci_cli_oracle_db_azure_vault/generated"
+"services.dbmulticloud.src.oci_cli_oracle_db_azure_blob_container.generated" = "./services/dbmulticloud/src/oci_cli_oracle_db_azure_blob_container/generated"
+"services.dbmulticloud.src.oci_cli_multi_cloud_resource_discovery.generated" = "./services/dbmulticloud/src/oci_cli_multi_cloud_resource_discovery/generated"
+"services.marketplace.tests" = "./services/marketplace/tests"
+"services.marketplace.src" = "./services/marketplace/src"
+"services.marketplace.src.oci_cli_account" = "./services/marketplace/src/oci_cli_account"
+"services.marketplace.src.oci_cli_marketplace" = "./services/marketplace/src/oci_cli_marketplace"
+"services.marketplace.src.oci_cli_account.generated" = "./services/marketplace/src/oci_cli_account/generated"
+"services.marketplace.src.oci_cli_marketplace.generated" = "./services/marketplace/src/oci_cli_marketplace/generated"
+"services.vulnerability_scanning.tests" = "./services/vulnerability_scanning/tests"
+"services.vulnerability_scanning.src" = "./services/vulnerability_scanning/src"
+"services.vulnerability_scanning.src.oci_cli_vulnerability_scanning" = "./services/vulnerability_scanning/src/oci_cli_vulnerability_scanning"
+"services.vulnerability_scanning.src.oci_cli_vulnerability_scanning.generated" = "./services/vulnerability_scanning/src/oci_cli_vulnerability_scanning/generated"
+"services.ai_language.tests" = "./services/ai_language/tests"
+"services.ai_language.src" = "./services/ai_language/src"
+"services.ai_language.src.oci_cli_ai_service_language" = "./services/ai_language/src/oci_cli_ai_service_language"
+"services.ai_language.src.oci_cli_ai_service_language.generated" = "./services/ai_language/src/oci_cli_ai_service_language/generated"
+"services.integration.tests" = "./services/integration/tests"
+"services.integration.src" = "./services/integration/src"
+"services.integration.src.oci_cli_integration_instance" = "./services/integration/src/oci_cli_integration_instance"
+"services.integration.src.oci_cli_integration_instance.generated" = "./services/integration/src/oci_cli_integration_instance/generated"
+"services.budget.tests" = "./services/budget/tests"
+"services.budget.src" = "./services/budget/src"
+"services.budget.src.oci_cli_cost_ad" = "./services/budget/src/oci_cli_cost_ad"
+"services.budget.src.oci_cli_budget" = "./services/budget/src/oci_cli_budget"
+"services.budget.src.oci_cli_cost_ad.generated" = "./services/budget/src/oci_cli_cost_ad/generated"
+"services.budget.src.oci_cli_budget.generated" = "./services/budget/src/oci_cli_budget/generated"
+"services.os_management_hub.tests" = "./services/os_management_hub/tests"
+"services.os_management_hub.src" = "./services/os_management_hub/src"
+"services.os_management_hub.src.oci_cli_dynamic_set" = "./services/os_management_hub/src/oci_cli_dynamic_set"
+"services.os_management_hub.src.oci_cli_work_request" = "./services/os_management_hub/src/oci_cli_work_request"
+"services.os_management_hub.src.oci_cli_event" = "./services/os_management_hub/src/oci_cli_event"
+"services.os_management_hub.src.oci_cli_scheduled_job" = "./services/os_management_hub/src/oci_cli_scheduled_job"
+"services.os_management_hub.src.oci_cli_managed_instance" = "./services/os_management_hub/src/oci_cli_managed_instance"
+"services.os_management_hub.src.oci_cli_management_station" = "./services/os_management_hub/src/oci_cli_management_station"
+"services.os_management_hub.src.oci_cli_software_source" = "./services/os_management_hub/src/oci_cli_software_source"
+"services.os_management_hub.src.oci_cli_lifecycle_environment" = "./services/os_management_hub/src/oci_cli_lifecycle_environment"
+"services.os_management_hub.src.oci_cli_onboarding" = "./services/os_management_hub/src/oci_cli_onboarding"
+"services.os_management_hub.src.oci_cli_managed_instance_group" = "./services/os_management_hub/src/oci_cli_managed_instance_group"
+"services.os_management_hub.src.oci_cli_os_management_hub" = "./services/os_management_hub/src/oci_cli_os_management_hub"
+"services.os_management_hub.src.oci_cli_reporting_managed_instance" = "./services/os_management_hub/src/oci_cli_reporting_managed_instance"
+"services.os_management_hub.src.oci_cli_dynamic_set.generated" = "./services/os_management_hub/src/oci_cli_dynamic_set/generated"
+"services.os_management_hub.src.oci_cli_work_request.generated" = "./services/os_management_hub/src/oci_cli_work_request/generated"
+"services.os_management_hub.src.oci_cli_event.generated" = "./services/os_management_hub/src/oci_cli_event/generated"
+"services.os_management_hub.src.oci_cli_scheduled_job.generated" = "./services/os_management_hub/src/oci_cli_scheduled_job/generated"
+"services.os_management_hub.src.oci_cli_managed_instance.generated" = "./services/os_management_hub/src/oci_cli_managed_instance/generated"
+"services.os_management_hub.src.oci_cli_management_station.generated" = "./services/os_management_hub/src/oci_cli_management_station/generated"
+"services.os_management_hub.src.oci_cli_software_source.generated" = "./services/os_management_hub/src/oci_cli_software_source/generated"
+"services.os_management_hub.src.oci_cli_lifecycle_environment.generated" = "./services/os_management_hub/src/oci_cli_lifecycle_environment/generated"
+"services.os_management_hub.src.oci_cli_onboarding.generated" = "./services/os_management_hub/src/oci_cli_onboarding/generated"
+"services.os_management_hub.src.oci_cli_managed_instance_group.generated" = "./services/os_management_hub/src/oci_cli_managed_instance_group/generated"
+"services.os_management_hub.src.oci_cli_os_management_hub.generated" = "./services/os_management_hub/src/oci_cli_os_management_hub/generated"
+"services.os_management_hub.src.oci_cli_reporting_managed_instance.generated" = "./services/os_management_hub/src/oci_cli_reporting_managed_instance/generated"
+"services.log_analytics.tests" = "./services/log_analytics/tests"
+"services.log_analytics.src" = "./services/log_analytics/src"
+"services.log_analytics.src.oci_cli_log_analytics" = "./services/log_analytics/src/oci_cli_log_analytics"
+"services.log_analytics.src.oci_cli_log_analytics.generated" = "./services/log_analytics/src/oci_cli_log_analytics/generated"
+"services.database_migration.tests" = "./services/database_migration/tests"
+"services.database_migration.src" = "./services/database_migration/src"
+"services.database_migration.src.oci_cli_database_migration" = "./services/database_migration/src/oci_cli_database_migration"
+"services.database_migration.src.oci_cli_database_migration.generated" = "./services/database_migration/src/oci_cli_database_migration/generated"
+"services.em_warehouse.tests" = "./services/em_warehouse/tests"
+"services.em_warehouse.src" = "./services/em_warehouse/src"
+"services.em_warehouse.src.oci_cli_em_warehouse" = "./services/em_warehouse/src/oci_cli_em_warehouse"
+"services.em_warehouse.src.oci_cli_em_warehouse.generated" = "./services/em_warehouse/src/oci_cli_em_warehouse/generated"
+"services.rover.tests" = "./services/rover/tests"
+"services.rover.src" = "./services/rover/src"
+"services.rover.src.oci_cli_rover" = "./services/rover/src/oci_cli_rover"
+"services.rover.src.oci_cli_rover_node" = "./services/rover/src/oci_cli_rover_node"
+"services.rover.src.oci_cli_rover_bundle" = "./services/rover/src/oci_cli_rover_bundle"
+"services.rover.src.oci_cli_shape" = "./services/rover/src/oci_cli_shape"
+"services.rover.src.oci_cli_work_requests" = "./services/rover/src/oci_cli_work_requests"
+"services.rover.src.oci_cli_rover_cluster" = "./services/rover/src/oci_cli_rover_cluster"
+"services.rover.src.oci_cli_rover_entitlement" = "./services/rover/src/oci_cli_rover_entitlement"
+"services.rover.src.oci_cli_rover.generated" = "./services/rover/src/oci_cli_rover/generated"
+"services.rover.src.oci_cli_rover_node.generated" = "./services/rover/src/oci_cli_rover_node/generated"
+"services.rover.src.oci_cli_rover_bundle.generated" = "./services/rover/src/oci_cli_rover_bundle/generated"
+"services.rover.src.oci_cli_shape.generated" = "./services/rover/src/oci_cli_shape/generated"
+"services.rover.src.oci_cli_work_requests.generated" = "./services/rover/src/oci_cli_work_requests/generated"
+"services.rover.src.oci_cli_rover_cluster.generated" = "./services/rover/src/oci_cli_rover_cluster/generated"
+"services.rover.src.oci_cli_rover_entitlement.generated" = "./services/rover/src/oci_cli_rover_entitlement/generated"
+"services.email.tests" = "./services/email/tests"
+"services.email.src" = "./services/email/src"
+"services.email.src.oci_cli_email" = "./services/email/src/oci_cli_email"
+"services.email.src.oci_cli_email.generated" = "./services/email/src/oci_cli_email/generated"
+"services.ai_speech.tests" = "./services/ai_speech/tests"
+"services.ai_speech.src" = "./services/ai_speech/src"
+"services.ai_speech.src.oci_cli_ai_service_speech" = "./services/ai_speech/src/oci_cli_ai_service_speech"
+"services.ai_speech.src.oci_cli_ai_service_speech.generated" = "./services/ai_speech/src/oci_cli_ai_service_speech/generated"
+"services.marketplace_publisher.tests" = "./services/marketplace_publisher/tests"
+"services.marketplace_publisher.src" = "./services/marketplace_publisher/src"
+"services.marketplace_publisher.src.oci_cli_marketplace_publisher" = "./services/marketplace_publisher/src/oci_cli_marketplace_publisher"
+"services.marketplace_publisher.src.oci_cli_marketplace_publisher.generated" = "./services/marketplace_publisher/src/oci_cli_marketplace_publisher/generated"
+"services.psa.tests" = "./services/psa/tests"
+"services.psa.src" = "./services/psa/src"
+"services.psa.src.oci_cli_private_service_access" = "./services/psa/src/oci_cli_private_service_access"
+"services.psa.src.oci_cli_private_service_access.generated" = "./services/psa/src/oci_cli_private_service_access/generated"
+"services.ai_document.tests" = "./services/ai_document/tests"
+"services.ai_document.src" = "./services/ai_document/src"
+"services.ai_document.src.oci_cli_ai_service_document" = "./services/ai_document/src/oci_cli_ai_service_document"
+"services.ai_document.src.oci_cli_ai_service_document.generated" = "./services/ai_document/src/oci_cli_ai_service_document/generated"
+"services.dns.tests" = "./services/dns/tests"
+"services.dns.src" = "./services/dns/src"
+"services.dns.src.oci_cli_dns" = "./services/dns/src/oci_cli_dns"
+"services.dns.src.oci_cli_dns.generated" = "./services/dns/src/oci_cli_dns/generated"
+"services.database_tools_runtime.tests" = "./services/database_tools_runtime/tests"
+"services.database_tools_runtime.src" = "./services/database_tools_runtime/src"
+"services.database_tools_runtime.src.oci_cli_database_tools_runtime" = "./services/database_tools_runtime/src/oci_cli_database_tools_runtime"
+"services.database_tools_runtime.src.oci_cli_database_tools_runtime.generated" = "./services/database_tools_runtime/src/oci_cli_database_tools_runtime/generated"
+"services.core.tests" = "./services/core/tests"
+"services.core.src" = "./services/core/src"
+"services.core.src.oci_cli_virtual_network" = "./services/core/src/oci_cli_virtual_network"
+"services.core.src.oci_cli_core" = "./services/core/src/oci_cli_core"
+"services.core.src.oci_cli_compute_management" = "./services/core/src/oci_cli_compute_management"
+"services.core.src.oci_cli_blockstorage" = "./services/core/src/oci_cli_blockstorage"
+"services.core.src.oci_cli_compute" = "./services/core/src/oci_cli_compute"
+"services.core.src.oci_cli_virtual_network.generated" = "./services/core/src/oci_cli_virtual_network/generated"
+"services.core.src.oci_cli_core.generated" = "./services/core/src/oci_cli_core/generated"
+"services.core.src.oci_cli_compute_management.generated" = "./services/core/src/oci_cli_compute_management/generated"
+"services.core.src.oci_cli_blockstorage.generated" = "./services/core/src/oci_cli_blockstorage/generated"
+"services.core.src.oci_cli_compute.generated" = "./services/core/src/oci_cli_compute/generated"
+"services.autoscaling.tests" = "./services/autoscaling/tests"
+"services.autoscaling.src" = "./services/autoscaling/src"
+"services.autoscaling.src.oci_cli_auto_scaling" = "./services/autoscaling/src/oci_cli_auto_scaling"
+"services.autoscaling.src.oci_cli_auto_scaling.generated" = "./services/autoscaling/src/oci_cli_auto_scaling/generated"
+"services.vault.tests" = "./services/vault/tests"
+"services.vault.src" = "./services/vault/src"
+"services.vault.src.oci_cli_vaults" = "./services/vault/src/oci_cli_vaults"
+"services.vault.src.oci_cli_vaults.generated" = "./services/vault/src/oci_cli_vaults/generated"
+"services.optimizer.tests" = "./services/optimizer/tests"
+"services.optimizer.src" = "./services/optimizer/src"
+"services.optimizer.src.oci_cli_optimizer" = "./services/optimizer/src/oci_cli_optimizer"
+"services.optimizer.src.oci_cli_optimizer.generated" = "./services/optimizer/src/oci_cli_optimizer/generated"
+"services.opensearch.tests" = "./services/opensearch/tests"
+"services.opensearch.src" = "./services/opensearch/src"
+"services.opensearch.src.oci_cli_opensearch_cluster_backup" = "./services/opensearch/src/oci_cli_opensearch_cluster_backup"
+"services.opensearch.src.oci_cli_opensearch_cluster_pipeline" = "./services/opensearch/src/oci_cli_opensearch_cluster_pipeline"
+"services.opensearch.src.oci_cli_opensearch" = "./services/opensearch/src/oci_cli_opensearch"
+"services.opensearch.src.oci_cli_opensearch_cluster" = "./services/opensearch/src/oci_cli_opensearch_cluster"
+"services.opensearch.src.oci_cli_opensearch_cluster_backup.generated" = "./services/opensearch/src/oci_cli_opensearch_cluster_backup/generated"
+"services.opensearch.src.oci_cli_opensearch_cluster_pipeline.generated" = "./services/opensearch/src/oci_cli_opensearch_cluster_pipeline/generated"
+"services.opensearch.src.oci_cli_opensearch.generated" = "./services/opensearch/src/oci_cli_opensearch/generated"
+"services.opensearch.src.oci_cli_opensearch_cluster.generated" = "./services/opensearch/src/oci_cli_opensearch_cluster/generated"
+"services.recovery.tests" = "./services/recovery/tests"
+"services.recovery.src" = "./services/recovery/src"
+"services.recovery.src.oci_cli_database_recovery" = "./services/recovery/src/oci_cli_database_recovery"
+"services.recovery.src.oci_cli_database_recovery.generated" = "./services/recovery/src/oci_cli_database_recovery/generated"
+"services.queue.tests" = "./services/queue/tests"
+"services.queue.src" = "./services/queue/src"
+"services.queue.src.oci_cli_queue_admin" = "./services/queue/src/oci_cli_queue_admin"
+"services.queue.src.oci_cli_queue" = "./services/queue/src/oci_cli_queue"
+"services.queue.src.oci_cli_queue_admin.generated" = "./services/queue/src/oci_cli_queue_admin/generated"
+"services.queue.src.oci_cli_queue.generated" = "./services/queue/src/oci_cli_queue/generated"
+"services.data_labeling_service_dataplane.tests" = "./services/data_labeling_service_dataplane/tests"
+"services.data_labeling_service_dataplane.src" = "./services/data_labeling_service_dataplane/src"
+"services.data_labeling_service_dataplane.src.oci_cli_data_labeling" = "./services/data_labeling_service_dataplane/src/oci_cli_data_labeling"
+"services.data_labeling_service_dataplane.src.oci_cli_data_labeling.generated" = "./services/data_labeling_service_dataplane/src/oci_cli_data_labeling/generated"
+"services.model_deployment.tests" = "./services/model_deployment/tests"
+"services.model_deployment.src" = "./services/model_deployment/src"
+"services.model_deployment.src.oci_cli_model_deployment" = "./services/model_deployment/src/oci_cli_model_deployment"
+"services.model_deployment.src.oci_cli_model_deployment.generated" = "./services/model_deployment/src/oci_cli_model_deployment/generated"
+"services.streaming.tests" = "./services/streaming/tests"
+"services.streaming.src" = "./services/streaming/src"
+"services.streaming.src.oci_cli_stream_admin" = "./services/streaming/src/oci_cli_stream_admin"
+"services.streaming.src.oci_cli_streaming" = "./services/streaming/src/oci_cli_streaming"
+"services.streaming.src.oci_cli_stream" = "./services/streaming/src/oci_cli_stream"
+"services.streaming.src.oci_cli_stream_admin.generated" = "./services/streaming/src/oci_cli_stream_admin/generated"
+"services.streaming.src.oci_cli_streaming.generated" = "./services/streaming/src/oci_cli_streaming/generated"
+"services.streaming.src.oci_cli_stream.generated" = "./services/streaming/src/oci_cli_stream/generated"
+"services.data_labeling_service.tests" = "./services/data_labeling_service/tests"
+"services.data_labeling_service.src" = "./services/data_labeling_service/src"
+"services.data_labeling_service.src.oci_cli_data_labeling_management" = "./services/data_labeling_service/src/oci_cli_data_labeling_management"
+"services.data_labeling_service.src.oci_cli_data_labeling_management.generated" = "./services/data_labeling_service/src/oci_cli_data_labeling_management/generated"
+"services.identity_data_plane.tests" = "./services/identity_data_plane/tests"
+"services.identity_data_plane.src" = "./services/identity_data_plane/src"
+"services.identity_data_plane.src.oci_cli_dataplane" = "./services/identity_data_plane/src/oci_cli_dataplane"
+"services.identity_data_plane.src.oci_cli_dataplane.generated" = "./services/identity_data_plane/src/oci_cli_dataplane/generated"
+"services.service_catalog.tests" = "./services/service_catalog/tests"
+"services.service_catalog.src" = "./services/service_catalog/src"
+"services.service_catalog.src.oci_cli_service_catalog" = "./services/service_catalog/src/oci_cli_service_catalog"
+"services.service_catalog.src.oci_cli_service_catalog.generated" = "./services/service_catalog/src/oci_cli_service_catalog/generated"
+"services.database_management.tests" = "./services/database_management/tests"
+"services.database_management.src" = "./services/database_management/src"
+"services.database_management.src.oci_cli_db_management" = "./services/database_management/src/oci_cli_db_management"
+"services.database_management.src.oci_cli_sql_tuning" = "./services/database_management/src/oci_cli_sql_tuning"
+"services.database_management.src.oci_cli_managed_my_sql_databases" = "./services/database_management/src/oci_cli_managed_my_sql_databases"
+"services.database_management.src.oci_cli_database_management" = "./services/database_management/src/oci_cli_database_management"
+"services.database_management.src.oci_cli_perfhub" = "./services/database_management/src/oci_cli_perfhub"
+"services.database_management.src.oci_cli_diagnosability" = "./services/database_management/src/oci_cli_diagnosability"
+"services.database_management.src.oci_cli_db_management.generated" = "./services/database_management/src/oci_cli_db_management/generated"
+"services.database_management.src.oci_cli_sql_tuning.generated" = "./services/database_management/src/oci_cli_sql_tuning/generated"
+"services.database_management.src.oci_cli_managed_my_sql_databases.generated" = "./services/database_management/src/oci_cli_managed_my_sql_databases/generated"
+"services.database_management.src.oci_cli_database_management.generated" = "./services/database_management/src/oci_cli_database_management/generated"
+"services.database_management.src.oci_cli_perfhub.generated" = "./services/database_management/src/oci_cli_perfhub/generated"
+"services.database_management.src.oci_cli_diagnosability.generated" = "./services/database_management/src/oci_cli_diagnosability/generated"
+"services.api_platform.tests" = "./services/api_platform/tests"
+"services.api_platform.src" = "./services/api_platform/src"
+"services.api_platform.src.oci_cli_api_platform" = "./services/api_platform/src/oci_cli_api_platform"
+"services.api_platform.src.oci_cli_api_platform.generated" = "./services/api_platform/src/oci_cli_api_platform/generated"
+"services.osub_subscription.tests" = "./services/osub_subscription/tests"
+"services.osub_subscription.src" = "./services/osub_subscription/src"
+"services.osub_subscription.src.oci_cli_subscription" = "./services/osub_subscription/src/oci_cli_subscription"
+"services.osub_subscription.src.oci_cli_osub_subscription" = "./services/osub_subscription/src/oci_cli_osub_subscription"
+"services.osub_subscription.src.oci_cli_ratecard" = "./services/osub_subscription/src/oci_cli_ratecard"
+"services.osub_subscription.src.oci_cli_commitment" = "./services/osub_subscription/src/oci_cli_commitment"
+"services.osub_subscription.src.oci_cli_subscription.generated" = "./services/osub_subscription/src/oci_cli_subscription/generated"
+"services.osub_subscription.src.oci_cli_osub_subscription.generated" = "./services/osub_subscription/src/oci_cli_osub_subscription/generated"
+"services.osub_subscription.src.oci_cli_ratecard.generated" = "./services/osub_subscription/src/oci_cli_ratecard/generated"
+"services.osub_subscription.src.oci_cli_commitment.generated" = "./services/osub_subscription/src/oci_cli_commitment/generated"
+"services.osub_organization_subscription.tests" = "./services/osub_organization_subscription/tests"
+"services.osub_organization_subscription.src" = "./services/osub_organization_subscription/src"
+"services.osub_organization_subscription.src.oci_cli_organization_subscription" = "./services/osub_organization_subscription/src/oci_cli_organization_subscription"
+"services.osub_organization_subscription.src.oci_cli_organization_subscription.generated" = "./services/osub_organization_subscription/src/oci_cli_organization_subscription/generated"
+"services.multicloud.tests" = "./services/multicloud/tests"
+"services.multicloud.src" = "./services/multicloud/src"
+"services.multicloud.src.oci_cli_metadata" = "./services/multicloud/src/oci_cli_metadata"
+"services.multicloud.src.oci_cli_multicloudsubscriptions" = "./services/multicloud/src/oci_cli_multicloudsubscriptions"
+"services.multicloud.src.oci_cli_multi_clouds_metadata" = "./services/multicloud/src/oci_cli_multi_clouds_metadata"
+"services.multicloud.src.oci_cli_omhub_resource_anchor" = "./services/multicloud/src/oci_cli_omhub_resource_anchor"
+"services.multicloud.src.oci_cli_multicloud_alerts" = "./services/multicloud/src/oci_cli_multicloud_alerts"
+"services.multicloud.src.oci_cli_multicloud_resources" = "./services/multicloud/src/oci_cli_multicloud_resources"
+"services.multicloud.src.oci_cli_multicloud" = "./services/multicloud/src/oci_cli_multicloud"
+"services.multicloud.src.oci_cli_omhub_network_anchor" = "./services/multicloud/src/oci_cli_omhub_network_anchor"
+"services.multicloud.src.oci_cli_multicloud_policies" = "./services/multicloud/src/oci_cli_multicloud_policies"
+"services.multicloud.src.oci_cli_metadata.generated" = "./services/multicloud/src/oci_cli_metadata/generated"
+"services.multicloud.src.oci_cli_multicloudsubscriptions.generated" = "./services/multicloud/src/oci_cli_multicloudsubscriptions/generated"
+"services.multicloud.src.oci_cli_multi_clouds_metadata.generated" = "./services/multicloud/src/oci_cli_multi_clouds_metadata/generated"
+"services.multicloud.src.oci_cli_omhub_resource_anchor.generated" = "./services/multicloud/src/oci_cli_omhub_resource_anchor/generated"
+"services.multicloud.src.oci_cli_multicloud_alerts.generated" = "./services/multicloud/src/oci_cli_multicloud_alerts/generated"
+"services.multicloud.src.oci_cli_multicloud_resources.generated" = "./services/multicloud/src/oci_cli_multicloud_resources/generated"
+"services.multicloud.src.oci_cli_multicloud.generated" = "./services/multicloud/src/oci_cli_multicloud/generated"
+"services.multicloud.src.oci_cli_omhub_network_anchor.generated" = "./services/multicloud/src/oci_cli_omhub_network_anchor/generated"
+"services.multicloud.src.oci_cli_multicloud_policies.generated" = "./services/multicloud/src/oci_cli_multicloud_policies/generated"
+"services.osp_gateway.tests" = "./services/osp_gateway/tests"
+"services.osp_gateway.src" = "./services/osp_gateway/src"
+"services.osp_gateway.src.oci_cli_invoice_service" = "./services/osp_gateway/src/oci_cli_invoice_service"
+"services.osp_gateway.src.oci_cli_address_rule_service" = "./services/osp_gateway/src/oci_cli_address_rule_service"
+"services.osp_gateway.src.oci_cli_osp_gateway" = "./services/osp_gateway/src/oci_cli_osp_gateway"
+"services.osp_gateway.src.oci_cli_subscription_service" = "./services/osp_gateway/src/oci_cli_subscription_service"
+"services.osp_gateway.src.oci_cli_address_service" = "./services/osp_gateway/src/oci_cli_address_service"
+"services.osp_gateway.src.oci_cli_invoice_service.generated" = "./services/osp_gateway/src/oci_cli_invoice_service/generated"
+"services.osp_gateway.src.oci_cli_address_rule_service.generated" = "./services/osp_gateway/src/oci_cli_address_rule_service/generated"
+"services.osp_gateway.src.oci_cli_osp_gateway.generated" = "./services/osp_gateway/src/oci_cli_osp_gateway/generated"
+"services.osp_gateway.src.oci_cli_subscription_service.generated" = "./services/osp_gateway/src/oci_cli_subscription_service/generated"
+"services.osp_gateway.src.oci_cli_address_service.generated" = "./services/osp_gateway/src/oci_cli_address_service/generated"
+"services.service_manager_proxy.tests" = "./services/service_manager_proxy/tests"
+"services.service_manager_proxy.src" = "./services/service_manager_proxy/src"
+"services.service_manager_proxy.src.oci_cli_service_manager_proxy" = "./services/service_manager_proxy/src/oci_cli_service_manager_proxy"
+"services.service_manager_proxy.src.oci_cli_service_manager_proxy.generated" = "./services/service_manager_proxy/src/oci_cli_service_manager_proxy/generated"
+"services.media_services.tests" = "./services/media_services/tests"
+"services.media_services.src" = "./services/media_services/src"
+"services.media_services.src.oci_cli_media_services" = "./services/media_services/src/oci_cli_media_services"
+"services.media_services.src.oci_cli_media_stream" = "./services/media_services/src/oci_cli_media_stream"
+"services.media_services.src.oci_cli_media_services.generated" = "./services/media_services/src/oci_cli_media_services/generated"
+"services.media_services.src.oci_cli_media_stream.generated" = "./services/media_services/src/oci_cli_media_stream/generated"
+"services.delegate_access_control.tests" = "./services/delegate_access_control/tests"
+"services.delegate_access_control.src" = "./services/delegate_access_control/src"
+"services.delegate_access_control.src.oci_cli_delegate_access_control" = "./services/delegate_access_control/src/oci_cli_delegate_access_control"
+"services.delegate_access_control.src.oci_cli_work_request" = "./services/delegate_access_control/src/oci_cli_work_request"
+"services.delegate_access_control.src.oci_cli_delegate_access_control.generated" = "./services/delegate_access_control/src/oci_cli_delegate_access_control/generated"
+"services.delegate_access_control.src.oci_cli_work_request.generated" = "./services/delegate_access_control/src/oci_cli_work_request/generated"
+"services.redis.tests" = "./services/redis/tests"
+"services.redis.src" = "./services/redis/src"
+"services.redis.src.oci_cli_oci_cache_default_config_set" = "./services/redis/src/oci_cli_oci_cache_default_config_set"
+"services.redis.src.oci_cli_oci_cache_user" = "./services/redis/src/oci_cli_oci_cache_user"
+"services.redis.src.oci_cli_oci_cache_engine_options" = "./services/redis/src/oci_cli_oci_cache_engine_options"
+"services.redis.src.oci_cli_redis" = "./services/redis/src/oci_cli_redis"
+"services.redis.src.oci_cli_redis_cluster" = "./services/redis/src/oci_cli_redis_cluster"
+"services.redis.src.oci_cli_redis_identity" = "./services/redis/src/oci_cli_redis_identity"
+"services.redis.src.oci_cli_oci_cache_backup" = "./services/redis/src/oci_cli_oci_cache_backup"
+"services.redis.src.oci_cli_oci_cache_config_set" = "./services/redis/src/oci_cli_oci_cache_config_set"
+"services.redis.src.oci_cli_oci_cache_default_config_set.generated" = "./services/redis/src/oci_cli_oci_cache_default_config_set/generated"
+"services.redis.src.oci_cli_oci_cache_user.generated" = "./services/redis/src/oci_cli_oci_cache_user/generated"
+"services.redis.src.oci_cli_oci_cache_engine_options.generated" = "./services/redis/src/oci_cli_oci_cache_engine_options/generated"
+"services.redis.src.oci_cli_redis.generated" = "./services/redis/src/oci_cli_redis/generated"
+"services.redis.src.oci_cli_redis_cluster.generated" = "./services/redis/src/oci_cli_redis_cluster/generated"
+"services.redis.src.oci_cli_redis_identity.generated" = "./services/redis/src/oci_cli_redis_identity/generated"
+"services.redis.src.oci_cli_oci_cache_backup.generated" = "./services/redis/src/oci_cli_oci_cache_backup/generated"
+"services.redis.src.oci_cli_oci_cache_config_set.generated" = "./services/redis/src/oci_cli_oci_cache_config_set/generated"
+"services.analytics.tests" = "./services/analytics/tests"
+"services.analytics.src" = "./services/analytics/src"
+"services.analytics.src.oci_cli_analytics" = "./services/analytics/src/oci_cli_analytics"
+"services.analytics.src.oci_cli_analytics.generated" = "./services/analytics/src/oci_cli_analytics/generated"
+"services.data_catalog.tests" = "./services/data_catalog/tests"
+"services.data_catalog.src" = "./services/data_catalog/src"
+"services.data_catalog.src.oci_cli_data_catalog" = "./services/data_catalog/src/oci_cli_data_catalog"
+"services.data_catalog.src.oci_cli_data_catalog.generated" = "./services/data_catalog/src/oci_cli_data_catalog/generated"
+"services.artifacts.tests" = "./services/artifacts/tests"
+"services.artifacts.src" = "./services/artifacts/src"
+"services.artifacts.src.oci_cli_artifacts" = "./services/artifacts/src/oci_cli_artifacts"
+"services.artifacts.src.oci_cli_artifacts.generated" = "./services/artifacts/src/oci_cli_artifacts/generated"
+"services.threat_intelligence.tests" = "./services/threat_intelligence/tests"
+"services.threat_intelligence.src" = "./services/threat_intelligence/src"
+"services.threat_intelligence.src.oci_cli_threatintel" = "./services/threat_intelligence/src/oci_cli_threatintel"
+"services.threat_intelligence.src.oci_cli_threatintel.generated" = "./services/threat_intelligence/src/oci_cli_threatintel/generated"
+"services.governance_rules_control_plane.tests" = "./services/governance_rules_control_plane/tests"
+"services.governance_rules_control_plane.src" = "./services/governance_rules_control_plane/src"
+"services.governance_rules_control_plane.src.oci_cli_governance_rule" = "./services/governance_rules_control_plane/src/oci_cli_governance_rule"
+"services.governance_rules_control_plane.src.oci_cli_governance_rules_control_plane" = "./services/governance_rules_control_plane/src/oci_cli_governance_rules_control_plane"
+"services.governance_rules_control_plane.src.oci_cli_work_request" = "./services/governance_rules_control_plane/src/oci_cli_work_request"
+"services.governance_rules_control_plane.src.oci_cli_governance_rule.generated" = "./services/governance_rules_control_plane/src/oci_cli_governance_rule/generated"
+"services.governance_rules_control_plane.src.oci_cli_governance_rules_control_plane.generated" = "./services/governance_rules_control_plane/src/oci_cli_governance_rules_control_plane/generated"
+"services.governance_rules_control_plane.src.oci_cli_work_request.generated" = "./services/governance_rules_control_plane/src/oci_cli_work_request/generated"
+"services.data_flow.tests" = "./services/data_flow/tests"
+"services.data_flow.src" = "./services/data_flow/src"
+"services.data_flow.src.oci_cli_data_flow" = "./services/data_flow/src/oci_cli_data_flow"
+"services.data_flow.src.oci_cli_data_flow.generated" = "./services/data_flow/src/oci_cli_data_flow/generated"
+"services.jms_java_downloads.tests" = "./services/jms_java_downloads/tests"
+"services.jms_java_downloads.src" = "./services/jms_java_downloads/src"
+"services.jms_java_downloads.src.oci_cli_java_download" = "./services/jms_java_downloads/src/oci_cli_java_download"
+"services.jms_java_downloads.src.oci_cli_java_download.generated" = "./services/jms_java_downloads/src/oci_cli_java_download/generated"
+"services.fleet_software_update.tests" = "./services/fleet_software_update/tests"
+"services.fleet_software_update.src" = "./services/fleet_software_update/src"
+"services.fleet_software_update.src.oci_cli_fleet_software_update" = "./services/fleet_software_update/src/oci_cli_fleet_software_update"
+"services.fleet_software_update.src.oci_cli_fleet_software_update.generated" = "./services/fleet_software_update/src/oci_cli_fleet_software_update/generated"
+"services.apigateway.tests" = "./services/apigateway/tests"
+"services.apigateway.src" = "./services/apigateway/src"
+"services.apigateway.src.oci_cli_usage_plans" = "./services/apigateway/src/oci_cli_usage_plans"
+"services.apigateway.src.oci_cli_apigateway" = "./services/apigateway/src/oci_cli_apigateway"
+"services.apigateway.src.oci_cli_gateway" = "./services/apigateway/src/oci_cli_gateway"
+"services.apigateway.src.oci_cli_subscribers" = "./services/apigateway/src/oci_cli_subscribers"
+"services.apigateway.src.oci_cli_api_gateway" = "./services/apigateway/src/oci_cli_api_gateway"
+"services.apigateway.src.oci_cli_deployment" = "./services/apigateway/src/oci_cli_deployment"
+"services.apigateway.src.oci_cli_work_requests" = "./services/apigateway/src/oci_cli_work_requests"
+"services.apigateway.src.oci_cli_usage_plans.generated" = "./services/apigateway/src/oci_cli_usage_plans/generated"
+"services.apigateway.src.oci_cli_apigateway.generated" = "./services/apigateway/src/oci_cli_apigateway/generated"
+"services.apigateway.src.oci_cli_gateway.generated" = "./services/apigateway/src/oci_cli_gateway/generated"
+"services.apigateway.src.oci_cli_subscribers.generated" = "./services/apigateway/src/oci_cli_subscribers/generated"
+"services.apigateway.src.oci_cli_api_gateway.generated" = "./services/apigateway/src/oci_cli_api_gateway/generated"
+"services.apigateway.src.oci_cli_deployment.generated" = "./services/apigateway/src/oci_cli_deployment/generated"
+"services.apigateway.src.oci_cli_work_requests.generated" = "./services/apigateway/src/oci_cli_work_requests/generated"
+"services.load_balancer.tests" = "./services/load_balancer/tests"
+"services.load_balancer.src" = "./services/load_balancer/src"
+"services.load_balancer.src.oci_cli_load_balancer" = "./services/load_balancer/src/oci_cli_load_balancer"
+"services.load_balancer.src.oci_cli_load_balancer.generated" = "./services/load_balancer/src/oci_cli_load_balancer/generated"
+"services.blockchain.tests" = "./services/blockchain/tests"
+"services.blockchain.src" = "./services/blockchain/src"
+"services.blockchain.src.oci_cli_blockchain_platform" = "./services/blockchain/src/oci_cli_blockchain_platform"
+"services.blockchain.src.oci_cli_blockchain_platform.generated" = "./services/blockchain/src/oci_cli_blockchain_platform/generated"
+"services.gdp.tests" = "./services/gdp/tests"
+"services.gdp.src" = "./services/gdp/src"
+"services.gdp.src.oci_cli_guarded_data_pipeline" = "./services/gdp/src/oci_cli_guarded_data_pipeline"
+"services.gdp.src.oci_cli_guarded_data_pipeline.generated" = "./services/gdp/src/oci_cli_guarded_data_pipeline/generated"
+"services.ai_vision.tests" = "./services/ai_vision/tests"
+"services.ai_vision.src" = "./services/ai_vision/src"
+"services.ai_vision.src.oci_cli_ai_service_vision" = "./services/ai_vision/src/oci_cli_ai_service_vision"
+"services.ai_vision.src.oci_cli_ai_service_vision.generated" = "./services/ai_vision/src/oci_cli_ai_service_vision/generated"
+"services.distributed_database.tests" = "./services/distributed_database/tests"
+"services.distributed_database.src" = "./services/distributed_database/src"
+"services.distributed_database.src.oci_cli_distributed_db_private_endpoint_service" = "./services/distributed_database/src/oci_cli_distributed_db_private_endpoint_service"
+"services.distributed_database.src.oci_cli_distributed_autonomous_db_service" = "./services/distributed_database/src/oci_cli_distributed_autonomous_db_service"
+"services.distributed_database.src.oci_cli_distributed_db_service" = "./services/distributed_database/src/oci_cli_distributed_db_service"
+"services.distributed_database.src.oci_cli_distributed_db_work_request_service" = "./services/distributed_database/src/oci_cli_distributed_db_work_request_service"
+"services.distributed_database.src.oci_cli_distributed_database" = "./services/distributed_database/src/oci_cli_distributed_database"
+"services.distributed_database.src.oci_cli_distributed_db_private_endpoint_service.generated" = "./services/distributed_database/src/oci_cli_distributed_db_private_endpoint_service/generated"
+"services.distributed_database.src.oci_cli_distributed_autonomous_db_service.generated" = "./services/distributed_database/src/oci_cli_distributed_autonomous_db_service/generated"
+"services.distributed_database.src.oci_cli_distributed_db_service.generated" = "./services/distributed_database/src/oci_cli_distributed_db_service/generated"
+"services.distributed_database.src.oci_cli_distributed_db_work_request_service.generated" = "./services/distributed_database/src/oci_cli_distributed_db_work_request_service/generated"
+"services.distributed_database.src.oci_cli_distributed_database.generated" = "./services/distributed_database/src/oci_cli_distributed_database/generated"
+"services.apm_config.tests" = "./services/apm_config/tests"
+"services.apm_config.src" = "./services/apm_config/src"
+"services.apm_config.src.oci_cli_config" = "./services/apm_config/src/oci_cli_config"
+"services.apm_config.src.oci_cli_config.generated" = "./services/apm_config/src/oci_cli_config/generated"
+"services.announcements_service.tests" = "./services/announcements_service/tests"
+"services.announcements_service.src" = "./services/announcements_service/src"
+"services.announcements_service.src.oci_cli_announcement" = "./services/announcements_service/src/oci_cli_announcement"
+"services.announcements_service.src.oci_cli_announcements_service" = "./services/announcements_service/src/oci_cli_announcements_service"
+"services.announcements_service.src.oci_cli_announcements_preferences" = "./services/announcements_service/src/oci_cli_announcements_preferences"
+"services.announcements_service.src.oci_cli_service" = "./services/announcements_service/src/oci_cli_service"
+"services.announcements_service.src.oci_cli_announcement_subscription" = "./services/announcements_service/src/oci_cli_announcement_subscription"
+"services.announcements_service.src.oci_cli_announcement.generated" = "./services/announcements_service/src/oci_cli_announcement/generated"
+"services.announcements_service.src.oci_cli_announcements_service.generated" = "./services/announcements_service/src/oci_cli_announcements_service/generated"
+"services.announcements_service.src.oci_cli_announcements_preferences.generated" = "./services/announcements_service/src/oci_cli_announcements_preferences/generated"
+"services.announcements_service.src.oci_cli_service.generated" = "./services/announcements_service/src/oci_cli_service/generated"
+"services.announcements_service.src.oci_cli_announcement_subscription.generated" = "./services/announcements_service/src/oci_cli_announcement_subscription/generated"
+"services.resource_search.tests" = "./services/resource_search/tests"
+"services.resource_search.src" = "./services/resource_search/src"
+"services.resource_search.src.oci_cli_resource_search" = "./services/resource_search/src/oci_cli_resource_search"
+"services.resource_search.src.oci_cli_resource_search.generated" = "./services/resource_search/src/oci_cli_resource_search/generated"
+"services.golden_gate.tests" = "./services/golden_gate/tests"
+"services.golden_gate.src" = "./services/golden_gate/src"
+"services.golden_gate.src.oci_cli_golden_gate" = "./services/golden_gate/src/oci_cli_golden_gate"
+"services.golden_gate.src.oci_cli_golden_gate.generated" = "./services/golden_gate/src/oci_cli_golden_gate/generated"
+"services.demand_signal.tests" = "./services/demand_signal/tests"
+"services.demand_signal.src" = "./services/demand_signal/src"
+"services.demand_signal.src.oci_cli_occ_metric_alarm" = "./services/demand_signal/src/oci_cli_occ_metric_alarm"
+"services.demand_signal.src.oci_cli_occ_demand_signal" = "./services/demand_signal/src/oci_cli_occ_demand_signal"
+"services.demand_signal.src.oci_cli_demand_signal" = "./services/demand_signal/src/oci_cli_demand_signal"
+"services.demand_signal.src.oci_cli_occ_metric_alarm.generated" = "./services/demand_signal/src/oci_cli_occ_metric_alarm/generated"
+"services.demand_signal.src.oci_cli_occ_demand_signal.generated" = "./services/demand_signal/src/oci_cli_occ_demand_signal/generated"
+"services.demand_signal.src.oci_cli_demand_signal.generated" = "./services/demand_signal/src/oci_cli_demand_signal/generated"
+"services.dashboard_service.tests" = "./services/dashboard_service/tests"
+"services.dashboard_service.src" = "./services/dashboard_service/src"
+"services.dashboard_service.src.oci_cli_dashboard_group" = "./services/dashboard_service/src/oci_cli_dashboard_group"
+"services.dashboard_service.src.oci_cli_dashboard" = "./services/dashboard_service/src/oci_cli_dashboard"
+"services.dashboard_service.src.oci_cli_dashboard_service" = "./services/dashboard_service/src/oci_cli_dashboard_service"
+"services.dashboard_service.src.oci_cli_dashboard_group.generated" = "./services/dashboard_service/src/oci_cli_dashboard_group/generated"
+"services.dashboard_service.src.oci_cli_dashboard.generated" = "./services/dashboard_service/src/oci_cli_dashboard/generated"
+"services.dashboard_service.src.oci_cli_dashboard_service.generated" = "./services/dashboard_service/src/oci_cli_dashboard_service/generated"
+"services.generative_ai.tests" = "./services/generative_ai/tests"
+"services.generative_ai.src" = "./services/generative_ai/src"
+"services.generative_ai.src.oci_cli_generative_ai" = "./services/generative_ai/src/oci_cli_generative_ai"
+"services.generative_ai.src.oci_cli_generative_ai.generated" = "./services/generative_ai/src/oci_cli_generative_ai/generated"
+"services.functions.tests" = "./services/functions/tests"
+"services.functions.src" = "./services/functions/src"
+"services.functions.src.oci_cli_functions_invoke" = "./services/functions/src/oci_cli_functions_invoke"
+"services.functions.src.oci_cli_functions" = "./services/functions/src/oci_cli_functions"
+"services.functions.src.oci_cli_functions_management" = "./services/functions/src/oci_cli_functions_management"
+"services.functions.src.oci_cli_functions_invoke.generated" = "./services/functions/src/oci_cli_functions_invoke/generated"
+"services.functions.src.oci_cli_functions.generated" = "./services/functions/src/oci_cli_functions/generated"
+"services.functions.src.oci_cli_functions_management.generated" = "./services/functions/src/oci_cli_functions_management/generated"
+"services.usage.tests" = "./services/usage/tests"
+"services.usage.src" = "./services/usage/src"
+"services.usage.src.oci_cli_rewards" = "./services/usage/src/oci_cli_rewards"
+"services.usage.src.oci_cli_usagelimits" = "./services/usage/src/oci_cli_usagelimits"
+"services.usage.src.oci_cli_usage" = "./services/usage/src/oci_cli_usage"
+"services.usage.src.oci_cli_resources" = "./services/usage/src/oci_cli_resources"
+"services.usage.src.oci_cli_rewards.generated" = "./services/usage/src/oci_cli_rewards/generated"
+"services.usage.src.oci_cli_usagelimits.generated" = "./services/usage/src/oci_cli_usagelimits/generated"
+"services.usage.src.oci_cli_usage.generated" = "./services/usage/src/oci_cli_usage/generated"
+"services.usage.src.oci_cli_resources.generated" = "./services/usage/src/oci_cli_resources/generated"
+"services.cloud_bridge.tests" = "./services/cloud_bridge/tests"
+"services.cloud_bridge.src" = "./services/cloud_bridge/src"
+"services.cloud_bridge.src.oci_cli_cloud_bridge" = "./services/cloud_bridge/src/oci_cli_cloud_bridge"
+"services.cloud_bridge.src.oci_cli_inventory" = "./services/cloud_bridge/src/oci_cli_inventory"
+"services.cloud_bridge.src.oci_cli_common" = "./services/cloud_bridge/src/oci_cli_common"
+"services.cloud_bridge.src.oci_cli_discovery" = "./services/cloud_bridge/src/oci_cli_discovery"
+"services.cloud_bridge.src.oci_cli_ocb_agent_svc" = "./services/cloud_bridge/src/oci_cli_ocb_agent_svc"
+"services.cloud_bridge.src.oci_cli_cloud_bridge.generated" = "./services/cloud_bridge/src/oci_cli_cloud_bridge/generated"
+"services.cloud_bridge.src.oci_cli_inventory.generated" = "./services/cloud_bridge/src/oci_cli_inventory/generated"
+"services.cloud_bridge.src.oci_cli_common.generated" = "./services/cloud_bridge/src/oci_cli_common/generated"
+"services.cloud_bridge.src.oci_cli_discovery.generated" = "./services/cloud_bridge/src/oci_cli_discovery/generated"
+"services.cloud_bridge.src.oci_cli_ocb_agent_svc.generated" = "./services/cloud_bridge/src/oci_cli_ocb_agent_svc/generated"
+"services.desktops.tests" = "./services/desktops/tests"
+"services.desktops.src" = "./services/desktops/src"
+"services.desktops.src.oci_cli_desktop_service" = "./services/desktops/src/oci_cli_desktop_service"
+"services.desktops.src.oci_cli_desktop_service.generated" = "./services/desktops/src/oci_cli_desktop_service/generated"
+"services.file_storage.tests" = "./services/file_storage/tests"
+"services.file_storage.src" = "./services/file_storage/src"
+"services.file_storage.src.oci_cli_file_storage" = "./services/file_storage/src/oci_cli_file_storage"
+"services.file_storage.src.oci_cli_file_storage.generated" = "./services/file_storage/src/oci_cli_file_storage/generated"
+"services.dblm.tests" = "./services/dblm/tests"
+"services.dblm.src" = "./services/dblm/src"
+"services.dblm.src.oci_cli_db_life_cycle_management" = "./services/dblm/src/oci_cli_db_life_cycle_management"
+"services.dblm.src.oci_cli_db_life_cycle_management.generated" = "./services/dblm/src/oci_cli_db_life_cycle_management/generated"
+"services.database.tests" = "./services/database/tests"
+"services.database.src" = "./services/database/src"
+"services.database.src.oci_cli_database" = "./services/database/src/oci_cli_database"
+"services.database.src.oci_cli_database.generated" = "./services/database/src/oci_cli_database/generated"
+"services.container_engine.tests" = "./services/container_engine/tests"
+"services.container_engine.src" = "./services/container_engine/src"
+"services.container_engine.src.oci_cli_container_engine" = "./services/container_engine/src/oci_cli_container_engine"
+"services.container_engine.src.oci_cli_container_engine.generated" = "./services/container_engine/src/oci_cli_container_engine/generated"

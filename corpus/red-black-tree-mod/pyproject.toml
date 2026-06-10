@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "red-black-tree-mod"
+version = "1.22"
+description = "Flexible python implementation of red black trees"
+readme = {text = "\nA pair of python modules implementing red black trees is provided.\n\nRed-black trees are a little slower than treaps (some question this), but they give a nice\nlow standard deviation in operation times, and this code is rather flexible.\n\nA module is provided for red black trees that enforce uniqueness.\nThey allow for set-like use and dictionary-like use.\n\nThis code is known to work on CPython 2.x, CPython 3.x, Pypy and Jython.\n\nMuch of the work here was done by Duncan G. Smith.  Dan just put some finishing touches on it.\n", content-type = "text/plain"}
+license = {text = "MIT"}
+authors = [
+    {name = "Duncan G. Smith, Daniel Richard Stromberg"},
+    {email = "strombrg@gmail.com"},
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 3",
+]
+
+[project.urls]
+Homepage = "http://stromberg.dnsalias.org/~strombrg/red-black-tree-mod/"
+
+[tool.setuptools]
+include-package-data = false
+platforms = ["Cross platform"]
+py-modules = [
+    "red_black_set_mod",
+    "red_black_dict_mod",
+]

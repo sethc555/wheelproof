@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "miscreant"
+version = "0.3.0"
+description = "Misuse-resistant authenticated symmetric encryption"
+keywords = [ "cryptography", "encryption", "security", "streaming",]
+classifiers = [ "Development Status :: 2 - Pre-Alpha", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Natural Language :: English",]
+dependencies = [ "cryptography>=2.0",]
+[[project.authors]]
+name = "Tony Arcieri"
+email = "bascule@gmail.com"
+
+[project.license]
+text = "MIT license"
+
+[project.readme]
+text = "Misuse resistant symmetric encryption library providing AES-SIV (RFC 5297), AES-PMAC-SIV, and STREAM constructions"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/miscreant/miscreant/tree/master/python/"
+
+[project.optional-dependencies]
+testing = []
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.package-dir]
+miscreant = "miscreant"
+
+[tool.setuptools.packages.find]
+exclude = [ "tests",]
+namespaces = false

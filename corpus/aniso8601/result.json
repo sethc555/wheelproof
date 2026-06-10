@@ -2,6 +2,87 @@
   "package": "aniso8601",
   "version": "10.0.1",
   "sdist_url": "https://files.pythonhosted.org/packages/8b/8d/52179c4e3f1978d3d9a285f98c706642522750ef343e9738286130423730/aniso8601-10.0.1.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-ki1hgxmr/aniso8601-10.0.1-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain { ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-3ggw6n6h/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-3ggw6n6h/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-3ggw6n6h/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-3ggw6n6h/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-3ggw6n6h/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Brandon Nielsen"
+      ],
+      [
+        "author-email",
+        "nielsenb@jetfuse.net"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "description-content-type"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "project-url"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://codeberg.org/nielsenb-jf/aniso8601"
+      ],
+      [
+        "keywords",
+        "iso8601 parser"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Brandon Nielsen <nielsenb@jetfuse.net>"
+      ],
+      [
+        "keywords",
+        "iso8601,parser"
+      ],
+      [
+        "project-url",
+        "Homepage, https://codeberg.org/nielsenb-jf/aniso8601"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
 }

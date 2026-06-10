@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jinja2-time"
+version = "0.2.0"
+description = "Jinja2 Extension for Dates and Times"
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "MIT"}
+authors = [{name = "Raphael Pierzina"}, {email = "raphael@hackebrot.de"}]
+maintainers = [{name = "Raphael Pierzina"}, {email = "raphael@hackebrot.de"}]
+keywords = ["jinja2", "extension", "time"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Programming Language :: Python",
+]
+dependencies = [
+    "jinja2",
+    "arrow",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/hackebrot/jinja2-time"
+
+[tool.setuptools]
+packages = [
+    "jinja2_time",
+]
+include-package-data = true
+
+[tool.distutils.bdist_wheel]
+universal = true

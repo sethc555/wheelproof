@@ -1,0 +1,126 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "types-sqlalchemy-utils"
+version = "1.1.0"
+description = "Type Stubs for sqlalchemy-utils"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {text = "GPLv3"}
+authors = [
+    {name = "Binovate Labs"},
+    {email = "cex-dev@binovate.com"},
+]
+keywords = [
+    "stubs sqlalchemy sqlalchemy-utils",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Typing :: Stubs Only",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+requires-python = ">=3.7, <4"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "sqlalchemy-utils==0.41.2",
+    "sqlalchemy2-stubs==0.0.2a38",
+    "mypy==1.10.0",
+    "pipenv-setup==3.2.0",
+    "twine==5.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/cex-solutions/sqlalchemy-utils"
+"Bug Reports" = "https://github.com/cex-solutions/types-sqlalchemy-utils/issues"
+"Source" = "https://github.com/cex-solutions/types-sqlalchemy-utils"
+
+[tool.setuptools]
+packages = [
+    "sqlalchemy_utils-stubs",
+]
+license-files = [
+    "LICENSE",
+]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"*" = [
+    "expression_parser.pyi",
+    "path.pyi",
+    "listeners.pyi",
+    "asserts.pyi",
+    "compat.pyi",
+    "aggregates.pyi",
+    "exceptions.pyi",
+    "expressions.pyi",
+    "__init__.pyi",
+    "models.pyi",
+    "observer.pyi",
+    "query_chain.pyi",
+    "proxy_dict.pyi",
+    "batch.pyi",
+    "decorators.pyi",
+    "i18n.pyi",
+    "utils.pyi",
+    "operators.pyi",
+    "generic.pyi",
+    "view.pyi",
+    "relationships/chained_join.pyi",
+    "relationships/__init__.pyi",
+    "primitives/currency.pyi",
+    "primitives/weekday.pyi",
+    "primitives/weekdays.pyi",
+    "primitives/ltree.pyi",
+    "primitives/__init__.pyi",
+    "primitives/country.pyi",
+    "types/ts_vector.pyi",
+    "types/choice.pyi",
+    "types/currency.pyi",
+    "types/timezone.pyi",
+    "types/json.pyi",
+    "types/phone_number.pyi",
+    "types/arrow.pyi",
+    "types/uuid.pyi",
+    "types/range.pyi",
+    "types/pg_composite.pyi",
+    "types/weekdays.pyi",
+    "types/locale.pyi",
+    "types/scalar_coercible.pyi",
+    "types/ltree.pyi",
+    "types/url.pyi",
+    "types/__init__.pyi",
+    "types/country.pyi",
+    "types/email.pyi",
+    "types/bit.pyi",
+    "types/ip_address.pyi",
+    "types/password.pyi",
+    "types/scalar_list.pyi",
+    "types/color.pyi",
+    "types/enriched_datetime/pendulum_date.pyi",
+    "types/enriched_datetime/pendulum_datetime.pyi",
+    "types/enriched_datetime/__init__.pyi",
+    "types/enriched_datetime/arrow_datetime.pyi",
+    "types/enriched_datetime/enriched_date_type.pyi",
+    "types/enriched_datetime/enriched_datetime_type.pyi",
+    "types/encrypted/padding.pyi",
+    "types/encrypted/__init__.pyi",
+    "types/encrypted/encrypted_type.pyi",
+    "functions/orm.pyi",
+    "functions/database.pyi",
+    "functions/mock.pyi",
+    "functions/render.pyi",
+    "functions/sort_query.pyi",
+    "functions/__init__.pyi",
+    "functions/foreign_keys.pyi",
+    "functions/defer_except.pyi",
+    "METADATA.toml",
+]

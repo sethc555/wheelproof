@@ -1,0 +1,30 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gspread-dataframe"
+version = "4.0.0"
+description = "Read/write gspread worksheets using pandas DataFrames"
+keywords = [ "spreadsheets", "google-spreadsheets", "pandas", "dataframe",]
+readme = "README.rst"
+classifiers = [ "Programming Language :: Python", "Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Intended Audience :: Science/Research", "Topic :: Office/Business :: Financial :: Spreadsheet", "Topic :: Software Development :: Libraries :: Python Modules",]
+dependencies = [ "gspread>=3.0.0", "pandas>=0.24.0", "six>=1.12.0",]
+[[project.authors]]
+name = "Robin Thomas"
+email = "rthomas900@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/robin900/gspread-dataframe"
+
+[project.optional-dependencies]
+testing = [ "oauth2client",]
+
+[tool.setuptools]
+py-modules = [ "gspread_dataframe",]
+zip-safe = true
+license-files = [ "LICENSE",]
+include-package-data = false

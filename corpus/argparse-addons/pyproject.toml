@@ -1,0 +1,26 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "argparse_addons"
+version = "0.12.0"
+description = "Additional argparse types and actions."
+keywords = [ "argparse",]
+readme = "README.rst"
+classifiers = [ "License :: OSI Approved :: MIT License",]
+requires-python = ">=3.6"
+dependencies = []
+[[project.authors]]
+name = "Erik Moqvist"
+email = "erik.moqvist@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/eerimoq/argparse_addons"
+
+[tool.setuptools]
+py-modules = [ "argparse_addons",]
+include-package-data = false

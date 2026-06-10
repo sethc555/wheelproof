@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "segment-analytics-python"
+version = "2.3.6"
+description = "The hassle-free way to integrate analytics into any python application."
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Operating System :: OS Independent", "Programming Language :: Python", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11",]
+requires-python = ">=3.9.0"
+dependencies = [ "requests~=2.7", "backoff~=2.1", "python-dateutil~=2.2", "PyJWT~=2.12",]
+[[project.authors]]
+name = "Segment"
+email = "friends@segment.com"
+
+[[project.maintainers]]
+name = "Segment"
+email = "friends@segment.com"
+
+[project.license]
+text = "MIT License"
+
+[project.readme]
+text = "Segment is the simplest way to integrate analytics into your application.\nOne API allows you to turn on any other analytics service. No more learning\nnew APIs, repeated code, and wasted development time.\n\nThis is the official python client that wraps the Segment REST API (https://segment.com).\n\nDocumentation and more details at https://github.com/segmentio/analytics-python"
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/segmentio/analytics-python"
+
+[project.optional-dependencies]
+test = [ "mock==2.0.0", "pylint==3.3.1", "flake8==3.7.9",]
+
+[tool.setuptools]
+packages = [ "segment.analytics", "segment.analytics.test",]
+include-package-data = false

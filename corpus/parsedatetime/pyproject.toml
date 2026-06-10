@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "parsedatetime"
+version = "2.6"
+description = "Parse human-readable date/time text."
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "License :: OSI Approved :: Apache Software License", "Operating System :: OS Independent", "Topic :: Text Processing", "Topic :: Software Development :: Libraries :: Python Modules", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7",]
+[[project.authors]]
+name = "Mike Taylor"
+email = "bear@bear.im"
+
+[project.license]
+text = "Apache License 2.0"
+
+[project.urls]
+Homepage = "https://github.com/bear/parsedatetime"
+Download = "https://pypi.python.org/pypi/parsedatetime"
+
+[project.optional-dependencies]
+testing = [ "pytest",]
+
+[tool.setuptools]
+platforms = [ "Any",]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+exclude = [ "tests", "docs",]
+namespaces = false

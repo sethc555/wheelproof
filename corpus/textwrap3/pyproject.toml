@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "textwrap3"
+version = "0.9.2"
+description = "textwrap from Python 3.6 backport (plus a few tweaks)"
+keywords = [ "text", "wrap", "fill", "textwrap",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 4 - Beta", "Operating System :: OS Independent", "License :: OSI Approved :: Python Software Foundation License", "Intended Audience :: Developers", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 2.6", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Text Processing", "Topic :: Text Processing :: Filters",]
+dependencies = []
+[[project.authors]]
+name = "Jonathan Eunice"
+email = "jonathan.eunice@gmail.com"
+
+[project.license]
+text = "Python Software Foundation License"
+
+[project.urls]
+Homepage = "https://github.com/jonathaneunice/textwrap3"
+
+[project.optional-dependencies]
+testing = [ "tox", "pytest", "coverage", "pytest-cov",]
+
+[tool.setuptools]
+py-modules = [ "textwrap3",]
+zip-safe = false
+include-package-data = false

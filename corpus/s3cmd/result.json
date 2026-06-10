@@ -1,7 +1,6 @@
 {
   "package": "s3cmd",
   "version": "2.4.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/b3/9c/ad4cd51328bd7a058bfda6739bc061c63ee3531ad2fbc6e672518a1eed01/s3cmd-2.4.0.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected: erlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1064, in _read\n    raise MissingSectionHeaderError(fpname, lineno, line)\nconfigparser.MissingSectionHeaderError: File contains no section headers.\nfile: '<string>', line: 1\n'Using xml.etree.ElementTree for XML processing\\n'\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

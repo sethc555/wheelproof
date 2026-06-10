@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dbfread"
+version = "2.0.7"
+description = "Read DBF Files with Python"
+readme = "README.rst"
+license = {text = "MIT"}
+authors = [
+    {name = "Ole Martin Bjorndalen"},
+    {email = "ombdalen@gmail.com"},
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://dbfread.readthedocs.io/"
+
+[tool.setuptools]
+include-package-data = true
+zip-safe = true
+packages = ["dbfread"]
+
+[tool.setuptools.package-data]
+"*" = ["LICENSE"]
+
+[tool.distutils.bdist_wheel]
+universal = true

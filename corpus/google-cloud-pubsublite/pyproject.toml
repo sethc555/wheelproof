@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "google-cloud-pubsublite"
+version = "1.13.0"
+description = "Google Cloud Pubsublite API client library"
+readme = {file = "README.rst", content-type = "text/x-rst"}
+license = {text = "Apache 2.0"}
+authors = [
+    {name = "Google LLC", email = "googleapis-packages@google.com"},
+]
+requires-python = ">=3.8"
+dependencies = [
+    "google-cloud-pubsub >= 2.10.0, <3.0.0",
+    "grpcio >= 1.38.1, <2.0.0",
+    "grpcio >= 1.75.1, < 2.0.0; python_version >= '3.14'",
+    "grpcio-status >= 1.38.1, <2.0.0",
+    "grpcio-status >= 1.75.1, < 2.0.0; python_version >= '3.14'",
+    "overrides>=6.0.1, <8.0.0",
+    "overrides>=7.0.1, <8.0.0; python_version>='3.12'",
+    "google-api-core[grpc] >= 1.33.2, <3.0.0,!=2.0.*,!=2.1.*,!=2.2.*,!=2.3.*,!=2.4.*,!=2.5.*,!=2.6.*,!=2.7.*",
+    "proto-plus >= 1.22.3, < 2.0.0",
+    "proto-plus >= 1.25.0, < 2.0.0; python_version >= '3.13'",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Operating System :: OS Independent",
+    "Topic :: Internet",
+]
+
+[project.urls]
+Homepage = "https://github.com/googleapis/python-pubsublite"
+
+[tool.setuptools]
+packages = [
+    "google",
+    "google.cloud",
+    "google.cloud.pubsublite_v1",
+    "google.cloud.pubsublite",
+    "google.cloud.pubsublite_v1.services",
+    "google.cloud.pubsublite_v1.types",
+    "google.cloud.pubsublite_v1.services.admin_service",
+    "google.cloud.pubsublite_v1.services.subscriber_service",
+    "google.cloud.pubsublite_v1.services.cursor_service",
+    "google.cloud.pubsublite_v1.services.partition_assignment_service",
+    "google.cloud.pubsublite_v1.services.topic_stats_service",
+    "google.cloud.pubsublite_v1.services.publisher_service",
+    "google.cloud.pubsublite_v1.services.admin_service.transports",
+    "google.cloud.pubsublite_v1.services.subscriber_service.transports",
+    "google.cloud.pubsublite_v1.services.cursor_service.transports",
+    "google.cloud.pubsublite_v1.services.partition_assignment_service.transports",
+    "google.cloud.pubsublite_v1.services.topic_stats_service.transports",
+    "google.cloud.pubsublite_v1.services.publisher_service.transports",
+    "google.cloud.pubsublite.internal",
+    "google.cloud.pubsublite.testing",
+    "google.cloud.pubsublite.cloudpubsub",
+    "google.cloud.pubsublite.types",
+    "google.cloud.pubsublite.internal.wire",
+    "google.cloud.pubsublite.cloudpubsub.internal",
+]
+include-package-data = true

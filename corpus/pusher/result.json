@@ -2,6 +2,103 @@
   "package": "pusher",
   "version": "3.3.4",
   "sdist_url": "https://files.pythonhosted.org/packages/63/7f/068b4c96b2077299a691b2e854675e2e741b6a172fc3fb59de10774528da/pusher-3.3.4.tar.gz",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-v4moui1d/pusher-3.3.4-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {'tes ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-whwve52c/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-whwve52c/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-whwve52c/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-whwve52c/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-whwve52c/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Pusher"
+      ],
+      [
+        "author-email",
+        "support@pusher.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "provides-extra"
+      ],
+      [
+        "dynamic",
+        "requires-dist"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/pusher/pusher-http-python"
+      ],
+      [
+        "keywords",
+        "pusher rest realtime websockets service"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Pusher <support@pusher.com>"
+      ],
+      [
+        "description-content-type",
+        "text/plain"
+      ],
+      [
+        "keywords",
+        "pusher,rest,realtime,websockets,service"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/pusher/pusher-http-python"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "HTTPretty; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "mock; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "nose; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": [
+      "WHEEL"
+    ]
+  }
 }

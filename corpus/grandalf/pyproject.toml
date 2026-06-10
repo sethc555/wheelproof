@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "grandalf"
+version = "0.8"
+description = "Graph and drawing algorithms framework"
+readme = {text = "\nGrandalf is a python package made for experimentations with graphs drawing\nalgorithms. It is written in pure python, and currently implements two layouts:\nthe Sugiyama hierarchical layout and the force-driven or energy minimization approach.\nWhile not as fast or featured as *graphviz* or other libraries like *OGDF* (C++),\nit provides a way to walk and draw graphs\nno larger than thousands of nodes, while keeping the source code simple enough\nto tweak and hack any part of it for experimental purpose.\nWith a total of about 1500 lines of python, the code involved in\ndrawing the Sugiyama (dot) layout fits in less than 600 lines.\nThe energy minimization approach is comprised of only 250 lines!\n\nGrandalf does only 2 not-so-simple things:\n\n- computing the nodes (x,y) coordinates\n  (based on provided nodes dimensions, and a chosen layout)\n- routing the edges with lines or nurbs\n\nIt doesn't depend on any GTK/Qt/whatever graphics toolkit.\nThis means that it will help you find *where* to\ndraw things like nodes and edges, but it's up to you to actually draw things with\nyour favorite toolkit.\n", content-type = "text/x-rst"}
+license = {text = "GPLv2 | EPLv1"}
+authors = [
+    {name = "Axel Tillequin", email = "bdcht3@gmail.com"},
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["graph drawings graphviz networkx"]
+dependencies = [
+    "pyparsing",
+]
+
+[project.optional-dependencies]
+full = [
+    "numpy",
+    "ply",
+]
+
+[project.urls]
+Homepage = "https://github.com/bdcht/grandalf"
+
+[tool.setuptools]
+packages = ["grandalf", "grandalf.utils"]
+include-package-data = false

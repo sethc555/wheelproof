@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hdijupyterutils"
+version = "0.23.0"
+description = "HdiJupyterUtils: Utils for Jupyter projects from HDInsight team"
+license = {text = "BSD 3-clause"}
+authors = [
+    {name = "Jupyter Development Team"},
+    {email = "jupyter@googlegroups.org"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: BSD License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.7",
+]
+dependencies = [
+    "ipython>=4.1.2",
+    "ipywidgets>5.0.0",
+    "ipykernel>=4.2.2",
+    "jupyter>=1",
+    "pandas<3.0.0",
+    "numpy>=1.16.5",
+    "notebook>=4.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/jupyter-incubator/sparkmagic"
+Download = "https://github.com/jupyter-incubator/sparkmagic"
+
+[tool.setuptools]
+packages = ["hdijupyterutils"]
+include-package-data = false

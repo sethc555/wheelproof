@@ -1,7 +1,6 @@
 {
   "package": "pywinauto",
   "version": "0.6.9",
-  "sdist_url": "https://files.pythonhosted.org/packages/2c/85/cc65e3b64e7473cc86c07f0b5c415d509402c03ef19dadc39c583835eb5f/pywinauto-0.6.9.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected:    over.read_string(overlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1075, in _read\n    raise DuplicateOptionError(sectname, optname,\nconfigparser.DuplicateOptionError: While reading from '<string>' [line 64]: option '' in section 'options.extras_require' already exists\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

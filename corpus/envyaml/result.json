@@ -1,7 +1,6 @@
 {
   "package": "envyaml",
   "version": "1.10.211231",
-  "sdist_url": "https://files.pythonhosted.org/packages/aa/ce/bcc062f1d55368713674cf55851a4d9dfa77835c0258753d0f23dff70743/envyaml-1.10.211231.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected: ^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/ini2toml/transformations.py\", line 336, in apply\n    return fn(x)\n           ^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/ini2toml/plugins/setuptools_pep621.py\", line 722, in normalise_keys\n    metadata.rename(alias, cannonic)\n  File \"/tmp/v/lib/python3.12/site-packages/ini2toml/intermediate_repr.py\", line 116, in rename\n    raise KeyError(f\"new_key={new_key!r} already exists\")\nKeyError: \"new_key='platforms' already exists\"\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

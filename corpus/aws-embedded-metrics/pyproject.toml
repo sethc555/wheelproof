@@ -1,0 +1,32 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aws-embedded-metrics"
+version = "3.5.0"
+description = "AWS Embedded Metrics Package"
+keywords = [ "aws", "logs", "metrics", "emf",]
+classifiers = [ "Programming Language :: Python :: 3", "Operating System :: OS Independent", "Development Status :: 5 - Production/Stable", "Intended Audience :: Developers", "Natural Language :: English", "License :: OSI Approved :: Apache Software License",]
+requires-python = ">=3.6"
+dependencies = [ "aiohttp",]
+[[project.authors]]
+name = "Amazon Web Services"
+email = "jarnance@amazon.com"
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.urls]
+Homepage = "https://github.com/awslabs/aws-embedded-metrics-python"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.package-data]
+aws_embedded_metrics = [ "py.typed",]
+
+[tool.setuptools.packages.find]
+exclude = [ "tests*",]
+namespaces = false

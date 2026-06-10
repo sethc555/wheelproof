@@ -1,0 +1,38 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyramid_mako"
+version = "1.1.0"
+description = "Mako template bindings for the Pyramid web framework"
+keywords = [ "web", "wsgi", "pyramid",]
+classifiers = [ "Development Status :: 6 - Mature", "Intended Audience :: Developers", "Programming Language :: Python", "Programming Language :: Python :: 2.7", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.4", "Programming Language :: Python :: 3.5", "Programming Language :: Python :: 3.6", "Programming Language :: Python :: 3.7", "Framework :: Pyramid", "License :: Repoze Public License",]
+dependencies = [ "pyramid", "Mako>=1.1.0",]
+[[project.authors]]
+name = "Bert JW Regeer"
+email = "pylons-discuss@googlegroups.com"
+
+[project.license]
+text = "BSD-derived (http://www.repoze.org/LICENSE.txt)"
+
+[project.readme]
+text = "`Mako <http://www.makotemplates.org/>`_ bindings for Pyramid\n============================================================\n\nThese are bindings for the `Mako templating system <https://www.makotemplates.org/>`_ for the `Pyramid <https://trypyramid.com/>`_ web framework.\n\nDocumentation for `pyramid_mako <https://docs.pylonsproject.org/projects/pyramid-mako/en/latest/>`_.\n\n\n1.1.0 (2019-08-18)\n==================\n\n- Add support for Python 3.5, 3.6, 3.7.\n\n- Require ``mako >= 1.1.0``.\n\n- Add a config option for ``preprocessor_wants_settings``. If set to ``true``,\nthe ``preprocessor`` will be wrapped in a function that invokes the\npreprocessor with pyramid's config settings as the second argument.\n\n1.0.2 (2014-04-22)\n==================\n\n- Fix mako.imports so that aslist() does not flatten. See issue #23\n(https://github.com/Pylons/pyramid_mako/issues/23)\n\n1.0.1 (2014-04-16)\n==================\n\n- Bump the required version of Mako to 0.8 or newer for issue #22 (add\nfuture_imports). If you would like to use an older version of Mako, please\npin your dependency to version 0.3.1 of pyramid_mako.\n\n1.0 (2014-04-15)\n================\n\n- Add new configuration variable for future_imports. See issue #22\n(https://github.com/Pylons/pyramid_mako/issues/22)\n- Fix issue #19, whereby pyramid.reload_templates stopped functioning due to\nchanges in pyramid_mako. The lookup is now completed at template render,\ninstead of when the factory returns the renderer. See:\n(https://github.com/Pylons/pyramid_mako/issues/19)\n- Tuple return values in the form of ('defname', {}) are no longer supported,\nand will result in a ValueError being raised.\n- Fix an packaging issue whereby \\*.foo files were not included in the MANIFEST.\n- Caller-relative template lookup is now supported. Any template that fails\nto be found in the default search paths will be searched relative to the\ncaller package.\n- Allow overriding the ``pyramid.reload_templates`` using\n``mako.reload_templates``.\n- Change the way that custom user values passed to the renderer are merged with\nthe system provided variables. This allows the user to pass in a variable\nnamed 'context' and have it correctly override the system provided context,\nand THEN get correctly renamed so that Mako doesn't complain about a variable\nbeing passed in that isn't allowed due to it being reserved.\n- Drop testing dependency on ``nose-selecttests``.\n\n0.3.1 (2013-10-22)\n==================\n\n- Re-enable lazy loading of the mako renderer, allowing the settings\nto be configured after pyramid_mako has been included, as long as everything\nhappens in the same commit.\n\n0.3 (2013-10-20)\n================\n\n- Add a new Configurator directive, ``config.add_mako_renderer`` which\ncan be used to add a new mako renderer for a given extension. This\ndirective accepts an optional ``settings_prefix`` to load settings and\nconfiguration differently per-renderer as well.\n\n- Removed the private APIs, ``IMakoLookup``, ``MakoRendererFactoryHelper``,\nand ``renderer_factory``. See the new ``config.add_mako_renderer`` API\nfor updating offending code.\n\n- Remove dependency on ``pyramid.interfaces.ITemplateRenderer`` from\nPyramid 1.5.\n\n0.2 (2013-09-07)\n================\n\n- Docs up-to-date\n- Latest changes pulled from Pyramid\n- Latest tests pulled from Pyramid\n- All tests updated to refer to fixtures in pyramid_mako\n\n0.1 (2012-03-12)\n================\n\n- First release. Extracted from Pyramid core."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/Pylons/pyramid_mako"
+Documentation = "https://docs.pylonsproject.org/projects/pyramid_mako/en/latest/"
+Changelog = "https://github.com/Pylons/pyramid_mako/blob/master/CHANGES.txt"
+"Issue Tracker" = "https://github.com/Pylons/pyramid_mako/issues"
+
+[project.optional-dependencies]
+testing = [ "WebTest >= 1.3.1", "nose", "coverage",]
+docs = [ "Sphinx >= 1.8.1", "docutils", "repoze.sphinx.autointerface", "pylons-sphinx-themes >= 1.0.8",]
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.packages.find]
+namespaces = false

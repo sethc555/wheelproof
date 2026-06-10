@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "azure-applicationinsights"
+version = "0.1.1"
+description = "Microsoft Azure Application Insights Client Library for Python"
+readme = {text = "## Microsoft Azure SDK for Python\n\nThis package is no longer being maintained. Use the [azure-monitor-query](https://pypi.org/project/azure-monitor-query/) package instead.\n\nFor migration instructions, see the [migration guide](https://aka.ms/azsdk/python/migrate/ai-to-monitor-query).\n\n# Release History\n\n## 0.1.1 (2022-02-11)\n\n* This package is no longer maintained. Use the [azure-monitor-query](https://pypi.org/project/azure-monitor-query/) package instead.\n\n## 0.1.0 (2018-07-11)\n\n- Initial Release", content-type = "text/markdown"}
+license = {text = "MIT License"}
+authors = [
+    {name = "Microsoft Corporation"},
+    {email = "azpysdkhelp@microsoft.com"},
+]
+classifiers = [
+    "Development Status :: 7 - Inactive",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "License :: OSI Approved :: MIT License",
+]
+dependencies = [
+    "msrest>=0.6.21",
+    "azure-common~=1.1",
+    "azure-nspkg; python_version<'3.0'",
+]
+
+[project.urls]
+Homepage = "https://github.com/Azure/azure-sdk-for-python"
+
+[tool.setuptools]
+include-package-data = false
+packages = [
+    "azure.applicationinsights",
+    "azure.applicationinsights.models",
+    "azure.applicationinsights.operations",
+]
+
+[tool.distutils.bdist_wheel]
+universal = true

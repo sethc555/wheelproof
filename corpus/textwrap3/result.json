@@ -2,6 +2,97 @@
   "package": "textwrap3",
   "version": "0.9.2",
   "sdist_url": "https://files.pythonhosted.org/packages/4d/02/cef645d4558411b51700e3f56cefd88f05f05ec1b8fa39a3142963f5fcd2/textwrap3-0.9.2.zip",
-  "status": "build-error",
-  "detail": "wheel build failed for /tmp/wheelproof-bc-pns5wrp2/textwrap3-0.9.2-converted\n--- stdout ---\nconfiguration error: `tool.setuptools` must not contain {' ||| ^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-xvnzlxn4/lib/python3.12/site-packages/setuptools/_distutils/core.py\", line 160, in setup\n    dist.parse_config_files()\n  File \"/tmp/build-env-xvnzlxn4/lib/python3.12/site-packages/setuptools/dist.py\", line 762, in parse_config_files\n    pyprojecttoml.apply_configuration(self, filename, ignore_option_errors)\n  File \"/tmp/build-env-xvnzlxn4/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 72, in apply_configuration\n    config = read_configuration(filepath, True, ignore_option_errors, dist)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/build-env-xvnzlxn4/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 149, in read_configuration\n    validate(subset, filepath)\n  File \"/tmp/build-env-xvnzlxn4/lib/python3.12/site-packages/setuptools/config/pyprojecttoml.py\", line 61, in validate\n    raise ValueError(f\"{error}\\n{summary}\") from None\nValueError: invalid pyproject.toml config: `tool.setuptools`.\nconfiguration error: `tool.setuptools` must not contain {'test-suite'} properties\nERROR Backend subprocess exited when trying to invoke get_requires_for_build_wheel\n"
+  "status": "pass",
+  "drift": {
+    "metadata_only_original": [
+      [
+        "author",
+        "Jonathan Eunice"
+      ],
+      [
+        "author-email",
+        "jonathan.eunice@gmail.com"
+      ],
+      [
+        "dynamic",
+        "author"
+      ],
+      [
+        "dynamic",
+        "author-email"
+      ],
+      [
+        "dynamic",
+        "classifier"
+      ],
+      [
+        "dynamic",
+        "description"
+      ],
+      [
+        "dynamic",
+        "home-page"
+      ],
+      [
+        "dynamic",
+        "keywords"
+      ],
+      [
+        "dynamic",
+        "license"
+      ],
+      [
+        "dynamic",
+        "summary"
+      ],
+      [
+        "home-page",
+        "https://github.com/jonathaneunice/textwrap3"
+      ],
+      [
+        "keywords",
+        "text wrap fill textwrap"
+      ]
+    ],
+    "metadata_only_converted": [
+      [
+        "author-email",
+        "Jonathan Eunice <jonathan.eunice@gmail.com>"
+      ],
+      [
+        "description-content-type",
+        "text/x-rst"
+      ],
+      [
+        "keywords",
+        "text,wrap,fill,textwrap"
+      ],
+      [
+        "project-url",
+        "Homepage, https://github.com/jonathaneunice/textwrap3"
+      ],
+      [
+        "provides-extra",
+        "testing"
+      ],
+      [
+        "requires-dist",
+        "coverage; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest-cov; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "pytest; extra == \"testing\""
+      ],
+      [
+        "requires-dist",
+        "tox; extra == \"testing\""
+      ]
+    ],
+    "metadata_body_changed": false,
+    "distinfo_changed": []
+  }
 }

@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "marshmallow-enum"
+version = "1.5.1"
+description = "Enum field for Marshmallow"
+license = {text = "MIT"}
+authors = [
+    {name = "Alec Nikolas Reiter", email = "alecreiter@gmail.com"},
+]
+dependencies = [
+    "marshmallow>=2.0.0",
+]
+dynamic = ["readme"]
+
+[tool.setuptools]
+include-package-data = true
+packages = ["marshmallow_enum"]
+
+[tool.setuptools.dynamic]
+readme = {file = ["README.md", "CHANGELOG"], content-type = "text/markdown"}
+
+[tool.setuptools.package-data]
+"*" = ["LICENSE", "README.md", "CHANGELOG"]
+
+[tool.distutils.bdist_wheel]
+universal = true

@@ -1,0 +1,35 @@
+[build-system]
+requires = [ "setuptools>=61.2", "pytest-runner",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "async_property"
+version = "0.2.2"
+description = "Python decorator for async properties."
+keywords = [ "async_property",]
+classifiers = [ "Development Status :: 4 - Beta", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Natural Language :: English", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.7", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Topic :: Software Development", "Topic :: Utilities",]
+dependencies = []
+[[project.authors]]
+name = "Ryan Anguiano"
+email = "ryan.anguiano@gmail.com"
+
+[project.license]
+text = "MIT license"
+
+[project.readme]
+text = "==============\nasync_property\n==============\n\n\n.. image:: https://img.shields.io/pypi/v/async_property.svg\n:target: https://pypi.org/project/async-property/\n\n.. image:: https://app.travis-ci.com/ryananguiano/async_property.svg?branch=master\n:target: https://app.travis-ci.com/github/ryananguiano/async_property\n\n.. image:: https://readthedocs.org/projects/async-property/badge/?version=latest\n:target: https://async-property.readthedocs.io/en/latest/?badge=latest\n:alt: Documentation Status\n\n.. image:: https://pyup.io/repos/github/ryananguiano/async_property/shield.svg\n:target: https://pyup.io/repos/github/ryananguiano/async_property/\n:alt: Updates\n\n\nPython decorator for async properties.\n\n* Python: 3.7+\n* Free software: MIT license\n* Documentation: https://async-property.readthedocs.io\n* Package: https://pypi.org/project/async-property\n* Source code: https://github.com/ryananguiano/async_property\n\nInstall\n-------\n\nTo install async_property, run this command in your terminal:\n\n.. code-block:: console\n\n$ pip install async-property\n\n\nOr if you have pipenv:\n\n.. code-block:: console\n\n$ pipenv install async-property\n\n\nUsage\n-----\n\nYou can use ``@async_property`` just as you would with ``@property``, but on an async function.\n\n.. code-block:: python\n\nclass Foo:\n@async_property\nasync def remote_value(self):\nreturn await get_remote_value()\n\nThe property ``remote_value`` now returns an awaitable coroutine.\n\n.. code-block:: python\n\ninstance = Foo()\nawait instance.remote_value\n\n\nCached Properties\n~~~~~~~~~~~~~~~~~\n\n``@async_cached_property`` will call the function only once. Subsequent awaits to the property will return a cached value.\n\n.. code-block:: python\n\nclass Foo:\n@async_cached_property\nasync def value(self):\nprint('loading value')\nreturn 123\n\n>>> instance = Foo()\n>>> instance.value\n<AwaitableOnly \"Foo.value\">\n\n>>> await instance.value\nloading value\n123\n>>> await instance.value\n123\n>>> instance.value\n123\n\n>>> instance.value = 'abc'\n>>> instance.value\n'abc'\n>>> await instance.value\n'abc'\n\n>>> del instance.value\n>>> await instance.value\nloading value\n123\n\n\nAwaitLoader\n~~~~~~~~~~~\n\nIf you have an object with multiple cached properties, you can subclass ``AwaitLoader``. This will make your class instances awaitable and will load all ``@async_cached_property`` fields concurrently. ``AwaitLoader`` will call ``await instance.load()``, if it exists, before loading properties.\n\n.. code-block:: python\n\n\nclass Foo(AwaitLoader):\nasync def load(self):\nprint('load called')\n\n@async_cached_property\nasync def db_lookup(self):\nreturn 'success'\n\n@async_cached_property\nasync def api_call(self):\nprint('calling api')\nreturn 'works every time'\n\n>>> instance = await Foo()\nload called\ncalling api\n>>> instance.db_lookup\n'success'\n>>> instance.api_call\n'works every time'\n\nFeatures\n--------\n\n* Both regular and cached property.\n* Cached properties can be accessed multiple times without repeating function call.\n* Uses asyncio.Lock to ensure cached functions are called only once.\n* Full test coverage with py.test\n\n\nCredits\n-------\n\nThis package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.\n\n.. _Cookiecutter: https://github.com/audreyr/cookiecutter\n.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage\n\n\nThe ObjectProxy_ class was taken from wrapt_ library by Graham Dumpleton.\n\n.. _ObjectProxy: https://github.com/GrahamDumpleton/wrapt/blob/master/src/wrapt/wrappers.py\n.. _wrapt: https://github.com/GrahamDumpleton/wrapt\n\n\n=======\nHistory\n=======\n\n0.2.2 (2023-07-03)\n------------------\n\n* Add Python 3.11 support and drop Python 3.6.\n\n0.2.1 (2019-04-13)\n------------------\n\n* Update docs and readme\n\n0.2.0 (2019-04-12)\n------------------\n\n* Use instance state to hold cache and locks\n\n0.1.4 (2019-04-12)\n------------------\n\n* Fix inheritance issues on AwaitLoader\n\n0.1.3 (2019-04-12)\n------------------\n\n* Cleanup code\n\n0.1.2 (2019-04-12)\n------------------\n\n* Fix asyncio.Lock issues\n\n0.1.1 (2019-04-11)\n------------------\n\n* Complete test coverage and update readme\n\n\n0.1.0 (2019-04-11)\n------------------\n\n* First release on PyPI."
+content-type = "text/plain"
+
+[project.urls]
+Homepage = "https://github.com/ryananguiano/async_property"
+
+[project.optional-dependencies]
+testing = [ "pytest",]
+
+[tool.setuptools]
+zip-safe = false
+include-package-data = true
+
+[tool.setuptools.packages.find]
+include = [ "async_property",]
+namespaces = false

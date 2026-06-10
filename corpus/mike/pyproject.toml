@@ -1,0 +1,110 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mike"
+version = "2.2.0"
+description = "Manage multiple versions of your MkDocs-powered documentation"
+readme = {text = "# mike\n**mike** is a Python utility that makes it easy to deploy multiple versions of\nyour [MkDocs](http://www.mkdocs.org)-powered docs to a Git branch, suitable for\nhosting on Github via `gh-pages`. To see an example of this in action, take a\nlook at the documentation for [bfg9000][bfg9000].\n\n## Why Use mike?\n\nmike is built around the idea that once you've generated your docs for a\nparticular version, you should never need to touch that version again. This\nmeans you never have to worry about breaking changes in MkDocs, since your old\ndocs (built with an old version of MkDocs) are already generated and sitting in\nyour `gh-pages` branch.\n\nWhile mike is flexible, it's optimized around putting your docs in a\n`<major>.<minor>` directory, with optional aliases (e.g. `latest` or `dev`) to\nparticularly notable versions. This makes it easy to make permalinks to whatever\nversion of the documentation you want to direct people to.\n\n## How It Works\n\nmike works by creating a new Git commit on your `gh-pages` branch every time you\ndeploy a new version of your docs using `mike deploy` (or other mike subcommands\nthat change your `gh-pages` branch). When deploying a particular version,\npreviously-deployed docs for that version are erased and overwritten, but docs\nfor other versions remain untouched.\n\n## Installation\n\nLike most Python projects, mike uses [setuptools][setuptools], so installation\nis what you might expect:\n\n```sh\npip install mike\n```\n\nOnce you've installed mike, you might also want to set up shell-completion for\nit. If you have [shtab][shtab] installed, you can do this with\n`mike generate-completion`, which will print the shell-completion code for your\nshell. For more details on how to set this up, consult shtab's\n[documentation][shtab-setup].\n\n## Usage\n\n### Before Using mike\n\nBefore using mike for the first time, you may want to use [`mike delete\n--all`](#deleting-docs) to delete any old documentation on your `gh-pages`\nbranch before building your new versioned docs. (If you prefer, you can also\nmanually move your old documentation to a subdirectory of your `gh-pages` branch\nso that it's still accessible.)\n\n### Configuration\n\nTo help integrate into the MkDocs build process, mike uses an MkDocs plugin.\nThis plugin is added by default when building your documentation with mike, but\nby adding it explicitly to your `mkdocs.yml` file, you can configure how the\nplugin works. The plugin adds a version selector to supported themes as well as\nupdating the `site_url` (if you set it) to point to the version of the docs that\nare being built:\n\n```yaml\nplugins:\n  - mike:\n      # These fields are all optional; the defaults are as below...\n      alias_type: symlink\n      redirect_template: null\n      deploy_prefix: ''\n      canonical_version: null\n      version_selector: true\n      css_dir: css\n      javascript_dir: js\n```\n\n* `alias_type`: The method to create aliases; one of:\n  * `symlink`: Create a symbolic link from the alias to the base directory of\n    the documentation\n  * `redirect`: Create an HTML redirect for each page of the documentation\n  * `copy`: Copy all the files of the documentation to the alias's path\n* `redirect_template`: The template file to use when creating HTML redirects; if\n  `null`, use the default template\n* `deploy_prefix`: The root directory to put the generated docs in; this can be\n  useful if you'd like to have other pages at the root of your site, or to host\n  multiple, independently-versioned sets of docs side by side\n* `canonical_version`: The \"canonical\" version to use for the documentation,\n  useful for telling search engines what pages to prefer (e.g. `latest` if\n  you've defined that as an alias that always points to the latest release); if\n  `null`, mike will use the version specified via `mike deploy`\n* `version_selector`: True if the version selector should be shown on pages;\n  false otherwise\n* `css_dir`: The directory to place the version selector's CSS\n* `javascript_dir`: The directory to place the version selector's Javascript\n\n### Building Your Docs\n\nmike is designed to produce one version of your docs at a time. That way, you\ncan easily deploy a new version without touching any older versions of your\ndocs; this can be especially important if your old docs are no longer buildable\nwith the newest version of MkDocs (or if they weren't built with MkDocs at\nall!). To deploy the current version of your docs, simply run:\n\n```sh\nmike deploy [version]\n```\n\nWhere `[version]` is the current version of your project, represented however\nyou like (I recommend using `[major].[minor]` and excluding the patch\nnumber). You can also pass aliases to the `deploy` command to host a\nparticularly-relevant version of your docs somewhere special (e.g. `latest`):\n\n```sh\nmike deploy [version] [alias]...\n```\n\nIf `[version]` already exists, this command will *also* update all of the\npre-existing aliases for it. Normally, if an alias specified on the command line\nis already associated with another version, this will return an error. If you\n*do* want to move an alias from another version to this version (including\nwhen the new version itself was previously an alias), you can pass\n`-u`/`--update-aliases` to allow this. For example, this can be useful when\nreleasing a new version and updating the `latest` alias to point to this new\nversion.\n\nBy default, each alias creates a symbolic link to the base directory of the real\nversion of the docs; to create a copy of the docs for each alias, you can pass\n`--alias-type=copy`, or to use a simple HTML redirect for each page, you can\npass `--alias-type=redirect`. If you're using redirects, you can customize the\nredirect template with `-T`/`--template`; this takes a path to a [Jinja][jinja]\ntemplate that accepts an `{{href}}` variable.\n\nIf you'd like to specify a title for this version that doesn't match the version\nstring, you can pass `-t TITLE`/`--title=TITLE` as well. You can set custom\nproperties for this version as well, using `--prop-set`, `--prop-set-string`,\n`--prop-set-all`, `--prop-delete`, and `--prop-delete-all` (see the [Managing\nProperties](#managing-properties) section for more details).\n\nIn addition, you can specify where to deploy your docs via `-b`/`--branch`,\n`-r`/`--remote`, and `--deploy-prefix`, specifying the branch, remote, and\ndirectory prefix within the branch, respectively. Finally, to push your docs to\na remote branch, simply add `-p`/`--push` to your command.\n\nYou can also specify many of these options via your `mkdocs.yml` configuration\nas shown above. For example, `--alias-type` can also be specified via\n`plugins.mike.alias_type`. (For `--branch` and `--remote`, you can use the\nbuilt-in MkDocs fields `remote_branch` and `remote_name`.)\n\n### Viewing Your Docs\n\nWhen editing your documentation, you can usually just use the ordinary [`mkdocs\nserve`][mkdocs-serve] to show the genereated results. This serves the current\nversion of your documentation without forcing you to create a Git commit first\nvia `mike deploy`.\n\nIf you want to test all the versions of your documentation as you'd see on your\nproduction server, you can serve them locally via:\n\n```sh\nmike serve\n```\n\nThis serves your current documentation as committed to your `gh-pages` branch.\nBy default, it serves the docs at `http://localhost:8000`, but you can change\nthis with `-a`/`--dev-addr`.\n\n> [!CAUTION]\n> `mike serve` and `mkdocs serve` should be used *for testing only*. To host\n> your docs for real, use a real web server.\n\n### Deleting Docs\n\nSometimes you need to delete an old version of your docs, either because you\nmade a mistake or you're pruning unsupported versions. You can do this via the\n`delete` subcommand:\n\n```sh\nmike delete [identifier]...\n```\n\nIf `identifier` is a version, this will delete the version and all its aliases\nfrom the branch; if it's an alias, it will only delete that alias.\n\nIf you'd like to *completely* wipe the contents of your docs branch, just run\n`mike delete --all`. Like `deploy` above, you can specify `--branch`, `--push`,\netc to control how the commit is handled.\n\n### Listing Docs\n\nIf you ever need to see the list of all currently-deployed doc versions, you can\nrun:\n\n```sh\nmike list\n```\n\nTo list the info for a particular version, you can just pass the version name or\nan alias to that version:\n\n```sh\nmike list [identifier]\n```\n\nSometimes, you need this information to be consumed by another tool. In that\ncase, pass `-j`/`--json` to return the list of doc versions as JSON.\n\n### Setting the Default Version\n\nWith all the versions of docs you have, you may want to set a *default* version\nso that people going to the root of your site are redirected to the latest\nversion of the docs:\n\n```sh\nmike set-default [identifier]\n```\n\nNormally, this command will return an error if `identifier` doesn't exist. If\nyou want to set the default to a version that doesn't exist yet, you can pass\n`--allow-undefined`.\n\nIf you want to use a different template from the default, you can pass\n`-T`/`--template`; this takes a path to a [Jinja][jinja] template that accepts\nan `{{href}}` variable. (Note that this page *always* uses a redirect, no matter\nthe setting of `alias_type`/`--alias-type`.)\n\nLike `deploy` and `delete` above, you can specify `--branch`, `--push`,\netc to control how the commit is handled.\n\n### Changing a Version's Title\n\nAs you update your docs, you may want to change the title of a particular\nversion. For example, your `1.0` docs might have the title `1.0.0`, and when you\nrelease a new patch, you want to update the title to `1.0.1`. You can do this\nwith the `retitle` command:\n\n```sh\nmike retitle [identifier] [title]\n```\n\nAs with other commands that change your docs, you can specify `--branch`,\n`--push`, etc to control how the commit is handled.\n\n### Adding a New Version Alias\n\nSometimes, you might need to add a new alias for a version without rebuilding\nyour documentation. You can use the `alias` command for this:\n\n```sh\nmike alias [identifier] [alias]...\n```\n\nAs with `deploy`, you can pass `-u`/`--update-aliases` to change where an\nexisting alias points to.\n\nOnce again, you can specify `--branch`, `--push`, etc to control how the commit\nis handled.\n\n### Managing Properties\n\nEach version of your documentation can have any arbitrary properties assigned to\nit that you like. You can use these properties to hold extra metadata, and then\nyour documentation theme can consult those properties to do whatever you like.\nWhen using the built-in MkDocs themes, mike supports one property: `hidden`.\nWhen this is `true`, that version will be hidden from the version selector\n(unless it's the current version).\n\nYou can get properties via `props` command:\n\n```sh\nmike props [identifier] [prop]\n```\n\nIf `prop` is specified, this will return the value of that property; otherwise,\nit will return all of that version's properties as a JSON object.\n\nYou can also set properties by specifying one or more of `--set prop=json`,\n`--set-string prop=str`, `--set-all json`, `--delete prop`, and `--delete-all`.\n(If you prefer, you can also set properties at the same time as deploying via\nthe `--prop-*` options.)\n\nWhen getting or setting a particular property, you can specify it with a\nlimited JSONPath-like syntax. You can use bare field names, quoted field\nnames, and indices/field names inside square brackets. The only operator\nsupported is `.`. For example, this is a valid expression:\n\n```javascript\nfoo.\"bar\"[0][\"baz\"]\n```\n\nWhen setting values, you can add to the head or tail of a list via the `head`\nor `tail` keywords, e.g.:\n\n```javascript\nfoo[head]\n```\n\nAs usual, you can specify `--branch`, `--push`, etc to control how the commit is\nhandled.\n\n### More Details\n\nFor more details on the available options, consult the `--help` command for\nmike.\n\n## Version Ordering\n\nThere are lots of versioning schemes out there, but mike tries its best to order\nyour versions in a reasonable manner. Version identifiers that \"look like\"\nversions (e.g. `1.2.3`, `1.0b1`, `v1.0`) are treated as ordinary versions,\nwhereas other identifiers, like `devel`, are treated as development versions,\nand placed *above* ordinary versions.\n\nThe above scheme should get things right most of the time, but you can always\npost-process your `versions.json` file to manipulate the ordering to suit your\nneeds.\n\n## Staying in Sync\n\nmike will do its best to stay in-sync with your remote repository and will\nautomatically update your local branch to match the remote's if possible (note\nthat mike *won't* automatically `git fetch` anything). If your local branch has\ndiverged from your remote, mike will leave it as-is and ask you what to do. To\nignore the remote's state, just pass `--ignore-remote-status`.\n\n## `CNAME` (and Other Special Files)\n\nSome special files that you'd like to deploy along with your documentation (such\nas `CNAME`) aren't related to a particular version of the docs, and instead need\nto go in the root directory of your site. There's no special handling for this\nin mike, but since your built docs live on a Git branch, it's still easy to\nmanage: check out your `gh-pages` branch (or wherever your built docs\nlive), and commit the necessary files to the root directory.\n\n## Deploying via CI\n\nSince mike just generates commits to an ordinary Git branch, it should work\nsmoothly with your favorite CI system. However, you should keep in mind that\nsome CI systems make shallow clones of your repository, meaning that the CI job\nwon't have a local instance of your documentation branch to commit to. This will\nnaturally cause issues when trying to push the commit. This is easy to resolve\nthough; just manually fetch your `gh-pages` branch (or whichever you deploy to)\nbefore running mike:\n\n```sh\ngit fetch origin gh-pages --depth=1\n```\n\nYou may also need to [configure a Git user][gh-action-commit] so that mike can\nmake commits:\n\n```sh\ngit config user.name ci-bot\ngit config user.email ci-bot@example.com\n```\n\nAlternately, you can set the environment variables `GIT_COMMITTER_NAME` and\n`GIT_COMMITTER_EMAIL` (as well as `GIT_COMMITTER_DATE` if you like):\n\n```sh\nGIT_COMMITTER_NAME=ci-bot GIT_COMMITTER_EMAIL=ci-bot@example.com \\\nmike deploy 1.0\n```\n\n## For Theme Authors\n\nIf you'd like to provide support for mike in your theme, you just need to\nfetch `versions.json` and build a version selector. `versions.json` looks like\nthis:\n\n```javascript\n[\n  {\"version\": \"1.0\", \"title\": \"1.0.1\", \"aliases\": [\"latest\"]},\n  {\"version\": \"0.9\", \"title\": \"0.9\", \"aliases\": [], \"properties\": \"anything\"}\n]\n```\n\nEvery version has a `version` string, a `title` (which may be the same as\n`version`), a list of `aliases`, and optionally, a `properties` attribute that\ncan hold anything at all. These `properties` can be used by other packages,\nthemes, etc in order to add their own custom metadata to each version.\n\nIf you're creating a third-party extension to an existing theme, you add a\nsetuptools entry point for `mike.themes` pointing to a Python submodule that\ncontains `css/` and `js/` subdirectories containing the extra code to be\ninstalled into the user's documentation. This will then automatically be\nincluded via the `mike` plugin in the user's `mkdocs.yml` file.\n\nTo see some examples of how to work with this, check the\n[`mike/themes/mkdocs`](mike/themes/mkdocs) directory.\n\n## License\n\nThis project is licensed under the [BSD 3-clause license](LICENSE).\n\n[pypi-image]: https://img.shields.io/pypi/v/mike.svg\n[pypi-link]: https://pypi.python.org/pypi/mike\n[ci-image]: https://github.com/jimporter/mike/actions/workflows/build.yml/badge.svg\n[ci-link]: https://github.com/jimporter/mike/actions/workflows/build.yml?query=branch%3Amaster\n[codecov-image]: https://codecov.io/gh/jimporter/mike/branch/master/graph/badge.svg\n[codecov-link]: https://codecov.io/gh/jimporter/mike\n\n[bfg9000]: https://jimporter.github.io/bfg9000\n[setuptools]: https://pythonhosted.org/setuptools/\n[shtab]: https://github.com/iterative/shtab\n[shtab-setup]: https://github.com/iterative/shtab#cli-usage\n[jinja]: https://jinja.palletsprojects.com/\n[mkdocs-serve]: https://www.mkdocs.org/user-guide/cli/#mkdocs-serve\n[gh-action-commit]: https://github.com/actions/checkout#push-a-commit-using-the-built-in-token\n", content-type = "text/markdown"}
+license = {text = "BSD-3-Clause"}
+authors = [
+    {name = "Jim Porter", email = "itsjimporter@gmail.com"},
+]
+keywords = ["mkdocs multiple versions"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Topic :: Documentation",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "importlib_metadata;python_version<\"3.10\"",
+    "importlib_resources;python_version<\"3.10\"",
+    "jinja2 >= 2.7",
+    "mkdocs ~= 1.0",
+    "pyparsing >= 3.0",
+    "pyyaml >= 5.1",
+    "pyyaml_env_tag",
+    "verspec",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/jimporter/mike"
+
+[project.optional-dependencies]
+"dev" = [
+    "coverage",
+    "flake8 >= 3.0",
+    "flake8-quotes",
+    "shtab",
+]
+"test" = [
+    "coverage",
+    "flake8 >= 3.0",
+    "flake8-quotes",
+    "shtab",
+]
+
+[project.scripts]
+"mike" = "mike.driver:main"
+
+[project.entry-points."mkdocs.plugins"]
+"mike" = "mike.mkdocs_plugin:MikePlugin"
+
+[project.entry-points."mike.themes"]
+"mkdocs" = "mike.themes.mkdocs"
+"readthedocs" = "mike.themes.readthedocs"
+"bootstrap" = "mike.themes.mkdocs"
+"cerulean" = "mike.themes.mkdocs"
+"cosmo" = "mike.themes.mkdocs"
+"cyborg" = "mike.themes.mkdocs"
+"darkly" = "mike.themes.mkdocs"
+"flatly" = "mike.themes.mkdocs"
+"journal" = "mike.themes.mkdocs"
+"litera" = "mike.themes.mkdocs"
+"lumen" = "mike.themes.mkdocs"
+"lux" = "mike.themes.mkdocs"
+"materia" = "mike.themes.mkdocs"
+"minty" = "mike.themes.mkdocs"
+"pulse" = "mike.themes.mkdocs"
+"sandstone" = "mike.themes.mkdocs"
+"simplex" = "mike.themes.mkdocs"
+"slate" = "mike.themes.mkdocs"
+"solar" = "mike.themes.mkdocs"
+"spacelab" = "mike.themes.mkdocs"
+"superhero" = "mike.themes.mkdocs"
+"united" = "mike.themes.mkdocs"
+"yeti" = "mike.themes.mkdocs"
+"amelia" = "mike.themes.mkdocs"
+"readable" = "mike.themes.mkdocs"
+"mkdocs-classic" = "mike.themes.mkdocs"
+"amelia-classic" = "mike.themes.mkdocs"
+"bootstrap-classic" = "mike.themes.mkdocs"
+"cerulean-classic" = "mike.themes.mkdocs"
+"cosmo-classic" = "mike.themes.mkdocs"
+"cyborg-classic" = "mike.themes.mkdocs"
+"flatly-classic" = "mike.themes.mkdocs"
+"journal-classic" = "mike.themes.mkdocs"
+"readable-classic" = "mike.themes.mkdocs"
+"simplex-classic" = "mike.themes.mkdocs"
+"slate-classic" = "mike.themes.mkdocs"
+"spacelab-classic" = "mike.themes.mkdocs"
+"united-classic" = "mike.themes.mkdocs"
+"yeti-classic" = "mike.themes.mkdocs"
+
+[tool.setuptools]
+packages = [
+    "mike",
+    "mike.templates",
+    "mike.themes",
+    "mike.themes.mkdocs",
+    "mike.themes.readthedocs",
+]
+include-package-data = true

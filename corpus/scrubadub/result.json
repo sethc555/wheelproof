@@ -1,7 +1,6 @@
 {
   "package": "scrubadub",
   "version": "2.0.1",
-  "sdist_url": "https://files.pythonhosted.org/packages/6f/24/f56c1b27689eff1809791b37660a9b1687ddfb157c0e380114245d67af1b/scrubadub-2.0.1.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected:  in _merge_cfg\n    over.read_string(overlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1096, in _read\n    raise e\nconfigparser.ParsingError: Source contains parsing errors: '<string>'\n\t[line 58]: ' =\\n'\n\t[line 59]: '    scrubadub/detectors/models/sklearn_address/*.json\\n'\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

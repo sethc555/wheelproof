@@ -1,0 +1,29 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flake8-quotes"
+version = "3.4.0"
+description = "Flake8 lint for quotes."
+keywords = [ "flake8", "lint", "quotes",]
+readme = "README.rst"
+classifiers = [ "Development Status :: 5 - Production/Stable", "Environment :: Console", "Framework :: Flake8", "Intended Audience :: Developers", "Operating System :: OS Independent", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3.8", "Programming Language :: Python :: 3.9", "Programming Language :: Python :: 3.10", "Programming Language :: Python :: 3.11", "Programming Language :: Python :: 3.12", "Topic :: Software Development :: Libraries :: Python Modules", "Topic :: Software Development :: Quality Assurance",]
+dependencies = [ "flake8", "setuptools",]
+[[project.authors]]
+name = "Zachary Wright Heller"
+email = "zheller@gmail.com"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "http://github.com/zheller/flake8-quotes/"
+
+[tool.setuptools]
+packages = [ "flake8_quotes",]
+zip-safe = true
+include-package-data = true
+
+[project.entry-points."flake8.extension"]
+Q0 = "flake8_quotes:QuoteChecker"

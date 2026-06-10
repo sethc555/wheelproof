@@ -1,0 +1,28 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyflakes"
+version = "3.4.0"
+description = "passive checker of Python programs"
+readme = "README.rst"
+classifiers = [ "Development Status :: 6 - Mature", "Environment :: Console", "Intended Audience :: Developers", "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 3", "Programming Language :: Python :: 3 :: Only", "Programming Language :: Python :: Implementation :: CPython", "Programming Language :: Python :: Implementation :: PyPy", "Topic :: Software Development", "Topic :: Utilities",]
+requires-python = ">=3.9"
+[[project.authors]]
+name = "A lot of people"
+email = "code-quality@python.org"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/PyCQA/pyflakes"
+
+[project.scripts]
+pyflakes = "pyflakes.api:main"
+
+[tool.setuptools]
+packages = [ "pyflakes", "pyflakes.scripts", "pyflakes.test",]
+license-files = [ "LICENSE",]
+include-package-data = false

@@ -1,7 +1,6 @@
 {
   "package": "bumpversion",
   "version": "0.6.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/34/f5/e95fcd8de146884cf5ecf30f227e13c3615584ccef8c8cca18140a27b664/bumpversion-0.6.0.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-eiwcsw5t/bumpversion-0.6.0-converted/setup.py (dynamic setup.py? flag as manual)\n/tmp/wheelproof-bc-eiwcsw5t/bumpversion-0.6.0-converted/setup.py:7: SyntaxWarning: invalid escape sequence '\\`'\n  \"\\`(.*)\\<#.*\\>\\`\\_\",\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cl"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

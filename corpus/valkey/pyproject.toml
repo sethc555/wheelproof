@@ -1,0 +1,69 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "valkey"
+version = "6.1.1"
+description = "Python client for Valkey forked from redis-py"
+readme = {text = "# valkey-py\n\nThe Python interface to the Valkey key-value store.\n\n[![CI](https://github.com/valkey-io/valkey-py/workflows/CI/badge.svg)](https://github.com/valkey-io/valkey-py/actions?query=workflow%3ACI+branch%3Amain)\n[![docs](https://readthedocs.org/projects/valkey-py/badge/?version=latest&style=flat)](https://valkey-py.readthedocs.io/en/latest/)\n[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE)\n[![pypi](https://badge.fury.io/py/valkey.svg)](https://pypi.org/project/valkey/)\n[![pre-release](https://img.shields.io/github/v/release/valkey-io/valkey-py?include_prereleases&label=latest-prerelease)](https://github.com/valkey-io/valkey-py/releases)\n[![codecov](https://codecov.io/gh/valkey-io/valkey-py/branch/main/graph/badge.svg?token=yenl5fzxxr)](https://codecov.io/gh/valkey-io/valkey-py)\n\n[Installation](#installation) |  [Usage](#usage) | [Documentation](#documentation) | [Advanced Topics](#advanced-topics) | [Contributing](https://github.com/valkey-io/valkey-py/blob/main/CONTRIBUTING.md)\n\n---------------------------------------------\n\n## Installation\n\nStart a valkey via docker:\n\n``` bash\ndocker run -p 6379:6379 -it valkey/valkey:latest\n```\n\nTo install valkey-py, simply:\n\n``` bash\n$ pip install valkey\n```\n\nFor faster performance, install valkey with libvalkey support, this provides a compiled response parser, and *for most cases* requires zero code changes.\nBy default, if libvalkey >= 2.3.2 is available, valkey-py will attempt to use it for response parsing.\n\n``` bash\n$ pip install \"valkey[libvalkey]\"\n```\n\n## Usage\n\n### Basic Example\n\n``` python\n>>> import valkey\n>>> r = valkey.Valkey(host='localhost', port=6379, db=0)\n>>> r.set('foo', 'bar')\nTrue\n>>> r.get('foo')\nb'bar'\n```\n\nThe above code connects to localhost on port 6379, sets a value in Redis, and retrieves it. All responses are returned as bytes in Python, to receive decoded strings, set *decode_responses=True*.  For this, and more connection options, see [these examples](https://valkey-py.readthedocs.io/en/latest/examples.html).\n\n### Migration from redis-py\n\nYou are encouraged to use the new class names, but to allow for a smooth transition alias are available:\n\n``` python\n>>> import valkey as redis\n>>> r = redis.Redis(host='localhost', port=6379, db=0)\n>>> r.set('foo', 'bar')\nTrue\n>>> r.get('foo')\nb'bar'\n```\n\n#### RESP3 Support\nTo enable support for RESP3 change your connection object to include *protocol=3*\n\n``` python\n>>> import valkey\n>>> r = valkey.Valkey(host='localhost', port=6379, db=0, protocol=3)\n```\n\n### Connection Pools\n\nBy default, valkey-py uses a connection pool to manage connections. Each instance of a Valkey class receives its own connection pool. You can however define your own [valkey.ConnectionPool](https://valkey-py.readthedocs.io/en/latest/connections.html#connection-pools).\n\n``` python\n>>> pool = valkey.ConnectionPool(host='localhost', port=6379, db=0)\n>>> r = valkey.Valkey(connection_pool=pool)\n```\n\nAlternatively, you might want to look at [Async connections](https://valkey-py.readthedocs.io/en/latest/examples/asyncio_examples.html), or [Cluster connections](https://valkey-py.readthedocs.io/en/latest/connections.html#cluster-client), or even [Async Cluster connections](https://valkey-py.readthedocs.io/en/latest/connections.html#async-cluster-client).\n\n### Valkey Commands\n\nThere is built-in support for all of the [out-of-the-box Valkey commands](https://valkey.io/commands). They are exposed using the raw Redis command names (`HSET`, `HGETALL`, etc.) except where a word (i.e. del) is reserved by the language. See the [complete set of commands](https://github.com/valkey-io/valkey-py/tree/main/valkey/commands), or [the documentation](https://valkey-py.readthedocs.io/en/latest/commands.html).\n\n## Documentation\n\nCheck out the [documentation](https://valkey-py.readthedocs.io/en/latest/index.html)\n\n## Advanced Topics\n\nThe [official Valkey command documentation](https://valkey.io/commands)\ndoes a great job of explaining each command in detail. valkey-py attempts\nto adhere to the official command syntax. There are a few exceptions:\n\n-   **MULTI/EXEC**: These are implemented as part of the Pipeline class.\n    The pipeline is wrapped with the MULTI and EXEC statements by\n    default when it is executed, which can be disabled by specifying\n    transaction=False. See more about Pipelines below.\n\n-   **SUBSCRIBE/LISTEN**: Similar to pipelines, PubSub is implemented as\n    a separate class as it places the underlying connection in a state\n    where it can\\'t execute non-pubsub commands. Calling the pubsub\n    method from the Valkey client will return a PubSub instance where you\n    can subscribe to channels and listen for messages. You can only call\n    PUBLISH from the Valkey client (see [this comment on issue\n    #151](https://github.com/redis/redis-py/issues/151#issuecomment-1545015)\n    for details).\n\nFor more details, please see the documentation on [advanced topics page](https://valkey-py.readthedocs.io/en/latest/advanced_features.html).\n\n### Pipelines\n\nThe following is a basic example of a [Valkey pipeline](https://valkey.io/topics/pipelining/), a method to optimize round-trip calls, by batching Valkey commands, and receiving their results as a list.\n\n\n``` python\n>>> pipe = r.pipeline()\n>>> pipe.set('foo', 5)\n>>> pipe.set('bar', 18.5)\n>>> pipe.set('blee', \"hello world!\")\n>>> pipe.execute()\n[True, True, True]\n```\n\n### PubSub\n\nThe following example shows how to utilize [Valkey Pub/Sub](https://valkey.io/topics/pubsub/) to subscribe to specific channels.\n\n``` python\n>>> r = valkey.Valkey(...)\n>>> p = r.pubsub()\n>>> p.subscribe('my-first-channel', 'my-second-channel', ...)\n>>> p.get_message()\n{'pattern': None, 'type': 'subscribe', 'channel': b'my-second-channel', 'data': 1}\n```\n\n\n--------------------------\n\n### Author\n\nYou can read valkey-py sources on [GitHub](https://github.com/valkey-io/valkey-py), or download it from [pypi](https://pypi.org/project/valkey/)\nIt was created as a fork of [redis-py](https://github.com/redis/redis-py)\n\nSpecial thanks to:\n\n-   Andy McCurdy (<sedrik@gmail.com>) the original author of redis-py.\n-   Ludovico Magnocavallo, author of the original Python Redis client,\n    from which some of the socket code is still used.\n-   Alexander Solovyov for ideas on the generic response callback\n    system.\n-   Paul Hubbard for initial packaging support in redis-py.\n\n[![Valkey](./docs/logo-valkey.png)](https://valkey.io/)", content-type = "text/markdown"}
+license = {text = "MIT"}
+authors = [
+    {name = "valkey-py authors", email = "valkey-py@lists.valkey.io"},
+]
+keywords = ["Valkey", "key-value store", "database"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "async-timeout>=4.0.3; python_full_version<\"3.11.3\"",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/valkey-io/valkey-py"
+"Documentation" = "https://valkey-py.readthedocs.io/en/latest/"
+"Changes" = "https://github.com/valkey-io/valkey-py/releases"
+"Code" = "https://github.com/valkey-io/valkey-py"
+"Issue tracker" = "https://github.com/valkey-io/valkey-py/issues"
+
+[project.optional-dependencies]
+"libvalkey" = [
+    "libvalkey>=4.0.1",
+]
+"ocsp" = [
+    "cryptography>=36.0.1",
+    "pyopenssl==23.2.1",
+    "requests>=2.31.0",
+]
+
+[tool.setuptools]
+packages = [
+    "valkey",
+    "valkey._parsers",
+    "valkey.asyncio",
+    "valkey.commands",
+    "valkey.commands.bf",
+    "valkey.commands.json",
+    "valkey.commands.search",
+    "valkey.commands.timeseries",
+    "valkey.commands.graph",
+]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"valkey" = ["py.typed"]

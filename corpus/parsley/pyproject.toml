@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Parsley"
+version = "1.3"
+description = "Parsing and pattern matching made easy."
+readme = {text = ".. -*- mode: rst -*-\n\n===============================================================\nParsley: A Pattern-Matching Language Based on OMeta and Python\n===============================================================\n\nYou can read further docs at: http://parsley.readthedocs.org/en/latest/\n\nSummary\n-------\n\nParsley is a parsing library for people who find parsers scary or\nannoying. I wrote it because I wanted to parse a programming language,\nand tools like PLY or ANTLR or Bison were very hard to understand and\nintegrate into my Python code. Most parser generators are based on LL\nor LR parsing algorithms that compile to big state machine\ntables. It was like I had to wake up a different section of my brain\nto understand or work on grammar rules.\n\nParsley, like pyparsing and ZestyParser, uses the PEG algorithm, so\neach expression in the grammar rules works like a Python\nexpression. In particular, alternatives are evaluated in order, unlike\ntable-driven parsers such as yacc, bison or PLY.\n\nParsley is an implementation of OMeta, an object-oriented\npattern-matching language developed by Alessandro Warth at\nhttp://tinlizzie.org/ometa/ . For further reading, see Warth's PhD\nthesis, which provides a detailed description of OMeta:\nhttp://www.vpri.org/pdf/tr2008003_experimenting.pdf\n\nHow It Works\n------------\n\nParsley compiles a grammar to a Python class, with the rules as methods. The\nrules specify parsing expressions, which consume input and return values if\nthey succeed in matching.\n\nBasic syntax\n~~~~~~~~~~~~\n``foo = ....``:\n   Define a rule named foo.\n\n``expr1 expr2``:\n   Match expr1, and then match expr2 if it succeeds, returning the value of\n   expr2. Like Python's ``and``.\n\n``expr1 | expr2``:\n  Try to match ``expr1`` --- if it fails, match ``expr2`` instead. Like Python's\n  ``or``.\n\n``expr*``:\n  Match ``expr`` zero or more times, returning a list of matches.\n\n``expr+``:\n  Match ``expr`` one or more times, returning a list of matches.\n\n``expr?``:\n  Try to match ``expr``. Returns ``None`` if it fails to match.\n\n``expr{n, m}``:\n  Match ``expr`` at least ``n`` times, and no more than ``m`` times.\n\n``expr{n}``:\n  Match ``expr`` ``n`` times exactly.\n\n``~expr``:\n  Negative lookahead. Fails if the next item in the input matches\n  ``expr``. Consumes no input.\n\n``~~expr``:\n  Positive lookahead. Fails if the next item in the input does *not*\n  match ``expr``. Consumes no input.\n\n``ruleName`` or ``ruleName(arg1 arg2 etc)``:\n  Call the rule ``ruleName``, possibly with args.\n\n``'x'``:\n  Match the literal character 'x'.\n\n``<expr>``:\n  Returns the string consumed by matching ``expr``. Good for tokenizing rules.\n\n``expr:name``:\n  Bind the result of expr to the local variable ``name``.\n\n``-> pythonExpression``:\n  Evaluate the given Python expression and return its result. Can be\n  used inside parentheses too!\n\n``!(pythonExpression)``:\n  Invoke a Python expression as an action.\n\n``?(pythonExpression)``:\n  Fail if the Python expression is false, Returns True otherwise.\n\nComments like Python comments are supported as well, starting with #\nand extending to the end of the line.\n\nInterface\n---------\n\nThe starting point for defining a new grammar is\n``parsley.makeGrammar(grammarSource, bindings)``, which takes a grammar\ndefinition and a dict of variable bindings for its embedded\nexpressions and produces a Python class. Grammars can be subclassed as\nusual, and makeGrammar can be called on these classes to override\nrules and provide new ones. Grammar rules are exposed as methods.\n\nExample Usage\n-------------\n\n::\n\n    from parsley import makeGrammar\n    exampleGrammar = \"\"\"\n    ones = '1' '1' -> 1\n    twos = '2' '2' -> 2\n    stuff = (ones | twos)+\n    \"\"\"\n    Example = makeGrammar(exampleGrammar, {})\n    g = Example(\"11221111\")\n    result = g.stuff()\n    print result\n\n\u2192  ``[1, 2, 1, 1]``\n", content-type = "text/x-rst"}
+license = {text = "MIT License"}
+authors = [
+    {name = "Allen Short", email = "washort42@gmail.com"},
+]
+
+[project.urls]
+Homepage = "http://launchpad.net/parsley"
+
+[tool.setuptools]
+packages = [
+    "ometa",
+    "terml",
+    "ometa._generated",
+    "terml._generated",
+    "ometa.test",
+    "terml.test",
+]
+py-modules = ["parsley"]
+include-package-data = false

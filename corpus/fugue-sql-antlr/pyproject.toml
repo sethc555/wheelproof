@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fugue-sql-antlr"
+version = "0.2.4"
+description = "Fugue SQL Antlr Parser"
+readme = {text = "# Fugue SQL Antlr Parser\n\n[![PyPI version](https://badge.fury.io/py/fugue-sql-antlr.svg)](https://pypi.python.org/pypi/fugue-sql-antlr/)\n[![PyPI pyversions](https://img.shields.io/pypi/pyversions/fugue-sql-antlr.svg)](https://pypi.python.org/pypi/fugue-sql-antlr/)\n[![PyPI license](https://img.shields.io/pypi/l/fugue-sql-antlr.svg)](https://pypi.python.org/pypi/fugue-sql-antlr/)\n[![codecov](https://codecov.io/gh/fugue-project/fugue-sql-antlr/branch/master/graph/badge.svg?token=TRJFPVXS67)](https://codecov.io/gh/fugue-project/fugue-sql-antlr)\n\nChat with us on slack!\n[![Slack Status](https://img.shields.io/badge/slack-join_chat-white.svg?logo=slack&style=social)](http://slack.fugue.ai)\n\n# Fugue SQL Antlr Parser\n\nThis is the dedicated package for the Fugue SQL parser built on Antlr4. It consists of two packages: [fugue-sql-antlr](https://pypi.python.org/pypi/fugue-sql-antlr/) and [fugue-sql-antlr-cpp](https://pypi.python.org/pypi/fugue-sql-antlr-cpp/).\n\n[fugue-sql-antlr](https://pypi.python.org/pypi/fugue-sql-antlr/) is the main package. It contains the python parser of Fugue SQL and the vistor for the parser tree.\n\n[fugue-sql-antlr-cpp](https://pypi.python.org/pypi/fugue-sql-antlr-cpp/) is the C++ implementation of the parser. This solution is based on the incredible work of [speedy-antlr-tool](https://github.com/amykyta3/speedy-antlr-tool), a tool that generates thin python interface code on top of the C++ Antlr parser. This package is purely optional, it should not affect the correctness and features of the Fugue SQL parser. However, with this package installed, the parsing time is **~25x faster**.\n\nNeither of these two packages should be directly used by users. They are the core internal dependency of the main [Fugue](https://github.com/fugue-project/fugue) project (>=0.7.0).\n\n## Installation\n\nTo install fugue-sql-antlr:\n\n```bash\npip install fugue-sql-antlr\n```\n\nTo install fugue-sql-antlr and fugue-sql-antlr-cpp:\n\n```bash\npip install fugue-sql-antlr[cpp]\n```\n\nWe try to pre-build the wheels for major operating systems and active python versions. But in case your environment is special, then when you install fugue-sql-antlr-cpp, please make sure you have the C++ compiler in your operating system. The C++ compiler must support the ISO C++ 2017 standard.", content-type = "text/markdown"}
+license = {text = "Apache-2.0"}
+authors = [{name = "The Fugue Development Team"}, {email = "hello@fugue.ai"}]
+keywords = ["distributed spark dask sql dsl domain specific language"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Programming Language :: Python :: 3 :: Only",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "triad>=0.6.8",
+    "antlr4-python3-runtime>=4.13.2,<4.14",
+    "jinja2",
+    "packaging",
+]
+
+[project.urls]
+"Homepage" = "http://github.com/fugue-project/fugue"
+
+[project.optional-dependencies]
+"cpp" = ["fugue-sql-antlr-cpp==0.2.4"]
+"test" = ["speedy_antlr_tool"]
+
+[tool.setuptools]
+packages = [
+    "fugue_sql_antlr",
+    "fugue_sql_antlr._parser",
+    "fugue_sql_antlr_version",
+]
+include-package-data = false
+
+[tool.setuptools.package-data]
+"fugue_sql_antlr_cpp" = []

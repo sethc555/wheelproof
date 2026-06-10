@@ -1,7 +1,6 @@
 {
   "package": "google-cloud-dlp",
   "version": "3.37.0",
-  "sdist_url": "https://files.pythonhosted.org/packages/13/38/37a63fa0db125fb2a6fd764c79b3c620c41ae9c88df6c0bce9b462375faa/google_cloud_dlp-3.37.0.tar.gz",
-  "status": "convert-error",
-  "detail": "setuptools-py2cfg failed on /tmp/wheelproof-bc-jpxeg7ic/google_cloud_dlp-3.37.0-converted/setup.py (dynamic setup.py? flag as manual)\nTraceback (most recent call last):\n  File \"/tmp/v/bin/setuptools-py2cfg\", line 8, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 93, in main\n    print(_main(cli_args))\n          ^^^^^^^^^^^^^^^\n  File \"/tmp/v/lib/python3.12/site-packages/setuptools_py2cfg.py\", line 100, in _main\n    setu"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

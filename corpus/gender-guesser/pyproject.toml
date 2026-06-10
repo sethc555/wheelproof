@@ -1,0 +1,31 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gender-guesser"
+version = "0.4.0"
+description = "Get the gender from first name."
+readme = "README.rst"
+[[project.authors]]
+name = "Israel Saeta Pérez"
+email = "israel@lead-ratings.com"
+
+[project.license]
+text = "GPLv3"
+
+[project.urls]
+Homepage = "https://github.com/lead-ratings/gender-guesser"
+
+[project.optional-dependencies]
+testing = [ "tox",]
+
+[tool.setuptools]
+packages = [ "gender_guesser",]
+include-package-data = false
+
+[tool.setuptools.package-dir]
+gender_guesser = "gender_guesser"
+
+[tool.setuptools.package-data]
+gender_guesser = [ "data/*.txt",]

@@ -1,7 +1,6 @@
 {
   "package": "pyshark",
   "version": "0.6",
-  "sdist_url": "https://files.pythonhosted.org/packages/e1/3c/0e6f306a8a0490bfe58d0683553b4c60c6dfcd2cd2c6a68b46673b177dd0/pyshark-0.6.tar.gz",
-  "status": "convert-error",
-  "detail": "unexpected: hon3.12/site-packages/wheelproof/convert.py\", line 68, in _merge_cfg\n    over.read_string(overlay)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 710, in read_string\n    self.read_file(sfile, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 705, in read_file\n    self._read(f, source)\n  File \"/usr/local/lib/python3.12/configparser.py\", line 1096, in _read\n    raise e\nconfigparser.ParsingError: Source contains parsing errors: '<string>'\n\t[line 32]: ' = *.ini; *.pcapng\\n'\n"
+  "status": "pass",
+  "provenance": "llm-pass (model-proposed, independently wheel-diff verified 2026-06-10)"
 }

@@ -1,0 +1,21 @@
+[build-system]
+requires = [ "setuptools>=61.2",]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jsonmerge"
+version = "1.9.2"
+description = "Merge a series of JSON documents."
+readme = "README.rst"
+classifiers = [ "License :: OSI Approved :: MIT License", "Programming Language :: Python", "Programming Language :: Python :: 2", "Programming Language :: Python :: 3", "Intended Audience :: Developers",]
+dependencies = [ "jsonschema>2.4.0",]
+[[project.authors]]
+name = "Tomaz Solc"
+email = "tomaz.solc@tablix.org"
+
+[project.license]
+text = "MIT"
+
+[tool.setuptools]
+packages = [ "jsonmerge",]
+include-package-data = false

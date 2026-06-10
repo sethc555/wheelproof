@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "multi_key_dict"
+version = "2.0.3"
+description = "Multi key dictionary implementation"
+readme = "README.txt"
+license = {text = "License :: OSI Approved :: MIT License (http://opensource.org/licenses/MIT)"}
+authors = [
+  {name = "Lukasz Forynski", email = "lukasz.forynski@gmail.com"},
+]
+classifiers = [
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 2",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Development Status :: 5 - Production/Stable",
+  "Operating System :: OS Independent",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/formiaczek/multi_key_dict"
+
+[tool.setuptools]
+include-package-data = false
+py-modules = ["multi_key_dict"]
