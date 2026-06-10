@@ -1,11 +1,17 @@
 # wheelproof roadmap
 
-> **PAUSED 2026-06-09 — resume here:** Phase 3 batch mode. Run convert across the
-> 1,153 high-severity packages from results/top.jsonl (filter `at_risk` + any
-> high finding), count the verify pass rate. That number — "N of 1,153 doomed
-> packages convert mechanically with proof" — is the headline for any writeup
-> and the seed of the Phase 4 corpus. Everything below Phase 3's first checkbox
-> is built and tested; .venv has build/ini2toml/setuptools-py2cfg/toml.
+> **STATE 2026-06-09 (end of day):** Phase 3 batch mode DONE — unsupervised
+> containerized run over all 1,153 high-severity packages: **395 pass (34%)**,
+> 406 convert-error (dynamic setup.py -> LLM-pass candidates), 295 build-error
+> (original doesn't build in clean py3.12), 57 verify-fail (gate caught bad
+> conversions, e.g. amqp's converted wheel includes test dirs the original
+> excluded). Corpus committed under corpus/. Also: results/broken-now.md — 12
+> top-5000 packages VERIFIED failing to build today (pkg_resources, incl.
+> dropbox/html5lib/hydra-core/omegaconf).
+> **Resume options:** (a) triage the 57 verify-fails — likely systematic
+> py2cfg/ini2toml translation gaps worth fixing once; (b) verify-gated LLM pass
+> over the 406 dynamic refusals; (c) Phase 4 publication — corpus is ready to
+> become a public repo + the broken-now list is the attention artifact.
 
 Context: setuptools retries its deprecated-config removal in 2026
 (https://www.clientserver.dev/p/setuptools-follows-through-on-a-deprecation,
