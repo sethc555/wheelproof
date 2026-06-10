@@ -31,17 +31,28 @@ Single-package scan works. Scale it:
 
 ## Phase 3 — convert
 
-setup.py/setup.cfg -> pyproject.toml. Strategy, in order of reliability:
-1. **Mechanical first**: setup.cfg is declarative — translate it with table-driven
-   rules, no model involved. Covers a large fraction of the tail.
-2. **Model-assisted for setup.py**: dynamic setup() calls get an LLM pass, but the
-   output is only ever accepted via Phase 1 verify. Generation is cheap; the wheel
-   diff is the gate.
-3. **Refuse loudly**: packages with truly dynamic builds (C extensions with custom
-   build_ext, code-generating setup.py) get flagged "manual," not half-converted.
+setup.py/setup.cfg -> pyproject.toml. **Prior-art check (2026-06-09): do not write a
+converter.** The mechanical path exists:
+- `ini2toml` (abravalheri — a setuptools maintainer) does setup.cfg -> pyproject.toml
+  (https://ini2toml.readthedocs.io/en/latest/setuptools_pep621.html)
+- `setuptools-py2cfg` does static setup.py -> setup.cfg
+  (https://github.com/gvalkov/setuptools-py2cfg)
+- pypa/setuptools#3214 discussed auto-conversion but it never became a batch effort
+- diffoscope (reproducible-builds.org) is the generic deep comparator; verify stays
+  opinionated about *this* migration's benign drift, but can emit diffoscope HTML
+  reports for failures
 
-- [ ] mechanical setup.cfg translator
-- [ ] verify-gated LLM pass for setup.py
+So the strategy, in order of reliability:
+1. **Wrap, don't write**: py2cfg + ini2toml chained, each output gated by Phase 1
+   verify. Covers the static fraction of the tail with zero novel translation code.
+2. **Model-assisted for dynamic setup.py**: LLM pass only where the chain fails,
+   output only ever accepted via verify. Generation is cheap; the wheel diff is the gate.
+3. **Refuse loudly**: truly dynamic builds (custom build_ext, code-generating
+   setup.py) get flagged "manual," not half-converted.
+
+- [ ] verify-gated wrapper around setuptools-py2cfg + ini2toml
+- [ ] verify-gated LLM pass for setup.py the chain can't handle
+- [ ] optional diffoscope HTML report on verify failures
 - [ ] batch mode: scan -> convert -> verify -> emit per-package result dir
 
 ## Phase 4 — corpus
