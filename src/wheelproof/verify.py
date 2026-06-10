@@ -138,6 +138,24 @@ def read_wheel(whl: Path) -> WheelContents:
     )
 
 
+def _parse_entry_points(text: str | None) -> dict | None:
+    """Parse entry_points.txt so whitespace/ordering can't cause a false fail."""
+    if text is None:
+        return None
+    import configparser
+
+    parser = configparser.ConfigParser()
+    parser.optionxform = str
+    try:
+        parser.read_string(text)
+    except configparser.Error:
+        return {"unparseable": text}
+    return {
+        group: {k: parser.get(group, k, raw=True).replace(" ", "") for k in parser.options(group)}
+        for group in parser.sections()
+    }
+
+
 def compare(a: WheelContents, b: WheelContents) -> Report:
     report = Report()
 
@@ -148,7 +166,7 @@ def compare(a: WheelContents, b: WheelContents) -> Report:
         n for n in names_a & names_b if a.payload[n] != b.payload[n]
     )
 
-    report.entry_points_changed = a.entry_points != b.entry_points
+    report.entry_points_changed = _parse_entry_points(a.entry_points) != _parse_entry_points(b.entry_points)
 
     fields_a, fields_b = set(a.metadata_fields), set(b.metadata_fields)
     report.metadata_only_a = sorted(fields_a - fields_b)
