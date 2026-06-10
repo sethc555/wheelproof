@@ -61,6 +61,9 @@ def summarize(path: Path) -> str:
     scanned = [r for r in records if "error" not in r]
     errors = [r for r in records if "error" in r]
     at_risk = [r for r in scanned if r.get("at_risk")]
+    high = [
+        r for r in scanned if any(f["severity"] == "high" for f in r.get("findings", []))
+    ]
     finding_counts = Counter(
         f["code"] for r in scanned for f in r.get("findings", [])
     )
@@ -69,7 +72,8 @@ def summarize(path: Path) -> str:
         f"# wheelproof scan summary — {path.name}",
         "",
         f"- packages scanned: {len(scanned)} ({len(errors)} errors/skips)",
-        f"- **at risk: {len(at_risk)}** ({len(at_risk) / len(scanned):.0%} of scanned)" if scanned else "- nothing scanned",
+        f"- **high severity: {len(high)}** ({len(high) / len(scanned):.0%}) — sdist build breaks under the 2026 removals" if scanned else "- nothing scanned",
+        f"- at risk incl. medium: {len(at_risk)} ({len(at_risk) / len(scanned):.0%}) — medium = uses removed APIs (pkg_resources/distutils) or legacy build path" if scanned else "",
         "",
         "## findings by type",
         "",

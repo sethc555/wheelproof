@@ -38,6 +38,11 @@ SETUP_FEATURE_RE = {
     "setup-requires": re.compile(r"\bsetup_requires\s*[=:]"),
     "tests-require": re.compile(r"\btests_require\s*[=:]"),
 }
+# imports under these paths are informational, not build/runtime risk
+NOISE_PATH_RE = re.compile(
+    r"(^|/)(tests?|testing|_vendor|vendored[^/]*|vendor|docs?|examples?|benchmarks?)(/|$)",
+    re.I,
+)
 
 
 @dataclass
@@ -170,7 +175,7 @@ def _check_setup_cfg(root: Path, findings: list[Finding]) -> None:
 
 
 def _check_sources(root: Path, findings: list[Finding]) -> None:
-    seen: dict[str, str] = {}
+    seen: dict[str, tuple[str, str]] = {}  # code -> (severity, example path)
     feature_seen: dict[str, str] = {}
     count = 0
     for py in root.rglob("*.py"):
@@ -182,15 +187,18 @@ def _check_sources(root: Path, findings: list[Finding]) -> None:
         except OSError:
             continue
         rel = str(py.relative_to(root))
+        severity = "low" if NOISE_PATH_RE.search(rel) else "medium"
         for code, pattern in IMPORT_RE.items():
-            if code not in seen and pattern.search(text):
-                seen[code] = rel
+            current = seen.get(code)
+            if (current is None or (current[0] == "low" and severity == "medium")) and pattern.search(text):
+                seen[code] = (severity, rel)
         if py.name == "setup.py":
             for code, pattern in SETUP_FEATURE_RE.items():
                 if code not in feature_seen and pattern.search(text):
                     feature_seen[code] = rel
-    for code, rel in seen.items():
-        findings.append(Finding(code, "medium", f"imported in {rel}"))
+    for code, (severity, rel) in seen.items():
+        qualifier = "" if severity == "medium" else " (test/vendored path — informational)"
+        findings.append(Finding(code, severity, f"imported in {rel}{qualifier}"))
     for code, rel in feature_seen.items():
         findings.append(Finding(code, "low", f"used in {rel}"))
 
