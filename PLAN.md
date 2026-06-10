@@ -9,9 +9,18 @@
 
 Context: setuptools retries its deprecated-config removal in 2026
 (https://www.clientserver.dev/p/setuptools-follows-through-on-a-deprecation,
-https://setuptools.pypa.io/en/latest/history.html). pkg_resources removal slated from
-2025-11-30. The dead tail of PyPI — packages with gone maintainers — is exactly the
-set that can't fix itself.
+https://setuptools.pypa.io/en/latest/history.html). The dead tail of PyPI — packages
+with gone maintainers — is exactly the set that can't fix itself.
+
+Deadline state (verified 2026-06-09 against the setuptools changelog):
+- pkg_resources: REMOVED in v82.0.0 (2026-02-08) — already live; build-time importers
+  are broken against current setuptools today
+- setup.py install / easy_install: deadline 2025-10-31, enforced
+- dash/uppercase setup.cfg keys (the 12k-package breaker of Mar 2025, reverted in
+  78.0.2): warning text set the cutoff at 2026-03-03 — now past due, NOT yet
+  re-applied as of v82.0.1 (2026-03-09). Can land in any release without further
+  notice. Build isolation pulls latest setuptools by default, so it hits every
+  unpinned legacy package the day it ships.
 
 ## Phase 1 — verify core (DONE, v0)
 
