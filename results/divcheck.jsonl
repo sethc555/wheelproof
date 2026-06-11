@@ -1,0 +1,1426 @@
+{"package": "six", "version": "1.17.0", "verdict": "identical"}
+{"package": "certifi", "version": "2026.5.20", "verdict": "identical"}
+{"package": "python-dateutil", "version": "2.9.0.post0", "verdict": "identical"}
+{"package": "setuptools", "version": "82.0.1", "verdict": "identical"}
+{"package": "boto3", "version": "1.43.27", "verdict": "identical"}
+{"package": "s3transfer", "version": "0.18.0", "verdict": "identical"}
+{"package": "h11", "version": "0.16.0", "verdict": "identical"}
+{"package": "s3fs", "version": "2026.4.0", "verdict": "identical"}
+{"package": "cffi", "version": "2.0.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for cffi==2.0.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "jmespath", "version": "1.1.0", "verdict": "identical"}
+{"package": "pytest", "version": "9.0.3", "verdict": "identical"}
+{"package": "pyyaml", "version": "6.0.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyyaml==6.0.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pip", "version": "26.1.2", "verdict": "identical"}
+{"package": "propcache", "version": "0.5.2", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["propcache/_helpers_c.cpython-312-x86_64-linux-gnu.so"], "content_differs": [], "entry_points_changed": false}
+{"package": "yarl", "version": "1.24.2", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["yarl/_quoting_c.cpython-312-x86_64-linux-gnu.so"], "content_differs": [], "entry_points_changed": false}
+{"package": "wheel", "version": "0.47.0", "verdict": "identical"}
+{"package": "google-auth", "version": "2.53.0", "verdict": "identical"}
+{"package": "pytz", "version": "2026.2", "verdict": "identical"}
+{"package": "requests-oauthlib", "version": "2.0.0", "verdict": "identical"}
+{"package": "protobuf", "version": "7.35.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["google/__init__.py", "google/_upb/_message.cpython-312-x86_64-linux-gnu.so"], "content_differs": [], "entry_points_changed": false}
+{"package": "litellm", "version": "1.88.1", "verdict": "identical"}
+{"package": "frozenlist", "version": "1.8.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["frozenlist/_frozenlist.cpython-312-x86_64-linux-gnu.so"], "content_differs": [], "entry_points_changed": false}
+{"package": "oauthlib", "version": "3.3.1", "verdict": "identical"}
+{"package": "more-itertools", "version": "11.1.0", "verdict": "identical"}
+{"package": "psutil", "version": "7.2.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for psutil==7.2.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "requests-toolbelt", "version": "1.0.0", "verdict": "diverged", "only_in_published": ["requests_toolbelt/adapters/appengine.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "websocket-client", "version": "1.9.0", "verdict": "identical"}
+{"package": "distlib", "version": "0.4.2", "verdict": "identical"}
+{"package": "botocore", "version": "1.43.27", "verdict": "diverged", "only_in_published": ["botocore/data/accessanalyzer/2019-11-01/endpoint-rule-set-1.json.gz", "botocore/data/accessanalyzer/2019-11-01/service-2.json.gz", "botocore/data/account/2021-02-01/endpoint-rule-set-1.json.gz", "botocore/data/account/2021-02-01/service-2.json.gz", "botocore/data/acm-pca/2017-08-22/endpoint-rule-set-1.json.gz", "botocore/data/acm-pca/2017-08-22/service-2.json.gz", "botocore/data/acm/2015-12-08/endpoint-rule-set-1.json.gz", "botocore/data/acm/2015-12-08/service-2.json.gz", "botocore/data/aiops/2018-05-10/endpoint-rule-set-1.json.gz", "botocore/data/aiops/2018-05-10/service-2.json.gz", "botocore/data/amp/2020-08-01/endpoint-rule-set-1.json.gz", "botocore/data/amp/2020-08-01/service-2.json.gz", "botocore/data/amplify/2017-07-25/endpoint-rule-set-1.json.gz", "botocore/data/amplify/2017-07-25/service-2.json.gz", "botocore/data/amplifybackend/2020-08-11/endpoint-rule-set-1.json.gz", "botocore/data/amplifybackend/2020-08-11/service-2.json.gz", "botocore/data/amplifyuibuilder/2021-08-11/endpoint-rule-set-1.json.gz", "botocore/data/amplifyuibuilder/2021-08-11/service-2.json.gz", "botocore/data/apigateway/2015-07-09/endpoint-rule-set-1.json.gz", "botocore/data/apigateway/2015-07-09/service-2.json.gz"], "only_in_sdist_build": ["botocore/data/accessanalyzer/2019-11-01/endpoint-rule-set-1.json", "botocore/data/accessanalyzer/2019-11-01/service-2.json", "botocore/data/account/2021-02-01/endpoint-rule-set-1.json", "botocore/data/account/2021-02-01/service-2.json", "botocore/data/acm-pca/2017-08-22/endpoint-rule-set-1.json", "botocore/data/acm-pca/2017-08-22/service-2.json", "botocore/data/acm/2015-12-08/endpoint-rule-set-1.json", "botocore/data/acm/2015-12-08/service-2.json", "botocore/data/aiops/2018-05-10/endpoint-rule-set-1.json", "botocore/data/aiops/2018-05-10/service-2.json", "botocore/data/amp/2020-08-01/endpoint-rule-set-1.json", "botocore/data/amp/2020-08-01/service-2.json", "botocore/data/amplify/2017-07-25/endpoint-rule-set-1.json", "botocore/data/amplify/2017-07-25/service-2.json", "botocore/data/amplifybackend/2020-08-11/endpoint-rule-set-1.json", "botocore/data/amplifybackend/2020-08-11/service-2.json", "botocore/data/amplifyuibuilder/2021-08-11/endpoint-rule-set-1.json", "botocore/data/amplifyuibuilder/2021-08-11/service-2.json", "botocore/data/apigateway/2015-07-09/endpoint-rule-set-1.json", "botocore/data/apigateway/2015-07-09/service-2.json"], "content_differs": [], "entry_points_changed": false}
+{"package": "et-xmlfile", "version": "2.0.0", "verdict": "identical"}
+{"package": "openpyxl", "version": "3.1.5", "verdict": "identical"}
+{"package": "werkzeug", "version": "3.1.8", "verdict": "identical"}
+{"package": "huggingface-hub", "version": "1.19.0", "verdict": "identical"}
+{"package": "ptyprocess", "version": "0.7.0", "verdict": "identical"}
+{"package": "google-cloud-storage", "version": "3.11.0", "verdict": "identical"}
+{"package": "pyopenssl", "version": "26.2.0", "verdict": "identical"}
+{"package": "python-discovery", "version": "1.4.1", "verdict": "identical"}
+{"package": "awscli", "version": "1.45.27", "verdict": "identical"}
+{"package": "smmap", "version": "5.0.3", "verdict": "identical"}
+{"package": "pexpect", "version": "4.9.0", "verdict": "identical"}
+{"package": "psycopg2-binary", "version": "2.9.12", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for psycopg2_binary==2.9.12 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "sortedcontainers", "version": "2.4.0", "verdict": "identical"}
+{"package": "gitdb", "version": "4.0.12", "verdict": "identical"}
+{"package": "multiprocess", "version": "0.70.19", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for multiprocess==0.70.19 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "google-cloud-core", "version": "2.6.0", "verdict": "identical"}
+{"package": "dill", "version": "0.4.1", "verdict": "identical"}
+{"package": "email-validator", "version": "2.3.0", "verdict": "identical"}
+{"package": "deprecated", "version": "1.3.1", "verdict": "identical"}
+{"package": "msal", "version": "1.37.0", "verdict": "identical"}
+{"package": "google-resumable-media", "version": "2.10.0", "verdict": "identical"}
+{"package": "defusedxml", "version": "0.7.1", "verdict": "identical"}
+{"package": "toml", "version": "0.10.2", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["toml/__init__.pyi", "toml/decoder.pyi", "toml/encoder.pyi", "toml/ordered.pyi", "toml/tz.pyi"], "content_differs": [], "entry_points_changed": false}
+{"package": "fonttools", "version": "4.63.0", "verdict": "identical"}
+{"package": "jsonpointer", "version": "3.1.1", "verdict": "identical"}
+{"package": "kubernetes", "version": "36.0.2", "verdict": "identical"}
+{"package": "uritemplate", "version": "4.2.0", "verdict": "identical"}
+{"package": "mypy", "version": "2.1.0", "verdict": "identical"}
+{"package": "google-auth-oauthlib", "version": "1.4.0", "verdict": "identical"}
+{"package": "google-auth-httplib2", "version": "0.4.0", "verdict": "identical"}
+{"package": "snowflake-connector-python", "version": "4.6.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for snowflake_connector_python==4.6.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "asn1crypto", "version": "1.5.1", "verdict": "identical"}
+{"package": "google-api-python-client", "version": "2.197.0", "verdict": "identical"}
+{"package": "sympy", "version": "1.14.0", "verdict": "identical"}
+{"package": "google-cloud-secret-manager", "version": "2.29.0", "verdict": "identical"}
+{"package": "cfgv", "version": "3.5.0", "verdict": "identical"}
+{"package": "identify", "version": "2.6.19", "verdict": "identical"}
+{"package": "uvloop", "version": "0.22.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for uvloop==0.22.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pre-commit", "version": "4.6.0", "verdict": "identical"}
+{"package": "google-cloud-batch", "version": "0.22.0", "verdict": "identical"}
+{"package": "parso", "version": "0.8.7", "verdict": "identical"}
+{"package": "ydb", "version": "3.29.4", "verdict": "identical"}
+{"package": "google-cloud-aiplatform", "version": "1.157.0", "verdict": "identical"}
+{"package": "fastjsonschema", "version": "2.21.2", "verdict": "identical"}
+{"package": "durationpy", "version": "0.10", "verdict": "identical"}
+{"package": "msal-extensions", "version": "1.3.1", "verdict": "identical"}
+{"package": "jsonpatch", "version": "1.33", "verdict": "identical"}
+{"package": "azure-storage-blob", "version": "12.30.0", "verdict": "identical"}
+{"package": "google-analytics-admin", "version": "0.30.0", "verdict": "identical"}
+{"package": "datasets", "version": "5.0.0", "verdict": "identical"}
+{"package": "sentry-sdk", "version": "2.62.0", "verdict": "identical"}
+{"package": "asgiref", "version": "3.11.1", "verdict": "identical"}
+{"package": "zstandard", "version": "0.25.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for zstandard==0.25.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "google-cloud-kms", "version": "3.13.0", "verdict": "identical"}
+{"package": "webencodings", "version": "0.5.1", "verdict": "identical"}
+{"package": "babel", "version": "2.18.0", "verdict": "identical"}
+{"package": "grpcio-tools", "version": "1.81.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for grpcio_tools==1.81.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "transformers", "version": "5.11.0", "verdict": "identical"}
+{"package": "google-cloud-compute", "version": "1.48.0", "verdict": "identical"}
+{"package": "rapidfuzz", "version": "3.14.5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for rapidfuzz==3.14.5 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "librt", "version": "0.11.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for librt==0.11.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "py4j", "version": "0.10.9.9", "verdict": "identical"}
+{"package": "google-cloud-dlp", "version": "3.37.0", "verdict": "identical"}
+{"package": "google-cloud-speech", "version": "2.40.0", "verdict": "identical"}
+{"package": "watchdog", "version": "6.0.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for watchdog==6.0.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "jedi", "version": "0.20.0", "verdict": "identical"}
+{"package": "typing-inspect", "version": "0.9.0", "verdict": "identical"}
+{"package": "google-cloud-pubsub", "version": "2.39.0", "verdict": "identical"}
+{"package": "google-cloud-texttospeech", "version": "2.36.0", "verdict": "identical"}
+{"package": "google-cloud-tasks", "version": "2.22.0", "verdict": "identical"}
+{"package": "pycryptodome", "version": "3.23.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pycryptodome==3.23.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "debugpy", "version": "1.8.21", "verdict": "diverged", "only_in_published": ["debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_cython.cp39-win_amd64.pyd", "debugpy/_vendored/pydevd/_pydevd_frame_eval/pydevd_frame_evaluator.cp39-win_amd64.pyd", "debugpy/_vendored/pydevd/pydevd_attach_to_process/attach.dylib", "debugpy/_vendored/pydevd/pydevd_attach_to_process/attach_amd64.dll", "debugpy/_vendored/pydevd/pydevd_attach_to_process/attach_amd64.pdb", "debugpy/_vendored/pydevd/pydevd_attach_to_process/attach_linux_amd64.so", "debugpy/_vendored/pydevd/pydevd_attach_to_process/attach_x86.dll", "debugpy/_vendored/pydevd/pydevd_attach_to_process/attach_x86.pdb", "debugpy/_vendored/pydevd/pydevd_attach_to_process/inject_dll_amd64.exe", "debugpy/_vendored/pydevd/pydevd_attach_to_process/inject_dll_amd64.pdb", "debugpy/_vendored/pydevd/pydevd_attach_to_process/inject_dll_x86.exe", "debugpy/_vendored/pydevd/pydevd_attach_to_process/inject_dll_x86.pdb", "debugpy/_vendored/pydevd/pydevd_attach_to_process/run_code_on_dllmain_amd64.dll", "debugpy/_vendored/pydevd/pydevd_attach_to_process/run_code_on_dllmain_amd64.pdb", "debugpy/_vendored/pydevd/pydevd_attach_to_process/run_code_on_dllmain_x86.dll", "debugpy/_vendored/pydevd/pydevd_attach_to_process/run_code_on_dllmain_x86.pdb"], "only_in_sdist_build": ["debugpy/_vendored/pydevd/_pydevd_bundle/pydevd_cython.cpython-312-x86_64-linux-gnu.so", "debugpy/_vendored/pydevd/_pydevd_sys_monitoring/_pydevd_sys_monitoring_cython.cpython-312-x86_64-linux-gnu.so"], "content_differs": ["debugpy/_version.py"], "entry_points_changed": false}
+{"package": "msrest", "version": "0.7.1", "verdict": "identical"}
+{"package": "google-cloud-monitoring", "version": "2.31.0", "verdict": "identical"}
+{"package": "pkginfo", "version": "1.12.1.2", "verdict": "identical"}
+{"package": "google-cloud-logging", "version": "3.16.0", "verdict": "identical"}
+{"package": "google-cloud-bigtable", "version": "2.38.0", "verdict": "identical"}
+{"package": "mccabe", "version": "0.7.0", "verdict": "identical"}
+{"package": "asyncpg", "version": "0.31.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for asyncpg==0.31.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "xlsxwriter", "version": "3.2.9", "verdict": "identical"}
+{"package": "google-cloud-vision", "version": "3.14.0", "verdict": "identical"}
+{"package": "python-slugify", "version": "8.0.4", "verdict": "identical"}
+{"package": "rfc3339-validator", "version": "0.1.4", "verdict": "identical"}
+{"package": "arrow", "version": "1.4.0", "verdict": "identical"}
+{"package": "text-unidecode", "version": "1.3", "verdict": "identical"}
+{"package": "pycodestyle", "version": "2.14.0", "verdict": "identical"}
+{"package": "google-cloud-language", "version": "2.20.0", "verdict": "identical"}
+{"package": "google-cloud-videointelligence", "version": "2.19.0", "verdict": "identical"}
+{"package": "google-cloud-workflows", "version": "1.22.0", "verdict": "identical"}
+{"package": "google-cloud-redis", "version": "2.21.0", "verdict": "identical"}
+{"package": "google-cloud-os-login", "version": "2.21.0", "verdict": "identical"}
+{"package": "google-cloud-dataform", "version": "0.11.0", "verdict": "identical"}
+{"package": "deprecation", "version": "2.1.0", "verdict": "identical"}
+{"package": "argcomplete", "version": "3.6.3", "verdict": "identical"}
+{"package": "jsonpath-ng", "version": "1.8.0", "verdict": "identical"}
+{"package": "bleach", "version": "6.4.0", "verdict": "identical"}
+{"package": "google-cloud-run", "version": "0.16.0", "verdict": "identical"}
+{"package": "google-cloud-memcache", "version": "1.15.0", "verdict": "identical"}
+{"package": "azure-common", "version": "1.1.28", "verdict": "identical"}
+{"package": "brotli", "version": "1.2.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for brotli==1.2.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "setproctitle", "version": "1.3.7", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for setproctitle==1.3.7 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "future", "version": "1.0.0", "verdict": "identical"}
+{"package": "xlrd", "version": "2.0.2", "verdict": "identical"}
+{"package": "google-cloud-bigquery-datatransfer", "version": "3.23.0", "verdict": "identical"}
+{"package": "google-cloud-orchestration-airflow", "version": "1.21.0", "verdict": "identical"}
+{"package": "google-cloud-dataproc-metastore", "version": "1.23.0", "verdict": "identical"}
+{"package": "faker", "version": "40.23.0", "verdict": "diverged", "only_in_published": ["faker/sphinx/__init__.py", "faker/sphinx/autodoc.py", "faker/sphinx/docstring.py", "faker/sphinx/documentor.py", "faker/sphinx/validator.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "simplejson", "version": "4.1.1", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["simplejson/_speedups.cpython-312-x86_64-linux-gnu.so"], "content_differs": [], "entry_points_changed": false}
+{"package": "google-cloud-resource-manager", "version": "1.17.0", "verdict": "identical"}
+{"package": "zope-interface", "version": "8.5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for zope_interface==8.5 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "backports-zstd", "version": "1.5.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for backports_zstd==1.5.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "py", "version": "1.11.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["py/_version.py"], "entry_points_changed": false}
+{"package": "pysocks", "version": "1.7.1", "verdict": "identical"}
+{"package": "colorlog", "version": "6.10.1", "verdict": "identical"}
+{"package": "dacite", "version": "1.9.2", "verdict": "identical"}
+{"package": "numba", "version": "0.65.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for numba==0.65.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "google-cloud-automl", "version": "2.20.0", "verdict": "identical"}
+{"package": "pyflakes", "version": "3.4.0", "verdict": "identical"}
+{"package": "nltk", "version": "3.9.4", "verdict": "identical"}
+{"package": "google-cloud-dataflow-client", "version": "0.14.0", "verdict": "identical"}
+{"package": "async-lru", "version": "2.3.0", "verdict": "identical"}
+{"package": "pandocfilters", "version": "1.5.1", "verdict": "identical"}
+{"package": "types-certifi", "version": "2021.10.8.3", "verdict": "identical"}
+{"package": "click-plugins", "version": "1.1.1.2", "verdict": "diverged", "only_in_published": ["click_plugins.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "opensearch-py", "version": "3.2.0", "verdict": "identical"}
+{"package": "flake8", "version": "7.3.0", "verdict": "identical"}
+{"package": "kombu", "version": "5.6.2", "verdict": "identical"}
+{"package": "pycryptodomex", "version": "3.23.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pycryptodomex==3.23.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "ecdsa", "version": "0.19.2", "verdict": "diverged", "only_in_published": ["ecdsa/_rwlock.py", "ecdsa/test_rw_lock.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "aws-sam-translator", "version": "1.110.0", "verdict": "identical"}
+{"package": "celery", "version": "5.6.3", "verdict": "identical"}
+{"package": "humanfriendly", "version": "10.0", "verdict": "identical"}
+{"package": "overrides", "version": "7.7.0", "verdict": "identical"}
+{"package": "inflection", "version": "0.5.1", "verdict": "diverged", "only_in_published": ["inflection.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "vine", "version": "5.1.0", "verdict": "identical"}
+{"package": "amqp", "version": "5.3.1", "verdict": "identical"}
+{"package": "billiard", "version": "4.2.4", "verdict": "identical"}
+{"package": "cython", "version": "3.2.5", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["Cython/Compiler/Code.cpython-312-x86_64-linux-gnu.so", "Cython/Compiler/FlowControl.cpython-312-x86_64-linux-gnu.so", "Cython/Compiler/FusedNode.cpython-312-x86_64-linux-gnu.so", "Cython/Compiler/LineTable.cpython-312-x86_64-linux-gnu.so", "Cython/Compiler/Parsing.cpython-312-x86_64-linux-gnu.so", "Cython/Compiler/Scanning.cpython-312-x86_64-linux-gnu.so", "Cython/Compiler/Visitor.cpython-312-x86_64-linux-gnu.so", "Cython/Plex/Actions.cpython-312-x86_64-linux-gnu.so", "Cython/Plex/DFA.cpython-312-x86_64-linux-gnu.so", "Cython/Plex/Machines.cpython-312-x86_64-linux-gnu.so", "Cython/Plex/Scanners.cpython-312-x86_64-linux-gnu.so", "Cython/Plex/Transitions.cpython-312-x86_64-linux-gnu.so", "Cython/Runtime/refnanny.cpython-312-x86_64-linux-gnu.so", "Cython/StringIOTree.cpython-312-x86_64-linux-gnu.so", "Cython/Tempita/_tempita.cpython-312-x86_64-linux-gnu.so", "Cython/Utils.cpython-312-x86_64-linux-gnu.so"], "content_differs": [], "entry_points_changed": false}
+{"package": "google-cloud-appengine-logging", "version": "1.10.0", "verdict": "identical"}
+{"package": "outcome", "version": "1.3.0.post0", "verdict": "identical"}
+{"package": "click-repl", "version": "0.3.0", "verdict": "identical"}
+{"package": "isoduration", "version": "20.11.0", "verdict": "identical"}
+{"package": "fqdn", "version": "1.5.1", "verdict": "identical"}
+{"package": "pyhumps", "version": "3.8.0", "verdict": "identical"}
+{"package": "google-cloud-spanner", "version": "3.67.0", "verdict": "identical"}
+{"package": "ply", "version": "3.11", "verdict": "identical"}
+{"package": "unidiff", "version": "0.7.5", "verdict": "identical"}
+{"package": "psycopg2", "version": "2.9.12", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for psycopg2==2.9.12 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "rfc3986-validator", "version": "0.1.1", "verdict": "identical"}
+{"package": "db-dtypes", "version": "1.7.0", "verdict": "identical"}
+{"package": "requests-aws4auth", "version": "1.3.2", "verdict": "identical"}
+{"package": "google-cloud-bigquery-storage", "version": "2.39.0", "verdict": "identical"}
+{"package": "adal", "version": "1.2.7", "verdict": "identical"}
+{"package": "google-cloud-audit-log", "version": "0.6.0", "verdict": "identical"}
+{"package": "aenum", "version": "3.1.17", "verdict": "diverged", "only_in_published": ["aenum/test_stdlib_tests.py", "aenum/test_v37.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "google-cloud-container", "version": "2.65.0", "verdict": "identical"}
+{"package": "semantic-version", "version": "2.10.0", "verdict": "identical"}
+{"package": "diskcache", "version": "5.6.3", "verdict": "identical"}
+{"package": "rfc3986", "version": "2.0.0", "verdict": "identical"}
+{"package": "google-cloud-translate", "version": "3.26.0", "verdict": "identical"}
+{"package": "pyrsistent", "version": "0.20.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["pvectorc.cpython-312-x86_64-linux-gnu.so"], "content_differs": [], "entry_points_changed": false}
+{"package": "azure-mgmt-core", "version": "1.6.0", "verdict": "identical"}
+{"package": "azure-monitor-opentelemetry-exporter", "version": "1.0.0b53", "verdict": "identical"}
+{"package": "dateparser", "version": "1.4.0", "verdict": "identical"}
+{"package": "jupyter-lsp", "version": "2.3.1", "verdict": "identical"}
+{"package": "google-cloud-storage-transfer", "version": "1.21.0", "verdict": "identical"}
+{"package": "google-cloud-datacatalog", "version": "3.31.0", "verdict": "identical"}
+{"package": "oauth2client", "version": "4.1.3", "verdict": "identical"}
+{"package": "azure-storage-file-datalake", "version": "12.25.0", "verdict": "identical"}
+{"package": "filetype", "version": "1.2.0", "verdict": "identical"}
+{"package": "trio-websocket", "version": "0.12.2", "verdict": "identical"}
+{"package": "appdirs", "version": "1.4.4", "verdict": "identical"}
+{"package": "coloredlogs", "version": "15.0.1", "verdict": "identical"}
+{"package": "graphene", "version": "3.4.3", "verdict": "diverged", "only_in_published": ["graphene/relay/tests/__init__.py", "graphene/relay/tests/test_connection.py", "graphene/relay/tests/test_connection_async.py", "graphene/relay/tests/test_connection_query.py", "graphene/relay/tests/test_custom_global_id.py", "graphene/relay/tests/test_global_id.py", "graphene/relay/tests/test_mutation.py", "graphene/relay/tests/test_mutation_async.py", "graphene/relay/tests/test_node.py", "graphene/relay/tests/test_node_custom.py", "graphene/tests/__init__.py", "graphene/tests/issues/__init__.py", "graphene/tests/issues/test_1293.py", "graphene/tests/issues/test_1394.py", "graphene/tests/issues/test_1419.py", "graphene/tests/issues/test_313.py", "graphene/tests/issues/test_356.py", "graphene/tests/issues/test_425.py", "graphene/tests/issues/test_490.py", "graphene/tests/issues/test_720.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "azure-storage-queue", "version": "12.17.0", "verdict": "identical"}
+{"package": "patsy", "version": "1.0.2", "verdict": "identical"}
+{"package": "elastic-transport", "version": "9.4.1", "verdict": "identical"}
+{"package": "pandas-gbq", "version": "0.35.0", "verdict": "identical"}
+{"package": "semgrep", "version": "1.166.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for semgrep==1.166.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pyroaring", "version": "1.1.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyroaring==1.1.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "retry", "version": "0.9.2", "verdict": "identical"}
+{"package": "posthog", "version": "7.18.1", "verdict": "identical"}
+{"package": "natsort", "version": "8.4.0", "verdict": "identical"}
+{"package": "mergedeep", "version": "1.3.4", "verdict": "diverged", "only_in_published": ["mergedeep/test_mergedeep.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "frozendict", "version": "2.4.7", "verdict": "identical"}
+{"package": "aioboto3", "version": "15.5.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["aioboto3/_version.py"], "entry_points_changed": false}
+{"package": "dbt-protos", "version": "1.0.514", "verdict": "identical"}
+{"package": "passlib", "version": "1.7.4", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["passlib/_setup/__init__.py", "passlib/_setup/stamp.py"], "content_differs": [], "entry_points_changed": false}
+{"package": "gevent", "version": "26.5.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for gevent==26.5.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pdfplumber", "version": "0.11.9", "verdict": "identical"}
+{"package": "google-cloud-firestore", "version": "2.27.0", "verdict": "identical"}
+{"package": "pytimeparse", "version": "1.1.8", "verdict": "identical"}
+{"package": "aiohttp-retry", "version": "2.9.1", "verdict": "identical"}
+{"package": "lockfile", "version": "0.12.2", "verdict": "identical"}
+{"package": "parsedatetime", "version": "2.6", "verdict": "identical"}
+{"package": "astor", "version": "0.8.1", "verdict": "identical"}
+{"package": "msrestazure", "version": "0.6.4.post1", "verdict": "identical"}
+{"package": "unidecode", "version": "1.4.0", "verdict": "identical"}
+{"package": "pyotp", "version": "2.9.0", "verdict": "identical"}
+{"package": "google-pasta", "version": "0.2.0", "verdict": "identical"}
+{"package": "google-cloud-dataproc", "version": "5.28.0", "verdict": "identical"}
+{"package": "google-cloud-dataplex", "version": "2.20.0", "verdict": "identical"}
+{"package": "imagesize", "version": "2.0.0", "verdict": "identical"}
+{"package": "pbr", "version": "7.0.3", "verdict": "identical"}
+{"package": "mock", "version": "5.2.0", "verdict": "identical"}
+{"package": "pydata-google-auth", "version": "1.9.1", "verdict": "identical"}
+{"package": "sendgrid", "version": "6.12.5", "verdict": "diverged", "only_in_published": ["test/integ/__init__.py", "test/integ/test_sendgrid.py", "test/unit/__init__.py", "test/unit/test_app.py", "test/unit/test_config.py", "test/unit/test_email.py", "test/unit/test_eventwebhook.py", "test/unit/test_inbound_send.py", "test/unit/test_mail_helpers.py", "test/unit/test_parse.py", "test/unit/test_project.py", "test/unit/test_sendgrid.py", "test/unit/test_spam_check.py", "test/unit/test_stats.py", "test/unit/test_twilio_email.py", "test/unit/test_unassigned.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "keyrings-google-artifactregistry-auth", "version": "1.1.2", "verdict": "identical"}
+{"package": "pyright", "version": "1.1.410", "verdict": "identical"}
+{"package": "schema", "version": "0.7.8", "verdict": "identical"}
+{"package": "python-http-client", "version": "3.3.7", "verdict": "identical"}
+{"package": "flask-login", "version": "0.6.3", "verdict": "identical"}
+{"package": "python-magic", "version": "0.4.27", "verdict": "identical"}
+{"package": "great-expectations", "version": "1.18.0", "verdict": "identical"}
+{"package": "leather", "version": "0.4.1", "verdict": "identical"}
+{"package": "boolean-py", "version": "5.0", "verdict": "identical"}
+{"package": "accelerate", "version": "1.14.0", "verdict": "identical"}
+{"package": "pybind11", "version": "3.0.4", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["pybind11/share/cmake/pybind11/pybind11Targets.cmake"], "entry_points_changed": false}
+{"package": "pytest-runner", "version": "6.0.1", "verdict": "identical"}
+{"package": "sphinxcontrib-jsmath", "version": "1.0.1", "verdict": "diverged", "only_in_published": ["sphinxcontrib_jsmath-1.0.1-py3.7-nspkg.pth"], "only_in_sdist_build": ["sphinxcontrib_jsmath-1.0.1-py3.12-nspkg.pth"], "content_differs": [], "entry_points_changed": false}
+{"package": "azure-cosmos", "version": "4.16.1", "verdict": "identical"}
+{"package": "testcontainers", "version": "4.14.2", "verdict": "identical"}
+{"package": "google-cloud-alloydb", "version": "0.10.0", "verdict": "identical"}
+{"package": "aws-requests-auth", "version": "0.4.3", "verdict": "identical"}
+{"package": "types-urllib3", "version": "1.26.25.14", "verdict": "identical"}
+{"package": "hiredis", "version": "3.4.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for hiredis==3.4.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "bitarray", "version": "3.8.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for bitarray==3.8.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "datadog-api-client", "version": "2.55.0", "verdict": "identical"}
+{"package": "bandit", "version": "1.9.4", "verdict": "identical"}
+{"package": "packageurl-python", "version": "0.17.6", "verdict": "identical"}
+{"package": "cached-property", "version": "2.0.1", "verdict": "identical"}
+{"package": "opencensus", "version": "0.11.4", "verdict": "identical"}
+{"package": "opencensus-context", "version": "0.1.3", "verdict": "identical"}
+{"package": "daff", "version": "1.4.2", "verdict": "identical"}
+{"package": "factory-boy", "version": "3.3.3", "verdict": "identical"}
+{"package": "sqlalchemy-spanner", "version": "1.19.0", "verdict": "identical"}
+{"package": "pkgutil-resolve-name", "version": "1.3.10", "verdict": "identical"}
+{"package": "azure-datalake-store", "version": "1.0.1", "verdict": "identical"}
+{"package": "argparse", "version": "1.4.0", "verdict": "identical"}
+{"package": "aws-xray-sdk", "version": "2.15.0", "verdict": "identical"}
+{"package": "nvidia-ml-py", "version": "13.610.43", "verdict": "identical"}
+{"package": "texttable", "version": "1.7.0", "verdict": "identical"}
+{"package": "oscrypto", "version": "1.3.0", "verdict": "identical"}
+{"package": "google-cloud-build", "version": "3.37.0", "verdict": "identical"}
+{"package": "pipenv", "version": "2026.6.2", "verdict": "identical"}
+{"package": "pydub", "version": "0.25.1", "verdict": "identical"}
+{"package": "catalogue", "version": "2.0.10", "verdict": "identical"}
+{"package": "logfire", "version": "4.36.0", "verdict": "identical"}
+{"package": "python-utils", "version": "3.9.1", "verdict": "identical"}
+{"package": "types-redis", "version": "4.6.0.20241004", "verdict": "identical"}
+{"package": "pytzdata", "version": "2020.1", "verdict": "identical"}
+{"package": "snowplow-tracker", "version": "1.1.0", "verdict": "identical"}
+{"package": "yfinance", "version": "1.4.1", "verdict": "identical"}
+{"package": "looker-sdk", "version": "26.10.0", "verdict": "diverged", "only_in_published": ["tests/integration/__init__.py", "tests/integration/test_methods.py", "tests/integration/test_netrc.py", "tests/rtl/__init__.py", "tests/rtl/test_api_methods.py", "tests/rtl/test_api_settings.py", "tests/rtl/test_auth_session.py", "tests/rtl/test_auth_token.py", "tests/rtl/test_requests_transport.py", "tests/rtl/test_serialize.py", "tests/rtl/test_transport.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "configargparse", "version": "1.7.5", "verdict": "identical"}
+{"package": "twilio", "version": "9.10.9", "verdict": "identical"}
+{"package": "pathos", "version": "0.3.5", "verdict": "identical"}
+{"package": "wasabi", "version": "1.1.3", "verdict": "identical"}
+{"package": "makefun", "version": "1.16.0", "verdict": "identical"}
+{"package": "pox", "version": "0.3.7", "verdict": "identical"}
+{"package": "soundfile", "version": "0.14.0", "verdict": "identical"}
+{"package": "ppft", "version": "1.7.8", "verdict": "identical"}
+{"package": "docopt", "version": "0.6.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for docopt==0.6.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "smdebug-rulesconfig", "version": "1.0.1", "verdict": "identical"}
+{"package": "spacy-legacy", "version": "3.0.12", "verdict": "identical"}
+{"package": "gast", "version": "0.7.0", "verdict": "identical"}
+{"package": "trino", "version": "0.337.0", "verdict": "identical"}
+{"package": "locket", "version": "1.0.0", "verdict": "identical"}
+{"package": "types-pyopenssl", "version": "24.1.0.20240722", "verdict": "identical"}
+{"package": "aiohttp-cors", "version": "0.8.1", "verdict": "identical"}
+{"package": "multitasking", "version": "0.0.13", "verdict": "identical"}
+{"package": "pywin32-ctypes", "version": "0.2.3", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["win32ctypes/version.py"], "entry_points_changed": false}
+{"package": "thinc", "version": "9.1.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for thinc==9.1.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "azure-storage-file-share", "version": "12.26.0", "verdict": "identical"}
+{"package": "jaydebeapi", "version": "1.2.3", "verdict": "identical"}
+{"package": "pip-api", "version": "0.0.34", "verdict": "identical"}
+{"package": "glom", "version": "25.12.0", "verdict": "diverged", "only_in_published": ["glom/chainmap_backport.py", "glom/reprlib_backport.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "flit", "version": "3.12.0", "verdict": "identical"}
+{"package": "atlassian-python-api", "version": "4.0.7", "verdict": "identical"}
+{"package": "azure-monitor-opentelemetry", "version": "1.8.8", "verdict": "identical"}
+{"package": "jupyter", "version": "1.1.1", "verdict": "identical"}
+{"package": "olefile", "version": "0.47", "verdict": "diverged", "only_in_published": ["OleFileIO_PL.py", "olefile/CONTRIBUTORS.txt", "olefile/LICENSE.txt", "olefile/README.html", "olefile/README.rst", "olefile/doc/API.html", "olefile/doc/API.md", "olefile/doc/Contribute.html", "olefile/doc/Contribute.md", "olefile/doc/Home.html", "olefile/doc/Home.md", "olefile/doc/Install.html", "olefile/doc/Install.md", "olefile/doc/License.html", "olefile/doc/License.md", "olefile/doc/OLE_Overview.html", "olefile/doc/OLE_Overview.md", "olefile/doc/OLE_VBA_sample.png", "olefile/olefile.html", "olefile/olefile2.html"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "colorful", "version": "0.5.8", "verdict": "identical"}
+{"package": "checkov", "version": "3.3.1", "verdict": "diverged", "only_in_published": ["checkov/ansible/checks/graph_checks/BlockErrorHandling.json", "checkov/ansible/checks/graph_checks/DnfDisableGpgCheck.json", "checkov/ansible/checks/graph_checks/DnfSslVerify.json", "checkov/ansible/checks/graph_checks/DnfValidateCerts.json", "checkov/ansible/checks/graph_checks/GetUrlHttpsOnly.json", "checkov/ansible/checks/graph_checks/PanosIPsecAuthenticationAlgorithms.json", "checkov/ansible/checks/graph_checks/PanosIPsecProtocols.json", "checkov/ansible/checks/graph_checks/PanosInterfaceMgmtProfileNoHTTP.json", "checkov/ansible/checks/graph_checks/PanosInterfaceMgmtProfileNoTelnet.json", "checkov/ansible/checks/graph_checks/PanosPolicyDescription.json", "checkov/ansible/checks/graph_checks/PanosPolicyLogForwarding.json", "checkov/ansible/checks/graph_checks/PanosPolicyLogSessionStart.json", "checkov/ansible/checks/graph_checks/PanosPolicyLoggingEnabled.json", "checkov/ansible/checks/graph_checks/PanosPolicyNoApplicationAny.json", "checkov/ansible/checks/graph_checks/PanosPolicyNoDSRI.json", "checkov/ansible/checks/graph_checks/PanosPolicyNoServiceAny.json", "checkov/ansible/checks/graph_checks/PanosPolicyNoSrcAnyDstAny.json", "checkov/ansible/checks/graph_checks/PanosPolicyNoSrcZoneAnyNoDstZoneAny.json", "checkov/ansible/checks/graph_checks/PanosZoneProtectionProfile.json", "checkov/ansible/checks/graph_checks/PanosZoneUserIDIncludeACL.json"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "supervisor", "version": "4.3.0", "verdict": "identical"}
+{"package": "firebase-admin", "version": "7.4.0", "verdict": "identical"}
+{"package": "fuzzywuzzy", "version": "0.18.0", "verdict": "identical"}
+{"package": "restructuredtext-lint", "version": "2.0.2", "verdict": "identical"}
+{"package": "grpcio-gcp", "version": "0.2.2", "verdict": "identical"}
+{"package": "google-ai-generativelanguage", "version": "0.12.0", "verdict": "identical"}
+{"package": "geopy", "version": "2.4.1", "verdict": "diverged", "only_in_published": ["geopy/geocoders/algolia.py", "geopy/geocoders/dot_us.py", "geopy/geocoders/geocodefarm.py", "geopy/geocoders/mapzen.py", "geopy/geocoders/placefinder.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "flask-appbuilder", "version": "5.2.1", "verdict": "identical"}
+{"package": "opentelemetry-resourcedetector-gcp", "version": "1.12.0a0", "verdict": "identical"}
+{"package": "respx", "version": "0.23.1", "verdict": "identical"}
+{"package": "segment-analytics-python", "version": "2.3.6", "verdict": "diverged", "only_in_published": ["segment/analytics/test/client.py", "segment/analytics/test/consumer.py", "segment/analytics/test/module.py", "segment/analytics/test/oauth.py", "segment/analytics/test/request.py", "segment/analytics/test/utils.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "feedparser", "version": "6.0.12", "verdict": "identical"}
+{"package": "avro", "version": "1.12.1", "verdict": "identical"}
+{"package": "socksio", "version": "1.0.0", "verdict": "identical"}
+{"package": "jsonlines", "version": "4.0.0", "verdict": "identical"}
+{"package": "pdf2image", "version": "1.17.0", "verdict": "identical"}
+{"package": "ghp-import", "version": "2.1.0", "verdict": "identical"}
+{"package": "incremental", "version": "24.11.0", "verdict": "identical"}
+{"package": "fabric", "version": "3.2.3", "verdict": "identical"}
+{"package": "google-cloud-artifact-registry", "version": "1.22.0", "verdict": "identical"}
+{"package": "databricks-cli", "version": "0.18.0", "verdict": "identical"}
+{"package": "azure-mgmt-msi", "version": "7.1.0", "verdict": "identical"}
+{"package": "monotonic", "version": "1.6", "verdict": "identical"}
+{"package": "sphinx-rtd-theme", "version": "3.1.0", "verdict": "identical"}
+{"package": "office365-rest-python-client", "version": "2.6.2", "verdict": "identical"}
+{"package": "adlfs", "version": "2026.5.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["adlfs/_version.py"], "entry_points_changed": false}
+{"package": "aliyun-python-sdk-core", "version": "2.16.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for aliyun_python_sdk_core==2.16.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "kfp", "version": "2.16.1", "verdict": "identical"}
+{"package": "google-cloud-storage-control", "version": "1.12.0", "verdict": "identical"}
+{"package": "pyserial", "version": "3.5", "verdict": "identical"}
+{"package": "astunparse", "version": "1.6.3", "verdict": "identical"}
+{"package": "scp", "version": "0.15.0", "verdict": "identical"}
+{"package": "pickleshare", "version": "0.7.5", "verdict": "identical"}
+{"package": "backcall", "version": "0.2.0", "verdict": "identical"}
+{"package": "amazon-ion", "version": "0.13.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for amazon_ion==0.13.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "aioresponses", "version": "0.7.8", "verdict": "identical"}
+{"package": "slicer", "version": "0.0.8", "verdict": "identical"}
+{"package": "pypika", "version": "0.51.1", "verdict": "identical"}
+{"package": "flask-jwt-extended", "version": "4.7.4", "verdict": "identical"}
+{"package": "azure-data-tables", "version": "12.7.0", "verdict": "identical"}
+{"package": "ldap3", "version": "2.9.1", "verdict": "identical"}
+{"package": "pygtrie", "version": "2.5.0", "verdict": "identical"}
+{"package": "libclang", "version": "18.1.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for libclang==18.1.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "cairosvg", "version": "2.9.0", "verdict": "identical"}
+{"package": "paginate", "version": "0.5.7", "verdict": "identical"}
+{"package": "flower", "version": "2.0.1", "verdict": "identical"}
+{"package": "pyyaml-ft", "version": "8.0.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyyaml_ft==8.0.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "thrift-sasl", "version": "0.4.3", "verdict": "identical"}
+{"package": "contextlib2", "version": "21.6.0", "verdict": "identical"}
+{"package": "junit-xml", "version": "1.9", "verdict": "identical"}
+{"package": "asynctest", "version": "0.13.0", "verdict": "identical"}
+{"package": "docker-pycreds", "version": "0.4.0", "verdict": "identical"}
+{"package": "oldest-supported-numpy", "version": "2023.12.21", "verdict": "identical"}
+{"package": "ratelimit", "version": "2.2.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for ratelimit==2.2.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "azure-mgmt-containerinstance", "version": "10.1.0", "verdict": "identical"}
+{"package": "torchmetrics", "version": "1.9.0", "verdict": "identical"}
+{"package": "pysftp", "version": "0.2.9", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pysftp==0.2.9 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "prison", "version": "0.2.1", "verdict": "identical"}
+{"package": "pytest-json-report", "version": "1.5.0", "verdict": "identical"}
+{"package": "google-cloud-managedkafka", "version": "0.4.0", "verdict": "identical"}
+{"package": "bottle", "version": "0.13.4", "verdict": "identical"}
+{"package": "geventhttpclient", "version": "2.3.9", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for geventhttpclient==2.3.9 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "chevron", "version": "0.14.0", "verdict": "identical"}
+{"package": "azure-nspkg", "version": "3.0.2", "verdict": "identical"}
+{"package": "ciso8601", "version": "2.3.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for ciso8601==2.3.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "azure-mgmt-datalake-store", "version": "0.5.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["azure/__init__.py", "azure/mgmt/__init__.py", "azure/mgmt/datalake/__init__.py"], "content_differs": [], "entry_points_changed": false}
+{"package": "methodtools", "version": "0.4.7", "verdict": "identical"}
+{"package": "scikit-build-core", "version": "0.12.2", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["scikit_build_core/_version.py"], "entry_points_changed": false}
+{"package": "imageio-ffmpeg", "version": "0.6.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for imageio_ffmpeg==0.6.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "dpath", "version": "2.2.0", "verdict": "identical"}
+{"package": "ffmpeg-python", "version": "0.2.0", "verdict": "identical"}
+{"package": "google-cloud-trace", "version": "1.19.0", "verdict": "identical"}
+{"package": "azure-storage-common", "version": "2.1.0", "verdict": "identical"}
+{"package": "user-agents", "version": "2.2.0", "verdict": "identical"}
+{"package": "opentelemetry-exporter-gcp-trace", "version": "1.12.0", "verdict": "identical"}
+{"package": "google-cloud-iam", "version": "2.23.0", "verdict": "identical"}
+{"package": "opencensus-ext-azure", "version": "1.1.15", "verdict": "identical"}
+{"package": "nose", "version": "1.3.7", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["nose-1.3.7.data/scripts/nosetests"], "content_differs": ["nose/case.py", "nose/commands.py", "nose/config.py", "nose/core.py", "nose/ext/dtcompat.py", "nose/failure.py", "nose/inspector.py", "nose/loader.py", "nose/plugins/attrib.py", "nose/plugins/base.py", "nose/plugins/capture.py", "nose/plugins/collect.py", "nose/plugins/cover.py", "nose/plugins/doctests.py", "nose/plugins/errorclass.py", "nose/plugins/isolate.py", "nose/plugins/logcapture.py", "nose/plugins/manager.py", "nose/plugins/multiprocess.py", "nose/plugins/plugintest.py"], "entry_points_changed": true}
+{"package": "azure-synapse-artifacts", "version": "0.22.0", "verdict": "identical"}
+{"package": "oss2", "version": "2.19.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for oss2==2.19.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "python-snappy", "version": "0.7.3", "verdict": "identical"}
+{"package": "clickhouse-driver", "version": "0.2.10", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for clickhouse_driver==0.2.10 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "minio", "version": "7.2.20", "verdict": "identical"}
+{"package": "pytest-unordered", "version": "0.7.0", "verdict": "identical"}
+{"package": "thefuzz", "version": "0.22.1", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["thefuzz/fuzz.pyi", "thefuzz/process.pyi", "thefuzz/py.typed", "thefuzz/utils.pyi"], "content_differs": [], "entry_points_changed": false}
+{"package": "pyhcl", "version": "0.4.5", "verdict": "identical"}
+{"package": "marshmallow-enum", "version": "1.5.1", "verdict": "identical"}
+{"package": "altgraph", "version": "0.17.5", "verdict": "identical"}
+{"package": "alibabacloud-tea-openapi", "version": "0.4.4", "verdict": "identical"}
+{"package": "azure-keyvault", "version": "4.2.0", "verdict": "identical"}
+{"package": "azure-synapse-spark", "version": "0.7.0", "verdict": "identical"}
+{"package": "dockerfile-parse", "version": "2.0.1", "verdict": "identical"}
+{"package": "expiringdict", "version": "1.2.2", "verdict": "identical"}
+{"package": "applicationinsights", "version": "0.11.10", "verdict": "identical"}
+{"package": "langdetect", "version": "1.0.9", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for langdetect==1.0.9 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "azure-monitor-query", "version": "2.0.0", "verdict": "identical"}
+{"package": "blake3", "version": "1.0.8", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for blake3==1.0.8 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pyinstaller-hooks-contrib", "version": "2026.6", "verdict": "identical"}
+{"package": "appnope", "version": "0.1.4", "verdict": "identical"}
+{"package": "pyxlsb", "version": "1.0.10", "verdict": "identical"}
+{"package": "azure-ai-documentintelligence", "version": "1.0.2", "verdict": "identical"}
+{"package": "functions-framework", "version": "3.10.1", "verdict": "identical"}
+{"package": "dash", "version": "4.2.0", "verdict": "identical"}
+{"package": "elasticsearch-dsl", "version": "8.18.0", "verdict": "identical"}
+{"package": "azure-mgmt-authorization", "version": "4.0.0", "verdict": "identical"}
+{"package": "alibabacloud-credentials", "version": "1.0.9", "verdict": "identical"}
+{"package": "python-crontab", "version": "3.3.0", "verdict": "identical"}
+{"package": "aniso8601", "version": "10.0.1", "verdict": "identical"}
+{"package": "stringcase", "version": "1.2.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for stringcase==1.2.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "python-decouple", "version": "3.8", "verdict": "identical"}
+{"package": "greenback", "version": "1.3.0", "verdict": "identical"}
+{"package": "avro-python3", "version": "1.10.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for avro_python3==1.10.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "cookiecutter", "version": "2.7.1", "verdict": "identical"}
+{"package": "dataclasses", "version": "0.8", "verdict": "identical"}
+{"package": "bottleneck", "version": "1.6.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for bottleneck==1.6.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "sgmllib3k", "version": "1.0.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for sgmllib3k==1.0.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "lupa", "version": "2.8", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for lupa==2.8 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "types-python-slugify", "version": "8.0.2.20240310", "verdict": "identical"}
+{"package": "xlwt", "version": "1.3.0", "verdict": "identical"}
+{"package": "azure-appconfiguration", "version": "1.8.1", "verdict": "identical"}
+{"package": "publication", "version": "0.0.3", "verdict": "identical"}
+{"package": "msoffcrypto-tool", "version": "6.0.0", "verdict": "identical"}
+{"package": "enum34", "version": "1.1.10", "verdict": "diverged", "only_in_published": ["enum/LICENSE", "enum/README", "enum/__init__.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "asana", "version": "5.2.5", "verdict": "identical"}
+{"package": "azure-mgmt-redis", "version": "14.5.0", "verdict": "identical"}
+{"package": "namex", "version": "0.1.0", "verdict": "identical"}
+{"package": "circuitbreaker", "version": "2.1.3", "verdict": "identical"}
+{"package": "starkbank-ecdsa", "version": "2.3.1", "verdict": "identical"}
+{"package": "cligj", "version": "0.7.2", "verdict": "identical"}
+{"package": "dictdiffer", "version": "0.9.0", "verdict": "identical"}
+{"package": "cobble", "version": "0.1.4", "verdict": "identical"}
+{"package": "dirtyjson", "version": "1.0.8", "verdict": "identical"}
+{"package": "icdiff", "version": "2.0.10", "verdict": "identical"}
+{"package": "amplitude-analytics", "version": "1.2.3", "verdict": "identical"}
+{"package": "azure-mgmt-monitor", "version": "7.0.0", "verdict": "identical"}
+{"package": "ansicolors", "version": "1.1.8", "verdict": "identical"}
+{"package": "pytest-custom-exit-code", "version": "0.3.0", "verdict": "identical"}
+{"package": "pytest-icdiff", "version": "0.9", "verdict": "identical"}
+{"package": "python-jenkins", "version": "1.8.3", "verdict": "identical"}
+{"package": "diffusers", "version": "0.38.0", "verdict": "identical"}
+{"package": "azure-mgmt-nspkg", "version": "3.0.2", "verdict": "identical"}
+{"package": "markdown2", "version": "2.5.5", "verdict": "identical"}
+{"package": "allure-python-commons", "version": "2.16.0", "verdict": "identical"}
+{"package": "uuid7", "version": "0.1.0", "verdict": "identical"}
+{"package": "pure-sasl", "version": "0.6.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pure_sasl==0.6.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "slackclient", "version": "2.9.4", "verdict": "identical"}
+{"package": "google-cloud-discoveryengine", "version": "0.20.0", "verdict": "identical"}
+{"package": "ifaddr", "version": "0.2.0", "verdict": "identical"}
+{"package": "swifter", "version": "1.4.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for swifter==1.4.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "azure-mgmt-datalake-nspkg", "version": "3.0.1", "verdict": "identical"}
+{"package": "google-cloud-bigquery-biglake", "version": "0.8.0", "verdict": "identical"}
+{"package": "protobuf3-to-dict", "version": "0.1.5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for protobuf3_to_dict==0.1.5 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pyhive", "version": "0.7.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyhive==0.7.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "voluptuous", "version": "0.16.0", "verdict": "identical"}
+{"package": "pyahocorasick", "version": "2.3.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyahocorasick==2.3.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "enum-compat", "version": "0.0.3", "verdict": "identical"}
+{"package": "facebook-business", "version": "25.0.2", "verdict": "identical"}
+{"package": "pyaml", "version": "26.2.1", "verdict": "identical"}
+{"package": "alibabacloud-adb20211201", "version": "3.7.1", "verdict": "identical"}
+{"package": "ddsketch", "version": "3.0.1", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["ddsketch/__version.py"], "entry_points_changed": false}
+{"package": "aiocache", "version": "0.12.3", "verdict": "identical"}
+{"package": "sphinx-copybutton", "version": "0.5.2", "verdict": "identical"}
+{"package": "pytest-instafail", "version": "0.5.0", "verdict": "identical"}
+{"package": "eth-account", "version": "0.13.7", "verdict": "identical"}
+{"package": "num2words", "version": "0.5.14", "verdict": "identical"}
+{"package": "unicodecsv", "version": "0.14.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for unicodecsv==0.14.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "ipaddress", "version": "1.0.23", "verdict": "identical"}
+{"package": "configobj", "version": "5.0.9", "verdict": "identical"}
+{"package": "azure-mgmt-sql", "version": "3.0.1", "verdict": "identical"}
+{"package": "hdfs", "version": "2.7.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for hdfs==2.7.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "python-box", "version": "7.4.1", "verdict": "identical"}
+{"package": "allure-pytest", "version": "2.16.0", "verdict": "identical"}
+{"package": "python3-openid", "version": "3.2.0", "verdict": "identical"}
+{"package": "djangorestframework-simplejwt", "version": "5.5.1", "verdict": "identical"}
+{"package": "opentelemetry-exporter-gcp-monitoring", "version": "1.12.0a0", "verdict": "identical"}
+{"package": "ipython-genutils", "version": "0.2.0", "verdict": "identical"}
+{"package": "azure-mgmt-servicebus", "version": "9.0.0", "verdict": "identical"}
+{"package": "addict", "version": "2.4.0", "verdict": "identical"}
+{"package": "clickclick", "version": "20.10.2", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": true}
+{"package": "azure-mgmt-eventhub", "version": "11.2.0", "verdict": "identical"}
+{"package": "knack", "version": "0.14.0", "verdict": "identical"}
+{"package": "eth-utils", "version": "6.0.0", "verdict": "identical"}
+{"package": "docx2txt", "version": "0.9", "verdict": "identical"}
+{"package": "memory-profiler", "version": "0.61.0", "verdict": "identical"}
+{"package": "pyinotify", "version": "0.9.6", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyinotify==0.9.6 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "django-environ", "version": "0.13.0", "verdict": "identical"}
+{"package": "eth-abi", "version": "5.2.0", "verdict": "identical"}
+{"package": "hexbytes", "version": "1.3.1", "verdict": "identical"}
+{"package": "azure-mgmt-applicationinsights", "version": "4.1.0", "verdict": "identical"}
+{"package": "tokenize-rt", "version": "6.2.0", "verdict": "identical"}
+{"package": "azure-mgmt-cdn", "version": "13.1.1", "verdict": "identical"}
+{"package": "win32-setctime", "version": "1.2.0", "verdict": "identical"}
+{"package": "azure-mgmt-search", "version": "9.2.0", "verdict": "identical"}
+{"package": "eth-hash", "version": "0.8.0", "verdict": "identical"}
+{"package": "azure-mgmt-eventgrid", "version": "10.4.0", "verdict": "identical"}
+{"package": "django-celery-beat", "version": "2.9.0", "verdict": "identical"}
+{"package": "eth-typing", "version": "6.0.0", "verdict": "identical"}
+{"package": "azure-mgmt-iothub", "version": "4.0.0", "verdict": "identical"}
+{"package": "eth-rlp", "version": "2.2.0", "verdict": "identical"}
+{"package": "azure-mgmt-trafficmanager", "version": "1.1.0", "verdict": "identical"}
+{"package": "ultralytics-thop", "version": "2.0.20", "verdict": "identical"}
+{"package": "funcsigs", "version": "1.0.2", "verdict": "identical"}
+{"package": "edge-tts", "version": "7.2.8", "verdict": "identical"}
+{"package": "azure-cli-core", "version": "2.87.0", "verdict": "identical"}
+{"package": "funcy", "version": "2.0", "verdict": "diverged", "only_in_published": ["funcy/compat.py", "funcy/py2.py", "funcy/py3.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "pathlib", "version": "1.0.1", "verdict": "identical"}
+{"package": "dynaconf", "version": "3.2.13", "verdict": "identical"}
+{"package": "opentelemetry-exporter-gcp-logging", "version": "1.12.0a0", "verdict": "identical"}
+{"package": "zstd", "version": "1.5.7.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for zstd==1.5.7.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "justext", "version": "3.0.2", "verdict": "identical"}
+{"package": "webob", "version": "1.8.10", "verdict": "identical"}
+{"package": "airbyte-api", "version": "0.53.0", "verdict": "identical"}
+{"package": "google-cloud-datastore", "version": "2.25.0", "verdict": "identical"}
+{"package": "azure-mgmt-signalr", "version": "1.2.0", "verdict": "identical"}
+{"package": "opsgenie-sdk", "version": "2.1.5", "verdict": "identical"}
+{"package": "azure-mgmt-servicefabric", "version": "2.1.0", "verdict": "identical"}
+{"package": "azure-cli", "version": "2.87.0", "verdict": "identical"}
+{"package": "azure-mgmt-billing", "version": "7.0.0", "verdict": "identical"}
+{"package": "azure-mgmt-maps", "version": "2.1.0", "verdict": "identical"}
+{"package": "azure-mgmt-iothubprovisioningservices", "version": "1.1.0", "verdict": "identical"}
+{"package": "azure-mgmt-media", "version": "10.2.1", "verdict": "identical"}
+{"package": "azure-mgmt-datamigration", "version": "10.1.0", "verdict": "identical"}
+{"package": "azure-mgmt-batchai", "version": "7.0.0", "verdict": "identical"}
+{"package": "evaluate", "version": "0.4.6", "verdict": "identical"}
+{"package": "marshmallow-dataclass", "version": "8.7.1", "verdict": "identical"}
+{"package": "numpy-financial", "version": "1.0.0", "verdict": "identical"}
+{"package": "alibabacloud-tea-util", "version": "0.3.14", "verdict": "identical"}
+{"package": "python-crfsuite", "version": "0.9.12", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for python_crfsuite==0.9.12 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "ndg-httpsclient", "version": "0.5.1", "verdict": "identical"}
+{"package": "ip3country", "version": "0.4.0", "verdict": "identical"}
+{"package": "azure-ai-agents", "version": "1.1.0", "verdict": "identical"}
+{"package": "jsbeautifier", "version": "1.15.4", "verdict": "identical"}
+{"package": "eth-keys", "version": "0.7.0", "verdict": "identical"}
+{"package": "rlp", "version": "4.1.0", "verdict": "identical"}
+{"package": "sqlalchemy-redshift", "version": "1.0.0", "verdict": "identical"}
+{"package": "line-bot-sdk", "version": "3.23.0", "verdict": "identical"}
+{"package": "async-generator", "version": "1.10", "verdict": "identical"}
+{"package": "trimesh", "version": "4.12.2", "verdict": "identical"}
+{"package": "eth-keyfile", "version": "0.9.1", "verdict": "identical"}
+{"package": "google-analytics-data", "version": "0.23.0", "verdict": "identical"}
+{"package": "korean-lunar-calendar", "version": "0.3.1", "verdict": "identical"}
+{"package": "tf-keras", "version": "2.21.0", "verdict": "identical"}
+{"package": "tavily-python", "version": "0.7.26", "verdict": "identical"}
+{"package": "crcmod", "version": "1.7", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for crcmod==1.7 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "polib", "version": "1.2.0", "verdict": "identical"}
+{"package": "pefile", "version": "2024.8.26", "verdict": "identical"}
+{"package": "vertica-python", "version": "1.4.0", "verdict": "identical"}
+{"package": "django-model-utils", "version": "5.0.0", "verdict": "identical"}
+{"package": "ckzg", "version": "2.1.7", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for ckzg==2.1.7 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "construct", "version": "2.10.70", "verdict": "identical"}
+{"package": "jinja2-humanize-extension", "version": "0.4.0", "verdict": "identical"}
+{"package": "pyhocon", "version": "0.3.63", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyhocon==0.3.63 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "commonmark", "version": "0.9.2", "verdict": "identical"}
+{"package": "aiormq", "version": "6.9.4", "verdict": "identical"}
+{"package": "pyodps", "version": "0.13.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyodps==0.13.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "premailer", "version": "3.10.0", "verdict": "identical"}
+{"package": "statsig", "version": "0.71.6", "verdict": "identical"}
+{"package": "azure-mgmt-privatedns", "version": "1.2.0", "verdict": "identical"}
+{"package": "pex", "version": "2.96.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pex==2.96.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "priority", "version": "2.0.0", "verdict": "identical"}
+{"package": "web3", "version": "7.16.0", "verdict": "identical"}
+{"package": "base58", "version": "2.1.1", "verdict": "identical"}
+{"package": "detect-secrets", "version": "1.5.0", "verdict": "diverged", "only_in_published": ["detect_secrets/py.typed"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "requests-kerberos", "version": "0.15.0", "verdict": "identical"}
+{"package": "azure-mgmt-apimanagement", "version": "5.0.0", "verdict": "identical"}
+{"package": "alibabacloud-openapi-util", "version": "0.2.4", "verdict": "identical"}
+{"package": "azure-devops", "version": "7.1.0b4", "verdict": "identical"}
+{"package": "interegular", "version": "0.3.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for interegular==0.3.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "azure-eventgrid", "version": "4.22.0", "verdict": "identical"}
+{"package": "google", "version": "3.0.0", "verdict": "identical"}
+{"package": "multipledispatch", "version": "1.0.0", "verdict": "identical"}
+{"package": "probableparsing", "version": "0.0.1", "verdict": "identical"}
+{"package": "publicsuffix2", "version": "2.20191221", "verdict": "identical"}
+{"package": "json-merge-patch", "version": "0.3.0", "verdict": "identical"}
+{"package": "azure-mgmt-appconfiguration", "version": "5.0.0", "verdict": "identical"}
+{"package": "apache-beam", "version": "2.74.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for apache_beam==2.74.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "async-property", "version": "0.2.2", "verdict": "identical"}
+{"package": "querystring-parser", "version": "1.2.4", "verdict": "identical"}
+{"package": "pylatexenc", "version": "2.10", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pylatexenc==2.10 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "argparse-addons", "version": "0.12.0", "verdict": "identical"}
+{"package": "azure-cli-telemetry", "version": "1.1.0", "verdict": "identical"}
+{"package": "numcodecs", "version": "0.16.5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for numcodecs==0.16.5 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "azure-mgmt-security", "version": "7.0.0", "verdict": "identical"}
+{"package": "microsoft-security-utilities-secret-masker", "version": "1.0.0b4", "verdict": "identical"}
+{"package": "google-cloud", "version": "0.34.0", "verdict": "identical"}
+{"package": "lxml-stubs", "version": "0.5.1", "verdict": "identical"}
+{"package": "textparser", "version": "0.24.0", "verdict": "identical"}
+{"package": "pynamodb", "version": "6.1.0", "verdict": "identical"}
+{"package": "azure-mgmt-synapse", "version": "2.0.0", "verdict": "identical"}
+{"package": "bc-detect-secrets", "version": "1.5.47", "verdict": "identical"}
+{"package": "orderedmultidict", "version": "1.0.2", "verdict": "diverged", "only_in_published": ["orderedmultidict/py.typed"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "django-celery-results", "version": "2.6.0", "verdict": "identical"}
+{"package": "mpire", "version": "2.10.2", "verdict": "identical"}
+{"package": "typing", "version": "3.10.0.0", "verdict": "identical"}
+{"package": "hmsclient", "version": "0.1.1", "verdict": "identical"}
+{"package": "furl", "version": "2.1.4", "verdict": "identical"}
+{"package": "usaddress", "version": "0.5.16", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["usaddress/usaddr.crfsuite"], "entry_points_changed": false}
+{"package": "pytest-dotenv", "version": "0.5.2", "verdict": "identical"}
+{"package": "azure-keyvault-administration", "version": "4.7.0", "verdict": "identical"}
+{"package": "atomicwrites", "version": "1.4.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for atomicwrites==1.4.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "intelhex", "version": "2.3.0", "verdict": "identical"}
+{"package": "azure-graphrbac", "version": "0.61.2", "verdict": "identical"}
+{"package": "azure-synapse-accesscontrol", "version": "0.7.0", "verdict": "identical"}
+{"package": "azure-mgmt-sqlvirtualmachine", "version": "0.5.0", "verdict": "identical"}
+{"package": "azure-mgmt-botservice", "version": "2.0.0", "verdict": "identical"}
+{"package": "azure-synapse-managedprivateendpoints", "version": "0.4.0", "verdict": "identical"}
+{"package": "azure-mgmt-servicelinker", "version": "1.1.0", "verdict": "identical"}
+{"package": "fixedint", "version": "0.2.0", "verdict": "identical"}
+{"package": "azure-mgmt-extendedlocation", "version": "2.0.0", "verdict": "identical"}
+{"package": "arpeggio", "version": "2.0.3", "verdict": "identical"}
+{"package": "imagehash", "version": "4.3.2", "verdict": "diverged", "only_in_published": ["ImageHash-4.3.2.data/data/images/imagehash.png", "ImageHash-4.3.2.data/scripts/find_similar_images.py"], "only_in_sdist_build": ["imagehash-4.3.2.data/data/images/imagehash.png", "imagehash-4.3.2.data/scripts/find_similar_images.py"], "content_differs": [], "entry_points_changed": false}
+{"package": "nanoid", "version": "2.0.0", "verdict": "diverged", "only_in_published": ["nanoid.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "python-rapidjson", "version": "1.23", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for python_rapidjson==1.23 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "hjson", "version": "3.1.0", "verdict": "identical"}
+{"package": "types-aioboto3", "version": "15.5.0", "verdict": "identical"}
+{"package": "lark-parser", "version": "0.12.0", "verdict": "identical"}
+{"package": "pdpyras", "version": "5.4.1", "verdict": "identical"}
+{"package": "zenpy", "version": "2.0.57", "verdict": "identical"}
+{"package": "robotframework", "version": "7.4.2", "verdict": "identical"}
+{"package": "multi-key-dict", "version": "2.0.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for multi_key_dict==2.0.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "presto-python-client", "version": "0.8.4", "verdict": "identical"}
+{"package": "pytube", "version": "15.0.0", "verdict": "identical"}
+{"package": "redis-py-cluster", "version": "2.1.3", "verdict": "identical"}
+{"package": "scrapbook", "version": "0.5.0", "verdict": "identical"}
+{"package": "rx", "version": "3.2.0", "verdict": "diverged", "only_in_published": ["rx/core/operators/merge_scan.py", "rx/testing/testsubscriber.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "kfp-pipeline-spec", "version": "2.16.1", "verdict": "identical"}
+{"package": "fpdf", "version": "1.7.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for fpdf==1.7.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pybuildkite", "version": "1.3.0", "verdict": "identical"}
+{"package": "mygene", "version": "3.2.2", "verdict": "identical"}
+{"package": "modelscope", "version": "1.37.1", "verdict": "identical"}
+{"package": "azure-ai-inference", "version": "1.0.0b9", "verdict": "identical"}
+{"package": "python-stdnum", "version": "2.2", "verdict": "identical"}
+{"package": "cfn-flip", "version": "1.3.0", "verdict": "identical"}
+{"package": "azure-keyvault-securitydomain", "version": "1.0.0b1", "verdict": "identical"}
+{"package": "gssapi", "version": "1.11.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for gssapi==1.11.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "django-appconf", "version": "1.2.0", "verdict": "identical"}
+{"package": "easygui", "version": "0.98.3", "verdict": "identical"}
+{"package": "pycairo", "version": "1.29.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pycairo==1.29.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "minimal-snowplow-tracker", "version": "0.0.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for minimal_snowplow_tracker==0.0.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "gprofiler-official", "version": "1.0.0", "verdict": "identical"}
+{"package": "geojson", "version": "3.3.0", "verdict": "identical"}
+{"package": "salesforce-bulk", "version": "2.2.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for salesforce_bulk==2.2.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pytest-ordering", "version": "0.6", "verdict": "diverged", "only_in_published": ["pytest_ordering.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "pathlib2", "version": "2.3.7.post1", "verdict": "identical"}
+{"package": "aws-encryption-sdk", "version": "4.0.6", "verdict": "identical"}
+{"package": "azure-mgmt-resource-templatespecs", "version": "1.0.0b1", "verdict": "identical"}
+{"package": "brotlicffi", "version": "1.2.0.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for brotlicffi==1.2.0.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "azure-mgmt-resource-deploymentscripts", "version": "1.0.0b1", "verdict": "identical"}
+{"package": "pcodedmp", "version": "1.2.6", "verdict": "identical"}
+{"package": "oletools", "version": "0.60.2", "verdict": "identical"}
+{"package": "channels-redis", "version": "4.3.0", "verdict": "identical"}
+{"package": "bc-python-hcl2", "version": "0.4.3", "verdict": "diverged", "only_in_published": ["test/__init__.py", "test/helpers/__init__.py", "test/unit/__init__.py", "test/unit/test_load.py", "test/unit/test_parse.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "pymeeus", "version": "0.5.12", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pymeeus==0.5.12 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "yamale", "version": "6.1.0", "verdict": "identical"}
+{"package": "pyunormalize", "version": "17.0.0", "verdict": "identical"}
+{"package": "valkey", "version": "6.1.1", "verdict": "diverged", "only_in_published": ["valkey/py.typed"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "mando", "version": "0.8.2", "verdict": "identical"}
+{"package": "cloudsplaining", "version": "0.8.2", "verdict": "identical"}
+{"package": "zict", "version": "3.0.0", "verdict": "identical"}
+{"package": "flaky", "version": "3.8.1", "verdict": "identical"}
+{"package": "cloudscraper", "version": "1.2.71", "verdict": "identical"}
+{"package": "wget", "version": "3.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for wget==3.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "extract-msg", "version": "0.55.0", "verdict": "identical"}
+{"package": "sagemaker-mlflow", "version": "0.4.0", "verdict": "identical"}
+{"package": "influxdb", "version": "5.3.2", "verdict": "identical"}
+{"package": "typed-ast", "version": "1.5.5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for typed_ast==1.5.5 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "keras-applications", "version": "1.0.8", "verdict": "identical"}
+{"package": "cssbeautifier", "version": "1.15.4", "verdict": "diverged", "only_in_published": ["jsbeautifier/__init__.py", "jsbeautifier/__version__.py", "jsbeautifier/cli/__init__.py", "jsbeautifier/core/__init__.py", "jsbeautifier/core/directives.py", "jsbeautifier/core/inputscanner.py", "jsbeautifier/core/options.py", "jsbeautifier/core/output.py", "jsbeautifier/core/pattern.py", "jsbeautifier/core/templatablepattern.py", "jsbeautifier/core/token.py", "jsbeautifier/core/tokenizer.py", "jsbeautifier/core/tokenstream.py", "jsbeautifier/core/whitespacepattern.py", "jsbeautifier/javascript/__init__.py", "jsbeautifier/javascript/acorn.py", "jsbeautifier/javascript/beautifier.py", "jsbeautifier/javascript/options.py", "jsbeautifier/javascript/tokenizer.py", "jsbeautifier/tests/__init__.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "bc-jsonpath-ng", "version": "1.6.1", "verdict": "identical"}
+{"package": "boxsdk", "version": "10.12.0", "verdict": "identical"}
+{"package": "timeout-decorator", "version": "0.5.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for timeout_decorator==0.5.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "jsonpath-rw", "version": "1.4.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for jsonpath_rw==1.4.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "testrail-api", "version": "1.13.6", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["testrail_api/__version__.py"], "entry_points_changed": false}
+{"package": "pyenchant", "version": "3.3.0", "verdict": "identical"}
+{"package": "docling-core", "version": "2.81.0", "verdict": "identical"}
+{"package": "newrelic", "version": "13.1.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for newrelic==13.1.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "haversine", "version": "2.9.0", "verdict": "identical"}
+{"package": "shellcheck-py", "version": "0.11.0.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for shellcheck_py==0.11.0.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "requests-futures", "version": "1.0.2", "verdict": "identical"}
+{"package": "rouge-score", "version": "0.1.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for rouge_score==0.1.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "json-rpc", "version": "1.15.0", "verdict": "identical"}
+{"package": "ansible-lint", "version": "26.4.0", "verdict": "identical"}
+{"package": "fs", "version": "2.4.16", "verdict": "identical"}
+{"package": "pygetwindow", "version": "0.0.9", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pygetwindow==0.0.9 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pyautogui", "version": "0.9.54", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyautogui==0.9.54 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "gspread-dataframe", "version": "4.0.0", "verdict": "identical"}
+{"package": "pytweening", "version": "1.2.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pytweening==1.2.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "depyf", "version": "0.20.0", "verdict": "identical"}
+{"package": "easydict", "version": "1.13", "verdict": "identical"}
+{"package": "pyrect", "version": "0.2.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyrect==0.2.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "mouseinfo", "version": "0.1.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for mouseinfo==0.1.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "multimethod", "version": "2.0.2", "verdict": "identical"}
+{"package": "pdfrw", "version": "0.4", "verdict": "identical"}
+{"package": "yq", "version": "3.4.3", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["yq/version.py"], "entry_points_changed": false}
+{"package": "dotmap", "version": "1.3.30", "verdict": "identical"}
+{"package": "folium", "version": "0.20.0", "verdict": "identical"}
+{"package": "notion-client", "version": "3.1.0", "verdict": "identical"}
+{"package": "ndindex", "version": "1.10.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for ndindex==1.10.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "injector", "version": "0.24.0", "verdict": "identical"}
+{"package": "rtfde", "version": "0.1.2.2", "verdict": "identical"}
+{"package": "aliyun-python-sdk-kms", "version": "2.16.5", "verdict": "identical"}
+{"package": "anyascii", "version": "0.3.3", "verdict": "identical"}
+{"package": "cvxpy", "version": "1.9.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for cvxpy==1.9.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "simple-term-menu", "version": "1.6.6", "verdict": "identical"}
+{"package": "prometheus-flask-exporter", "version": "0.23.2", "verdict": "identical"}
+{"package": "luqum", "version": "1.0.0", "verdict": "identical"}
+{"package": "cleanco", "version": "2.3", "verdict": "identical"}
+{"package": "munch", "version": "4.0.0", "verdict": "identical"}
+{"package": "pdfkit", "version": "1.0.0", "verdict": "identical"}
+{"package": "google-cloud-pubsublite", "version": "1.13.0", "verdict": "identical"}
+{"package": "pykwalify", "version": "1.8.0", "verdict": "identical"}
+{"package": "pytest-timeouts", "version": "1.2.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pytest_timeouts==1.2.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "conan", "version": "2.29.0", "verdict": "identical"}
+{"package": "jdcal", "version": "1.4.1", "verdict": "identical"}
+{"package": "google-apitools", "version": "0.5.35", "verdict": "identical"}
+{"package": "azure-communication-email", "version": "1.1.0", "verdict": "identical"}
+{"package": "json-logic", "version": "0.6.3", "verdict": "diverged", "only_in_published": ["json-logic-py/__init__.py", "json-logic-py/json_logic.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "celery-redbeat", "version": "2.3.3", "verdict": "identical"}
+{"package": "icecream", "version": "2.2.0", "verdict": "diverged", "only_in_published": ["tests/__init__.py", "tests/install_test_import.py", "tests/test_icecream.py", "tests/test_install.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "dynamodb-json", "version": "1.4.2", "verdict": "identical"}
+{"package": "alive-progress", "version": "3.3.0", "verdict": "identical"}
+{"package": "sarif-om", "version": "1.0.4", "verdict": "identical"}
+{"package": "flask-restful", "version": "0.3.10", "verdict": "identical"}
+{"package": "darabonba-core", "version": "1.0.6", "verdict": "identical"}
+{"package": "pystemmer", "version": "3.1.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pystemmer==3.1.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "func-timeout", "version": "4.3.5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for func_timeout==4.3.5 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pytorch-metric-learning", "version": "2.9.0", "verdict": "identical"}
+{"package": "ulid-py", "version": "1.1.0", "verdict": "identical"}
+{"package": "types-pillow", "version": "10.2.0.20240822", "verdict": "identical"}
+{"package": "zxcvbn", "version": "4.5.0", "verdict": "identical"}
+{"package": "graphframes", "version": "0.6", "verdict": "identical"}
+{"package": "s3path", "version": "0.6.5", "verdict": "identical"}
+{"package": "dpkt", "version": "1.9.8", "verdict": "identical"}
+{"package": "aws-secretsmanager-caching", "version": "1.1.3", "verdict": "identical"}
+{"package": "click-log", "version": "0.4.0", "verdict": "identical"}
+{"package": "alibabacloud-tea", "version": "0.4.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for alibabacloud_tea==0.4.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pmdarima", "version": "2.1.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pmdarima==0.0.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "sqlfluff-templater-dbt", "version": "4.2.2", "verdict": "identical"}
+{"package": "glfw", "version": "2.10.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for glfw==2.10.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "alibabacloud-gateway-spi", "version": "0.0.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for alibabacloud_gateway_spi==0.0.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "promise", "version": "2.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for promise==2.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "python-chess", "version": "1.999", "verdict": "identical"}
+{"package": "avro-gen3", "version": "0.7.16", "verdict": "identical"}
+{"package": "azure-mgmt-subscription", "version": "3.1.1", "verdict": "identical"}
+{"package": "odfpy", "version": "1.4.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for odfpy==1.4.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pytest-testmon", "version": "2.2.0", "verdict": "identical"}
+{"package": "kfp-server-api", "version": "2.16.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for kfp_server_api==2.16.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pymemcache", "version": "4.0.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["pymemcache/py.typed"], "content_differs": [], "entry_points_changed": false}
+{"package": "azure-mgmt-dns", "version": "9.0.0", "verdict": "identical"}
+{"package": "qtconsole", "version": "5.7.2", "verdict": "identical"}
+{"package": "python-tds", "version": "1.17.1", "verdict": "identical"}
+{"package": "pydruid", "version": "0.6.9", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pydruid==0.6.9 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pastedeploy", "version": "3.1.0", "verdict": "diverged", "only_in_published": ["PasteDeploy-3.1.0-py3.11-nspkg.pth"], "only_in_sdist_build": ["PasteDeploy-3.1.0-py3.12-nspkg.pth"], "content_differs": [], "entry_points_changed": false}
+{"package": "braceexpand", "version": "0.1.7", "verdict": "identical"}
+{"package": "jschema-to-python", "version": "1.2.3", "verdict": "identical"}
+{"package": "suds-community", "version": "1.2.0", "verdict": "identical"}
+{"package": "hyperopt", "version": "0.2.7", "verdict": "diverged", "only_in_published": ["hyperopt/tests/test_anneal.py", "hyperopt/tests/test_atpe_basic.py", "hyperopt/tests/test_criteria.py", "hyperopt/tests/test_domains.py", "hyperopt/tests/test_fmin.py", "hyperopt/tests/test_ipy.py", "hyperopt/tests/test_mongoexp.py", "hyperopt/tests/test_pchoice.py", "hyperopt/tests/test_plotting.py", "hyperopt/tests/test_progress.py", "hyperopt/tests/test_pyll_utils.py", "hyperopt/tests/test_rand.py", "hyperopt/tests/test_randint.py", "hyperopt/tests/test_rdists.py", "hyperopt/tests/test_spark.py", "hyperopt/tests/test_tpe.py", "hyperopt/tests/test_utils.py", "hyperopt/tests/test_vectorize.py", "hyperopt/tests/test_webpage.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "grandalf", "version": "0.8", "verdict": "identical"}
+{"package": "testing-postgresql", "version": "1.3.0", "verdict": "diverged", "only_in_published": ["testing.postgresql-1.3.0-py2.7-nspkg.pth"], "only_in_sdist_build": ["testing.postgresql-1.3.0-py3.12-nspkg.pth"], "content_differs": [], "entry_points_changed": false}
+{"package": "jaconv", "version": "0.5.0", "verdict": "identical"}
+{"package": "testing-common-database", "version": "2.0.3", "verdict": "diverged", "only_in_published": ["testing.common.database-2.0.3-py3.6-nspkg.pth"], "only_in_sdist_build": ["testing.common.database-2.0.3-py3.12-nspkg.pth"], "content_differs": [], "entry_points_changed": false}
+{"package": "uuid", "version": "1.30", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for uuid==1.30 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "inflector", "version": "3.1.1", "verdict": "identical"}
+{"package": "spython", "version": "0.3.14", "verdict": "identical"}
+{"package": "composio", "version": "0.13.1", "verdict": "identical"}
+{"package": "sqlalchemy-drill", "version": "1.1.10", "verdict": "identical"}
+{"package": "formulas", "version": "1.3.4", "verdict": "identical"}
+{"package": "schedula", "version": "1.6.15", "verdict": "identical"}
+{"package": "pydispatcher", "version": "2.0.7", "verdict": "identical"}
+{"package": "pysmb", "version": "1.2.14", "verdict": "identical"}
+{"package": "zeroconf", "version": "0.149.16", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for zeroconf==0.149.16 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "docling-ibm-models", "version": "3.13.3", "verdict": "identical"}
+{"package": "grpc-stubs", "version": "1.53.0.6", "verdict": "identical"}
+{"package": "hupper", "version": "1.12.1", "verdict": "identical"}
+{"package": "types-markupsafe", "version": "1.1.10", "verdict": "identical"}
+{"package": "types-jinja2", "version": "2.11.9", "verdict": "identical"}
+{"package": "googlemaps", "version": "4.10.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for googlemaps==4.10.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "nameparser", "version": "1.2.0", "verdict": "identical"}
+{"package": "python3-xlib", "version": "0.15", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for python3_xlib==0.15 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pyaes", "version": "1.6.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyaes==1.6.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "xformers", "version": "0.0.35", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for xformers==0.0.35 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "transitions", "version": "0.9.3", "verdict": "identical"}
+{"package": "soda-core-spark", "version": "3.5.6", "verdict": "identical"}
+{"package": "waybackpy", "version": "3.0.6", "verdict": "diverged", "only_in_published": ["waybackpy/py.typed"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "alibabacloud-endpoint-util", "version": "0.0.4", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for alibabacloud_endpoint_util==0.0.4 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "jinja2-simple-tags", "version": "0.6.1", "verdict": "identical"}
+{"package": "types-cryptography", "version": "3.3.23.2", "verdict": "identical"}
+{"package": "sacremoses", "version": "0.1.1", "verdict": "identical"}
+{"package": "rjsmin", "version": "1.2.5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for rjsmin==1.2.5 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pyreadstat", "version": "1.3.5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyreadstat==1.3.5 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "python-editor", "version": "1.0.4", "verdict": "identical"}
+{"package": "pusher", "version": "3.3.4", "verdict": "identical"}
+{"package": "aws-msk-iam-sasl-signer-python", "version": "1.0.2", "verdict": "identical"}
+{"package": "soda-core-spark-df", "version": "3.5.6", "verdict": "identical"}
+{"package": "boa-str", "version": "1.1.0", "verdict": "identical"}
+{"package": "sphinx-basic-ng", "version": "1.0.0b2", "verdict": "identical"}
+{"package": "pyre-extensions", "version": "0.0.32", "verdict": "identical"}
+{"package": "nulltype", "version": "2.3.1", "verdict": "identical"}
+{"package": "geocoder", "version": "1.38.1", "verdict": "identical"}
+{"package": "translationstring", "version": "1.4", "verdict": "identical"}
+{"package": "modin", "version": "0.37.1", "verdict": "identical"}
+{"package": "coolprop", "version": "7.2.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for coolprop==7.2.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "ratelim", "version": "0.1.6", "verdict": "identical"}
+{"package": "yappi", "version": "1.7.6", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for yappi==1.7.6 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "django-silk", "version": "5.5.0", "verdict": "identical"}
+{"package": "pep8-naming", "version": "0.15.1", "verdict": "identical"}
+{"package": "azure-cosmosdb-table", "version": "1.0.6", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["azure/__init__.py", "azure/cosmosdb/__init__.py"], "content_differs": [], "entry_points_changed": false}
+{"package": "submitit", "version": "1.5.4", "verdict": "identical"}
+{"package": "ephem", "version": "4.2.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for ephem==4.2.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "rcssmin", "version": "1.2.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for rcssmin==1.2.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "azure-monitor-ingestion", "version": "1.1.0", "verdict": "identical"}
+{"package": "readerwriterlock", "version": "1.0.9", "verdict": "identical"}
+{"package": "piexif", "version": "1.1.3", "verdict": "identical"}
+{"package": "azure-cosmosdb-nspkg", "version": "2.0.2", "verdict": "identical"}
+{"package": "azure-storage-file", "version": "2.1.0", "verdict": "identical"}
+{"package": "lifelines", "version": "0.30.3", "verdict": "identical"}
+{"package": "google-cloud-vectorsearch", "version": "0.11.0", "verdict": "identical"}
+{"package": "pyte", "version": "0.8.2", "verdict": "identical"}
+{"package": "findspark", "version": "2.0.1", "verdict": "identical"}
+{"package": "httmock", "version": "1.4.0", "verdict": "identical"}
+{"package": "yacs", "version": "0.1.8", "verdict": "identical"}
+{"package": "locate", "version": "1.1.1", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["locate/version.py"], "entry_points_changed": false}
+{"package": "troposphere", "version": "4.10.2", "verdict": "diverged", "only_in_published": ["troposphere/iotfleethub.py", "troposphere/lookoutmetrics.py", "troposphere/opsworkscm.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "python-nvd3", "version": "0.16.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for python_nvd3==0.16.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "mleap", "version": "0.24.0", "verdict": "identical"}
+{"package": "aiohttp-jinja2", "version": "1.6", "verdict": "identical"}
+{"package": "plaid-python", "version": "40.0.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for plaid_python==40.0.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "bump2version", "version": "1.0.1", "verdict": "identical"}
+{"package": "kerberos", "version": "1.3.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for kerberos==1.3.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "crossplane", "version": "0.5.8", "verdict": "identical"}
+{"package": "azure-mgmt-reservations", "version": "2.3.0", "verdict": "identical"}
+{"package": "types-click", "version": "7.1.8", "verdict": "identical"}
+{"package": "pytimeparse2", "version": "1.7.1", "verdict": "identical"}
+{"package": "flask-talisman", "version": "1.1.0", "verdict": "identical"}
+{"package": "textdistance", "version": "4.6.3", "verdict": "identical"}
+{"package": "llama-index-legacy", "version": "0.9.48.post4", "verdict": "identical"}
+{"package": "pygsheets", "version": "2.0.6", "verdict": "identical"}
+{"package": "flake8-docstrings", "version": "1.7.0", "verdict": "identical"}
+{"package": "netifaces", "version": "0.11.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for netifaces==0.11.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "flashtext", "version": "2.7", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for flashtext==2.7 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "djangorestframework-csv", "version": "3.0.2", "verdict": "identical"}
+{"package": "casbin", "version": "1.43.0", "verdict": "identical"}
+{"package": "types-freezegun", "version": "1.1.10", "verdict": "identical"}
+{"package": "rfc3987", "version": "1.3.8", "verdict": "identical"}
+{"package": "dbfread", "version": "2.0.7", "verdict": "identical"}
+{"package": "analytics-python", "version": "1.4.post1", "verdict": "diverged", "only_in_published": ["segment/analytics/__init__.py", "segment/analytics/client.py", "segment/analytics/consumer.py", "segment/analytics/request.py", "segment/analytics/utils.py", "segment/analytics/version.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "pkce", "version": "1.0.3", "verdict": "identical"}
+{"package": "betterproto", "version": "1.2.5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for betterproto==1.2.5 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "google-cloud-recommendations-ai", "version": "0.13.0", "verdict": "identical"}
+{"package": "databricks", "version": "0.2", "verdict": "identical"}
+{"package": "flask-restx", "version": "1.3.2", "verdict": "identical"}
+{"package": "keras-preprocessing", "version": "1.1.2", "verdict": "identical"}
+{"package": "google-cloud-documentai", "version": "3.15.0", "verdict": "identical"}
+{"package": "python-whois", "version": "0.9.6", "verdict": "identical"}
+{"package": "latexcodec", "version": "3.0.1", "verdict": "identical"}
+{"package": "pathlib-mate", "version": "1.3.2", "verdict": "identical"}
+{"package": "sqlitedict", "version": "2.1.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for sqlitedict==2.1.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "mongoengine", "version": "0.29.3", "verdict": "identical"}
+{"package": "adagio", "version": "0.2.6", "verdict": "diverged", "only_in_published": ["tests/shells/__init__.py", "tests/shells/test_interfaceless.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "azure-schemaregistry", "version": "1.3.0", "verdict": "identical"}
+{"package": "svgwrite", "version": "1.4.3", "verdict": "identical"}
+{"package": "hypothesis-jsonschema", "version": "0.23.1", "verdict": "identical"}
+{"package": "comfyui-frontend-package", "version": "1.45.15", "verdict": "fetch-error", "error": "unexpected: HTTP Error 404: Not Found"}
+{"package": "alibabacloud-credentials-api", "version": "1.0.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for alibabacloud_credentials_api==1.0.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "dohq-artifactory", "version": "1.0.1", "verdict": "identical"}
+{"package": "dbt-duckdb", "version": "1.10.1", "verdict": "identical"}
+{"package": "bullmq", "version": "2.25.2", "verdict": "identical"}
+{"package": "macholib", "version": "1.16.4", "verdict": "identical"}
+{"package": "dicttoxml", "version": "1.7.16", "verdict": "identical"}
+{"package": "http-ece", "version": "1.2.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for http_ece==1.2.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "ansi2html", "version": "1.9.2", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["ansi2html/_version.py"], "entry_points_changed": false}
+{"package": "types-werkzeug", "version": "1.0.9", "verdict": "identical"}
+{"package": "reedsolo", "version": "1.7.0", "verdict": "identical"}
+{"package": "markdowntable", "version": "6.0.0", "verdict": "identical"}
+{"package": "snapshot-restore-py", "version": "1.0.0", "verdict": "identical"}
+{"package": "red-black-tree-mod", "version": "1.22", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for red_black_tree_mod==1.22 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "clickhouse-sqlalchemy", "version": "0.3.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for clickhouse_sqlalchemy==0.3.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "sanic-routing", "version": "23.12.0", "verdict": "identical"}
+{"package": "emr-notebooks-magics", "version": "0.2.4", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for emr_notebooks_magics==0.2.4 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pyramid-mako", "version": "1.1.0", "verdict": "identical"}
+{"package": "scandir", "version": "1.10.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for scandir==1.10.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "filterpy", "version": "1.4.5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for filterpy==1.4.5 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pytest-vcr", "version": "1.0.2", "verdict": "identical"}
+{"package": "match", "version": "0.3.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for match==0.3.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pandasql", "version": "0.7.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pandasql==0.7.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "fasttext-numpy2", "version": "0.10.4", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for fasttext_numpy2==0.10.4 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "gsutil", "version": "5.37", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for gsutil==5.37 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pytest-dependency", "version": "0.6.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pytest_dependency==0.6.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "azure-ai-formrecognizer", "version": "3.3.3", "verdict": "identical"}
+{"package": "ndjson", "version": "0.3.1", "verdict": "identical"}
+{"package": "chess", "version": "1.11.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for chess==1.11.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "commentjson", "version": "0.9.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for commentjson==0.9.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "dash-ag-grid", "version": "35.2.0", "verdict": "identical"}
+{"package": "python-consul", "version": "1.1.0", "verdict": "identical"}
+{"package": "gnupg", "version": "2.3.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for gnupg==2.3.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "requests-aws-sign", "version": "0.1.6", "verdict": "identical"}
+{"package": "pytest-messenger", "version": "3.3.0", "verdict": "identical"}
+{"package": "raven", "version": "6.10.0", "verdict": "identical"}
+{"package": "django-taggit", "version": "6.1.0", "verdict": "diverged", "only_in_published": ["sample_taggit/__init__.py", "sample_taggit/asgi.py", "sample_taggit/library_management/__init__.py", "sample_taggit/library_management/admin.py", "sample_taggit/library_management/apps.py", "sample_taggit/library_management/forms.py", "sample_taggit/library_management/migrations/0001_initial.py", "sample_taggit/library_management/migrations/__init__.py", "sample_taggit/library_management/models.py", "sample_taggit/library_management/templatetags/__init__.py", "sample_taggit/library_management/templatetags/custom_filters.py", "sample_taggit/library_management/urls.py", "sample_taggit/library_management/views.py", "sample_taggit/manage.py", "sample_taggit/settings.py", "sample_taggit/urls.py", "sample_taggit/wsgi.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "prometheus-api-client", "version": "0.7.2", "verdict": "identical"}
+{"package": "lml", "version": "0.2.0", "verdict": "identical"}
+{"package": "apsw", "version": "3.53.2.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for apsw==3.53.2.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "node-semver", "version": "0.9.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": true}
+{"package": "pyexcel-io", "version": "0.6.7", "verdict": "identical"}
+{"package": "azure-containerregistry", "version": "1.2.0", "verdict": "identical"}
+{"package": "ajsonrpc", "version": "1.2.0", "verdict": "identical"}
+{"package": "jieba", "version": "0.42.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for jieba==0.42.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "bibtexparser", "version": "1.4.4", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for bibtexparser==1.4.4 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "validate-email", "version": "1.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for validate_email==1.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "django-countries", "version": "9.0.0", "verdict": "identical"}
+{"package": "defusedcsv", "version": "3.0.0", "verdict": "identical"}
+{"package": "pyquery", "version": "2.0.1", "verdict": "identical"}
+{"package": "libsass", "version": "0.23.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for libsass==0.23.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "oyaml", "version": "1.0", "verdict": "identical"}
+{"package": "mdx-truly-sane-lists", "version": "1.3", "verdict": "identical"}
+{"package": "mkdocs-macros-plugin", "version": "1.5.0", "verdict": "identical"}
+{"package": "ydata-profiling", "version": "4.18.4", "verdict": "fetch-error", "error": "unexpected: HTTP Error 404: Not Found"}
+{"package": "contextvars", "version": "2.4", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for contextvars==2.4 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "jinxed", "version": "2.0.4", "verdict": "identical"}
+{"package": "docker-image-py", "version": "0.1.13", "verdict": "identical"}
+{"package": "shrub-py", "version": "3.11.0", "verdict": "fetch-error", "error": "unexpected: HTTP Error 404: Not Found"}
+{"package": "pytest-profiling", "version": "1.8.1", "verdict": "identical"}
+{"package": "gym", "version": "0.26.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for gym==0.26.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "shareplum", "version": "0.5.1", "verdict": "diverged", "only_in_published": ["shareplum/ListDict.py", "shareplum/shareplum.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "pre-commit-hooks", "version": "6.0.0", "verdict": "diverged", "only_in_published": ["pre_commit_hooks/check_byte_order_marker.py", "pre_commit_hooks/fix_encoding_pragma.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "pynput", "version": "1.8.2", "verdict": "identical"}
+{"package": "virtualenv-clone", "version": "0.5.7", "verdict": "identical"}
+{"package": "coremltools", "version": "9.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for coremltools==9.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "dateutils", "version": "0.6.12", "verdict": "identical"}
+{"package": "dash-extensions", "version": "2.0.5", "verdict": "identical"}
+{"package": "forbiddenfruit", "version": "0.1.4", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for forbiddenfruit==0.1.4 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "htmlmin", "version": "0.1.12", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for htmlmin==0.1.12 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "ddt", "version": "1.7.2", "verdict": "identical"}
+{"package": "braintree", "version": "4.44.0", "verdict": "identical"}
+{"package": "iopath", "version": "0.1.10", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for iopath==0.1.10 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "aioredis", "version": "2.0.1", "verdict": "identical"}
+{"package": "pyspark-client", "version": "4.1.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyspark_client==4.1.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "appier", "version": "1.46.0", "verdict": "identical"}
+{"package": "optimum", "version": "2.2.0", "verdict": "identical"}
+{"package": "dnslib", "version": "0.9.26", "verdict": "identical"}
+{"package": "autograd-gamma", "version": "0.5.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for autograd_gamma==0.5.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "flask-bcrypt", "version": "1.0.1", "verdict": "identical"}
+{"package": "robotframework-seleniumlibrary", "version": "6.9.0", "verdict": "identical"}
+{"package": "kylinpy", "version": "2.8.4", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for kylinpy==2.8.4 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "google-cloud-recaptcha-enterprise", "version": "1.31.0", "verdict": "identical"}
+{"package": "tuspy", "version": "1.1.0", "verdict": "identical"}
+{"package": "pyannote-audio", "version": "4.0.4", "verdict": "identical"}
+{"package": "flask-openid", "version": "1.3.1", "verdict": "identical"}
+{"package": "html5tagger", "version": "1.3.0", "verdict": "identical"}
+{"package": "types-confluent-kafka", "version": "1.4.1", "verdict": "identical"}
+{"package": "azure-mgmt-datalake-analytics", "version": "0.6.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["azure/__init__.py", "azure/mgmt/__init__.py", "azure/mgmt/datalake/__init__.py"], "content_differs": [], "entry_points_changed": false}
+{"package": "coreforecast", "version": "0.0.17", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for coreforecast==0.0.17 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pykerberos", "version": "1.2.4", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pykerberos==1.2.4 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "grep-ast", "version": "0.9.0", "verdict": "identical"}
+{"package": "pyvirtualdisplay", "version": "3.0", "verdict": "identical"}
+{"package": "types-flask", "version": "1.1.6", "verdict": "identical"}
+{"package": "py-ubjson", "version": "0.16.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for py_ubjson==0.16.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "django-reversion", "version": "6.2.0", "verdict": "identical"}
+{"package": "primepy", "version": "1.3", "verdict": "identical"}
+{"package": "yaml-config", "version": "0.1.5", "verdict": "identical"}
+{"package": "google-api", "version": "0.1.12", "verdict": "identical"}
+{"package": "alibabacloud-tea-xml", "version": "0.0.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for alibabacloud_tea_xml==0.0.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "assemblyai", "version": "0.64.11", "verdict": "identical"}
+{"package": "wurlitzer", "version": "3.1.1", "verdict": "identical"}
+{"package": "robotframework-requests", "version": "0.9.7", "verdict": "identical"}
+{"package": "torch-pitch-shift", "version": "1.2.5", "verdict": "identical"}
+{"package": "j2cli", "version": "0.3.10", "verdict": "identical"}
+{"package": "aws-embedded-metrics", "version": "3.5.0", "verdict": "identical"}
+{"package": "drf-nested-routers", "version": "0.95.0", "verdict": "diverged", "only_in_published": ["rest_framework_nested/__pycache__/__init__.cpython-36.pyc", "rest_framework_nested/__pycache__/__init__.cpython-37.pyc", "rest_framework_nested/__pycache__/relations.cpython-36.pyc", "rest_framework_nested/__pycache__/relations.cpython-37.pyc", "rest_framework_nested/__pycache__/routers.cpython-36.pyc", "rest_framework_nested/__pycache__/routers.cpython-37.pyc", "rest_framework_nested/__pycache__/serializers.cpython-36.pyc", "rest_framework_nested/__pycache__/serializers.cpython-37.pyc", "rest_framework_nested/__pycache__/viewsets.cpython-36.pyc", "rest_framework_nested/__pycache__/viewsets.cpython-37.pyc"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "aws-lambda-builders", "version": "1.65.0", "verdict": "identical"}
+{"package": "alibabacloud-dingtalk", "version": "2.2.49", "verdict": "identical"}
+{"package": "databricks-pypi1", "version": "0.2", "verdict": "identical"}
+{"package": "bce-python-sdk", "version": "0.9.72", "verdict": "identical"}
+{"package": "braintrust-core", "version": "0.0.59", "verdict": "identical"}
+{"package": "pyexcel", "version": "0.7.4", "verdict": "identical"}
+{"package": "sqlalchemy-stubs", "version": "0.4", "verdict": "identical"}
+{"package": "uwsgi", "version": "2.0.31", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for uwsgi==2.0.31 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "awscli-local", "version": "0.22.2", "verdict": "identical"}
+{"package": "pysher", "version": "1.0.8", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pysher==1.0.8 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "sudachidict-core", "version": "20260428", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["sudachidict_core/resources/LEGAL", "sudachidict_core/resources/LICENSE-2.0.txt"], "content_differs": [], "entry_points_changed": false}
+{"package": "torchviz", "version": "0.0.3", "verdict": "identical"}
+{"package": "readabilipy", "version": "0.3.0", "verdict": "identical"}
+{"package": "exchangelib", "version": "5.6.0", "verdict": "identical"}
+{"package": "atlasclient", "version": "1.0.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for atlasclient==1.0.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "polling2", "version": "0.5.0", "verdict": "identical"}
+{"package": "formic2", "version": "1.0.3", "verdict": "identical"}
+{"package": "google-cloud-profiler", "version": "4.1.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for google_cloud_profiler==4.1.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "rfc3339", "version": "6.2", "verdict": "identical"}
+{"package": "requests-sigv4", "version": "0.1.6", "verdict": "identical"}
+{"package": "dbus-fast", "version": "5.0.22", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for dbus_fast==5.0.22 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "dash-core-components", "version": "2.0.0", "verdict": "identical"}
+{"package": "aiogoogle", "version": "5.17.0", "verdict": "identical"}
+{"package": "logging-azure-rest", "version": "1.3.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for logging_azure_rest==1.3.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pycasbin", "version": "2.8.0", "verdict": "identical"}
+{"package": "pycognito", "version": "2024.5.1", "verdict": "identical"}
+{"package": "hyperpyyaml", "version": "1.2.3", "verdict": "identical"}
+{"package": "oci-cli", "version": "3.86.0", "verdict": "identical"}
+{"package": "lazy-imports", "version": "1.2.0", "verdict": "identical"}
+{"package": "pyxdg", "version": "0.28", "verdict": "identical"}
+{"package": "django-mathfilters", "version": "1.0.0", "verdict": "identical"}
+{"package": "opentelemetry-propagator-gcp", "version": "1.12.0", "verdict": "identical"}
+{"package": "asn1", "version": "3.3.0", "verdict": "identical"}
+{"package": "databases", "version": "0.9.0", "verdict": "identical"}
+{"package": "fluent-syntax", "version": "0.19.0", "verdict": "identical"}
+{"package": "python-olm", "version": "3.2.16", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for python_olm==3.2.16 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "dash-html-components", "version": "2.0.0", "verdict": "identical"}
+{"package": "pyupgrade", "version": "3.21.2", "verdict": "identical"}
+{"package": "pylev", "version": "1.4.0", "verdict": "identical"}
+{"package": "dash-table", "version": "5.0.0", "verdict": "identical"}
+{"package": "stone", "version": "3.3.9", "verdict": "identical"}
+{"package": "hdijupyterutils", "version": "0.23.0", "verdict": "identical"}
+{"package": "looseversion", "version": "1.3.0", "verdict": "identical"}
+{"package": "openevals", "version": "0.2.0", "verdict": "identical"}
+{"package": "autovizwidget", "version": "0.23.0", "verdict": "identical"}
+{"package": "stable-baselines3", "version": "2.8.0", "verdict": "identical"}
+{"package": "mutf8", "version": "1.0.6", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for mutf8==1.0.6 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "starlette-exporter", "version": "0.23.0", "verdict": "identical"}
+{"package": "avalara", "version": "26.6.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for avalara==26.6.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "azure-mgmt-consumption", "version": "10.0.0", "verdict": "identical"}
+{"package": "elastic-apm", "version": "6.26.1", "verdict": "identical"}
+{"package": "pytest-docker", "version": "3.2.5", "verdict": "identical"}
+{"package": "polling", "version": "0.3.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for polling==0.3.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "azure-multiapi-storage", "version": "1.6.0", "verdict": "identical"}
+{"package": "opencc-python-reimplemented", "version": "0.1.7", "verdict": "identical"}
+{"package": "google-search-results", "version": "2.4.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for google_search_results==2.4.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pyngrok", "version": "8.1.2", "verdict": "identical"}
+{"package": "azure-loganalytics", "version": "0.1.1", "verdict": "identical"}
+{"package": "jmp", "version": "0.0.4", "verdict": "identical"}
+{"package": "tentaclio-s3", "version": "0.0.3", "verdict": "identical"}
+{"package": "imapclient", "version": "3.1.0", "verdict": "diverged", "only_in_published": ["imapclient/__pycache__/__init__.cpython-37.pyc", "imapclient/__pycache__/config.cpython-37.pyc", "imapclient/__pycache__/datetime_util.cpython-37.pyc", "imapclient/__pycache__/exceptions.cpython-37.pyc", "imapclient/__pycache__/fixed_offset.cpython-37.pyc", "imapclient/__pycache__/imap4.cpython-37.pyc", "imapclient/__pycache__/imap_utf7.cpython-37.pyc", "imapclient/__pycache__/imapclient.cpython-37.pyc", "imapclient/__pycache__/imaplib_ssl_fix.cpython-37.pyc", "imapclient/__pycache__/interact.cpython-37.pyc", "imapclient/__pycache__/livetest.cpython-37.pyc", "imapclient/__pycache__/response_lexer.cpython-37.pyc", "imapclient/__pycache__/response_parser.cpython-37.pyc", "imapclient/__pycache__/response_types.cpython-37.pyc", "imapclient/__pycache__/testable_imapclient.cpython-37.pyc", "imapclient/__pycache__/tls.cpython-37.pyc", "imapclient/__pycache__/util.cpython-37.pyc", "imapclient/__pycache__/version.cpython-37.pyc", "imapclient/examples/__pycache__/example.cpython-37.pyc", "imapclient/examples/__pycache__/idle_example.cpython-37.pyc"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "oras", "version": "0.2.42", "verdict": "identical"}
+{"package": "pypd", "version": "1.1.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pypd==1.1.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pytest-freezegun", "version": "0.4.2", "verdict": "identical"}
+{"package": "azure-mgmt-notificationhubs", "version": "8.0.0", "verdict": "identical"}
+{"package": "azure-mgmt-logic", "version": "10.0.0", "verdict": "identical"}
+{"package": "fastrlock", "version": "0.8.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for fastrlock==0.8.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "config", "version": "0.5.1", "verdict": "identical"}
+{"package": "brotlipy", "version": "0.7.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for brotlipy==0.7.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "jsons", "version": "1.6.3", "verdict": "identical"}
+{"package": "anybadge", "version": "1.16.0", "verdict": "fetch-error", "error": "unexpected: HTTP Error 404: Not Found"}
+{"package": "trio-typing", "version": "0.10.0", "verdict": "identical"}
+{"package": "scrapy-playwright", "version": "0.0.46", "verdict": "identical"}
+{"package": "verspec", "version": "0.1.0", "verdict": "identical"}
+{"package": "rarfile", "version": "4.2", "verdict": "identical"}
+{"package": "sphinxcontrib-redoc", "version": "1.6.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for sphinxcontrib_redoc==1.6.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "locust-plugins", "version": "5.0.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["locust_plugins/_version.py"], "entry_points_changed": false}
+{"package": "django-deprecate-fields", "version": "0.2.3", "verdict": "identical"}
+{"package": "pypiwin32", "version": "223", "verdict": "identical"}
+{"package": "webvtt-py", "version": "0.5.1", "verdict": "diverged", "only_in_published": ["webvtt/parsers.py", "webvtt/structures.py", "webvtt/writers.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "objgraph", "version": "3.6.2", "verdict": "identical"}
+{"package": "fasttext", "version": "0.9.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for fasttext==0.9.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "uptime-kuma-api", "version": "1.2.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for uptime_kuma_api==1.2.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "spinners", "version": "0.0.24", "verdict": "identical"}
+{"package": "log-symbols", "version": "0.0.14", "verdict": "identical"}
+{"package": "azure-servicefabric", "version": "8.2.0.0", "verdict": "identical"}
+{"package": "mysql-connector", "version": "2.2.9", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for mysql_connector==2.2.9 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pypinyin", "version": "0.55.0", "verdict": "identical"}
+{"package": "flake8-import-order", "version": "0.19.2", "verdict": "identical"}
+{"package": "bumpversion", "version": "0.6.0", "verdict": "identical"}
+{"package": "word2number", "version": "1.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for word2number==1.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "plac", "version": "1.4.5", "verdict": "identical"}
+{"package": "libvalkey", "version": "4.0.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for libvalkey==4.0.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "akeyless-cloud-id", "version": "0.3.1", "verdict": "identical"}
+{"package": "hologram", "version": "0.0.16", "verdict": "identical"}
+{"package": "pygerduty", "version": "0.38.3", "verdict": "identical"}
+{"package": "pep8", "version": "1.7.1", "verdict": "identical"}
+{"package": "mlx-lm", "version": "0.31.3", "verdict": "identical"}
+{"package": "setuptools-git-versioning", "version": "3.1.0", "verdict": "identical"}
+{"package": "itypes", "version": "1.2.0", "verdict": "identical"}
+{"package": "pytest-shard", "version": "0.1.2", "verdict": "identical"}
+{"package": "django-admin-sortable2", "version": "2.3.1", "verdict": "identical"}
+{"package": "autocommand", "version": "2.2.2", "verdict": "identical"}
+{"package": "s3cmd", "version": "2.4.0", "verdict": "identical"}
+{"package": "openvino-telemetry", "version": "2025.2.0", "verdict": "identical"}
+{"package": "pytest-assume", "version": "2.4.3", "verdict": "identical"}
+{"package": "kconfiglib", "version": "14.1.0", "verdict": "identical"}
+{"package": "json-logging", "version": "1.5.1", "verdict": "identical"}
+{"package": "whoosh", "version": "2.7.4", "verdict": "identical"}
+{"package": "lunardate", "version": "0.2.2", "verdict": "identical"}
+{"package": "configcat-client", "version": "10.0.0", "verdict": "identical"}
+{"package": "aws-kinesis-agg", "version": "1.2.3", "verdict": "identical"}
+{"package": "sqlalchemy-adapter", "version": "1.9.0", "verdict": "identical"}
+{"package": "mistletoe", "version": "1.5.1", "verdict": "identical"}
+{"package": "kafka-python-ng", "version": "2.2.3", "verdict": "identical"}
+{"package": "pylink-square", "version": "2.0.1", "verdict": "identical"}
+{"package": "drf-spectacular-sidecar", "version": "2026.6.1", "verdict": "identical"}
+{"package": "plotext", "version": "5.3.2", "verdict": "identical"}
+{"package": "browser-cookie3", "version": "0.20.1", "verdict": "identical"}
+{"package": "koalas", "version": "1.8.2", "verdict": "identical"}
+{"package": "fiddle", "version": "0.3.0", "verdict": "identical"}
+{"package": "od", "version": "2.0.2", "verdict": "identical"}
+{"package": "django-querycount", "version": "0.8.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for django_querycount==0.8.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pygdbmi", "version": "0.11.0.0", "verdict": "identical"}
+{"package": "setuptools-golang", "version": "2.9.0", "verdict": "identical"}
+{"package": "json2html", "version": "1.3.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for json2html==1.3.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "coreapi", "version": "2.3.3", "verdict": "identical"}
+{"package": "delta-sharing", "version": "1.4.1", "verdict": "identical"}
+{"package": "m3u8", "version": "6.0.0", "verdict": "identical"}
+{"package": "pytest-flakefinder", "version": "1.1.0", "verdict": "identical"}
+{"package": "ibm-cos-sdk", "version": "2.16.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for ibm_cos_sdk==2.16.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "fastdiff", "version": "0.3.0", "verdict": "identical"}
+{"package": "linecache2", "version": "1.0.0", "verdict": "identical"}
+{"package": "textwrap3", "version": "0.9.2", "verdict": "identical"}
+{"package": "mkdocs-monorepo-plugin", "version": "1.1.2", "verdict": "identical"}
+{"package": "fredapi", "version": "0.5.2", "verdict": "identical"}
+{"package": "bm25s", "version": "0.3.9", "verdict": "identical"}
+{"package": "snapshottest", "version": "0.6.0", "verdict": "identical"}
+{"package": "opentelemetry-resourcedetector-kubernetes", "version": "0.3.0", "verdict": "identical"}
+{"package": "azure-mgmt-scheduler", "version": "7.0.0", "verdict": "identical"}
+{"package": "envyaml", "version": "1.10.211231", "verdict": "identical"}
+{"package": "mike", "version": "2.2.0", "verdict": "diverged", "only_in_published": ["mike/mkdocs.py", "mike/templates/index.html", "mike/themes/material/__init__.py", "mike/themes/material/css/version-select.css", "mike/themes/material/js/version-select.js"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "azure-mgmt-powerbiembedded", "version": "3.0.0", "verdict": "identical"}
+{"package": "azure-mgmt-machinelearningcompute", "version": "0.4.1", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["azure/__init__.py", "azure/mgmt/__init__.py"], "content_differs": [], "entry_points_changed": false}
+{"package": "traceback2", "version": "1.4.0", "verdict": "identical"}
+{"package": "azure-servicemanagement-legacy", "version": "0.20.8", "verdict": "identical"}
+{"package": "amazon-textract-response-parser", "version": "1.0.3", "verdict": "identical"}
+{"package": "azure-mgmt-devspaces", "version": "0.2.0", "verdict": "identical"}
+{"package": "adjusttext", "version": "1.4.0", "verdict": "identical"}
+{"package": "parsley", "version": "1.3", "verdict": "identical"}
+{"package": "scalar-fastapi", "version": "1.8.2", "verdict": "identical"}
+{"package": "databricks-pypi2", "version": "0.2", "verdict": "identical"}
+{"package": "plotly-express", "version": "0.4.1", "verdict": "identical"}
+{"package": "grpc-google-logging-v2", "version": "0.11.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for grpc_google_logging_v2==0.11.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pretty-html-table", "version": "0.9.16", "verdict": "identical"}
+{"package": "hashring", "version": "1.5.1", "verdict": "identical"}
+{"package": "django-choices", "version": "2.0.0", "verdict": "identical"}
+{"package": "tonyg-rfc3339", "version": "0.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for tonyg_rfc3339==0.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "azure-applicationinsights", "version": "0.1.1", "verdict": "identical"}
+{"package": "watchdog-gevent", "version": "0.2.1", "verdict": "identical"}
+{"package": "geonames", "version": "0.1.3", "verdict": "identical"}
+{"package": "better-profanity", "version": "0.7.0", "verdict": "identical"}
+{"package": "check-manifest", "version": "0.51", "verdict": "identical"}
+{"package": "textfsm", "version": "2.1.0", "verdict": "identical"}
+{"package": "sparqlwrapper", "version": "2.0.0", "verdict": "identical"}
+{"package": "pycarlo", "version": "0.12.492", "verdict": "identical"}
+{"package": "art", "version": "6.5", "verdict": "identical"}
+{"package": "email-reply-parser", "version": "0.5.12", "verdict": "identical"}
+{"package": "scrubadub", "version": "2.0.1", "verdict": "identical"}
+{"package": "columnar", "version": "1.4.1", "verdict": "identical"}
+{"package": "types-tzlocal", "version": "5.1.0.1", "verdict": "identical"}
+{"package": "drf-extensions", "version": "0.8.0", "verdict": "identical"}
+{"package": "publicsuffixlist", "version": "1.0.2.20260611", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["publicsuffixlist/public_suffix_list.dat"], "entry_points_changed": false}
+{"package": "watchgod", "version": "0.8.2", "verdict": "identical"}
+{"package": "jsmin", "version": "3.0.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for jsmin==3.0.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "jsonmerge", "version": "1.9.2", "verdict": "identical"}
+{"package": "jinja2-time", "version": "0.2.0", "verdict": "identical"}
+{"package": "ansiwrap", "version": "0.8.4", "verdict": "identical"}
+{"package": "shellescape", "version": "3.8.1", "verdict": "identical"}
+{"package": "annoy", "version": "1.17.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for annoy==1.17.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pyexcel-xls", "version": "0.7.1", "verdict": "identical"}
+{"package": "django-admin-list-filter-dropdown", "version": "1.0.3", "verdict": "identical"}
+{"package": "pebble", "version": "5.2.0", "verdict": "identical"}
+{"package": "sqlalchemy-json", "version": "0.7.0", "verdict": "identical"}
+{"package": "liblinear-multicore", "version": "2.50.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for liblinear_multicore==2.50.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "opentelemetry-resourcedetector-docker", "version": "0.4.0", "verdict": "identical"}
+{"package": "kestra", "version": "1.3.0", "verdict": "fetch-error", "error": "unexpected: HTTP Error 404: Not Found"}
+{"package": "uszipcode", "version": "1.0.1", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": ["uszipcode/__pycache__/__init__.cpython-312.pyc", "uszipcode/__pycache__/_version.cpython-312.pyc", "uszipcode/__pycache__/search.cpython-312.pyc"], "content_differs": [], "entry_points_changed": false}
+{"package": "scikit-build", "version": "0.19.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["skbuild/_version.py"], "entry_points_changed": false}
+{"package": "ct3", "version": "3.4.0.post5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for ct3==3.4.0.post5 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pyomo", "version": "6.10.1", "verdict": "identical"}
+{"package": "traittypes", "version": "0.2.3", "verdict": "identical"}
+{"package": "naked", "version": "0.1.32", "verdict": "identical"}
+{"package": "zipfile36", "version": "0.1.3", "verdict": "identical"}
+{"package": "jinja2-ansible-filters", "version": "1.3.2", "verdict": "identical"}
+{"package": "httpretty", "version": "1.1.4", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for httpretty==1.1.4 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "sqlalchemy-trino", "version": "0.5.0", "verdict": "identical"}
+{"package": "geckodriver-autoinstaller", "version": "0.1.0", "verdict": "identical"}
+{"package": "tableau-api-lib", "version": "0.1.50", "verdict": "identical"}
+{"package": "pywinauto", "version": "0.6.9", "verdict": "diverged", "only_in_published": ["pywinauto/controls/__init__.py", "pywinauto/controls/common_controls.py", "pywinauto/controls/hwndwrapper.py", "pywinauto/controls/menuwrapper.py", "pywinauto/controls/uia_controls.py", "pywinauto/controls/uiawrapper.py", "pywinauto/controls/win32_controls.py", "pywinauto/tests/__init__.py", "pywinauto/tests/_menux.py", "pywinauto/tests/allcontrols.py", "pywinauto/tests/asianhotkey.py", "pywinauto/tests/comboboxdroppedheight.py", "pywinauto/tests/comparetoreffont.py", "pywinauto/tests/leadtrailspaces.py", "pywinauto/tests/miscvalues.py", "pywinauto/tests/missalignment.py", "pywinauto/tests/missingextrastring.py", "pywinauto/tests/overlapping.py", "pywinauto/tests/repeatedhotkey.py", "pywinauto/tests/translation.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "pyxtal", "version": "1.1.4", "verdict": "identical"}
+{"package": "jsonpath", "version": "0.82.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for jsonpath==0.82.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "crayons", "version": "0.4.0", "verdict": "identical"}
+{"package": "miscreant", "version": "0.3.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for miscreant==0.3.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "workalendar", "version": "17.0.0", "verdict": "identical"}
+{"package": "confusable-homoglyphs", "version": "3.3.1", "verdict": "identical"}
+{"package": "liccheck", "version": "0.9.2", "verdict": "identical"}
+{"package": "django-rest-polymorphic", "version": "0.1.10", "verdict": "identical"}
+{"package": "clandestined", "version": "1.1.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for clandestined==1.1.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pyro-ppl", "version": "1.9.1", "verdict": "identical"}
+{"package": "django-widget-tweaks", "version": "1.5.1", "verdict": "identical"}
+{"package": "ruyaml", "version": "0.91.0", "verdict": "identical"}
+{"package": "shillelagh", "version": "1.4.4", "verdict": "identical"}
+{"package": "requests-pkcs12", "version": "1.27", "verdict": "identical"}
+{"package": "requests-oauth", "version": "0.4.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for requests_oauth==0.4.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "poly-eip712-structs", "version": "0.0.1", "verdict": "identical"}
+{"package": "flasgger", "version": "0.9.7.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for flasgger==0.9.7.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pyro-api", "version": "0.1.2", "verdict": "identical"}
+{"package": "django-dotenv", "version": "1.4.2", "verdict": "identical"}
+{"package": "pymarkdownlnt", "version": "0.9.38", "verdict": "identical"}
+{"package": "nuitka", "version": "4.1.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for nuitka==4.1.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "marshmallow-union", "version": "0.1.15.post1", "verdict": "identical"}
+{"package": "py-ecc", "version": "8.0.0", "verdict": "identical"}
+{"package": "trafaret", "version": "2.1.1", "verdict": "identical"}
+{"package": "webtest", "version": "3.0.7", "verdict": "identical"}
+{"package": "dm-haiku", "version": "0.0.16", "verdict": "identical"}
+{"package": "xmljson", "version": "0.2.1", "verdict": "identical"}
+{"package": "backports-weakref", "version": "1.0.post1", "verdict": "identical"}
+{"package": "django-safedelete", "version": "1.4.1", "verdict": "identical"}
+{"package": "setuptools-download", "version": "1.1.0", "verdict": "identical"}
+{"package": "habluetooth", "version": "6.8.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for habluetooth==6.8.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pylatex", "version": "1.4.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pylatex==1.4.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "facexlib", "version": "0.3.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["facexlib/version.py"], "entry_points_changed": false}
+{"package": "backports-tempfile", "version": "1.0", "verdict": "identical"}
+{"package": "pydevd-pycharm", "version": "262.7132.31", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pydevd_pycharm==262.7132.31 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "ntplib", "version": "0.4.0", "verdict": "identical"}
+{"package": "google-cloud-scheduler", "version": "2.20.0", "verdict": "identical"}
+{"package": "x-wr-timezone", "version": "2.0.1", "verdict": "identical"}
+{"package": "pyocse", "version": "0.1.3", "verdict": "identical"}
+{"package": "django-auditlog", "version": "3.4.1", "verdict": "identical"}
+{"package": "warcio", "version": "1.8.1", "verdict": "identical"}
+{"package": "vasprun-xml", "version": "1.0.4", "verdict": "identical"}
+{"package": "ldfparser", "version": "0.26.0", "verdict": "identical"}
+{"package": "intuit-oauth", "version": "1.2.6", "verdict": "diverged", "only_in_published": ["intuit_oauth-1.2.6-py3.10-nspkg.pth"], "only_in_sdist_build": ["intuit_oauth-1.2.6-py3.12-nspkg.pth"], "content_differs": [], "entry_points_changed": false}
+{"package": "collate-sqllineage", "version": "2.1.3", "verdict": "diverged", "only_in_published": ["tests/corpus/__init__.py", "tests/corpus/oss/__init__.py", "tests/corpus/oss/test_comments.py", "tests/corpus/oss/test_create_table.py", "tests/corpus/oss/test_create_table_clickhouse_specific.py", "tests/corpus/oss/test_create_view_snowflake_specific.py", "tests/corpus/payoneer/__init__.py", "tests/corpus/payoneer/test_create_view.py", "tests/corpus/remitly/__init__.py", "tests/corpus/remitly/test_create_table.py", "tests/corpus/remitly/test_select.py", "tests/corpus/servicenow/__init__.py", "tests/corpus/servicenow/test_create_table.py", "tests/corpus/servicenow/test_create_view.py", "tests/corpus/servicenow/test_edge_cases.py", "tests/corpus/servicenow/test_insert.py", "tests/corpus/servicenow/test_merge_additional.py", "tests/corpus/servicenow/test_merge_operations.py", "tests/corpus/servicenow/test_snowflake_swap.py", "tests/corpus/servicenow/test_sqlfluff_limitations.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "django-admin-rangefilter", "version": "0.13.5", "verdict": "identical"}
+{"package": "sqlalchemy-cockroachdb", "version": "2.0.4", "verdict": "identical"}
+{"package": "edgartools", "version": "5.36.0", "verdict": "identical"}
+{"package": "recommonmark", "version": "0.7.1", "verdict": "identical"}
+{"package": "fluent-runtime", "version": "0.4.0", "verdict": "identical"}
+{"package": "pytest-sftpserver", "version": "1.3.0", "verdict": "diverged", "only_in_published": ["pytest_sftpserver/autolog.py", "pytest_sftpserver/sftp/virtual_sftp.py", "pytest_sftpserver/sftp_old.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "docstring-to-markdown", "version": "0.17", "verdict": "identical"}
+{"package": "marshmallow-jsonschema", "version": "0.16.0", "verdict": "identical"}
+{"package": "graphene-django", "version": "3.2.3", "verdict": "identical"}
+{"package": "gluonts", "version": "0.16.2", "verdict": "diverged", "only_in_published": ["gluonts/nursery/SCott/dataset_tools/algo_clustering.py", "gluonts/nursery/SCott/dataset_tools/electricity.py", "gluonts/nursery/SCott/dataset_tools/exchange_rate.py", "gluonts/nursery/SCott/dataset_tools/group_raw_data.py", "gluonts/nursery/SCott/dataset_tools/preprocess_data.py", "gluonts/nursery/SCott/dataset_tools/synthetic.py", "gluonts/nursery/SCott/dataset_tools/traffic.py", "gluonts/nursery/SCott/model/__init__.py", "gluonts/nursery/SCott/model/ar/__init__.py", "gluonts/nursery/SCott/model/ar/ar_estimator.py", "gluonts/nursery/SCott/model/ar/ar_network.py", "gluonts/nursery/SCott/model/lstm/__init__.py", "gluonts/nursery/SCott/model/lstm/lstm_estimator.py", "gluonts/nursery/SCott/model/lstm/lstm_network.py", "gluonts/nursery/SCott/preprocess_data.py", "gluonts/nursery/SCott/run.py", "gluonts/nursery/SCott/trainers/Adagrad.py", "gluonts/nursery/SCott/trainers/Adam.py", "gluonts/nursery/SCott/trainers/SAdagrad.py", "gluonts/nursery/SCott/trainers/SAdam.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "python-logging-loki", "version": "0.3.1", "verdict": "identical"}
+{"package": "blessings", "version": "1.7", "verdict": "identical"}
+{"package": "pytest-watch", "version": "4.2.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pytest_watch==4.2.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "openhands-ai", "version": "1.8.0", "verdict": "identical"}
+{"package": "bluetooth-data-tools", "version": "1.29.18", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for bluetooth_data_tools==1.29.18 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "memoization", "version": "0.4.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for memoization==0.4.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "xdoctest", "version": "1.3.2", "verdict": "identical"}
+{"package": "codeguru-profiler-agent", "version": "1.2.6", "verdict": "identical"}
+{"package": "textstat", "version": "0.7.13", "verdict": "identical"}
+{"package": "pip-hello-world", "version": "0.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pip_hello_world==0.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "selenium-wire", "version": "5.1.0", "verdict": "identical"}
+{"package": "deepspeed", "version": "0.19.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for deepspeed==0.19.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "django-libsass", "version": "0.9", "verdict": "identical"}
+{"package": "redlock-py", "version": "1.0.8", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for redlock_py==1.0.8 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "spark-nlp", "version": "6.4.1", "verdict": "diverged", "only_in_published": ["sparknlp/annotator/ner/llm_ner.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "splunk-handler", "version": "3.0.0", "verdict": "identical"}
+{"package": "ruamel-yaml-jinja2", "version": "0.2.7", "verdict": "identical"}
+{"package": "openpyxl-stubs", "version": "0.1.25", "verdict": "identical"}
+{"package": "alphashape", "version": "1.3.1", "verdict": "identical"}
+{"package": "pybytebuffer", "version": "1.0.5", "verdict": "identical"}
+{"package": "python-keystoneclient", "version": "5.8.0", "verdict": "identical"}
+{"package": "fhir-resources", "version": "8.2.0", "verdict": "identical"}
+{"package": "collectfasta", "version": "3.3.3", "verdict": "identical"}
+{"package": "pynetbox", "version": "7.7.0", "verdict": "identical"}
+{"package": "stix2-patterns", "version": "2.1.2", "verdict": "identical"}
+{"package": "types-chardet", "version": "5.0.4.6", "verdict": "identical"}
+{"package": "django-fernet-fields-v2", "version": "0.9", "verdict": "identical"}
+{"package": "pipelinewise-singer-python", "version": "3.0.2", "verdict": "identical"}
+{"package": "django-admin-inline-paginator", "version": "0.4.0", "verdict": "fetch-error", "error": "unexpected: HTTP Error 404: Not Found"}
+{"package": "codecov", "version": "2.1.13", "verdict": "identical"}
+{"package": "ntlm-auth", "version": "1.5.0", "verdict": "identical"}
+{"package": "click-help-colors", "version": "0.9.4", "verdict": "identical"}
+{"package": "mautrix", "version": "0.21.0", "verdict": "identical"}
+{"package": "weave", "version": "0.52.42", "verdict": "identical"}
+{"package": "google-cloud-modelarmor", "version": "0.6.0", "verdict": "identical"}
+{"package": "ibm-cos-sdk-s3transfer", "version": "2.16.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for ibm_cos_sdk_s3transfer==2.16.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "importlab", "version": "0.8.1", "verdict": "identical"}
+{"package": "ibm-cos-sdk-core", "version": "2.16.2", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for ibm_cos_sdk_core==2.16.2 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "grapheme", "version": "0.6.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for grapheme==0.6.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pyandoc", "version": "0.2.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyandoc==0.2.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "insightface", "version": "1.0.1", "verdict": "identical"}
+{"package": "csv-diff", "version": "1.2", "verdict": "identical"}
+{"package": "stripe-agent-toolkit", "version": "0.7.0", "verdict": "identical"}
+{"package": "eccodes", "version": "2.47.0", "verdict": "identical"}
+{"package": "mkdocs-minify-plugin", "version": "0.8.0", "verdict": "identical"}
+{"package": "newspaper3k", "version": "0.2.8", "verdict": "identical"}
+{"package": "wikipedia", "version": "1.4.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for wikipedia==1.4.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "suds-py3", "version": "1.4.5.0", "verdict": "diverged", "only_in_published": ["suds/__pycache__/__init__.cpython-38.opt-1.pyc", "suds/__pycache__/builder.cpython-38.opt-1.pyc", "suds/__pycache__/cache.cpython-38.opt-1.pyc", "suds/__pycache__/client.cpython-38.opt-1.pyc", "suds/__pycache__/compat.cpython-38.opt-1.pyc", "suds/__pycache__/metrics.cpython-38.opt-1.pyc", "suds/__pycache__/options.cpython-38.opt-1.pyc", "suds/__pycache__/plugin.cpython-38.opt-1.pyc", "suds/__pycache__/properties.cpython-38.opt-1.pyc", "suds/__pycache__/reader.cpython-38.opt-1.pyc", "suds/__pycache__/resolver.cpython-38.opt-1.pyc", "suds/__pycache__/servicedefinition.cpython-38.opt-1.pyc", "suds/__pycache__/serviceproxy.cpython-38.opt-1.pyc", "suds/__pycache__/soaparray.cpython-38.opt-1.pyc", "suds/__pycache__/store.cpython-38.opt-1.pyc", "suds/__pycache__/sudsobject.cpython-38.opt-1.pyc", "suds/__pycache__/utils.cpython-38.opt-1.pyc", "suds/__pycache__/wsdl.cpython-38.opt-1.pyc", "suds/__pycache__/wsse.cpython-38.opt-1.pyc", "suds/bindings/__pycache__/__init__.cpython-38.opt-1.pyc"], "only_in_sdist_build": ["suds/__pycache__/__init__.cpython-312.opt-1.pyc", "suds/__pycache__/builder.cpython-312.opt-1.pyc", "suds/__pycache__/cache.cpython-312.opt-1.pyc", "suds/__pycache__/client.cpython-312.opt-1.pyc", "suds/__pycache__/compat.cpython-312.opt-1.pyc", "suds/__pycache__/metrics.cpython-312.opt-1.pyc", "suds/__pycache__/options.cpython-312.opt-1.pyc", "suds/__pycache__/plugin.cpython-312.opt-1.pyc", "suds/__pycache__/properties.cpython-312.opt-1.pyc", "suds/__pycache__/reader.cpython-312.opt-1.pyc", "suds/__pycache__/resolver.cpython-312.opt-1.pyc", "suds/__pycache__/servicedefinition.cpython-312.opt-1.pyc", "suds/__pycache__/serviceproxy.cpython-312.opt-1.pyc", "suds/__pycache__/soaparray.cpython-312.opt-1.pyc", "suds/__pycache__/store.cpython-312.opt-1.pyc", "suds/__pycache__/sudsobject.cpython-312.opt-1.pyc", "suds/__pycache__/utils.cpython-312.opt-1.pyc", "suds/__pycache__/wsdl.cpython-312.opt-1.pyc", "suds/__pycache__/wsse.cpython-312.opt-1.pyc", "suds/bindings/__pycache__/__init__.cpython-312.opt-1.pyc"], "content_differs": [], "entry_points_changed": false}
+{"package": "platformio", "version": "6.1.19", "verdict": "identical"}
+{"package": "sqlean-py", "version": "3.50.4.5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for sqlean_py==3.50.4.5 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pudb", "version": "2025.1.5", "verdict": "identical"}
+{"package": "lkml", "version": "1.3.7", "verdict": "identical"}
+{"package": "openapi-schema-pydantic", "version": "1.2.4", "verdict": "diverged", "only_in_published": ["tests/schema_classes/__init__.py", "tests/schema_classes/test_schema.py", "tests/schema_classes/test_security_scheme.py", "tests/util/__init__.py", "tests/util/test_pydantic_field.py", "tests/util/test_util.py", "tests/v3_0_3/__init__.py", "tests/v3_0_3/test_config_example.py", "tests/v3_0_3/test_util.py", "tests/v3_1_0/__init__.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "cuid", "version": "0.4", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for cuid==0.4 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "yara-python", "version": "4.5.4", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for yara_python==4.5.4 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "httpie", "version": "3.2.4", "verdict": "identical"}
+{"package": "docker-py", "version": "1.10.6", "verdict": "identical"}
+{"package": "utm", "version": "0.8.1", "verdict": "identical"}
+{"package": "torchdiffeq", "version": "0.2.5", "verdict": "identical"}
+{"package": "keyboard", "version": "0.13.5", "verdict": "identical"}
+{"package": "pybind11-stubgen", "version": "2.5.5", "verdict": "identical"}
+{"package": "mercantile", "version": "1.2.1", "verdict": "identical"}
+{"package": "dlinfo", "version": "2.0.0", "verdict": "identical"}
+{"package": "yarg", "version": "0.1.10", "verdict": "identical"}
+{"package": "vk-api", "version": "11.10.0", "verdict": "identical"}
+{"package": "cint", "version": "1.0.0", "verdict": "identical"}
+{"package": "rouge", "version": "1.0.1", "verdict": "identical"}
+{"package": "stix2", "version": "3.0.2", "verdict": "identical"}
+{"package": "django-fake-model", "version": "0.1.4", "verdict": "identical"}
+{"package": "nevergrad", "version": "1.0.12", "verdict": "identical"}
+{"package": "rush", "version": "2021.4.0", "verdict": "diverged", "only_in_published": ["rush/py.typed"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "opentelemetry-resourcedetector-process", "version": "0.3.0", "verdict": "identical"}
+{"package": "opentelemetry-container-distro", "version": "0.2.0", "verdict": "identical"}
+{"package": "aioesphomeapi", "version": "45.3.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for aioesphomeapi==45.3.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "python-memcached", "version": "1.62", "verdict": "identical"}
+{"package": "msgpack-numpy", "version": "0.4.8", "verdict": "identical"}
+{"package": "asciitree", "version": "0.3.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for asciitree==0.3.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "algoliasearch-django", "version": "4.0.0", "verdict": "identical"}
+{"package": "django-loginas", "version": "0.3.14", "verdict": "identical"}
+{"package": "google-apps-meet", "version": "0.5.0", "verdict": "identical"}
+{"package": "stream-python", "version": "5.4.0", "verdict": "identical"}
+{"package": "fatfs-ng", "version": "0.1.15", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for fatfs_ng==0.1.15 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "coreschema", "version": "0.0.4", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for coreschema==0.0.4 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "lorem", "version": "0.1.1", "verdict": "identical"}
+{"package": "nacos-sdk-python", "version": "3.2.0", "verdict": "identical"}
+{"package": "azure-mgmt-databoxedge", "version": "2.0.0", "verdict": "identical"}
+{"package": "cron-validator", "version": "1.0.8", "verdict": "identical"}
+{"package": "google-cloud-org-policy", "version": "1.17.0", "verdict": "identical"}
+{"package": "cloup", "version": "3.1.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["cloup/_version.py"], "entry_points_changed": false}
+{"package": "google-cloud-error-reporting", "version": "1.15.0", "verdict": "identical"}
+{"package": "azure-ai-contentsafety", "version": "1.0.0", "verdict": "identical"}
+{"package": "trustcall", "version": "0.0.39", "verdict": "identical"}
+{"package": "pvlib", "version": "0.15.1", "verdict": "identical"}
+{"package": "glob2", "version": "0.7", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for glob2==0.7 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "tinytuya", "version": "1.18.1", "verdict": "identical"}
+{"package": "reliability", "version": "0.9.0", "verdict": "identical"}
+{"package": "python-hostlist", "version": "2.3.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for python_hostlist==2.3.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "iterproxy", "version": "0.3.1", "verdict": "identical"}
+{"package": "undetected-chromedriver", "version": "3.5.5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for undetected_chromedriver==3.5.5 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "method-python", "version": "2.1.1", "verdict": "identical"}
+{"package": "fugue-sql-antlr", "version": "0.2.4", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for fugue_sql_antlr==0.2.4 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "djangorestframework-role-filters", "version": "1.1.0", "verdict": "identical"}
+{"package": "xenon", "version": "0.9.3", "verdict": "identical"}
+{"package": "clu", "version": "0.0.12", "verdict": "identical"}
+{"package": "bson", "version": "0.5.10", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for bson==0.5.10 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "py-moneyed", "version": "3.0", "verdict": "identical"}
+{"package": "mohawk", "version": "1.1.0", "verdict": "identical"}
+{"package": "google-cloud-os-config", "version": "1.24.0", "verdict": "identical"}
+{"package": "sqlalchemy-mate", "version": "2.0.0.3", "verdict": "diverged", "only_in_published": ["sqlalchemy_mate/tests/__init__.py", "sqlalchemy_mate/tests/api.py", "sqlalchemy_mate/tests/constants.py", "sqlalchemy_mate/tests/crud_test.py", "sqlalchemy_mate/tests/engine.py", "sqlalchemy_mate/tests/helper.py", "sqlalchemy_mate/tests/mock_aws.py", "sqlalchemy_mate/tests/status_tracker_test.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "geohash2", "version": "1.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for geohash2==1.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "tools", "version": "1.0.30", "verdict": "identical"}
+{"package": "wordninja", "version": "2.0.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for wordninja==2.0.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "gender-guesser", "version": "0.4.0", "verdict": "identical"}
+{"package": "google-cloud-access-context-manager", "version": "0.6.0", "verdict": "identical"}
+{"package": "torch-ema", "version": "0.3", "verdict": "identical"}
+{"package": "currency-symbols", "version": "2.0.4", "verdict": "identical"}
+{"package": "google-cloud-asset", "version": "4.4.0", "verdict": "identical"}
+{"package": "flask-testing", "version": "0.8.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for flask_testing==0.8.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "embedchain", "version": "0.1.128", "verdict": "identical"}
+{"package": "telepath", "version": "0.3.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for telepath==0.3.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pydevd", "version": "3.5.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pydevd==3.5.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "lomond", "version": "0.3.3", "verdict": "identical"}
+{"package": "nemo-toolkit", "version": "2.7.3", "verdict": "identical"}
+{"package": "businesstimedelta", "version": "1.0.1", "verdict": "identical"}
+{"package": "vastai", "version": "1.0.13", "verdict": "identical"}
+{"package": "segment-anything", "version": "1.0", "verdict": "identical"}
+{"package": "django-webpack-loader", "version": "3.2.4", "verdict": "identical"}
+{"package": "pynose", "version": "1.5.5", "verdict": "identical"}
+{"package": "openfoodfacts", "version": "5.1.0", "verdict": "identical"}
+{"package": "canmatrix", "version": "1.2", "verdict": "diverged", "only_in_published": ["canmatrix/tests/ARXMLCompuMethod1.arxml", "canmatrix/tests/ARXMLContainerTest.arxml", "canmatrix/tests/ARXMLSecuredPDUTest.arxml", "canmatrix/tests/ARXML_min_max.arxml", "canmatrix/tests/MyECU.ecuc.arxml", "canmatrix/tests/__init__.py", "canmatrix/tests/aa.dbc", "canmatrix/tests/asdf_aa.dbc", "canmatrix/tests/test_arxml.py", "canmatrix/tests/test_arxml_gw.py", "canmatrix/tests/test_canmatrix.py", "canmatrix/tests/test_cli_compare.py", "canmatrix/tests/test_cli_convert.py", "canmatrix/tests/test_copy.py", "canmatrix/tests/test_dbc.py", "canmatrix/tests/test_dbf.py", "canmatrix/tests/test_formats.py", "canmatrix/tests/test_frame_decoding.dbc", "canmatrix/tests/test_frame_decoding.py", "canmatrix/tests/test_frame_encoding.py"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "django-permissionedforms", "version": "0.1", "verdict": "identical"}
+{"package": "flake8-quotes", "version": "3.4.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for flake8_quotes==3.4.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pylogbeat", "version": "2.1.0", "verdict": "identical"}
+{"package": "salesforce-fuelsdk-sans", "version": "1.3.1", "verdict": "identical"}
+{"package": "pytest-regressions", "version": "2.11.0", "verdict": "identical"}
+{"package": "checksumdir", "version": "1.3.0", "verdict": "fetch-error", "error": "unexpected: HTTP Error 404: Not Found"}
+{"package": "crypto", "version": "1.4.1", "verdict": "diverged", "only_in_published": ["crypto-1.4.1.data/scripts/crypto", "crypto-1.4.1.data/scripts/decrypto"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "cbor", "version": "1.0.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for cbor==1.0.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "verboselogs", "version": "1.7", "verdict": "identical"}
+{"package": "googleads", "version": "50.0.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for googleads==50.0.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "free-email-domains", "version": "1.0.2", "verdict": "identical"}
+{"package": "argparse-dataclass", "version": "2.0.0", "verdict": "identical"}
+{"package": "ps-mem", "version": "3.14", "verdict": "identical"}
+{"package": "msgpack-python", "version": "0.5.6", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for msgpack_python==0.5.6 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "strict-rfc3339", "version": "0.7", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for strict_rfc3339==0.7 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pycld2", "version": "0.42", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pycld2==0.42 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "github-action-utils", "version": "1.1.0", "verdict": "identical"}
+{"package": "anyscale", "version": "0.26.103", "verdict": "identical"}
+{"package": "pytest-cases", "version": "3.10.1", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["pytest_cases/_version.py"], "entry_points_changed": false}
+{"package": "icmplib", "version": "3.0.4", "verdict": "identical"}
+{"package": "sshpubkeys", "version": "3.3.1", "verdict": "identical"}
+{"package": "opentracing", "version": "2.4.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for opentracing==2.4.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "ebooklib", "version": "0.20", "verdict": "identical"}
+{"package": "roundrobin", "version": "0.1.0", "verdict": "identical"}
+{"package": "halo", "version": "0.0.31", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for halo==0.0.31 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pyexcel-xlsx", "version": "0.6.1", "verdict": "identical"}
+{"package": "first", "version": "2.0.2", "verdict": "identical"}
+{"package": "eradicate", "version": "3.0.1", "verdict": "identical"}
+{"package": "py-mini-racer", "version": "0.6.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for py_mini_racer==0.6.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "flake8-polyfill", "version": "1.0.2", "verdict": "identical"}
+{"package": "pyarmor", "version": "9.2.5", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["pyarmor/cli/core.data.2", "pyarmor/cli/core.data.3", "pyarmor/cli/register.py"], "entry_points_changed": false}
+{"package": "paypalrestsdk", "version": "1.13.3", "verdict": "identical"}
+{"package": "box-sdk-gen", "version": "1.17.0", "verdict": "identical"}
+{"package": "stanza", "version": "1.12.2", "verdict": "identical"}
+{"package": "logzio-python-handler", "version": "4.1.9", "verdict": "identical"}
+{"package": "unicodedata2", "version": "17.0.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for unicodedata2==17.0.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "azure-functions-durable", "version": "1.5.0", "verdict": "identical"}
+{"package": "paste", "version": "3.10.1", "verdict": "identical"}
+{"package": "js2py", "version": "0.74", "verdict": "identical"}
+{"package": "types-sqlalchemy-utils", "version": "1.1.0", "verdict": "identical"}
+{"package": "vadersentiment", "version": "3.3.2", "verdict": "identical"}
+{"package": "maincontentextractor", "version": "0.0.4", "verdict": "identical"}
+{"package": "guppy3", "version": "3.1.7", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for guppy3==3.1.7 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "py-builder-signing-sdk", "version": "0.0.2", "verdict": "identical"}
+{"package": "tls-client", "version": "1.0.1", "verdict": "diverged", "only_in_published": ["tls_client/dependencies/tls-client-32.dll", "tls_client/dependencies/tls-client-64.dll", "tls_client/dependencies/tls-client-amd64.so", "tls_client/dependencies/tls-client-arm64.dylib", "tls_client/dependencies/tls-client-arm64.so", "tls_client/dependencies/tls-client-x86.dylib", "tls_client/dependencies/tls-client-x86.so"], "only_in_sdist_build": [], "content_differs": [], "entry_points_changed": false}
+{"package": "google-reauth", "version": "0.1.1", "verdict": "identical"}
+{"package": "typing-utils", "version": "0.1.0", "verdict": "identical"}
+{"package": "catkin-pkg", "version": "1.1.0", "verdict": "identical"}
+{"package": "tabcompleter", "version": "1.4.1", "verdict": "identical"}
+{"package": "pysam", "version": "0.24.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pysam==0.24.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "awsiotsdk", "version": "1.29.0", "verdict": "identical"}
+{"package": "redo", "version": "3.0.0", "verdict": "identical"}
+{"package": "iterators", "version": "0.2.0", "verdict": "identical"}
+{"package": "json-e", "version": "4.8.2", "verdict": "identical"}
+{"package": "py-openapi-schema-to-json-schema", "version": "0.0.3", "verdict": "identical"}
+{"package": "csscompressor", "version": "0.9.5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for csscompressor==0.9.5 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "jsonpath-rw-ext", "version": "1.2.2", "verdict": "identical"}
+{"package": "pyshark", "version": "0.6", "verdict": "identical"}
+{"package": "scikit-network", "version": "0.33.5", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for scikit_network==0.33.5 \u2014 platform wheels are out of scope for published-baseline comparison"}
