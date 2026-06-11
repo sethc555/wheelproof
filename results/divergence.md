@@ -14,6 +14,26 @@ clean python:3.12 container; raw data results/divcheck.jsonl).
 reproduced with exact file-list agreement.** The single-package self-audit is
 `wheelproof divcheck --package <name>`.
 
+## Second population: the modern top-1000 (2026-06-14)
+
+Same method over the top 1,000 packages by downloads (results/divcheck-top1000.jsonl):
+805 comparable, 743 byte-identical, 62 raw divergences — but classification
+matters more here than in the legacy slice:
+
+- 24 are setuptools_scm version stamps (benign)
+- 14 are OUR artifact: the sdist build compiled optional C extensions that
+  pure wheels deliberately omit (yarl, multidict, coverage, wrapt...) — a
+  methodology limit now documented, not a finding
+- 7 mixed, need eyes
+- **17 are real: 2.1%** — files only in wheels (requests-toolbelt, faker,
+  ecdsa...), test suites in wheels, wheel under-shipping
+
+So the honest cross-population statement: **even in the modern, actively
+maintained top-1000, ~2% of packages publish wheels whose payload does not
+match their sdist; in the legacy-leaning at-risk slice the real rate is
+roughly twice that.** 1,830 byte-identical packages across both populations
+prove exact wheel/sdist agreement is the norm and entirely achievable.
+
 A divergence means the published wheel and published sdist of the SAME version
 did not come from the same tree. Classified:
 
