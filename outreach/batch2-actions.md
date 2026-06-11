@@ -1,5 +1,13 @@
 # Batch 2 action plan — after prior-art reads (2026-06-11)
 
+*SENT 2026-06-12 (user-authorized). Live links:*
+- Support comments: colour#66, shyaml#67, python-xlib#290, StrEnum#34,
+  pytorch(meta-pytorch)/tnt#960 — verification comments posted
+- New issues: Tblue/python-jproperties#19, falconry/token-bucket#29,
+  BiomedSciAI/causallib#81
+- Join: israel-fl/python3-logstash#12 (comment)
+Watch for replies.
+
 30 repos read (open AND closed issues/PRs). The reads reshaped everything:
 half of these breakages were already known, fixed, or refused — filing blind
 would have duplicated seven existing PRs.
