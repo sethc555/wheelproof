@@ -69,3 +69,23 @@ For each verified-broken package, in order:
 | wontfix / EOL | cx_Oracle | record; user remediation note |
 | archived / no upstream | albumentations, docker-compose v1 | distro material |
 | silent | html5lib, imgaug, ... | leave alone; the artifact still helps the next visitor |
+
+## verify-published (v2 gate, added 2026-06-12)
+
+Baseline = the maintainer's own published pure wheel, not a fresh build. Works
+for packages whose source tree no longer builds. First live run (the 12
+broken-now patches): 6 byte-identical passes (albumentations, docker-compose,
+dropbox, html5lib, impyla, wirerope — the strongest claim a patch can carry),
+1 correctly out-of-scope (cx-oracle, platform wheels only), and 5 divergences
+in three classes:
+
+- **version-stamp files** (decopatch `_version.py`): setuptools_scm stamps
+  differ between the maintainer's build and an sdist rebuild. Benign.
+- **generated code** (omegaconf/hydra ANTLR parsers): generator version/host
+  nondeterminism. Benign but irreducible without pinning the generator.
+- **wheel/sdist divergence** (sql-formatter ships `release.py` in the wheel
+  but not the sdist; imgaug ships `imgaug/external/README.md`): the published
+  wheel was built from a tree that does not match the published sdist. NOT
+  benign — this is its own quiet supply-chain finding, and a future census
+  candidate: how many of the top 5,000 packages' wheels diverge from their
+  sdists?

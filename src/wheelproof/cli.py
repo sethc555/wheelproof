@@ -49,6 +49,12 @@ def main(argv: list[str] | None = None) -> int:
     p_cs = sub.add_parser("corpus-summary", help="markdown summary of a corpus dir")
     p_cs.add_argument("corpus", type=Path)
 
+    p_vp = sub.add_parser(
+        "verify-published",
+        help="build a source tree and diff against the maintainer's own published PyPI wheel",
+    )
+    p_vp.add_argument("srcdir", type=Path)
+
     p_bch = sub.add_parser(
         "buildcheck", help="build every at-risk package's ORIGINAL sdist — the definitive broken-now gate"
     )
@@ -149,6 +155,20 @@ def main(argv: list[str] | None = None) -> int:
 
         print(batchconvert.summarize(args.corpus))
         return 0
+
+    if args.command == "verify-published":
+        from . import verify as verify_mod
+
+        if not args.srcdir.is_dir():
+            print(f"error: {args.srcdir} is not a directory", file=sys.stderr)
+            return 1
+        try:
+            report, label = verify_mod.verify_against_published(args.srcdir)
+        except verify_mod.BuildError as exc:
+            print(f"error: {exc}", file=sys.stderr)
+            return 1
+        verify_mod.print_report(report, label, str(args.srcdir))
+        return 0 if report.passed else 1
 
     if args.command == "buildcheck":
         from . import buildcheck

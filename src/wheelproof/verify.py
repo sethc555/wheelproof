@@ -212,6 +212,47 @@ def print_report(report: Report, label_a: str, label_b: str) -> None:
             section("dist-info files differ", report.distinfo_changed)
 
 
+def fetch_published_wheel(name: str, version: str, dest: Path) -> Path:
+    """Download the maintainer's own published pure wheel for name==version."""
+    import json
+    import urllib.request
+
+    req = urllib.request.Request(
+        f"https://pypi.org/pypi/{name}/{version}/json",
+        headers={"User-Agent": "wheelproof/0.1"},
+    )
+    with urllib.request.urlopen(req, timeout=60) as resp:
+        data = json.load(resp)
+    for entry in data.get("urls", []):
+        if entry["packagetype"] == "bdist_wheel" and entry["filename"].endswith(
+            ("-py3-none-any.whl", "-py2.py3-none-any.whl")
+        ):
+            blob_req = urllib.request.Request(entry["url"], headers={"User-Agent": "wheelproof/0.1"})
+            with urllib.request.urlopen(blob_req, timeout=120) as blob:
+                out = dest / entry["filename"]
+                out.write_bytes(blob.read())
+                return out
+    raise BuildError(
+        f"no pure (none-any) wheel published for {name}=={version} — "
+        f"platform wheels are out of scope for published-baseline comparison"
+    )
+
+
+def verify_against_published(srcdir: Path) -> tuple[Report, str]:
+    """Build srcdir and compare against the published PyPI wheel of the same
+    name+version (parsed from the built wheel's filename). Baseline = the
+    artifact users already receive, so this works even when the original
+    source tree no longer builds."""
+    with tempfile.TemporaryDirectory(prefix="wheelproof-pub-") as tmp:
+        out = Path(tmp) / "ours"
+        out.mkdir()
+        ours = build_wheel(srcdir, out)
+        name, version = ours.name.split("-")[0:2]
+        published = fetch_published_wheel(name, version, Path(tmp))
+        report = compare(read_wheel(published), read_wheel(ours))
+        return report, f"{name}=={version} (published: {published.name})"
+
+
 def verify(dir_a: Path, dir_b: Path) -> Report:
     with tempfile.TemporaryDirectory(prefix="wheelproof-") as tmp:
         out_a = Path(tmp) / "a"
