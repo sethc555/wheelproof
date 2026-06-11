@@ -62,6 +62,14 @@ def main(argv: list[str] | None = None) -> int:
     p_bch.add_argument("--output", type=Path, default=Path("buildcheck.jsonl"))
     p_bch.add_argument("--workers", type=int, default=3)
 
+    p_div = sub.add_parser(
+        "divcheck", help="wheel/sdist divergence census over known-buildable packages"
+    )
+    p_div.add_argument("buildcheck", type=Path)
+    p_div.add_argument("--output", type=Path, default=Path("divcheck.jsonl"))
+    p_div.add_argument("--workers", type=int, default=3)
+    p_div.add_argument("--limit", type=int)
+
     args = parser.parse_args(argv)
 
     if args.command == "scan":
@@ -177,6 +185,15 @@ def main(argv: list[str] | None = None) -> int:
             print(f"error: {args.results} not found", file=sys.stderr)
             return 1
         buildcheck.run(args.results, args.output, workers=args.workers)
+        return 0
+
+    if args.command == "divcheck":
+        from . import divcheck
+
+        if not args.buildcheck.exists():
+            print(f"error: {args.buildcheck} not found", file=sys.stderr)
+            return 1
+        divcheck.run(args.buildcheck, args.output, workers=args.workers, limit=args.limit)
         return 0
 
     return 1
