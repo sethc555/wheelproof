@@ -1,0 +1,20 @@
+--- a/setup.py	2026-06-10 21:29:31.591656895 -0500
++++ b/setup.py	2026-06-10 21:32:20.080553999 -0500
+@@ -4,7 +4,7 @@
+ import re
+ import sys
+ 
+-import pkg_resources
++from packaging.markers import Marker
+ from setuptools import find_packages
+ from setuptools import setup
+ 
+@@ -59,7 +59,7 @@
+ try:
+     if 'bdist_wheel' not in sys.argv:
+         for key, value in extras_require.items():
+-            if key.startswith(':') and pkg_resources.evaluate_marker(key[1:]):
++            if key.startswith(':') and Marker(key[1:]).evaluate():
+                 install_requires.extend(value)
+ except Exception as e:
+     print("Failed to compute platform dependencies: {}. ".format(e) +

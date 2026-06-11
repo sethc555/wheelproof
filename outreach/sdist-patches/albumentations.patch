@@ -1,0 +1,21 @@
+--- a/setup.py	2026-06-10 21:28:28.139400998 -0500
++++ b/setup.py	2026-06-10 21:28:42.124288016 -0500
+@@ -1,5 +1,5 @@
+ import re
+-from pkg_resources import DistributionNotFound, get_distribution
++from importlib.metadata import PackageNotFoundError, version
+ from setuptools import setup, find_packages
+ 
+ INSTALL_REQUIRES = [
+@@ -24,9 +24,9 @@
+ 
+ def is_installed(package_name: str) -> bool:
+     try:
+-        get_distribution(package_name)
++        version(package_name)
+         return True
+-    except DistributionNotFound:
++    except PackageNotFoundError:
+         return False
+ 
+ def choose_opencv_requirement():

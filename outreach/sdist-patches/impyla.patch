@@ -1,0 +1,12 @@
+--- a/setup.py	2026-06-10 21:28:43.342726859 -0500
++++ b/setup.py	2026-06-10 21:28:58.567643079 -0500
+@@ -14,9 +14,6 @@
+ 
+ from __future__ import absolute_import
+ 
+-import ez_setup
+-ez_setup.use_setuptools()
+-
+ from setuptools import setup, find_packages
+ 
+ 

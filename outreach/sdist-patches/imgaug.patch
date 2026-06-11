@@ -1,0 +1,11 @@
+--- a/setup.py	2026-06-10 21:28:43.341071685 -0500
++++ b/setup.py	2026-06-10 21:28:57.399617905 -0500
+@@ -1,7 +1,7 @@
+ # pylint: disable=missing-module-docstring
+ import re
+ 
+-from pkg_resources import get_distribution, DistributionNotFound
++from importlib.metadata import version as get_distribution, PackageNotFoundError as DistributionNotFound
+ from setuptools import setup, find_packages
+ 
+ long_description = """A library for image augmentation in machine learning experiments, particularly convolutional

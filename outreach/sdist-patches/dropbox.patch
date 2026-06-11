@@ -1,0 +1,18 @@
+--- a/setup.py	2026-06-10 21:29:31.593121597 -0500
++++ b/setup.py	2026-06-10 21:29:53.827826181 -0500
+@@ -6,15 +6,6 @@
+ import os
+ import sys
+ 
+-# Ensure setuptools is available
+-try:
+-    from ez_setup import use_setuptools
+-    use_setuptools()
+-except ImportError:
+-    # Try to use ez_setup, but if not, continue anyway. The import is known
+-    # to fail when installing from a tar.gz.
+-    print('Could not import ez_setup', file=sys.stderr)
+-
+ from setuptools import setup
+ 
+ dbx_mod_path = os.path.join(os.path.dirname(__file__), 'dropbox/dropbox_client.py')
