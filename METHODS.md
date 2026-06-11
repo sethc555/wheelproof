@@ -89,3 +89,51 @@ in three classes:
   benign — this is its own quiet supply-chain finding, and a future census
   candidate: how many of the top 5,000 packages' wheels diverge from their
   sdists?
+
+## v4 revisions (2026-06-13, after batches 3-4 and the divergence census)
+
+**The pristine-HEAD test is mandatory before any HEAD patch is written.**
+Batch 4's discriminator: build pristine HEAD (full sdist->wheel) first. It
+reclassified 4 of 9 "PR candidates" as fixed-at-HEAD (cheaper release-request),
+and caught agents "adapting" patches onto wbond repos for a bug HEAD no longer
+had. Sequence is now: pristine test -> classify -> only then patch. Never hand
+an agent "apply the equivalent fix" without pristine-fail evidence of what, if
+anything, is still broken.
+
+**`python -m build` full-chain (sdist, then wheel FROM that sdist) is the only
+honest gate.** Wheel-only builds are blind to the entire incomplete-sdist class
+— hubspot/pytest-hacc HEAD would have "passed" a wheel-only check while their
+sdists were unbuildable.
+
+**One fix, two artifacts.** The released-sdist patch (hardcoded version is
+fine — the version is a constant of that artifact) and the HEAD PR patch
+(version must be read dynamically — HEAD moves) are different deliverables
+with different verification.
+
+**New outcome category: release-tooling artifact.** Published sdist omits
+files that HEAD sdists include (posthog's version.py, hubspot's VERSION).
+No code change exists to request; the issue says so explicitly: "the next
+release built the normal way fixes this."
+
+**Two-bug PRs.** When upstream fixed the released bug at HEAD but introduced
+a new sdist bug (certvalidator/ocspbuilder readme.md), the PR fixes the new
+one and the text credits the old fix and asks for the release — both messages
+in one artifact, no nagging.
+
+**Uniform failure means harness bug.** Every time ALL items failed identically
+(9/9 "FAILS" from a container path mismatch; the canary's first-run false
+"AXE DROPPED" from its own malformed package), the fault was ours. Diagnostic
+rule: identical failure across heterogeneous items -> suspect the harness
+before believing the result. Canaries need positive controls.
+
+**Numbers that travel get two runs.** The divergence census shipped only after
+all 98 findings reproduced with exact file-list agreement in an independent
+run. Single-run numbers stay in the workshop.
+
+**CLA pre-check on corporate repos** (grep CONTRIBUTING for CLA before
+filing): the human whose name signs the PR should know the gate exists before
+the bot tells them.
+
+**Ship the remedy with the finding.** The divergence report went out alongside
+`divcheck --package <name>` self-audit mode. An ecosystem-level finding plus a
+one-command self-check reads as a gift; the finding alone reads as an audit.
