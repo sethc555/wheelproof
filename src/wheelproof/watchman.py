@@ -85,6 +85,26 @@ def canary(repo_root: Path) -> bool:
                f"{blob.strip().splitlines()[-1][:160]}")
         return False
     print(f"canary: dash keys still build (setuptools {version})")
+    # positive control: a deliberately broken package MUST fail, or the
+    # harness itself is sick and "still fine" means nothing
+    with tempfile.TemporaryDirectory(prefix="wp-canaryctl-") as tmp:
+        src = Path(tmp) / "ctl"
+        src.mkdir()
+        (src / "setup.py").write_text("import nonexistent_module_wp_control\n")
+        import os
+
+        proc = subprocess.run(
+            ["docker", "run", "--rm", "--user", f"{os.getuid()}:{os.getgid()}",
+             "-e", "HOME=/tmp", "-v", f"{src}:/c", "python:3.12", "bash", "-c",
+             "python -m venv /tmp/v && /tmp/v/bin/pip install -q build && "
+             "/tmp/v/bin/python -m build --wheel --outdir /tmp/o /c"],
+            capture_output=True, text=True, timeout=900,
+        )
+        if proc.returncode == 0:
+            _alert(repo_root,
+                   "canary HARNESS UNHEALTHY: the deliberately-broken control package "
+                   "BUILT — failure detection is not working; all 'still fine' verdicts "
+                   "since the last healthy control are suspect")
     return False
 
 

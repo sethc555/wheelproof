@@ -70,8 +70,21 @@ def check_one(name: str) -> dict:
     return row
 
 
+def _stable_check(name: str, runs: int) -> dict:
+    row = check_one(name)
+    if runs < 2 or row.get("verdict") not in ("identical", "diverged"):
+        return row
+    second = check_one(name)
+    keys = ("verdict", "only_in_published", "only_in_sdist_build", "content_differs", "entry_points_changed")
+    if any(row.get(k) != second.get(k) for k in keys):
+        return {"package": name, "verdict": "UNSTABLE",
+                "run1": {k: row.get(k) for k in keys}, "run2": {k: second.get(k) for k in keys}}
+    row["stable_runs"] = 2
+    return row
+
+
 def run(buildcheck_jsonl: Path | None, output: Path, workers: int = 3,
-        limit: int | None = None, names: list[str] | None = None) -> None:
+        limit: int | None = None, names: list[str] | None = None, runs: int = 1) -> None:
     if names is None:
         names = []
         for line in buildcheck_jsonl.read_text().splitlines():
@@ -95,7 +108,7 @@ def run(buildcheck_jsonl: Path | None, output: Path, workers: int = 3,
     counts: dict[str, int] = {}
     output.parent.mkdir(parents=True, exist_ok=True)
     with output.open("a") as out, ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {pool.submit(check_one, n): n for n in todo}
+        futures = {pool.submit(_stable_check, n, runs): n for n in todo}
         for i, future in enumerate(as_completed(futures), 1):
             row = future.result()
             out.write(json.dumps(row) + "\n")

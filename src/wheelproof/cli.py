@@ -62,6 +62,15 @@ def main(argv: list[str] | None = None) -> int:
     p_bch.add_argument("--output", type=Path, default=Path("buildcheck.jsonl"))
     p_bch.add_argument("--workers", type=int, default=3)
 
+    p_head = sub.add_parser(
+        "headcheck", help="pristine-HEAD full-chain build: decides patch vs release-request. Run in a container."
+    )
+    p_head.add_argument("target", help="git URL or local checkout")
+    p_head.add_argument("--subdir", help="package dir inside a monorepo")
+
+    p_cla = sub.add_parser("cla-check", help="does this repo's CONTRIBUTING require a CLA/DCO?")
+    p_cla.add_argument("repo", help="owner/repo")
+
     p_adopt = sub.add_parser(
         "adopt", help="install a proven corpus conversion into a source tree, gated by wheel-diff"
     )
@@ -79,6 +88,7 @@ def main(argv: list[str] | None = None) -> int:
     p_div.add_argument("--output", type=Path, default=Path("divcheck.jsonl"))
     p_div.add_argument("--workers", type=int, default=3)
     p_div.add_argument("--limit", type=int)
+    p_div.add_argument("--runs", type=int, default=1, help="2 = double-run, flag UNSTABLE rows")
 
     args = parser.parse_args(argv)
 
@@ -197,6 +207,38 @@ def main(argv: list[str] | None = None) -> int:
         buildcheck.run(args.results, args.output, workers=args.workers)
         return 0
 
+    if args.command == "headcheck":
+        import json as json_mod
+
+        from . import headcheck as head_mod
+
+        row = head_mod.headcheck(args.target, subdir=args.subdir)
+        print(json_mod.dumps(row, indent=2))
+        return 0 if row.get("verdict") == "pristine-head-builds" else 1
+
+    if args.command == "cla-check":
+        import base64
+        import subprocess as sp
+
+        found = []
+        for path in ("CONTRIBUTING.md", ".github/CONTRIBUTING.md", "docs/CONTRIBUTING.md", "CONTRIBUTING.rst"):
+            r = sp.run(["gh", "api", f"repos/{args.repo}/contents/{path}", "--jq", ".content"],
+                       capture_output=True, text=True)
+            if r.returncode == 0 and r.stdout.strip():
+                import re as re_mod
+
+                blob = base64.b64decode(r.stdout).decode("utf-8", "replace")
+                hits = re_mod.findall(r"(?i)(CLA|contributor license agreement|developer certificate of origin|DCO)", blob)
+                if hits:
+                    found.append(f"{path}: {len(hits)} mention(s) of {sorted(set(h.upper() for h in hits))}")
+        if found:
+            print(f"{args.repo}: CLA/DCO LIKELY REQUIRED")
+            for f in found:
+                print(" ", f)
+            return 1
+        print(f"{args.repo}: no CLA/DCO mentions found in CONTRIBUTING files")
+        return 0
+
     if args.command == "adopt":
         from . import adopt as adopt_mod
 
@@ -222,12 +264,12 @@ def main(argv: list[str] | None = None) -> int:
             return 0 if row.get("verdict") == "identical" else 1
         if args.file:
             names = [n.strip() for n in args.file.read_text().splitlines() if n.strip()]
-            divcheck.run(None, args.output, workers=args.workers, limit=args.limit, names=names)
+            divcheck.run(None, args.output, workers=args.workers, limit=args.limit, names=names, runs=args.runs)
             return 0
         if not args.buildcheck or not args.buildcheck.exists():
             print("error: need a buildcheck jsonl, --file, or --package", file=sys.stderr)
             return 1
-        divcheck.run(args.buildcheck, args.output, workers=args.workers, limit=args.limit)
+        divcheck.run(args.buildcheck, args.output, workers=args.workers, limit=args.limit, runs=args.runs)
         return 0
 
     return 1
