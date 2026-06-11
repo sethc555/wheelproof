@@ -44,6 +44,22 @@ The omegaconf/hydra play. Verify HEAD/PR actually builds first.
 - ccxt: exact report #16220 closed as STALE (not refused) — candidate for a
   fresh, verified, fix-attached re-raise; judgment call
 
+## Verification results (2026-06-11, container, sdist->wheel gate)
+
+A — stalled PRs VERIFIED working (support-comment ready):
+- colour#66 OK, shyaml#67 OK, python-xlib#290 OK, strenum#34 OK, torchtnt#960 OK
+- boto3-type-annotations#12 INSUFFICIENT — setup.py still reads ../README.md
+  which escapes the sdist; needs a different fix (moves to patch bucket)
+- autogluon#5688 not verified (monorepo build deferred)
+
+B — HEADs VERIFIED building (release-request ready):
+- jproperties OK, ics OK, token-bucket OK, python3-logstash OK
+- causallib HEAD OK — but the v0.10.0 sdist on PyPI fails (reads unshipped
+  requirements.txt): the fix is merged yet the published artifact is broken.
+  Ask = republish (0.10.1), not just release.
+- resend HEAD STILL BROKEN (typing_extensions import persists) — patch bucket
+- ocspbuilder HEAD STILL BROKEN (partial 2016 fix incomplete) — patch bucket
+
 ## Execution order
 1. Verify: existing PRs (A), HEAD states (B) — container builds, no public action
 2. Prep: patches + forks for C and D
