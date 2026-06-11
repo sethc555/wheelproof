@@ -96,3 +96,13 @@ python-xlib#290, strenum#34, tnt#960) + 3 new release-request issues
 1. Verify: existing PRs (A), HEAD states (B) — container builds, no public action
 2. Prep: patches + forks for C and D
 3. Sends: human-authorized, per METHODS.md
+
+## Batch 3 — divergence friendly tail (SENT 2026-06-13, "greenish" authorization)
+Prior-art triage reshaped 8 planned issues into 6 new + 2 joins:
+- py.typed-missing-from-sdist issues: detect-secrets#968 (refs their #579),
+  rush#21, waybackpy#199 (refs #167), orderedmultidict#33
+- stale-pycache issues: drf-nested-routers#392, imapclient#643
+- JOIN suds-py3#88 (open issue for exactly this — confirmed with data)
+- JOIN valkey-py#262 (their fix merged 2026-02 but never released; comment
+  notes 6.1.1 predates it)
+All claims double-run verified; all under watchman.
