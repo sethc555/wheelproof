@@ -2,60 +2,106 @@
 
 **Migration you can check, not trust.**
 
-Setuptools is retrying its deprecated-config removal in 2026. Last time (2025) it broke
-12,000+ packages, pins didn't hold because build isolation re-resolves setuptools, and
-the whole thing got reverted. The packages that will burn worst are the dead tail —
-maintainers gone, `setup.py`/`setup.cfg` frozen in 2017.
+setuptools is removing its deprecated surface: `pkg_resources` is gone as of
+v82.0.0 (2026-02-08), and the dash-separated `setup.cfg` keys that broke 12,000+
+packages in the reverted March 2025 attempt are past their announced 2026-03-03
+cutoff and can be removed in any release. The packages that will burn worst are
+the dead tail — maintainers gone, `setup.py` frozen years ago.
 
-wheelproof is three tools around one idea: a packaging migration is trustworthy only if
-the artifact proves itself. You don't review the conversion — you **build both versions
-and diff the wheels**.
+wheelproof is a scanner, a verify-gated converter, and a corpus of proven
+fixes, built around one idea: **a packaging migration is trustworthy only if the
+artifact proves itself.** You don't review the conversion — you build both
+versions and diff the wheels.
+
+## Findings (top 5,000 PyPI packages by downloads, scanned 2026-06)
+
+- **1,153 (24%)** fail to build from sdist under the announced removals
+  ([results/top-summary.md](results/top-summary.md), raw data
+  [results/top.jsonl](results/top.jsonl))
+- **12 are verified broken today** against current setuptools — including
+  packages at 35M+ downloads/month
+  ([results/broken-now.md](results/broken-now.md)); fixes for all 12 are in
+  [outreach/sdist-patches/](outreach/sdist-patches/), and PRs/release-request
+  issues are filed upstream ([outreach/README.md](outreach/README.md))
+- **959 (83%) of the doomed packages have execution-proven conversions** in
+  [corpus/](corpus/) — a `pyproject.toml` per package whose wheel is
+  byte-identical in payload to the original `setup.py` build
+
+## Commands
 
 ```
-wheelproof scan <package>      # is this PyPI package at risk from the 2026 removals?
-wheelproof convert <srcdir>    # setup.py/setup.cfg -> pyproject.toml   [planned]
-wheelproof verify <a> <b>      # build both source trees, diff the wheels
+wheelproof scan <package>        # is this PyPI package at risk? (JSON out)
+wheelproof batch --top N         # scan the top-N packages, resumable JSONL
+wheelproof summary <jsonl>       # markdown report of a batch scan
+wheelproof convert <srcdir>      # setup.py/setup.cfg -> pyproject.toml, verify-gated
+wheelproof batch-convert <jsonl> # convert+verify every high-severity package
+wheelproof verify <a> <b>        # build both source trees, diff the wheels
+wheelproof corpus-summary <dir>  # pass/fail report of a corpus
 ```
 
 ## Why wheel-diff is the whole trick
 
-LLMs make conversions cheap to generate and the ecosystem is drowning in unverified
-machine output. The scarce good is *proof*. A wheel built from the original tree and a
-wheel built from the converted tree should contain byte-identical payloads and
-equivalent metadata. When they do, the conversion carries its own evidence — a hash
-comparison, not a code review. No burned-out maintainer has to vouch for it.
-
-`verify` builds each tree in isolation (`python -m build --wheel`), unpacks both wheels,
-and compares:
+Generation is cheap — by hand, by tools, by LLMs — and maintainers are drowning
+in unverified machine output. The scarce good is *proof*. `verify` builds each
+tree in isolation (`python -m build --wheel`), unpacks both wheels, and
+compares:
 
 - **payload** (everything outside `*.dist-info/`): must match by content hash, exactly
-- **metadata** (`METADATA`): diffed field-wise, order-insensitive, reported as warnings
-- **noise** (`RECORD`, `WHEEL: Generator`): ignored — these legitimately differ
+- **entry points**: compared parsed, must match (runtime behavior)
+- **metadata** (`METADATA`): diffed field-wise, reported as warnings
+- **noise** (`RECORD`, `WHEEL: Generator`): ignored
 
-Exit code 0 = payloads identical.
+Exit 0 = payloads identical. A conversion that fails the gate is a labeled work
+item, never a deliverable. The gate has caught real defects at every stage of
+this project: conversions that silently dropped data files, leaked test suites
+into wheels, lost console scripts, or shipped pure-Python wheels missing their
+C extensions.
 
-## What `scan` flags
+## How conversions are produced
 
-Against a package's latest sdist from PyPI:
+`convert` deliberately writes no novel translation logic. It chains existing
+tools — [setuptools-py2cfg](https://github.com/gvalkov/setuptools-py2cfg) for
+static `setup.py`, [ini2toml](https://ini2toml.readthedocs.io/) for
+`setup.cfg` — then repairs their known output defects (semicolon-joined list
+values, dropped `find_packages` excludes, dropped string-form entry points,
+deprecated dash keys passed into `[project]`, missing readme content-types,
+dead test keys in `[tool.setuptools]`) and gates the result through `verify`.
 
-- no `pyproject.toml`, or one without `[build-system]` (legacy build path)
-- dash-separated or uppercase keys in `setup.cfg` `[metadata]`/`[options]`
-  (the exact thing the 2026 retry removes)
-- `pkg_resources` imports (removal slated since 2025-11-30)
-- `distutils` imports (gone from stdlib since 3.12)
-- `setup_requires` / `tests_require` / `test` command usage
+Packages the chain can't handle (dynamic `setup.py`) were converted by LLM
+agents whose proposals were **independently verified by the same wheel-diff
+gate** — self-reports counted for nothing; 282 of 327 proposals survived.
+Every corpus entry records its provenance in `result.json`. Packages that
+can't be converted faithfully (C extensions, versioneer build-time rewrites,
+build-time code generation) are refused loudly, not half-converted.
 
-Output is JSON — pipe it, aggregate it, publish the at-risk list.
+## Using the corpus
 
-## Status
+`corpus/<package>/pyproject.toml` is a drop-in replacement for that package's
+`setup.py`/`setup.cfg` **at the version named in `result.json`** (delete the
+legacy files when adopting it). Each was verified against that version's sdist.
+The corpus is pull, not push: maintainers, distros, and forks take what's
+useful. The conversion files and patches are trivial configuration; treat them
+as available under the upstream project's own license to remove any friction.
 
-v0. `scan` and `verify` work; `convert` is the next milestone — see [PLAN.md](PLAN.md).
-Stdlib-only at runtime; `verify` shells out to `python -m build` (pip install build).
+## Caveats, honestly
+
+- Verification compares against a freshly built baseline. Packages whose
+  *original* build is already broken have no baseline; their patches in
+  `outreach/sdist-patches/` were instead verified as "unpatched fails, patched
+  builds." Diffing against the last *published* wheel is future work.
+- `scan`'s static findings are candidates, not verdicts — build verification
+  found 14 false positives among 26 static pkg_resources flags. Anything this
+  repo states as "verified" was executed, not inferred.
+- `convert`, `verify`, and `batch-convert` execute `setup.py` code from PyPI.
+  Run them in a container.
 
 ## Requirements
 
-Python ≥ 3.10. For `verify`: the [`build`](https://pypi.org/project/build/) package.
+Python ≥ 3.11. `verify` needs [`build`](https://pypi.org/project/build/);
+`convert` needs `ini2toml[full]`, `setuptools-py2cfg`, and `toml`.
 
 ## License
 
-MIT
+MIT. Commits in this repo were authored with LLM assistance (disclosed via
+Co-Authored-By trailers); every artifact that matters is machine-verified
+rather than trusted.
