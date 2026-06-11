@@ -63,9 +63,11 @@ def main(argv: list[str] | None = None) -> int:
     p_bch.add_argument("--workers", type=int, default=3)
 
     p_div = sub.add_parser(
-        "divcheck", help="wheel/sdist divergence census over known-buildable packages"
+        "divcheck", help="wheel/sdist divergence census, or one package with --package"
     )
-    p_div.add_argument("buildcheck", type=Path)
+    p_div.add_argument("buildcheck", type=Path, nargs="?")
+    p_div.add_argument("--package", help="check a single package and print the diff")
+    p_div.add_argument("--file", type=Path, help="newline-separated package names to check")
     p_div.add_argument("--output", type=Path, default=Path("divcheck.jsonl"))
     p_div.add_argument("--workers", type=int, default=3)
     p_div.add_argument("--limit", type=int)
@@ -188,10 +190,20 @@ def main(argv: list[str] | None = None) -> int:
         return 0
 
     if args.command == "divcheck":
+        import json as json_mod
+
         from . import divcheck
 
-        if not args.buildcheck.exists():
-            print(f"error: {args.buildcheck} not found", file=sys.stderr)
+        if args.package:
+            row = divcheck.check_one(args.package)
+            print(json_mod.dumps(row, indent=2))
+            return 0 if row.get("verdict") == "identical" else 1
+        if args.file:
+            names = [n.strip() for n in args.file.read_text().splitlines() if n.strip()]
+            divcheck.run(None, args.output, workers=args.workers, limit=args.limit, names=names)
+            return 0
+        if not args.buildcheck or not args.buildcheck.exists():
+            print("error: need a buildcheck jsonl, --file, or --package", file=sys.stderr)
             return 1
         divcheck.run(args.buildcheck, args.output, workers=args.workers, limit=args.limit)
         return 0

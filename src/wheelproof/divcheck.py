@@ -70,14 +70,16 @@ def check_one(name: str) -> dict:
     return row
 
 
-def run(buildcheck_jsonl: Path, output: Path, workers: int = 3, limit: int | None = None) -> None:
-    names = []
-    for line in buildcheck_jsonl.read_text().splitlines():
-        if not line.strip():
-            continue
-        r = json.loads(line)
-        if r.get("builds") is True:
-            names.append(r["package"])
+def run(buildcheck_jsonl: Path | None, output: Path, workers: int = 3,
+        limit: int | None = None, names: list[str] | None = None) -> None:
+    if names is None:
+        names = []
+        for line in buildcheck_jsonl.read_text().splitlines():
+            if not line.strip():
+                continue
+            r = json.loads(line)
+            if r.get("builds") is True:
+                names.append(r["package"])
     if limit:
         names = names[:limit]
     done: set[str] = set()

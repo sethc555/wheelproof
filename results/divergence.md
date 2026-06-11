@@ -10,6 +10,10 @@ clean python:3.12 container; raw data results/divcheck.jsonl).
 - **diverged: 98 (8.3% of comparable)**
 - platform-wheels-only (out of scope): 234; fetch errors: 7
 
+**Stability: all 98 divergences were independently re-run (2026-06-13); 98/98
+reproduced with exact file-list agreement.** The single-package self-audit is
+`wheelproof divcheck --package <name>`.
+
 A divergence means the published wheel and published sdist of the SAME version
 did not come from the same tree. Classified:
 
