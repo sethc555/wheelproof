@@ -20,6 +20,11 @@ Reply log:
 - 2026-06-11 omegaconf#1315: **FIXED — omry released 2.3.1** within hours;
   independently verified (clean py3.12 container, source install succeeds).
   38.4M dl/mo unbroken.
+- 2026-06-14 drf-nested-routers#392: maintainer (alanjds) — "Thanks a lot for
+  the report. Let's cut a new release..." Another release agreed.
+- 2026-06-14 impyla#616: third-party user independently confirmed our
+  verification of 0.24a1 and asked for the stable release ETA — first
+  community corroboration of a wheelproof finding.
 - 2026-06-12 token-bucket#29: vytas7 (Falcon core) — "I agree it is time for
   release after almost 5 years... We'll see what we can do." Release likely.
 - 2026-06-12 impyla#616: maintainer (csringhofer, Cloudera) — 0.24 release
