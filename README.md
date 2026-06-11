@@ -41,6 +41,10 @@ wheelproof summary <jsonl>       # markdown report of a batch scan
 wheelproof convert <srcdir>      # setup.py/setup.cfg -> pyproject.toml, verify-gated
 wheelproof batch-convert <jsonl> # convert+verify every high-severity package
 wheelproof verify <a> <b>        # build both source trees, diff the wheels
+wheelproof verify-published <d>  # diff a build against the maintainer's published wheel
+wheelproof adopt <pkg> <srcdir>  # install a corpus conversion, gated by wheel-diff
+wheelproof buildcheck <jsonl>    # build every at-risk sdist — the broken-now gate
+wheelproof divcheck --package X  # does X's published wheel match its sdist?
 wheelproof corpus-summary <dir>  # pass/fail report of a corpus
 ```
 
@@ -85,7 +89,8 @@ build-time code generation) are refused loudly, not half-converted.
 `setup.py`/`setup.cfg` **at the version named in `result.json`** (delete the
 legacy files when adopting it). Each was verified against that version's sdist.
 The corpus is pull, not push: maintainers, distros, and forks take what's
-useful. The conversion files and patches are trivial configuration; treat them
+useful — `wheelproof adopt <package> <srcdir>` does the pull for you, gated by
+the same wheel-diff (it reverts itself if the proof fails). The conversion files and patches are trivial configuration; treat them
 as available under the upstream project's own license to remove any friction.
 
 ## Caveats, honestly

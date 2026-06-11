@@ -62,6 +62,14 @@ def main(argv: list[str] | None = None) -> int:
     p_bch.add_argument("--output", type=Path, default=Path("buildcheck.jsonl"))
     p_bch.add_argument("--workers", type=int, default=3)
 
+    p_adopt = sub.add_parser(
+        "adopt", help="install a proven corpus conversion into a source tree, gated by wheel-diff"
+    )
+    p_adopt.add_argument("package", help="package name (corpus entry)")
+    p_adopt.add_argument("srcdir", type=Path, help="source tree at the corpus-verified version")
+    p_adopt.add_argument("--corpus", type=Path, help="local corpus dir (default: ./corpus, else fetch from GitHub)")
+    p_adopt.add_argument("--force", action="store_true", help="keep the change even if the gate fails (no proof)")
+
     p_div = sub.add_parser(
         "divcheck", help="wheel/sdist divergence census, or one package with --package"
     )
@@ -188,6 +196,20 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         buildcheck.run(args.results, args.output, workers=args.workers)
         return 0
+
+    if args.command == "adopt":
+        from . import adopt as adopt_mod
+
+        if not args.srcdir.is_dir():
+            print(f"error: {args.srcdir} is not a directory", file=sys.stderr)
+            return 1
+        corpus = args.corpus if args.corpus else (Path("corpus") if Path("corpus").is_dir() else None)
+        try:
+            ok = adopt_mod.adopt(args.srcdir, args.package, corpus=corpus, force=args.force)
+        except adopt_mod.AdoptError as exc:
+            print(f"error: {exc}", file=sys.stderr)
+            return 1
+        return 0 if ok else 1
 
     if args.command == "divcheck":
         import json as json_mod

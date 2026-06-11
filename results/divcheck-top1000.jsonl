@@ -1,0 +1,22 @@
+{"package": "packaging", "version": "26.2", "verdict": "identical"}
+{"package": "boto3", "version": "1.43.27", "verdict": "identical"}
+{"package": "urllib3", "version": "2.7.0", "verdict": "identical"}
+{"package": "certifi", "version": "2026.5.20", "verdict": "identical"}
+{"package": "idna", "version": "3.18", "verdict": "identical"}
+{"package": "requests", "version": "2.34.2", "verdict": "identical"}
+{"package": "typing-extensions", "version": "4.15.0", "verdict": "identical"}
+{"package": "setuptools", "version": "82.0.1", "verdict": "identical"}
+{"package": "charset-normalizer", "version": "3.4.7", "verdict": "identical"}
+{"package": "aiobotocore", "version": "3.7.0", "verdict": "identical"}
+{"package": "python-dateutil", "version": "2.9.0.post0", "verdict": "identical"}
+{"package": "botocore", "version": "1.43.27", "verdict": "diverged", "only_in_published": ["botocore/data/accessanalyzer/2019-11-01/endpoint-rule-set-1.json.gz", "botocore/data/accessanalyzer/2019-11-01/service-2.json.gz", "botocore/data/account/2021-02-01/endpoint-rule-set-1.json.gz", "botocore/data/account/2021-02-01/service-2.json.gz", "botocore/data/acm-pca/2017-08-22/endpoint-rule-set-1.json.gz", "botocore/data/acm-pca/2017-08-22/service-2.json.gz", "botocore/data/acm/2015-12-08/endpoint-rule-set-1.json.gz", "botocore/data/acm/2015-12-08/service-2.json.gz", "botocore/data/aiops/2018-05-10/endpoint-rule-set-1.json.gz", "botocore/data/aiops/2018-05-10/service-2.json.gz", "botocore/data/amp/2020-08-01/endpoint-rule-set-1.json.gz", "botocore/data/amp/2020-08-01/service-2.json.gz", "botocore/data/amplify/2017-07-25/endpoint-rule-set-1.json.gz", "botocore/data/amplify/2017-07-25/service-2.json.gz", "botocore/data/amplifybackend/2020-08-11/endpoint-rule-set-1.json.gz", "botocore/data/amplifybackend/2020-08-11/service-2.json.gz", "botocore/data/amplifyuibuilder/2021-08-11/endpoint-rule-set-1.json.gz", "botocore/data/amplifyuibuilder/2021-08-11/service-2.json.gz", "botocore/data/apigateway/2015-07-09/endpoint-rule-set-1.json.gz", "botocore/data/apigateway/2015-07-09/service-2.json.gz"], "only_in_sdist_build": ["botocore/data/accessanalyzer/2019-11-01/endpoint-rule-set-1.json", "botocore/data/accessanalyzer/2019-11-01/service-2.json", "botocore/data/account/2021-02-01/endpoint-rule-set-1.json", "botocore/data/account/2021-02-01/service-2.json", "botocore/data/acm-pca/2017-08-22/endpoint-rule-set-1.json", "botocore/data/acm-pca/2017-08-22/service-2.json", "botocore/data/acm/2015-12-08/endpoint-rule-set-1.json", "botocore/data/acm/2015-12-08/service-2.json", "botocore/data/aiops/2018-05-10/endpoint-rule-set-1.json", "botocore/data/aiops/2018-05-10/service-2.json", "botocore/data/amp/2020-08-01/endpoint-rule-set-1.json", "botocore/data/amp/2020-08-01/service-2.json", "botocore/data/amplify/2017-07-25/endpoint-rule-set-1.json", "botocore/data/amplify/2017-07-25/service-2.json", "botocore/data/amplifybackend/2020-08-11/endpoint-rule-set-1.json", "botocore/data/amplifybackend/2020-08-11/service-2.json", "botocore/data/amplifyuibuilder/2021-08-11/endpoint-rule-set-1.json", "botocore/data/amplifyuibuilder/2021-08-11/service-2.json", "botocore/data/apigateway/2015-07-09/endpoint-rule-set-1.json", "botocore/data/apigateway/2015-07-09/service-2.json"], "content_differs": [], "entry_points_changed": false}
+{"package": "six", "version": "1.17.0", "verdict": "identical"}
+{"package": "pydantic", "version": "2.13.4", "verdict": "identical"}
+{"package": "pygments", "version": "2.20.0", "verdict": "identical"}
+{"package": "pyyaml", "version": "6.0.3", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for pyyaml==6.0.3 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "click", "version": "8.4.1", "verdict": "identical"}
+{"package": "cffi", "version": "2.0.0", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for cffi==2.0.0 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "pluggy", "version": "1.6.0", "verdict": "diverged", "only_in_published": [], "only_in_sdist_build": [], "content_differs": ["pluggy/_version.py"], "entry_points_changed": false}
+{"package": "pycparser", "version": "3.0", "verdict": "identical"}
+{"package": "cryptography", "version": "48.0.1", "verdict": "no-pure-wheel", "error": "no pure (none-any) wheel published for cryptography==48.0.1 \u2014 platform wheels are out of scope for published-baseline comparison"}
+{"package": "grpcio-status", "version": "1.81.1", "verdict": "identical"}
