@@ -49,6 +49,13 @@ def main(argv: list[str] | None = None) -> int:
     p_cs = sub.add_parser("corpus-summary", help="markdown summary of a corpus dir")
     p_cs.add_argument("corpus", type=Path)
 
+    p_bch = sub.add_parser(
+        "buildcheck", help="build every at-risk package's ORIGINAL sdist — the definitive broken-now gate"
+    )
+    p_bch.add_argument("results", type=Path)
+    p_bch.add_argument("--output", type=Path, default=Path("buildcheck.jsonl"))
+    p_bch.add_argument("--workers", type=int, default=3)
+
     args = parser.parse_args(argv)
 
     if args.command == "scan":
@@ -141,6 +148,15 @@ def main(argv: list[str] | None = None) -> int:
         from . import batchconvert
 
         print(batchconvert.summarize(args.corpus))
+        return 0
+
+    if args.command == "buildcheck":
+        from . import buildcheck
+
+        if not args.results.exists():
+            print(f"error: {args.results} not found", file=sys.stderr)
+            return 1
+        buildcheck.run(args.results, args.output, workers=args.workers)
         return 0
 
     return 1

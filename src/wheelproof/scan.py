@@ -34,6 +34,11 @@ IMPORT_RE = {
     "pkg-resources": re.compile(r"^\s*(?:import|from)\s+pkg_resources\b", re.M),
     "distutils": re.compile(r"^\s*(?:import|from)\s+distutils\b", re.M),
 }
+SETUP_PY_FATAL_RE = {
+    # ez_setup bootstraps pkg_resources internally; use_2to3 removed in setuptools 58
+    "ez-setup": re.compile(r"^\s*(?:import|from)\s+ez_setup\b|\buse_setuptools\s*\(", re.M),
+    "use-2to3": re.compile(r"\buse_2to3\s*[=:]"),
+}
 SETUP_FEATURE_RE = {
     "setup-requires": re.compile(r"\bsetup_requires\s*[=:]"),
     "tests-require": re.compile(r"\btests_require\s*[=:]"),
@@ -196,6 +201,10 @@ def _check_sources(root: Path, findings: list[Finding]) -> None:
             for code, pattern in SETUP_FEATURE_RE.items():
                 if code not in feature_seen and pattern.search(text):
                     feature_seen[code] = rel
+            if "/" not in rel:  # top-level setup.py only
+                for code, pattern in SETUP_PY_FATAL_RE.items():
+                    if pattern.search(text):
+                        findings.append(Finding(code, "high", f"used in {rel}"))
     for code, (severity, rel) in seen.items():
         qualifier = "" if severity == "medium" else " (test/vendored path — informational)"
         findings.append(Finding(code, severity, f"imported in {rel}{qualifier}"))
