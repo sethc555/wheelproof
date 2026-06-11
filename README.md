@@ -13,6 +13,9 @@ fixes, built around one idea: **a packaging migration is trustworthy only if the
 artifact proves itself.** You don't review the conversion — you build both
 versions and diff the wheels.
 
+**[Read the writeup](WRITEUP.md)** — the census, the method, and what actually
+moves maintainers (spoiler: release requests beat PRs, 4-to-0).
+
 ## Findings (top 5,000 PyPI packages by downloads, scanned 2026-06)
 
 - **1,153 (24%)** fail to build from sdist under the announced removals
