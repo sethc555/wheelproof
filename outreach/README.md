@@ -20,6 +20,8 @@ Reply log:
 - 2026-06-11 omegaconf#1315: **FIXED — omry released 2.3.1** within hours;
   independently verified (clean py3.12 container, source install succeeds).
   38.4M dl/mo unbroken.
+- 2026-06-12 impyla#616: maintainer (csringhofer, Cloudera) — 0.24 release
+  planned soon; 0.24a1 alpha already fixes it (independently verified).
 - 2026-06-11 hydra#3207: **FIXED — omry released 1.3.3** ("Hydra was dormant
   for a while and is now maintained again"); independently verified. 15.5M dl/mo.
 
