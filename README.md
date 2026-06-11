@@ -21,11 +21,13 @@ moves maintainers (spoiler: release requests beat PRs, 4-to-0).
 - **1,153 (24%)** fail to build from sdist under the announced removals
   ([results/top-summary.md](results/top-summary.md), raw data
   [results/top.jsonl](results/top.jsonl))
-- **12 are verified broken today** against current setuptools — including
-  packages at 35M+ downloads/month
-  ([results/broken-now.md](results/broken-now.md)); fixes for all 12 are in
-  [outreach/sdist-patches/](outreach/sdist-patches/), and PRs/release-request
-  issues are filed upstream ([outreach/README.md](outreach/README.md))
+- **100 are verified broken today** — every at-risk package's sdist was
+  actually built; only a quarter of the failures are the setuptools story, the
+  rest is older quiet rot (incomplete sdists, Python 3.12 removals, undeclared
+  build deps) ([results/broken-now-v2.md](results/broken-now-v2.md)); verified
+  fixes in [outreach/sdist-patches/](outreach/sdist-patches/), upstream
+  PRs/issues tracked in [outreach/](outreach/) — two fixes already released
+  (omegaconf, hydra), two more promised (impyla, token-bucket)
 - **959 (83%) of the doomed packages have execution-proven conversions** in
   [corpus/](corpus/) — a `pyproject.toml` per package whose wheel is
   byte-identical in payload to the original `setup.py` build
