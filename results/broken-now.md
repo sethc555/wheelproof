@@ -14,10 +14,10 @@ This is not a prediction; these builds fail today.
 - **docker-compose** 1.29.2
 - **dropbox** 12.0.2
 - **html5lib** 1.1
-- **hydra-core** 1.3.2
+- **hydra-core** 1.3.2 — FIXED in 1.3.3 (2026-06-11, after facebookresearch/hydra#3207)
 - **imgaug** 0.4.0
 - **impyla** 0.23.0
-- **omegaconf** 2.3.0
+- **omegaconf** 2.3.0 — FIXED in 2.3.1 (2026-06-11, after omry/omegaconf#1315)
 - **sql-formatter** 0.6.2
 - **wirerope** 1.0.0
 

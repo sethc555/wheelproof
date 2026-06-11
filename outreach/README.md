@@ -17,6 +17,11 @@ Reply log:
   remediation for users = setuptools<82 in build env or migrate to
   python-oracledb. We closed-with-thanks.
 - 2026-06-11 wirerope#32: CodeRabbit bot review passed (trivial), no human yet.
+- 2026-06-11 omegaconf#1315: **FIXED — omry released 2.3.1** within hours;
+  independently verified (clean py3.12 container, source install succeeds).
+  38.4M dl/mo unbroken.
+- 2026-06-11 hydra#3207: **FIXED — omry released 1.3.3** ("Hydra was dormant
+  for a while and is now maintained again"); independently verified. 15.5M dl/mo.
 
 All 12 sdist patches verified: patched sdist builds a wheel against setuptools 82
 in a clean python:3.12 container; unpatched fails with
@@ -60,8 +65,8 @@ PR body template:
 
 | package | dl/month | upstream | ask |
 |---|---|---|---|
-| omegaconf | 38.4M | omry/omegaconf | release: 2.3.0 sdist (2022) broken; fix sits unreleased |
-| hydra-core | 15.5M | facebookresearch/hydra | release: 1.3.2 sdist broken |
+| omegaconf | 38.4M | omry/omegaconf | ✅ FIXED: 2.3.1 released 2026-06-11, verified |
+| hydra-core | 15.5M | facebookresearch/hydra | ✅ FIXED: 1.3.3 released 2026-06-11, verified |
 | dropbox | 2.5M | dropbox/dropbox-sdk-python | release: 12.0.2 sdist broken (ez_setup) |
 | impyla | n/a* | cloudera/impyla | release: 0.23.0 sdist broken (ez_setup) |
 
