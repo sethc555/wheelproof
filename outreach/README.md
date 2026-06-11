@@ -9,6 +9,15 @@ cloudera/impyla#616, omry/omegaconf#1315
 
 Watch for replies — these now have a human obligation attached.
 
+Reply log:
+- 2026-06-11 cx_Oracle#677: WONTFIX by maintainer (anthony-tuininga) — cx_Oracle
+  is EOL, no releases ever planned; duplicate of pre-existing #674 (prior-art
+  lesson: check open PRs, not just HEAD). cx-oracle joins docker-compose v1 in
+  the "permanently broken sdist on PyPI by upstream decision" bucket;
+  remediation for users = setuptools<82 in build env or migrate to
+  python-oracledb. We closed-with-thanks.
+- 2026-06-11 wirerope#32: CodeRabbit bot review passed (trivial), no human yet.
+
 All 12 sdist patches verified: patched sdist builds a wheel against setuptools 82
 in a clean python:3.12 container; unpatched fails with
 `ModuleNotFoundError: No module named 'pkg_resources'`.
