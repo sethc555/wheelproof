@@ -1,6 +1,13 @@
 # Outreach state — the 12 verified-broken packages
 
-*Prepared 2026-06-10. Nothing below has been sent. Every send is a human decision.*
+*Prepared and SENT 2026-06-10 (user-authorized). Live links:*
+
+PRs: html5lib/html5lib-python#598, aleju/imgaug#872, oracle/python-cx_Oracle#677,
+smarie/python-decopatch#40, PabloRMira/sql_formatter#183, youknowone/wirerope#32
+Issues: dropbox/dropbox-sdk-python#528, facebookresearch/hydra#3207,
+cloudera/impyla#616, omry/omegaconf#1315
+
+Watch for replies — these now have a human obligation attached.
 
 All 12 sdist patches verified: patched sdist builds a wheel against setuptools 82
 in a clean python:3.12 container; unpatched fails with
