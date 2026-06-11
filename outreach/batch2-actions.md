@@ -107,7 +107,13 @@ Prior-art triage reshaped 8 planned issues into 6 new + 2 joins:
   notes 6.1.1 predates it)
 All claims double-run verified; all under watchman.
 
-## Batch 4 prep — Tiers 1-2 of the patch bucket (2026-06-13, NOT YET SENT)
+## Batch 4 — SENT 2026-06-13
+PRs: resend-python#216, opik#7036, requests-auth-aws-sigv4#21,
+certvalidator#54, ocspbuilder#16. Issues: posthog-python#660,
+hubspot-api-python#497, pytest-hacc#254. Join: click-spinner#32.
+(opik PR will gate on Comet CLA — Seth's signature when prompted.)
+
+## Batch 4 prep — Tiers 1-2 of the patch bucket (2026-06-13)
 
 Pristine-HEAD test re-sorted the 9 (4 were fixed-at-HEAD; agents' adaptations
 for wbond repos chased the wrong target — pristine-build discipline caught both):

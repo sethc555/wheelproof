@@ -94,5 +94,41 @@
   {
     "repo": "valkey-io/valkey-py",
     "number": 262
+  },
+  {
+    "repo": "resend/resend-python",
+    "number": 216
+  },
+  {
+    "repo": "comet-ml/opik",
+    "number": 7036
+  },
+  {
+    "repo": "andrewjroth/requests-auth-aws-sigv4",
+    "number": 21
+  },
+  {
+    "repo": "wbond/certvalidator",
+    "number": 54
+  },
+  {
+    "repo": "wbond/ocspbuilder",
+    "number": 16
+  },
+  {
+    "repo": "PostHog/posthog-python",
+    "number": 660
+  },
+  {
+    "repo": "HubSpot/hubspot-api-python",
+    "number": 497
+  },
+  {
+    "repo": "MatthewFlamm/pytest-homeassistant-custom-component",
+    "number": 254
+  },
+  {
+    "repo": "click-contrib/click-spinner",
+    "number": 32
   }
 ]
