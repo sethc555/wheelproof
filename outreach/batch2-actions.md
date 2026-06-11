@@ -106,3 +106,28 @@ Prior-art triage reshaped 8 planned issues into 6 new + 2 joins:
 - JOIN valkey-py#262 (their fix merged 2026-02 but never released; comment
   notes 6.1.1 predates it)
 All claims double-run verified; all under watchman.
+
+## Batch 4 prep — Tiers 1-2 of the patch bucket (2026-06-13, NOT YET SENT)
+
+Pristine-HEAD test re-sorted the 9 (4 were fixed-at-HEAD; agents' adaptations
+for wbond repos chased the wrong target — pristine-build discipline caught both):
+
+PR-READY (5) — branch fix/sdist-source-build pushed to sethc555 forks, every
+one verified "pristine HEAD fails / patched HEAD builds" in container; released
+sdists verified payload-identical to published wheels where applicable:
+- resend/resend-python (8.8M dl/mo; typing_extensions import)
+- comet-ml/opik (monorepo ../../README.md)
+- andrewjroth/requests-auth-aws-sigv4 (imports requests)
+- wbond/certvalidator + wbond/ocspbuilder (NEW finding: released-sdist bug is
+  fixed at HEAD, but HEAD has a NEW bug — readme.md read but not shipped;
+  MANIFEST.in fix. PR text must explain both.)
+
+RELEASE-REQUEST (4) — pristine HEAD builds fine; published sdist broken:
+- PostHog/posthog-python (published 7.18.1 sdist omits version.py)
+- HubSpot/hubspot-api-python (published 12.0.0 sdist omits VERSION)
+- MatthewFlamm/pytest-homeassistant-custom-component (sdist omits files)
+- click-contrib/click-spinner (versioneer fixed at HEAD, unreleased; note
+  repo seeks maintainers — issue #38)
+
+Before sending: per-repo prior-art re-read + CLA check (PostHog/HubSpot/
+Comet/Resend are corporate repos).
