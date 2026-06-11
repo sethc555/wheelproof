@@ -23,8 +23,10 @@ The omegaconf/hydra play. Verify HEAD/PR actually builds first.
 - token-bucket (falconry/token-bucket#24 merged 2023-07, never released)
 - python3-logstash (#10 MANIFEST.in fix merged 2020 — SIX YEARS unreleased)
 - ocspbuilder (partial fix committed after issue #8 (2016!), never released)
-- causallib (#79 claims shipped in v0.10.0 — but our census FAILED v0.10.0;
-  verify carefully, possibly sdist regression to report)
+- causallib — RECHECKED 2026-06-11: 0.10.0 sdist uploaded 2025-04-06, fix
+  PR#79 merged 2026-05-07 (a year LATER; agent's "shipped same day" was wrong).
+  Plain release request, not republish. Broken file is docs/requirements.txt
+  (requirements.txt itself IS shipped).
 
 ## C. Clear to file — no prior art (11) — patch + verify + PR (or issue+PR)
 - opik (breakage persists at HEAD, monorepo README path)
@@ -72,6 +74,10 @@ B — HEADs VERIFIED building (release-request ready):
   worded accordingly.
 - colour#66, shyaml#67, python-xlib#290, tnt#960: zero comments — clear.
 - jproperties, token-bucket, causallib: no existing release issues — clear.
+
+Final recheck 2026-06-11: all 5 PRs still open/unmerged; PyPI latest ==
+broken census version for all 4 release targets; logstash#12 still open;
+causallib framing corrected (see above).
 
 REVISED SEND LIST (9): 5 PR-support comments (colour#66, shyaml#67,
 python-xlib#290, strenum#34, tnt#960) + 3 new release-request issues
