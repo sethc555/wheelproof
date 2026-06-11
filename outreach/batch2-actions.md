@@ -60,6 +60,24 @@ B — HEADs VERIFIED building (release-request ready):
 - resend HEAD STILL BROKEN (typing_extensions import persists) — patch bucket
 - ocspbuilder HEAD STILL BROKEN (partial 2016 fix incomplete) — patch bucket
 
+## Pre-send deep scan (2026-06-11) — second-pass prior art on the send list itself
+
+- python3-logstash: open issue #12 "New PyPI release" since 2020 — JOIN it with
+  verification comment; do NOT file a new issue.
+- ics: maintainer is aware (release timeline lives in #245, closed #437 points
+  there) and himself recommends the `ical` package as the alternative. A new
+  release-request would be noise. SKIP; recorded as aware-but-blocked.
+- strenum#34: thread already has pings incl. a Homebrew maintainer (2025-11)
+  patching downstream. Our comment adds verification, not another ping — keep,
+  worded accordingly.
+- colour#66, shyaml#67, python-xlib#290, tnt#960: zero comments — clear.
+- jproperties, token-bucket, causallib: no existing release issues — clear.
+
+REVISED SEND LIST (9): 5 PR-support comments (colour#66, shyaml#67,
+python-xlib#290, strenum#34, tnt#960) + 3 new release-request issues
+(jproperties, token-bucket, causallib-republish) + 1 join-comment
+(python3-logstash#12).
+
 ## Execution order
 1. Verify: existing PRs (A), HEAD states (B) — container builds, no public action
 2. Prep: patches + forks for C and D
