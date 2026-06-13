@@ -28,8 +28,9 @@ Reply log:
 - 2026-06-14 impyla#616: third-party user independently confirmed our
   verification of 0.24a1 and asked for the stable release ETA — first
   community corroboration of a wheelproof finding.
-- 2026-06-12 token-bucket#29: vytas7 (Falcon core) — "I agree it is time for
-  release after almost 5 years... We'll see what we can do." Release likely.
+- 2026-06-12 token-bucket#29: **FIXED — vytas7 (Falcon core) released 0.4.0**
+  ("This is now resolved fixed"), after first agreeing "it is time for release
+  after almost 5 years." sdist (0.3.0) failed to build on py3.12; 0.4.0 builds.
 - 2026-06-12 impyla#616: maintainer (csringhofer, Cloudera) — 0.24 release
   planned soon; 0.24a1 alpha already fixes it (independently verified).
 - 2026-06-11 hydra#3207: **FIXED — omry released 1.3.3** ("Hydra was dormant
