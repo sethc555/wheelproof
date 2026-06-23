@@ -10,6 +10,27 @@ cloudera/impyla#616, omry/omegaconf#1315
 Watch for replies — these now have a human obligation attached.
 
 Reply log:
+- 2026-06-19 impyla#616: **FIXED — csringhofer (Cloudera) released 0.24.0**
+  ("Finally released 0.24.0. Closing this issue."), confirming the 0.24a1 alpha
+  fix we verified earlier. Issue closed. Was the last outstanding "promised" item.
+- 2026-06-16 valkey-py#262: maintainer (mkmkme) — "I am aware of this and will
+  push new libvalkey-py and valkey-py as soon as possible (hopefully this
+  weekend)." Release committed; py.typed present in wheel since 6.2.0rc1 but
+  missing from the last released sdist (6.1.1). NOT YET SHIPPED as of 2026-06-23
+  (PyPI still valkey 6.1.1 / libvalkey 4.0.1 — soft ETA slipped); watch PyPI.
+- 2026-06-15 resend-python#216: **MERGED by drish** ("thanks for the
+  contribution") — first merged-PR outreach win (others were maintainer-cut
+  releases). Lands for users at resend's next release.
+- 2026-06-15 posthog#660: **CLOSED** by marandaneto (pointed at
+  README_ANALYTICS.md) — `posthoganalytics` twin acknowledged as a documented
+  separate distribution; no code fix, maintainer-closed.
+- 2026-06-15 click-spinner#32: owner (yoavram) declined a release, instead
+  offered co-maintainer/ownership transfer — outside wheelproof's pull-not-push
+  model; left as a flagged decision, no action taken.
+- 2026-06-17 opik#7065: after closing our #7036, maintainer (jverre) re-opened
+  the same fix as his own PR #7065, then closed it unmerged (branch since
+  deleted). Maintainer carried the change but neither PR merged — opik sdist
+  fix still unresolved upstream.
 - 2026-06-11 cx_Oracle#677: WONTFIX by maintainer (anthony-tuininga) — cx_Oracle
   is EOL, no releases ever planned; duplicate of pre-existing #674 (prior-art
   lesson: check open PRs, not just HEAD). cx-oracle joins docker-compose v1 in
@@ -33,6 +54,7 @@ Reply log:
   after almost 5 years." sdist (0.3.0) failed to build on py3.12; 0.4.0 builds.
 - 2026-06-12 impyla#616: maintainer (csringhofer, Cloudera) — 0.24 release
   planned soon; 0.24a1 alpha already fixes it (independently verified).
+  → resolved 2026-06-19, 0.24.0 released (see top of log).
 - 2026-06-11 hydra#3207: **FIXED — omry released 1.3.3** ("Hydra was dormant
   for a while and is now maintained again"); independently verified. 15.5M dl/mo.
 
@@ -81,7 +103,7 @@ PR body template:
 | omegaconf | 38.4M | omry/omegaconf | ✅ FIXED: 2.3.1 released 2026-06-11, verified |
 | hydra-core | 15.5M | facebookresearch/hydra | ✅ FIXED: 1.3.3 released 2026-06-11, verified |
 | dropbox | 2.5M | dropbox/dropbox-sdk-python | release: 12.0.2 sdist broken (ez_setup) |
-| impyla | n/a* | cloudera/impyla | release: 0.23.0 sdist broken (ez_setup) |
+| impyla | n/a* | cloudera/impyla | ✅ FIXED: 0.24.0 released 2026-06-19 |
 
 Issue title: `Released sdist no longer installs from source (setuptools >= 82); fix exists at HEAD — please cut a release`
 Body: reproduce command as above + note that the repo HEAD already removed

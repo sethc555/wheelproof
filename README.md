@@ -26,8 +26,9 @@ moves maintainers (spoiler: release requests beat PRs, 4-to-0).
   rest is older quiet rot (incomplete sdists, Python 3.12 removals, undeclared
   build deps) ([results/broken-now-v2.md](results/broken-now-v2.md)); verified
   fixes in [outreach/sdist-patches/](outreach/sdist-patches/), upstream
-  PRs/issues tracked in [outreach/](outreach/) — three fixes already released
-  (omegaconf, hydra, token-bucket), one more promised (impyla)
+  PRs/issues tracked in [outreach/](outreach/) — four fixes already released
+  (omegaconf, hydra, token-bucket, impyla) and one PR merged (resend); a valkey-py
+  release is committed for the py.typed sdist gap
 - **959 (83%) of the doomed packages have execution-proven conversions** in
   [corpus/](corpus/) — a `pyproject.toml` per package whose wheel is
   byte-identical in payload to the original `setup.py` build
