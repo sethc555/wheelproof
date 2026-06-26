@@ -10,6 +10,13 @@ cloudera/impyla#616, omry/omegaconf#1315
 Watch for replies — these now have a human obligation attached.
 
 Reply log:
+- 2026-06-26 dropbox#528: Dropbox (shuyck) triaged — "We're looking into it and
+  we'll follow up here once we have an update." Acknowledgment, no release
+  commitment yet; 12.0.2 sdist still broken (ez_setup). Issue open, watch.
+- 2026-06-23 click-spinner#32: **FIXED — bfontaine released 0.1.11 then 0.2.0**
+  (same day; switched setup.py→uv, Travis→GH Actions, CI py3.8–3.14). A new
+  maintainer took over (after yoavram's ownership-transfer offer) and shipped.
+  Closed as completed; 0.2.0 sdist+wheel verified on PyPI 2026-06-23.
 - 2026-06-19 impyla#616: **FIXED — csringhofer (Cloudera) released 0.24.0**
   ("Finally released 0.24.0. Closing this issue."), confirming the 0.24a1 alpha
   fix we verified earlier. Issue closed. Was the last outstanding "promised" item.
@@ -25,8 +32,8 @@ Reply log:
   README_ANALYTICS.md) — `posthoganalytics` twin acknowledged as a documented
   separate distribution; no code fix, maintainer-closed.
 - 2026-06-15 click-spinner#32: owner (yoavram) declined a release, instead
-  offered co-maintainer/ownership transfer — outside wheelproof's pull-not-push
-  model; left as a flagged decision, no action taken.
+  offered co-maintainer/ownership transfer. → resolved 2026-06-23: new
+  maintainer bfontaine released 0.2.0 (see top of log).
 - 2026-06-17 opik#7065: after closing our #7036, maintainer (jverre) re-opened
   the same fix as his own PR #7065, then closed it unmerged (branch since
   deleted). Maintainer carried the change but neither PR merged — opik sdist
