@@ -10,9 +10,13 @@ cloudera/impyla#616, omry/omegaconf#1315
 Watch for replies — these now have a human obligation attached.
 
 Reply log:
+- 2026-07-10 dropbox#528: **FIXED — AndreyVMarkelov released 12.1.0** and
+  independently re-ran our repro against the released sdist under setuptools
+  82.0.1: builds, installs, imports cleanly. Issue closed as completed. 2.5M
+  dl/mo unbroken; second maintainer to corroborate a wheelproof verification
+  rather than take it on trust. Verified on PyPI (sdist+wheel, 2026-07-10).
 - 2026-06-26 dropbox#528: Dropbox (shuyck) triaged — "We're looking into it and
-  we'll follow up here once we have an update." Acknowledgment, no release
-  commitment yet; 12.0.2 sdist still broken (ez_setup). Issue open, watch.
+  we'll follow up here once we have an update." → resolved 2026-07-10 (above).
 - 2026-06-23 click-spinner#32: **FIXED — bfontaine released 0.1.11 then 0.2.0**
   (same day; switched setup.py→uv, Travis→GH Actions, CI py3.8–3.14). A new
   maintainer took over (after yoavram's ownership-transfer offer) and shipped.
@@ -109,7 +113,7 @@ PR body template:
 |---|---|---|---|
 | omegaconf | 38.4M | omry/omegaconf | ✅ FIXED: 2.3.1 released 2026-06-11, verified |
 | hydra-core | 15.5M | facebookresearch/hydra | ✅ FIXED: 1.3.3 released 2026-06-11, verified |
-| dropbox | 2.5M | dropbox/dropbox-sdk-python | release: 12.0.2 sdist broken (ez_setup) |
+| dropbox | 2.5M | dropbox/dropbox-sdk-python | ✅ FIXED: 12.1.0 released 2026-07-10 |
 | impyla | n/a* | cloudera/impyla | ✅ FIXED: 0.24.0 released 2026-06-19 |
 
 Issue title: `Released sdist no longer installs from source (setuptools >= 82); fix exists at HEAD — please cut a release`

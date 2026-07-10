@@ -2,37 +2,14 @@
   "package": "pywin32-ctypes",
   "version": "0.2.3",
   "sdist_url": "https://files.pythonhosted.org/packages/85/9f/01a1a99704853cb63f253eea009390c88e7131c67e66a0a02099a8c917cb/pywin32-ctypes-0.2.3.tar.gz",
-  "status": "pass",
-  "drift": {
-    "metadata_only_original": [
-      [
-        "author",
-        "Enthought Inc."
-      ],
-      [
-        "author-email",
-        "info@enthough.com"
-      ],
-      [
-        "home-page",
-        "https://github.com/enthought/pywin32-ctypes"
-      ]
+  "status": "verify-fail",
+  "detail": {
+    "payload_only_original": [],
+    "payload_only_converted": [],
+    "payload_changed": [
+      "win32ctypes/version.py"
     ],
-    "metadata_only_converted": [
-      [
-        "author-email",
-        "\"Enthought Inc.\" <info@enthough.com>"
-      ],
-      [
-        "description-content-type",
-        "text/x-rst"
-      ],
-      [
-        "project-url",
-        "Homepage, https://github.com/enthought/pywin32-ctypes"
-      ]
-    ],
-    "metadata_body_changed": false,
-    "distinfo_changed": []
-  }
+    "entry_points_changed": false
+  },
+  "note": "Reclassified 2026-07-10 by the setuptools-83 corpus re-verification (results/reverify-setuptools83.md). Recorded as 'pass', but the original proof was contaminated. setup.py rewrites win32ctypes/version.py at module top level, so merely executing setup.py -- which setuptools-py2cfg does during conversion -- mutates the source tree before the pristine baseline is snapshotted; both sides then matched. Re-verified from an untouched sdist, the pristine build regenerates version.py with LF while the pyproject-only build ships the sdist's CRLF copy verbatim, so payloads differ. Fails identically under setuptools 82.0.1 and 83.0.0, so this is a latent gate defect, not a setuptools regression. pywin32-ctypes generates code at build time and belongs in the refuse-loudly bucket; its unproven pyproject.toml has been withdrawn."
 }

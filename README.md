@@ -26,12 +26,15 @@ moves maintainers (spoiler: release requests beat PRs, 4-to-0).
   rest is older quiet rot (incomplete sdists, Python 3.12 removals, undeclared
   build deps) ([results/broken-now-v2.md](results/broken-now-v2.md)); verified
   fixes in [outreach/sdist-patches/](outreach/sdist-patches/), upstream
-  PRs/issues tracked in [outreach/](outreach/) — five fixes already released
-  (omegaconf, hydra, token-bucket, impyla, click-spinner) and one PR merged
-  (resend); a valkey-py release is committed for the py.typed sdist gap
-- **959 (83%) of the doomed packages have execution-proven conversions** in
+  PRs/issues tracked in [outreach/](outreach/) — six fixes already released
+  (omegaconf, hydra, token-bucket, impyla, click-spinner, dropbox) and one PR
+  merged (resend); a valkey-py release is committed for the py.typed sdist gap
+- **958 (83%) of the doomed packages have execution-proven conversions** in
   [corpus/](corpus/) — a `pyproject.toml` per package whose wheel is
-  byte-identical in payload to the original `setup.py` build
+  byte-identical in payload to the original `setup.py` build. Re-verified
+  2026-07-10 against **setuptools 83.0.0**: 948 of the 949 evaluable entries
+  still pass; the run also caught one false `pass` the original gate missed
+  ([results/reverify-setuptools83.md](results/reverify-setuptools83.md))
 
 ## Commands
 
@@ -46,6 +49,8 @@ wheelproof verify-published <d>  # diff a build against the maintainer's publish
 wheelproof adopt <pkg> <srcdir>  # install a corpus conversion, gated by wheel-diff
 wheelproof buildcheck <jsonl>    # build every at-risk sdist — the broken-now gate
 wheelproof divcheck --package X  # does X's published wheel match its sdist?
+wheelproof headcheck <target>    # pristine-HEAD build: patch, or just a release request?
+wheelproof cla-check <owner/repo> # does contributing require a CLA/DCO?
 wheelproof corpus-summary <dir>  # pass/fail report of a corpus
 ```
 
@@ -99,7 +104,9 @@ as available under the upstream project's own license to remove any friction.
 - Verification compares against a freshly built baseline. Packages whose
   *original* build is already broken have no baseline; their patches in
   `outreach/sdist-patches/` were instead verified as "unpatched fails, patched
-  builds." Diffing against the last *published* wheel is future work.
+  builds." Diffing against the maintainer's last *published* wheel is now
+  implemented (`verify-published`, and `divcheck` for the sdist/wheel divergence
+  census — see [results/divergence.md](results/divergence.md)).
 - `scan`'s static findings are candidates, not verdicts — build verification
   found 14 false positives among 26 static pkg_resources flags. Anything this
   repo states as "verified" was executed, not inferred.
