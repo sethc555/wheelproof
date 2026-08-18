@@ -27,7 +27,17 @@
 > Release requests beat PRs; two maintainers independently re-ran our repro and
 > confirmed it. See outreach/README.md for the full reply log.
 >
-> **Live watch:** `tools/watchman-cron.sh` runs daily (canary + 33 threads).
+> **Live watch:** `tools/watchman-cron.sh` runs daily (canary + 33 threads;
+> Sunday recheck of the 100 broken). **2026-08-17: the recheck had been a
+> false-negative machine since 07-06** — a stray `build/lib/` tree shipped by
+> palettable's wheel shadowed PyPA `build` in user site-packages, so every
+> host build "failed" and every package scored "still broken" (Docker paths —
+> canary, reverify — were unaffected). Fixed: harness preflight, positive
+> control, cron runs under `.venv`. A partial real recheck (29/100, cut short)
+> found 6 now building: omegaconf, hydra-core, impyla, resend (ours) +
+> **ddtrace 4.13.1, awscrt 0.36.2** (fixed independently). The next Sunday run
+> completes the sweep; drift probe says 38 of the 100 have released since June.
+> Open question: full top-5000 rescan (343/1,529 at-risk released since 06-09).
 > Canary as of 2026-08-17: dash/uppercase setup.cfg keys **still build** under
 > setuptools **84.0.0** — the second removal has not landed.
 >
