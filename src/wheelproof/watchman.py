@@ -24,6 +24,8 @@ import sys
 import tempfile
 from pathlib import Path
 
+RECHECK_CONTROL = "addict"  # tiny pure-python sdist that builds under current setuptools
+
 CANARY_SETUP_CFG = """\
 [metadata]
 name = wheelproof-canary
@@ -145,9 +147,23 @@ def recheck(repo_root: Path) -> int:
     fixed_seen = set(state.setdefault("fixed", []))
     rows = [json.loads(l) for l in (repo_root / "results" / "buildcheck.jsonl").read_text().splitlines()]
     broken = [r["package"] for r in rows if r.get("builds") is False and r["package"] not in fixed_seen]
+
+    # Positive control first: a known-good package MUST build here, or every
+    # "still broken" below is noise. (Same discipline as the canary's control.)
+    ctl = bc.check_one(RECHECK_CONTROL)
+    if ctl.get("builds") is not True:
+        _alert(repo_root,
+               f"recheck HARNESS UNHEALTHY: control package {RECHECK_CONTROL} did not build "
+               f"({ctl.get('error', '?')[:200]}) — recheck aborted; all 'still broken' verdicts "
+               f"since the last healthy control are suspect")
+        print(f"recheck: ABORTED, harness unhealthy ({RECHECK_CONTROL} did not build)")
+        return 0
     newly = 0
     for name in broken:
         row = bc.check_one(name)
+        if row.get("builds") is None:
+            print(f"recheck {name}: ERROR {row.get('error', '')[:120]}", file=sys.stderr)
+            continue
         if row.get("builds") is True:
             _alert(repo_root,
                    f"**{name} {row.get('version','?')} now BUILDS** — a fixing release "

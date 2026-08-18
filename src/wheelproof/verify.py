@@ -26,7 +26,17 @@ IGNORED_DISTINFO = {"RECORD"}
 
 
 class BuildError(RuntimeError):
-    pass
+    """The *package* failed to build. Callers classify this as a package defect."""
+
+
+class HarnessError(RuntimeError):
+    """The build *harness* is unusable (e.g. `python -m build` itself won't run).
+
+    Deliberately NOT a BuildError: a sick harness must never be reported as
+    "package fails to build". Found the hard way — a stray top-level `build/`
+    directory shipped by an unrelated wheel shadowed PyPA `build` in user
+    site-packages, and every recheck reported "still broken" for six weeks.
+    """
 
 
 @dataclass
@@ -71,8 +81,28 @@ class Report:
 
 BUILD_TIMEOUT = 600  # seconds per wheel build; unsupervised runs must not hang
 
+_harness_checked = False
+
+
+def check_harness() -> None:
+    """Preflight: `sys.executable -m build` must be the real PyPA build. Cached."""
+    global _harness_checked
+    if _harness_checked:
+        return
+    proc = subprocess.run(
+        [sys.executable, "-m", "build", "--version"], capture_output=True, text=True, timeout=120
+    )
+    if proc.returncode != 0 or not proc.stdout.startswith("build "):
+        raise HarnessError(
+            f"`{sys.executable} -m build --version` failed — the harness cannot build anything "
+            f"(is PyPA `build` installed for this interpreter, and not shadowed by a stray "
+            f"top-level `build/` package?)\n{(proc.stdout + proc.stderr).strip()[-500:]}"
+        )
+    _harness_checked = True
+
 
 def build_wheel(srcdir: Path, outdir: Path) -> Path:
+    check_harness()
     cmd = [sys.executable, "-m", "build", "--wheel", "--outdir", str(outdir), str(srcdir)]
     try:
         proc = subprocess.run(cmd, capture_output=True, text=True, timeout=BUILD_TIMEOUT)

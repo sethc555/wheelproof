@@ -47,6 +47,9 @@ def check_one(name: str) -> dict:
             try:
                 verify_mod.build_wheel(root, out)
                 row["builds"] = True
+            except verify_mod.HarnessError as exc:
+                row.update(builds=None, error=f"HARNESS: {exc}"[:300])
+                return row
             except verify_mod.BuildError as exc:
                 text = str(exc)
                 row["builds"] = False
