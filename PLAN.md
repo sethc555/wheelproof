@@ -1,6 +1,6 @@
 # wheelproof roadmap
 
-> **STATE 2026-07-10:** Phases 1–4 shipped. Corpus is public: 1,154 entries,
+> **STATE 2026-08-17** (last substantive change 2026-07-10; watchman still running daily): Phases 1–4 shipped. Corpus is public: 1,154 entries,
 > **958 pass** (636 mechanical + 322 LLM-pass, each independently wheel-diff
 > verified), 120 convert-error, 43 build-error, 32 verify-fail. The scan covers
 > the top 5,000 by downloads (1,153 at risk); `buildcheck` proved 100 broken
@@ -17,14 +17,17 @@
 >
 > **Phase 5 — outreach (the current work, and the best result).** 12
 > verified-broken packages taken upstream via GitHub PRs/issues only.
-> **Six fixes released** (omegaconf 2.3.1, hydra 1.3.3, token-bucket 0.4.0,
-> impyla 0.24.0, click-spinner 0.2.0, dropbox 12.1.0) + one PR merged (resend).
+> **Seven fixes released** (omegaconf 2.3.1, hydra 1.3.3, token-bucket 0.4.0,
+> impyla 0.24.0, click-spinner 0.2.0, dropbox 12.1.0, drf-nested-routers 0.95.3
+> — the last from the divergence census, and the maintainer automated his
+> whole release pipeline in response) + one PR merged (resend). The other 24
+> open threads have had zero maintainer response since 2026-06-11.
 > Release requests beat PRs; two maintainers independently re-ran our repro and
 > confirmed it. See outreach/README.md for the full reply log.
 >
 > **Live watch:** `tools/watchman-cron.sh` runs daily (canary + 33 threads).
-> Canary as of 2026-07-10: dash/uppercase setup.cfg keys **still build** under
-> setuptools **83.0.0** — the second removal has not landed.
+> Canary as of 2026-08-17: dash/uppercase setup.cfg keys **still build** under
+> setuptools **84.0.0** — the second removal has not landed.
 >
 > **Resume options:** (a) triage the 31 verify-fails — likely systematic
 > py2cfg/ini2toml translation gaps worth fixing once; (b) the 8 open PRs have

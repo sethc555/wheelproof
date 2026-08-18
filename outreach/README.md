@@ -10,6 +10,14 @@ cloudera/impyla#616, omry/omegaconf#1315
 Watch for replies — these now have a human obligation attached.
 
 Reply log:
+- 2026-07-31 drf-nested-routers#392: **FIXED — alanjds released 0.95.3** after
+  automating the release pipeline (PR #401: "we should not see these kind of
+  issues anymore"); "thanks @sethc555 for the nudge." Twice asked us to check
+  the result (07-23 TestPyPI, 07-31 PyPI). Verified 2026-08-17: published
+  wheel has zero `.pyc`, sdist ships `pyproject.toml` (PEP 621, setuptools>=61)
+  and builds under setuptools 84.0.0 with a payload byte-identical to the
+  published wheel. Issue closed. Seventh fix; first from the divergence census
+  (batch 3) rather than the setuptools-82 breakage set.
 - 2026-07-10 dropbox#528: **FIXED — AndreyVMarkelov released 12.1.0** and
   independently re-ran our repro against the released sdist under setuptools
   82.0.1: builds, installs, imports cleanly. Issue closed as completed. 2.5M
@@ -56,7 +64,8 @@ Reply log:
   `posthoganalytics` twin distribution (main `posthog` package unaffected);
   we replied confirming scope + that it still has public PyPI consumers.
 - 2026-06-14 drf-nested-routers#392: maintainer (alanjds) — "Thanks a lot for
-  the report. Let's cut a new release..." Another release agreed.
+  the report. Let's cut a new release..." Another release agreed. → released
+  0.95.3 on 2026-07-31 (above).
 - 2026-06-14 impyla#616: third-party user independently confirmed our
   verification of 0.24a1 and asked for the stable release ETA — first
   community corroboration of a wheelproof finding.
