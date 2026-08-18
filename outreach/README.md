@@ -17,7 +17,8 @@ Reply log:
   wheel has zero `.pyc`, sdist ships `pyproject.toml` (PEP 621, setuptools>=61)
   and builds under setuptools 84.0.0 with a payload byte-identical to the
   published wheel. Issue closed. Seventh fix; first from the divergence census
-  (batch 3) rather than the setuptools-82 breakage set.
+  (batch 3) rather than the setuptools-82 breakage set. We replied 2026-08-17
+  confirming the verification.
 - 2026-07-10 dropbox#528: **FIXED — AndreyVMarkelov released 12.1.0** and
   independently re-ran our repro against the released sdist under setuptools
   82.0.1: builds, installs, imports cleanly. Issue closed as completed. 2.5M
