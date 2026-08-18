@@ -31,10 +31,14 @@ moves maintainers (spoiler: release requests beat PRs, 4-to-0).
   drf-nested-routers) and one PR merged (resend); a valkey-py release is committed for the py.typed sdist gap
 - **958 (83%) of the doomed packages have execution-proven conversions** in
   [corpus/](corpus/) — a `pyproject.toml` per package whose wheel is
-  byte-identical in payload to the original `setup.py` build. Re-verified
-  2026-07-10 against **setuptools 83.0.0**: 948 of the 949 evaluable entries
-  still pass; the run also caught one false `pass` the original gate missed
-  ([results/reverify-setuptools83.md](results/reverify-setuptools83.md))
+  byte-identical in payload to the original `setup.py` build. Re-verified on
+  every setuptools major: 2026-07-10 against **83.0.0** (948/949 evaluable
+  entries; the run also caught one false `pass` the original gate missed —
+  [results/reverify-setuptools83.md](results/reverify-setuptools83.md)) and
+  2026-08-17 against **84.0.0** (948/948 —
+  [results/reverify-setuptools84.md](results/reverify-setuptools84.md));
+  `tools/reverify.sh <tag>` re-runs the gate over the whole corpus in clean
+  containers
 
 ## Commands
 

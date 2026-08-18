@@ -9,7 +9,9 @@
 >
 > **Corpus re-verified against setuptools 83.0.0** (2026-07-10,
 > results/reverify-setuptools83.md): 948/949 evaluable entries still produce
-> byte-identical payloads — no setuptools-83 regression. The run caught one
+> byte-identical payloads — no setuptools-83 regression. **And against 84.0.0**
+> (2026-08-17, results/reverify-setuptools84.md): 948/948, entry-for-entry
+> identical; runner now committed as `tools/reverify.sh`. The run caught one
 > false `pass` (pywin32-ctypes): its `setup.py` rewrites `version.py` at module
 > top level, so the converter's own execution of `setup.py` contaminated the
 > pristine baseline. Reclassified verify-fail, `pyproject.toml` withdrawn.
@@ -40,14 +42,17 @@ Context: setuptools retries its deprecated-config removal in 2026
 https://setuptools.pypa.io/en/latest/history.html). The dead tail of PyPI — packages
 with gone maintainers — is exactly the set that can't fix itself.
 
-Deadline state (verified 2026-06-09 against the setuptools changelog):
+Deadline state (verified 2026-06-09 against the setuptools changelog; re-checked
+2026-08-17 through v84.0.0, released 2026-08-08 — compiler/distutils decoupling
+and newline-separated `keywords`/`platforms` deprecation, nothing that touches
+the corpus's build path):
 - pkg_resources: REMOVED in v82.0.0 (2026-02-08) — already live; build-time importers
   are broken against current setuptools today
 - setup.py install / easy_install: deadline 2025-10-31, enforced
 - dash/uppercase setup.cfg keys (the 12k-package breaker of Mar 2025, reverted in
   78.0.2): warning text set the cutoff at 2026-03-03 — now past due, NOT yet
-  re-applied as of v82.0.1 (2026-03-09). Can land in any release without further
-  notice. Build isolation pulls latest setuptools by default, so it hits every
+  re-applied as of v84.0.0 (2026-08-08; canary confirms daily). Can land in any
+  release without further notice. Build isolation pulls latest setuptools by default, so it hits every
   unpinned legacy package the day it ships.
 
 ## Phase 1 — verify core (DONE, v0)
@@ -116,7 +121,8 @@ The deliverable that serves the ecosystem without burdening it:
       html5lib (34.9M dl/mo, dormant since 2024-02, PR #598 unanswered).
 - [x] re-verify the corpus whenever setuptools moves — a proof is a claim about
       a build, and the build environment drifts. (2026-07-10 vs setuptools
-      83.0.0: 948/949 pass; caught 1 false pass. Re-run on each major bump.)
+      83.0.0: 948/949 pass; caught 1 false pass. 2026-08-17 vs 84.0.0: 948/948.
+      Re-run on each major bump: `tools/reverify.sh setuptoolsNN 8`, ~15 min.)
 - [ ] snapshot the pristine tree *before* the converter runs — `setuptools-py2cfg`
       executes `setup.py`, and a top-level side effect there can mutate the very
       baseline the gate compares against (found via pywin32-ctypes).
